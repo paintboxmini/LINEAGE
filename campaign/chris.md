@@ -458,7 +458,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 - **MEND does not heal himself, and he is fine with it** — "target ally" never means you (`rules/combat.md`, You Are Not Your Own Ally).
 - **Still open: what his magic actually does**, as examples. Magic Expression gives the look; nothing concrete yet.
 
-## For advancement — TRANSPOSE, RUBATO, INTERFERENCE
+## For advancement — TRANSPOSE, INTERFERENCE, ACCELERANDO
 
 *Written 2026-10-04 at Drew's ask, for the three customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks), one for each thing he wants to build toward — **movement, initiative, control.** **TRANSPOSE, INTERFERENCE and ACCELERANDO are the three; RUBATO waits for the middle tier.** All three are musical, like MEASURE and KILLSWITCH, because the Blade Singer is the thing to serve (The Fantasy, above). FOLLOW THROUGH is not one of them; it waits for the middle tier (Held Back, above).*
 

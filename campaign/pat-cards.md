@@ -83,7 +83,7 @@ Confirmed: the damage buff dies with the spirit, and the Save is a Soul Save. **
 
 ---
 
-## For advancement — STAY and GOOD BOY
+## For advancement — STAY, GOOD BOY and SPEAK
 
 **None of Pat's summon cards restate the summoning rules** *(Drew, 2026-10-04)*. The d10, the effect ending when the spirit falls, and the three-spirit cap all live on his Trait and apply to every one of them (`campaign/pat.md`, Wild Magic Summoning), so the cards say only what is different about each.
 
@@ -125,6 +125,27 @@ Range: Both
 - **"Win on a tie" is anything that turns a tie into your win**: HOLD THE LINE's block, HERE BOY's held charge, and ADAPT or another tie-winner once the middle tier opens (`cards/tiers/middle.md`).
 - **With HOLD THE LINE it is a card every time he blocks with it.** That is the synergy he asked for, and it is also why it is a draw and not damage — card flow for a stall deck, not a second way to win.
 - **It does nothing alone.** No tie-winner in hand, no payoff. *Which is the honest shape for a synergy card.*
+
+### Card 6 — SPEAK
+
+Red — Body, d6, Both. Not a summon — **the card that pays for having them out**, and buys time while it does.
+
+```
+SPEAK
+RED — BODY
+Attack: Body + d6
+Effect: The defender gains Weak. If you have two or more spirits out, every enemy in the defender's position gains Weak instead.
+Defense Effect: The attacker gains Weak for each spirit you have out.
+Range: Both
+"Speak. Let them hear all of you."
+```
+
+**The three cursed royals have a voice, and this is when they use it.** Another dog call, like the rest of his customs.
+
+- **Buying time, in the currency of the hits that come back at him.** Weak takes a d6 off the next damage roll (`rules/card-glossary.md`, Weak), so every stack is one blunted attack.
+- **It scales with the spirits, not on its own.** Alone it is ENFEEBLE's effect at a Red die (`cards/blue-mind.md`). With two spirits out the attack spreads Weak across a whole position, and **the block hands the attacker a stack for every spirit** — three weakened swings from one block, with all three royals standing.
+- **No tie-winning on it, on purpose.** "You win on a tie" is what the middle tier is for (`cards/tiers/middle.md`), and his advancement deck comes before that. *The ties are HOLD THE LINE's and HERE BOY's job; this one rewards the summons.*
+- **Red, Both, d6** — a step over Red Both's usual die (`rules/cards.md`, Why Red has the biggest dice — range pays for them), paid for by an effect that does little until the field is built. **And Red is where his deck already lives**: five of his nine.
 
 ---
 

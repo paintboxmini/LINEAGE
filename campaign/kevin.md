@@ -481,7 +481,7 @@ Range: Melee
 - **His six drafted cards:** RETALIATE, CERTAIN STRIKE and SECOND WIND (Red), FOCUS and STILL POINT (Blue), RELEASE (Green). **With his customs that is 4 Red / 3 Blue / 2 Green — exactly his stats**, the one player at the table who took the matching spread. All six printed as written in `cards/`.
 - **Age 20.** Off his sheet.
 - **Price, off his sheet: "Never stop growing."** *What it costs him at the table is still to set* (Not Yet Set, below).
-- **Trait, off his sheet: "+1 consumable."** *Not yet written up here — what it means is to confirm with Drew* (Not Yet Set, below).
+- **Trait — Gluttony** *(Drew, 2026-10-05)*: **he can have two consumable drink effects active at the same time.** Written "+1 consumable" on his sheet. *It reads against a baseline of one drink at a time, and that baseline is not written anywhere yet* (Not Yet Set, below).
 - **FOCUS** — **His copy keeps the old version** *(Drew, 2026-10-04)*: its block is **Initiative Shift +2 to yourself**, as printed when he drafted it. The card changed to +1 the day after the draft (`cards/blue-mind.md`); **every other FOCUS is +1, and Kevin's is the exception.** *It does nothing in a one-on-one either way* (`rules/combat.md`, Two on the wheel).
 
 ## Not Yet Set
@@ -489,7 +489,7 @@ Range: Melee
 - **Price: "Never stop growing"** *(Kevin, session 0)* — chosen; **what it costs at the table** is still to set. *The two drafted for him before are kept for the record:* *"I always pay what a thing is worth"* — he can haggle any price down to fair and never below, which reins in the skill he learned in rooms his father would rather he had never seen; or *"I never serve what I wouldn't eat myself"*
 - **What he thinks he did that night**, and whether he would do it again
 - **The Applies When on both Passives** — drafted from the names; to confirm at the table
-- **His Trait, "+1 consumable"** — as written on his sheet; what it does is to confirm
+- **The one-drink baseline Gluttony doubles.** Nothing in the rules yet limits anyone to one drink effect at a time, so as written the Trait has nothing to lift. **Needs a rule for everybody** — what counts as a drink effect being active, and what happens when a second one is drunk
 
 ## Related Documents
 
