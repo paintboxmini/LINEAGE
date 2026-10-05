@@ -144,6 +144,24 @@ Some cards carry a **Special Rule** line instead of — or alongside — an Effe
 - **Target** means you genuinely choose — an ally among several, or a specific enemy when more than one is present.
 - **"Any target" includes yourself** *(Drew, 2026-10-04)*. It is not ally or enemy wording, so the rule below does not reach it: CALCULATE can move you, FORESEE can give you Resist.
 
+**The targeting words** *(Drew, 2026-10-05)*. Card text names who it reaches with these, and only these:
+
+| On the card | Means |
+|---|---|
+| **you** / **yourself** | You, and only you |
+| **target ally** | One ally you choose — never you |
+| **target enemy** | One enemy you choose |
+| **any target** | Anyone on the field you choose, you included |
+| **all allies** | Every ally — never you. *"You and all allies"* when the card means you too |
+| **all enemies** | Every enemy |
+| **the attacker** / **the defender** | Whoever this exchange is against — no choice |
+
+**A position narrows any of them**: *all enemies in the defender's position*, *target ally in your position*. Nothing else needs a word of its own.
+
+<!-- print:skip-start -->
+*Measured 2026-10-05: about two dozen card halves still say the same things in other words — "an ally", "your party", "every enemy", "each enemy", "the target" for the defender. They mean what the table above means, and are being brought into line.*
+<!-- print:skip-end -->
+
 ### An Example — STRIKE
 
 ```
