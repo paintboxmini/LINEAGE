@@ -141,8 +141,8 @@ Damage that cannot be defended against. It ignores every defense that applies to
 **(9) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
 
-**(0) Flow**
-**Flow: X** means: **if the colour of the last card you revealed is different from this card's colour, X.** Attacking or defending, a Passive included — any card you turned face up counts. A turn spent moving reveals nothing and changes nothing; Flow looks at the last card you actually showed. *Defined 2026-10-05 (Drew) so the condition lives here once and each card only says what Flow gets it.* It is a signature keyword for now — Chris's cards are the ones that use it (`cards/chris.md`), which is why the core count is zero.
+**(0) Cadence**
+**Cadence: X** means: **if the colour of the last card you revealed is different from this card's colour, X.** Attacking or defending, a Passive included — any card you turned face up counts. A turn spent moving reveals nothing and changes nothing; Cadence looks at the last card you actually showed. *Defined 2026-10-05 (Drew) so the condition lives here once and each card only says what Cadence gets it. First called Flow, renamed the same day because FLOW is already a card (`cards/green-soul.md`).* It is a signature keyword for now — Chris's cards are the ones that use it (`cards/chris.md`), which is why the core count is zero.
 
 **(4) Immunity**
 The next attack damage you would take is reduced to 0. Nothing else about the exchange changes: cards are chosen and revealed as normal, the RPS outcome stands, and the attacker's Effect and any Defense Effect trigger exactly as they otherwise would. Only the damage is negated.

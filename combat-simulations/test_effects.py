@@ -272,7 +272,7 @@ def _bonus(text, actor, opponent, card):
 
 
 def test_flow_counts_every_reveal():
-    """Flow (`rules/card-glossary.md`, 2026-10-05): the last card you
+    """Cadence (`rules/card-glossary.md`, 2026-10-05): the last card you
     revealed, attacking *or* defending, against this card's colour."""
     print('\nFlow reads the last card you revealed, a block included')
     import engine
@@ -285,9 +285,9 @@ def test_flow_counts_every_reveal():
                           rng=random.Random(0), log=QUIET)
     check('a block rolls the last-revealed colour forward',
           a.last_reveal_color == 'RED', a.last_reveal_color)
-    measure = pool['MEASURE']           # Red, so Flow needs a non-Red prior
+    measure = pool['MEASURE']           # Red, so Cadence needs a non-Red prior
     a.flow_prev = 'BLUE'
-    check('Flow pays when the last card shown was another colour',
+    check('Cadence pays when the last card shown was another colour',
           _bonus(measure.effect, a, b, measure) == 2)
     a.flow_prev = 'RED'
     check('and not when it was the same colour',

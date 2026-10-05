@@ -234,9 +234,9 @@ class Combatant:
         self.last_color = None
         self.color_this_turn = None
 
-        # Flow (`rules/card-glossary.md`): the colour of the last card this
+        # Cadence (`rules/card-glossary.md`): the colour of the last card this
         # combatant revealed, attacking or defending. `flow_prev` is the one
-        # before the card now resolving, which is what a Flow clause asks.
+        # before the card now resolving, which is what a Cadence clause asks.
         self.last_reveal_color = None
         self.flow_prev = None
 
@@ -698,7 +698,7 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     # anything asking about a colour change. Recorded here rather than in
     # play.py so an extra attack handed back mid-turn also counts, and only
     # for the attacker — a defence is played on someone else's turn.
-    # Flow: every revealed card counts, a block included, so both sides
+    # Cadence: every revealed card counts, a block included, so both sides
     # roll their last-revealed colour forward here, on the reveal.
     for who, card in ((attacker, atk_card), (defender, def_card)):
         if card is not None:
