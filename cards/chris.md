@@ -22,8 +22,8 @@ deck (`rules/cards.md`, Deck Building).
 **MEASURE**
 RED — BODY
 Attack: Body + d8
-Effect: If the card you played last turn was a different colour than this one, deal +2 damage and the defender reveals their stats.
-Defense Effect: If the card you played last turn was a different colour than this one, the attacker reveals their stats.
+Effect: Flow: deal +2 damage and the defender reveals their stats.
+Defense Effect: Flow: the attacker reveals their stats.
 Range: Melee
 *"A bar is not a bar because of the notes in it. It is a bar because of where it ends."*
 
@@ -33,7 +33,7 @@ Range: Melee
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Plant a seed.
-Defense Effect: If the top card of your discard pile is a different colour than this one, plant a seed.
+Defense Effect: Flow: plant a seed.
 Range: Both
 *"He plants what he can spare. It remembers the rest."*
 

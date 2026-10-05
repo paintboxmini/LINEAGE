@@ -765,8 +765,9 @@ class KitAI(SimpleAI):
         # An Effect gated on "the card you played last turn was a different
         # colour" only pays when it is true, so only count it then.
         for op in ops:
-            if isinstance(op, fx.Gated) and op.label == 'the colour changed':
-                if me.last_color and me.last_color != card.color:
+            if isinstance(op, fx.Gated) and op.label in ('the colour changed', 'flow'):
+                prev = me.last_reveal_color if op.label == 'flow' else me.last_color
+                if prev and prev != card.color:
                     value += self._EFFECT_VALUE * runs
                     for inner in op.ops:
                         if isinstance(inner, fx.DamageBonus):

@@ -298,6 +298,8 @@ Three customs, one per colour. **They have landed: `cards/chris.md` is the card,
 
 **MEASURE — no repeated note.** The flow card, and the one that runs every turn. **Red and Melee-only since 2026-09-20**, having started Blue and Both. *Taking someone's measure means closing with them* — you read a person by standing inside their reach, not by thinking about them from across the room, and the card was doing the second thing while claiming the first. The reveal is still written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
 
+**Its condition is Flow** *(2026-10-05)* — the last card he revealed, attacking or defending, against this one's colour (`rules/card-glossary.md`, Flow). *Before that it read "the card you played last turn", which left out his blocks and was broken by a turn spent moving; Flow counts every card he shows and nothing else.*
+
 **The swap is damage-neutral by construction.** Blue put it on Mind 4 with a d6, which is 7.0 expected. Red puts it on Body 3, and Melee-only earns the die step that pays the difference back: Body 3 + d8 is 7.0 again. That is the standard trade the whole corpus makes, and Red Melee averages d7.00 across the core pool, so a d8 sits at the top of its band rather than outside it (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
 
 **What he actually pays is the Range, and it is a real price on this card.** A defender's card has to satisfy its own Range as though they were attacking (`rules/combat.md`, Attack Resolution), so a Melee card cannot block at all unless both combatants are Frontline. The half that reads the *attacker* now only exists when he is already in the scrum — which is where a blade singer should have to stand to be reading anybody.
@@ -306,10 +308,8 @@ Three customs, one per colour. **They have landed: `cards/chris.md` is the card,
 MEASURE
 RED — BODY
 Attack: Body + d8
-Effect: If the card you played last turn was a different colour than this one,
-        deal +2 damage and the defender reveals their stats.
-Defense Effect: If the card you played last turn was a different colour than
-        this one, the attacker reveals their stats.
+Effect: Flow: deal +2 damage and the defender reveals their stats.
+Defense Effect: Flow: the attacker reveals their stats.
 Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
@@ -321,7 +321,7 @@ SEED
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Plant a seed.
-Defense Effect: If the top card of your discard pile is a different colour than this one, plant a seed.
+Defense Effect: Flow: plant a seed.
 Range: Both
 "He plants what he can spare. It remembers the rest."
 ```
@@ -330,7 +330,7 @@ Range: Both
 
 **Replaced RIPOSTE on 2026-09-20.** RIPOSTE was a good card and a generic one — gain Deadly, gain it twice on a clean block — and nothing about it was Chris rather than any competent swordsman. SEED is not a card anyone else could hold: it costs him his own body to plant.
 
-**The defence half is gated, and that is the whole reason it is allowed to plant at all.** Blocking costs no Action, so an ungated planting half would let him seed for free every time somebody swung at him. The gate — *the top of your discard pile is a different colour than this one* — is the same colour-rotation idea MEASURE runs on, read off the one public pile anybody at the table can check. He has two Green cards total, so the pile is usually not Green and the gate is usually open; a green turn shuts it.
+**The defence half is gated, and that is the whole reason it is allowed to plant at all.** Blocking costs no Action, so an ungated planting half would let him seed for free every time somebody swung at him. The gate is **Flow** (`rules/card-glossary.md`, Flow) — the same colour rotation MEASURE runs on. *Until 2026-10-05 it read off the top of his discard pile instead; Flow, defined that day, made the two cards ask the same question.* He has two Green cards total, so the pile is usually not Green and the gate is usually open; a green turn shuts it.
 
 **Rebuilt from the core card of the same name**, which held an Oracle seat for one day in September and was pulled for being a specialist's card (`cards/tiers/beginner.md`). Nothing survives but the name and the die. The old one planted a buff at a position and collected it a turn later; this one plants *him*.
 
@@ -468,7 +468,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 TRANSPOSE
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Quick. If the card you played last turn was a different colour than this one, gain another.
+Effect: Gain Quick. Flow: gain another.
 Defense Effect: You may change position.
 Range: Both
 "Same song. Different key."
@@ -490,8 +490,8 @@ Range: Both
 RUBATO
 BLUE — MIND
 Attack: Mind + d4
-Effect: Apply Initiative Shift +1 to yourself and -1 to the defender. If the card you played last turn was a different colour than this one, make both 2.
-Defense Effect: Apply Initiative Shift +1 to yourself and -1 to the attacker. If the card you played last turn was a different colour than this one, make both 2.
+Effect: Apply Initiative Shift +1 to yourself and -1 to the defender. Flow: make both 2.
+Defense Effect: Apply Initiative Shift +1 to yourself and -1 to the attacker. Flow: make both 2.
 Range: Both
 "Stolen time. Paid back later, maybe."
 ```
@@ -508,8 +508,8 @@ Range: Both
 INTERFERENCE
 BLUE — MIND
 Attack: Mind + d6
-Effect: If the card you played last turn was a different colour than this one, choose one: the defender gains Weak, Blind or Rooted.
-Defense Effect: If the card you played last turn was a different colour than this one, choose one: the attacker gains Weak, Blind or Rooted.
+Effect: Flow: choose one: the defender gains Weak, Blind or Rooted.
+Defense Effect: Flow: choose one: the attacker gains Weak, Blind or Rooted.
 Range: Ranged
 "Static. Then the wrong note. Then nothing you meant to do."
 ```
@@ -528,7 +528,7 @@ Range: Ranged
 ACCELERANDO
 BLUE — MIND
 Attack: Mind + d6
-Effect: Apply Initiative Shift +1 to yourself. If the card you played last turn was a different colour than this one, make it +2.
+Effect: Apply Initiative Shift +1 to yourself. Flow: make it +2.
 Defense Effect: Apply Initiative Shift +1 to yourself.
 Range: Melee
 "Faster, and faster, and nobody noticed when it started."

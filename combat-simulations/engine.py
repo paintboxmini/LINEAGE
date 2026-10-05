@@ -234,6 +234,12 @@ class Combatant:
         self.last_color = None
         self.color_this_turn = None
 
+        # Flow (`rules/card-glossary.md`): the colour of the last card this
+        # combatant revealed, attacking or defending. `flow_prev` is the one
+        # before the card now resolving, which is what a Flow clause asks.
+        self.last_reveal_color = None
+        self.flow_prev = None
+
         # The colour of the attack before this one. A different question
         # from last_color above: that one is per *turn*, which is what
         # MEASURE asks; this is per *attack*, which is what KILLSWITCH asks.
@@ -692,6 +698,13 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     # anything asking about a colour change. Recorded here rather than in
     # play.py so an extra attack handed back mid-turn also counts, and only
     # for the attacker — a defence is played on someone else's turn.
+    # Flow: every revealed card counts, a block included, so both sides
+    # roll their last-revealed colour forward here, on the reveal.
+    for who, card in ((attacker, atk_card), (defender, def_card)):
+        if card is not None:
+            who.flow_prev = who.last_reveal_color
+            who.last_reveal_color = card.color
+
     if atk_card is not None:
         attacker.color_this_turn = atk_card.color
         # KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."

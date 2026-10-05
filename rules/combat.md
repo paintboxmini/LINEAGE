@@ -115,6 +115,8 @@ On your turn, you may take one Action, plus one free action if you have one avai
 
 **Using a consumable is a free action unless the item says otherwise.** Ruled 2026-09-21. Eating, drinking, loading a round, throwing one of Kevin's oranges, taking back one of Chris's seeds — all the same one free action, and all competing for it.
 
+**One drink at a time** *(Drew, 2026-10-05)*. A combatant can have **one drink's effect active** at once. A drink is active while anything it gave you is still unspent — a held Quick, a Ward, a stack of Resist; healing, a draw or an Initiative Shift happen on the spot and leave nothing behind. **Drinking another replaces it:** whatever the old drink left you that is still unspent is gone, and the new one takes its place. *Kevin's Trait, Gluttony, is the exception that says so: he can have two active at once* (`campaign/kevin.md`, From session 0).
+
 **An item that costs an Action says so on itself**, and several do: Luminova Leaves and Luminova Powder both print *Use an Item — costs your Action* (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). That is the exception written where somebody using the item will actually read it, rather than a category they have to remember.
 
 *The earlier wording said the reverse — that using a consumable for its mechanical effect is never free, with the orange named as the example. It was written before Kevin's kit existed and did not survive it: a character whose whole build is prepared consumables cannot be charged an Action for each one and still have a turn. The cap is what balances them, not the price of admission — one per turn, so his reload, his drink and his grenade are all bidding for the same slot.*

@@ -271,6 +271,32 @@ def _bonus(text, actor, opponent, card):
     return ctx.dmg_bonus
 
 
+def test_flow_counts_every_reveal():
+    """Flow (`rules/card-glossary.md`, 2026-10-05): the last card you
+    revealed, attacking *or* defending, against this card's colour."""
+    print('\nFlow reads the last card you revealed, a block included')
+    import engine
+    core = cardlib.by_name(cardlib.core_pool())
+    pool = cardlib.by_name(cardlib.load())
+    a, b = duo()
+    a.hp = b.hp = 400
+    # a blocks with a Red card — on b's turn, not his own.
+    engine.resolve_attack(b, a, core['CALCULATE'], core['STRIKE'],
+                          rng=random.Random(0), log=QUIET)
+    check('a block rolls the last-revealed colour forward',
+          a.last_reveal_color == 'RED', a.last_reveal_color)
+    measure = pool['MEASURE']           # Red, so Flow needs a non-Red prior
+    a.flow_prev = 'BLUE'
+    check('Flow pays when the last card shown was another colour',
+          _bonus(measure.effect, a, b, measure) == 2)
+    a.flow_prev = 'RED'
+    check('and not when it was the same colour',
+          _bonus(measure.effect, a, b, measure) == 0)
+    a.flow_prev = None
+    check('nor before he has shown anything',
+          _bonus(measure.effect, a, b, measure) == 0)
+
+
 def test_last_colour_rolls_forward_on_your_own_turn():
     print('\nThe colour you played last turn is your own turn\'s')
     import engine
@@ -1810,6 +1836,7 @@ if __name__ == '__main__':
     test_lets_go_compels_the_room()
     test_kit_ai_knows_what_a_block_is_for()
     test_kit_ai_spends_its_free_action()
+    test_flow_counts_every_reveal()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:
