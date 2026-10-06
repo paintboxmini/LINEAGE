@@ -24,6 +24,8 @@
 
 **She left Forget-Me-Not hut about a month ago, and the dying started when she arrived** *(Drew, 2026-10-05)*. *Why Elowen, and why now, is not set.*
 
+**She is hiding in the woods** *(Drew, 2026-10-06)*, deep in, away from the village. **In their dreams she is an old woman in a black shroud, hunting them.** *Nobody has seen her face, so nobody on Elowen knows she is Lizardkin* (`places/elowen.md`, What Is Doing It — GM Only).
+
 ## What She Could Do
 
 **She could lift the curse.** Any living holder can, by paying her own existence (`factions-and-races/races-lizardkin.md`, It can be undone, once, on the same terms). *Nobody in the family is counting on her, and nobody hunting Osha has put her in the sum* (`characters/vaun.md`).
@@ -32,7 +34,7 @@
 
 ## Not Yet Set
 
-- Appearance, voice, age — *old enough to be a great-grandmother and still strong enough to empty half a town*
+- Appearance under the shroud, voice, age — *old enough to be a great-grandmother and still strong enough to empty half a town*
 - **Why Elowen, and why now**
 - **Whether her family knows she is alive**, and what they think happened to her
 - Whether she has stood on the spot in the hut, and what it told her
@@ -46,4 +48,5 @@
 - `factions-and-races/races-lizardkin.md` — the cursegivers, and what the holders are
 - `places/forget-me-not-island.md` — her hut
 - `places/elowen.md` — where she is now
+- `bestiary/redjaw.md` — the wolves in her woods
 - `campaign/pat.md` — the scrap

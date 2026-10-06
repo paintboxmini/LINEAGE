@@ -184,7 +184,7 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 
 *Inventoried 2026-09-22 across `bestiary/`, `flora/` and `items/`.*
 
-### Kevin's seasonings — the five loads
+### Kevin's seasonings — the six loads
 
 | Ingredient | Off | Gate | Price |
 |---|---|---|---|
@@ -193,8 +193,9 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 | Leadfoot | Hush Bloom (`flora/hush-bloom.md`) | slow to harvest — it only opens in stillness | **none set** |
 | Spinstone grind | Shockquills (`bestiary/shockquills.md`) | dangerous to harvest *correctly* — the kill has to be at 3+ Charge | **none set** |
 | Bellows dust | Blowback Beetle (`bestiary/blowback-beetle.md`) | has to be beaten in a fight | **none set** |
+| Redgum | Bloodelm (`flora/bloodelm.md`) | on somebody else's tree — it has to be asked for | **none set** |
 
-**Four of the five have no number, and the fifth is two copper** (`campaign/kevin.md`). *That is the live gap in this section: Kevin's whole character is an ingredient economy, his sheet already asks whether Senshi stocks cinder flake and leadfoot, and there is no rate for any of it if the party ever wants to sell instead of cook.*
+**Five of the six have no number, and the sixth is two copper** (`campaign/kevin.md`). *That is the live gap in this section: Kevin's whole character is an ingredient economy, his sheet already asks whether Senshi stocks cinder flake and leadfoot, and there is no rate for any of it if the party ever wants to sell instead of cook.*
 
 ### Burnrind — correctly worth nothing
 

@@ -30,6 +30,18 @@
 
 ---
 
+## Redgum
+
+**The sap that runs out of a ringed tree sets on the bark as a dark red gum**, thick at the bottom of the ring. *The villagers scrape it off and burn it, or leave it; it has never been worth anything to them.*
+
+**It is worth something to Kevin** (`campaign/kevin.md`, The Ingredients). **Worked into a round it goes tacky in the burn**, and what it hits comes away with heavy, gummed-up hands — **Weak**, either direction.
+
+**The gate: it is on somebody's tree.** *Every ringed tree on Elowen belongs to a felling family*, and so does whatever runs out of it. **Taking it means asking**, in a village that has started looking for somebody to blame (`places/elowen.md`) — and for the families that are gone, there is nobody left to ask. *A stranger scraping gum off a dead man's tree is exactly the story this village is ready to believe.*
+
+**And it is running out.** Nobody has ringed a tree since the dying started, so once the trees already bleeding have finished, there is no more until somebody is awake enough to ring new ones.
+
+---
+
 ## Use
 
 **Fine furniture, panelling, carving, inlay, and boxes.** Anything a wealthy buyer wants people to notice. *It sells on looks alone, and it sells well.*
@@ -42,8 +54,11 @@
 
 - **A price.** It has a working market, so it may not need one (`rules/items.md`, Flora with a trade and no number, deliberately)
 - **Who buys it, and where it goes**
+- **A price for redgum** — nobody on Elowen has ever sold any
 
 ## Related Documents
 
 - `places/elowen.md` — the village that fells it
+- `flora/wakebark.md` — the shrub that grows under it
+- `campaign/kevin.md` — redgum
 - `flora/stiltwood.md` — the other valuable wood in the region, and a different one
