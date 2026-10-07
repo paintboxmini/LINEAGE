@@ -940,6 +940,11 @@ def test_kit_ai_spends_its_free_action():
     check('an empty grinder gets reloaded with the better round',
           ai.choose_free_action(kev, [foe], []) == ('reload', 'cinder flake'))
 
+    kev.rounds = ['plain']
+    check('a plain round is never worth a free action — the hopper feeds it',
+          ai.choose_free_action(kev, [foe], []) != ('reload', 'plain'))
+    kev.rounds = ['cinder flake', 'plain']
+
     kev.load = 'plain'
     kev.hp = 4
     kev.drinks = ['Still Water']

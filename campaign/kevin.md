@@ -111,6 +111,15 @@ The wine and the pepper go to distant ports, and some of them are not respectabl
 
 **The grinder.** Feed a pepper into it. Turning the handle grinds the pepper, and the grinding ignites the flesh — the flesh is the propellant, and the seeds are the projectiles. One crank, one shot. What's loaded determines what the shot does; a different pepper is a different round.
 
+**It runs on a hopper and a chamber** *(Drew, 2026-10-07)*. **The hopper is full of plain grace peppers**, enough that nobody counts them, and it feeds the grinder on its own. **A special round goes in the chamber**, and a switch on the grinder sends that one through on the next crank instead of whatever the hopper offers. *So the grinder is always loaded with something, and the only thing anybody tracks is whether a special round is chambered.*
+
+**What that means at the table:**
+
+- **Plain shots are never tracked and never reloaded.** The hopper handles them. An empty chamber just means GRIND SHOT fires plain.
+- **Only special rounds are loaded.** Chambering one takes his free action, and he can do it before a fight.
+- **A special round is spent only by GRIND SHOT**, when it resolves, win or lose. Then the chamber is empty and the grinder is back on the hopper — **nothing to reload.**
+- **Any other card can be the grinder in the fiction.** He can play RETALIATE or FOCUS and say he did it with the grinder, and that is fine. **It does not touch the chambered round and it does not need a reload.** *The card's own text and Range are what happens; the grinder is just what it looks like.*
+
 **It is a ranged weapon, not a shotgun** *(2026-09-19)*. Kevin wants the knife up close and the grinder at distance, and a shotgun cannot be that. **So it throws a tight cone a long way rather than a wide one across a room**, and the thing that makes it frightening is what is in the shell rather than how much of the room it covers. *The seeds are still the projectiles; they simply go further and arrive together.*
 
 **The oranges.** Throwable incendiary grenades — the oils in the skin enhanced until they're properly combustible. Same craft as the peppers, different delivery: the pepper is a bullet, the orange is a bomb.
@@ -270,7 +279,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 
 **Five measures and four pickings.** Two of the measures are already worked up and three are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
 
-**The grinder starts loaded**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
+**The grinder can start with a special round chambered**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
 
 **Starting gold: 10, and it is the smallest purse at the table on purpose** (`rules/equipment.md`, Starting Gold). He is not poor — he is the opposite, and that is exactly why. **He converted everything he had into ingredients**, which is the whole character, and what is in the bag above is worth something in the region of 150 gold if he ever sold it (What any of it is actually worth to him, above). *Ten gold buys him lunch. Giving the richest man on the dock more money is the one adjustment that makes the sheets less even rather than more.*
 
@@ -301,11 +310,13 @@ His real exchange rate is already written above under Supply and restocking: **o
 ```
 THE PEPPER GRINDER
 Equipment — Weapon (Tier 2)
-Effect: You may hold one prepared load at a time. Loading takes a free action,
-and the grinder may be loaded outside combat and carried loaded. GRIND SHOT's
-Effect and Defense Effect are whatever the loaded round says they are; loaded
-with a plain round it has none. The load is spent when GRIND SHOT resolves,
-win or lose — blocking with it burns the round the same as firing it.
+Effect: Plain rounds feed from the hopper and are never tracked or reloaded.
+You may chamber one special round at a time; chambering takes a free action,
+and can be done outside combat. GRIND SHOT's Effect and Defense Effect are
+whatever the chambered round says; with none chambered it fires plain and
+has none. The special round is spent when GRIND SHOT resolves, win or lose —
+blocking with it burns the round the same as firing it. No other card spends
+the chambered round, even one played as the grinder.
 "It was a kitchen tool. It is still a kitchen tool."
 ```
 
@@ -328,7 +339,7 @@ unpreventable damage to every enemy in that position. Single-use.
 
 **This is the interesting cost.** A turn gives one free action and one only, capped regardless of how many you have banked (`rules/combat.md`, Free Actions). Kevin's competes three ways:
 
-- **Load the grinder** — or GRIND SHOT fires plain next turn.
+- **Chamber a special round** — or GRIND SHOT fires plain. *Plain never costs a free action; the hopper does it.*
 - **Eat or drink** — his own prepared drinks included.
 - **Throw an orange.**
 

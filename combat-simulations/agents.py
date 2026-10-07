@@ -882,10 +882,15 @@ class KitAI(SimpleAI):
             if missing >= banked or (hurt and missing >= banked * 0.6):
                 return ('harvest',)
 
+        # Only a special round is ever chambered. Plain rounds feed from the
+        # hopper on their own and never cost a free action (`campaign/kevin.md`,
+        # How It Works — Drew, 2026-10-07).
+        special = [r for r in me.rounds if r.lower() != 'plain']
+
         if me.drinks and hurt:
             return ('drink', me.drinks[0])
-        if me.load is None and me.rounds:
-            return ('reload', self._best_round(me))
+        if me.load is None and special:
+            return ('reload', self._best_round(me, special))
         if me.oranges > 0:
             live = [f for f in foes if f.alive() and not f.is_object]
             if len(live) >= 2:
@@ -893,8 +898,8 @@ class KitAI(SimpleAI):
                             key=lambda p: sum(1 for f in live if f.position == p))
                 if sum(1 for f in live if f.position == where) >= 2:
                     return ('orange', where)
-        if me.load is None and me.rounds:
-            return ('reload', self._best_round(me))
+        if me.load is None and special:
+            return ('reload', self._best_round(me, special))
         return None
 
     def _my_seed(self, me):
@@ -914,7 +919,7 @@ class KitAI(SimpleAI):
                      and o.position == me.position and o.alive()), None)
         return seed.hp if seed is not None else 0
 
-    def _best_round(self, me):
+    def _best_round(self, me, rounds=None):
         import effects as fx
         rows = fx._rounds()
 
@@ -925,7 +930,7 @@ class KitAI(SimpleAI):
             ops = fx.compile_half(row[0]) or []
             return sum(op.amount if isinstance(op, fx.DamageBonus)
                        else self._EFFECT_VALUE for op in ops)
-        return max(me.rounds, key=worth)
+        return max(rounds or me.rounds, key=worth)
 
     # ---- choices a card Effect asks for ---------------------------------
 
