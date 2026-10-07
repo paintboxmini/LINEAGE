@@ -189,7 +189,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 | **Sapphire crystal** | Defender gains Vulnerable | Attacker gains Vulnerable | `bestiary/sapphire-ant.md` — 2 copper at Senshi's counter |
 | **Cinder flake** | Deal +3 damage | Deal 3 unpreventable damage to the attacker | `bestiary/scorchback-beetle.md` — the Cindersink |
 | **Leadfoot** | Defender gains Rooted | Attacker gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
-| **Spinstone grind** | Initiative Shift -2 to the defender | Initiative Shift -2 to the attacker | `bestiary/shockquills.md` — the Briarwatch red dirt |
+| **Spinstone** | Initiative Shift -2 to the defender | Initiative Shift -2 to the attacker | `bestiary/shockquills.md` — the Briarwatch red dirt |
 | **Bellows dust** | Push the defender to the Backline | Push the attacker to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
 | **Redgum** | Defender gains Weak | Attacker gains Weak | `flora/bloodelm.md` — Elowen *(2026-10-06; he has none yet)* |
 
@@ -213,7 +213,7 @@ Prepared drinks, handed out before the fight and drunk with a free action by who
 | **The Early Cup** | Apply Initiative Shift +1 to yourself | Plain | ~10 gold |
 | **Still Water** | Gain Ward and heal 3 HP | Leadfoot | ~20 gold |
 | **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake | ~20 gold |
-| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone grind | ~30 gold |
+| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone | ~30 gold |
 | **Up All Night** | Gain Ward and draw 1 | Wakebark *(drink only)* | ~20 gold |
 
 The two plain ones are the floor, the same way plain rounds are. **Up All Night is the one drink whose charge is good for nothing else** — wakebark does not survive the burn, so a measure of it is two of these and never a round (`flora/wakebark.md`, *added 2026-10-06; he has none yet*). Stronger recipes get worked out at the table as he actually makes them (`rules/items.md`, Crafting).
@@ -222,7 +222,7 @@ The two plain ones are the floor, the same way plain rounds are. **Up All Night 
 
 **The gold is what somebody else pays, priced 2026-09-21 at the flat rate of 10 a point** (`rules/equipment.md`, Pricing Consumables) — one point for a status stack, and healing 4 as the anchor, so Still Water's heal 3 and Ward is two points. *Two of these numbers rest on a judgement the scale does not make: Initiative Shift and card draw are not on it. A +1 shift and a draw are counted as a point each here because they feel like one. If a shift is worth more than that at the table, The Early Cup and Hair of the Quill both go up.*
 
-**Three of the six cost him a round he would otherwise have fired.** Still Water eats a leadfoot, Second Wind Cider a cinder flake, Hair of the Quill a spinstone grind — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
+**Three of the six cost him a round he would otherwise have fired.** Still Water eats a leadfoot, Second Wind Cider a cinder flake, Hair of the Quill a spinstone — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
 
 ### What any of it is actually worth to him
 
@@ -252,23 +252,23 @@ His real exchange rate is already written above under Supply and restocking: **o
 
 *The drinks are his to hand out before a fight, not his to drink. Pat and Chris both have an open free action and nothing yet to spend it on.*
 
-**Raw and unspent: one measure of sapphire crystal, one measure of spinstone grind.** Deliberately two seasonings he has nothing prepared from — so his first downtime is a real choice about what to make rather than a refill of what he just used, and the choice costs him: each measure is three rounds *or* two drinks, and he cannot have both out of one.
+**Raw and unspent: two measures of bellows dust and one of leadfoot** *(Drew, 2026-10-07 — they replace the sapphire crystal and spinstone he was first written with)*. Each measure is three rounds *or* two drinks, and he cannot have both out of one — **so his first downtime is still a real choice.** *Bellows dust has no drink, so those two are six rounds of shoving people off him whatever he decides. The leadfoot is the decision: three more Rooted rounds, or two Still Waters.*
 
-*Neither raw measure was harvested by him, and that is the point of picking those two.* Sapphire crystal is the one that is simply bought, at 2 copper a measure off Senshi's counter in the city he grew up in. Spinstone is Briarwatch dirt and he has not been there — he traded for it, somewhere on the road, off somebody who had. **That is the Persuasion +2 doing the work the Cooking +2 cannot**: two of the five seasonings can be talked out of a person, and the other three have to be taken off something that did not want to give them up. *Redgum, the sixth (2026-10-06), is a third that gets talked out of a person — on Elowen, asking is the whole gate* (`flora/bloodelm.md`, Redgum). *If Drew would rather he had never crossed paths with a spinstone at all, swap it for a second sapphire — the only thing that changes is that his first downtime gets less interesting.*
+*None of the raw measures was harvested by him.* Bellows dust comes off a Blowback Beetle that has been beaten in a fight, in the Turnroot understory (`bestiary/blowback-beetle.md`), and leadfoot off a Hush Bloom that only opens for patience (`flora/hush-bloom.md`). **He traded for all three, somewhere on the road, off people who had done the hard part** — **the Persuasion +2 doing the work the Cooking +2 cannot.** *Redgum (2026-10-06) is the one seasoning where asking is the whole gate* (`flora/bloodelm.md`, Redgum).
 
 **The whole loadout, counted in ingredients rather than in items**, because that is the number that actually constrains him:
 
 | | |
 |---|---|
 | **Cinder flake** | 1 measure, all three rounds made and none fired |
-| **Leadfoot** | 1 measure, two rounds left of the three |
-| **Sapphire crystal** | 1 measure, raw |
-| **Spinstone grind** | 1 measure, raw |
-| **Bellows dust** | none. He has never had any |
+| **Leadfoot** | 2 measures: one with two rounds left of the three, and **one raw** |
+| **Bellows dust** | 2 measures, raw |
+| **Sapphire crystal** | none |
+| **Spinstone** | none |
 | **Burnrind** | 4 pickings: two made up, with three oranges left of the four, and **two raw**. *The one that is not a seasoning — here the fruit is the charge* |
 | **Plain stock** | unlimited, and both drinks came out of it |
 
-**Four measures and four pickings.** Two of the measures are already worked up and two are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
+**Five measures and four pickings.** Two of the measures are already worked up and three are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
 
 **The grinder starts loaded**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
 

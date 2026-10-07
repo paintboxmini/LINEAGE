@@ -191,7 +191,7 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 | Sapphire crystal | Sapphire Ant (`bestiary/sapphire-ant.md`) | **bought** | **2 copper** at Senshi's counter |
 | Cinder flake | Scorchback Beetle (`bestiary/scorchback-beetle.md`) | dangerous to harvest | **none set** |
 | Leadfoot | Hush Bloom (`flora/hush-bloom.md`) | slow to harvest — it only opens in stillness | **none set** |
-| Spinstone grind | Shockquills (`bestiary/shockquills.md`) | dangerous to harvest *correctly* — the kill has to be at 3+ Charge | **none set** |
+| Spinstone | Shockquills (`bestiary/shockquills.md`) | dangerous to harvest *correctly* — the kill has to be at 3+ Charge | **none set** |
 | Bellows dust | Blowback Beetle (`bestiary/blowback-beetle.md`) | has to be beaten in a fight | **none set** |
 | Redgum | Bloodelm (`flora/bloodelm.md`) | on somebody else's tree — it has to be asked for | **none set** |
 

@@ -53,7 +53,7 @@ They do not coordinate. They also do not need to — a group of them all chargin
 
 **The gland is the prize. The quills are a byproduct.** Cutting the spinstone gland out is straightforward butchery once you know it's there, and knowing it's there is the whole difficulty — the animal advertises the quills and hides the reason they work.
 
-**Whether the stones are worth anything is decided during the fight, not after it.** They hold whatever alignment they were in when the animal died. A Shockquill killed at **3 or more Charge** dies with the gland at speed, and the stones lock in alignment and keep turning against each other for months afterward — that's **spinstone grind** (`campaign/kevin.md`). Killed at 0 to 2, they settle, cancel one another out, and go dead in the hand: ordinary iron grit, worth nothing to a cook.
+**Whether the stones are worth anything is decided during the fight, not after it.** They hold whatever alignment they were in when the animal died. A Shockquill killed at **3 or more Charge** dies with the gland at speed, and the stones lock in alignment and keep turning against each other for months afterward — that's **spinstone** (`campaign/kevin.md`). Killed at 0 to 2, they settle, cancel one another out, and go dead in the hand: ordinary iron grit, worth nothing to a cook.
 
 So the ingredient has a price and the price is paid in the fight. A party that plays it safe — rush it, ground it out, kill it flat — walks away with fletching and gravel. A party that wants the good ingredient has to deliberately let a small dangerous animal become a large dangerous animal, and then handle it at full charge. That is the entire gate, and none of the others work like it: the Scorchback is dangerous to *harvest*, the Hush Bloom is slow to harvest, the Blowback simply has to be beaten, and the Shockquill is dangerous to harvest *correctly*.
 
@@ -62,7 +62,7 @@ So the ingredient has a price and the price is paid in the fight. A party that p
 ## Loot
 
 - **Quills** — always. Fletching, needles, a passable stylus.
-- **Spinstone grind** — only from a kill at 3+ Charge. Ground stone and gland together, faintly warm, still turning against itself in the jar, and it makes a drink or a grinder round arrive before it should.
+- **Spinstone** — only from a kill at 3+ Charge. Ground stone and gland together, faintly warm, still turning against itself in the jar, and it makes a drink or a grinder round arrive before it should.
 - **Dead grit** — from a kill at 0 to 2 Charge. Iron sand. A smith will take it off your hands for close to nothing.
 
 ---
