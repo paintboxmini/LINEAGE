@@ -70,6 +70,8 @@ Then: **the crash needs the lockdown** (the berth is short because the barge has
 
 **Deep.** Caught in the act, Kino runs instantly and the others scatter into the stalls. A chase catches Bean, who knows nothing and says all of it. **A chase that goes well still ends at a hole in the Ribs sized for somebody under fourteen**, which is the whole security model and a better scene than catching anyone.
 
+**What catching Bean costs him** *(2026-10-07)*. **A caught Scarf is not jailed, he is put back to work** — bound into the dock warehouses, where the cargo is stacked badly enough to crush a child (`places/vultures-nest.md`, What they ran from). *Handing Bean to the Compact sends him there. Nobody will say so out loud; Bartho will look at the party a moment longer than he needs to.*
+
 **Skipped.** Lose *robbed by children*, and lose the best version of Aege's dinner — she buys if they got skimmed that day.
 
 **Leaves behind.** The kids have them. Kino will pretend it never happened.

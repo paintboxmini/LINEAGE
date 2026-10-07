@@ -230,6 +230,22 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 
 Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
 
+### What they ran from — the warehouses
+
+*Drew, 2026-10-07.* **Oliver Twist, on a river.** The touchstone is England in the Industrial Revolution: **children are labour here, and nobody in charge thinks that is strange.** *A gap in the files means an ordinary medieval world* (`CLAUDE.md`, Conventions); **this is a marked exception, and the Nest is where it lives.**
+
+**A kid with nobody on the docks gets put to work.** Taken in, fed, given a place to sleep — **and bound to the work**, sleeping where they labour and locked in at night. *It is called looking after them. It is a prison with a wage nobody ever sees.* **The Scarves would rather live on the street than go back**, and every one of them has either been in or knows somebody who still is.
+
+**The commonest place they are sent is the dock warehouses.** The conditions are awful. **Cargo is stacked however it came off the boat** — high, fast and haphazard, by crews paid to move it, not to stack it — and **it comes down.** A stack shifts, a crate slides, and whatever is underneath is crushed. **The kids are underneath because they are small**: sent into the gaps between the stacks to fetch from the back, sent up the stacks to sling a rope, sent in where a grown hand cannot reach. *Every Scarf has a name they do not say, for a kid who was under one when it came down.*
+
+**It is the same skill that built the Ribs.** A child who spent a year being sent into gaps sized for nobody else learns to move through them better than anyone alive — and the Ribs is that skill turned into a home, where every way in is sized for somebody under about fourteen (The Ribs, below). *What the warehouses taught them is the reason nobody can follow them now.*
+
+**Getting caught does not mean a cell.** **It means being taken back in.** That is what the nail wall of scarves partly holds — *the kids who got caught* (The Ribs, below). **A party that chases Bean down and hands him to the Compact has sent him to the warehouses** (The Red Scarves, If caught in the act, above). *Nobody will tell them so. Bartho will look at them a moment longer than he needs to.*
+
+**And this week the warehouses are worse than they have ever been.** The sweep put a whole stretch of impounded berth into Compact warehouses at once (The Quarantined Barge, above) — **more cargo than the floors were meant for, stacked in a hurry by men under orders.** *Kids are being sent into those stacks right now.*
+
+**Who holds the binding is not set.** The warehouses sit under the Compact's dock and pay its percentage; the floors are rented by whoever is moving freight. **Whether the five families have a hand in it is Chris's backstory to say, and is not written ahead of it** (The Red Scarves, Who is above them, above).
+
 ---
 
 ### The Ribs — where the Scarves live
@@ -240,7 +256,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **Every route has three exits.** Nothing in there is a dead end, on purpose, and the kids know which ones go to water. An adult who does get in is in a crawl with no way to cut off what they are chasing.
 
-**What's actually in it.** Almost nothing worth money. The chain moves anything sellable out within the hour — that is the whole design (see The operation, above) — so the Ribs holds the things kids keep: bedding, a stove they only light after dark because smoke over the deck at noon is an answer to a question, cooking pots, and a nail wall of scarves belonging to kids who left, got caught, or didn't come back. Nobody takes those down.
+**What's actually in it.** Almost nothing worth money. The chain moves anything sellable out within the hour — that is the whole design (see The operation, above) — so the Ribs holds the things kids keep: bedding, a stove they only light after dark because smoke over the deck at noon is an answer to a question, cooking pots, and a nail wall of scarves belonging to kids who left, got caught, or didn't come back. *Caught means taken back into the warehouses* (What they ran from, above). Nobody takes those down.
 
 **And the unsellable haul**, which is the part that matters for play. Everything pilfered that can't be moved for coin ends up in a crate down there and stays: letters, a child's carving, a locket with somebody's name inside it, a key to a door in another town. **This is where a party's stolen personal effect actually went**, and it is still there weeks later — which is the honest version of the note above about playing a recovered item for texture rather than punishment.
 
@@ -525,6 +541,8 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 *The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
 
+- **Who holds the kids' binding** — the arrangement that puts them to work in the warehouses (What they ran from, above). *Whether the five families have a hand in it is Chris's backstory to say*
+- **What happens to a Scarf who grows too big for the Ribs.** Every way in is sized for under about fourteen, and Kino, at fifteen, is the one who no longer sleeps there
 - **The name of the high country.** The animal was named on 2026-09-25 (`bestiary/gollop.md`); the range still has no name at all, and the Gollop's cards carry a NEST tag until it does (`cards/gollop.md`)
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
 - **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
