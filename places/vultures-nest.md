@@ -244,7 +244,27 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **And this week the warehouses are worse than they have ever been.** The sweep put a whole stretch of impounded berth into Compact warehouses at once (The Quarantined Barge, above) — **more cargo than the floors were meant for, stacked in a hurry by men under orders.** *Kids are being sent into those stacks right now.*
 
-**Who holds the binding is not set.** The warehouses sit under the Compact's dock and pay its percentage; the floors are rented by whoever is moving freight. **Whether the five families have a hand in it is Chris's backstory to say, and is not written ahead of it** (The Red Scarves, Who is above them, above).
+**Who holds the binding: Mercer** *(2026-10-07; `characters/mercer.md`)*. He owns the worst floors on the dock, takes children in, binds them until fourteen, and **places** them — on his own floors, with the sweeps, in the smokehouses and ropewalks — for a fee from every master. *He keeps a standing reward for returned runaways, which is what handing Bean over actually pays.* **Whether he answers to the five families is Chris's backstory to say, and is not written ahead of it** (The Red Scarves, Who is above them, above).
+
+**The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Jonah was one* (`characters/jonah.md`).
+
+**Fourteen.** *Drew, 2026-10-07.* **At fourteen a child counts as an adult for responsibility**: they can be hired for real work on their own word, and **taken on as an apprentice to learn a profession.** *It is apprenticeship age.* **Every binding ends there**, and nobody can be "taken in" after it. **So that is what the Red Scarves are for: getting kids to fourteen free.** The Ribs is sized for under-fourteens because that is who needs it (The Ribs, below), and a Scarf who reaches fourteen hangs the scarf on the nail wall and goes and finds a trade. *Kino, at fifteen, is the one who stayed* — running it rather than leaving it, and the only one who does not sleep there (Key NPCs, Kino / "Sawyer").
+
+**What fourteen is worth depends on who you are when you get there.** A kid off Mercer's floors walks out with no trade and gets hired back as a dockhand at the bottom wage (`characters/mercer.md`). **A kid with somebody to vouch for them gets a master.** *That gap is what Jonah is trying to close* (`characters/jonah.md`).
+
+### People looking in
+
+**Three people the party can meet who want something from the Scarves.** *All three are about the same question — who gets to say where a child goes.*
+
+- **Mercer**, the warehouse owner — *wants his runaways back* (`characters/mercer.md`)
+- **Jonah**, priest of the Rivers — *wants to give them a house with no lock on the door, and cannot get one of them through it* (`characters/jonah.md`)
+- **The Ashbys** — *want their son*
+
+**The Ashbys.** *Created 2026-10-07: Drew asked for a family looking for a kid.* **Dell and Maren Ashby**, from upriver, ordinary people, here in the Nest asking every stall and every dockhand about a boy. **Two hard winters ago, one of Mercer's agents came through** and told them their son would be fed and taught a trade. **They signed with a mark.** *They thought they were giving him a future. They were giving him to a warehouse floor.*
+
+**The boy is Tib**, eleven now, and **he ran from the floor a year ago and is a Red Scarf.** *He is the kid at the edge of the market who will not look at the couple asking questions.* **Tib thinks his parents sold him.** *By the paper, they did.* **They think they were lied to.** *They were.* Both of those are true, and the party may be the only people who ever hear both sides.
+
+**They have saved to buy his binding back**, and it is not enough — and **Mercer would sell it them**, which is the worst thing about him. *What they do not know is that Tib is not on the floor any more, and that a Scarf does not let a grown-up near another Scarf, parents included.*
 
 ---
 
@@ -541,8 +561,8 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 *The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
 
-- **Who holds the kids' binding** — the arrangement that puts them to work in the warehouses (What they ran from, above). *Whether the five families have a hand in it is Chris's backstory to say*
-- **What happens to a Scarf who grows too big for the Ribs.** Every way in is sized for under about fourteen, and Kino, at fifteen, is the one who no longer sleeps there
+- **Whether Mercer answers to the five families** (What they ran from, above) — *Chris's backstory to say*
+- ~~**What happens to a Scarf who grows too big for the Ribs.**~~ *Settled 2026-10-07: fourteen is apprenticeship age, and they leave to find a trade (What they ran from, Fourteen)*
 - **The name of the high country.** The animal was named on 2026-09-25 (`bestiary/gollop.md`); the range still has no name at all, and the Gollop's cards carry a NEST tag until it does (`cards/gollop.md`)
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
 - **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
