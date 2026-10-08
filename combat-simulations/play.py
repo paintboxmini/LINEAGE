@@ -18,7 +18,7 @@ import sys
 import cards as cardlib
 from agents import HumanAgent, RandomAgent, SimpleAI
 import engine
-from engine import (BACK, FRONT, MUST_TARGET, NO_ATTACK, NO_TARGET,
+from engine import (BACK, FRONT, LOST_TRACK, MUST_TARGET, NO_ATTACK, NO_TARGET,
                     SKIP_DRAW, Combatant, Outcome, d, resolve_attack,
                     set_table)
 from wheel import Wheel
@@ -109,12 +109,31 @@ def take_turn(who, agent, foes, allies, wheel, log, rng):
     # the agent as one.
     foes = [f for f in foes if f.restriction(NO_TARGET) is None]
 
+    # OUT OF MIND: a combatant you have lost track of is not somebody you
+    # can attack. Finding it again costs your Action, so a character with
+    # nobody else left to swing at spends the turn looking.
+    lost = [f for f in foes if who.restriction(LOST_TRACK, who=f) is not None]
+    if lost:
+        seen = [f for f in foes if f not in lost]
+        if not any(f.alive() and not f.down for f in seen):
+            found = lost[0]
+            for p in [p for p in who.pending
+                      if p.kind == LOST_TRACK and p.data.get('who') is found]:
+                who.pending.remove(p)
+            log(f'{who.name} spends their Action finding {found.name} again.')
+            return
+        foes = seen
+
     if who.staggered:
         who.staggered -= 1
         log(f'{who.name} is Staggered — their attack is skipped.')
         return
 
     who.extra_attacks = who.extra_actions = 0
+    # A Trait that grants more than one Action a turn (the weeping wolf's
+    # Never Still). One draw and one free action still; only the Action
+    # repeats.
+    who.extra_actions = max(0, getattr(who, 'actions_per_turn', 1) - 1)
 
     # One Action, plus anything a card hands back mid-turn. The cap is a
     # safety rail rather than a rule: DOUBLE DOWN can draw into a second

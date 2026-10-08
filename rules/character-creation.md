@@ -28,7 +28,7 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 |---|---|---|---|
 | **Colour** | Red | Blue | Green |
 | **Damage** | Body + die on Red | Mind + die on Blue | Soul + die on Green |
-| **Derived** | **HP**, weighted 4× | **Hand size** (minimum 2) | **Initiative**, 1d6 + Soul |
+| **Derived** | **HP**, weighted 4× | **Hand size** (no minimum) | **Initiative**, 1d6 + Soul |
 | **Also governs** | Physical speed and force | Reasoning and control | Reflexes |
 | **Check** | Overcome a physical obstacle, impose physical control | Obtain or interpret information, solve, predict, argue | Create and hold bonds, resist spiritual pressure, enforce oaths |
 | **Save** | Fatigue, falls, cold, pain, forced movement | Illusions, manipulation, memory interference | Fear, corruption, possession, despair |
@@ -105,7 +105,31 @@ Only equipped items grant mechanical effects. Carrying something unequipped mean
 
 **Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure). *Consumables are the exception and go the other way: free action unless the item says it costs your Action (`rules/combat.md`, Free Actions).*
 
-**Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
+**Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is; the cards are your damage, and **the gear is free precisely because it is not carrying anything.** Describe it, change it, lose it, replace it.
+
+**Basic supplies are assumed, and there is no inventory list** *(Drew, 2026-09-27)*. Rope, torches, travelling rations, a waterskin, flint, a blanket — **a player says they have it and they have it**, within reason. Nobody writes it down, nobody tracks it, and nobody is asked to have bought it in advance.
+
+***The limit is the person, not a list.*** The only reason a character would not have ordinary kit is that their own story says so, and that question answers itself off what is already written: **Code grew up in a dark vertical ruin where climbing is how you get anywhere, so rope and a light are second nature to him** (`places/abyssal-ruins.md`); **Kevin grew up in a temple that runs cargo boats** (`characters/ossian.md`); **Caine spent twenty years in an army.** *Two of the three fled somewhere in a hurry and it still does not bite, because they have been at the Nest two months and a port sells rope.*
+
+**A specialist tool is a claim rather than an assumption** — lockpicks, a grappling hook, a disguise kit. Same test asked harder: *would this person have this, and why.* **A yes is fine and common**, because owning a thing was never the problem: **an object does not buy permission and does not buy success.** Having it is why the table might agree the attempt exists (What a discard buys, in `rules/resolution.md`); whether it works is still a check.
+
+**And the check is where the GM holds the final say.** If an item would break a scene rather than solve a problem inside it, *the check does not work* — the item stays real and the attempt still happens. **That is a sparing tool with a stated cost**, and the rule for using it is in `rules/gm-guide.md`, When to Call for Rolls.
+
+***Who the character is does not live here*** *(corrected 2026-09-27)*. It is in the stats, the cards, the Passives, a Trait, the Skills and the Price — and in Magic Expression, which puts what a card *looks like* in the player's hands rather than in an object's (Magic Expression, below). **A character holding nothing is not a character with something missing.** *This paragraph used to end "the gear is who you are," which took a true sentence about gear having no mechanical weight and turned it into a false one about gear carrying all the character weight. It also read as a demand — decide what you own before you are allowed to be somebody — which is the opposite of what the rule is for.*
+
+<!-- print:skip-start -->
+**And the first table to use this rule proved it in three directions at once** *(2026-09-27)*. Nobody coordinated it:
+
+| | |
+|---|---|
+| **Caine** | **Chose no gear at all**, and asked for one object — a scrap of cloth with no bonus on it (`campaign/pat.md`, The scrap) |
+| **Code** | **Gear is nearly incoherent for him.** He is a fixed quantity of metal that becomes other things; his one object is a book with no rules attached (`campaign/chris.md`) |
+| **Kevin** | **Built entirely out of gear.** A grinder, a knife, a bandolier and three supply economies, and the character does not function without them (`campaign/kevin.md`) |
+
+**A rule that supports both ends of that without a patch is priced correctly.** One character loses nothing by owning nothing and another is constructed out of what he carries, and neither needed an exception written for them.
+
+**And none of the three reached for the obvious move**, which was worth noticing: an object grants no bonus but can still make an attempt *plausible*, so a packing list of quiet enablers was available to anybody who wanted one. **Nobody built one.** *Which is the good outcome and does not need a rule behind it — basic supplies are assumed anyway (above), so there was never anything to win by listing them, and* ***a list is not a person***: *"a man who left with a single object is a clearer character than a man with a packing list"* (`campaign/pat.md`).
+<!-- print:skip-end -->
 
 **Starting gold is set by the GM, once, and is capped at 40** (`rules/equipment.md`, Starting Gold). It is not a reward and it is not rolled — it is the one lever for levelling sheets that came out of creation holding very different amounts of *stuff*, since stats, cards and Passives are already even. **Nobody starts with enough to buy anything off the gear ladder**, which is deliberate: the cheapest real purchase is a Tier 1 accessory at ~100 gold and it is meant to arrive around session three, not session one.
 
@@ -209,6 +233,8 @@ Pick **two** at creation — either a specific trained action (Lockpicking, Nego
 
 A Skill is a literal tag on the sheet, not a card. It either plainly covers what you're attempting or it doesn't — no table judgment call the way a card's name needs one. Mechanical effect: `rules/resolution.md`, Skills.
 
+**A broad Skill bundles several tags into one, at +1 instead of +2** *(Drew, 2026-10-03)*. Persuasion, Deception and Intimidation as a single Skill is the example it was written for (`campaign/chris.md`, Skills). Agree the tags it covers with the GM when you take it and write them on the sheet — **it is still a literal tag, just a wider one**, and it covers exactly what it names. *Trading depth for reach is the whole deal: wider than any ordinary Skill, never as sharp as one.*
+
 ---
 
 ## Passives
@@ -291,6 +317,32 @@ A Body card might be a punch, a shove, a weapon strike, the ground shifting unde
 None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
 
 You don't have to explain the metaphysics. Neither does your character.
+
+### Working without a card
+
+*(2026-09-27.)* **A character's deck is not the limit of what their magic is.** The section above says the card gives the outcome and the look is yours. The question underneath it is what happens when a player wants an outcome **no card in their hand covers** — Pat sending a spirit ahead to scout, when nothing in his nine says scout.
+
+**The answer is yes, and it costs a Price.** *Nothing here is exempt from cost* (`rules/equipment.md`, The Price): the world permits the working and then answers it. **A card is a working that has already been paid for** — bought at creation or earned at advancement — which is why playing one costs an Action and nothing else. **Off-card there is nothing standing between the character and the world, so the world collects directly.**
+
+**The Price is negotiated before the working happens**, and the negotiation is the player proposing and the GM deciding.
+
+***That is not the character choosing their own Price, which stays barred*** (`rules/equipment.md`: nobody chooses their own Price, and skill shifts *where* a Price lands rather than whether it is paid or how much). **The player and the character are two different people.** The character reaches out and finds out what it costs; the table agrees what that was. *Exactly the split the game already runs when a table negotiates which stat a save uses* (`rules/resolution.md`, Core Resolution).
+
+**Negotiating first is the point rather than a politeness.** A Price named afterwards is a punishment. **A Price named before is a decision** — the player hears the cost and can decline and do something else. *So the sequence is: say what you want, hear what it costs, then choose.*
+
+**What a Price is made of.** Everything `rules/equipment.md` says about Artifact Prices holds here — it answers the shape of what was taken, it scales with magnitude, and it need not land only on whoever reached. The currencies this game has to hand: **HP; a card out of hand or off the top; an Exhaust or a Wound into the deck; time on whatever clock is running; control, where the thing arrives and is not yours; and being noticed by something that was not watching before.** *That last one is the most useful and the least mechanical.*
+
+**A floor, so that negotiable does not drift to free: the Price has to cost something this session will notice.** A cost that lands only in some later session nobody has planned is not a Price, it is a promise.
+
+**And a ceiling on how often.** Off-card working is for the thing a player wants that their deck cannot say — not a second way to take a turn. ***If it is happening every session then the card is missing, not the rule.*** Write the card and put it in that character's advancement deck (Advancement, below), where a working that keeps being wanted belongs.
+
+<!-- print:skip-start -->
+**Worked example, 2026-09-27 — the scouting spirit, and the Price is control.** Pat wants to send a spirit up the road ahead of the party. Nothing in his nine cards says scout, so it is off-card, and **the Price is that the spirit goes and what comes back is what it noticed** — not an answer to the question he asked. He wanted to know how many are at the gate. He learns there is meat somewhere past it, that two of them smell like the river, and that something under the cart did not like being looked at.
+
+*Why control is the right currency here rather than HP or a card.* **The working succeeded** — charging HP for it would make the Price a tax on trying, which is the thing a flat cost always becomes. Control is instead **the shape of what was taken**: he asked the world for a creature to act on his behalf and got one, and a creature acting on your behalf is not you. **A spirit that reports exactly what was asked is a free card. A spirit that reports what it saw is a working with a cost inside it.**
+
+*And it is the easy ruling to make at the table, which matters more than it sounds.* The GM does not have to price an exchange or invent a consequence — **they answer as the dog.** It also repeats without inflating: the cost does not climb the fifth time, it is the same shape every time, and a player who keeps paying it is learning to ask questions a dog can answer. *Which is a better skill than having the card.*
+<!-- print:skip-end -->
 
 ---
 

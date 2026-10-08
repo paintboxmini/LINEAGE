@@ -115,7 +115,27 @@ def make(name, st, pool, position, team, rng, sig=None, colors=None):
     return c
 
 
-def one_fight(foe_st, count, pool, rng, foe_sig=None, running_hot=False):
+_WORDS = {'two': 2, 'three': 3, 'four': 4}
+
+
+def traits_from(path):
+    """The Traits the engine has to be told about, read off the sheet's own
+    prose so the markdown stays the source: "takes two Actions each turn"
+    and "cannot gain Blind"."""
+    with open(os.path.join(REPO, path), encoding='utf-8') as fh:
+        text = fh.read()
+    out = {}
+    m = re.search(r'takes (two|three|four) Actions each turn', text, re.I)
+    if m:
+        out['actions_per_turn'] = _WORDS[m.group(1).lower()]
+    banned = {s.lower() for s in re.findall(r'cannot gain (\w+)', text, re.I)}
+    if banned:
+        out['cannot_gain'] = banned
+    return out
+
+
+def one_fight(foe_st, count, pool, rng, foe_sig=None, running_hot=False,
+              traits=None):
     party = [make(n, st, pool, pos, 'party', rng) for n, st, pos, _ in PARTY]
     foes = []
     for i in range(count):
@@ -123,6 +143,8 @@ def one_fight(foe_st, count, pool, rng, foe_sig=None, running_hot=False):
                  FRONT if i % 2 == 0 else BACK, 'foes', rng, sig=foe_sig)
         if running_hot:
             _arm_running_hot(f)
+        for k, v in (traits or {}).items():
+            setattr(f, k, set(v) if isinstance(v, set) else v)
         foes.append(f)
 
     everyone = party + foes
@@ -162,6 +184,7 @@ def sweep(slug, pool, runs, max_count, seed):
     except FileNotFoundError:
         sig = None  # creature with no signature cards; core fill only
     hot = slug == 'harlock'
+    traits = traits_from(src)
     total = sum(st.values())
     hp = 4 * st['body'] + st['soul'] + st['mind']
     label = f"{slug}  (M{st['mind']}/B{st['body']}/S{st['soul']}, HP {hp}, CTR {total})"
@@ -171,7 +194,8 @@ def sweep(slug, pool, runs, max_count, seed):
         rng = random.Random(seed)
         wins = hps = downs = deaths = 0
         for _ in range(runs):
-            r, h, dn, dd = one_fight(st, n, pool, rng, foe_sig=sig, running_hot=hot)
+            r, h, dn, dd = one_fight(st, n, pool, rng, foe_sig=sig, running_hot=hot,
+                                     traits=traits)
             wins += (r == 'party')
             hps += h
             downs += dn

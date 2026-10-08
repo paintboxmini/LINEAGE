@@ -1,39 +1,43 @@
-# Kevin Herb
+# Kevin — Flint Pepper
 
-**The Herbs are priests.** Not one temple — a great many of them, all over Eclipseria, in nearly every faith the Temple District recognises. Cousins, aunts, siblings, in-laws. It is simply what the family does, and it has never once had to be stated as an expectation.
+**The character's name is Flint Pepper** *(Kev's choice, 2026-10-02)*. ***"Flint Pepper is my name and savory is my game."*** *The family name used to be Herb; it is Pepper now, everywhere. The files call him Kevin after his player, the same way Pat's character is Caine.*
 
-**His father Ossian is the only Herb who runs one** (`characters/ossian.md`), at the Temple of Unity, which is the largest building in the district. Everyone else is a serving priest under somebody else's roof.
+**The Peppers are priests.** Not one temple — a great many of them, all over Eclipseria, in nearly every faith the Temple District recognises. Cousins, aunts, siblings, in-laws. It is simply what the family does, and it has never once had to be stated as an expectation.
 
-*So the thing Kevin declined was not a rule. Nobody forbade him anything and nobody had to. He grew up in a house where every single adult had chosen the same life, and he wanted to cook — which is not rebellion, it is just the first person in living memory to want something else. The shipment he is escorting is the job a family gives someone whose actual talent embarrasses them slightly, and it is being handled kindly.*
+**His father Ossian is the only Pepper who runs one** (`characters/ossian.md`), at the Temple of Unity, which is the largest building in the district. Everyone else is a serving priest under somebody else's roof.
+
+*So the thing Kevin declined was not a rule. Nobody forbade him anything and nobody had to. He grew up in a house where every single adult had chosen the same life, and he wanted to cook — which is not rebellion, it is just the first person in living memory to want something else.*
 
 ---
 
 ## The Pepper Is The Family Business
 
-**Revised 2026-09-19, and it changes what the kit is.** The earlier version of this file had the cooking as the thing Kevin chose *instead of* the Herbs, with the exploding produce as his own strange invention. It is the other way round.
+**The exploding produce is not his invention. It is the family's** *(2026-09-19)*.
 
-**There is a pepper in the Herb bloodline.** It reads as a peppercorn and it is a real ingredient — you can cook with it and people do. Cooked a particular way instead, **it detonates.** It is gunpowder that grew on a plant, and the family has had it for as long as the family has been the family.
+**There is a pepper in the Pepper bloodline — the family is named for it — and it is called grace** *(2026-09-28)* — for the prayer said over a meal, in a family of priests, and for the crown's leave that lets them grow it at all. It reads as a peppercorn and it is a real ingredient — you can cook with it and people do. Cooked a particular way instead, **it detonates.** It is gunpowder that grew on a plant, and the family has had it for as long as the family has been the family.
 
-**You are not allowed to make certain things without the crown's leave.** This one is on that list, and the Herbs hold the licence — which is why the pepper and the priesthood are the same story rather than two stories. They have it *because* they are the church, and the licence is worth more than the pepper.
+**You are not allowed to make certain things without the crown's leave.** This one is on that list, and the Peppers hold the licence — which is why the pepper and the priesthood are the same story rather than two stories. They have it *because* they are the church, and the licence is worth more than the pepper.
 
 **And shipping it is what they do.** The wine leaves the Temple of Unity at volume and outside Lady Elara's tax (`characters/ossian.md`, The Wine); the pepper goes out on the same boats, under the licence rather than around it. *One cargo his father moves by refusing to file, one he moves by holding the paperwork nobody else can get. Ossian would tell you those are the same principle applied twice, and he would mean it.*
 
 **So Kevin had a crate of the stuff and a kitchen, and nobody watching closely.** That is where the grinder came from. He was not inventing the explosive; he was playing with the family's, in the only room he actually wanted to be in.
 
-### What this does and does not change
+### What it means for the kit
 
-- **He has gunpowder, and he can use it.** The line this file used to carry — *no gunpowder, no explosives of any kind* — is gone. It was never the interesting restriction.
-- **The restriction that replaced it is scarcity.** What is rare is the pepper, not the idea. **Scarcity and the exact mechanics are the balancing levers** — that is a deliberate choice about where to tune him, not an omission. The Ingredients section below already runs on exactly this: he is never short of ammunition, only ever short of good ammunition.
-- **The craft still stands as written.** Reduce, Charge, Seal; the oranges; the drinks. All of it is what you do to the pepper, and the oranges are the same technique aimed at a fruit that is not the family's.
-- **The grinder still stands as written.** When Kevin said *I make bullets now*, he meant he prepares the rounds — not that the weapon feeds a magazine. One crank, one shot, and the loading is a free action.
+- **He has gunpowder, and he can use it.** A ban on explosives was never the interesting restriction.
+- **The restriction that replaced it is scarcity.** What is rare is the pepper, not the idea. **Scarcity and the exact mechanics are the balancing levers** — that is a deliberate choice about where to tune him, not an omission. The Ingredients section below already runs on exactly this: **he is rarely short of ammunition and always short of good ammunition — until the grace runs low.**
+- **The craft is all done to the pepper.** Reduce, Charge, Seal; the oranges; the drinks. All of it is what you do to the pepper, and the oranges are the same technique aimed at a fruit that is not the family's.
+- **The grinder fires one prepared round at a time.** When Kevin said *I make bullets now*, he meant he prepares the rounds — not that the weapon feeds a magazine. One crank, one shot, and the loading is a free action.
 
 ---
 
-*Player character — still a light draft, more filled in than before but nothing here is locked. Everything about him lives in this one file: stats, concept, the craft, the ingredients, the drinks, and the card drafts.*
+*Player character. Everything about him lives in this one file: stats, concept, the craft, the ingredients, the drinks, and the card drafts.*
 
-## Stats — Unconfirmed
+## Stats
 
-Body 4 / Mind 3 / Soul 2 — tentative, not settled yet. If it holds: HP 21, hand size 3, Initiative 1d6 + 2.
+**Body 4 / Mind 3 / Soul 2 — locked 2026-09-27, Drew's call.** HP 21, hand size 3, Initiative 1d6 + 2, deck of 9.
+
+*Locked rather than merely agreed, because more of this sheet hangs off these three numbers than off anything else on it.* **Every measured judgement below was made against them:** GRIND SHOT's d6 was set by comparing a signature to Blue Ranged's average with **Mind 3**; BREAK DOWN is a d8 because **Body 4** is his best stat and his close game; ON THE FLY is deliberately his weakest card because **Soul 2**; the draft shape is 4 Red / 3 Blue / 2 Green; and the 400-fight measurement that found 4.8 damage an attack, an 85% party win rate, and supply rather than the die as the lever — all of it ran on this line. **A stat moving by one would want every one of those re-checked**, which is the reason to close it before session one rather than during it.
 
 | Stat | Value | Drives |
 |------|-------|--------|
@@ -61,19 +65,19 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 **He is not a good student and he is barely a student.** He attends. He does not really attend. Nobody is checking, the fees are his father's problem, and *right now they probably don't even know he is gone.* The reference the table reached for was Mugen and Jin — the two of them are not the same kind of person and were never going to be, and that is the fun of it.
 
-**Going to college was the excuse, and it worked because it was not a lie.** His father wants him in the order. Kevin does not want the order. *I'm going to go learn* is the one sentence that gets a Herb out of the Temple District with the family's blessing and the use of the family's boats, and Kevin meant it enough to say it.
+**Going to college was the excuse, and it worked because it was not a lie.** His father wants him in the order. Kevin does not want the order. *I'm going to go learn* is the one sentence that gets a Pepper out of the Temple District with the family's blessing and the use of the family's boats, and Kevin meant it enough to say it.
 
 **He went, he got the knife, and he came back.** The vibro knife came from Chris — an alien with a piece of technology this world does not otherwise have, and a friend who did not need a reason to hand it over (Gear, below).
 
-*Nothing here costs him his backstory.* He has been at the University a month, a year, whatever the table wants; the temple is still home, the family is still the family, and the boats still run. Sleep at the church, go back to school.
+*Nothing here costs him his backstory.* **He had been at the University about a year** *(2026-09-28)* — long enough to know Chris properly and be handed the knife, not long enough to stop being barely a student. The temple is still home, the family is still the family, and the boats still run. **What he cannot do is go back to school**: he fought the University's men the night they came for Chris, and it is still looking.
 
 ### And then it ended badly
 
-**The University came for Chris.** It found out what he was, decided a thing that came through the largest rift in the world would make a better weapon than a subject, and sent men to take him (`campaign/chris.md`, The Night They Ran). Chris's father — a scholar at that same University, who had raised him in secret — put himself in the way and told his son to run.
+**The University came for Chris.** It had already had him once as a child and experimented on him, before his father hid him; this time it found him again, decided a thing that came through the largest rift in the world would make a better weapon than a subject, and sent men to take him (`campaign/chris.md`, The Night They Ran). Chris's father — a scholar at that same University, who had raised him in secret — put himself in the way and told his son to run.
 
 **Kevin was in that fight, and Kevin is the one who ended it for Chris.** He took hold of him and physically tore him out of the moment, away from his father, because Chris was not going to leave on his own. *That is the single most important thing on Kevin's sheet and it is not a stat.* He saved his friend's life and he took the choice away from him in the same motion, and nobody has said a word about it since.
 
-**Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
+**Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, aboard the Merry Mint (From session 0, below), and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
 
 **What happened to Chris's father is unknown**, to Kevin as much as to anyone.
 
@@ -107,37 +111,50 @@ The wine and the pepper go to distant ports, and some of them are not respectabl
 
 **The grinder.** Feed a pepper into it. Turning the handle grinds the pepper, and the grinding ignites the flesh — the flesh is the propellant, and the seeds are the projectiles. One crank, one shot. What's loaded determines what the shot does; a different pepper is a different round.
 
-**It is a ranged weapon, and the shotgun reading is retired** *(2026-09-19)*. This section used to say "seeds, spread, short range — this is why the weapon reads as a shotgun." Kevin wants the knife up close and the grinder at distance, and a shotgun cannot be that. **So it throws a tight cone a long way rather than a wide one across a room**, and the thing that makes it frightening is what is in the shell rather than how much of the room it covers. *The seeds are still the projectiles; they simply go further and arrive together.*
+**It runs on a hopper and a chamber** *(Drew, 2026-10-07)*. **The hopper is full of plain grace peppers**, enough that nobody counts them, and it feeds the grinder on its own. **A special round goes in the chamber**, and a switch on the grinder sends that one through on the next crank instead of whatever the hopper offers. *So the grinder is always loaded with something, and the only thing anybody tracks is whether a special round is chambered.*
+
+**What that means at the table:**
+
+- **Plain shots are never tracked and never reloaded.** The hopper handles them. An empty chamber just means GRIND SHOT fires plain.
+- **Only special rounds are loaded.** Chambering one takes his free action, and he can do it before a fight.
+- **A special round is spent only by GRIND SHOT**, when it resolves, win or lose. Then the chamber is empty and the grinder is back on the hopper — **nothing to reload.**
+- **Any other card can be the grinder in the fiction.** He can play RETALIATE or FOCUS and say he did it with the grinder, and that is fine. **It does not touch the chambered round and it does not need a reload.** *The card's own text and Range are what happens; the grinder is just what it looks like.*
+
+**It is a ranged weapon, not a shotgun** *(2026-09-19)*. Kevin wants the knife up close and the grinder at distance, and a shotgun cannot be that. **So it throws a tight cone a long way rather than a wide one across a room**, and the thing that makes it frightening is what is in the shell rather than how much of the room it covers. *The seeds are still the projectiles; they simply go further and arrive together.*
 
 **The oranges.** Throwable incendiary grenades — the oils in the skin enhanced until they're properly combustible. Same craft as the peppers, different delivery: the pepper is a bullet, the orange is a bomb.
 
-**And it is not an orange you can buy** *(2026-09-21)*. It is **Burnrind** (`flora/burnrind.md`), a feral citrus on the Nest's spoil banks — thorny, plum-sized, no flesh at all, and a rind so oily it beads on the blade. It fruits the season after a spoil bank burns through and then makes nothing for years, so the supply runs entirely through other people's fires. *This closed the one hole in the whole kit: every round and every drink named the rare thing it was charged with, and the grenade — the strongest single thing he throws — named nothing and came off the general seasoning budget. It was the cheapest item on the sheet to restock and the most powerful to use, which is the wrong way round.*
+**And it is not an orange you can buy** *(2026-09-21)*. It is **Burnrind** (`flora/burnrind.md`), a feral citrus on the Nest's spoil banks — thorny, plum-sized, no flesh at all, and a rind so oily it beads on the blade. It fruits the season after a spoil bank burns through and then makes nothing for years, so the supply runs entirely through other people's fires. *Why: every round and every drink names the rare thing it is charged with, and the grenade — the strongest single thing he throws — has to as well, or it becomes the cheapest thing on the sheet to restock and the most powerful to use.*
 
-**They are a consumable now, not a card** *(2026-09-19)*. KINDLE is gone and the orange is a thing he carries and throws for a **free action** (Gear, below). *That is a better fit than a card in both directions: it stops a grenade competing for a slot in a nine-card deck, and it makes the orange a supply the party can run out of — which is the whole point of the ingredient economy this character is built on.*
+**They are a consumable, not a card** *(2026-09-19)*. The orange is a thing he carries and throws for a **free action** (Gear, below). *That is a better fit than a card in both directions: it stops a grenade competing for a slot in a nine-card deck, and it makes the orange a supply the party can run out of — which is the whole point of the ingredient economy this character is built on.*
 
 ### The process
 
 Everything he fires or throws goes through the same preparation. It is cooking, done wrong on purpose.
 
-1. **Reduce.** Draw the water out — low heat, hours, watched. What's left is flesh that burns instead of steaming. Costs time and a fire he controls, nothing else.
+1. **Reduce.** Take a grace pepper and draw the water out — low heat, hours, watched. What's left is flesh that burns instead of steaming. Costs time and a fire he controls, nothing else.
 2. **Charge.** Work a rare ingredient into the reduced flesh so its property survives the burn. This is where the money goes.
 3. **Seal.** Set the skin or husk so it holds pressure until the grinder breaks it, or until the orange lands. Sealed badly, a round is a dud; sealed worse, it goes off in the bandolier.
 
-Finding food that will take an enhancement is easy — peppers are peppers. What's scarce is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is never short of ammunition, only ever short of good ammunition.** A plain reduced pepper still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
+**Every round is a grace pepper** *(2026-09-28)* — the family's own. A plain round is one reduced and sealed with nothing worked in; a charged round is the same pepper with a seasoning worked in at stage 2. What's scarce day to day is the rare ingredient for stage 2 and the skill for stage 3, so **Kevin is rarely short of ammunition and always short of good ammunition.** A plain round still fires. It just does nothing except be fired. He doesn't track bullets. He tracks charges.
+
+**And grace is the one thing he cannot restock on his own — which makes it the ceiling on everything else.** A bag full of cinder flake and leadfoot is worth nothing without peppers to work it into. He does not count it; nobody at the table does. **What happens instead is that at some point the GM tells him he is running low — well in advance of it mattering** — and restocking means the only place grace comes from: the Peppers, who hold the licence, grow it, and ship it on the same boats that bring the temple wine into the Nest (`characters/ossian.md`, The Wine). *A resupply is a family conversation. That is the point of it.*
+
+**It is a story thread, not a penalty** *(Drew, 2026-09-28)*. The warning comes early enough that he will almost certainly find his own reason to go and get more before the bag is ever empty — *which is the scene the warning exists to produce.* **And GRIND SHOT always works.** Loaded with nothing it plays as a bare attack with no text, the same as a plain round, so a card in his hand never goes dead over something that happened between fights.
 
 ### Supply and restocking
 
 - **Preparation is a downtime activity.** The Reduce stage alone is hours.
 - **A session of work turns one measure of a rare seasoning into three prepared rounds or two servings of a drink** — a mouthful goes further than a shell, so a drink costs more than a round.
 - **The oranges are not on that budget and never were, properly.** One picking of Burnrind makes **two oranges** and makes nothing else (`flora/burnrind.md`). The fruit is the charge, so there is no seasoning to divert and nothing else to spend it on.
-- **Plain rounds are effectively unlimited.** Any market, any kitchen, any garden.
+- **Every round, plain or charged, is a grace pepper, and grace comes from his family.** Plentiful enough that nobody counts — **until the GM says he is running low**, which is a beat rather than a number (The process, above).
 - **Restocking is an ingredient problem, and ingredient problems are quests.** *Burnrind is the one that is a question rather than a fight — free, legal, lying on the ground, and impossible to find without asking the right person which bank went up and when.*
 
 ### What this build actually costs — read this before playing him
 
 **Drew's note, 2026-09-19, and it is the most important paragraph in this file for the person holding the sheet.**
 
-Look at what has accumulated: **a ranged d8**, carrying **the most powerful modality built for anyone so far** — six different cards out of one slot, switchable between turns. Plus **explosives**. Plus **drinks that hand out Quick, Ward, Resist, healing and initiative**. Nobody else at the table has three economies.
+Look at what has accumulated: **a ranged d8**, carrying **the most powerful modality built for anyone so far** — seven different cards out of one slot, switchable between turns. Plus **explosives**. Plus **drinks that hand out Quick, Ward, Resist, healing and initiative**. Nobody else at the table has three economies.
 
 **All three of them run on the same fuel, and none of it is free.** Gold, time, ingredients, and the difficulty of the prep itself are the balancing levers on this character — not the dice. *When the kit looks strong on paper, that is because it is being read with a full bandolier.*
 
@@ -147,11 +164,11 @@ Look at what has accumulated: **a ranged d8**, carrying **the most powerful moda
 
 **What that means at the table, concretely:**
 
-- **Restocking is a quest, not a shopping trip**, for everything except sapphire crystal. Four of the five loads have to be taken off something that did not want to give them up.
-- **The drinks compete with the rounds** for the same measures of the same rare seasonings (Supply and restocking, below). Three rounds *or* two drinks per session of work — he cannot have both.
-- **The oranges stopped competing on 2026-09-21 and got harder instead.** They come off Burnrind now (`flora/burnrind.md`), which is its own supply and a scarcer one. *That is a real change to this paragraph and it cuts both ways: rounds and drinks got slightly more plentiful, because the grenade is no longer eating measures they wanted, and the grenade itself went from expensive to genuinely finite. Net it is a nerf, because half a measure for two unpreventable damage across a whole position was the best trade on the sheet.*
-- **The free action caps how much of it he can spend per turn anyway** (One free action, three things that want it, above). Carrying more does not mean using more.
-- **And a plain round is now genuinely blank** (The Ingredients, above). The floor of this character is lower than it used to be, deliberately.
+- **Restocking is a quest, not a shopping trip**, for everything except sapphire crystal. Five of the six loads have to be taken off something — or someone — that did not want to give them up.
+- **The drinks compete with the rounds** for the same measures of the same rare seasonings (Supply and restocking, above). Three rounds *or* two drinks per session of work — he cannot have both.
+- **The oranges do not compete — they are scarcer instead.** They come off Burnrind (`flora/burnrind.md`), its own supply and a smaller one, so the grenade is genuinely finite rather than a cheap trade off the seasoning budget.
+- **The free action caps how much of it he can spend per turn anyway** (One free action, three things that want it, below). Carrying more does not mean using more.
+- **And a plain round is genuinely blank** (The Ingredients, below). The floor of this character is low, deliberately.
 
 ---
 
@@ -167,48 +184,54 @@ Look at what has accumulated: **a ranged d8**, carrying **the most powerful moda
 
 ## The Ingredients
 
-Five seasonings, gated five different ways: Sapphire Ant is **bought**, the Scorchback is **dangerous to harvest**, the Hush Bloom is **slow to harvest**, the Shockquill is **dangerous to harvest correctly**, and the Blowback simply has to be **beaten in a fight**.
+Six seasonings, gated six different ways: Sapphire Ant is **bought**, the Scorchback is **dangerous to harvest**, the Hush Bloom is **slow to harvest**, the Shockquill is **dangerous to harvest correctly**, the Blowback simply has to be **beaten in a fight**, and redgum is **on somebody else's tree** *(added 2026-10-06; `flora/bloodelm.md`, Redgum)*.
+
+**Leadfoot was hush petal until session 0** *(2026-10-03)*. Kevin's ask: the name did not fit an ingredient that roots a person where they stand. The flower is still the Hush Bloom; **leadfoot is what the dried petal is called once it is a seasoning** — the numbing goes to the legs first, and the feet go heavy. Same split as Scorchback and cinder flake.
 
 Ingredients don't have a colour. A seasoning is a seasoning; what it does is what it does, whatever card it rides on.
 
-**The load is not a rider any more. The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, six times over.
+**The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, seven times over.
 
 | Load | Effect | Defense Effect | Source |
 |------|--------|----------------|--------|
 | **Plain** | — | — | Anywhere |
 | **Sapphire crystal** | Defender gains Vulnerable | Attacker gains Vulnerable | `bestiary/sapphire-ant.md` — 2 copper at Senshi's counter |
 | **Cinder flake** | Deal +3 damage | Deal 3 unpreventable damage to the attacker | `bestiary/scorchback-beetle.md` — the Cindersink |
-| **Hush petal** | Defender gains Rooted | Attacker gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
-| **Spinstone grind** | Initiative Shift -2 to the defender | Initiative Shift -2 to the attacker | `bestiary/shockquills.md` — the Briarwatch red dirt |
+| **Leadfoot** | Defender gains Rooted | Attacker gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
+| **Spinstone** | Initiative Shift -2 to the defender | Initiative Shift -2 to the attacker | `bestiary/shockquills.md` — the Briarwatch red dirt |
 | **Bellows dust** | Push the defender to the Backline | Push the attacker to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
+| **Redgum** | Defender gains Weak | Attacker gains Weak | `flora/bloodelm.md` — Elowen *(2026-10-06; he has none yet)* |
 
-**Four of the five flip straight across**, because "defender" and "attacker" name the same person from opposite sides of the exchange. **Cinder flake is the one that could not**, and it is worth knowing why rather than just reading the fix: *a Defense Effect never has an attack to modify.* Defender wins, no damage; tie, no damage; attacker wins and the Defense Effect does not fire at all. There is no outcome in Attack Resolution where "+3 damage" has anything to attach to (`rules/combat.md`). So it burns them instead — unpreventable, because it is fire rather than an attack landing, the same reasoning the orange runs on.
+**Five of the six flip straight across**, because "defender" and "attacker" name the same person from opposite sides of the exchange. **Cinder flake is the one that could not**, and it is worth knowing why rather than just reading the fix: *a Defense Effect never has an attack to modify.* Defender wins, no damage; tie, the damage is the attacker's, landing on him; attacker wins and the Defense Effect does not fire at all. There is no outcome in Attack Resolution where "+3 damage" on *his* side has anything to attach to (`rules/combat.md`). So it burns them instead — unpreventable, because it is fire rather than an attack landing, the same reasoning the orange runs on.
 
 **Three of them are better on defence than on offence.** Rooting, shoving down the initiative order, and blowing someone off you are all worth more against the person who just committed to attacking you than against someone you picked. *The defence half is not the afterthought here; some turns it is the reason to hold the card.*
 
-**And the price is already written: the load is spent win or lose** (THE PEPPER GRINDER, above). Blocking with a good round burns the round. **Defending well costs him the shot he was saving**, every time, and that is the whole balance of the thing.
+**And the price is already written: the load is spent win or lose** (THE PEPPER GRINDER, below). Blocking with a good round burns the round. **Defending well costs him the shot he was saving**, every time, and that is the whole balance of the thing.
 
-**Plain is genuinely blank now.** A plain round makes GRIND SHOT a vanilla attack with no text at all — which finally makes *"never short of ammunition, only ever short of good ammunition"* bite instead of just reading well. He can always fire. Firing is often not worth the turn.
+**Plain is genuinely blank.** A plain round makes GRIND SHOT a vanilla attack with no text at all — which finally makes *"never short of ammunition, only ever short of good ammunition"* bite instead of just reading well. He can always fire. Firing is often not worth the turn.
 
-**Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. Not yet decided whether he's Kevin's supplier, teacher, rival, or something else, but he's the obvious connection point once Kevin reaches the Capital.
+**Senshi** (`places/capital/gilded-tusk.md`) — cook, Thessian, runs the Naturalist Collection: a menu of monster ingredients with real mechanical properties already attached. **He has a stock of cinder flake and leadfoot, and he will not sell it** *(2026-09-28)*. Whether he parts with any depends on how things stand between him and Kevin, and **the currency is ingredients, never gold** — he already loses money on the Fricassee and is delighted to (`places/capital/gilded-tusk.md`, The Fricassee loses money). **Bring him something he has never cooked and he will trade.** *So he is a rival for supply, a possible friend, and the one person in the Capital who values what Kevin carries for the same reason Kevin does.*
 
 ### The beverages
 
-Prepared drinks, handed out before the fight and drunk with a free action by whoever is holding one. Same craft as the rounds, same supply model. *Kevin used to hand them over mid-fight with SERVE; the party carries its own now, which is what retired that card.*
+Prepared drinks, handed out before the fight and drunk with a free action by whoever is holding one. Same craft as the rounds, same supply model.
 
 | Drink | Effect on the drinker | Charge | Sells for |
 |-------|-----------------------|--------|-----------|
 | **Bitter Shot** | Gain Quick | Plain | ~10 gold |
 | **The Early Cup** | Apply Initiative Shift +1 to yourself | Plain | ~10 gold |
-| **Still Water** | Gain Ward and heal 3 HP | Hush petal | ~20 gold |
+| **Still Water** | Gain Ward and heal 3 HP | Leadfoot | ~20 gold |
 | **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake | ~20 gold |
-| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone grind | ~30 gold |
+| **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone | ~30 gold |
+| **Up All Night** | Gain Ward and draw 1 | Wakebark *(drink only)* | ~20 gold |
 
-The two plain ones are the floor, the same way plain rounds are. Stronger recipes get worked out at the table as he actually makes them (`rules/items.md`, Crafting).
+The two plain ones are the floor, the same way plain rounds are. **Up All Night is the one drink whose charge is good for nothing else** — wakebark does not survive the burn, so a measure of it is two of these and never a round (`flora/wakebark.md`, *added 2026-10-06; he has none yet*). Stronger recipes get worked out at the table as he actually makes them (`rules/items.md`, Crafting).
+
+**What is actually in them is deliberately unsettled** *(2026-09-27)*. The names do not commit: **Bitter Shot** reads as coffee at least as easily as spirits, **The Early Cup** is a morning cup, and **Still Water** is the one that leans liquor — *the water a still produces.* **That ambiguity is worth keeping rather than resolving**, and it leaves two doors open that a fixed answer would shut: **Kevin gets to decide what he actually put in any given batch**, and any character at the table can take a restriction about what they will drink without a single recipe needing rewriting (`campaign/pat.md`, Straight edge). *He is a cook. If somebody will not drink a thing, he makes it again differently, and that is a five-second answer rather than a rules problem.*
 
 **The gold is what somebody else pays, priced 2026-09-21 at the flat rate of 10 a point** (`rules/equipment.md`, Pricing Consumables) — one point for a status stack, and healing 4 as the anchor, so Still Water's heal 3 and Ward is two points. *Two of these numbers rest on a judgement the scale does not make: Initiative Shift and card draw are not on it. A +1 shift and a draw are counted as a point each here because they feel like one. If a shift is worth more than that at the table, The Early Cup and Hair of the Quill both go up.*
 
-**Three of the five cost him a round he would otherwise have fired.** Still Water eats a hush petal, Second Wind Cider a cinder flake, Hair of the Quill a spinstone grind — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
+**Three of the six cost him a round he would otherwise have fired.** Still Water eats a leadfoot, Second Wind Cider a cinder flake, Hair of the Quill a spinstone — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
 
 ### What any of it is actually worth to him
 
@@ -217,12 +240,10 @@ The two plain ones are the floor, the same way plain rounds are. Stronger recipe
 His real exchange rate is already written above under Supply and restocking: **one measure of rare seasoning becomes three prepared rounds or two servings of a drink.** So:
 
 - A drink costs him **a round and a half**.
-- A round is the cheapest thing he makes, and the only one he can make from the plain stock indefinitely.
+- A round is the cheapest thing he makes, and a plain one costs him nothing but a grace pepper — plentiful until the day it isn't.
 - **An orange costs him neither.** It is off this exchange entirely and on Burnrind's, where the rate is one picking to two oranges and there is nothing else the picking could have been (`flora/burnrind.md`).
 
 **That 3:2 is the economy to play against, not the gold** — and the oranges are a second economy beside it that does not trade with the first. The gold matters when he is selling to somebody, bartering with Senshi (`places/capital/gilded-tusk.md`), or working out whether a job is worth taking. What he spends an afternoon making is decided by the ingredient, not by the price list.
-
-*This used to be a three-way 3:2:2 and the change is worth understanding rather than just reading. Under the old rate an orange was the best buy on the sheet — half a measure for two unpreventable damage across a whole position, against a third of a measure for one round that has to beat somebody to do anything. Nothing about the orange has been weakened. It simply cannot be bought with the thing he has most of any more.*
 
 ### What he starts with
 
@@ -231,39 +252,40 @@ His real exchange rate is already written above under Supply and restocking: **o
 | | |
 |---|---|
 | **3 incendiary oranges** | What is left of two pickings of Burnrind. Where either bank was is a question for the table, not an answer written here |
+| **2 Burnrind, raw** | *(Added 2026-10-04.)* Two more pickings, not yet made up — **four more oranges** the first time he has a fire and an evening (`flora/burnrind.md`) |
 | **3 cinder flake rounds** | +3 damage, or 3 unpreventable back at an attacker. One whole measure, worked up and untouched |
-| **2 hush petal rounds** | Rooted, either direction. A measure with one round already gone out of it |
+| **2 leadfoot rounds** | Rooted, either direction. A measure with one round already gone out of it |
 | **1 Bitter Shot** | Quick |
 | **1 The Early Cup** | Initiative Shift +1. Both drinks are plain-charge, so neither cost him a seasoning — which is why these two and not the good ones |
-| **Plain rounds** | As many as anyone cares to count. They do nothing |
+| **Plain rounds** | Grace peppers, enough that nobody counts — until the GM says otherwise. They do nothing |
 
-*The drinks are his to hand out before a fight, not his to drink. Pat and Chris both have an open free action and nothing yet to spend it on, which is what retired SERVE in the first place.*
+*The drinks are his to hand out before a fight, not his to drink. Pat and Chris both have an open free action and nothing yet to spend it on.*
 
-**Raw and unspent: one measure of sapphire crystal, one measure of spinstone grind.** Deliberately two seasonings he has nothing prepared from — so his first downtime is a real choice about what to make rather than a refill of what he just used, and the choice costs him: each measure is three rounds *or* two drinks, and he cannot have both out of one.
+**Raw and unspent: two measures of bellows dust and one of leadfoot** *(Drew, 2026-10-07 — they replace the sapphire crystal and spinstone he was first written with)*. Each measure is three rounds *or* two drinks, and he cannot have both out of one — **so his first downtime is still a real choice.** *Bellows dust has no drink, so those two are six rounds of shoving people off him whatever he decides. The leadfoot is the decision: three more Rooted rounds, or two Still Waters.*
 
-*Neither raw measure was harvested by him, and that is the point of picking those two.* Sapphire crystal is the one that is simply bought, at 2 copper a measure off Senshi's counter in the city he grew up in. Spinstone is Briarwatch dirt and he has not been there — he traded for it, somewhere on the road, off somebody who had. **That is the Persuasion +2 doing the work the Cooking +2 cannot**: two of the five seasonings can be talked out of a person, and the other three have to be taken off something that did not want to give them up. *If Drew would rather he had never crossed paths with a spinstone at all, swap it for a second sapphire — the only thing that changes is that his first downtime gets less interesting.*
+*None of the raw measures was harvested by him.* Bellows dust comes off a Blowback Beetle that has been beaten in a fight, in the Turnroot understory (`bestiary/blowback-beetle.md`), and leadfoot off a Hush Bloom that only opens for patience (`flora/hush-bloom.md`). **He traded for all three, somewhere on the road, off people who had done the hard part** — **the Persuasion +2 doing the work the Cooking +2 cannot.** *Redgum (2026-10-06) is the one seasoning where asking is the whole gate* (`flora/bloodelm.md`, Redgum).
 
 **The whole loadout, counted in ingredients rather than in items**, because that is the number that actually constrains him:
 
 | | |
 |---|---|
 | **Cinder flake** | 1 measure, all three rounds made and none fired |
-| **Hush petal** | 1 measure, two rounds left of the three |
-| **Sapphire crystal** | 1 measure, raw |
-| **Spinstone grind** | 1 measure, raw |
-| **Bellows dust** | none. He has never had any |
-| **Burnrind** | 2 pickings, three oranges left of the four. *The one that is not a seasoning — here the fruit is the charge* |
+| **Leadfoot** | 2 measures: one with two rounds left of the three, and **one raw** |
+| **Bellows dust** | 2 measures, raw |
+| **Sapphire crystal** | none |
+| **Spinstone** | none |
+| **Burnrind** | 4 pickings: two made up, with three oranges left of the four, and **two raw**. *The one that is not a seasoning — here the fruit is the charge* |
 | **Plain stock** | unlimited, and both drinks came out of it |
 
-**Four measures and two pickings.** Two of the measures are already worked up and two are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
+**Five measures and four pickings.** Two of the measures are already worked up and three are still a decision. *The drinks look free in the list above and they are — that is exactly why he is carrying the two weakest ones. The moment he wants Still Water or a Second Wind Cider he is choosing it against three rounds, and he has not made that trade yet.*
 
-**The grinder starts loaded**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
+**The grinder can start with a special round chambered**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
 
 **Starting gold: 10, and it is the smallest purse at the table on purpose** (`rules/equipment.md`, Starting Gold). He is not poor — he is the opposite, and that is exactly why. **He converted everything he had into ingredients**, which is the whole character, and what is in the bag above is worth something in the region of 150 gold if he ever sold it (What any of it is actually worth to him, above). *Ten gold buys him lunch. Giving the richest man on the dock more money is the one adjustment that makes the sheets less even rather than more.*
 
 **And it is a small number next to the real one.** The grinder is written as **Tier 2 equipment**, which on the gear ladder is an ~800 gold object arriving about twelve sessions ahead of when anyone could afford one (`rules/equipment.md`, Pacing). *The file's own defence of that is good — loaded plain the grinder has no text at all, so it is a conditional weapon rather than a strong one, and the condition is the supply economy this whole section describes. Worth knowing anyway: the gap between Kevin's kit and everyone else's is measured in hundreds of gold, and a starting purse is measured in tens. Starting gold is not the lever that moves it, and nothing here is pretending otherwise.*
 
-*What that adds up to is five good shots, three grenades, two drinks and two sessions of prep sitting in a bag.* **Raised from three, two and one on 2026-09-21 at Drew's word.** It moves the moment he runs dry from about the second fight to about the fourth, which is a real change to the pacing that paragraph above is built on — worth knowing rather than worth arguing about, since a first session where the interesting character is empty by the second encounter is its own kind of failure.
+*What that adds up to is five good shots, three grenades, two drinks and two sessions of prep sitting in a bag* *(Drew, 2026-09-21)* — **and since 2026-10-04, four more grenades in the raw Burnrind** once he makes them up. **He runs dry around the fourth fight**, not the second — a first session where the interesting character is empty by the second encounter is its own kind of failure.
 
 **And the free action is still the actual ceiling.** One a turn, whatever is in the bag (One free action, three things that want it, below). More stock does not mean more per turn; it means more turns before the answer to *load, drink or throw* stops being a choice and starts being whatever is left.
 
@@ -281,18 +303,20 @@ His real exchange rate is already written above under Supply and restocking: **o
 ## Gear
 
 - **The pepper grinder** — hand-cranked, and a **ranged** weapon. Loaded with a pepper; the crank ignites the flesh and throws the seeds.
-- **The vibro knife** — **his only knife.** Chris's originally, and the one object on Kevin's sheet that did not come out of a kitchen or a hold. He prepped, chopped, fought and cooked with it; there is no second blade and no kitchen knife behind it. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now. *The "hot knife" this file used to list was removed on 2026-09-19; there was only ever one.*
-- **His kit** — the supplies a working cook carries. This is why field prep is the default rather than the exception (Supply and restocking, below).
-- **A bandolier of incendiary oranges** — written below as a consumable rather than a card. **Three in it at the start** (What he starts with, above), and they are made of Burnrind rather than fruit (`flora/burnrind.md`), which is why there are two.
+- **The vibro knife** — **his only knife.** Chris's originally, and the one object on Kevin's sheet that did not come out of a kitchen or a hold. He prepped, chopped, fought and cooked with it; there is no second blade and no kitchen knife behind it. **No numbers, deliberately** — it is the thing he came back from school with and the proof the two of them knew each other before any of this started, and that is all it has to be for now.
+- **His kit** — the supplies a working cook carries. This is why field prep is the default rather than the exception (Where he can work, above).
+- **A bandolier of incendiary oranges** — written below as a consumable rather than a card. **Three in it at the start** (What he starts with, above), made of Burnrind rather than fruit (`flora/burnrind.md`).
 
 ```
 THE PEPPER GRINDER
 Equipment — Weapon (Tier 2)
-Effect: You may hold one prepared load at a time. Loading takes a free action,
-and the grinder may be loaded outside combat and carried loaded. GRIND SHOT's
-Effect and Defense Effect are whatever the loaded round says they are; loaded
-with a plain round it has none. The load is spent when GRIND SHOT resolves,
-win or lose — blocking with it burns the round the same as firing it.
+Effect: Plain rounds feed from the hopper and are never tracked or reloaded.
+You may chamber one special round at a time; chambering takes a free action,
+and can be done outside combat. GRIND SHOT's Effect and Defense Effect are
+whatever the chambered round says; with none chambered it fires plain and
+has none. The special round is spent when GRIND SHOT resolves, win or lose —
+blocking with it burns the round the same as firing it. No other card spends
+the chambered round, even one played as the grinder.
 "It was a kitchen tool. It is still a kitchen tool."
 ```
 
@@ -307,15 +331,15 @@ unpreventable damage to every enemy in that position. Single-use.
 
 **Made from Burnrind, not from an orange** (`flora/burnrind.md`). One picking makes two, a picking needs a spoil bank that burned last season, and burning one to order is a hanging offence in the Nest. *The flavour line on the card turned out to be the mechanical truth: there is no fruit in a Burnrind worth the name, and the peel is the entire object.*
 
-**Priced at roughly 30 gold** if one is ever bought rather than made: two points of damage at the flat rate of 10 a point, plus a point for landing them on a position instead of a single target (`rules/equipment.md`, Pricing Consumables). *It used to be 40, and the extra ten was a premium for being a free action. That premium is gone — every consumable is a free action now unless the item says otherwise, so it buys nothing.* **He makes them**, so the number is a scale reference rather than a shopping list.
+**Priced at roughly 30 gold** if one is ever bought rather than made: two points of damage at the flat rate of 10 a point, plus a point for landing them on a position instead of a single target (`rules/equipment.md`, Pricing Consumables). *No premium for being a free action: every consumable is one unless the item says otherwise.* **He makes them**, so the number is a scale reference rather than a shopping list.
 
-**The unpreventable damage is inherited from KINDLE and is inherited on purpose**: it is fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER.
+**The damage is unpreventable on purpose**: it is fire rather than an attack landing, matching SPARK OF VIOLENCE and SHATTER.
 
 ### One free action, three things that want it
 
-**This is the interesting cost and it is now sharper than it was.** A turn gives one free action and one only, capped regardless of how many you have banked (`rules/combat.md`, Free Actions). Kevin's competes three ways:
+**This is the interesting cost.** A turn gives one free action and one only, capped regardless of how many you have banked (`rules/combat.md`, Free Actions). Kevin's competes three ways:
 
-- **Load the grinder** — or GRIND SHOT fires plain next turn.
+- **Chamber a special round** — or GRIND SHOT fires plain. *Plain never costs a free action; the hopper does it.*
 - **Eat or drink** — his own prepared drinks included.
 - **Throw an orange.**
 
@@ -340,15 +364,15 @@ Three customs, one per piece of the kit and one per colour. Draft, staged here b
 
 His stats want roughly 4 Red / 3 Blue / 2 Green, so one signature in each colour fits without crowding any of them, and it puts his weakest stat on the card he plays for its effect rather than its damage.
 
-### The 2026-09-19 rebuild, and the one call made beyond the ask
+### Why the knife is Red and the grinder Blue
 
-**Kevin wants the vibro blade up close and the grinder at range.** KINDLE is gone, replaced by a knife card, and the oranges are a consumable (Gear, above). **The call that was not asked for: the knife took Red and the grinder took Blue, rather than the knife simply inheriting KINDLE's Blue slot.**
+**Kevin wants the vibro blade up close and the grinder at range** *(2026-09-19)*. The oranges are a consumable (Gear, above), so the two weapons are the two cards.
 
 **Three reasons, and the third is the one that decided it.**
 
-1. **His stats.** Body 4, Mind 3. *Use the blade up close* wants his best stat on the close-range card, and leaving the knife in KINDLE's Blue slot would have given him a melee attack weaker than his gun — the opposite of what he asked for.
-2. **The grinder inherits KINDLE's own argument.** That card was Blue because it "puts the artificer's cleverness in the Mind colour, where the crafting lives." The grinder is the artifice. Nothing in that reasoning was ever about the orange specifically.
-3. **His Passives already drew this line.** **MISE EN PLACE is Red, Body, Melee. SPLIT ATTENTION is Blue, Mind, Ranged** (`campaign/passives.md`). His sheet already said close-quarters-is-Red and at-range-is-Blue before anyone touched the cards; the cards were the part out of step. *Red is now his whole close game and Blue his whole far one, and with 4 Red slots against 3 Blue his deck leans the way his hands do.*
+1. **His stats.** Body 4, Mind 3. *Use the blade up close* wants his best stat on the close-range card; a Blue knife would be a melee attack weaker than his gun — the opposite of what he asked for.
+2. **The artifice is Mind.** The artificer's cleverness lives in the Mind colour, and the grinder is the artifice.
+3. **His Passives already drew this line.** **MISE EN PLACE is Red, Body, Melee. SPLIT ATTENTION is Blue, Mind, Ranged** (`campaign/passives.md`). His sheet already said close-quarters-is-Red and at-range-is-Blue, and the cards follow it. *Red is now his whole close game and Blue his whole far one, and with 4 Red slots against 3 Blue his deck leans the way his hands do.*
 
 *If that is a step too far, the cheap reversal is to swap the two colour/stat lines back and leave everything else standing.*
 
@@ -374,7 +398,7 @@ Range: Melee
 
 ---
 
-**GRIND SHOT** is Blue now, Ranged, and a d6, and the change to its Effect is forced rather than chosen: *"Move to the Backline"* was written for a Melee weapon that threw him out of the scrum after firing. A Ranged card already requires he not be in the scrum, so the old Effect had nothing left to do.
+**GRIND SHOT** is the grinder: Blue, Ranged, a d6.
 
 ```
 GRIND SHOT
@@ -386,17 +410,15 @@ Range: Ranged
 "One crank. Whatever you fed it is what comes out."
 ```
 
-**The card has no text of its own, and that is the card** *(2026-09-19)*. A weapon whose entire personality is *what did you load it with* should be honest about that on its face. Both lines are filled in at the moment it resolves, from the table in The Ingredients, above — **one card, six behaviours, and the choice was made before the turn started rather than during it.**
+**The card has no text of its own, and that is the card** *(2026-09-19)*. A weapon whose entire personality is *what did you load it with* should be honest about that on its face. Both lines are filled in at the moment it resolves, from the table in The Ingredients, above — **one card, seven behaviours, and the choice was made before the turn started rather than during it.**
 
 **There is precedent for this shape and it is not a house exception.** FOLLOW-UP already prints *"Effect: Replaced by the copied card's Effect"* (`cards/colorless.md`); a card whose halves resolve out of something else is an existing thing in this corpus.
 
 **The one real cost: he cannot block with it in a scrum.** A defending card must satisfy its own Range as if the defender were attacking (`rules/combat.md`, Attack Resolution, step 2), and Ranged needs the two of them not both Frontline. **Anyone who closes on him locks the gun out of his defence entirely** — which is not a bug. It is why he has BREAK DOWN. *Knife in the scrum, gun at distance, and the rules enforce the split rather than the table agreeing to it.*
 
-*The card keeps its name, its quote and its place in the load system. Colour, stat, Range, die and both effect lines changed.*
+**d6 is the norm for it, not a nerf** *(2026-09-19)*. Blue Ranged cards in the core pool average just under a d6, so a d6 signature sits just above the line where a signature should. *Measured: a d8 here moved his damage not at all, because the loads are where his output lives (What this build actually costs, above).*
 
-**d6, set 2026-09-19, and it is the norm rather than a nerf.** Blue Ranged cards in the core pool average **d5.47**, so a d6 signature sits just above the line where a signature should. The d8 it carried was a Red-Melee number on a Blue-Ranged card. *Measurement says this will not actually cost him anything — the same change tested at 400 fights moved his damage not at all, because the loads are where his output lives (What this build actually costs, above). It is a correctness fix, not a balance one.*
-
-**ON THE FLY replaced SERVE on 2026-09-21.** SERVE spent an Action to hand somebody a drink — and the party distributes the drinks before the fight now, and Chris and Pat both have an idle free action to drink them with. A card that costs an Action to do what a free action already does is a dead card, whatever it says on it.
+**ON THE FLY** *(2026-09-21)*. The party drinks with its own free actions, so a card that spent an Action to hand somebody a drink would be dead; this one relieves his actual bottleneck instead.
 
 ```
 ON THE FLY
@@ -420,22 +442,86 @@ Range: Both
 
 ---
 
+## Held Back — three cards for later
+
+*Written 2026-10-04 at Drew's ask, from what Kevin wants: **a grab bag** — more ways to answer a fight, not a bigger version of one. None is in his starting nine; all three are the customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks).*
+
+### OVER THE PASS — he throws the knife
+
+```
+OVER THE PASS
+RED — BODY
+Attack: Body + d6
+Effect: Defender gains Vulnerable and Rooted.
+Defense Effect: Attacker gains Vulnerable and Rooted.
+Special Rule: The knife leaves your hand. When this resolves, attacking or
+defending, it stays face up at your opponent's position instead of going to
+your discard. While it is out you cannot play BREAK DOWN. Spend a free action
+in Melee range of it to pick it up: this card returns to your hand. It comes
+back to you at the end of combat.
+Range: Ranged
+"Pinned from the sky."
+```
+
+**The pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Pinned from the sky"* (Drew) is the Rooted half, and the arc it took getting there.
+
+- **Two statuses on one half is the above-average upside.** MARKED gives Vulnerable alone at d6 Ranged (`cards/blue-mind.md`); this adds Rooted — the knife pins them where they stand. *A pinned target with Vulnerable on it is exactly what GRIND SHOT wants to be aimed at.*
+- **The price is the knife.** It is his only blade (Gear, above), so while it is out **BREAK DOWN is dead in his hand** and so is this card. Getting it back costs **his free action** — the one his reload, his drink and his oranges already fight over — **in Melee range of where it landed** *(Drew, 2026-10-04)*. Thrown at range, that is usually the enemy's side of the field, and Rooted means whoever he hit is still standing next to it.
+- **Rooted works against him on the way back**, which is the good part: the person he pinned is still exactly where he has to go.
+
+### FRESH GROUND — the grinder, up close
+
+```
+FRESH GROUND
+RED — BODY
+Attack: Body + d6
+Effect: As the loaded round.
+Defense Effect: As the loaded round.
+Range: Melee
+"Say when."
+```
+
+**GRIND SHOT with colour and range swapped** — Red and Melee where that is Blue and Ranged. Same grinder, same chamber: **it fires whatever is loaded and spends it the same way**, so the two never double his ammunition, they only change where he can fire it from. *Fresh ground pepper at the table, which is the joke and the card.*
+
+- **It closes the hole GRIND SHOT leaves.** GRIND SHOT cannot block in a scrum (THE PEPPER GRINDER, above); this one only works there. Holding both, the grinder is never the wrong range.
+- **d6 rather than Red Melee's usual d8**, for the reason GRIND SHOT sits at d6: the load is the card, and the number matters less than what is in the chamber. Body 4 + d6 already hits a point harder than Mind 3 + d6.
+- **Red, which moves his colours.** Both new cards are Red; his deck runs 4 / 3 / 2 now, and two more Red in an advancement deck lean him further into Body. *Fine for a Body 4 character — worth knowing before both arrive at once.*
+
+### TODAY'S SPECIAL — the grab bag itself
+
+```
+TODAY'S SPECIAL
+BLUE — MIND
+Attack: Mind + d4
+Effect: Choose one: the defender gains Vulnerable, you gain Ward, or load the grinder.
+Defense Effect: Choose one: the attacker gains Vulnerable, you gain Ward, or load the grinder.
+Range: Ranged
+"It changes. Ask again tomorrow."
+```
+
+**What he asked for, literally: a grab bag.** One card, three different answers, picked when it resolves — set somebody up, cover himself, or get the next shot ready. *The specials board is whatever the kitchen has that day.*
+
+- **"Load the grinder" saves the free action** his reload, his drink and his oranges all fight over (One free action, three things that want it, above). It is the only card that loads without spending it.
+- **Vulnerable sets up the grinder and the knife** — BREAK DOWN, GRIND SHOT and FRESH GROUND all hit harder into it.
+- **Ward on the block** is the cheapest cover he can have, and it lasts until something tries to debuff him.
+- **The choice is the strength, so the die pays for it.** d4 where Blue Ranged usually runs nearer d6 (`rules/cards.md`, Why Red has the biggest dice — range pays for them) — the same trade STILL POINT makes for its menu (`cards/blue-mind.md`), which is also slower, because it is Anchored.
+- **Blue, which evens his colours back out** after two Red cards above.
+
+## From session 0
+
+- **His ship is the Merry Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest** — up the river that runs south from the Nest toward the Ruins (`world/geography-overview.md`, Past the hubs). At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
+- **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
+- **His six drafted cards:** RETALIATE, CERTAIN STRIKE and SECOND WIND (Red), FOCUS and STILL POINT (Blue), RELEASE (Green). **With his customs that is 4 Red / 3 Blue / 2 Green — exactly his stats**, the one player at the table who took the matching spread. All six printed as written in `cards/`.
+- **Age 20.** Off his sheet.
+- **Price, off his sheet: "Never stop growing."** *What it costs him at the table is still to set* (Not Yet Set, below).
+- **Trait — Gluttony** *(Drew, 2026-10-05)*: **he can have two consumable drink effects active at the same time.** Written "+1 consumable" on his sheet. Everybody else gets one at a time, and a second drink replaces the first (`rules/combat.md`, One drink at a time); **Kevin keeps two going**, and a third replaces whichever he chooses.
+- **FOCUS** — **His copy keeps the old version** *(Drew, 2026-10-04)*: its block is **Initiative Shift +2 to yourself**, as printed when he drafted it. The card changed to +1 the day after the draft (`cards/blue-mind.md`); **every other FOCUS is +1, and Kevin's is the exception.** *It does nothing in a one-on-one either way* (`rules/combat.md`, Two on the wheel).
+
 ## Not Yet Set
 
-- Character name
-- **Stats** — Body 4 / Mind 3 / Soul 2 is still tentative (Stats, above)
-- Which other fruits he's worked out, if any — **and whether anything but Burnrind can carry the grenade**, now that the orange has a specific plant behind it
-- ~~**How many oranges a bandolier holds**~~ — **mooted 2026-09-21.** The bandolier was never the limit; Burnrind is (`flora/burnrind.md`). He can carry as many as he has, and he has three
-- ~~Whether GRIND SHOT's d8 is too much on top of a load~~ — **answered 2026-09-19 by measurement: the die is not where the power is.** d6 changed nothing; the loads did (What this build actually costs, above)
-- **The pepper's name**, and how rare it actually is — scarcity is the balancing lever, so this is a number waiting to be set rather than a detail
-- **The Applies When on both Passives** — drafted 2026-09-19 from the names; MISE EN PLACE's was rewritten the same day after the first version wrongly required a kitchen
-- Price
+- **Price: "Never stop growing"** *(Kevin, session 0)* — chosen; **what it costs at the table** is still to set. *The two drafted for him before are kept for the record:* *"I always pay what a thing is worth"* — he can haggle any price down to fair and never below, which reins in the skill he learned in rooms his father would rather he had never seen; or *"I never serve what I wouldn't eat myself"*
 - **What he thinks he did that night**, and whether he would do it again
-- The rest of the 9-card starting deck, drafted from the Oracle as normal (`rules/character-creation.md`, Starting Deck)
-- Whether Senshi stocks cinder flake and hush petal, or whether those stay things Kevin goes and gets
-- How long he has actually been at Gemstone University, and whether he is going back
-
-*Settled 2026-09-19 and no longer open: the temple (the Temple of Unity, his father's — `characters/ossian.md`), Skills, Passives, where the exploding produce comes from, that he can cook anywhere, that he carries exactly one knife, that he is carrying no shipment when Session 1 opens, and why he is at Vulture's Nest.*
+- **The Applies When on both Passives** — drafted from the names; to confirm at the table
 
 ## Related Documents
 

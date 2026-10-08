@@ -11,7 +11,7 @@ Signature cards for the Minotaur. Tagged as COIL — obtainable via the Oracle d
 **HEADLONG**
 RED — BODY — COIL
 Attack: Body + d8
-Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull target to Frontline.
+Effect: If you were in Backline at the start of your last turn, deal +2 damage and pull the defender to the Frontline.
 Defense Effect: Gain Resist.
 Range: Ranged
 *"The corridor is not a disadvantage. The corridor is the weapon."*
@@ -41,7 +41,7 @@ Range: Ranged
 **CUT OFF**
 BLUE — MIND — COIL
 Attack: Mind + d4
-Effect: If target is in Backline, apply Staggered and pull them to Frontline.
+Effect: If the defender is in the Backline, apply Staggered and pull them to the Frontline.
 Defense Effect: Gain Evade.
 Range: Ranged
 *"Every exit it already knows."*
@@ -51,17 +51,27 @@ Range: Ranged
 **PATTERN READ**
 BLUE — MIND — COIL
 Attack: Mind + d6
-Effect: Expose Green — choose 1 card in the target's hand without looking. If it is Green, apply Rooted.
+Effect: Expose Green — choose 1 card in the defender's hand without looking. If it is Green, apply Rooted.
 Defense Effect: Scry 1.
 Range: Ranged
 *"It has watched enough of them run to know the shape of it."*
 
 ---
 
+**CORNER**
+BLUE — MIND — COIL
+Attack: Mind + d8
+Effect: Neither you nor the defender may change position until your next turn.
+Defense Effect: Neither you nor the attacker may change position until your next turn.
+Range: Melee
+*"Now it is only the two of us, and only this much room."*
+
+---
+
 **BOUND TO THE STONE**
 GREEN — SOUL — COIL
 Attack: Soul + d4
-Effect: Anchored — at the start of each of your turns, all Frontline enemies gain Wound.
+Effect: Anchored — at the start of each of your turns, all enemies in the Frontline gain Wound.
 Defense Effect: Gain Resist 1.
 Range: Melee
 *"The labyrinth does not end. Neither does it."*
@@ -71,7 +81,7 @@ Range: Melee
 **LABYRINTH ECHO**
 GREEN — SOUL — COIL
 Attack: Soul + d4
-Effect: Apply Blind to target.
+Effect: Apply Blind to the defender.
 Defense Effect: Attacker gains Blind.
 Range: Ranged
 *"You cannot find the way out if you cannot see the walls."*

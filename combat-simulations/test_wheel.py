@@ -379,6 +379,29 @@ def the_chip_clears_and_the_turn_arrives():
     assert 'a' not in w.chips, ('the chip outlived its delay', w.chips)
 
 
+
+def ex8_two_on_the_wheel():
+    """`a, b.` b blocks with FOCUS. With two tokens on the wheel nothing
+    changes the turn order: a, b, a, b — not a, b, b, a."""
+    for amount in (+1, +2, +3, -1, -2):
+        w = Wheel(['a', 'b'])
+        w.shift('b', amount, acting='a')
+        assert w.order() == ['a', 'b'] and w.chips == {}, (amount, w.order(), w.chips)
+        assert w.advance('a') == 'b' and w.advance('b') == 'a'
+    w = Wheel(['a', 'b'])
+    w.shift('a', -2, acting='a')
+    assert w.order() == ['a', 'b'] and w.chips == {}, w.order()
+    w = Wheel(['a', 'b'])
+    w.swap('a', 'b', acting='a')
+    assert w.order() == ['a', 'b'] and w.chips == {}, w.order()
+    w = Wheel(['a', 'b'])
+    w.move_after('a', 'b', acting='a')
+    assert w.order() == ['a', 'b'] and w.chips == {}, w.order()
+    # A third token and shifts work again.
+    w = Wheel(['a', 'b', 'c'])
+    w.shift('c', +1, acting='a')
+    assert w.order() == ['a', 'c', 'b'], w.order()
+
 def shifting_someone_who_is_not_acting_still_works():
     """The attack-half versions — DELAY, DISTRACT, MOCKERY, TURN — aim at
     someone who is not on the marker, and are untouched by any of this."""
@@ -402,6 +425,7 @@ if __name__ == '__main__':
     print('\nExamples 6 and 7, and the reorders that are not shifts:')
     results += [
         case('PRIORITY moves only two tokens', swap_moves_only_two),
+        case('Example 8: two on the wheel, nothing reorders', ex8_two_on_the_wheel),
         case('a swap off the marker grants no second turn',
              swap_gives_no_second_turn),
         case('STARING CONTEST closes the gap behind it',

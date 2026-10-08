@@ -30,6 +30,12 @@ A river port rebuilt so many times on top of itself that no one remembers the or
 
 **The Gollop** (`bestiary/gollop.md`) — an ape the colour of the rock it sits on, which throws stones with real accuracy and prefers to do it from above and behind you. **Territorial, and they post lookouts**, so the high country is not empty ground with a hazard in it; it is somebody's, in stretches, and a climber is either inside a troop's range or outside it. *Anyone going up the cliffs for a plant is going up into their country, and the plant is the reason the climb is worth it rather than the reason it is dangerous.*
 
+**Three more things up there, all of them ingredients before they are anything else** — and all three on Senshi's menu in the capital (`places/capital/gilded-tusk.md`), which is the only reason most people have heard of them:
+
+- **High-Altitude Bats** (`bestiary/high-altitude-bat.md`) roost in the cliff cavities and hunt at dusk. They flee rather than fight
+- **Sapphire Ants** (`bestiary/sapphire-ant.md`) nest in the mineral ground where the rock breaks down, and the high country is almost nothing but that
+- **Bicolor Spiders** (`bestiary/bicolor-spider.md`) web the shaded cuts where soil has collected, the one kind of place up here with both rock and something growing
+
 ### The finishing house
 
 **FourthEye is not finished in the Nest. It is finished up in the rock.**
@@ -88,7 +94,7 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth — and then the whole dock. Everything on that stretch is impounded into a Compact warehouse behind a question nobody can answer yet, and everyone who was standing on it when it closed is still standing on it. Anyone whose freight is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
 
-**The party's boat is inside the cordon and the party is not** — they were elsewhere when it shut. That is the situation the first job runs on: they are the only people involved who can still move, with everything they own on the wrong side of a rope (`quests/the-quarantined-barge.md`).
+**The party's boat is inside the cordon and the party is not** — Kevin's temple ship, the Merry Mint (`campaign/kevin.md`, From session 0) — they were elsewhere when it shut. That is the situation the first job runs on: they are the only people involved who can still move, with everything they own on the wrong side of a rope (`quests/the-quarantined-barge.md`).
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
 
@@ -106,9 +112,15 @@ The rivers keep time with the Unheld, but the Nest sits near the coastal end of 
 - Old foundations surface
 - Glyphs carved into stone reappear
 
+**The glyphs are Mason work, and they are the party's first brush with the order** *(Drew, 2026-09-30)*. **GM only, and it matters: they are not holding a seam** *(Drew, 2026-10-01)*. **Vulture's Nest asked for them.** Long ago the Nest requested Mason glyphs to make its docks last as long as possible, and these are **Time glyphs** — the Seat of continuity and persistence — cut into the old dock stone for exactly that. *Nothing here is pressing on anything. The Nest simply wanted its foundations to outlast everybody standing on them* (`factions-and-races/the-masons.md`, Known Works). They show only when the water settles on a deep slow tide, and the rest of the time they are under moving water and nobody thinks about them. **This one does not get an answer.** No Mason turns up, nobody in the Nest knows who cut them or what they hold, and a guess of *Masons* is as far as anyone local gets. *It is a question planted early for the campaign to answer much later* (`factions-and-races/the-masons.md`, How the party meets them).
+
 **And there are more lights on the water those nights**, which everybody in the Nest has noticed and nobody has ever connected to the rest of this list (`bestiary/spooklight.md`). The town's position on spooklights is a prohibition rather than a theory: **they are trying to lead you off, so you do not answer a light.** That is the whole of the local knowledge. It is wrong about the mechanism, roughly right about the outcome, and consequently impossible to argue anyone out of.
 
 **The Nest loses a couple of people a year to it**, and not the people you would expect. A steady low light on dark mud does not read as *strange* — it reads as somebody down there in trouble, at two in the morning, and people go. What is on that bank is usually a **Foulhaul** family (`bestiary/foulhaul.md`), living there for the same reason the light is there: the river has been leaving things on that mud for years.
+
+**Fast tide has its own animal, and the Nest does not believe in it.** The **Gowra** (`bestiary/gowra.md`) digs into the undercut banks on the fast-tide stretches near town, and it never comes into the Nest — which is most of why *gowra* is the word the Nest uses for a lie. Slow tide has the lights and the Foulhauls on the mud; fast tide has this one in the water.
+
+**And sometimes the river arrives here burning.** A Driftfire bloom (`bestiary/driftfire.md`) goes wherever the current goes, round the whole loop, so every town on the web gets its turn and the Nest is no exception. *What makes it land harder here is the traffic, not the water:* most of what reaches the Nest was rowed or hauled rather than sailed, and a bloom is a problem for oars and lines before it is a problem for anything else.
 
 ## What Grows Here
 
@@ -174,6 +186,8 @@ He's an information node and a slow-burn complication. He knows the shape of the
 
 **What he actually wants is a room identified**, and he cannot ask for that without explaining why. So he does the next thing: he describes rooms. Details, in passing, as a test, folded into an unrelated conversation — a loose board, the way the light comes in at one corner. A party that has been listening will eventually walk into one.
 
+**Dorran** — bonesetter. Patches up dock workers and does not ask how anybody got hurt; the nearest thing the Nest has to a physician (`characters/dorran.md`).
+
 ## Rumors
 
 Fragments the party might catch. None complete. Each pointing at something without naming it.
@@ -202,6 +216,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 The kid gang operating on the docks. Named by the scarves, not an official name. Every kid in the operation has one. Different ways of wearing it — Kino's tied proper, Bean's halfway falling off. You earn the scarf. The name is fake. The scarves are real.
 
+**Who is above them** *(Chris's player, session 0, 2026-10-03)*: **the Red Scarves are controlled by a crime ring led by five families.** The kids are the part of it that works the docks in daylight. **Chris's backstory document arrived on 2026-10-08 with the whole history** (The Many Mask's legacy, below).
+
 **The operation:** They don't run. They offer to carry bags and show the market. The information is genuine — they know every stall worth visiting. They're also skimming the entire time. Nobody ever has anything on them. It's already three kids ahead in the chain.
 
 If the party insists on carrying their own bags, they've already been pilfered. Not enough to notice without a thorough check. Anything gone is gone — the chain of kids has moved it. (give players a window of discovery)
@@ -214,6 +230,68 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 
 Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
 
+### The Many Mask's legacy
+
+*Chris's backstory document, 2026-10-08 — his history of the Red Scarves, written in with Drew's corrections. Where a word is changed from Chris's, it says so.*
+
+**Long before they were thieves in the cracks of the Nest, the Red Scarves followed a promise.**
+
+**The First Many Mask.** Nobody remembers his true name; the legend grew larger every generation. **The greatest thief of his age, an unmatched mercenary, the Big Boss — and he helped make the Nest what it is.** *Chris's page has him found the city; softened to this, because the Nest has been rebuilt on top of itself for two centuries and is older than any one man* (Drew, 2026-10-08; The Ribs, below). **The greatest thing he left was an idea.**
+
+**The Red Creed.** **Total freedom**: a place beyond war and worry, **where the unwanted could disappear into the crowd and anyone, from anywhere, could belong.** His followers wore red scarves as the sign of it. *Beneath the same strip of red cloth, old names, old allegiances and old differences mattered less.* **That is still what the kids' scarf means** — you earn it, the name is fake, the scarf is real (above) — *whether or not the kids know where it came from.*
+
+**Six Masks, one promise.** The mask did not die with the first. **Six Many Masks carried the title across generations**, each the centre the Scarves gathered round. *The person beneath the mask could change; the promise could not.*
+
+**The Mask Quest.** **Before giving up the mantle, the Sixth Many Mask left a trial** to decide who was worthy to be the Seventh. The mantle can no longer be inherited, bought, voted for or simply claimed. Anyone who knew the path could attempt it; completing it was another matter. **Its trials demand more than skill, and failure carries a price.** *For nearly a century, no one has completed it.*
+
+**The five families.** Without a Many Mask, the structure beneath the mantle became the structure above it. **The Marrows, the Bellows, the Rooks, the Vells and the Strays.** Each chose a representative — **a Knot** *(Chris's word was **Seam**; changed because a seam is already the Masons' thin place in reality across this repo — `factions-and-races/the-masons.md`. **Knot** is proposed to Chris, keeping the cloth: the Nest already teaches knots before letters, The People, above)*. **The Knots once existed to hold the Scarves together and serve the Many Mask. With no Mask, they became rulers themselves.**
+
+**From Creed to crime.** A balance formed. Families traded favours, territory, information and threats; cooperation kept **the Outfit** alive, rivalry kept any one family from owning it. Some Knots still call their authority stewardship of something that belongs to the Many Mask. Others have begun to wonder why they should ever give up what their families spent generations building. **What began as a promise of freedom became a thieves' guild** — crime families and street crews in the shadow of their own legend, still saying the Creed's words and no longer agreeing on what they mean.
+
+**A new imbalance: the Bellows.** **Masters of the docks** — ships, cargo, smugglers, coin, contraband, and strangers all pass within their reach. **They are now the strongest of the five**, willing to go further than the rest, and their rivals have bought them influence nobody can ignore. *Some among them no longer believe the Red Scarves need a Many Mask at all.*
+
+**The Compact is the law; the Bellows are the power underneath it** *(Drew, 2026-10-08)*. The Tideward Compact governs the dock in daylight and takes its percentage (The Tideward Compact, above); **the Bellows own what moves through the gaps in that.** *Mercer is a Bellows man* (`characters/mercer.md`) — **the family growing too strong is the family that profits from bound children.**
+
+**The mask still waits.** Nearly a hundred years without a Seventh. *And somewhere beneath the crime, ambition and blood, the Red Creed still promises what it promised at the beginning:* **Freedom.**
+
+**Code is in the Red Scarves when session one starts** (`campaign/chris.md`, From session 0, and Chris's doc). *A shapeshifter in an outfit waiting a century for its next Many Mask is Chris's thread to pull* — **not written ahead of him.**
+
+### What they ran from — the warehouses
+
+*Drew, 2026-10-07.* **Oliver Twist, on a river.** The touchstone is England in the Industrial Revolution: **children are labour here, and nobody in charge thinks that is strange.** *A gap in the files means an ordinary medieval world* (`CLAUDE.md`, Conventions); **this is a marked exception, and the Nest is where it lives.**
+
+**A kid with nobody on the docks gets put to work.** Taken in, fed, given a place to sleep — **and bound to the work**, sleeping where they labour and locked in at night. *It is called looking after them. It is a prison with a wage nobody ever sees.* **The Scarves would rather live on the street than go back**, and every one of them has either been in or knows somebody who still is.
+
+**The commonest place they are sent is the dock warehouses.** The conditions are awful. **Cargo is stacked however it came off the boat** — high, fast and haphazard, by crews paid to move it, not to stack it — and **it comes down.** A stack shifts, a crate slides, and whatever is underneath is crushed. **The kids are underneath because they are small**: sent into the gaps between the stacks to fetch from the back, sent up the stacks to sling a rope, sent in where a grown hand cannot reach. *Every Scarf has a name they do not say, for a kid who was under one when it came down.*
+
+**It is the same skill that built the Ribs.** A child who spent a year being sent into gaps sized for nobody else learns to move through them better than anyone alive — and the Ribs is that skill turned into a home, where every way in is sized for somebody under about fourteen (The Ribs, below). *What the warehouses taught them is the reason nobody can follow them now.*
+
+**Getting caught does not mean a cell.** **It means being taken back in.** That is what the nail wall of scarves partly holds — *the kids who got caught* (The Ribs, below). **A party that chases Bean down and hands him to the Compact has sent him to the warehouses** (The Red Scarves, If caught in the act, above). *Nobody will tell them so. Bartho will look at them a moment longer than he needs to.*
+
+**And this week the warehouses are worse than they have ever been.** The sweep put a whole stretch of impounded berth into Compact warehouses at once (The Quarantined Barge, above) — **more cargo than the floors were meant for, stacked in a hurry by men under orders.** *Kids are being sent into those stacks right now.*
+
+**Who holds the binding: Mercer** *(2026-10-07; `characters/mercer.md`)*, **a Bellows man** (The Many Mask's legacy, above). He owns the worst floors on the dock, takes children in, binds them until fourteen, and **places** them — on his own floors, with the sweeps, in the smokehouses and ropewalks — for a fee from every master. *He keeps a standing reward for returned runaways, which is what handing Bean over actually pays.* *He answers to the Bellows — the family growing too strong* (The Many Mask's legacy, above).
+
+**The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Jonah was one* (`characters/jonah.md`).
+
+**Fourteen.** *Drew, 2026-10-07.* **At fourteen a child counts as an adult for responsibility**: they can be hired for real work on their own word, and **taken on as an apprentice to learn a profession.** *It is apprenticeship age.* **Every binding ends there**, and nobody can be "taken in" after it. **So that is what the Red Scarves are for: getting kids to fourteen free.** The Ribs is sized for under-fourteens because that is who needs it (The Ribs, below), and a Scarf who reaches fourteen hangs the scarf on the nail wall and goes and finds a trade. *Kino, at fifteen, is the one who stayed* — running it rather than leaving it, and the only one who does not sleep there (Key NPCs, Kino / "Sawyer").
+
+**What fourteen is worth depends on who you are when you get there.** A kid off Mercer's floors walks out with no trade and gets hired back as a dockhand at the bottom wage (`characters/mercer.md`). **A kid with somebody to vouch for them gets a master.** *That gap is what Jonah is trying to close* (`characters/jonah.md`).
+
+### People looking in
+
+**Three people the party can meet who want something from the Scarves.** *All three are about the same question — who gets to say where a child goes.*
+
+- **Mercer**, the warehouse owner — *wants his runaways back* (`characters/mercer.md`)
+- **Jonah**, priest of the Rivers — *wants to give them a house with no lock on the door, and cannot get one of them through it* (`characters/jonah.md`)
+- **The Ashbys** — *want their son*
+
+**The Ashbys.** *Created 2026-10-07: Drew asked for a family looking for a kid.* **Dell and Maren Ashby**, from upriver, ordinary people, here in the Nest asking every stall and every dockhand about a boy. **Two hard winters ago, one of Mercer's agents came through** and told them their son would be fed and taught a trade. **They signed with a mark.** *They thought they were giving him a future. They were giving him to a warehouse floor.*
+
+**The boy is Tib**, eleven now, and **he ran from the floor a year ago and is a Red Scarf.** *He is the kid at the edge of the market who will not look at the couple asking questions.* **Tib thinks his parents sold him.** *By the paper, they did.* **They think they were lied to.** *They were.* Both of those are true, and the party may be the only people who ever hear both sides.
+
+**They have saved to buy his binding back**, and it is not enough — and **Mercer would sell it them**, which is the worst thing about him. *What they do not know is that Tib is not on the floor any more, and that a Scarf does not let a grown-up near another Scarf, parents included.*
+
 ---
 
 ### The Ribs — where the Scarves live
@@ -224,7 +302,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **Every route has three exits.** Nothing in there is a dead end, on purpose, and the kids know which ones go to water. An adult who does get in is in a crawl with no way to cut off what they are chasing.
 
-**What's actually in it.** Almost nothing worth money. The chain moves anything sellable out within the hour — that is the whole design (see The operation, above) — so the Ribs holds the things kids keep: bedding, a stove they only light after dark because smoke over the deck at noon is an answer to a question, cooking pots, and a nail wall of scarves belonging to kids who left, got caught, or didn't come back. Nobody takes those down.
+**What's actually in it.** Almost nothing worth money. The chain moves anything sellable out within the hour — that is the whole design (see The operation, above) — so the Ribs holds the things kids keep: bedding, a stove they only light after dark because smoke over the deck at noon is an answer to a question, cooking pots, and a nail wall of scarves belonging to kids who left, got caught, or didn't come back. *Caught means taken back into the warehouses* (What they ran from, above). Nobody takes those down.
 
 **And the unsellable haul**, which is the part that matters for play. Everything pilfered that can't be moved for coin ends up in a crate down there and stays: letters, a child's carving, a locket with somebody's name inside it, a key to a door in another town. **This is where a party's stolen personal effect actually went**, and it is still there weeks later — which is the honest version of the note above about playing a recovered item for texture rather than punishment.
 
@@ -244,7 +322,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 
 **The Moving Crate** — A medium wooden crate near the east end of the market. No stall, no owner visible. It shifts slightly. Reacts to proximity — nothing dramatic, just enough to notice if you're paying attention.
 
-- *Open it:* an **Ocellus** (`bestiary/ocellus.md`). A soft, eyeless-faced animal covered in dozens of small simple eyes that do not look at anything. It is the harvesting stage of the **FourthEye** supply chain: it feeds on the low background work of *noticing*, taking a trace from everyone nearby, and weeps a film that gets scraped off and refined into the drug (`items/fourtheye.md`).
+- *Open it:* an **Ocellus pup** (`bestiary/ocellus.md`) — grown, it would be a weeping wolf. A soft, eyeless-faced animal covered in dozens of small simple eyes that do not look at anything. It is the harvesting stage of the **FourthEye** supply chain: it feeds on the low background work of *noticing*, taking a trace from everyone nearby, and weeps a film that gets scraped off and refined into the drug (`items/fourtheye.md`).
 - **The crate is in the market because the market is the crop.** It is not stored here, it is working here, and somewhere discreet would starve it. That is why the most conspicuous smuggling problem in the Nest is parked in the busiest spot in town and nobody has an opinion about it.
 - **It leans toward the crowd**, which is the shifting. The clear patch of ground around it that nobody chooses to stand on is the other tell.
 - **This is the thread Erubeth is here for** and does not have yet. He has been asking about the crate because it is the one object in a market of appraisers that nobody appraises. He has not opened it.
@@ -324,6 +402,16 @@ It is doing three things at once and none of them announce themselves: it puts A
 - The held Promise barge — written up in full above, The Quarantined Barge.
 - An atlas arrives from Glasslight showing a door into the Unheld — traditional survey work, not light-cartography, instrument-precise in exactly the way that's only ever supposed to stay at the edge and never touch the water. That precision is why anyone who looks at it dreams of the door.
 
+## Work out of the Nest
+
+*Drew, 2026-09-30. How the island-hopping first leg gets paid for.*
+
+- **Trade runs, for Bartho.** The dock always has cargo that needs to reach another island and a crew it trusts to take it. This is the backbone: it puts the party on the water going somewhere new, with a reason to be there and a reason to come back.
+- **Escorting Cartographers.** A Guild surveyor walking a route across somebody's island needs somebody watching their back while they look at an instrument (`factions-and-races/the-cartographers-guild.md`). **The Guild pays.** Common work, and the most ordinary way the party ends up somewhere strange. *The surveyors most likely to be asking are Sett and Aria* (`characters/sett-and-aria.md`).
+- **Not the Masons.** Nobody hires out Mason work and nobody at this dock could. Walking with one happens later, between people, and only once the party has met the order properly (`factions-and-races/the-masons.md`, How the party meets them).
+
+**A player can take up either calling.** A character who has escorted enough route walks can be taken on to walk them; one who has walked the line beside a Mason long enough can start to see the seams.
+
 ## Entry — If the Party Arrives Here
 
 The docks smell like silt, fish, wet rope, and burning pitch. Men and women work without looking up. A ship two berths down is being unloaded by people who have been doing it since before you were born.
@@ -364,7 +452,7 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 **Two lines inside this beat, one each for Kevin and Pat.** Neither costs the scene anything and each turns a general problem into a specific person's problem (`campaign/session-1-threads.md`, The three private threads).
 
-**Kevin, before Bartho even starts.** A dockhand straightening rope looks up, grins, and says his name out loud — warm, unprompted, pleased to see him. *"Herb. Thought that was you. Your old man still watering it?"* He ran temple wine onto this frontage many times and the people who unloaded it remember him (`campaign/kevin.md`).
+**Kevin, before Bartho even starts.** A dockhand straightening rope looks up, grins, and says his name out loud — warm, unprompted, pleased to see him. *"Pepper. Thought that was you. Your old man still watering it?"* He ran temple wine onto this frontage many times and the people who unloaded it remember him (`campaign/kevin.md`).
 
 **It is friendly, and that is what makes it bad.** Kevin picked this port precisely because a man can disappear into it, and the first thing it does is call him by name in front of a dockmaster who is about to start writing things down. *Nobody in the scene understands that they have done anything. Only Kevin's player does, and only if they were listening.*
 
@@ -499,7 +587,12 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 *The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
 
-- **The name of the high country, and of the Gollop.** Neither was named when it was described. `bestiary/gollop.md` carries three candidates for the animal; the range itself has none at all
+- ~~**Whether Mercer answers to the five families**~~ — *the Bellows (Drew, 2026-10-08)*
+- **Which family the kid crews answer to.** *Proposed to Chris: **the Strays**, which is very nearly what the kids are already called*
+- **Knot** — proposed to Chris in place of his **Seam** (The Many Mask's legacy, above). *His to accept or replace*
+- **The Mask Quest** — its path, its trials, its price. *Chris's*
+- ~~**What happens to a Scarf who grows too big for the Ribs.**~~ *Settled 2026-10-07: fourteen is apprenticeship age, and they leave to find a trade (What they ran from, Fourteen)*
+- **The name of the high country.** The animal was named on 2026-09-25 (`bestiary/gollop.md`); the range still has no name at all, and the Gollop's cards carry a NEST tag until it does (`cards/gollop.md`)
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
 - **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
 - **How the climb works for ordinary people.** Whether there are known ways up the cliff that a gatherer uses, how long the trip takes, and whether anybody makes a living at it

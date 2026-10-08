@@ -9,6 +9,8 @@
 
 **Deck (9 — 2 Blue / 3 Red / 4 Green):** IMPALING DIVE, STRIKE, DART *(red)* · THORN LARDER, TRACE *(blue)* · WATCHFUL PERCH, PATIENCE, FLOW, SHADE AWAY *(green)*
 
+**Blank deck:** Blue — THORN LARDER *(Melee)* · Red — IMPALING DIVE *(Ranged)* · Green — WATCHFUL PERCH *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
 ## Appearance

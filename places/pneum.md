@@ -58,7 +58,7 @@ The diseases must be visible. This is not negotiable in their theology.
 
 Nothing on Pneum has ever been touched by the Unheld. These are communicable illnesses, collected and passed hand to hand on purpose by people who believe they are performing a sacrament, and they work exactly the way illnesses work: they spread, they worsen, they scar, and they kill. **The congregation is not wrong that something real is happening to their bodies. They are wrong about one mechanism, and it is the only mechanism their entire practice rests on.**
 
-**The Unheld changes what a thing is; it does not damage what a thing is** (`world/the-unheld.md`). A body that has been in the grey water comes back different — reversed handedness, wrong scars, memories belonging to nobody, and further in, animal eyes and claws and stone-like skin (`characters/kaine.md`, The Final Current). None of that is illness. Disease is damage, and damage is not the register the Unheld works in. It has never made anyone sick, anywhere.
+**The Unheld changes what a thing is; it does not damage what a thing is** (`world/the-unheld.md`). A body that has been in the grey water comes back different — reversed handedness, wrong scars, memories belonging to nobody, and further in, animal eyes and claws and stone-like skin (`characters/wade.md`, The Final Current). None of that is illness. Disease is damage, and damage is not the register the Unheld works in. It has never made anyone sick, anywhere.
 
 ### Why they can be wrong, and stay wrong
 
@@ -108,15 +108,17 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 ## The Speaker — and why a Lizardkin leads this island
 
-*Drew's, 2026-09-21. **The name is open** — the role below is what matters and the person can be called whatever suits the table.*
+*Drew's, 2026-09-21.* **Named Sael, and Muirn by birth** *(2026-10-01)* — a Lizardkin of the southern tribe, from Gharial (`places/gharial.md`), who left long ago. *Stats and deck, just in case: `characters/sael.md`.*
 
 **The congregation's leader is Lizardkin** (`factions-and-races/races-lizardkin.md`). **On a mixed island that is not the scandal it sounds like** — Pneum has been taking converts for two hundred years and the Speaker is simply the furthest that has gone. *Nobody there finds it remarkable. Pat will.*
 
 **What is worth knowing is that they were not born here.** They came, they stayed, and they out-devoted a congregation that had been at this for two centuries before they arrived.
 
-**Why this island, for this person.** Pneum's whole theology is about deliberately taking into your body something permanent, visible, and impossible to undo — chosen, administered, witnessed. **That is the shape of a curse**, and a Lizardkin grew up in the one culture on the continent whose single famous export is exactly that (The Cursegivers, `factions-and-races/races-lizardkin.md`). *They did not have to be taught what this place was doing. They recognised it.*
+**Why this island, for this person.** Pneum's whole theology is about deliberately taking into your body something permanent, visible, and impossible to undo — chosen, administered, witnessed. **That is the shape of a curse**, and Sael grew up among the Muirn, the people that technique came out of (The Cursegivers, `factions-and-races/races-lizardkin.md`). *They did not have to be taught what this place was doing. They recognised it.*
 
-**They are not a cursegiver**, and the file should be read as saying so rather than leaving it hanging. Cursegiving is one family's technique held inside one bloodline. Lizardkin is a people. **The Speaker is the second thing and not the first**, and the distinction is the entire value of this thread (Pat's lead, below).
+**Which is why Osha came here first.** A Muirn who left, living among continentals and leading a faith about chosen permanent marks, is the one person off Gharial she could ask about a woman who took one on for her people (Pat's lead, below). **Sael knows who she is** — a Muirn knows the family — *and has no more reason to hand her to a Shunka than to hand her to Vaun.*
+
+**They are not a cursegiver**, and the file should be read as saying so rather than leaving it hanging. Cursegiving is one Muirn family's technique held inside one bloodline (`factions-and-races/races-lizardkin.md`, The Cursegivers). Lizardkin is a people. **The Speaker is the second thing and not the first**, and the distinction is the entire value of this thread (Pat's lead, below).
 
 ### What this does not do
 
@@ -126,7 +128,7 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 
 *Which is worth stating plainly, because a leader who speaks both sides looks like a key to the quarantine and is not one. What they could resolve, they are not at the Nest to resolve — they are on the island, and the barge is held two days' water away.*
 
-### Pat's lead, and why it is a dead end that is worth everything
+### Pat's lead — a no, and then a yes
 
 **He hears it from Corvel** (below), who has no idea he has said anything.
 
@@ -135,6 +137,12 @@ Nothing on Pneum has ever been touched by the Unheld. These are communicable ill
 **And the scrap says no** (`campaign/pat.md`, The scrap). **That is the point, and it is the first time the thing is ever used.** A negative from an instrument that cannot be wrong is worth more than a hit would have been this early: it proves the scrap works, it eliminates a lead honestly, and it costs the campaign's spine nothing — the search is supposed to keep failing productively across the island-hopping, and a cursegiver handed over in session three would spend the whole thread in one scene.
 
 **What he gets instead is better than a target.** The Speaker is **the first Lizardkin living among continentals that Pat has ever stood in front of** — which makes them the first person alive who can tell him anything real about why one of their own would leave that island at all. *That is the open question `factions-and-races/races-lizardkin.md` poses about the descendant, asked of somebody who actually did it.*
+
+**And then the scrap says yes — to somebody who is not in the room** *(Drew, 2026-09-30)*. **Osha came through Pneum before the party did** (`characters/osha.md`). She came to ask the one Lizardkin living among continentals — the leader of a faith built on chosen, permanent marks — what they made of a woman who took one on for her people, and she stayed under the Speaker's roof while she asked it. **What she left behind still carries the family, and the scrap knows it: no roll** (`campaign/pat.md`, The scrap). *Wrong person, right family, and she was here.*
+
+**How long ago, and which way she went, is the roll** — Survival +2, the same split the scrap has always had. **What the Speaker can tell him is what she asked**: about the old practice grounds, and about the islands near Gharial where somebody might once have worked apart from the tribe. *Asked properly, the Speaker answers properly* — and asked any other way, the Speaker has no reason to help a Shunka find a Muirn.
+
+**Where she went next is wherever the party goes next.** It is not set here, on purpose: the GM puts her trail on the island the table chooses. *This is the thread that makes Pneum a step rather than a stop.*
 
 **And they are the wrong person to threaten.** A congregation's leader, on their island, surrounded by their people, is not somebody a stranger leans on — and the Speaker has no reason to lie and no reason to help. *What they respond to is being asked properly, which is the same lesson the whole island teaches.*
 

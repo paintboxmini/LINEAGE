@@ -98,8 +98,6 @@
 
 ## Not Yet Set — and most of it is Drew's
 
-*~~Who is on this water~~, ~~whether anyone can go down there~~ and ~~why it surfaces~~ were the big three and Drew answered all of them on 2026-09-22: **the Riverdogs swim, and it comes up on purpose** (The arrangement, above).*
-
 - **How the arrangement started.** Somebody was first. *Whether that is a story the Riverdogs tell or a thing that was always true is theirs.*
 - **How a Deepmane knows what water is dangerous to a boat.** It is not a boat and it does not draw four feet. **Something is being communicated in the other direction and nothing here says what.**
 - **What happens when one is wrong**, or when a stretch goes bad faster than the animal moves.

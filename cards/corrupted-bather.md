@@ -19,7 +19,7 @@ Range: Ranged
 **CUTS BOTH WAYS**
 RED — BODY — UNHELD
 Attack: Body + d8
-Effect: Deal 2 damage to one ally in your position. If you do, deal +4 damage.
+Effect: Deal 2 damage to target ally in your position. If you do, deal +4 damage.
 Defense Effect: Gain Thorns 4.
 Range: Melee
 *"The Runners keep them at the back of the boat. It does not always help."*

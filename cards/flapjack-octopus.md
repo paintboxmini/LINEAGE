@@ -5,7 +5,7 @@
 **SURGE**
 RED — BODY
 Attack: Body + d8
-Effect: Target makes DC 12 Body/Senses save or gains Staggered. Ends Flatten.
+Effect: The defender makes a Normal (13) Body/Senses save or gains Staggered. Ends Flatten.
 Defense Effect: Gain Flatten.
 Range: Melee
 *"It comes from below."*
@@ -25,7 +25,7 @@ Range: Melee
 **DEPTH SLAM**
 RED — BODY
 Attack: Body + d8
-Effect: If target is already Staggered, deal +d6 bonus damage. Ends Flatten.
+Effect: If the defender is already Staggered, deal +d6 bonus damage. Ends Flatten.
 Defense Effect: Gain Flatten.
 Range: Melee
 *"It does not relent."*

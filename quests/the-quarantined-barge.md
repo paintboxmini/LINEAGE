@@ -202,6 +202,7 @@ These are people who have not been allowed to leave, work or sell for two days, 
 - **Pneum**, and the word *cursed* pointing upriver at people who chose this, are proud of it, and will warmly explain that the Nest has it backwards (`places/pneum.md`). For Pat this is the first lead in his real search and the first lesson in what that search is made of (`campaign/session-1-convergence.md`).
 - **The Arcadia.** Jonas is counting Harlock's hold throughout (`places/vultures-nest.md`, The Arcadia's hold). The barge is the foreground and the crate is the background and they want the same afternoon.
 - **Erubeth**, who has watched how the party handled all of it and is deciding whether they are worth talking to (`characters/erubeth.md`).
+- **Harlock's errand.** Once the port is open, he asks the party to collect forget-me-nots for FourthEye and shows them where on a chart (`places/forget-me-not-island.md`). *The second island, and the second Mason.*
 - **Whatever the party said to Bartho.** He remembers who brought him something usable and who brought him an opinion.
 
 ---

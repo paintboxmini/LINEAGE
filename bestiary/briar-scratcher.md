@@ -7,6 +7,8 @@
 
 
 **Deck (4 — 1 Blue / 1 Red / 2 Green):** SKITTER AWAY *(blue)* · RAKING CUT *(red)* · NIP AND TEAR, BRISTLE *(green)*
+
+**Blank deck:** Blue — SKITTER AWAY *(Both)* · Red — RAKING CUT *(Melee)* · Green — NIP AND TEAR *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 **Cards:** `cards/briar-scratcher.md`
 
 ---

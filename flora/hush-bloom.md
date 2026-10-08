@@ -28,7 +28,7 @@ Dried, the petals keep indefinitely.
 
 Calm, faintly numbing-sweet, and it throws a soft green luminescence in liquid — which is why it belongs in a drink more naturally than on a plate. The numbing is mild in food and considerably less mild concentrated.
 
-It is one of the charges in Kevin's grinder, and the base of his better beverages: `campaign/kevin.md`.
+**Sold dried as leadfoot** — the numbing goes to the legs first, which is what a cook means by it (named 2026-10-03). It is one of the charges in Kevin's grinder, and the base of his better beverages: `campaign/kevin.md`.
 
 ---
 

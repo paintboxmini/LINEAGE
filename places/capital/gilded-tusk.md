@@ -56,6 +56,8 @@ He wears a chef's hat at all times. The hat is tall. It has never come off in th
 
 See **The Naturalist Collection** below.
 
+**He keeps a stock of cinder flake and leadfoot, and none of it is for sale** *(2026-09-28)*. Whether he parts with any depends on the person asking, and he takes ingredients, never gold — bring him something he has never cooked and he will trade. *The obvious person to be asking is Kevin Pepper* (`campaign/kevin.md`, The Ingredients), *who carries both and needs both.*
+
 **Lyra Moon-Singer** *(entertainer, half-elf)*
 Plays a lyre. Uses minor illusion to manifest small spirit dancers on the tabletops while she performs.
 
@@ -98,12 +100,12 @@ A delicacy from the lake islands northeast of Vulture's Nest. Crunchy, sweet. Po
 **Unity Broth** *(market price — ask Marcus)*
 Two comb jellies, alive when they enter the pot. They fuse during the simmer — flavors and textures merging into something neither produces alone. Served in paired bowls. Both bowls must be eaten simultaneously or the flavor collapses.
 *Highly illegal in three districts. Senshi has opinions about those districts.*
-— Creature pending: `bestiary/unity-jelly.md`
+— Creature: `bestiary/unity-jelly.md`
 
 **Phantom Tail Tempura** *(6 silver)*
 Bioluminescent slug. The detachable tail section is battered and fried separately. It still glows after cooking — faintly, then not at all as you eat it. The light is the flavor.
 *Tables 1–4 only. The glow unsettled Table 5. Marcus has asked.*
-— Creature pending: `bestiary/phantom-tail-slug.md`
+— Creature: `bestiary/phantom-tail-slug.md`
 
 ---
 
@@ -111,35 +113,35 @@ Bioluminescent slug. The detachable tail section is battered and fried separatel
 
 **Flapjack Octopus Pancakes** *(8 silver)*
 The creature flattens itself during the sear. The self-tenderizing produces even cooking throughout. Sea salt, kelp powder, served with garum. Senshi considers this his most elegant dish. He will tell you this without being asked.
-— Creature pending: `bestiary/flapjack-octopus.md`
+— Creature: `bestiary/flapjack-octopus.md`
 
 **High-Altitude Bat Wing Crisps** *(6 silver)*
 Mountain-dwelling. Thin air produces lean, flavorful meat. Wing membranes twice-fried to a delicate crisp. Honey mead for dipping.
 *Senshi does not understand the problem with wings.*
-— Creature pending: `bestiary/high-altitude-bat.md`
+— Creature: `bestiary/high-altitude-bat.md`
 
 **Miniature Emerald Frog Dumplings** *(7 silver)*
 Forest frogs. The size is not a deficiency. Prepared three ways — steamed, fried, in broth — served together.
 *The party at Table 7 refused on the basis of size. Senshi has not forgiven them.*
-— Creature pending: `bestiary/emerald-frog.md`
+— Creature: `bestiary/emerald-frog.md`
 
 **Bicolor Spider Tempura** *(9 silver)*
 Orange-and-blue coloring indicates different flavor profiles in each half. Orange: sweet, nutty. Blue: savory. Tempura batter preserves both.
 *Do not ask Senshi to remove the legs. The legs are the point.*
-— Creature pending: `bestiary/bicolor-spider.md`
+— Creature: `bestiary/bicolor-spider.md`
 
 **Future-Lock Fricassee** *(8 gold)*
 Wasp larvae, carefully prepared. The metamorphosis venom is neutralized in the cooking — improperly done, it prevents magical transformation for 24 hours. Senshi's is properly done. He will not entertain questions about this.
-— Creature pending: `bestiary/future-lock-wasp.md`
+— Creature: `bestiary/future-lock-wasp.md`
 
 **Kiwi Bird, Whole-Roasted** *(currently off the menu — see Senshi's Second Commission, below)*
 Small forest forager, Turnroot Weald. Famous, among the few who've caught one, for flesh that tastes and tears like fruit rather than meat. Senshi has a theory about why (something about a diet of nothing but fallen fruit for generations) and no proof, which has never once stopped him from stating it as fact.
-— Creature pending: `bestiary/kiwi-bird.md`
+— Creature: `bestiary/kiwi-bird.md`
 
 **Gene-Thief Tartare** *(12 gold — Adventurer's Special)*
 Raw tardigrade, preparation method varies by specimen. Each one has consumed something different — the flavor reflects it. Temporarily grants resistance to one damage type based on what the creature absorbed. Senshi doesn't always know which type until service.
 *Ask what's in season.*
-— Creature: `bestiary/gene-thief-tardigrade.md` *(full stat block pending)*
+— Creature: `bestiary/gene-thief-tardigrade.md` *(baseline stat block on the sheet; a caught specimen is whatever variant its biome made it)*
 
 ---
 
@@ -147,12 +149,7 @@ Raw tardigrade, preparation method varies by specimen. Each one has consumed som
 
 **Sapphire Ant Seasoning Crystals** *(2 copper — add to any dish)*
 Azure ants, dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Senshi will add it without asking if he thinks the dish needs it.
-— Creature pending: `bestiary/sapphire-ant.md`
-
-**Bone Collector Crisps** *(15 silver — limited)*
-Carnivorous caterpillar prepared in its own casing — the shell of collected insect parts, entirely edible, changes flavor with each bite.
-*Don't ask how he gets them.*
-— Creature pending: `bestiary/bone-collector.md`
+— Creature: `bestiary/sapphire-ant.md`
 
 ---
 
@@ -161,12 +158,12 @@ Carnivorous caterpillar prepared in its own casing — the shell of collected in
 **Elder Tower Aged Jerky** *(price negotiable)*
 Preserved protein from something old. Predates the current food safety framework by an uncomfortable margin. Flavor unlike anything with a known taxonomy.
 *Bring your own cleric if you're worried. Senshi is not worried.*
-— Creature pending: `bestiary/elder-tower-creature.md`
+— Creature: `bestiary/elder-tower-creature.md`
 
 **Death-Ball Delight** *(20 gold)*
 Carnivorous sponge. Hooks removed. What remains is the trapping enzyme matrix — a texture unlike anything produced by conventional means. Sticky. Complex. Not for the cautious.
 *Senshi prepared three last month. He will not say what happened to the other two.*
-— Creature pending: `bestiary/death-ball-sponge.md`
+— Creature: `bestiary/death-ball-sponge.md`
 
 ---
 
@@ -210,7 +207,7 @@ Every night at midnight, Marcus rings a brass bell. All patrons raise a glass to
 
 Senshi emerges from the kitchen once, briefly, to find the party himself. This is notable.
 
-> *"The Bone Collector Crisps are off the menu until I have a fresh specimen. Not dried. Not preserved. The casing deteriorates and I lose the layered texture entirely."*
+> *"There is a Bone Collector. One. I have never cooked it and neither has anyone else. It has to come to me fresh — not dried, not preserved. The casing starts to go the moment it dies, and the casing is the whole point."*
 
 He places a folded note on the table without sitting down.
 
@@ -218,11 +215,11 @@ He places a folded note on the table without sitting down.
 
 He goes back to the kitchen.
 
-The note describes the creature's lair: fog, ancient webs, something large that moves between them. He does not mention how he knows this. The note ends with a price: **35 gold** for a fresh specimen delivered intact.
+The note describes the creature's lair: fog, ancient webs, something large that moves between them. He does not mention how he knows this. The note ends with a price: **40 gold** for a fresh specimen delivered intact (The Naturalist Collection, above).
 
 *If the party asks why he's come out himself:* "Because Marcus reads the board first and he'd have put a reward on it and someone would have brought me something wrong."
 
-See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-adventure.md` — the Collector's lair is located in the Weald.
+*It is not on the menu and never has been* (cut 2026-09-29) — as far as anyone knows there is exactly one Bone Collector — no nest, no eggs (`bestiary/bone-collector.md`, Aftermath; whether there are more is one of its Story Seeds) — so this may be the only one he ever gets the chance at, and that is why he came out of the kitchen. See `bestiary/bone-collector.md` for the encounter. See `quests/turnroot-weald-adventure.md` — the Collector's lair is located in the Weald.
 
 ---
 

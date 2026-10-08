@@ -27,7 +27,7 @@ Range: Melee
 **MAWS**
 GREEN — SOUL — ABYSS
 Attack: Soul + d4
-Effect: Deal 2 damage to each other enemy in your position. Heal 1 HP for each enemy damaged this way.
+Effect: Deal 2 damage to all other enemies in your position. Heal 1 HP for each enemy damaged this way.
 Defense Effect: Gain Thorns 2.
 Range: Melee
 *"Not one mouth arguing with the others. All of them agreeing."*

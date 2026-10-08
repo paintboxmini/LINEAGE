@@ -9,6 +9,8 @@
 
 
 **Deck (7 — 2 Blue / 2 Red / 3 Green):** CAMOUFLAGE STRIKE, VEIL *(blue)* · LIMB-SNAPPER, SPLINTER-BURST *(red)* · THORN-BIND, BRISTLE, PATIENCE *(green)*
+
+**Blank deck:** Blue — CAMOUFLAGE STRIKE *(Ranged)* · Red — LIMB-SNAPPER *(Ranged)* · Green — THORN-BIND *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Description
@@ -54,7 +56,7 @@ During Overgrowth (this campaign): hunting from entry, trail quality scaling wit
 
 ## Loot
 
-Harvesting takes a short rest or a successful DC 12 Body/Senses check to avoid wasting.
+Harvesting takes a short rest or a successful Normal (13) Body/Senses check to avoid wasting.
 
 **Note:** If Pressure is high, harvesting raises it by 1. The forest notices you taking pieces of itself.
 
@@ -75,7 +77,7 @@ Thin, flexible, incredibly strong. Still faintly warm; pulse slowly when held. W
 ---
 
 ### Sap Vial
-*Rare — 1 per kill. DC 14 Senses/Body check to collect without wasting.*
+*Rare — 1 per kill. Hard (16) Body/Senses check to collect without wasting.*
 
 Thick, dark-green sap. Smells metallic and green.
 

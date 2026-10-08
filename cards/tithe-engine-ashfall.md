@@ -23,7 +23,7 @@ Range: Ranged
 **HARVEST CHAIN**
 RED — BODY — ASHFALL
 Attack: Body + d4
-Effect: If this attack wins the reveal, Rushdown the target. If the target cannot move positions, deal +2 damage instead.
+Effect: If this attack wins the reveal, Rushdown the defender. If the defender cannot move positions, deal +2 damage instead.
 Defense Effect: Guarded — while Frontline, your Backline cannot be targeted.
 Range: Ranged
 *"It was built to drag the unwilling."*
@@ -33,7 +33,7 @@ Range: Ranged
 **TITHE COLLECTION**
 RED — BODY — ASHFALL
 Attack: Body + d4
-Effect: If this attack deals damage, the Engine heals 3 HP. If the target has 3 or fewer cards in hand, heal 5 HP instead.
+Effect: If this attack deals damage, the Engine heals 3 HP. If the defender has 3 or fewer cards in hand, heal 5 HP instead.
 Defense Effect: Anchored — gain Armour 2 while Frontline.
 Range: Melee
 *"War machines do not stop working just because the war ended."*
@@ -57,7 +57,7 @@ Range: Ranged
 **CINDER SPIRAL**
 RED — BODY — ASHFALL
 Attack: Body + d6
-Effect: Expose Blue — choose 1 card in the target's hand without looking. If it is Blue, they discard it.
+Effect: Expose Blue — choose 1 card in the defender's hand without looking. If it is Blue, they discard it.
 Defense Effect: Gain Evade.
 Range: Ranged
 *"They circle until the heat tells them where to strike."*
@@ -77,7 +77,7 @@ Range: Ranged
 **THERMAL VECTOR**
 BLUE — MIND — ASHFALL
 Attack: Mind + d4
-Effect: If the target attacked the Tithe Engine on their last turn, deal +2 damage.
+Effect: If the defender attacked the Tithe Engine on their last turn, deal +2 damage.
 Defense Effect: Bonded — if the Engine wins a reveal before its next turn, gain Resist.
 Range: Ranged
 *"The drones punish disobedience."*

@@ -9,6 +9,8 @@
 
 
 **Deck (6 — 3 Blue / 1 Red / 2 Green):** CLAY BOWL, FOCUS, ANTICIPATE *(blue)* · BURROW *(red)* · PATIENCE, BIND *(green)*
+
+**Blank deck:** Blue — CLAY BOWL *(Ranged)* · Red — BURROW *(Both)* · Green — PATIENCE *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Description

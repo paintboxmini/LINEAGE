@@ -80,6 +80,10 @@ High Body, real Mind, no Soul. He hits like the front of a ship and he is not st
 
 ---
 
+## Threads
+
+- **Forget-me-nots.** Sends the party to Forget-Me-Not Island for FourthEye's refining, on a chart; a few sessions later tells them the flowers are gone and asks them to watch for a new source (`places/forget-me-not-island.md`).
+
 ## Related Documents
 
 - `places/vultures-nest.md` — the Compact, the Opening Scene, the Arcadia and her hold

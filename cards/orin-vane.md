@@ -83,7 +83,7 @@ Range: Ranged
 **LUNGE**
 RED — BODY
 Attack: Body + d10
-Effect: Move to Frontline. If target is Backline, deal +2 damage.
+Effect: Move to Frontline. If the defender is in the Backline, deal +2 damage.
 Defense Effect: Move to Backline.
 Range: Melee
 *"The distance closes whether you're ready or not."*

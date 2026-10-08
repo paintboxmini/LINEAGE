@@ -86,6 +86,8 @@ Turn order resolves highest to lowest.
 
 The wheel always has exactly as many slots as there are combatants — no empty slots. When a token shifts, each token it passes through slides over one slot toward the gap the moving token leaves behind.
 
+**Two on the wheel: turns just alternate** *(Drew, 2026-10-03)*. Whenever only two tokens are on the wheel — a one-on-one, or a fight that has come down to two — **nothing changes the turn order.** Initiative Shift, swapping places and moving yourself in the order all do nothing; the rest of the card still resolves. With two people the only way to go sooner is to go twice in a row, so every shift that did anything was a whole free turn — FOCUS's block bought one. The moment a third token joins, the wheel works normally again.
+
 **Joining and leaving.** A summoned combatant's token enters the wheel directly after the token of whoever summoned it. A GM-introduced combatant enters when the fiction calls for it — usually at the end of a full lap. Either way, the wheel gains a slot. A combatant who leaves the fight entirely removes their slot, and the wheel closes around it.
 
 ---
@@ -113,6 +115,8 @@ On your turn, you may take one Action, plus one free action if you have one avai
 
 **Using a consumable is a free action unless the item says otherwise.** Ruled 2026-09-21. Eating, drinking, loading a round, throwing one of Kevin's oranges, taking back one of Chris's seeds — all the same one free action, and all competing for it.
 
+**One drink at a time** *(Drew, 2026-10-05)*. A combatant can have **one drink's effect active** at once. A drink is active while anything it gave you is still unspent — a held Quick, a Ward, a stack of Resist; healing, a draw or an Initiative Shift happen on the spot and leave nothing behind. **Drinking another replaces it:** whatever the old drink left you that is still unspent is gone, and the new one takes its place. *Kevin's Trait, Gluttony, is the exception that says so: he can have two active at once* (`campaign/kevin.md`, From session 0).
+
 **An item that costs an Action says so on itself**, and several do: Luminova Leaves and Luminova Powder both print *Use an Item — costs your Action* (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). That is the exception written where somebody using the item will actually read it, rather than a category they have to remember.
 
 *The earlier wording said the reverse — that using a consumable for its mechanical effect is never free, with the orange named as the example. It was written before Kevin's kit existed and did not survive it: a character whose whole build is prepared consumables cannot be charged an Action for each one and still have a turn. The cap is what balances them, not the price of admission — one per turn, so his reload, his drink and his grenade are all bidding for the same slot.*
@@ -138,6 +142,25 @@ Some cards carry a **Special Rule** line instead of — or alongside — an Effe
 **"Attacker"/"Defender" vs. "Target"** — two different things on card text:
 - **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
 - **Target** means you genuinely choose — an ally among several, or a specific enemy when more than one is present.
+- **"Any target" includes yourself** *(Drew, 2026-10-04)*. It is not ally or enemy wording, so the rule below does not reach it: CALCULATE can move you, FORESEE can give you Resist.
+
+**The targeting words** *(Drew, 2026-10-05)*. Card text names who it reaches with these, and only these:
+
+| On the card | Means |
+|---|---|
+| **you** / **yourself** | You, and only you |
+| **target ally** | One ally you choose — never you |
+| **target enemy** | One enemy you choose |
+| **any target** | Anyone on the field you choose, you included |
+| **all allies** | Every ally — never you. *"You and all allies"* when the card means you too |
+| **all enemies** | Every enemy |
+| **the attacker** / **the defender** | Whoever this exchange is against — no choice |
+
+**A position narrows any of them**: *all enemies in the defender's position*, *target ally in your position*. Nothing else needs a word of its own.
+
+<!-- print:skip-start -->
+*Swept 2026-10-05: 64 cards that said these things in other words — "an ally", "your party", "every enemy", "each enemy", a bare "target" for the defender — were reworded to the table above, with no change to what any of them does. **Two kinds of wording were left alone on purpose:** a trigger that is not a choice ("whenever an ally passes through your position", "any enemy who takes their turn there"), and a count ("for each ally in your position"). Neither names who an effect reaches. **"Defender gains X" is shorthand for "the defender gains X"** and reads the same.*
+<!-- print:skip-end -->
 
 ### An Example — STRIKE
 
@@ -155,7 +178,7 @@ Range: Melee
 - **Color + Stat** — Red, Body. A Red card beats Green and loses to Blue in RPS, and its damage comes off your Body stat.
 - **Attack: Body + d10** — your Body stat plus a d10 roll. The fourth tier, and the rarest: Red alone holds it, on cards that pay for it somewhere else on the card (STRIKE has no Effect at all, REPAY costs 3 HP up front, OVERCOMMIT hands you Vulnerable for the privilege).
 - **Effect: None** — nothing happens beyond the damage when you win as the attacker. This is what STRIKE actually trades for that big die: every other d10 card in the game still does something extra — bonus damage under a condition, a reposition, a resource interaction — STRIKE's whole design is spent on the number alone.
-- **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
+- **Defense Effect: Deal 3 damage to attacker, unpreventable** — win *or tie* as the defender and you deal a flat 3 back (STRIKE's own Effect is None, so it never cancels the Defense Effect on a tie). On a tie you take the attacker's hit as well, so the two of you trade. "Unpreventable" means it skips the Damage Pipeline entirely — Resist, Protect, none of it applies.
 - **Range: Melee** — you and your target must both be in the Frontline to play this card.
 - **Flavor text** — *"Sometimes the direct path is the wisest path."* Not a rule. Just the world's own read on a card built with nothing to hide.
 
@@ -167,23 +190,29 @@ A Passive resolves exactly like a card from hand once concealment is settled —
 
 ## Attack Resolution
 
-1. Attacker plays 1 card, face down — committed, not yet public.
+1. **Attacker declares a target** and plays 1 card, face down — committed, not yet public.
 2. Defender may choose 1 card to defend with, face down — **The chosen card must satisfy its own Range requirement for the current positions, exactly as if the defender were attacking the attacker** — a Melee card cannot defend unless both combatants are Frontline; Ranged and Both are unaffected.
-3. **Blind and Evade resolve now, before either card is revealed.** Both cards are already committed at this point. Every check that applies actually rolls — being attacked is what triggers a defender's Evade and Blind, not whether the attack would land, so a stack gets spent, or a defender's own block-miss gets rolled, even when it turns out not to have mattered:
+**A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
+
+3. **Both cards reveal simultaneously** — only now do they become public and move to their owners' discard piles. With no defence, only the attacker's card turns over.
+4. **Blind and Evade resolve now — after the reveal, before Rock-Paper-Scissors, and before any Special Rule on either card** *(2026-09-28)*. Every check that applies actually rolls — being attacked is what triggers a defender's Evade and Blind, not whether the attack would land, so a stack gets spent, or a defender's own block-miss gets rolled, even when it turns out not to have mattered:
    - **Attacker's Blind:** roll 1d2 if the attacker holds it.
    - **Defender's Evade:** roll 1d2 if the defender holds it.
    - **Defender's Blind:** roll 1d2 if the defender holds it and is actually defending.
 
    **Resolving the rolls, in this order:**
-   1. **Defender's Evade succeeds** → the defender auto-wins the resolution (step 5's Defender wins outcome). A clean dodge — nothing else in this step changes that.
-   2. **Otherwise, attacker's Blind misses *and* defender's Blind misses** → **Mutual Miss** (see step 5): the attack failed and the block attempted against it also failed. Not a win for either side, and not a Tie — a Tie still needs two cards that actually did something; this is two that didn't.
+   1. **Defender's Evade succeeds** → the defender auto-wins the resolution (step 6's Defender wins outcome). A clean dodge — nothing else in this step changes that.
+   2. **Otherwise, attacker's Blind misses *and* defender's Blind misses** → **Mutual Miss** (see step 6): the attack failed and the block attempted against it also failed. Not a win for either side, and not a Tie — a Tie still needs two cards that actually did something; this is two that didn't.
    3. **Otherwise, attacker's Blind misses alone** (the defender's own block, if any, didn't also miss) → the defender auto-wins the resolution.
    4. **Otherwise, defender's Blind misses alone** (the attacker's own attack, above, didn't also miss) → the attacker wins automatically, exactly like no legal defense, below.
-   5. **Otherwise** (none of the above fired) → proceed to the reveal.
+   5. **Otherwise** (none of the above fired) → go on to step 5.
 
-**A mistaken illegal pick** (wrong Range for the current positions) is fixed differently depending on when it's caught. Caught before the attacker's card is known: swap freely, no penalty — nothing about the attacker's choice has leaked, so the pick is still genuinely blind. Caught only after the attacker's card is already revealed: too late for a free redo, since that knowledge can't be un-known and picking again now would mean picking with information blind defense is supposed to deny you. Resolve it as no legal defense — but the illegal card itself returns to hand, not the discard pile, since it was never actually, legally played. The attacker still learns what it was (a real cost, already paid), but the mistake doesn't also cost a card on top of the auto-loss.
-4. If the defender cannot or chooses not to defend, the attacker wins automatically — same outcome as a defender Blind-miss, above.
-5. Both cards reveal simultaneously — only now do they become public and move to their owners' discard piles — and resolve using Rock-Paper-Scissors:
+   <!-- print:skip-start -->
+   *Why after the reveal, 2026-09-28.* **Both cards always get played and flipped, and the checks come first once they're face up** — the simplest order to run at a table. The cost is accepted on purpose: **an attack that misses to its own Blind still hands the defender their Defense Effect**, because the defender won. Checking before the defender commits would stop that, and would let the defender keep the card in hand — but it adds a branch every exchange has to walk. *Drew's call: keep it streamlined.* Nothing about the outcomes changed from the earlier wording, which ran the same checks just before the flip; only the moment moved.
+   <!-- print:skip-end -->
+
+5. If the defender cannot or chose not to defend, the attacker wins automatically — same outcome as a defender Blind-miss, above.
+6. Otherwise, resolve using Rock-Paper-Scissors:
 
 ```
 Blue (Mind)   beats  Red   (Body)
@@ -193,10 +222,16 @@ Green (Soul)  beats  Blue  (Mind)
 
 **Attacker wins** → deal damage, then apply the card's Effect  
 **Defender wins** → no damage + defender triggers Defense Effect  
-**Tie** → no damage. Attacker's Effect still triggers, then Defender's Defense Effect triggers. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.  
-**Mutual Miss** → no damage, no Effect, no Defense Effect. Both cards are still discarded as normal — they were played, they just both failed. Only reachable via the attacker's Blind and the defender's Blind both missing in the same exchange (step 3, above); it never comes up during a normal reveal.
+**Tie** → deal damage, then apply the card's Effect — exactly as if the attacker had won — and then the Defender's Defense Effect triggers as well. If the attacker's Effect cancels the Defense Effect, the Defense Effect does not trigger.  
+**Mutual Miss** → no damage, no Effect, no Defense Effect. Both cards are still discarded as normal — they were played, they just both failed. Only reachable via the attacker's Blind and the defender's Blind both missing in the same exchange (step 4, above); it never comes up in a normal colour comparison.
 
-An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing on a tie (or any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally.
+**A tie lands the hit** *(Drew, 2026-10-03)*. Matching the attacker's colour does not stop the attack; it only earns the defender their Defense Effect on the way through. **So the defender is playing to win the reveal, and the attacker is playing not to lose it** — two colours in three connect. The defender's Defense Effect still fires if the tie's damage drops them, because a Down combatant still defends (Collapse & Death, below).
+
+<!-- print:skip-start -->
+*Why, 2026-10-03.* Drew's call after the first practice duels at the table. Until then a tie dealt no damage, and **players felt not enough was happening turn to turn with attacks landing only about a third of the time.** The fights themselves were not too long. Measured over 1,200 simulated one-on-ones between starting characters: damage landed on 40% of turns before and 61% after, and the first character reached 0 HP after about five turns each before and about four after. Most cards already read correctly under the new rule, because almost nothing was written to depend on a tie being harmless. What it does move is collected under the tie-winning family (`cards/tiers/middle.md`).
+<!-- print:skip-end -->
+
+An Effect that only *adds to or amplifies this attack's damage* has nothing to act on when the attack deals no damage — so it does nothing when the attacker loses (or on any miss). Exploding dice, "+2 damage this attack," "deal +2 for each Wound," and the like all need a landed hit, and a win or a tie both give them one. Effects that do something independent of attack damage — apply a status, shift a stat, move a card — still trigger normally. **"Only on a clean win" still means a win and not a tie** — that clause is what a card uses to keep its Effect off the tie.
 
 A standing bonus or penalty like "your next attack deals +X" is consumed by a miss.
 
@@ -338,7 +373,7 @@ Order can matter: two ticks that commute end at the same number, but a heal that
 
 ## You Are Not Your Own Ally
 
-Card effects that say "allies" or "enemies" never include yourself. You can't target yourself with an ally effect, and you can't accidentally trigger an enemy effect on yourself. "All allies in your position" means everyone else sharing it — not you. The only exception is a card that explicitly names *yourself* as the target.
+Card effects that say "allies" or "enemies" never include yourself. You can't target yourself with an ally effect, and you can't accidentally trigger an enemy effect on yourself. "All allies in your position" means everyone else sharing it — not you. The only exceptions are a card that explicitly names *yourself* as the target, and **"any target"**, which is open to everyone on the field, you included (Reading a Card, above).
 
 ---
 

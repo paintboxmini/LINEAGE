@@ -127,8 +127,8 @@ Range: Both
 **COMMUNION**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Your party heals 4 HP.
-Defense Effect: If you are attacked again before your next turn, you and your allies gain Deadly.
+Effect: You and all allies heal 4 HP.
+Defense Effect: If you are attacked again before your next turn, you and all allies gain Deadly.
 Range: Ranged
 *"Shared vision illuminates the path forward."*
 
@@ -228,7 +228,7 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Apply Initiative Shift -2 to defender
-Defense Effect: Target must attack you if able on their next turn
+Defense Effect: The attacker must attack you if able on their next turn
 Range: Ranged
 *"You say the one thing they cannot ignore."*
 
@@ -237,8 +237,8 @@ Range: Ranged
 **WITHER**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Target loses 1 Body this combat.
-Defense Effect: Target loses 1 Body this combat.
+Effect: The defender loses 1 Body this combat.
+Defense Effect: The attacker loses 1 Body this combat.
 Range: Ranged
 *"The river doesn't fight the stone. It just outlasts it."*
 
@@ -267,7 +267,7 @@ Range: Ranged
 **UNIFY**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Until the end of combat, allies next to you in the initiative order heal 2 HP at the start of their turns. Whenever an ally heals this way, you heal 2 HP as well. Ends if you die or leave combat.
+Effect: Until the end of combat, all allies next to you in the initiative order heal 2 HP at the start of their turns. Whenever an ally heals this way, you heal 2 HP as well. Ends if you die or leave combat.
 Defense Effect: Gain Resist.
 Range: Both
 *"Stand where they stand. What heals them, heals you."*
@@ -317,8 +317,8 @@ Range: Both
 **LEVEL THE FIELD**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Remove one Positive Status Effect of your choice from each enemy.
-Defense Effect: Remove one Positive Status Effect of your choice from each enemy.
+Effect: All enemies lose one Positive Status Effect of your choice.
+Defense Effect: All enemies lose one Positive Status Effect of your choice.
 Range: Both
 *"Nobody gets to keep their edge."*
 
@@ -327,8 +327,8 @@ Range: Both
 **SMOKESCREEN**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Only on a tie. Apply Blind to all Frontline enemies, and to yourself.
-Defense Effect: Only on a tie. Apply Blind to all Frontline enemies, and to yourself.
+Effect: Only on a tie. Apply Blind to all enemies in the Frontline, and to yourself.
+Defense Effect: Only on a tie. Apply Blind to all enemies in the Frontline, and to yourself.
 Range: Melee
 *"Visibility is a luxury."*
 
@@ -386,9 +386,9 @@ Range: Melee
 
 **QUICKEN**
 GREEN — SOUL
-Attack: Soul + d6
+Attack: Soul + d4
 Effect: Apply Initiative Shift +2 to yourself.
-Defense Effect: Apply Initiative Shift +2 to an ally.
+Defense Effect: Apply Initiative Shift +2 to target ally.
 Range: Both
 *"Sooner is its own kind of strength."*
 

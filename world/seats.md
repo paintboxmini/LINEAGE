@@ -69,7 +69,7 @@ Speaks care, togetherness, and what holds — **and holding is the tension the S
 
 Distinct from Grief and Memory, which is what remains afterward. This Seat is the force applied.
 
-**Storm is the common name and it is not wrong, it is just small** — what an ordinary person sees is lightning, so what they say is storm. That gap is the usual one: people build the name around what they can observe (see the note on religions at the top of this file). Kaine's devotees watch him make water heal and fire start and do not reach for a Seat at all, which is the point of the deception (`characters/kaine.md`).
+**Storm is the common name and it is not wrong, it is just small** — what an ordinary person sees is lightning, so what they say is storm. That gap is the usual one: people build the name around what they can observe (see the note on religions at the top of this file). Wade's devotees watch him make water heal and fire start and do not reach for a Seat at all, which is the point of the deception (`characters/wade.md`).
 
 ### Song and Silence
 **Named Archons:** Fermata

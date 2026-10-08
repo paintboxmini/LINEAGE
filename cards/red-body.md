@@ -45,8 +45,8 @@ Range: Melee
 **PUSH**
 RED — BODY
 Attack: Body + d8
-Effect: Move target to backline
-Defense Effect: Move target to backline
+Effect: Move the defender to the Backline
+Defense Effect: Move the attacker to the Backline
 Range: Melee
 *"Sometimes the best strike creates space."*
 
@@ -112,7 +112,7 @@ Range: Ranged
 
 ---
 
-**GAMBLER'S RUIN**
+**GAMBLER'S FOLLY**
 RED — BODY
 Attack: Body + d4
 Effect: If this attack deals damage, every odd die result explodes — roll it again and add to the damage. (Max 3 extra rolls.)
@@ -125,8 +125,8 @@ Range: Melee
 **SPARK OF VIOLENCE**
 RED — BODY
 Attack: Body + d6
-Effect: Deal 3 unpreventable damage to any enemy
-Defense Effect: Deal 3 unpreventable damage to any enemy
+Effect: Deal 3 unpreventable damage to target enemy
+Defense Effect: Deal 3 unpreventable damage to target enemy
 Range: Melee
 *"Every blaze begins with a decision."*
 
@@ -216,8 +216,8 @@ Range: Melee
 **PAIN IS FUEL**
 RED — BODY
 Attack: Body + d6
-Effect: Anchored — when you are damaged, gain Resist and Thorns 2.
-Defense Effect: Anchored — when you are damaged, gain Resist and Thorns 2.
+Effect: This combat, when you are damaged, gain Resist and Thorns 2.
+Defense Effect: This combat, when you are damaged, gain Resist and Thorns 2.
 Range: Melee
 *"Hit me. I dare you."*
 
@@ -246,8 +246,8 @@ Range: Both
 **SUNDER**
 RED — BODY
 Attack: Body + d6
-Effect: Target loses 1 Mind this combat.
-Defense Effect: Target loses 1 Mind this combat.
+Effect: The defender loses 1 Mind this combat.
+Defense Effect: The attacker loses 1 Mind this combat.
 Range: Melee
 *"Thought breaks under enough weight."*
 
@@ -387,7 +387,7 @@ Range: Melee
 **GORE**
 RED — BODY
 Attack: Body + d4
-Effect: If target is Frontline, deal +d6 additional damage.
+Effect: If the defender is in the Frontline, deal +d6 additional damage.
 Defense Effect: Attacker gains Rooted.
 Range: Both
 *"It does not aim. It arrives."*
@@ -397,7 +397,7 @@ Range: Both
 **TABLE STAKES**
 RED — BODY
 Attack: Body + d6
-Effect: Discard 1 random card from your hand. If it was Red, deal 4 unpreventable damage. If it was Blue, target gains Staggered. If it was Green, heal yourself and all allies 3 HP.
+Effect: Discard 1 random card from your hand. If it was Red, deal 4 unpreventable damage. If it was Blue, the defender gains Staggered. If it was Green, you and all allies heal 3 HP.
 Defense Effect: Gain Resist.
 Range: Both
 *"Everyone puts something in before they see the cards."*
@@ -507,7 +507,7 @@ Range: Ranged
 **CLEAVE**
 RED — BODY
 Attack: Body + d8
-Effect: This attack also deals half its damage, rounded down, to every other enemy in the defender's position.
+Effect: This attack also deals half its damage, rounded down, to all other enemies in the defender's position.
 Defense Effect: Deal 3 damage to the attacker.
 Range: Melee
 *"One swing. It was never aimed at one of you."*
@@ -578,7 +578,7 @@ Range: Ranged
 RED — BODY
 Attack: Body + d6
 Effect: All allies gain Deadly.
-Defense Effect: Apply Initiative Shift +2 to an ally.
+Defense Effect: Apply Initiative Shift +2 to target ally.
 Range: Both
 *"One voice finds its mark. The rest answer in kind."*
 

@@ -22,7 +22,7 @@ So you get the table laid for six and no six. The cups still warm and the chairs
 
 **And it never tells you where.** You get the room, never the address. No street, no district, no name over the door, no sense of how far away it is or which direction — just the place, in perfect detail, unlabelled. Everything a vision is worth depends on somebody recognising what they were shown, which means FourthEye is not a way of finding places. It is a way of being handed a place and then having to go and earn the rest of it.
 
-**Which follows from what it's made of.** The film is unspent *noticing*, taken in traces off a crowd that is *moving* — the animal sits where the foot traffic is thickest and eats attention in transit (`bestiary/ocellus.md`). What comes out of it is attention in transit, and that is all it knows how to do once it is in you. It goes to the hinges. It has never once sat still in a room and watched a thing happen, because it was never made out of anybody doing that.
+**Which follows from what it's made of.** The film is unspent *noticing*, wept by Ocellus pups — the grown animal is the weeping wolf (`bestiary/ocellus.md`) — taken in traces off a crowd that is *moving* — the animal sits where the foot traffic is thickest and eats attention in transit (`bestiary/ocellus.md`). What comes out of it is attention in transit, and that is all it knows how to do once it is in you. It goes to the hinges. It has never once sat still in a room and watched a thing happen, because it was never made out of anybody doing that.
 
 Two eyes for what's in front of you and a third one for whatever the mystics are selling. The fourth is the one that looks where no one is, a moment too early or a moment too late. That is street etymology, not doctrine, and the people selling it did not name it.
 
@@ -122,6 +122,8 @@ Outside the bazaar there is no price, because there is no supply. Everything tha
 - **What it means when a person appears in a vision.** It is not supposed to happen, and it is least supposed to happen when the vision was aimed at that person. Nobody has written what it is when it does, which makes it a good thing to spend once and never explain.
 - **Whether the dulling is permanent.** Same open question as the animal's Dulling trait (`bestiary/ocellus.md`), and it should have the same answer.
 - **What the Regency does when someone points out how useful it is.** A drug that reads the room ten minutes before the meeting is exactly what a council of spymasters would want, and the official position is that it is banned three times over. Nobody in the repo has put that to the council yet.
+- **What the forget-me-nots do in the refining.** They are an ingredient, set 2026-10-01 (`flora/forget-me-not.md`); what they contribute is not written.
+- **Where Harlock gets them next.** The only known source vanishes once Sebastian binds it (`places/forget-me-not-island.md`), so after the party's harvest the supply is gone and Harlock is looking. **A few sessions after the island, he tells the party and asks them to keep an eye out** (`places/forget-me-not-island.md`, Sebastian).
 - **Who at the Nest is running the animals.** Erubeth's whole reason for being there (`places/vultures-nest.md`).
 
 ---

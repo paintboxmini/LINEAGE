@@ -34,7 +34,7 @@ The next time you roll attack damage, add an additional d6 to the result. Stacks
 **(10) Weak**
 The next time you roll attack damage, subtract an additional d6 from the result. Stacks the same way Deadly does: each stack applies to one future damage roll, not extra dice on the same roll. Cancels 1-for-1 with Deadly (above).
 
-**(12) Anchored**
+**(11) Anchored**
 A specific benefit persists as long as you do not change positions, triggering at the start of each of your turns. The card states who it targets — not always yourself: PATIENCE OF STONE heals its own caster, ROOTED OATH buffs a named ally, GRAPPLE holds the defender Rooted. Anchored is about what holding position sustains, not about who it's aimed at. If you move — voluntarily or by an enemy effect — Anchored ends immediately. It also ends immediately if you Collapse.
 
 **Anchored is worth less than it looks, and it should be priced as a discount on an effect rather than a tax on one.** It does not pay on the turn you play it — the first trigger is the start of your *next* turn. Two triggers is roughly what one plain grant of the same effect is worth; three is where it starts being a good deal, and three triggers means the fight has already run four turns or more.
@@ -44,14 +44,14 @@ A specific benefit persists as long as you do not change positions, triggering a
 *Written down because Anchored reads stronger than it plays, and reviewers keep arriving at "this needs a restriction." It already has three: the delay, the movement, and the hand it strands.*
 
 **(8) Blind**
-50% chance to miss whatever you're doing in the exchange — attacking or defending, not attacker-only. Checked once both sides have already committed a card face down, before the reveal (`rules/combat.md`, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses. The check always happens if it applies, even when another check in the same exchange already decided the outcome — see the resolution order in `rules/combat.md`.
+50% chance to miss whatever you're doing in the exchange — attacking or defending, not attacker-only. Checked once both cards are face up, before Rock-Paper-Scissors and before any Special Rule (`rules/combat.md`, Attack Resolution): roll 1d2, and on a 1, whoever holds it misses. The check always happens if it applies, even when another check in the same exchange already decided the outcome — see the resolution order in `rules/combat.md`.
 
 **An attacker's miss alone** ends the exchange in the defender's favor — the defender auto-wins the resolution, exactly as if the RPS reveal had gone their way, and the attacker's card is discarded. **A defender's miss alone** on their own block resolves exactly like having no legal defense: the attacker wins automatically. **Both missing in the same exchange** is neither of those — it's a Mutual Miss (`rules/combat.md`, Attack Resolution): the attack failed and the attempted block against it also failed, so nobody wins and no Effect or Defense Effect triggers. A defender's Evade succeeding overrides all of this — a clean dodge wins the exchange outright regardless of what either Blind roll says.
 
 Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.
 
 **(12) Evade**
-50% chance to dodge an attack declared against you. Checked after you've chosen your defense (or declined to defend), before either card is revealed (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
+50% chance to dodge an attack declared against you. Checked once the cards are face up — after you've chosen your defense or declined to — before Rock-Paper-Scissors and before any Special Rule (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
 
@@ -67,6 +67,8 @@ The next time an ally would take attack damage, you take it instead.
 
 **(13) Initiative Shift X**
 A positive shift moves the target's token X positions counterclockwise around the wheel (see `rules/combat.md`); a negative shift moves it X positions clockwise.
+
+**With only two tokens on the wheel, it does nothing** — turns simply alternate (`rules/combat.md`, Two on the wheel). The same goes for anything else that rewrites the order, PRIORITY's swap included.
 
 **Sooner and later are measured against when that token's own next turn would have arrived** — not by where it ends up sitting in the ring. Going last is not the same as acting later: a token that has already acted this lap sits exactly where a token that has already acted sits, and waiting a full lap from there is the ordinary cost of having gone.
 
@@ -139,12 +141,15 @@ Damage that cannot be defended against. It ignores every defense that applies to
 **(9) Ward**
 Prevent the next Debuff (above) applied to you. Triggers automatically the instant a qualifying Debuff would apply — no declaration required. Expires on use.
 
+**(0) Cadence**
+**Cadence: X** means: **if the colour of the last card you revealed is different from this card's colour, X.** Attacking or defending, a Passive included — any card you turned face up counts. A turn spent moving reveals nothing and changes nothing; Cadence looks at the last card you actually showed. *Defined 2026-10-05 (Drew) so the condition lives here once and each card only says what Cadence gets it. First called Flow, renamed the same day because FLOW is already a card (`cards/green-soul.md`).* It is a signature keyword for now — Chris's cards are the ones that use it (`cards/chris.md`), which is why the core count is zero.
+
 **(4) Immunity**
 The next attack damage you would take is reduced to 0. Nothing else about the exchange changes: cards are chosen and revealed as normal, the RPS outcome stands, and the attacker's Effect and any Defense Effect trigger exactly as they otherwise would. Only the damage is negated.
 
 It applies inside the Damage Pipeline (`rules/combat.md`), which has two consequences worth knowing. It protects whoever actually receives the damage, so an attack reassigned onto someone else meets *their* Immunity, not yours. And it does nothing against unpreventable damage — Thorns, status damage, and HP costs were never attack damage to begin with.
 
-One use, spent the moment it actually negates something. An exchange that deals you no damage anyway — you won, or it was a tie — leaves it untouched for the next one.
+One use, spent the moment it actually negates something. An exchange that deals you no damage anyway — you won the reveal — leaves it untouched for the next one. A tie is not one of those: it lands the hit (`rules/combat.md`, Attack Resolution), so it spends the stack.
 
 ---
 
@@ -153,7 +158,7 @@ One use, spent the moment it actually negates something. An exchange that deals 
 Not a keyword — a shared mechanic. Some cards change one of your stats for a combat (Sunder drains Mind, Wither drains Body, Erode drains Soul; other cards may raise a stat). A changed stat uses its new value for everything it governs, in real time:
 
 - **Body** — Red-card damage, and max HP at **4 points per point of Body** (down when lost, up when gained) — the heaviest of the three shares by a wide margin, matching the HP formula's own weighting: (4 × Body) + Soul + Mind.
-- **Mind** — Blue-card damage; hand size (equal to Mind, minimum 2 — hand size never drops below 2, however far Mind falls; changes the moment the stat does, and a hand already above the new, lower size is not discarded down, it simply can't draw back up until it naturally falls below the cap); and max HP at **1 point per point of Mind**.
+- **Mind** — Blue-card damage; hand size (equal to Mind, **with no minimum** *(2026-09-28)* — a Mind of 0 is a hand of 0, and a combatant holding no cards can neither attack nor defend with one, though a player's Passives still play; changes the moment the stat does, and a hand already above the new, lower size is not discarded down, it simply can't draw back up until it naturally falls below the cap); and max HP at **1 point per point of Mind**.
 - **Soul** — Green-card damage; initiative (1d6 + Soul, applied to rolls made after the change); and max HP at **1 point per point of Soul**.
 
 **All three stats touch max HP** *(changed 2026-08-06 to match the HP formula's own three-stat shape — Body at 4×, Mind and Soul at 1× each; previously Body was the only stat that did. Body's multiplier went from 3× to 4× on 2026-09-06, widening the HP spread so Body carries more of it.)*. If a loss puts your current HP above the new maximum, current HP falls to the maximum; if your maximum reaches 0 you Collapse. Increasing max HP does not increase current HP.

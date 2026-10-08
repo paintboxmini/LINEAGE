@@ -11,7 +11,7 @@ Signature cards for Vescal, censer-bearer of Trutinate. Frontline anchor and sup
 **CENSURE**
 GREEN — SOUL
 Attack: Soul + d8
-Effect: Attack all Frontline targets simultaneously. All targets hit gain Rooted 2.
+Effect: Attack all enemies in the Frontline simultaneously. All enemies hit gain Rooted 2.
 Defense Effect: Attacker gains Rooted 2.
 Range: Melee
 *"Be still. This has already been decided."*
@@ -69,7 +69,7 @@ Range: Melee
 **CENSER SWING**
 RED — BODY
 Attack: Body + d6
-Effect: If target is Frontline, deal +2 damage.
+Effect: If the defender is in the Frontline, deal +2 damage.
 Defense Effect: Push attacker to Backline.
 Range: Both
 *"Peaceful men learn where to swing."*
@@ -79,7 +79,7 @@ Range: Both
 **CHAIN REACH**
 RED — BODY
 Attack: Body + d6
-Effect: If target is Backline, deal +3 damage.
+Effect: If the defender is in the Backline, deal +3 damage.
 Defense Effect: Counter Attack.
 Range: Ranged
 *"Distance is a preference, not a fact."*

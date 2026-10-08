@@ -5,7 +5,7 @@
 **YOUR TURN WILL COME**
 GREEN — SOUL — MILESTONE
 Attack: Soul + d6
-Effect: Apply Initiative Shift -2 to target.
+Effect: Apply Initiative Shift -2 to the defender.
 Defense Effect: Apply Initiative Shift -2 to the attacker.
 Range: Ranged
 *"Everyone is seen. In order. Sit down."*
@@ -15,7 +15,7 @@ Range: Ranged
 **REGISTERED**
 BLUE — MIND — MILESTONE
 Attack: Mind + d6
-Effect: Scry 2 on the target's deck. The most dangerous card seen is struck from the book instead of merely re-filed — Exile it rather than sending it to the discard pile.
+Effect: Scry 2 on the defender's deck. The most dangerous card seen is struck from the book instead of merely re-filed — Exile it rather than sending it to the discard pile.
 Defense Effect: Gain Ward.
 Range: Ranged
 *"Your name was already in the book."*
@@ -25,7 +25,7 @@ Range: Ranged
 **NO VACANCY**
 RED — BODY — MILESTONE
 Attack: Body + d8
-Effect: Move target to Backline.
+Effect: Move the defender to the Backline.
 Defense Effect: Gain Resist 2.
 Range: Melee
 *"Rooms are for guests. You haven't checked in."*

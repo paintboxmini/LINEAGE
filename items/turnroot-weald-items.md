@@ -27,7 +27,7 @@ Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of pr
 ---
 
 ### Sap Vial
-*Source: Rootstalker (rare — DC 14 Senses/Body to collect without wasting)*
+*Source: Rootstalker (rare — Hard (16) Body/Senses to collect without wasting)*
 *Price: ~17 gold*
 
 Thick, dark-green sap that smells metallic and green.
@@ -139,19 +139,19 @@ A bead made from a precisely carved vertebra, threaded on silk. One of dozens in
 ---
 
 ### Bone Collector Flesh
-*Source: The Bone Collector — harvested fresh only (DC 12 Body/Senses check to preserve the casing intact)*
+*Source: The Bone Collector — harvested fresh only (Normal (13) Body/Senses check to keep the casing intact)*
 *Price: ~40 gold (Senshi's going rate — half that if the casing cracked on harvest)*
 
 The body of a caterpillar roughly the size of a large dog, with a patchwork casing of insect husks and bone fragments woven over it. The flesh beneath changes flavor depending on what the Collector had incorporated — bitter-mineral from bone, sweet-fatty from chitin, metallic-bright from weapon fittings. No two specimens are identical.
 
-**Quest item:** Required for Senshi's Bone Collector Crisps at the Gilded Tusk. He will inspect it. Deliver intact or negotiate a discount.
+**Quest item:** What Senshi's Commission is for (`places/capital/gilded-tusk.md`) — the one Bone Collector, which he has never cooked. He will inspect it. Deliver intact or negotiate a discount.
 
-**Harvesting:** Must be collected fresh. If the body sits too long or the casing is damaged, Senshi refuses it entirely ("You've cooked it already and done it wrong"). DC 12 Body/Senses to harvest cleanly. On failure, the casing cracks — Senshi accepts it at half price.
+**Harvesting:** Must be collected fresh. If the body sits too long or the casing is damaged, Senshi refuses it entirely ("You've cooked it already and done it wrong"). Normal (13) Body/Senses to harvest cleanly. On failure, the casing cracks — Senshi accepts it at half price.
 
 ---
 
 ### Future-Lock Wasp Larvae
-*Source: The Hanging Gallery — DC 14 Body/Senses, or free harvest after swarm dispersal*
+*Source: The Hanging Gallery — Hard (16) Body/Senses, or free harvest after swarm dispersal*
 *Price: ~35 gold (Senshi's going rate — must be delivered alive within a day)*
 
 Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis venom is concentrated in the larval stage. Smell faintly chemical.
@@ -163,5 +163,5 @@ Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis ven
 ## Harvesting Rules
 
 Harvesting from the Turnroot Weald requires time and care:
-- Harvesting takes a short rest **or** a successful DC 12 Body/Senses check to avoid wasting the material.
+- Harvesting takes a short rest **or** a successful Normal (13) Body/Senses check to avoid wasting the material.
 - At high Pressure levels, harvesting from the forest (especially from Rootstalkers) raises Pressure by 1. The forest notices.

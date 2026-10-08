@@ -56,7 +56,7 @@ Then he adjusts the lantern and keeps walking.
 
 The basin operates on folk logic. Everything physical corresponds to something invisible. The fog has direction, density, memory — it can be read.
 
-- **Smoke reading** — the fog has direction and density. Someone trained in this reads it like text. DC 15 Mind to extract useful information from fog movement.
+- **Smoke reading** — the fog has direction and density. Someone trained in this reads it like text. Hard (16) Mind to extract useful information from fog movement.
 - **Crossroads workings** — the misdirection trap is the oldest trick in this tradition. The basin shows you the wrong path. It doesn't lie and it doesn't move anything; it just holds more routes than one traveller can keep straight, and the fog decides which one you can see.
 - **Threshold space** — the basin is a threshold that never closes. Echoes persist here because the boundary between passage and arrival never fully resolves.
 

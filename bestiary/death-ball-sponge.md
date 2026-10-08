@@ -16,7 +16,7 @@ The surface is covered in fine hooks and pores that weep a contact enzyme. The e
 
 **Breaking free:**
 - **Force it:** Take 2 damage. Immediately un-Rooted.
-- **Work it loose:** DC 12 Body/Senses check on your turn, or spend a full action to detach carefully. No damage on success.
+- **Work it loose:** Normal (13) Body/Senses check on your turn, or spend a full action to detach carefully. No damage on success.
 
 **Colony:** Dense clusters of 4–8 sponges across a patch of floor. Moving through a colony without a successful spot check requires a DC 11 Body/Senses check per character or trigger a sponge.
 

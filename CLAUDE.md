@@ -74,11 +74,17 @@ detail.** More explanation in the same vocabulary is the wrong repair.
 
 - `factions-and-races/races-sirens.md` — **reserved, Ollie's.** Her working file is `experimental/ollies-island.md`
 - `factions-and-races/races-fairies.md` — **reserved, Sophie's.** Nothing approved, the name included
-- `campaign/` — each file belongs to the player it's about; they get the final say
+- `campaign/` — each file belongs to the player it's about, **for the fiction.** See the split below. **How much to fill in differs by player**: Chris writes his own specifics, so leave his blanks alone; Pat and Kevin want theirs filled (`campaign/README.md`, How much to fill in)
 
 Don't draft into a reserved slot, don't resolve a naming question that belongs to its owner, and don't move their material.
 
-**Don't write ahead of player choice.** Sketch what a place or a person is; don't decide what the party will do there.
+**Don't write ahead of player choice.** Sketch what a place or a person is; don't decide what the party will do there. **Combat-only NPCs stay unnamed until a player makes them matter** *(2026-10-01)* — hunters, guards, crew, anyone who exists almost entirely to be fought and will likely never get a line. Say so as a decision, not as an open question, so it doesn't keep surfacing. **Anyone the party can meet face to face in a social scene gets a name.**
+
+**The fiction is the player's. The mechanics are not** *(2026-09-26)*. A player owns who their character is, what they want, what they are afraid of, and what they want to be able to *do* — that is their job, and it is the whole reason the character is any good. **Designing the rule that delivers it is Drew's job, and an agent's working for him.** A player's mechanical proposal is **input, and wanted** — take it seriously, then design it properly. Don't hand a rules call back to them as "their call."
+
+*Two reasons it works this way, and the second is the load-bearing one.* **The game has to stay balanced**, and only somebody looking at the whole pool can see that. And **the game has to outlive any one character** — other people play, and a rule written to satisfy one sheet is a rule the next table inherits.
+
+*The known failure mode, and it has already happened here:* a player given the rules and asked to design cards came back with D&D mechanics wearing this game's card layout. **The card names and the flavour text were good and are still in use. Everything mechanical on them was invented whole and had to go.** Which is exactly the division of labour above, arrived at the expensive way.
 
 ---
 
@@ -88,7 +94,7 @@ These are consequences, not settings. Change a stat and all of them move with it
 
 - **Max HP = (4 × Body) + Mind + Soul** (`rules/character-creation.md`)
 - **Deck size = Body + Mind + Soul**, for players and creatures alike. **Matching each colour's count to its stat is a heuristic, not a law** — it is how almost everything here is built, which makes it a fast way to write content, and it is not a constraint the game enforces (`rules/cards.md`, Paying for an off-ratio deck)
-- **Hand size = Mind** (minimum 2)
+- **Hand size = Mind**, with no minimum — a hand of zero is allowed *(2026-09-28)*
 - **The Oracle sets are 12/6/3 per colour** in that colour's range identity, and the expansion is 4/2/1. `oracle-1/2/3` are derived thirds, so changing the ratio breaks the even deal. New cards get written whenever they are wanted — what is fixed is the number of **seats**. Taking a seat in a printed set is a swap; writing a card is not. Cleared cards sit on the bench with no seat, and being unseated is not a verdict
 - **There is one card count in this repo and it is `printing/manifest.txt`** *(2026-09-25)*. It is regenerated from the card files and the tier lists, and it holds the pool size, the colour split and the seated/bench/middle partition. **Cite it; never restate a number from it.** Five files used to each carry their own and they disagreed three ways — a count written by hand is wrong by the time somebody checks
 
@@ -98,6 +104,7 @@ When you change a card or a stat block, check what else consumes it: the seated 
 
 ## Conventions worth knowing before you edit
 
+- **A gap in the files means a typical medieval fantasy world, never a lacking one** *(2026-09-28)*. Unless a file says otherwise, stone is stone, bread is bread, the weather is weather, and most people are having an ordinary day. **The strange, the modern and the terrible are the things that get marked** — the vibro knife is written as technology this world does not otherwise have (`campaign/kevin.md`), and that is what an exception looks like. The dark material has the most pages because it is what needs rules, not because it is the whole world. So don't fill a gap by subtracting — *no moon, no shadows and rotten stone were all invented that way and all had to come out* — and don't fill it with real-world modern references either. **Search for a marked exception before falling back on the default** — the setting already had light cartography, which answered what the picture on identity papers is, and it was missed for that reason
 - **`cards/*.md` is globbed non-recursively** by `combat-simulations/cards.py` (`os.listdir`) and by `printing/generate-cards.py`. Both parsers read every `.md` at the top of `cards/` as a deck, which is why `cards/tiers/` is a subdirectory — the files there are documentation
 - **`printing/generate-all.sh` builds print artifacts and nothing else, deliberately.** Don't wire checks, linting, or anything else into it. **Its load-bearing half is the staleness diff, not the PDFs** — reasoning about which sheets should have moved after a rules edit has failed three times out of three, and rebuilding everything and diffing has caught it three out of three. That half needs no Chrome
 - **Every printed artifact is build output, is not in git, and is generated in chat.** Drew has no terminal, so he asks and an agent builds the file from the markdown and hands it over. **There is no CI release path and no tagging — that existed until 2026-09-22 and was retired unused.** What the repo keeps is the *recipe*: the generators, the format conventions in `printing/README.md`, and **`printing/manifest.txt`** — one line per artifact with a hash, which is what the staleness diff runs against now that the HTML is untracked too (2026-09-25). *A one-off document built for somebody to read is output and goes to the person, never into the tree*

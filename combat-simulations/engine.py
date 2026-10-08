@@ -75,6 +75,8 @@ MUST_TARGET = 'must_target'      # must attack a named combatant if able
 SKIP_DRAW = 'skip_draw'
 IGNORE_FORCED_MOVE = 'ignore_forced_move'
 WOUND_INSTEAD = 'wound_instead'  # next attack wounds rather than damages
+MOVE_COSTS = 'move_costs'        # moving is allowed and charges damage
+LOST_TRACK = 'lost_track'        # cannot attack a named combatant until found
 
 
 class Combatant:
@@ -210,6 +212,11 @@ class Combatant:
         # Turns handed back mid-turn: DOUBLE DOWN and TRAMPLE.
         self.extra_attacks = 0
         self.extra_actions = 0
+        # A creature's printed Traits, where the engine has to know them: how
+        # many Actions it takes a turn (the weeping wolf's Never Still), and any
+        # status it can never be given (its A Hundred Eyes).
+        self.actions_per_turn = 1
+        self.cannot_gain = set()
 
         # Damage modifiers that outlive the exchange that granted them —
         # CALLED SHOT against one target, ATTUNE on one colour, CLIMB while
@@ -226,6 +233,12 @@ class Combatant:
         # it was played on someone else's. Only attacks are recorded.
         self.last_color = None
         self.color_this_turn = None
+
+        # Cadence (`rules/card-glossary.md`): the colour of the last card this
+        # combatant revealed, attacking or defending. `flow_prev` is the one
+        # before the card now resolving, which is what a Cadence clause asks.
+        self.last_reveal_color = None
+        self.flow_prev = None
 
         # The colour of the attack before this one. A different question
         # from last_color above: that one is per *turn*, which is what
@@ -262,6 +275,8 @@ class Combatant:
             return False
 
         # CORNER and friends: a restriction that simply forbids it.
+        # CORNER is the Minotaur's card since 2026-09-26, not a player's;
+        # the engine matches on the text, so nothing here moved with it.
         locked = self.restriction(NO_MOVE)
         if locked is not None:
             if log:
@@ -287,6 +302,14 @@ class Combatant:
         if log:
             log(f'  {self.name} moves to the {dest}.')
         self.break_anchors(log=log, reason='moved')
+
+        # THINK TWICE: the move is legal and it costs. Charged after the
+        # move, every time, for as long as the restriction is in force —
+        # NO_MOVE forbids, this one prices.
+        toll = self.restriction(MOVE_COSTS)
+        if toll is not None:
+            self.take(toll.data.get('damage', 0), source=toll.data.get('who'),
+                      log=log)
         return True
 
     def break_anchors(self, log=None, reason='moved'):
@@ -370,8 +393,9 @@ class Combatant:
 
     @property
     def hand_size(self):
-        """rules/character-creation.md: hand size is Mind, minimum 2."""
-        return max(2, self.mind)
+        """rules/character-creation.md: hand size is Mind, with no minimum.
+        A hand of zero is allowed (2026-09-28)."""
+        return max(0, self.mind)
 
     @property
     def death_threshold(self):
@@ -621,7 +645,7 @@ def d(sides, rng=random):
 def _roll_die(sides, rng, explode=0):
     """One die, exploding on odd results while rolls remain.
 
-    GAMBLER'S RUIN: "every odd die result explodes — roll it again and add
+    GAMBLER'S FOLLY: "every odd die result explodes — roll it again and add
     to the damage. (Max 3 extra rolls.)"
     """
     total = d(sides, rng)
@@ -674,6 +698,13 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     # anything asking about a colour change. Recorded here rather than in
     # play.py so an extra attack handed back mid-turn also counts, and only
     # for the attacker — a defence is played on someone else's turn.
+    # Cadence: every revealed card counts, a block included, so both sides
+    # roll their last-revealed colour forward here, on the reveal.
+    for who, card in ((attacker, atk_card), (defender, def_card)):
+        if card is not None:
+            who.flow_prev = who.last_reveal_color
+            who.last_reveal_color = card.color
+
     if atk_card is not None:
         attacker.color_this_turn = atk_card.color
         # KILLSWITCH: "Playing the same colour 2 attacks in a row ends it."
@@ -759,7 +790,8 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
         # HOLD THE LINE takes the colour it is resolving against, so there
         # is nothing for RPS to decide. A guaranteed tie, which its own
         # "you win on a tie" then converts on defence and cannot convert on
-        # offence — that asymmetry is the card.
+        # offence — a full block one way, a bare d4 that always lands the
+        # other (a tie lands the hit since 2026-10-03).
         mirror = atk_card if atk_traits.mirrors_color else def_card
         log(f'  {mirror.name} takes the colour it is facing — a tie.')
         outcome = Outcome.TIE
@@ -869,7 +901,11 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
         atk_traits.mutes_opponent_defense_effect
         or (outcome == Outcome.TIE and atk_traits.mutes_defense_effect_on_tie))
 
-    if outcome == Outcome.ATTACKER:
+    # A tie lands the hit too (Drew, 2026-10-03): damage and the Effect
+    # exactly as on a win, and then the Defense Effect on top. So both
+    # outcomes walk the same path here, and the tie picks up its Defense
+    # Effect afterwards.
+    if outcome in (Outcome.ATTACKER, Outcome.TIE):
         # The Effect gets a look in before the roll, because some of it is
         # about the roll. Only the 'pre' ops run here — everything else
         # waits until the damage has landed, so Deadly is banked for the
@@ -927,14 +963,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
             returned_def, gone_atk, held_def = _run(
                 def_card, 'defense_effect', defender, attacker, outcome, 0,
                 log, rng, wheel, atk_card)
-    elif outcome == Outcome.TIE:
-        log('  Tie — no damage.')
-        if mute_atk:
-            log(f'  {atk_card.name}\'s Effect does not trigger this exchange.')
-        else:
-            returned_atk, gone_def, held_atk = _run(
-                atk_card, 'effect', attacker, defender, outcome, 0, log, rng,
-                wheel, def_card)
+    if outcome == Outcome.TIE and def_card is not None:
         if mute_def:
             log(f'  {def_card.name}\'s Defense Effect does not trigger '
                 f'this exchange.')
@@ -966,10 +995,10 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
 
     # TRAMPLE and DOUBLE DOWN hand the attacker something back; the turn
     # loop in play.py is what can actually spend it.
-    if outcome == Outcome.ATTACKER:
-        if atk_traits.extra_attack_on_clean_win:
-            attacker.extra_attacks += 1
-            log(f'  {attacker.name} attacks again immediately.')
+    if outcome == Outcome.ATTACKER and atk_traits.extra_attack_on_clean_win:
+        attacker.extra_attacks += 1
+        log(f'  {attacker.name} attacks again immediately.')
+    if outcome in (Outcome.ATTACKER, Outcome.TIE):
         if atk_traits.extra_action_on_collapse and defender.down:
             attacker.extra_actions += 1
             log(f'  {attacker.name} gains another action.')

@@ -14,6 +14,8 @@ You don't so much arrive at Glasslight Reach as finish climbing it.
 
 **This is the only place the river web touches the Unheld.** The web is a closed circuit driven by its own waterfalls (`world/geography-overview.md`, River system) — it does not drain to a coast and it has no other mouth. One narrow river, one quay, one meeting point on the whole continent.
 
+**Which makes the quay shallows the only river mouth anywhere, and Unity Jellies are in them** (`bestiary/unity-jelly.md`) — fist-sized, glowing, and found otherwise only in lakes. *On a dark night the water at the foot of the cliff is lit from below by something that will fuse with the first other one it touches.*
+
 **Which is most of why three institutions are stacked on one cliff.** The Masons keep glyphs here, the Cartographers' Guild maps the edge from here, and the People of Promise return their dead here (`factions-and-races/the-masons.md`, `factions-and-races/the-cartographers-guild.md`, `factions-and-races/people-of-promise.md`). None of them chose this cliff for the view. It is the door, and everyone whose work is about the Unheld ends up standing at it.
 
 *It is also the one place a thing could come the other way, and once did (`places/the-coil.md`).*
@@ -44,7 +46,7 @@ Most who leave don't stop wanting to come back, even just for a visit. Losing th
 
 The economy runs on light. Light-cartographers are the nobility — their books full of swatches, lens-angles, humidity notes, annotations of hues that don't have names.
 
-Primary exports: light atlases, hand-ground prisms, and silvered paper that holds a hue for a few hours before fading.
+Primary exports: light atlases, hand-ground prisms, and silvered paper — the cheap grade, which lets go of an image about a week after its subject has changed (`factions-and-races/the-cartographers-guild.md`, The Atlas).
 
 ## The Tide Market
 
@@ -52,7 +54,7 @@ Ink, paper, sweet breads, minerals, roasted bird and other flying things — the
 
 ## The Gallery
 
-Half the wall is light maps — the Glasslight chapter's own specialty (`factions-and-races/the-cartographers-guild.md`, Structure), Soft Edge surveys and city-light studies made the same way the town makes everything out of light. They don't last, same underlying limit as the silvered paper the rest of the economy runs on (see Economy, above) — light doesn't hold a hue forever no matter how carefully it's set. A light map is worked harder and holds longer than a plain export sheet, about a week before the color gives out, but the stock still stays thin no matter how much sells. The other half is what you'd find in any gallery — ordinary maps, wildlife sketches, traded the same as everything else here.
+Half the wall is light maps — the Glasslight chapter's own specialty (`factions-and-races/the-cartographers-guild.md`, Structure), Soft Edge surveys and city-light studies made the same way the town makes everything out of light. They don't last, because what they record doesn't: **an image only fades once its subject changes**, and the Soft Edge and the town's own light never stop changing (`factions-and-races/the-cartographers-guild.md`, The Atlas). A light map is made on the specialised stock and holds a couple of months after its subject has moved on, against about a week for a plain export sheet — but the stock still stays thin no matter how much sells. The other half is what you'd find in any gallery — ordinary maps, wildlife sketches, traded the same as everything else here.
 
 One piece is the exception, and it isn't for sale: a Tomás Kettlewright recording of the light-dance itself, Guild chapter window bait, and the finest piece of light cartography anyone in the Reach has seen. Not a survey of the cliff face — a recording of the thing out past it, taken with the same instruments and the same discipline, which is exactly why it's the showpiece. The Guild records the dancing lights; that is a stated part of the work (`factions-and-races/the-cartographers-guild.md`, Methods). Almost nobody records them *well*.
 
@@ -89,7 +91,7 @@ So the edge gets remapped, continually, and the map is a color map because color
 - `quests/tide-pulls-back.md` — the adventure set here and on the cliffs
 - `bestiary/shockquills.md` — the quilled animals of the scree below the town, sorting the cliffs' own mineral veins out of the gravel
 - `factions-and-races/people-of-promise.md` — who lives here
-- `characters/mirel.md`, `characters/kaine.md` — named figures of the Reach
+- `characters/mirel.md`, `characters/wade.md` — named figures of the Reach
 - `characters/rue.md`, `characters/marren.md`, `characters/thess.md` — light-cartography and its costs
 - `characters/wren.md` — the Promise congregation
 - `world/seats.md` — Song and Silence, a noticed-not-confirmed resonance with why the streets sing (GM-facing; nobody in Glasslight knows)

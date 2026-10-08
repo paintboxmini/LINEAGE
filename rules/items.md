@@ -94,7 +94,7 @@ Three questions the table actually needs to answer, in this order:
 *Full entries: `items/fog-basin-items.md`. Primary source: Pell.*
 
 - **Fog Goggles** *(Artifact)* — never Blind from fog/Fogburst; costs adding FOGLUST (a Blind-on-draw curse card) to your deck. Price varies per customer — Pell charges in memories and secrets, not coin. Which Seat, if any, it's aligned to is open design, not a gap to close — same register as the rest of the Fog Basin's unresolved edges.
-- **Pell's Lanterns** — four named, single-use, price set by Pell: Lantern of Returning (the fog cannot lead you astray while lit — Misdirection Trap has no effect), Lantern of the First Path (reveals the original path through an area, DC 12 Mind), Lantern of the Unlost (Echoes repeat useful fragments nearby), Lantern of Quiet Wings (Fogcallers won't initiate combat while lit).
+- **Pell's Lanterns** — four named, single-use, price set by Pell: Lantern of Returning (the fog cannot lead you astray while lit — Misdirection Trap has no effect), Lantern of the First Path (reveals the original path through an area, Normal (13) Mind), Lantern of the Unlost (Echoes repeat useful fragments nearby), Lantern of Quiet Wings (Fogcallers won't initiate combat while lit).
 
 ---
 
@@ -136,11 +136,11 @@ Three questions the table actually needs to answer, in this order:
 
 ---
 
-## Kaine (Vitality and Destruction Artifact)
+## Wade (Vitality and Destruction Artifact)
 
-*Full entry: `items/lightning-loop.md`, `characters/kaine.md`.*
+*Full entry: `items/lightning-loop.md`, `characters/wade.md`.*
 
-- **The Lightning Loop** — a ring aligned to Vitality and Destruction, the Seat most people call Storm (`world/seats.md`), currently worn by Kaine. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. **The Seat has no bearer** — its Named Archons line is empty, and the only candidate anywhere is an open question in `characters/kaine.md` about whether Greed might take it if Dakota plays. Whether any of that bears on Kaine's own claim to this Artifact is unestablished, on purpose.
+- **The Lightning Loop** — a ring aligned to Vitality and Destruction, the Seat most people call Storm (`world/seats.md`), currently worn by Wade. Heals 1 HP when used for his "water trick"; calls down real, only partially controllable lightning in a confrontation. The one existing Artifact in the world that actually matches `rules/equipment.md`'s "extension of a specific Seat's domain" framing directly — worth using as the reference example for future Artifacts. **The Seat has no bearer** — its Named Archons line is empty, and the only candidate anywhere is an open question in `characters/wade.md` about whether Greed might take it if Dakota plays. Whether any of that bears on Wade's own claim to this Artifact is unestablished, on purpose.
 
 ---
 
@@ -184,17 +184,18 @@ Willem's paintings, Kess's and Moth's possessions, and the soul-economy trades a
 
 *Inventoried 2026-09-22 across `bestiary/`, `flora/` and `items/`.*
 
-### Kevin's seasonings — the five loads
+### Kevin's seasonings — the six loads
 
 | Ingredient | Off | Gate | Price |
 |---|---|---|---|
 | Sapphire crystal | Sapphire Ant (`bestiary/sapphire-ant.md`) | **bought** | **2 copper** at Senshi's counter |
 | Cinder flake | Scorchback Beetle (`bestiary/scorchback-beetle.md`) | dangerous to harvest | **none set** |
-| Hush petal | Hush Bloom (`flora/hush-bloom.md`) | slow to harvest — it only opens in stillness | **none set** |
-| Spinstone grind | Shockquills (`bestiary/shockquills.md`) | dangerous to harvest *correctly* — the kill has to be at 3+ Charge | **none set** |
+| Leadfoot | Hush Bloom (`flora/hush-bloom.md`) | slow to harvest — it only opens in stillness | **none set** |
+| Spinstone | Shockquills (`bestiary/shockquills.md`) | dangerous to harvest *correctly* — the kill has to be at 3+ Charge | **none set** |
 | Bellows dust | Blowback Beetle (`bestiary/blowback-beetle.md`) | has to be beaten in a fight | **none set** |
+| Redgum | Bloodelm (`flora/bloodelm.md`) | on somebody else's tree — it has to be asked for | **none set** |
 
-**Four of the five have no number, and the fifth is two copper** (`campaign/kevin.md`). *That is the live gap in this section: Kevin's whole character is an ingredient economy, his sheet already asks whether Senshi stocks cinder flake and hush petal, and there is no rate for any of it if the party ever wants to sell instead of cook.*
+**Five of the six have no number, and the sixth is two copper** (`campaign/kevin.md`). *That is the live gap in this section: Kevin's whole character is an ingredient economy, his sheet already asks whether Senshi stocks cinder flake and leadfoot, and there is no rate for any of it if the party ever wants to sell instead of cook.*
 
 ### Burnrind — correctly worth nothing
 

@@ -7,7 +7,7 @@ Signature cards for the Rootstalker. Tagged as WEALD — these cards represent t
 **LIMB-SNAPPER**
 RED — BODY — WEALD
 Attack: Body + d6
-Effect: If the target is in the Backline, deal +2 damage and pull them to the Frontline.
+Effect: If the defender is in the Backline, deal +2 damage and pull them to the Frontline.
 Defense Effect: Gain Thorns 4.
 Range: Ranged
 *"The stalker's reach is longer than the path you thought you took."*

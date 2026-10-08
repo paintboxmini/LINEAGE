@@ -46,7 +46,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, return this card to your hand
-Defense Effect: Apply Initiative Shift +2 to yourself.
+Defense Effect: Apply Initiative Shift +1 to yourself.
 Range: Ranged
 *"Clarity rewards the prepared mind."*
 
@@ -56,7 +56,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Defender gains Weak. Apply Initiative Shift -2 to them.
-Defense Effect: Only on a clean win — not a tie. The attack is not stopped: it resolves against a target of your choice instead of you, at full damage, spending the attacker's statuses on it as it goes.
+Defense Effect: Only on a clean win — not a tie. The attack is not stopped: it resolves against any target other than you, at full damage, spending the attacker's statuses on it as it goes.
 Range: Ranged
 *"It has to land somewhere. Somewhere is negotiable."*
 
@@ -106,7 +106,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d4
 Effect: Attack deals half damage (rounded up) to an additional enemy
-Defense Effect: Enemy must target you again on their next turn if possible
+Defense Effect: The attacker must target you again on their next turn if possible
 Range: Ranged
 *"It does not stop at the first one. That is the whole idea."*
 
@@ -132,21 +132,21 @@ Range: Ranged
 
 ---
 
-**UNDERSTANDING**
+**PIECE TOGETHER**
 BLUE — MIND
 Attack: Mind + d8. Discard a card; if you do, +1d6.
 Effect: None.
 Defense Effect: Scry 2. If you bottom both, heal 4 HP
 Range: Ranged
-*"Clarity is not given, it is reconstructed."*
+*"Clarity is not given. It is assembled, out of what you were willing to give up for it."*
 
 ---
 
 **PARTITION**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target cannot attack or be attacked until your next turn.
-Defense Effect: Target cannot attack or be attacked until your next turn.
+Effect: The defender cannot attack or be attacked until your next turn.
+Defense Effect: The attacker cannot attack or be attacked until your next turn.
 Range: Ranged
 *"True boundaries are drawn in thought before they're drawn in blood."*
 
@@ -216,8 +216,8 @@ Range: Both
 **ERODE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender loses 1 Soul this combat.
-Defense Effect: Attacker loses 1 Soul this combat.
+Effect: The defender loses 1 Soul this combat.
+Defense Effect: The attacker loses 1 Soul this combat.
 Range: Ranged
 *"Not a blow. A season."*
 
@@ -415,13 +415,13 @@ Range: Melee
 
 ---
 
-**CORNER**
+**THINK TWICE**
 BLUE — MIND
 Attack: Mind + d8
-Effect: Neither you nor the defender may change position until your next turn.
-Defense Effect: Neither you nor the attacker may change position until your next turn.
+Effect: Each time the defender changes position before your next turn, they take 3 damage.
+Defense Effect: Each time the attacker changes position before your next turn, they take 3 damage.
 Range: Melee
-*"Now it is only the two of us, and only this much room."*
+*"Go on, then. It is not free."*
 
 ---
 

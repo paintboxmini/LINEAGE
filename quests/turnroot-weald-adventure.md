@@ -288,7 +288,7 @@ A trunk has come down across the only clean line the signs were offering. Not a 
 
 There's no third option that stays legal. They go over, or they raise the track.
 
-**The Climb — DC 17 Body (Senses or raw exertion, DM's read of the fiction).** Only one character must succeed. On a success, that character reaches the crown and can lower a rope, extend a hand, or haul the others up — the rest follow without individual checks once the first is set. **Advantage** if at least one ally helps from below (boost, braced rope, calling holds) — helping is an action or a clear fiction commitment, not free while also climbing. On a **failure**, the climber falls or slides back to the near side; no damage required unless the fiction is nasty, the cost is time, noise, and another attempt. A loud failure is a gift to anything tracking them — treat as a minor noise event against current Rootstalker trail quality (above). Tools (rope, a Dockhook Line) justify Advantage or a second helper; they don't lower the DC. The tree is the test, not the kit.
+**The Climb — Hard (16) Body (Senses or raw exertion, DM's read of the fiction).** Only one character must succeed. On a success, that character reaches the crown and can lower a rope, extend a hand, or haul the others up — the rest follow without individual checks once the first is set. **Advantage** if at least one ally helps from below (boost, braced rope, calling holds) — helping is an action or a clear fiction commitment, not free while also climbing. On a **failure**, the climber falls or slides back to the near side; no damage required unless the fiction is nasty, the cost is time, noise, and another attempt. A loud failure is a gift to anything tracking them — treat as a minor noise event against current Rootstalker trail quality (above). Tools (rope, a Dockhook Line) justify Advantage or a second helper; they don't lower the DC. The tree is the test, not the kit.
 
 **What's in the crown.** The first climber reaches the top *alone*. The others are still on the trunk or the ground. A **Flower Snake** (`bestiary/flower-snake.md`) has been still the whole climb — pattern matches blossom and bark. It strikes while the climber is alone. See that file's Ambush section for the check. This isn't a Rootstalker. The forest isn't pruning anyone here — something smaller is using the custom as cover.
 
@@ -457,7 +457,7 @@ DC 13 Mind/Reason to spot the nests before entering. On failure, the party distu
 
 **Encounter:** See `bestiary/future-lock-wasp.md` for swarm mechanics, save DCs, and dispersal methods. Fire is risky here — dense canopy, DM discretion on spread.
 
-**Harvest:** DC 14 Body/Senses to extract larvae without triggering the swarm. A dispersed swarm leaves nests unguarded for 1 minute — free harvest window.
+**Harvest:** Hard (16) Body/Senses to extract larvae without triggering the swarm. A dispersed swarm leaves nests unguarded for 1 minute — free harvest window.
 
 **Loot:** Future-Lock Wasp Larvae. See `items/turnroot-weald-items.md`.
 

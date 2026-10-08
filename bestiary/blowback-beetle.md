@@ -13,6 +13,8 @@ You hear one before you see it. The intake is a long wet drag of air, and then n
 
 **Deck (7 — 1 Blue / 4 Red / 2 Green):** BRACE THE LEGS *(blue)* · BLOWBACK, TRAMPLE, PUSH, ATTRITION *(red)* · GULP, ABIDE *(green)*
 
+**Blank deck:** Blue — BRACE THE LEGS *(Melee)* · Red — BLOWBACK *(Ranged)* · Green — GULP *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 **Trait — Armour 2:** Plated, and the plates overlap. Chip damage does very little.
 
 **Trait — Concussive Vent:** Whenever a Blowback Beetle successfully attacks, the defender is pushed to the Backline. It does not choose this and cannot decline it — the blast goes where the mouth is pointed.

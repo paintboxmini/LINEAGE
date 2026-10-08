@@ -37,7 +37,7 @@ Whether he made them or found them already glowing in the basin is not something
 | Lantern | Effect |
 |---------|--------|
 | Lantern of Returning | The fog cannot lead you astray while lit. Misdirection Trap has no effect. |
-| Lantern of the First Path | Shows the way someone originally walked through an area. DC 12 Mind to read correctly. |
+| Lantern of the First Path | Shows the way someone originally walked through an area. Normal (13) Mind to read correctly. |
 | Lantern of the Unlost | Echoes gather near it and repeat useful fragments of speech. |
 | Lantern of Quiet Wings | Fogcallers will not initiate combat while it burns. |
 

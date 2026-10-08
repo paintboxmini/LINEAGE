@@ -63,6 +63,7 @@ FRONT_ENEMIES = 'front_enemies'      # every enemy in the Frontline
 OTHER_ENEMY = 'other_enemy'          # a random enemy that is not the defender
 SELF_AND_ALLY = 'self_and_ally'      # "you and target ally each ..."
 SAME_POSITION_ENEMIES = 'enemies_here'   # enemies beside the defender
+DEFENDER_POSITION = 'defender_position'  # the defender and everyone beside them
 
 
 # A clause with no subject of its own inherits the last one named in the
@@ -133,6 +134,13 @@ class Context:
             return [e for e in self.enemies
                     if e is not self.opponent
                     and e.position == self.opponent.position]
+        if spec == DEFENDER_POSITION:
+            # WEEPING VEIL: "every enemy in the defender's position" is the
+            # defender *and* whoever stands with them, unlike
+            # SAME_POSITION_ENEMIES, which is the splash beside a target.
+            if self.opponent is None:
+                return []
+            return [self.opponent] + self.resolve(SAME_POSITION_ENEMIES, prompt)
         if spec == OTHER_ENEMY:
             rest = [e for e in self.enemies if e is not self.opponent]
             if not rest:
@@ -142,8 +150,11 @@ class Context:
         if spec == SELF_AND_ALLY:
             return [self.actor] + self.resolve(ALLY, prompt)
         if spec == ALLY:
-            pool = self.allies or [self.actor]
-            return [self._ask(spec, pool, prompt)]
+            # "Target ally" never means you (`rules/combat.md`, You Are Not
+            # Your Own Ally). With nobody else on the side, it has no target.
+            if not self.allies:
+                return []
+            return [self._ask(spec, self.allies, prompt)]
         if spec == ANY:
             pool = [self.actor] + self.allies + self.enemies
             return [self._ask(spec, pool, prompt)]
@@ -193,6 +204,10 @@ def grant(who, status, n=1, log=None, source=None):
     grants a Debuff pays it — a card, a Special Rule, or the engine.
     """
     status = status.lower()
+    if status in getattr(who, 'cannot_gain', ()):
+        if log:
+            log(f'  {who.name} cannot gain {status.title()}.')
+        return False
     if status in DEBUFFS and who.ward > 0:
         who.ward -= 1
         if log:
@@ -387,7 +402,7 @@ class Scry(Op):
             for c in keep:
                 who.deck.append(c)
             if who is ctx.actor:
-                # MATCHED PAIR and UNDERSTANDING ask about the cards, not
+                # MATCHED PAIR and PIECE TOGETHER ask about the cards, not
                 # about the act — so what was seen and where it went is
                 # recorded for the clauses that follow.
                 ctx.scried = list(look)
@@ -801,7 +816,7 @@ class DamageMultiplier(Op):
 
 
 class Explode(Op):
-    """GAMBLER'S RUIN: every odd die result is rolled again and added, up to
+    """GAMBLER'S FOLLY: every odd die result is rolled again and added, up to
     a cap. Changes the shape of the distribution rather than its centre, so
     it is a flag on the roll rather than a number added to it."""
     phase = 'pre'
@@ -974,7 +989,7 @@ def _r_damage(m):
     return [Damage(OPPONENT, int(m.group(1)), unpreventable=unp)]
 
 
-@rule(r'^deal\s+(\d+)\s+unpreventable damage to any enemy')
+@rule(r'^deal\s+(\d+)\s+unpreventable damage to (?:any enemy|target enemy)')
 def _r_damage_any(m):
     return [Damage(ANY, int(m.group(1)), unpreventable=True)]
 
@@ -1059,7 +1074,7 @@ def _r_both_front(m):
 # -- initiative --------------------------------------------------------
 
 @rule(r'^apply initiative shift\s+([+-]?\d+) to '
-      r'(yourself|an ally|all allies|the attacker|attacker|defender|the defender|any target|them)')
+      r'(yourself|an ally|target ally|all allies|the attacker|attacker|defender|the defender|any target|them)')
 def _r_shift(m):
     who = _who(m.group(2))
     return [Shift(who, int(m.group(1)))] if who else None
@@ -1067,7 +1082,7 @@ def _r_shift(m):
 
 # -- stats and buff removal -------------------------------------------
 
-@rule(r'^(target|defender|attacker) loses 1 (mind|body|soul) this combat')
+@rule(r'^(?:the )?(target|defender|attacker) loses 1 (mind|body|soul) this combat')
 def _r_statloss(m):
     who = _who(m.group(1))
     return [StatLoss(who, m.group(2).lower())] if who else None
@@ -1078,7 +1093,8 @@ def _r_strip_all(m):
     return [Strip(OPPONENT, 'all')]
 
 
-@rule(r'^remove one positive status effect of your choice from each enemy')
+@rule(r'^(?:remove one positive status effect of your choice from each enemy'
+      r'|all enemies lose one positive status effect of your choice)')
 def _r_strip_each(m):
     return [Strip(ALL_ENEMIES, 'one')]
 
@@ -1108,10 +1124,10 @@ GATES = [
     (re.compile(r'^if your HP is (\d+) or less,\s*', re.I),
      None, 'HP threshold'),
     # Before the roll there is no damage to look at, so in the pre phase
-    # this reads as "this attack is landing" — which on the attacker-wins
-    # path it is. After the roll it reads literally.
+    # this reads as "this attack is landing" — which on a win or a tie it
+    # is. After the roll it reads literally.
     (re.compile(r'^if this attack deals damage,\s*', re.I),
-     lambda ctx: (ctx.outcome == 'attacker wins' if getattr(ctx, 'phase', 'post') == 'pre'
+     lambda ctx: (ctx.outcome in ('attacker wins', 'tie') if getattr(ctx, 'phase', 'post') == 'pre'
                   else ctx.damage_dealt > 0), 'damage dealt'),
     (re.compile(r'^if target ally\'s HP is (\d+) or less,\s*', re.I),
      None, 'ally HP threshold'),
@@ -1121,6 +1137,13 @@ GATES = [
     # card played to defend was played on someone else's turn — see
     # `engine.Combatant.last_color`. So the rotation has to be kept up
     # rather than merely started.
+    # Cadence (`rules/card-glossary.md`, 2026-10-05): the last card you
+    # revealed, attacking or defending, is a different colour from this one.
+    (re.compile(r'^cadence:\s*', re.I),
+     lambda ctx: (getattr(ctx.actor, 'flow_prev', None) is not None
+                  and ctx.card is not None
+                  and ctx.actor.flow_prev != ctx.card.color),
+     'cadence'),
     (re.compile(r'^if the card you played last turn was a different '
                 r'colou?r than this one,\s*', re.I),
      lambda ctx: (getattr(ctx.actor, 'last_color', None) is not None
@@ -1192,9 +1215,12 @@ def compile_half(text, other=None, name=None):
             if test is None:
                 n = int(g.group(1))
                 who = 'ally' if 'ally' in label else 'self'
-                test = (lambda n, who: (lambda ctx: (
-                    (ctx.resolve(ALLY)[0] if who == 'ally' else ctx.actor).hp <= n
-                )))(n, who)
+                def _hp_at_most(ctx, n=n, who=who):
+                    # No ally on the field means no ally to measure, and
+                    # the gated clause has nothing to fire on.
+                    subject = ctx.resolve(ALLY) if who == 'ally' else [ctx.actor]
+                    return bool(subject) and subject[0].hp <= n
+                test = _hp_at_most
             gate = (test, label)
             if 'ally' in label:
                 gate_subject = ALLY
@@ -1328,7 +1354,7 @@ def _r_gain_here(m):
     return [Grant(ALLIES_HERE, m.group(1).lower())]
 
 
-@rule(rf'^apply ({STATUS_RE}) to all frontline enemies, and to yourself')
+@rule(rf'^apply ({STATUS_RE}) to all (?:frontline enemies|enemies in the frontline), and to yourself')
 def _r_smokescreen(m):
     return [Grant(FRONT_ENEMIES, m.group(1).lower()), Grant(SELF, m.group(1).lower())]
 
@@ -1522,6 +1548,15 @@ def _r_pressure(m):
                      uses=1, data={'color': 'just_played'})]
 
 
+@menu(r'^each time the (?:defender|attacker) changes position before your '
+      r'next turn, they take (\d+) damage')
+def _r_think_twice(m):
+    from engine import MOVE_COSTS
+    n = int(m.group(1))
+    return [Restrict(MOVE_COSTS, OPPONENT, f'moving costs {n}',
+                     data={'damage': n, 'who': 'actor'})]
+
+
 @menu(r'^neither you nor the (?:defender|attacker) may change position until '
       r'your next turn')
 def _r_corner(m):
@@ -1530,7 +1565,7 @@ def _r_corner(m):
             Restrict(NO_MOVE, OPPONENT, 'pinned in place')]
 
 
-@menu(r'^target cannot attack or be attacked until your next turn')
+@menu(r'^(?:the )?(?:target|defender|attacker) cannot attack or be attacked until your next turn')
 def _r_partition(m):
     from engine import NO_ATTACK, NO_TARGET
     return [Restrict(NO_ATTACK, OPPONENT, 'partitioned — cannot attack'),
@@ -1543,7 +1578,7 @@ def _r_unname(m):
     return [Restrict(NO_DEFENSE_EFFECT, OPPONENT, 'Defense Effects silenced')]
 
 
-@menu(r'^(?:the defender|enemy|target) must (?:target|attack) you (?:again )?'
+@menu(r'^(?:the defender|the attacker|enemy|target) must (?:target|attack) you (?:again )?'
       r'(?:on their next turn|if able on their next turn)(?: if possible)?')
 def _r_must_target(m):
     from engine import MUST_TARGET
@@ -1580,7 +1615,7 @@ def _r_flat_bonus(m):
     return [DamageBonus(int(m.group(1)))]
 
 
-@menu(r'^if target is frontline, deal \+d(\d+) additional damage')
+@menu(r'^if (?:the )?(?:target|defender) is (?:in the )?frontline, deal \+d(\d+) additional damage')
 def _r_gore(m):
     from engine import FRONT
     return [Gated(lambda ctx: ctx.opponent is not None
@@ -1596,14 +1631,14 @@ def _r_plant(m):
 
 @menu(r'^every odd die result explodes.*?\(max (\d+) extra rolls\.?\)')
 def _r_gamblers_ruin(m):
-    """GAMBLER'S RUIN. The card's "if this attack deals damage" is stripped
+    """GAMBLER'S FOLLY. The card's "if this attack deals damage" is stripped
     as a gate before this runs, and in the pre phase that gate reads as
     "this attack is landing"."""
     return [Explode(int(m.group(1)))]
 
 
-@menu(r'^this attack also deals half its damage, rounded down, to every other '
-      r'enemy in the defender\'s position')
+@menu(r'^this attack also deals half its damage, rounded down, to '
+      r'(?:every other enemy|all other enemies) in the defender\'s position')
 def _r_cleave(m):
     return [Splash(SAME_POSITION_ENEMIES, 0.5, 'down')]
 
@@ -1802,6 +1837,45 @@ class Check(Op):
                 op.apply(ctx)
 
 
+class OpponentCheck(Op):
+    """A check the other side of the exchange makes, with something done to
+    them on a failure. `Check` above is the actor reading something; this is
+    the actor making somebody else try (OUT OF MIND)."""
+
+    def __init__(self, dc, stat, ops, label):
+        self.dc, self.stat, self.ops, self.label = dc, stat, ops, label
+
+    def apply(self, ctx):
+        who = ctx.opponent
+        if who is None:
+            return
+        rng = ctx.rng or ctx.actor.rng
+        roll = rng.randint(1, 10) + rng.randint(1, 10) + who.stat(self.stat)
+        ok = roll >= self.dc
+        ctx.log(f'  {who.name} rolls {roll} against DC {self.dc} '
+                f'({self.stat.title()}, {self.label}) — '
+                f'{"success" if ok else "failure"}.')
+        if not ok:
+            for op in self.ops:
+                op.apply(ctx)
+
+
+class LoseTrack(Op):
+    """OUT OF MIND: the opponent cannot attack the actor until they spend an
+    Action finding them again. Lasts the fight; finding it is what ends it
+    (`play.take_turn`)."""
+
+    def apply(self, ctx):
+        from engine import LOST_TRACK, Pending
+        who = ctx.opponent
+        if who is None or who.restriction(LOST_TRACK, who=ctx.actor):
+            return
+        who.add_pending(Pending(
+            'restriction', owner=ctx.actor, expires='combat', kind=LOST_TRACK,
+            data={'who': ctx.actor},
+            text=f'has lost track of {ctx.actor.name}'), log=ctx.log)
+
+
 class RevealStats(Op):
     """What a successful STUDY or MEASURE buys. Stats are the deck's colour
     split, so this is more than trivia (`rules/cards.md`, Enemy decks).
@@ -1953,6 +2027,22 @@ def _r_shared_burden(m):
 def _r_study(m):
     return [Check(int(m.group(1)), m.group(2).lower(),
                   [RevealStats(OPPONENT)], 'the read')]
+
+
+_DIFFICULTY = r'(?:easy|normal|hard|extreme)\s*\((\d+)\)'
+
+
+@menu(rf'^(?:the\s+)?defender makes an? {_DIFFICULTY} (mind|body|soul)/\w+ check\. '
+      r'on a failure, they cannot attack you until they spend an action '
+      r'finding you again')
+def _r_out_of_mind(m):
+    return [OpponentCheck(int(m.group(1)), m.group(2).lower(), [LoseTrack()],
+                          'keeping track')]
+
+
+@rule(rf"^(?:every enemy|all enemies) in the defender's position gains?\s+({STATUS_RE})")
+def _r_defender_position(m):
+    return [Grant(DEFENDER_POSITION, m.group(1).lower())]
 
 
 class StandingMod(Op):
@@ -2546,6 +2636,21 @@ class Summon(Op):
         rng = ctx.rng or ctx.actor.rng
         hp = d(10, rng)
 
+        standing = sum(1 for c in table()
+                       if c.is_object and c.summoner is ctx.actor and c.alive())
+        # The cap is three — there are three cursed royals and there have
+        # only ever been three. A summon with all three out replaces one of
+        # them, the summoner's choice (`campaign/pat.md`, Wild Magic
+        # Summoning, confirmed 2026-10-04). The weakest goes: a fresh roll
+        # is worth most where the old one has least left.
+        if standing >= 3:
+            weakest = min((c for c in table() if c.is_object
+                           and c.summoner is ctx.actor and c.alive()),
+                          key=lambda c: c.hp)
+            ctx.log(f'  {ctx.actor.name} calls with all three out — '
+                    f'{weakest.name} gives way.')
+            weakest.dissipate(ctx.log)
+
         n = 1 + sum(1 for c in table()
                     if c.is_object and c.summoner is ctx.actor)
         # Wild Magic Summoning sets the HP outright. max_hp is derived and
@@ -2624,15 +2729,18 @@ class WinsNextTie(Op):
         ctx.log(f'  {ctx.actor.name} will win their next tie.')
 
 
-@menu(r'^summon a spirit to your position \(wild magic summoning[^)]*\)\.?\s*'
+# The cards no longer restate the summoning rules — the d10 and the effect
+# ending with the spirit live on the Trait (`campaign/pat.md`, Wild Magic
+# Summoning, 2026-10-04). Both readings are still accepted.
+@menu(r'^summon a spirit to your position(?: \(wild magic summoning[^)]*\))?\.?\s*'
       r'it carries the ongoing effect: the next time you tie in rps, you '
-      r"win instead\. this is tied to the spirit's survival[^.]*\.?")
+      r"win instead\.?(?: this is tied to the spirit's survival[^.]*\.?)?")
 def _r_here_boy(m):
     return [Summon(rider=_totem_tie_win)]
 
 
-@menu(r'^summon a spirit \(wild magic summoning[^)]*\)\.?\s*'
-      r'it carries the ongoing effect: you and your allies deal \+(\d+) '
+@menu(r'^summon a spirit(?: \(wild magic summoning[^)]*\))?\.?\s*'
+      r'it carries the ongoing effect: you and (?:your|all) allies deal \+(\d+) '
       r'damage this combat\.?.*')
 def _r_lets_go(m):
     return [Summon(rider=_totem_damage_buff)]
@@ -2678,7 +2786,7 @@ class CompelAllEnemies(Op):
                 log=ctx.log)
 
 
-@menu(r'^every enemy makes a soul save, dc = your soul stat \+ (\d+)\.\s*'
+@menu(r'^(?:every enemy makes|all enemies make) a soul save, dc = your soul stat \+ (\d+)\.\s*'
       r'anyone who fails must attack you on their next turn\.?.*')
 def _r_lets_go_defence(m):
     return [CompelAllEnemies(int(m.group(1)))]

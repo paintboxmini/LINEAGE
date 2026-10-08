@@ -13,7 +13,7 @@ the Oracle — they cannot be drafted by anyone else or filled into a creature
 deck (`rules/cards.md`, Deck Building).
 
 **GRIND SHOT prints no effect of its own.** Both of its lines are filled in
-by whatever round is in the grinder; the six possibilities are the load
+by whatever round is in the grinder; the seven possibilities are the load
 table at `campaign/kevin.md`, The Ingredients. Loaded plain, it has none.
 
 ---

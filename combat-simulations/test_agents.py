@@ -78,12 +78,14 @@ def colour_read_moves_with_evidence():
     me, foe = _pc('party'), _pc('foes')
     engine.set_table([me, foe])
     ag = KitAI()
-    red = [c for c in cardlib.core_pool() if c.color == 'RED'][:8]
-    foe.discard.extend(red)
+    blue = [c for c in cardlib.core_pool() if c.color == 'BLUE'][:8]
+    foe.discard.extend(blue)
     by_colour = {p.color: ag._attack_value(me, p, foe) for p in me.passives}
-    # BLUE beats RED (cards.BEATS), so against a Red-heavy discard the Blue
-    # option has to outscore the Red one.
-    check('a watched Red deck makes Blue the better lead',
+    # BLUE beats RED (cards.BEATS), so against a Blue-heavy discard the Red
+    # lead loses the reveal and the Blue one ties it — and since 2026-10-03
+    # a tie lands the hit, so Blue has to outscore Red despite the smaller
+    # number on the card.
+    check('a watched Blue deck makes Blue the better lead',
           by_colour['BLUE'] > by_colour['RED'],
           f'BLUE {by_colour["BLUE"]:.2f} against RED {by_colour["RED"]:.2f}')
 

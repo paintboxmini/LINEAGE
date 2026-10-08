@@ -27,7 +27,7 @@ Range: Ranged
 **DRAG UNDER**
 GREEN — SOUL — SHORELINE
 Attack: Soul + d4
-Effect: Move target to backline.
+Effect: Move the defender to the Backline.
 Defense Effect: Heal 2 HP.
 Range: Melee
 *"Everything it's ever kept came from something that stopped struggling too soon."*

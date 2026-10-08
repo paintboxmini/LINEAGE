@@ -21,6 +21,8 @@ Nobody knows what they are. Guards and prisoners alike know what happens to some
 
 
 **Deck (6 — 2 Blue / 3 Red / 1 Green):** BLANK, FELT YOU COMING *(blue)* · CLOSE IN, IRON GRIP, SLITHER LUNGE *(red)* · DOWNWARD *(green)*
+
+**Blank deck:** Blue — FELT YOU COMING *(Both)* · Red — SLITHER LUNGE *(Melee)* · Green — DOWNWARD *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Traits

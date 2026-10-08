@@ -381,6 +381,8 @@ Players can avoid lethal engagement by noticing:
 
 Mind checks can reveal: the predator prefers ambush over open fight; it won't cross heavy water flow; it avoids bright open chambers; it uses the same choke point repeatedly.
 
+**Delve Rollers (`bestiary/delve-roller.md`) are what makes a choke point worse.** An armoured digger that fills a tunnel when it balls up, and it lives in the narrow passages — the natural place for one is **the narrow predator tunnel** out of Flood Shelf Chamber, the route nobody has followed yet (Upper Caverns, above). It is not hunting anybody. It is in the way, and a Stonecoil waiting past the next bend is the reason being in the way matters: the Roller takes the front, the party pays to get past it, and the ambush lands on people already hurt.
+
 ---
 
 ### The Greater Stonecoil

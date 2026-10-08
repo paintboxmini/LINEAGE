@@ -97,17 +97,21 @@ Bearings are rough compass sense, not survey lines. "Northeast" means *that gene
 | Quillet | southeast | Eclipseria | `places/quillet.md` — on the Vulture's Nest spoke, a day inside the Kings Road Inn |
 | Shunka island | north | Eclipseria | `factions-and-races/races-shunka.md` — a river-web island in the web's northernmost reaches, slightly west of true north |
 | Shunka island | south | Glasslight Reach | `factions-and-races/races-shunka.md` |
-| Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast |
+| Lizardkin island | southeast | Shunka island | `factions-and-races/races-lizardkin.md` — off the Shunka island's lower east coast; the Vessk |
+| Gharial | south | Vulture's Nest | `places/gharial.md` — swamp island of the Muirn |
 
 **Adjacency, where it's stated rather than a bearing:**
 
 - Turnroot Weald wraps the **northeastern edge** of the Ashfall Wastes, acting as a natural boundary.
 - Glasslight Reach sits at the **northernmost edge of the known world**; the Soft Edge is the northernmost water.
 - Briarwatch is cut into **Turnroot Weald's own eastern edge**, and its western fence is the boundary against the Weald.
+- Forget-Me-Not Island lies **near Gharial** (`places/forget-me-not-island.md`); no bearing set.
 
 **Distances.** The Capital is roughly 8 days from each of the three hubs. The hubs are roughly 13 days from each other. The Kings Road runs as three spokes, hub to centre — so the Turnroot spoke runs **northeast** from the Weald toward Eclipseria, and the Glasslight spoke runs **south** from the Reach.
 
-**Past the hubs is further than the hubs.** The Abyssal Ruins are **roughly 15 days' walk from the Capital** (set 2026-09-19), and that number is the sum of two legs rather than a fact on its own: 8 days Capital to Vulture's Nest on the Nest spoke, then **roughly 7 days south from the Nest to the Ruins** off the road. *Worth seeing plainly, because it is the part that is easy to get wrong: the Ruins are not a hub, so the 13-day hub-to-hub figure does not apply to them. The leg past the Nest is very nearly a spoke's worth of walking in its own right, which is what makes the Ruins remote rather than merely southern — and it is walking, not road.* Ashfall sits the same way below Turnroot Weald and has no figure written; it should get one from the same arithmetic when somebody needs it.
+**Past the hubs is further than the hubs.** The Abyssal Ruins are **roughly 15 days' walk from the Capital** (set 2026-09-19), and that number is the sum of two legs rather than a fact on its own: 8 days Capital to Vulture's Nest on the Nest spoke, then **roughly 7 days south from the Nest to the Ruins** off the road. *Worth seeing plainly, because it is the part that is easy to get wrong: the Ruins are not a hub, so the 13-day hub-to-hub figure does not apply to them. The leg past the Nest is very nearly a spoke's worth of walking in its own right, which is what makes the Ruins remote rather than merely southern — and it is walking, not road.*
+
+**Or it is a river, most of the way** *(Drew, 2026-10-03)*. **A river runs south from the Nest toward the Ruins**, and a boat can sail most of that leg, leaving a short walk at the end to the rim. The seven days are the figure on foot. *It is the same water that makes Gharial a swamp island south of the Nest* (`places/gharial.md`), and it is how the Merry Mint took Kevin to the University and brought him and Chris back (`campaign/kevin.md`, From session 0). Ashfall sits the same way below Turnroot Weald and has no figure written; it should get one from the same arithmetic when somebody needs it.
 
 **Both northern islands are river-web islands, not sea islands.** The Shunka hold one in the **northernmost reaches of the river web** — slightly west of true north, and south of Glasslight Reach, which keeps the Reach's claim to the northernmost edge of the known world and the Soft Edge's claim to the northernmost water. The Lizardkin hold a smaller island off the Shunka island's lower east coast.
 

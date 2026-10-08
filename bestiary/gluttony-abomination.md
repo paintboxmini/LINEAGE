@@ -48,7 +48,7 @@ Its melee attacks are legal against Backline targets. The Backline is not out of
 Body + d8. A single descending stroke. Hits one target in either position.
 
 **Chorus of Maws** *(attack)*
-Soul + d4. Every mouth on that side of the body opens at once. Hits all Frontline targets.
+Soul + d4. Every mouth on that side of the body opens at once. Hits all enemies in the Frontline.
 
 **Swallow** *(on a Collapsed target)*
 The Abomination begins consuming a Collapsed character where they lie. At the start of its next turn, if that character is still Collapsed and still in its position, they take 6 unpreventable damage. Allies have one turn to heal them, stand them up, or drag them clear.
@@ -67,7 +67,7 @@ The party needs the Abomination swinging, needs it connecting, and needs someone
 
 ## The Artwork
 
-The altar carvings and the cathedral's friezes correspond to the Abomination's behavior. A Reason check (DC 15) against them, made during combat, reveals which of its three attack profiles it will use on its next turn. The check may be repeated each cycle.
+The altar carvings and the cathedral's friezes correspond to the Abomination's behavior. A Hard (16) Mind/Reason check against them, made during combat, reveals which of its three attack profiles it will use on its next turn. The check may be repeated each cycle.
 
 ---
 

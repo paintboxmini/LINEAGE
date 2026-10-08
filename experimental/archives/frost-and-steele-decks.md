@@ -54,7 +54,7 @@ cut; only these two groupings of it were.
 | Card | Colour | Range | Attack |
 |------|--------|-------|--------|
 | BLOOD TITHE | Red | Both | Body + d6 |
-| GAMBLER'S RUIN | Red | Melee | Body + d4 |
+| GAMBLER'S FOLLY *(played as GAMBLER'S RUIN)* | Red | Melee | Body + d4 |
 | PAIN IS FUEL | Red | Melee | Body + d6 |
 | REPEL | Red | Melee | Body + d4 |
 | FORGET | Blue | Melee | Mind + d4 |

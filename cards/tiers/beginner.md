@@ -14,7 +14,7 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 ### Red — Body (28)
 
-**Melee (16).** ATTRITION · BLINDSIDE · CLOSE IN · DOUBLE DOWN* · GAMBLER'S RUIN* · GRAPPLE* · GUARD · OFF BALANCE · OPEN GUARD · PAIN IS FUEL · PUSH · RETALIATE · SPARK OF VIOLENCE* · STRIKE · UNBROKEN · WEATHERED
+**Melee (16).** ATTRITION · BLINDSIDE · CLOSE IN · DOUBLE DOWN* · GAMBLER'S FOLLY* · GRAPPLE* · GUARD · OFF BALANCE · OPEN GUARD · PAIN IS FUEL · PUSH · RETALIATE · SPARK OF VIOLENCE* · STRIKE · UNBROKEN · WEATHERED
 
 **Ranged (4).** BURN BRIGHT* · CERTAIN STRIKE · SHARPEN · SHATTER
 
@@ -23,9 +23,9 @@ Each colour is 28 in the seated sets, at 16/4/8 in Red, 8/16/4 in Blue and 4/8/1
 
 ### Blue — Mind (28)
 
-**Melee (8).** CORNER · DEFLECT · DISTRACT · FOCUSED STANCE* · INTERCEPT · INTERRUPT · PARRY* · PRESSURE
+**Melee (8).** DEFLECT · DISTRACT · FOCUSED STANCE* · INTERCEPT · INTERRUPT · PARRY* · PRESSURE · THINK TWICE
 
-**Ranged (16).** CALCULATE · CALLED SHOT · CHAIN · DISSECT · ENFEEBLE · FOCUS · FORESEE · LAST RESORT · MARKED · MATCHED PAIR* · PINNED · PROFILE* · RETORT* · STUDY · UNDERSTANDING* · VEIL
+**Ranged (16).** CALCULATE · CALLED SHOT · CHAIN · DISSECT · ENFEEBLE · FOCUS · FORESEE · LAST RESORT · MARKED · MATCHED PAIR* · PINNED · PROFILE* · RETORT* · STUDY · PIECE TOGETHER* · VEIL
 
 **Both (4).** REALIGNMENT · SIDESTEP · SLIPSTREAM* · STILL POINT
 
@@ -50,6 +50,8 @@ Beginner-legal, on the bench, no seat in a printed set. This is where a later se
 
 **Green (15).** ABIDE · ATTUNE · AWAKEN · BOLSTER · CONSUME · DELAY · ENTREAT · HASTEN · PATIENCE OF STONE · RESONATE · STEAL · SUPPORT · TWIN STRIKE · UNIFY · WITNESS
 
+**CORNER is gone from this tier and from the pool** *(2026-09-26)*. Not failed — *relocated.* A card whose fiction needs a wall is not a starting card, because the party never picks the room; the creature that lives in the corridor does. It is the Minotaur's now (`bestiary/minotaur.md`), and `rules/cards.md`, A card that needs terrain belongs to whoever picks it, is the bar. **THINK TWICE** *(Blue, Melee, d8)* was written for the seat — the same die, and the nearest thing to CORNER that works anywhere: you may leave, it costs you 3.
+
 Three worth knowing. **BLEED**, **SKEWER** and **CONSUME** arrived here on 2026-09-18 from the middle tier, when Lifesteal stopped being a middle-tier keyword — it heals for half the damage dealt, not all of it, and the ruling had been made on the wrong number. **CLIMB** *(Red, Ranged, d6)* was a Blue melee deck-digger until 2026-09-17 and is a Red card now, about taking the high ground and holding it. **SEED** *(Green, Both, d6)* held an Oracle seat for a day, came back out, and on 2026-09-20 left the core pool entirely: the reason it was unseated — a payoff planted at a position and collected later, a specialist's card rather than something a first deck should teach — turned out to be the argument for making it somebody's signature. It is Chris's now (`cards/chris.md`), rebuilt around a seed that grows, and it is no longer draftable.
 
 ---
@@ -60,7 +62,7 @@ Three worth knowing. **BLEED**, **SKEWER** and **CONSUME** arrived here on 2026-
 
 That is bar 1, and as of 2026-09-17 it is absolute. Six cards win or salvage a tie — ANTICIPATE, REBUTTAL, STAND, ADAPT, CALL and PUNISH — and all six are in `middle.md`. Two of them were seated in the Oracle 63 until that day.
 
-The argument for keeping them had been that a tie advances nobody on its own, which is true of one card and not of a deck built from six. Worth remembering if a tie-winner is ever proposed for a starting deck again: the question is not what the card does, it is what four of them do together.
+The argument for keeping them had been that a tie advances nobody on its own, which is true of one card and not of a deck built from six. Worth remembering if a tie-winner is ever proposed for a starting deck again: the question is not what the card does, it is what four of them do together. *That premise went on 2026-10-03, when ties started landing the hit, and the bar still holds — it is about touching the reveal, not about ties (`cards/tiers/middle.md`, What the tie rule did to them).*
 
 ---
 

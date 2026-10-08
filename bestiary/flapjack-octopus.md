@@ -17,12 +17,14 @@ Found in The Trench beneath the Abyssal Ruins. Hunts by ambush. Has learned the 
 
 
 **Deck (6 — 2 Blue / 3 Red / 1 Green):** INK BURST, CAMOUFLAGE SHIFT *(blue)* · SURGE, ENVELOPING PRESS, DEPTH SLAM *(red)* · FLATTEN *(green)*
+
+**Blank deck:** Blue — CAMOUFLAGE SHIFT *(Both)* · Red — SURGE *(Melee)* · Green — FLATTEN *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Traits
 
 **Floor Mimic**
-While stationary and Flattened, requires a DC 14 Mind/Reason check to detect. Attacks against an undetected Octopus have Weak until detected or until it attacks.
+While stationary and Flattened, requires a Hard (16) Mind/Reason check to detect. Attacks against an undetected Octopus have Weak until detected or until it attacks.
 
 **Self-Tenderizing**
 While Flattened, gains **Armour 1** from natural compression of its body — flat reduction for as long as it stays flat.

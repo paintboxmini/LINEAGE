@@ -1,6 +1,8 @@
-# Pat
+# Pat — Caine
 
-*Player character — no character name chosen yet; filed under the player's name until there is one. Most of what's below came out of a long session between Drew and Pat, but the character isn't finished — some backstory questions are still open, and gear hasn't been touched at all yet.*
+*Player character. **The character's name is Caine**, Pat's call, given 2026-09-26. The file stays filed under the player's name for now because every citation in the repo points here. Most of what's below came out of a long session between Drew and Pat, but the character isn't finished — some backstory questions are still open, and gear hasn't been touched at all yet.*
+
+*There was a name collision and **the antagonist moved**, 2026-09-27, at Drew's word. The Final Current's founder was Elder Kaine and is **Elder Wade** now (`characters/wade.md`) — spoken aloud, Caine and Kaine were one word, and the party is likely to end up in a room with him. **The NPC gave way because nothing about who he is depended on the sound of his name, and Caine is the word Pat will say a thousand times.** The new one is better anyway: to wade is to go in partway and come back, which is exactly what that man actually did.*
 
 ## Stats
 
@@ -18,27 +20,59 @@ Shunka — dogkin. His people, the war, the curse and the wild-magic line all li
 
 ## Backstory
 
-Son of a Shunka military Captain and a woman his father met and left pregnant during his travels. Raised by his mother alone until age 11, when his father came back and had him join the military. Years of training followed, eventually fighting alongside his father directly. In his twenties, he entered officer school — what that actually looks like in Shunka society isn't worked out yet, flagged rather than guessed at. At 27, at the gravesite of the cursed royal family, the summoning magic below manifested — the one concrete detail on exactly when and how it happened. He set out into the world from there, presumably close to where Session 1 picks him up, though that's an inference, not stated outright.
+Son of a Shunka military Captain and a woman his father met and left pregnant during his travels. Raised by his mother alone until age 11, when his father came back and had him join the military. Years of training followed, eventually fighting alongside his father directly. In his twenties, he entered officer school. At 27, at the gravesite of the cursed royal family, the summoning magic below manifested — the one concrete detail on exactly when and how it happened.
+
+**Shunka officers eat last** *(2026-09-28)*. Officer school is not tactics first. It is where a soldier is taught to be the one who holds the line so the others do not have to, and the one who is served after everyone else. *His Price is that doctrine taken personally* (The Price, below) — **an officer's rule he kept after he stopped being one**, and it is why HOLD THE LINE reads the way it does (`campaign/pat-cards.md`).
+
+**He left the army with honour.** A Shunka officer given a charge by the royal dead is not deserting — he is on it. *Nobody from home is chasing him; the party already has one fugitive, and one is the right number.*
+
+**He reached the Nest days before the lockdown**, going straight there from the cemetery — **the newcomer of the three.** Chris and Kevin have had two months at the Nest (`campaign/chris.md`, Two months in the Nest); Caine has had a few days, which is why he is the one with shopping to do and why the first place he looks is the first place he hears *cursed* (`campaign/session-1-convergence.md`, Pat).
 
 **His mother's line is the real hook.** She descends from the first generation of Shunka who turned to wild magic trying to break the royal curse, back when it was first laid — and failed, same as everyone else who tried (`factions-and-races/races-shunka.md`). That failed tradition survived anyway, passed down matrilineally, and it's what Pat actually carries — not royal blood, wild magic.
 
 ## The Call
 
-**The curse was never dormant.** It was crossing a spiritual distance, and it is only now beginning to reach the Shunka common folk — laid on one royal line generations ago, arriving late and arriving wide. The three cursed royals wake because of it, and they send Pat out.
+**The curse was never dormant.** It was crossing a spiritual distance — cast from a hut on an island near Gharial, not at the queen's feet (`places/forget-me-not-island.md`) — and it is only now beginning to reach the Shunka common folk — laid on one royal line generations ago, arriving late and arriving wide. The three cursed royals wake because of it, and they send Pat out.
 
 **The vision at the royal cemetery gives him something specific to chase.** Not a destination and not an instruction — the spirits show him that the woman who laid it had a family, that the technique is theirs and always was, and that **a descendant of hers is alive now and somewhere near Vulture's Nest** (`factions-and-races/races-lizardkin.md`, The Cursegivers). The exact content of the vision is Drew's to set; what it has to leave him with is a direction and a person.
 
-**What he can plausibly get out of it is an explanation rather than a cure.** A cost paid in full doesn't undo on request — that's how the world works, not a wall the GM put up. But the family that holds the technique is the only thing alive that understands what it does over time, and that is what he actually needs.
+**There is a cure, and it is not his to take** *(Drew, 2026-09-30)*. A cost paid in full doesn't undo on request — **it undoes only when somebody pays it again**: another cursegiver giving up her own existence to lift it (`factions-and-races/races-lizardkin.md`, It can be undone, once, on the same terms). **Any holder of the line can, and Osha is the one who might** (`characters/osha.md`), and killing her would end the likeliest way the curse ever comes off. *So a man bound by humanitarian morals is hunting somebody whose consent is the cure, and whose consent would unmake her.*
 
 Where that points him, and how the search runs: `campaign/session-1-convergence.md`.
+
+## The Price — *I always share with those in greater need than me*
+
+**Declared 2026-09-26, and it is the largest Price anybody at this table has taken** (`rules/character-creation.md`, Declaring a Price). It takes the *I always* form, and the adherence is the cost — not the sentence.
+
+**What makes it the largest is that it lands on material things.** Most declared Prices constrain a choice in a moment: look away or don't, keep a word or break it. **This one reaches into everything the party ever accumulates** — coin, food, medicine, ingredients, a spare coat, a place by the fire. There is no session where it has nothing to bite on, which is exactly what a Price is supposed to be.
+
+**And it lands hardest on him first, because he is the one with money.** Caine starts on **40 gold, the largest purse at the table** (Gear and coin, below), and his own file already calls him the one character who arrives with shopping to do. *The Price and the shopping are now competing for the same coins on the first morning of the campaign.* **That is not a problem to soften. That is the Price working on turn one.**
+
+**The load-bearing words are *greater need*, and they are a comparison rather than an invitation.** He is not obliged to anyone who asks; he is obliged to anyone worse off than he is. **So it scales instead of emptying him** — a man with nothing owes little, a man with plenty owes a lot, and the test is made freshly each time against what he is actually holding.
+
+*Which produces one genuinely interesting edge inside the party.* **Kevin has the smallest purse at the table (10 gold) and roughly 150 gold of prepared ingredients in a bag** (`campaign/kevin.md`). **Need is not the same as an empty pocket**, so the plain reading is that Kevin is not in greater need and Caine owes him nothing — *and a player is going to test that*, probably at a counter, probably in session one. Worth having an answer ready rather than reaching for one.
+
+**Breaking it costs more than keeping it**, per the rule (`rules/character-creation.md`, Declaring a Price). *Set 2026-09-28:* **when he keeps something that someone in greater need needed, his next summon does not come.** One of the royals turns away. He plays the card and nothing answers — the card is spent, no spirit arrives. **It lasts until he makes it right, by giving to somebody worse off than he is.**
+
+*Why this shape:* the spirits are the royal dead, and the Price is charity — so the cost lands on the exact thing he carries that the world can withhold, with no new mechanic needed to deliver it. **A heavier version is held in reserve** if the table wants one: a dead card shuffled into his deck until he makes amends.
+
+### Straight edge, half druid, half paladin
+
+**Pat's own read on him, given 2026-09-26, and it explains the sheet better than the sheet does.** *Half druid* is **Survival +2 and Animal Handling +2** and a man whose magic is summoned rather than cast. *Half paladin* is the Captain father, officer school, twenty years in the ranks, and **HOLD THE LINE** (`campaign/pat-cards.md`) — a card that cannot win and cannot lose, which is what standing in the way looks like with the dice taken off it. **And the Price is the paladin half out loud:** an *always*, phrased as charity rather than as restraint.
+
+***Straight edge here means bound by humanitarian morals, not abstinent*** *(Drew, 2026-09-27)*. **He drinks, and he likes to sow his oats.** The discipline is about what he owes other people rather than what he denies himself — *which is the more interesting version, because a man who gives away his last coin and then goes out drinking is a person rather than a monk.* **Nothing on the sheet restricts what he consumes.**
+
+*Kevin's drinks were read here as mostly alcoholic and that reading was wrong.* **The names do not settle it and are better for not settling it** (`campaign/kevin.md`, The beverages): Bitter Shot reads as coffee at least as easily as spirits, The Early Cup is a morning cup, and **Still Water is the one that leans liquor** — *the water a still produces.* **No renaming needed and none wanted.** The ambiguity leaves two things available that a fixed answer would close: **Kevin can decide what he actually put in any of them**, and **Pat can take a restriction on Caine if he ever wants one.** *Neither is a rule. Both are there.*
 
 ## Wild Magic Summoning
 
 **This is a Trait**, not a Skill and not a Passive (`rules/character-creation.md`, Passives and Traits) — a line on the sheet that is simply true, costing no Action and taking no slot. It doesn't compete with STRONGJAW or HACKLES RISE for either of his two Passives.
 
-> **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates.
+> **Wild Magic Summoning:** Whenever you summon a spirit, roll a d10 — this is the spirit's HP. If the spirit reaches 0 HP, it dissipates, and whatever Ongoing Effect it carried ends with it. Up to three can stand at once; summoning with three already out replaces one of them — you choose which.
 
-What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`factions-and-races/races-shunka.md`). Two triggers confirmed — HERE BOY and LET'S GO (`campaign/pat-cards.md`).
+**That line is the rule for every summon card he holds**, so the cards themselves don't repeat it *(Drew, 2026-10-04)*.
+
+What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`factions-and-races/races-shunka.md`). Four triggers: HERE BOY and LET'S GO in his starting deck, STAY and GOOD BOY for advancement (`campaign/pat-cards.md`).
 
 **Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — a reasonable extension of an existing rule, not a new one, but worth confirming rather than assuming.
 
@@ -50,10 +84,11 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 **HERE BOY's rider goes to Pat, ruled 2026-09-19**, and the card was reworded to say so. The old text read as the spirit gaining it, which could never fire — a spirit does not act and cannot defend, so it never reaches a reveal. The summoning grants the tie-win to the summoner: he holds it and spends it on the next tie he is in, attacking or defending. The engine runs it.
 
-Still open:
+**The cap is three, set 2026-09-27 — and the cap is not a number, it is the three of them.** There are three cursed royals and there have only ever been three; a fourth summon has nobody to answer it. **So more than one spirit can be out at a time, up to three.** *The engine enforces it now rather than counting freely.*
 
-- Whether HERE BOY and LET'S GO are the *only* two triggers.
-- Whether more than one spirit can be out at a time (there are only three to draw on). *The engine permits it and numbers them; it is not enforcing a cap it was not given.*
+**The cap binds now, and the ruling is confirmed** *(Drew, 2026-10-04)*. STAY and GOOD BOY are two more summon cards (`campaign/pat-cards.md`, For advancement), so a fourth summon is reachable for the first time. **With three spirits out, a new summon replaces one of his: Pat chooses which spirit goes, its effect ends with it, and the new one arrives with fresh HP.** *Nobody answers a fourth call — one of the three answers it again.* That turns a summon with a full table into a choice about which totem is worth more right now, and it doubles as the only way to refresh a battered one.
+
+**Two at once was the thing to watch, and three is now possible.** Both early spirits out means a banked tie-win *and* +2 party damage; a third adds a shield or a draw engine. **An enemy has to spend turns on totems to take any of it away** — which is the design working, and the combination to watch once the advancement deck is in play.
 
 ## Passives
 
@@ -93,7 +128,7 @@ Still open:
 
 **It cannot find anyone.** Four hundred islands do not get swept by a nose, and the search still fails productively at the Nest the way it is supposed to (`campaign/session-1-convergence.md`, Pat — chasing one living person).
 
-**Its first real use is a no, and that is by design.** Pneum's congregation is led by a Lizardkin (`places/pneum.md`, The Speaker) — the first specific lead anybody hands him, learned off Corvel for the cost of a question nobody else at that dock would think to ask. **He follows it, and the scrap clears them.** *A negative from an instrument that cannot be wrong is worth more this early than a hit would be: it proves the thing works, it eliminates a lead honestly, and it leaves him standing in front of the first Lizardkin off the island he has ever met — which is the first person alive who can tell him why one of them would leave.*
+**Its first real use is a no, and that is by design.** Pneum's congregation is led by a Lizardkin (`places/pneum.md`, The Speaker) — the first specific lead anybody hands him, learned off Corvel for the cost of a question nobody else at that dock would think to ask. **He follows it, and the scrap clears them.** *A negative from an instrument that cannot be wrong is worth more this early than a hit would be: it proves the thing works, it eliminates a lead honestly, and it leaves him standing in front of the first Lizardkin off the island he has ever met — which is the first person alive who can tell him why one of them would leave.* **And then it says yes to somebody who has already gone**: Osha passed through Pneum before him, and the scrap knows what she left (`places/pneum.md`, Pat's lead).
 
 **What it does is confirm.** Family scent carries. Put Pat in a room with the bloodline and **he knows — no roll**, because the alternative is a die deciding whether the campaign's spine is findable. *Until then it tells him nothing, which is most of the year.*
 
@@ -101,11 +136,11 @@ Still open:
 
 ### What it is worth to the people he is hunting
 
-**They cannot describe their own ancestor, and he is carrying her.** A family that has held one technique for generations, around a hole where the woman who first used it should be — and a stranger walks in with the last of her.
+**They cannot describe their own ancestor, and he is carrying her.** *And the one of them out looking for her is Osha* (`characters/osha.md`). A family that has held one technique for generations, around a hole where the woman who first used it should be — and a stranger walks in with the last of her.
 
 *So the eventual meeting is a trade before it is a fight, and it does not have to become one at all.* **Offered rather than set**, in the same register as the gap in the line it hangs off, which that file also marks as a proposal (`factions-and-races/races-lizardkin.md`, The gap in the line). **Pat's, and Drew's.**
 
-**Deliberately not being tracked yet** *(Drew, 2026-09-21)*. That meeting is far enough out that maintaining it as a live thread would cost more than it is worth, and a consequence this clean does not decay from being left alone. **It is written down so it is here when the meeting gets close, not so anyone carries it in the meantime.** *Nothing between now and then needs to be arranged for it. If the scrap survives and the bloodline turns up, the trade is simply available.*
+**Live since 2026-09-30.** *It was deliberately left untracked on 2026-09-21, while the meeting was far off.* Now there is a person on the other end of it: **Osha, alone, looking for what is left of her ancestor; her family looking for Osha — some to kill her, some to shelter her; and Caine looking for all of them** (`characters/osha.md`). The scrap is the thing she left home to find, and she does not know it exists.
 
 ### Where he got it — settled
 
@@ -117,19 +152,41 @@ Generations of Shunka who turned to wild magic trying to break the curse, and fa
 
 **Still open beyond the scrap:** what he carries out of Shunka service, and whether anything else of his mother's came with him. **He has asked for one item and one item is an answer**, not a gap — a man who left with a single object is a clearer character than a man with a packing list.
 
+### Garb, weapon, appearance and voice — waiting for session one on purpose
+
+***Drew, 2026-09-27: he is fine finding this out at the table.*** So this stops being a gap and becomes a deliberate blank. **Nothing mechanical is waiting on any of it**, and that is worth stating plainly so nobody reaches for a ruling mid-session:
+
+**Starting garb and weapon cost nothing and do nothing** (`rules/character-creation.md`, Equipment: *"None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold"* — and **a character holding nothing is not a character with something missing**). **Caine can arrive carrying anything or nothing and his sheet is identical either way.** His attacks are cards and **STRONGJAW** is his own jaw.
+
+**Pat has mentioned knuckledusters and has not committed** *(2026-09-26)*. Left open, and worth knowing that the hesitation has no cost attached in either direction:
+
+| | |
+|---|---|
+| **As starting garb** | **Free, available now, and no numbers.** He can pick them up in session one, or in session nine, or never |
+| **As a real Weapon with stats** | A Tier 1 purchase at **~100 gold** against a purse of 40, meant to arrive around session three (`rules/equipment.md`, Starting Gold). *Not reachable in session one whatever he decides* |
+
+*So the question is not whether he has them, it is whether they are an object or an item — and both roads stay open with nothing expiring.* **Appearance and voice are the same shape:** discovered in play rather than filed in advance, which for a character whose player is still finding him is the better order.
+
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** (all 3 now written — `campaign/pat-cards.md`: HOLD THE LINE, HERE BOY, LET'S GO), drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table, still to happen at the table.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** (all 3 now written — `campaign/pat-cards.md`: HOLD THE LINE, HERE BOY, LET'S GO), drawn from a list of ideas Pat gave Drew, plus **6 from the normal Oracle draft** alongside the rest of the table.
+
+**Drafted at session 0, 2026-10-03:** CLOSE IN, PAIN IS FUEL, OPEN GUARD and SHATTER (Red), CHAIN (Blue), LEVEL THE FIELD (Green) — all six printed as written in `cards/`. **With his customs that is 5 Red / 1 Blue / 2 Green, plus HOLD THE LINE in no colour**, against the 3 Red / 2 Blue / 4 Green his stats suggest. *Body-led rather than Soul-led, and a choice rather than a mistake* — the heuristic bends at the draft, and Red is where the bigger dice are (`rules/cards.md`, Deck Building). Passives STRONGJAW and HACKLES RISE sit outside the nine.
+
+**What Pat wants to build toward** *(session 0, via Drew, 2026-10-04)*: **more summons, synergies with winning ties, and cards that buy time.**
+
+- **Summons have to be written for him.** Nothing in the core pool summons — HERE BOY and LET'S GO are the only summon cards in the game outside the Masons' glyphs — so more of them means more signature cards, priced the way his two are (`campaign/pat-cards.md`).
+- **Winning ties got much stronger on defence** when ties started landing the hit (`cards/tiers/middle.md`, What the tie rule did to them). HOLD THE LINE and HERE BOY already lean on it. The tie-winners themselves are middle tier, and **ADAPT** (Green, wins ties) is the one that fits him best when that tier opens.
+- **Buying time, still in the table's Oracle** (`campaign/session-1-cards.md`): **INSTINCT** (Ward), **SHADE AWAY** (Evade), **MOCKERY** (delays and taunts), **BIND** (Rooted), **DISORIENT** (Blind), **PATIENCE** and **COMMUNION** (healing) — all Green, which would also pull his deck back toward his Soul 4. **Settled 2026-10-05:** his Oracle six are INSTINCT, SHADE AWAY, DISORIENT, COMMUNION, GUARD and REALIGNMENT (`campaign/session-1-cards.md`, The advancement decks).
 
 ## Not Yet Set
 
-Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now. Genuinely still needed before Session 1:
+Not everything below is a Session 1 gap — some of what Drew and Pat talked about is meant to come in through character progression later, not land on the sheet now.
 
-- Character name
-- Appearance beyond the Cane Corso reference, voice
-- Some backstory questions — not itemized yet, Drew flagged these as still open without specifics
-- **Gear** — hasn't come up at all yet: starting garb/weapon, and whatever he ends up actually using (`rules/character-creation.md`, Equipment — there is no slot limit, only what one person can use in concert)
-- Price
+***And three things came off this list on 2026-09-27 rather than being answered: garb and weapon, appearance, and voice.*** **Drew is finding those out at the table**, and since none of them touches a rule, waiting costs nothing (Garb, weapon, appearance and voice, above). *They are not gaps. They are the part of a character that is better discovered than filed.*
+
+Genuinely still needed before Session 1:
+
 - The 6-card Oracle draft (table activity, not something to pre-decide)
 
 Open, but possibly progression rather than a creation-time gap — not yet sorted which:

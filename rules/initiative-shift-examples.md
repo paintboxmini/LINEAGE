@@ -116,6 +116,16 @@ Measured properly: a's next turn was after three others, and **-1 puts one more 
 
 ---
 
+## Example 8 — Two on the wheel
+
+`a, b.` a attacks; b blocks and wins with a card whose Defense Effect reads *Apply Initiative Shift +2 to yourself* — FOCUS, as it was printed until 2026-10-04 (it is +1 now).
+
+Under the crossing rule alone, b would take an immediate extra turn, a would be skipped in compensation, and b would then take its ordinary turn too: **a, b, b, a** — a whole free turn bought with a block. Every other shift at this size does the same thing one way or the other: +1 changes nothing, +2 or more is a double turn for the target, and any negative shift is a double turn for the other side.
+
+**So with two tokens on the wheel, nothing changes the turn order** *(2026-10-03, `rules/combat.md`, Two on the wheel)*. The shift does nothing, the rest of the card resolves, and it goes **a, b, a, b**. A swap or a move in the order is treated the same way. When a third token joins, shifts work again from the wheel as it stands.
+
+---
+
 ## What These Examples Demonstrate
 
 - Sliding happens on every shift, boundary case or not — see Example 1.
@@ -127,7 +137,7 @@ Measured properly: a's next turn was after three others, and **-1 puts one more 
 - The displaced-actor skip (3b vs. 4) is compensation for a bonus turn actually granted — not a rule about displacement or about landing on the marker's slot.
 - A chip-holding token that gets reshifted loses the old chip and resolves fresh under the new shift (Example 5).
 - **A combatant shifting on their own turn is the exception, and it is not a small one** (Examples 6 and 7). They stand on the marker's slot, so its distance is zero and the crossing rule would fire on every shift they touch. Measure against when their own next turn would have arrived — after everyone else — and both directions come out right: +X is X sooner, floored at acting next; -X puts X more turns in front of theirs. No chips either way.
-- **There is no table-size correction.** The old "with exactly 3 combatants, reduce X's magnitude by 1" rule is retired as of 2026-09-12. It existed because shifts near the marker were explosive, and the real cause was proximity to the marker rather than slot count — which onto-is-not-across fixes at every size. Three on the wheel now behaves exactly like four, scaled down, and no shift is ever silently reduced to nothing.
+- **There is no table-size correction.** The old "with exactly 3 combatants, reduce X's magnitude by 1" rule is retired as of 2026-09-12. It existed because shifts near the marker were explosive, and the real cause was proximity to the marker rather than slot count — which onto-is-not-across fixes at every size. Three on the wheel now behaves exactly like four, scaled down, and no shift is ever silently reduced to nothing — **with one exception, and it is two on the wheel** (Example 8).
 
 ---
 

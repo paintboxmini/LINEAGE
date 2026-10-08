@@ -24,11 +24,19 @@ Speaks in the measured cadence of someone who spent years conducting ritual. In 
 
 Vescal trained at the Temple of Unity in the capital — the central temple, the one people go to when they cannot resolve things themselves. His role was custodial and ceremonial: threshold purification, presence at conflict hearings, maintaining the ritual conditions under which the scales could function.
 
+**He left under the previous head priest, and he left over that priest's closed doors** *(Drew, 2026-10-02)*. Everything the temple did, it did inside: communion, preaching and the scales all sat in the building and waited for people to come to them. Vescal disagreed, said so, and went.
+
 What changed wasn't dramatic. He kept seeing the same people return. Disputes the temple resolved, same imbalance back six months later because the underlying cause hadn't shifted. The door was open. People kept choosing to close it. The temple's answer was patience. Keep the door open. Keep the scales level. Trust the process.
 
 Vescal still trusts the process. He stopped trusting that patience alone creates the conditions for it. Some situations need to be held in place before they can be resolved. The censer swings when something refuses to sit at the scales willingly.
 
 He and Orin found each other on a job neither of them could finish alone. They haven't separated since.
+
+### The temple has a new head priest
+
+**Ossian Pepper runs the Temple of Unity now** (`characters/ossian.md`) — Kevin's father — **and he opened half the doors.** Communion and preaching go out into the street. **The scales still sit in the building and wait**, which is the exact thing Vescal left over.
+
+*So what does Vescal do about it?* Go back for the half that changed, stay away over the half that didn't, or come and tell Ossian so to his face. **Open on purpose** — and if the party has Ossian's son with them when they meet Trutinate, it is not going to stay a private question.
 
 ---
 

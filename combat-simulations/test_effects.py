@@ -271,6 +271,32 @@ def _bonus(text, actor, opponent, card):
     return ctx.dmg_bonus
 
 
+def test_flow_counts_every_reveal():
+    """Cadence (`rules/card-glossary.md`, 2026-10-05): the last card you
+    revealed, attacking *or* defending, against this card's colour."""
+    print('\nFlow reads the last card you revealed, a block included')
+    import engine
+    core = cardlib.by_name(cardlib.core_pool())
+    pool = cardlib.by_name(cardlib.load())
+    a, b = duo()
+    a.hp = b.hp = 400
+    # a blocks with a Red card — on b's turn, not his own.
+    engine.resolve_attack(b, a, core['CALCULATE'], core['STRIKE'],
+                          rng=random.Random(0), log=QUIET)
+    check('a block rolls the last-revealed colour forward',
+          a.last_reveal_color == 'RED', a.last_reveal_color)
+    measure = pool['MEASURE']           # Red, so Cadence needs a non-Red prior
+    a.flow_prev = 'BLUE'
+    check('Cadence pays when the last card shown was another colour',
+          _bonus(measure.effect, a, b, measure) == 2)
+    a.flow_prev = 'RED'
+    check('and not when it was the same colour',
+          _bonus(measure.effect, a, b, measure) == 0)
+    a.flow_prev = None
+    check('nor before he has shown anything',
+          _bonus(measure.effect, a, b, measure) == 0)
+
+
 def test_last_colour_rolls_forward_on_your_own_turn():
     print('\nThe colour you played last turn is your own turn\'s')
     import engine
@@ -541,8 +567,10 @@ def test_hold_the_line_mirrors_the_colour_it_faces():
     a.hp = b.hp = 400
     out = engine.resolve_attack(a, b, htl, core['STRIKE'],
                                 rng=random.Random(0), log=QUIET)
-    check('and deals nothing as an attack',
-          out == engine.Outcome.TIE and b.hp == 400, (out, b.hp))
+    # Since 2026-10-03 a tie lands the hit, so an attack that can only tie
+    # always connects: its d4, no stat behind it.
+    check('and always lands its d4 as an attack',
+          out == engine.Outcome.TIE and 396 <= b.hp <= 399, (out, b.hp))
 
     # Without the Special Rule being read it would resolve as plain
     # COLORLESS, which auto-loses to any real colour — the opposite of the
@@ -661,7 +689,7 @@ def test_the_load_is_the_card():
             engine.resolve_attack(k, f, gs, None, rng=random.Random(seed), log=QUIET)
         return k, f
 
-    k, f = shoot('hush petal')
+    k, f = shoot('leadfoot')
     check('a status round applies its status', f.rooted == 1, f.rooted)
     check('and the round is gone afterwards', k.load is None, k.load)
 
@@ -912,6 +940,11 @@ def test_kit_ai_spends_its_free_action():
     check('an empty grinder gets reloaded with the better round',
           ai.choose_free_action(kev, [foe], []) == ('reload', 'cinder flake'))
 
+    kev.rounds = ['plain']
+    check('a plain round is never worth a free action — the hopper feeds it',
+          ai.choose_free_action(kev, [foe], []) != ('reload', 'plain'))
+    kev.rounds = ['cinder flake', 'plain']
+
     kev.load = 'plain'
     kev.hp = 4
     kev.drinks = ['Still Water']
@@ -1139,6 +1172,23 @@ def test_position_lock():
     check('and both are free once it expires', a.set_position(BACK) is True)
 
 
+def test_move_toll():
+    print('\nTHINK TWICE prices the move instead of forbidding it')
+    a, b = duo()
+    run('Each time the defender changes position before your next turn, '
+        'they take 3 damage.', a, b)
+    before = b.hp
+    check('the move is allowed', b.set_position(BACK) is True)
+    check('and it cost 3', b.hp == before - 3)
+    check('and it costs again on the way back',
+          b.set_position(FRONT) is True and b.hp == before - 6)
+    check('the caster pays nothing', a.hp == a.max_hp)
+    a.expire_pending()   # 'before your next turn' is the caster's turn
+    before = b.hp
+    check('and moving is free once the caster comes round again',
+          b.set_position(BACK) is True and b.hp == before)
+
+
 def test_grounding_stance():
     print('\nGROUNDING STANCE ignores a forced move, not a chosen one')
     a, b = duo()
@@ -1236,12 +1286,12 @@ def test_gore_is_conditional():
 
 
 def test_explosion_changes_the_tail():
-    print("\nGAMBLER'S RUIN lengthens the tail without moving the floor")
+    print("\nGAMBLER'S FOLLY lengthens the tail without moving the floor")
     rolls = []
     for seed in range(200):
         a, b = duo()
         b.hp = 500
-        rolls.append(exchange("GAMBLER'S RUIN", a, b, seed))
+        rolls.append(exchange("GAMBLER'S FOLLY", a, b, seed))
     plain = []
     for seed in range(200):
         a, b = duo()
@@ -1465,7 +1515,7 @@ def test_scry_result_is_readable():
 
 
 def test_understanding_reads_the_disposition():
-    print('\nUNDERSTANDING asks where the cards went, not what they were')
+    print('\nPIECE TOGETHER asks where the cards went, not what they were')
     import cards as cl
 
     class Bottoms:
@@ -1665,8 +1715,78 @@ def test_slipstream_is_the_ring_motion():
     check('moving ends it, like any Anchored', h4.pending == [], h4.pending)
 
 
+def test_out_of_mind():
+    print('\nOUT OF MIND: lose track on a failed check, and finding it costs the Action')
+    import play
+    from agents import SimpleAI
+    from engine import LOST_TRACK
+    a, b = duo()
+    run('Defender makes a Hard (1) Body/Senses check. On a failure, they cannot '
+        'attack you until they spend an Action finding you again.', a, b)
+    check('a passed check loses nothing', b.restriction(LOST_TRACK, who=a) is None)
+    run('Defender makes a Hard (99) Body/Senses check. On a failure, they cannot '
+        'attack you until they spend an Action finding you again.', a, b)
+    check('a failed check loses track of the attacker',
+          b.restriction(LOST_TRACK, who=a) is not None)
+    check('and it lasts past the attacker\'s next turn',
+          (a.expire_pending(), b.restriction(LOST_TRACK, who=a))[1] is not None)
+    hp = a.hp
+    play.take_turn(b, SimpleAI(random.Random(0)), [a], [], None, QUIET,
+                   random.Random(0))
+    check('with nobody else to attack, the turn is spent finding it',
+          b.restriction(LOST_TRACK, who=a) is None and a.hp == hp)
+
+
+def test_weeping_veil():
+    print("\nWEEPING VEIL Blinds the defender's whole position, and nobody else")
+    a = Combatant('A', 3, 3, 3, deck=[], position=FRONT, team='party')
+    b = Combatant('B', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    c = Combatant('C', 3, 3, 3, deck=[], position=FRONT, team='foes')
+    d = Combatant('D', 3, 3, 3, deck=[], position=BACK, team='foes')
+    set_table([a, b, c, d])
+    ctx = fx.Context(a, b, allies=[], enemies=[b, c, d], card=None,
+                     outcome='attacker wins', rng=random.Random(0), log=QUIET)
+    ctx.wheel = None
+    for op in fx.compile_half("Every enemy in the defender's position gains Blind."):
+        op.apply(ctx)
+    check('the defender is Blind', b.blind > 0)
+    check('so is the enemy beside them', c.blind > 0)
+    check('the enemy in the other position is not', d.blind == 0)
+    check('and the caster is not', a.blind == 0)
+
+
+def test_wolf_traits():
+    print('\nThe weeping wolf: two Actions a turn, and it cannot be Blinded')
+    import play
+    from agents import SimpleAI
+    import encounter_budget as eb
+    traits = eb.traits_from('bestiary/weeping-wolf.md')
+    check('the sheet reads as two Actions a turn', traits.get('actions_per_turn') == 2, traits)
+    check('and as unable to gain Blind', traits.get('cannot_gain') == {'blind'}, traits)
+    a, b = duo()
+    a.cannot_gain = {'blind'}
+    fx.grant(a, 'blind')
+    check('Blind does not land on it', a.blind == 0)
+    fx.grant(b, 'blind')
+    check('but still lands on anyone else', b.blind > 0)
+    a, b = duo()
+    a.actions_per_turn = 2
+    calls = []
+    real = play._one_action
+    play._one_action = lambda *args, **kw: calls.append(1) or None
+    try:
+        play.take_turn(a, SimpleAI(random.Random(0)), [b], [], None, QUIET,
+                       random.Random(0))
+    finally:
+        play._one_action = real
+    check('its turn takes two Actions', len(calls) == 2, len(calls))
+
+
 if __name__ == '__main__':
     test_compile()
+    test_out_of_mind()
+    test_weeping_veil()
+    test_wolf_traits()
     test_ward()
     test_rooted()
     test_anchored()
@@ -1684,6 +1804,7 @@ if __name__ == '__main__':
     test_expiry_is_owner_keyed()
     test_colour_ban()
     test_position_lock()
+    test_move_toll()
     test_grounding_stance()
     test_seed_is_placed()
     test_defense_effects_silenced()
@@ -1720,6 +1841,7 @@ if __name__ == '__main__':
     test_lets_go_compels_the_room()
     test_kit_ai_knows_what_a_block_is_for()
     test_kit_ai_spends_its_free_action()
+    test_flow_counts_every_reveal()
     test_pool_compiles_or_narrates()
     print()
     if FAILURES:

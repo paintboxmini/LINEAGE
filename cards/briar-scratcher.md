@@ -27,7 +27,7 @@ Range: Both
 **NIP AND TEAR**
 GREEN — SOUL — BRIARWATCH
 Attack: Soul + d4
-Effect: If target has a Wound in their deck, deal +2 damage.
+Effect: If the defender has a Wound in their deck, deal +2 damage.
 Defense Effect: Heal 1.
 Range: Melee
 *"The cut remembers the first one."*

@@ -85,6 +85,8 @@ That it looks exactly like a folk-tale come to get you is entirely the observer'
 
 **Deck (9 — 2 Blue / 5 Red / 2 Green):** DISTRACT, STUDY *(blue)* · STRIKE, BREAK, TRAMPLE, DIG IN, GROUNDING STANCE *(red)* · PATIENCE, DELAY *(green)*
 
+**Blank deck:** Blue — DISTRACT *(Melee)* · Red — DIG IN *(Both)* · Green — PATIENCE *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 All core cards. It has no technique — it is a heavy animal that pushes.
 
 **Trait — Bedded In:** While a Glassgut has not moved position since the start of its last turn, it has Armour 2. It is built to sit in a current and not be moved by it, and standing off and shooting it is the slow way to do this.

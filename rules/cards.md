@@ -37,18 +37,20 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 - **Blue sits in the middle** — Ranged is a real restriction, but a softer one than Melee.
 - **Green is the most flexible**, so it is paid the least. Both-range is the default, and the default die is small.
 
-*Re-measured 2026-09-25 across all 163 colour-list cards.*
+*Re-measured 2026-10-05 across all 163 colour-list cards.*
 
 | Colour | Melee | Ranged | Both | mean die |
 |---|---|---|---|---|
 | **Red** | 53% | 17% | 30% | **6.27** |
 | **Blue** | 28% | 60% | 12% | **5.36** |
-| **Green** | 15% | 30% | 55% | **5.02** |
+| **Green** | 15% | 30% | 55% | **4.98** |
 
-**And restriction really is the driver, not colour.** Ignore colour entirely and sort the same cards by range alone: **Melee d6.44, Ranged d5.39, Both d4.91.** The ordering is the same one, and it holds *inside* each colour as well — Red runs d7.00 Melee against d5.11 Both, Blue d5.57 against d4.33, Green d5.75 against d4.90.
+**And restriction really is the driver, not colour.** Ignore colour entirely and sort the same cards by range alone: **Melee d6.44, Ranged d5.39, Both d4.87.** The ordering is the same one, and it holds *inside* each colour as well — Red runs d7.00 Melee against d5.11 Both, Blue d5.57 against d4.33, Green d5.75 against d4.83.
 
 <!-- print:skip-start -->
 *Six days on from the first measurement, three numbers moved and all three are Green: Both 56% → 55%, Green's mean die 5.04 → 5.02, and Green Both d4.93 → d4.90. **That is one card.** SEED was Green, Both, d6 and left the core pool on 2026-09-20 to become Chris's (`cards/chris.md`), which drops a card from the band and pulls its mean down. Everything else is identical to the digit.*
+
+*And on 2026-10-05 three moved again, all Green, all one card: **QUICKEN dropped from d6 to d4** (Drew). Green's mean die 5.02 → 4.98, Green Both d4.90 → d4.83, and Both across every colour d4.91 → d4.87.*
 
 ***This table cannot be cited from elsewhere, because it prints.*** It is in the play reference players read at the table (`printing/generate-rules-pdf.py`), so a pointer to a regenerated file would be a pointer to nothing on paper. **It is the one set of measured numbers in this repo that has to be re-measured by hand when the pool moves** — the card counts do not, and live in `printing/manifest.txt`. Re-measure it whenever a card enters or leaves the core lists.*
 <!-- print:skip-end -->
@@ -59,9 +61,37 @@ General conventions, not laws. A card that breaks one for a good reason is fine;
 
 *That premium was set when Body was a ×3 multiplier on HP rather than ×4, so it is fair to ask whether the damage gap should have closed when the HP weight went up. **It was measured on 2026-09-19 and the answer is no.** With Passives in play the three colours finish within 1.4 points of each other over 750 duels — the economy is already balanced, the ×3 → ×4 change moved the colours under two points against each other, and softening Red's dice moves nothing at all. `combat-simulations/README.md`, What Passives are actually for.*
 
+### Why Green has the broadest names — initiative decays
+
+**Green's names cover far more ground than Red's.** Read each seated name as an *aim* rather than a subject (`rules/resolution.md`, Advantage & Disadvantage) and count how many attempts could share it. Across the 84 seated cards, 28 in each colour:
+
+| Colour | wide aim | moderate | narrow |
+|---|---|---|---|
+| **Red** | **1** | 15 | 12 |
+| **Blue** | **7** | 10 | 11 |
+| **Green** | **14** | 6 | 8 |
+
+<!-- print:skip-start -->
+*Read by hand on 2026-09-27. Where an individual name sits is a judgment call and a different reader would move a card or two between bands — the size of the gap is not in question.*
+
+*And two cards moved the same day.* **UNBROKEN and WEATHERED were read as moderate until states were confirmed as bringable names** (The Name Is Half the Card, below: the test is whether the character can bring it). *A state travels to any attempt where it is what you have*, so both are wide and **Red's count is 3 rather than 1**, with Green's 15 once UNTOUCHED moves with them. The table above is left at the first reading with this note under it rather than rewritten, because the correction is the more useful thing to keep. **The spread is unchanged in character.**
+<!-- print:skip-end -->
+
+**Part of it is vocabulary.** Red's names are physical actions — PUSH, PULL, GRAPPLE, SHATTER, SLIP THE BLADE — and a physical action is exactly what it says and nothing more. Green's are states and intentions — RELEASE, INSTINCT, PATIENCE, OPENING, FLOW — and an intention is an aim by construction. **Soul concepts mostly do not have narrow names available.**
+
+**But the reason to keep it is initiative.** Soul buys initiative (above), and **initiative is worth the most in a short fight and very little in a long one** — going first decides things when everybody gets two turns and barely registers when everybody gets six. *So Soul's headline payment is front-loaded, and it decays exactly as the campaign's fights get longer.*
+
+**Name breadth is what Green still holds when its speed stops paying**, and unlike initiative it does not decay: a wide name is worth the same in session forty as in session one, because the discard is spent outside combat where turn order does not exist. **So the spread above is a curve, not a gap** — Green is paid early in initiative and late in reach, and the two hand over somewhere in the middle of a campaign.
+
+**What that means when writing a Green card.** A broad Green name is not an accident waiting to be corrected. **It is the colour's late half, and narrowing it takes away something the dice were never paying for.** Use a narrow name when the card's fiction genuinely is narrow — don't reach for one to make a Green card feel priced.
+
+<!-- print:skip-start -->
+*Drew's read, 2026-09-27, and it answered a question no sweep could: **nothing that counts damage or win rates can see the value of a name**, so every measurement this repo runs will report this spread as free. It is the clearest case so far of the balance living somewhere the engine cannot look.*
+<!-- print:skip-end -->
+
 **Some keywords scale by colour rather than by die and range.** Thorns is the clearest: it is retaliation damage, so it belongs to Body, and the number is set by the card's colour — **Green 2, Blue 3, Red 4** — regardless of die or range. This is a game-wide rule, not a core-set one: creature signature cards follow the same ladder.
 
-Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every turn you hold Anchored, and Thorns stacks additively, so a flat 4 there would be a different card.
+Two cards sit off that on purpose. **BRISTLE** is Green at 3: both its halves do nothing but grant Thorns, and it is Melee-only, so it buys the extra point with the range restriction and with having no second effect — CONFRONT, the other Green melee Thorns card, sits at the base 2 because it spends its defence half on Counter Attack instead. **PAIN IS FUEL** is Red at 2: it re-grants every time you are damaged, for the whole combat, and Thorns stacks additively, so a flat 4 there would be a different card. *It was Anchored until 2026-10-05; Drew took that off, since being hit first is already the condition it pays on.*
 
 **The ladder is retired as of 2026-09-17.** Drew called it that morning: a rule described as game-wide, already carrying two named exceptions out of the handful of cards using it, is on its way to not being a rule. By the end of the day it had failed in both directions.
 
@@ -79,7 +109,7 @@ The crossovers are deliberate and worth keeping: Red still body-blocks for the p
 
 **Effect strength is paid for in the die, and in Range.** Where the same effect appears in more than one colour, the pool prices it: OPEN GUARD, MARKED, and OPENING all apply Vulnerable, at d8/Melee, d6/Ranged, and d4/Both. UNBROKEN, LAST RESORT, and UNTOUCHED are the same trade on Immunity. Read those ladders before setting a new card's die — the pool has already decided what that effect costs.
 
-**The Attack line can carry more than the die.** Most cards read `Body + d8` and stop there, but the line legitimately holds anything that changes the roll or is paid to make it: a conditional bonus die (RHYTHM BREAK's `+1d6` against someone who moved, TRACE's `+2d6`, UNDERSTANDING's discard-for-`+1d6`), a doubled attack (TWIN STRIKE's `(Soul + d4) x 2`), or an HP cost (REPAY's `Pay 3 HP`). OVERCOMMIT puts a whole status there — `Gain Vulnerable` — which stretches the convention furthest.
+**The Attack line can carry more than the die.** Most cards read `Body + d8` and stop there, but the line legitimately holds anything that changes the roll or is paid to make it: a conditional bonus die (RHYTHM BREAK's `+1d6` against someone who moved, TRACE's `+2d6`, PIECE TOGETHER's discard-for-`+1d6`), a doubled attack (TWIN STRIKE's `(Soul + d4) x 2`), or an HP cost (REPAY's `Pay 3 HP`). OVERCOMMIT puts a whole status there — `Gain Vulnerable` — which stretches the convention furthest.
 
 This matters when reviewing: a card's power is not readable from its Effect lines alone, and a summary that lists only die, range and effects will show TWIN STRIKE as a plain d4 and RHYTHM BREAK as a d8 with nothing on offence. Both readings are wrong. Read the Attack line.
 
@@ -111,6 +141,16 @@ Cards excluded by this rule are still perfectly good cards; they belong in creat
 
 **Legal is not the same as early.** This rule bars what a starting deck may never do; it does not settle whether a legal card is right for players still learning the reveal. The cards cleared for a first campaign, the screen they were cleared against, and the ones that failed it are in `rules/early-campaign-cards.md`.
 
+### A card that needs terrain belongs to whoever picks it
+
+*Added 2026-09-26, off CORNER.* **A card whose fiction only makes sense in a particular kind of place is not a starting card, however clean its mechanics are.** You cannot corner somebody in a field. CORNER read `Neither you nor the defender may change position until your next turn` — nothing in that text mentions a wall, and it needs one anyway, because the *fantasy* is a wall and without one the card is a player asserting an architecture the fight does not have.
+
+**The test is who chooses the ground, and the party never does.** A player drafts a deck and then gets handed a dock, a clearing, a market, a corridor — whatever the session is about. **A creature is written into its own habitat**, so a card that needs a corridor is always on for the thing that lives in the corridor and picks its fights there. CORNER is the Minotaur's now (`cards/minotaur-coil.md`, `bestiary/minotaur.md`) — same text, same die, a creature that fights in corridors by choice and never in chambers.
+
+**This is a bar on the fiction, not on the mechanics**, which makes it the one screen a reading of the card text alone will miss. *Checked across all three colour lists and the colourless three on 2026-09-26: CORNER was the only card that failed it.* CLIMB comes closest and passes — the name and the flavour are about high ground, but the card is `Move to the Backline. Anchored` and asks nothing of the room.
+
+**The disposition is different from a tier move, and that matters.** The middle tier means *later* — a card a table meets when it is ready (`cards/tiers/README.md`). This says *not a player card at all*, and it sends the card to a stat block instead of to a list. **SEED was the first one out on these terms** and went to a character rather than a creature (`cards/chris.md`); CORNER is the second, and the first to go to the bestiary.
+
 **The deck comes in two sets, 63 cards then 21.** The original prints as `oracle`; the expansion prints separately as `oracle-expansion`, so a review pass over the newer cards doesn't mean re-reading the older ones. They are one deck — the split is for reading, not for play. The expansion holds each colour's range identity at the same ratio (4/2/1 against the first set's 12/6/3), and the content rule above applies to both without exception.
 
 <!-- print:skip-start -->
@@ -122,7 +162,7 @@ Twenty-one cards were written on 2026-09-08 as an expansion, before the bench-fi
 <!-- print:skip-end -->
 
 <!-- print:skip-start -->
-Nine more still sit as bench — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND and ANCHOR in Red; DECODE and REDIRECT in Blue; ENTREAT in Green — and three failed the early-campaign screen (UNRAVEL, PROBE and INVERT, in `cards/tiers/middle.md`). Of the shapes the batch carried that the pool had never held, INVERT's Effect-cancelling is the one now barred from a starting deck; CORNER's mutual position lock, CHANNEL's three-way choice and CONFRONT's Green Counter Attack are all seated.
+Nine more still sit as bench — CLEAVE, MAUL, SKEWER, SHOULDER, EXPEND and ANCHOR in Red; DECODE and REDIRECT in Blue; ENTREAT in Green — and three failed the early-campaign screen (UNRAVEL, PROBE and INVERT, in `cards/tiers/middle.md`). Of the shapes the batch carried that the pool had never held, INVERT's Effect-cancelling is the one now barred from a starting deck; CHANNEL's three-way choice and CONFRONT's Green Counter Attack are both seated. **CORNER's mutual position lock held a seat for nine days and left the player pool entirely on 2026-09-26** — it is the Minotaur's card now (A card that needs terrain belongs to whoever picks it, above), and **THINK TWICE** was written for the Blue melee seat it vacated.
 <!-- print:skip-end -->
 
 ---
@@ -134,6 +174,20 @@ A card's name carries as much weight as its Effect line, because the name is wha
 Two consequences when writing or reworking a card:
 
 - **A broad name is a stronger card**, whatever its Effect line says, because it applies to more attempts. FOCUS supports nearly anything requiring concentration; CARD TRICK supports card tricks. Breadth is real power, so weigh it the way you weigh a die size — a wide name on top of a strong Effect is a card that does two jobs. That cuts the other way too: a deliberately narrow name is a fair place to pay for an unusually good Effect.
+- **Wide is not the same as unbounded, and the difference is whether the name can be argued with.** A good broad name covers a whole category of attempt *and still says plainly when it does not apply.* FOCUS supports anything needing concentration and nothing needing charm — that second half is what makes it a card rather than a blank cheque. **THINK TWICE** *(2026-09-26)* is the same shape: it carries any attempt that turns on hesitating, reconsidering, checking yourself before you commit — a held tongue, a second read of a contract, a step not taken — and it carries none of the rest, because *"I thought twice"* is not an argument for lifting a portcullis. **The test is whether a player can stretch the name over an attempt the table would not otherwise have granted.** A name that stretches isn't broad, it is unpriced, and the Effect line has stopped paying for anything.
+
+  *And breadth is measured in aims, not in subjects.* **A name is read as the thing a character is trying to make happen**, so its reach is every attempt that shares that intent rather than every attempt about that topic (`rules/resolution.md`, Advantage & Disadvantage). THINK TWICE covers any attempt to make somebody reconsider — a threat, a bluff, a silence held too long — whether or not the words are ever said. **That is a wide card, and the die and the Effect are what pay for it**: if it turns out too good, the lever is the Effect line, never the name (Name breadth in `rules/early-campaign-cards.md`: do not rename a card into disguise). *A speakable name is a useful tell that a name is an aim rather than a subject* — WAIT, GUARD and RELEASE all are, which is why each reaches further than it looks.
+
+- **The test is whether the character can bring it** *(2026-09-27)*. A name works on a discard when it is something the character **has, is, or does** — an act, an intention, a habit, a faculty, or **a state they are in.** *States and experiences are entirely valid names, and often the best ones, because a state travels.* **UNBROKEN, discarded to hold a boulder off an old woman, is exactly right**: the character has not broken yet, so they do not break now. INSTINCT for a call made on the gut, WEATHERED for a march that should have finished them — all of it lands, because each one is something carried into the attempt.
+
+  **What fails is a name nobody possesses.** GAMBLER'S RUIN was the theorem — bet long enough against a deeper purse and you go broke — *a verdict on how a sequence resolves, held by nobody and performed by nobody.* There is no version of a character bringing eventual insolvency to a boulder. It is **GAMBLER'S FOLLY** now: a folly is a choice, and a choice is something a person makes. Same card, same exploding dice, and the name is attached to somebody at last.
+
+  <!-- print:skip-start -->
+  *An earlier pass the same day called this act-versus-outcome and flagged UNBROKEN, WEATHERED and UNTOUCHED as leaning the wrong way. **They do not, and the rule was the thing that was wrong.** A state is not an outcome — it is what the character walks in carrying. Corrected on Drew's boulder case, which is a cleaner test than the rule it replaced.*
+  <!-- print:skip-end -->
+
+- **Two words beat one more often than they look like they should.** 26 of the 84 seated names are phrases rather than single words. A phrase carries **an act and a stance at once** — THINK TWICE, DOUBLE DOWN, PIECE TOGETHER, LEVEL THE FIELD — so it hands a player a picture to point at *and* a line to say, where a single verb hands them only a category to argue from. *It is not about breadth: SLIP THE BLADE and FIELD MEDICINE are phrases and both are narrow.* **It is that a phrase is easier to play**, and that is where the interesting table results come from (`rules/resolution.md`, Advantage & Disadvantage). **Reach for two words when one is doing the job but doing it flatly.**
+
 - **Renaming a card changes what it can do out of combat**, not just how it reads. Check that the new name still covers the same ground, and that nothing else already holds it — duplicate names break the print pipeline's by-name lookups, which is exactly how the Red and Green BRACE collided (`experimental/archives/cut-cards.md`).
 
 <!-- print:skip-start -->
@@ -176,7 +230,7 @@ Short versions for reading cards. `rules/card-glossary.md` is canonical for keyw
 
 **Signature cards follow the core set's conventions.** They are written for one stat block, but they are the same object as a core card and are read by the same players: same fields, same keyword vocabulary (numbered where the glossary numbers it), same Thorns ladder, and the same treatment of Range as a real cost. Range especially — a creature whose cards are all Both is a creature that never has to think about position, in a game that spends a third of the Oracle's design space teaching it. Signature cards ran 51% Both until 2026-09-09; they now sit at roughly a third each, leaning Melee because most things that attack you have to reach you first.
 
-**Enemy decks.** Deck size equals the creature's **total stats** — that part is fixed — the same number the player rule caps at, except a creature has no bank and no advancement, so its deck is simply built to that size once and stays there (a few bosses are deliberately built under it; `bestiary/hullback.md` and `bestiary/fermata.md` say so on their own entries) — with each color's count equal to the matching stat (signature cards count toward their color). Build 3 themed signature cards, then fill from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to reach the stat counts, leaning picks toward the creature's temperament. Enemies draw to hand size (Mind, minimum 2) like everyone else.
+**Enemy decks.** Deck size equals the creature's **total stats** — that part is fixed — the same number the player rule caps at, except a creature has no bank and no advancement, so its deck is simply built to that size once and stays there (a few bosses are deliberately built under it; `bestiary/hullback.md` and `bestiary/fermata.md` say so on their own entries) — with each color's count equal to the matching stat (signature cards count toward their color). Build 3 themed signature cards, then fill from the core lists (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`) to reach the stat counts, leaning picks toward the creature's temperament. Enemies draw to hand size (Mind, no minimum) like everyone else.
 
 ---
 
