@@ -4,7 +4,7 @@
 
 Head priest, Temple of Unity, capital. Kevin's father (`campaign/kevin.md`).
 
-**The Peppers are a priestly family and there are a great many of them.** Cousins, aunts, siblings, in-laws — scattered through temples across Eclipseria and beyond it, in nearly every faith the Temple District keeps a door for. It is what a Pepper does. Nobody in the family had to be told.
+**The Peppers are a priestly family and there are a great many of them.** Cousins, aunts, siblings, in-laws — scattered through temples across Eclipseria and beyond it, in nearly every faith the Temple District keeps a door for. It is what a Pepper does. Nobody in the family had to be told. *One of them is Jonah, a priest of the Rivers at Vulture's Nest, a Pepper by adoption and Kevin's cousin* (`characters/jonah.md`).
 
 **Ossian is the only one who runs a temple.** Every other Pepper in orders is a serving priest under somebody else's roof, and most of them are content with that. He is the exception, at the biggest building in the district, and the family's feelings about that are complicated in the ordinary way families are — pride, and a certain amount of being tired of hearing about it.
 

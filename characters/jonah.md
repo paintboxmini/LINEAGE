@@ -16,7 +16,9 @@
 
 ## Who He Is
 
-**He was a climbing boy** — sent up flues by a master sweep from about seven until he was too big to fit (The sweeps, `places/vultures-nest.md`). **At fourteen he walked out**, the day the law let him, and the river priests took him in as an apprentice of their own. *He has the sweep's knees and elbows, scarred pale, and he does not explain them.*
+**He was a climbing boy** — sent up flues by a master sweep from about seven until he was too big to fit (The sweeps, `places/vultures-nest.md`). **At fourteen he walked out**, the day the law let him, and **a Pepper took him in** — a priest of the Rivers, serving at the Nest, who made him her apprentice and then her son. *He has the sweep's knees and elbows, scarred pale, and he does not explain them.*
+
+**So he is a Pepper, and Kevin's cousin** *(Drew, 2026-10-08)*. The Peppers are a priestly family with somebody in nearly every faith (`characters/ossian.md`), and Jonah is theirs by adoption rather than by birth — *which the family has never once treated as a difference.* **He and Kevin know each other** the way cousins in a family that size do: well enough to be glad, not well enough to be close. *A Pepper who was given a home is trying to give one; the son who would not take the order is the cousin who might help him do it.*
 
 **Patient, plain-spoken, and stubborn.** He does not preach at the kids and he does not chase them. *He knows exactly what being chased by somebody who wants to help feels like.*
 
@@ -47,10 +49,12 @@
 - **Appearance and voice**, beyond the scars
 - **How long he has been at the Nest**, and what the Compact makes of him
 - **Whether he knows Mercer from before** — *Mercer is the man who places kids with sweeps*
-- **Jonah and Jonas** — two names one sound apart on the same dock (Jonas Widdlepen, the Compact's ledger-keeper). *Drew's call which one moves, if either*
+- **The Pepper who adopted him** — name, and whether she is still at the Nest
+- ~~**Jonah and Jonas**~~ — *the name overlap with Jonas Widdlepen is fine (Drew, 2026-10-08)*
 
 ## Related Documents
 
 - `places/vultures-nest.md` — the Red Scarves, the warehouses, the sweeps, and Fourteen
 - `characters/mercer.md` — the man he is up against
 - `places/capital/capital.md` — the Temple of the Rivers
+- `characters/ossian.md`, `campaign/kevin.md` — the Peppers
