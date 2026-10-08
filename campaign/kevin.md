@@ -511,6 +511,7 @@ Range: Ranged
 
 - **His ship is the Merry Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest** — up the river that runs south from the Nest toward the Ruins (`world/geography-overview.md`, Past the hubs). At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
 - **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
+- **He knew where to find Lusk's shop** *(Drew, 2026-10-08)* — the black-market counter where Code bought his papers (`places/vultures-nest.md`, Lusk; `campaign/chris.md`, Two months in the Nest). *The shady end of the route taught him where a port keeps its back rooms* (What he learned at the shady end of the route, above).
 - **His six drafted cards:** RETALIATE, CERTAIN STRIKE and SECOND WIND (Red), FOCUS and STILL POINT (Blue), RELEASE (Green). **With his customs that is 4 Red / 3 Blue / 2 Green — exactly his stats**, the one player at the table who took the matching spread. All six printed as written in `cards/`.
 - **Age 20.** Off his sheet.
 - **Price, off his sheet: "Never stop growing."** *What it costs him at the table is still to set* (Not Yet Set, below).

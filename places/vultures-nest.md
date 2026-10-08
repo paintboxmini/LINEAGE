@@ -244,7 +244,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **The Mask Quest.** **Before giving up the mantle, the Sixth Many Mask left a trial** to decide who was worthy to be the Seventh. The mantle can no longer be inherited, bought, voted for or simply claimed. Anyone who knew the path could attempt it; completing it was another matter. **Its trials demand more than skill, and failure carries a price.** *For nearly a century, no one has completed it.*
 
-**The five families.** Without a Many Mask, the structure beneath the mantle became the structure above it. **The Marrows, the Bellows, the Rooks, the Vells and the Strays.** Each chose a representative — **a Knot** *(Chris's word was **Seam**; changed because a seam is already the Masons' thin place in reality across this repo — `factions-and-races/the-masons.md`. **Knot** is proposed to Chris, keeping the cloth: the Nest already teaches knots before letters, The People, above)*. **The Knots once existed to hold the Scarves together and serve the Many Mask. With no Mask, they became rulers themselves.**
+**The five families.** Without a Many Mask, the structure beneath the mantle became the structure above it. **The Marrows, the Bellows, the Rooks, the Vells and the Strays.** Each chose a representative — **a Knot** *(Chris's word was **Seam**; changed because a seam is already the Masons' thin place in reality across this repo — `factions-and-races/the-masons.md`. **Knot** keeps the cloth, and the Nest already teaches knots before letters, The People, above. Taken up by Drew, 2026-10-08)*. **The Knots once existed to hold the Scarves together and serve the Many Mask. With no Mask, they became rulers themselves.**
 
 **From Creed to crime.** A balance formed. Families traded favours, territory, information and threats; cooperation kept **the Outfit** alive, rivalry kept any one family from owning it. Some Knots still call their authority stewardship of something that belongs to the Many Mask. Others have begun to wonder why they should ever give up what their families spent generations building. **What began as a promise of freedom became a thieves' guild** — crime families and street crews in the shadow of their own legend, still saying the Creed's words and no longer agreeing on what they mean.
 
@@ -254,7 +254,25 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **The mask still waits.** Nearly a hundred years without a Seventh. *And somewhere beneath the crime, ambition and blood, the Red Creed still promises what it promised at the beginning:* **Freedom.**
 
-**Code is in the Red Scarves when session one starts** (`campaign/chris.md`, From session 0, and Chris's doc). *A shapeshifter in an outfit waiting a century for its next Many Mask is Chris's thread to pull* — **not written ahead of him.**
+**The kids are not part of the five families** *(Drew, 2026-10-08)*. They wear the scarf — the Creed's own sign — and nobody in the Outfit counts them. **They sell what they steal to the Strays**, through the Strays' Knot, **Lusk** (below), **and he is the reason they have the Ribs.** *The scarf on a dock kid is the oldest thing about the Red Scarves and the least regarded.*
+
+**Code has had no direct contact with the Red Scarves when session one starts** *(Drew, 2026-10-08)*. **Meeting them happens at the table.** *He has met Lusk, who sold him his papers* (`campaign/chris.md`, Two months in the Nest). *A shapeshifter in an outfit waiting a century for its next Many Mask is Chris's thread to pull* — **not written ahead of him.**
+
+### Lusk — the Strays' Knot
+
+*Drew, 2026-10-08.* **He runs a small black-market shop** off the back of the dock, where stolen things go to become merchandise. **He is the Strays' Knot**, and **he is the kids' fence.** Everything sellable the chain lifts in the market reaches his counter within the hour (The operation, above).
+
+**He gives them the Ribs.** *The Ribs is Strays ground*, and the kids hold it **for as long as they keep bringing him goods.** *Nobody has ever said what happens if they stop, and nobody has needed to.*
+
+**And he underpays them, every time**, because he can. **The power is all his**: they cannot sell anywhere else without crossing a family, and they cannot lose the floor. *A purse that goes out of his door for gold came in for copper.*
+
+**The kids still prefer it.** **It is not the warehouse.** *A thief who is cheated is still free at the end of the day, and that is the whole of the bargain* (What they ran from, below).
+
+**He sold Code his papers** (`campaign/chris.md`, Two months in the Nest). *Kevin knew where the shop was.*
+
+**At the table:** sly, friendly, never in a hurry, and **always the one who comes out ahead.** *He is a social scene, not a fight.* What he looks like and sounds like is not set.
+
+
 
 ### What they ran from — the warehouses
 
@@ -298,7 +316,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **The town is built on top of itself** (see the opening line of this file), which means there is an older Nest down under the current one: a dock level from two or three rebuilds ago, boxed in when they laid the new deck over it and never filled. Dockhands call the layered structure *the ribs*. The kids took the word and made it an address.
 
-**It is not hidden. It is unusable.** Anyone can find it — Bartho could point at the spot. Almost nobody can get into it: the ways in are gaps between old pilings, a flooded stair, and a hatch under a crane housing, and every one of them is sized for somebody under about fourteen. **That is the entire security model**, and it is better than a lock. A chase that goes well for the party still ends at a hole they cannot fit through, with a kid on the other side of it not even breathing hard.
+**It is Strays ground, held at Lusk's pleasure** *(2026-10-08; Lusk, above)*. **It is not hidden. It is unusable.** Anyone can find it — Bartho could point at the spot. Almost nobody can get into it: the ways in are gaps between old pilings, a flooded stair, and a hatch under a crane housing, and every one of them is sized for somebody under about fourteen. **That is the entire security model**, and it is better than a lock. A chase that goes well for the party still ends at a hole they cannot fit through, with a kid on the other side of it not even breathing hard.
 
 **Every route has three exits.** Nothing in there is a dead end, on purpose, and the kids know which ones go to water. An adult who does get in is in a crawl with no way to cut off what they are chasing.
 
@@ -588,8 +606,9 @@ Jonas keeps the official port record, and the official port record is cross-refe
 *The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
 
 - ~~**Whether Mercer answers to the five families**~~ — *the Bellows (Drew, 2026-10-08)*
-- **Which family the kid crews answer to.** *Proposed to Chris: **the Strays**, which is very nearly what the kids are already called*
-- **Knot** — proposed to Chris in place of his **Seam** (The Many Mask's legacy, above). *His to accept or replace*
+- ~~**Which family the kid crews answer to.**~~ *Settled 2026-10-08: none — they are outside the five, and sell to the Strays through Lusk (The Many Mask's legacy, above)*
+- ~~**Knot**~~ *in place of Chris's **Seam** — taken up by Drew, 2026-10-08*
+- **Lusk's appearance and voice**, and what the Ribs' bargain looks like on the day the goods stop
 - **The Mask Quest** — its path, its trials, its price. *Chris's*
 - ~~**What happens to a Scarf who grows too big for the Ribs.**~~ *Settled 2026-10-07: fourteen is apprenticeship age, and they leave to find a trade (What they ran from, Fourteen)*
 - **The name of the high country.** The animal was named on 2026-09-25 (`bestiary/gollop.md`); the range still has no name at all, and the Gollop's cards carry a NEST tag until it does (`cards/gollop.md`)
