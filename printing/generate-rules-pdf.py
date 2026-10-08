@@ -384,11 +384,13 @@ PACKETS = {
 
 
 def resolve_src(fname):
-    """A named file may live in rules/ or, for non-rules content pulled
-    into a packet, in experimental/. Note that a missing file is a hard
+    """A named file may live in rules/, in experimental/ for non-rules
+    content pulled into a packet, or in binder/ for a player page. Note that a missing file is a hard
     exit below rather than a skipped section — a packet that quietly builds
     short is worse than one that refuses to build."""
-    for base in ('../rules', '../experimental'):
+    # binder/ holds the player pages for the bestiary binder — built on
+    # request, never by generate-all.sh (binder/README.md).
+    for base in ('../rules', '../experimental', '../binder'):
         candidate = f'{base}/{fname}'
         if os.path.exists(candidate):
             return candidate

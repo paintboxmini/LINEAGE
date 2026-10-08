@@ -331,6 +331,8 @@ His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three sign
 
 Three customs, one per colour. **They have landed: `cards/chris.md` is the card, this section is the argument for it.** Both copies are worth keeping and they must not drift — `python3 agent-tools/check-card-drift.py` is what notices when they do.
 
+**What "reveals their stats" gets him** *(Drew, 2026-10-08, already told to Chris)*: stats and HP, **Skills, Traits and Passives** — and for a simple creature, **its signature cards** (`rules/card-glossary.md`, Reveal stats). **Each one he lands earns that creature's Measured page for his bestiary binder** (`binder/README.md`) — *Chris is the table's note-taker, and MEASURE is how the binder fills.*
+
 **MEASURE — no repeated note.** The flow card, and the one that runs every turn. **Red and Melee-only since 2026-09-20**, having started Blue and Both. *Taking someone's measure means closing with them* — you read a person by standing inside their reach, not by thinking about them from across the room, and the card was doing the second thing while claiming the first. The reveal is still written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
 
 **Its condition is Cadence** *(2026-10-05)* — the last card he revealed, attacking or defending, against this one's colour (`rules/card-glossary.md`, Cadence). *Before that it read "the card you played last turn", which left out his blocks and was broken by a turn spent moving; Cadence counts every card he shows and nothing else.*
