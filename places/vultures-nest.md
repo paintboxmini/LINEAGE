@@ -262,6 +262,8 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 *Drew, 2026-10-08.* **The Strays run the Nest's homeless.** Every beggar on the steps, every sleeper under the deck, every drifter nobody looks at twice — **the Strays use them to steal and, above all, to spy.** *Nobody watches the people nobody watches, so the Strays see everything.* **It is the smallest of the five families in coin and the best informed.**
 
+**Ask Lusk and he owns them. He does not** *(Drew, 2026-10-08)*. **It is a working relationship, and an ugly one**: he forces people to steal and to spy, and **the ones he uses are the desperate** — the ones with nothing left to refuse him with. **He does it out of obligation, not appetite.** *The family has to deliver, and the homeless are what the family is made of.*
+
 **Lusk leads them** *(Drew, 2026-10-08)*, and he is also their **Knot** — the family's voice among the five. **He runs a small black-market shop** off the back of the dock, where stolen things go to become merchandise, and **he is the kids' fence.** Everything sellable the chain lifts in the market reaches his counter within the hour (The operation, above).
 
 **He gives them the Ribs.** *The Ribs is Strays ground*, and the kids hold it **for as long as they keep bringing him goods.** *Nobody has ever said what happens if they stop, and nobody has needed to.*
@@ -613,6 +615,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - ~~**Which family the kid crews answer to.**~~ *Settled 2026-10-08: none — they are outside the five, and sell to the Strays through Lusk (The Many Mask's legacy, above)*
 - ~~**Knot**~~ *in place of Chris's **Seam** — taken up by Drew, 2026-10-08*
 - **Lusk's appearance and voice**, and what the Ribs' bargain looks like on the day the goods stop
+- **What Lusk is obligated to** — *one that fits: the Strays' seat among the five is paid in what their eyes see, and if the information stops, so does the seat*
 - **The Mask Quest** — its path, its trials, its price. *Chris's*
 - ~~**What happens to a Scarf who grows too big for the Ribs.**~~ *Settled 2026-10-07: fourteen is apprenticeship age, and they leave to find a trade (What they ran from, Fourteen)*
 - **The name of the high country.** The animal was named on 2026-09-25 (`bestiary/gollop.md`); the range still has no name at all, and the Gollop's cards carry a NEST tag until it does (`cards/gollop.md`)
