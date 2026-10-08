@@ -254,13 +254,15 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **The mask still waits.** Nearly a hundred years without a Seventh. *And somewhere beneath the crime, ambition and blood, the Red Creed still promises what it promised at the beginning:* **Freedom.**
 
-**The kids are not part of the five families** *(Drew, 2026-10-08)*. They wear the scarf — the Creed's own sign — and nobody in the Outfit counts them. **They sell what they steal to the Strays**, through the Strays' Knot, **Lusk** (below), **and he is the reason they have the Ribs.** *The scarf on a dock kid is the oldest thing about the Red Scarves and the least regarded.*
+**The kids are not part of the five families** *(Drew, 2026-10-08)*. They wear the scarf — the Creed's own sign — and nobody in the Outfit counts them. **They sell what they steal to the Strays**, through **Lusk**, who leads that family (below), **and he is the reason they have the Ribs.** *The scarf on a dock kid is the oldest thing about the Red Scarves and the least regarded.*
 
 **Code has had no direct contact with the Red Scarves when session one starts** *(Drew, 2026-10-08)*. **Meeting them happens at the table.** *He has met Lusk, who sold him his papers* (`campaign/chris.md`, Two months in the Nest). *A shapeshifter in an outfit waiting a century for its next Many Mask is Chris's thread to pull* — **not written ahead of him.**
 
-### Lusk — the Strays' Knot
+### The Strays, and Lusk
 
-*Drew, 2026-10-08.* **He runs a small black-market shop** off the back of the dock, where stolen things go to become merchandise. **He is the Strays' Knot**, and **he is the kids' fence.** Everything sellable the chain lifts in the market reaches his counter within the hour (The operation, above).
+*Drew, 2026-10-08.* **The Strays run the Nest's homeless.** Every beggar on the steps, every sleeper under the deck, every drifter nobody looks at twice — **the Strays use them to steal and, above all, to spy.** *Nobody watches the people nobody watches, so the Strays see everything.* **It is the smallest of the five families in coin and the best informed.**
+
+**Lusk leads them** *(Drew, 2026-10-08)*, and he is also their **Knot** — the family's voice among the five. **He runs a small black-market shop** off the back of the dock, where stolen things go to become merchandise, and **he is the kids' fence.** Everything sellable the chain lifts in the market reaches his counter within the hour (The operation, above).
 
 **He gives them the Ribs.** *The Ribs is Strays ground*, and the kids hold it **for as long as they keep bringing him goods.** *Nobody has ever said what happens if they stop, and nobody has needed to.*
 
@@ -269,6 +271,8 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 **The kids still prefer it.** **It is not the warehouse.** *A thief who is cheated is still free at the end of the day, and that is the whole of the bargain* (What they ran from, below).
 
 **He sold Code his papers** (`campaign/chris.md`, Two months in the Nest). *Kevin knew where the shop was.*
+
+**What he knows is worth more than what he sells.** The papers he sold Code came with a question he did not ask — *and a man with half the Nest's homeless for eyes does not need to ask.*
 
 **At the table:** sly, friendly, never in a hurry, and **always the one who comes out ahead.** *He is a social scene, not a fight.* What he looks like and sounds like is not set.
 

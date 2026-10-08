@@ -159,13 +159,13 @@ What the kit delivers so far:
 
 *Set 2026-09-27, Chris's call at the table. No roll — Drew gave it to him.*
 
-**He and Kevin have been at Vulture's Nest a couple of months** when session one opens. Long enough to have found **Lusk's shop** — a Knot's black-market counter (`places/vultures-nest.md`, Lusk) — and long enough to have bought what a man on the run needs first. **Kevin knew where to find it** *(Drew, 2026-10-08)*; *a boy who grew up on the shady end of the temple's shipping routes knows where a port keeps its back rooms* (`campaign/kevin.md`, What he learned at the shady end of the route).
+**He and Kevin have been at Vulture's Nest a couple of months** when session one opens. Long enough to have found **Lusk's shop** — the black-market counter of the man who leads the Strays (`places/vultures-nest.md`, The Strays, and Lusk) — and long enough to have bought what a man on the run needs first. **Kevin knew where to find it** *(Drew, 2026-10-08)*; *a boy who grew up on the shady end of the temple's shipping routes knows where a port keeps its back rooms* (`campaign/kevin.md`, What he learned at the shady end of the route).
 
 **He has identification papers. They are not forged — they are real, and they were stolen off somebody.** *That distinction is the whole of it.* A forgery fails when a careful person examines the document. **These papers survive any examination, because there is nothing wrong with them.** Somewhere there is a person who owns this name, and **the Scarves lifted a purse with the papers still in it, and sold it on to Lusk**, who sold the papers to Code *(Drew, 2026-10-08)*.
 
 **Eight gold**, off a starting purse of 25 (Starting gold, below).
 
-**And it is cheap because of how it reached the shelf.** Lusk paid the kids next to nothing for the purse — he always does (`places/vultures-nest.md`, Lusk). Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Code walked in.* **Eight gold is a third of everything he had, and a fat margin on whatever Lusk paid a child for it**, and both of those are true at once.
+**And it is cheap because of how it reached the shelf.** Lusk paid the kids next to nothing for the purse — he always does (`places/vultures-nest.md`, The Strays, and Lusk). Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Code walked in.* **Eight gold is a third of everything he had, and a fat margin on whatever Lusk paid a child for it**, and both of those are true at once.
 
 **What Lusk knows, and what he does not.** *He knows the papers were not Code's* — he sold them to him. **He does not know who Code actually is**: not his real name, not the University, not what he is. To him Code is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about that makes Lusk a threat yet. It makes him someone who knows one true thing, and he is the kind of man who sells those.*
 
