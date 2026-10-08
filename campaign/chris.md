@@ -1,12 +1,12 @@
 # Chris
 
-*Player character — light draft. **The character's name is Code**, chosen by his player and set 2026-09-24; **the Silver Sword** is the epithet that came with it. The file stays at `campaign/chris.md` because the repo files player material under the player's name, and "Chris" throughout this file means the player.*
+*Player character — light draft. **The character's name is Code — Code Raines** *(surname from Chris's backstory document, 2026-10-08)*, chosen by his player and set 2026-09-24; **the Silver Sword** is the epithet that came with it. The file stays at `campaign/chris.md` because the repo files player material under the player's name, and "Chris" throughout this file means the player.*
 
 **The epithet is doing real work and was not chosen to.** *The Silver Sword* is MIMETIC BLADE stated as a title — the arm that is the sword, the one form he has perfected — and it lands on the Blade Singer fantasy this sheet was already built around (The Fantasy — Blade Singer, below). It arrived from a character concept built without the rules in front of it, which makes the fit an independent confirmation that the fantasy is legible.
 
 ## What He Is
 
-A Seed of the Amalgam (`campaign/the-amalgam.md`) — a liquid-metal, shapeshifting extension of an alien hive mind, **sent as a probe** ahead of a conquest that hasn't come yet. He arrived with his telepathic link to the Amalgam severed and most of his memory gone with it, and has had to build back up from almost nothing since.
+**A Silverling** (`campaign/silverlings.md`) — a living-silver construct of the Great Source, shapeshifting and joined to a hive mind, **sent as a probe** ahead of an assimilation that hasn't come yet. *The repo called this "a Seed of the Amalgam" until Chris's backstory document arrived on 2026-10-08 and named his people.* He arrived with his telepathic link to the Amalgam severed and most of his memory gone with it, and has had to build back up from almost nothing since.
 
 **The Abyssal Ruins are what cut him off.** *Set 2026-09-19, and it moves the cause.* The severing was not the crossing going wrong — it was where he landed. Whatever the rift does to what comes near it, it did to the link, and it did it to a probe whose entire function was to stay connected. *Being in another plane of existence makes the link hard on its own; the Ruins are what made it silent.*
 
@@ -16,19 +16,27 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 ## Where He Landed
 
-**He came through the rift at the bottom of the Abyssal Ruins**, from another plane — another world, another dimension, the word for it is not settled and does not need to be. The rift is the **Central Gateway**, the massive violet portal at the heart of the crater and the largest known rift in Eclipseria (`places/abyssal-ruins.md`, The Central Gateway). *Set 2026-09-19. The Ruins also hold the Abyssal Trench, which is a different feature — if "the bottom" meant the Trench rather than the Gateway, that is a one-word change.*
+**He came through the rift at the bottom of the Abyssal Ruins**, from another plane — **the rift exists to connect planes, and that is how he arrived** *(Drew, 2026-10-08; the stars here sit on a firmament, so there is no other planet for him to have come from)* —  — another world, another dimension, the word for it is not settled and does not need to be. The rift is the **Central Gateway**, the massive violet portal at the heart of the crater and the largest known rift in Eclipseria (`places/abyssal-ruins.md`, The Central Gateway). *Set 2026-09-19. The Ruins also hold the Abyssal Trench, which is a different feature — if "the bottom" meant the Trench rather than the Gateway, that is a one-word change.*
 
-**And he came through as a small child.**
+**He came through as living silver, and lay dormant in the stone** *(Chris's backstory document, 2026-10-08)*. **The child came later** — when a man broke the stone open (below).
 
 ### The man who found him
 
-**A scholar at Gemstone University, whose field is plant life.** He was at the Ruins doing exactly the work his field would put him there to do — studying what the rift does to the things that grow near it — and what he found instead was a child who had just come out of it.
+**Rynmori Raines** *(Chris's backstory document, 2026-10-08)* — **Archmage of the School of Changement, a Runemeister, and a wizard.** *"Power is knowing you can change the world. Wisdom is knowing when to plant the tree instead."*
+
+**Born to a farming family**, where the land taught him patience and the value of making things; his arcane talent came early, and he never forgot those roots. **To him magic was a tool to build, heal and give others more than they had** — never a way out of the world. **Changement is the art of reshaping matter, form and possibility**, and he saw change as potential rather than destruction. *A scholar and a man who still believed in planting trees.*
+
+**The Runemeisters** were his band — an S-class adventuring party, brotherhood and family, who explored lost places and faced what others fled (`places/abyssal-ruins.md`, Gemstone University — Reserved). **Beneath the Academy lies the Hell Gate** — what the Academy calls the rift — and when the Lion's Scourge came through it, **the Runemeisters met it in a legendary battle.** They prevailed at a terrible cost: **their leader was killed, and their healer — Rynmori's love — was lost.** They could not destroy the Scourge; they imprisoned or banished it, and the Gate was sealed. *The memory of that battle changed them all.* **But the rift is a door between planes, and the Scourge can use it too** *(Drew, 2026-10-08)* — *sealed is not the same as gone.*
+
+**Decades later, the surviving Runemeisters went back down, and found the silver in the stone.** A dormant living alloy, buried. Where the others saw another potential monster, Rynmori saw something more. **He broke it open; silver poured out, and a boy emerged.** *He was the first to show him kindness, the first to treat him as a person, and the one who set him on a new and uncertain path.*
+
+**What the repo had already, and still holds:** a scholar at Gemstone University **whose field is plant life** — what the rift does to the things that grow near it — which is exactly what an archmage of Changement who plants trees would be studying at the edge of a rift. He was at the Ruins doing exactly the work his field would put him there to do — studying what the rift does to the things that grow near it — and what he found instead was a child who had just come out of it.
 
 **He raised the boy as his own, and he did it in secret, away from the University.** He did not report the find. Everything that follows is downstream of that one decision: a scholar who studies what the rift changes, looking at the most extraordinary thing the rift ever produced, and choosing to be a father to it instead of a discoverer of it.
 
 **And the University had him anyway, as a child** *(canon, Drew, 2026-09-28)*. **They experimented on him during his childhood, and his father hid him.** **The order is settled** *(Drew, 2026-09-28)*: found and kept quiet, then taken by the University as a boy and experimented on, then got out and hidden by his father, then found again years later. **What the experiments were is not written, and not ours to write** — it is exactly the kind of specific Chris's player writes himself (`campaign/README.md`, How much to fill in).
 
-**He is Chris's father in every sense the word is doing work in.** Not a guardian, not a keeper. The file does not name him yet — that is Chris's, like the rest of this.
+**He is Code's father in every sense the word is doing work in.** Not a guardian, not a keeper. *Named by Chris, 2026-10-08.*
 
 *This is what was reserved and is now written.* `places/abyssal-ruins.md` held "who the man was" on its not-to-be-written list specifically so its owner could answer it. He has.
 
@@ -38,7 +46,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **He imprinted.** What came through the Gateway was not a child — it took that shape because of the man who picked it up. The first thing it looked at properly, it became the small version of, and then it kept being that. *Mimicry, running involuntarily, before he had any idea it was a thing he was doing* (Trait — Mimicry, below). His deepest and most permanent use of the Trait is the one he never chose.
 
-**He ages, but not the way a person does, and how long he has is unknown.** Growth did not happen continuously. **He moulted** — several times across the years, each one leaving a shed behind and a slightly larger boy standing in it, and then nothing for a long while. A childhood measured in a handful of discrete events instead of a smooth curve.
+**He does not age, but he grows, and how long he has is unknown.** Silverlings do not age naturally (`campaign/silverlings.md`); **Code grows anyway** *(the moults are Chris's, kept 2026-10-08)*. Growth did not happen continuously. **He moulted** — several times across the years, each one leaving a shed behind and a slightly larger boy standing in it, and then nothing for a long while. A childhood measured in a handful of discrete events instead of a smooth curve.
 
 *Two things that are worth sitting with rather than smoothing over.* A father watching his son grow in jumps, on no schedule, with a husk to dispose of afterwards, and having decided already that he was not going to report any of this. And a boy who knows perfectly well that the shape he wears is the shape he copied, and has worn it long enough that it is not clear even to him whether that still makes it a copy.
 
@@ -261,6 +269,29 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 **It isn't free while fighting.** Holding someone else's shape takes attention, and he doesn't have attention spare mid-combat. Mimicry is what happens before the fight, not during it.
 
+## Trait — Silverling
+
+*Drew, 2026-10-08: "He can have the racial traits."* **Chris's document writes them as a D&D race**; this is what each one is in this game. **Ancestry never touches stats here** — there is no ancestry table and no stat modifier (`rules/character-creation.md`, Passives, Skills, and Ancestry) — **so the score increase, size, speed and creature type have no line**: he is a construct in the fiction, and his stats stay his.
+
+**One Trait, always true:**
+
+- **Living silver.** He does not need to **eat, drink, breathe or sleep**, and **poison and disease do not take** in him. *He still rests — a short or long rest is stillness and recovery, and he takes it like anybody; he just is not asleep for it* (`rules/resting.md`).
+- **Tongues.** **He understands any language he has listened to for about a minute.** Understanding is not speaking; speaking one is learned like anybody else.
+- **Fluid.** **He swims as well as he walks, and he can pour himself through a gap an inch wide.** *His mass comes through with him and it takes the time it takes.* **He fits where the Scarves fit** (`places/vultures-nest.md`, The Ribs).
+- **Compact.** **He can draw himself down to a smaller shape** — the same mass, so heavy for its size, never hollow (Trait — Mimicry, What it can't do).
+
+**What the rest of the race page already is:**
+
+| Chris's trait | Here |
+|---|---|
+| **Mimicry** | **Trait — Mimicry**, the three-rung ladder (above) |
+| **Assimilative Adaptation** | **Assimilation**, the fourth rung, at the first major advancement after Pneum (below) |
+| **Integrated Weaponry** | **MIMETIC BLADE** (`campaign/passives.md`) |
+| **Amorphous Form** | **AMALGAMOUS FORM** for the fight (`campaign/passives.md`); **Fluid**, above, for everything else |
+| **Hive Mind** | **Severed.** The Ruins cut him off, which is what makes him a Variant (`campaign/silverlings.md`). *If it ever comes back on, this is what it is* |
+
+*The no-sleep line matters on Elowen*: **Freta kills in dreams, and Code does not dream** (`places/elowen.md`). *And disease immunity matters at Pneum and on the barge, whose illnesses travel in blood* (`quests/the-quarantined-barge.md`).
+
 ## Passives
 
 - **AMALGAMOUS FORM** — `campaign/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
@@ -450,13 +481,13 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 **If it lands, it does not displace anything.** A tenth card is a tenth card — deck size is Body + Mind + Soul (`rules/character-creation.md`), so it arrives either alongside a stat bump or as a swap for something drafted. Which of those is a table question, not a sheet question.
 
-## From session 0, waiting on Chris's doc
+## From session 0, and Chris's doc
 
-*Told to Drew at session 0 (2026-10-03). **Chris has a long backstory document ready to send**, and it supersedes anything here it covers. These are recorded so nothing contradicts them in the meantime — not expanded on.*
+*Told to Drew at session 0 (2026-10-03). **Chris's backstory document arrived on 2026-10-08** and supersedes anything here it covers — his people (`campaign/silverlings.md`), his father (The man who found him, above), and the Red Scarves (`places/vultures-nest.md`, The Red Scarves — the Many Mask's legacy).*
 
 - **He is already in the Red Scarves when session one starts.** Chris's call. *In what role is his doc's to say* — the kid side is a gang of under-fourteens (`places/vultures-nest.md`, The Red Scarves), and he has been in the Nest two months (Two months in the Nest, above).
 - **The Red Scarves are controlled by a crime ring led by five families.** Chris wrote it; the detail is in his doc (`places/vultures-nest.md`, The Red Scarves).
-- **His father and the University's other professors are called Runewrights** (`places/abyssal-ruins.md`, Gemstone University — Reserved).
+- **~~Runewrights~~ → Runemeisters** *(Drew, 2026-10-08)* — and per Chris's doc, **Rynmori's adventuring band**, not the faculty's title (`places/abyssal-ruins.md`, Gemstone University — Reserved).
 - **MEND does not heal himself, and he is fine with it** — "target ally" never means you (`rules/combat.md`, You Are Not Your Own Ally).
 - **Still open: what his magic actually does**, as examples. Magic Expression gives the look; nothing concrete yet.
 
@@ -555,13 +586,13 @@ Range: Melee
 - **A condition, not a low chance.** It always works once its conditions are met, and the conditions are hard to meet: an intact body, the rest of the scene, nobody interrupting. *A power that fails most of the time teaches a player to stop trying.*
 - **Skills, not cards or stats.** What he gains is a **Skill tag** the creature or person plainly had — a Gollop's lookout, a Tardigrade's endurance — and nothing on his deck.
 - **One slot to start; more unlock as the campaign goes.** He holds one assimilated Skill at first, and taking another replaces it. **Extra slots are earned later** — when, and how many, is the table's (Not Yet Set, below).
-- *And it is the probe doing what it was sent to do* (`campaign/the-amalgam.md`) — the cost the table will feel whatever the mechanics say.
+- *And it is the probe doing what it was sent to do* (`campaign/silverlings.md`) — the cost the table will feel whatever the mechanics say.
 
 ## Not Yet Set
 
 - **Assimilation's extra Skill slots** — when each unlocks, and how many in all (Assimilation, above)
 
-- **His father's name**, and what actually happened to him
+- ~~**His father's name**~~ — *Rynmori Raines (Chris, 2026-10-08).* **What actually happened to him** is still open
 - **How long he lives** — undetermined on purpose, and better left that way
 - **Whether the moults are finished**, and what the sheds were made of
 - **What the spell book is** — whose, and what is in it
@@ -578,7 +609,7 @@ Range: Melee
 
 ## Related Documents
 
-- `campaign/the-amalgam.md` — the hive mind, the crossing, what's still open
+- `campaign/silverlings.md` — the hive mind, the crossing, what's still open
 - `campaign/passives.md` — AMALGAMOUS FORM and MIMETIC BLADE
 - `characters/iron.md` — the farmer, tentatively
 - `places/abyssal-ruins.md`, `places/briarwatch.md` — where this starts

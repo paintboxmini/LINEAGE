@@ -107,7 +107,7 @@
 - **How the party hears of it, and how they get here.** *One that fits: the bloodelm has stopped arriving wherever it is usually sold, and the buyer wants to know why*
 - **Who buys the timber**, and where it goes — *Kerra knows*
 - **Why Elowen, and why now** (`characters/freta.md`). *One that fits the Elm Street half: the village did something, long ago, that it does not talk about — and Freta has a reason to be here.* Not decided
-- **What happens when the party sleeps here.** *They will have to, unless they leave the same day — and whether Freta can reach a stranger's dream is the first thing the table will want to know* — **waiting on purpose** *(Drew, 2026-10-05)*
+- **What happens when the party sleeps here.** *They will have to, unless they leave the same day — and whether Freta can reach a stranger's dream is the first thing the table will want to know* — **waiting on purpose** *(Drew, 2026-10-05)*. **Code does not sleep at all** (`campaign/chris.md`, Trait — Silverling) — *whatever the rule turns out to be, he is the one person on the island she cannot reach that way*
 - **Whether waking a dreamer saves them**, or only puts it off
 - **How a dream-killing is fought**, if it is fought at all (`characters/freta.md`, Not Yet Set)
 

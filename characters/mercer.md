@@ -2,7 +2,7 @@
 
 *A warehouse owner at Vulture's Nest (`places/vultures-nest.md`). Created 2026-10-07: Drew asked for a ruthless businessman.*
 
-**He owns the worst floors on the dock, and he fills them with children.** Polite, well-dressed, never raises his voice, and **counts kids the way he counts crates.** *He would tell you he is the only man in the Nest who feeds them.*
+**He owns the worst floors on the dock, and he fills them with children.** **He is a Bellows man** *(Drew, 2026-10-08)* — the strongest of the five families behind the Red Scarves, the masters of the docks (`places/vultures-nest.md`, The Many Mask's legacy). Polite, well-dressed, never raises his voice, and **counts kids the way he counts crates.** *He would tell you he is the only man in the Nest who feeds them.*
 
 ---
 
@@ -22,6 +22,8 @@
 
 ## The Scarves
 
+*There is a bitter shape to this.* **The Bellows are a family of the Red Scarves**, sworn once to a Creed of freedom for the unwanted, **and Mercer binds the unwanted to his floors.** *The kids on the docks wear the scarf of the outfit his family runs.*
+
 **Every Red Scarf who ran from a binding is, by the paper, still his.** He keeps **a standing reward for returned runaways**, and every dockhand knows it. *A party that catches Bean and hands him over can collect* (`places/vultures-nest.md`, What they ran from).
 
 **And Jonah is a problem** (`characters/jonah.md`). A house with no lock is a house that empties his floors, and a priest finding kids real apprenticeships at fourteen is a priest telling every family on the river what Mercer's paper actually says.
@@ -35,7 +37,6 @@
 ## Not Yet Set
 
 - **First name, appearance and voice**
-- **Whether he answers to the five families** that run the Red Scarves' side of the city — *Chris's backstory to say* (`places/vultures-nest.md`, The Red Scarves, Who is above them)
 - **Where Bartho stands on him.** *Bartho knows about the Ribs and has never done anything about it* (`places/vultures-nest.md`, The Ribs)
 
 ## Related Documents

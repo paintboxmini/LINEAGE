@@ -216,7 +216,7 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 The kid gang operating on the docks. Named by the scarves, not an official name. Every kid in the operation has one. Different ways of wearing it — Kino's tied proper, Bean's halfway falling off. You earn the scarf. The name is fake. The scarves are real.
 
-**Who is above them** *(Chris's player, session 0, 2026-10-03)*: **the Red Scarves are controlled by a crime ring led by five families.** The kids are the part of it that works the docks in daylight. The rest is in Chris's backstory document, not yet in the repo — **don't write the families ahead of it** (`campaign/chris.md`, From session 0).
+**Who is above them** *(Chris's player, session 0, 2026-10-03)*: **the Red Scarves are controlled by a crime ring led by five families.** The kids are the part of it that works the docks in daylight. **Chris's backstory document arrived on 2026-10-08 with the whole history** (The Many Mask's legacy, below).
 
 **The operation:** They don't run. They offer to carry bags and show the market. The information is genuine — they know every stall worth visiting. They're also skimming the entire time. Nobody ever has anything on them. It's already three kids ahead in the chain.
 
@@ -229,6 +229,32 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 **If caught in the act:** Kino doesn't freeze. He runs — immediately, no hesitation, no negotiation. The other kids scatter in two directions at once, knocking into stalls and cutting through the crowd to create cover. By the time the dust settles, Kino is gone and any recovered item came back clean. He has plans within plans for exactly this. If the party gives chase, they can catch Bean. Bean knows nothing useful and will say everything he knows immediately.
 
 Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
+
+### The Many Mask's legacy
+
+*Chris's backstory document, 2026-10-08 — his history of the Red Scarves, written in with Drew's corrections. Where a word is changed from Chris's, it says so.*
+
+**Long before they were thieves in the cracks of the Nest, the Red Scarves followed a promise.**
+
+**The First Many Mask.** Nobody remembers his true name; the legend grew larger every generation. **The greatest thief of his age, an unmatched mercenary, the Big Boss — and he helped make the Nest what it is.** *Chris's page has him found the city; softened to this, because the Nest has been rebuilt on top of itself for two centuries and is older than any one man* (Drew, 2026-10-08; The Ribs, below). **The greatest thing he left was an idea.**
+
+**The Red Creed.** **Total freedom**: a place beyond war and worry, **where the unwanted could disappear into the crowd and anyone, from anywhere, could belong.** His followers wore red scarves as the sign of it. *Beneath the same strip of red cloth, old names, old allegiances and old differences mattered less.* **That is still what the kids' scarf means** — you earn it, the name is fake, the scarf is real (above) — *whether or not the kids know where it came from.*
+
+**Six Masks, one promise.** The mask did not die with the first. **Six Many Masks carried the title across generations**, each the centre the Scarves gathered round. *The person beneath the mask could change; the promise could not.*
+
+**The Mask Quest.** **Before giving up the mantle, the Sixth Many Mask left a trial** to decide who was worthy to be the Seventh. The mantle can no longer be inherited, bought, voted for or simply claimed. Anyone who knew the path could attempt it; completing it was another matter. **Its trials demand more than skill, and failure carries a price.** *For nearly a century, no one has completed it.*
+
+**The five families.** Without a Many Mask, the structure beneath the mantle became the structure above it. **The Marrows, the Bellows, the Rooks, the Vells and the Strays.** Each chose a representative — **a Knot** *(Chris's word was **Seam**; changed because a seam is already the Masons' thin place in reality across this repo — `factions-and-races/the-masons.md`. **Knot** is proposed to Chris, keeping the cloth: the Nest already teaches knots before letters, The People, above)*. **The Knots once existed to hold the Scarves together and serve the Many Mask. With no Mask, they became rulers themselves.**
+
+**From Creed to crime.** A balance formed. Families traded favours, territory, information and threats; cooperation kept **the Outfit** alive, rivalry kept any one family from owning it. Some Knots still call their authority stewardship of something that belongs to the Many Mask. Others have begun to wonder why they should ever give up what their families spent generations building. **What began as a promise of freedom became a thieves' guild** — crime families and street crews in the shadow of their own legend, still saying the Creed's words and no longer agreeing on what they mean.
+
+**A new imbalance: the Bellows.** **Masters of the docks** — ships, cargo, smugglers, coin, contraband, and strangers all pass within their reach. **They are now the strongest of the five**, willing to go further than the rest, and their rivals have bought them influence nobody can ignore. *Some among them no longer believe the Red Scarves need a Many Mask at all.*
+
+**The Compact is the law; the Bellows are the power underneath it** *(Drew, 2026-10-08)*. The Tideward Compact governs the dock in daylight and takes its percentage (The Tideward Compact, above); **the Bellows own what moves through the gaps in that.** *Mercer is a Bellows man* (`characters/mercer.md`) — **the family growing too strong is the family that profits from bound children.**
+
+**The mask still waits.** Nearly a hundred years without a Seventh. *And somewhere beneath the crime, ambition and blood, the Red Creed still promises what it promised at the beginning:* **Freedom.**
+
+**Code is in the Red Scarves when session one starts** (`campaign/chris.md`, From session 0, and Chris's doc). *A shapeshifter in an outfit waiting a century for its next Many Mask is Chris's thread to pull* — **not written ahead of him.**
 
 ### What they ran from — the warehouses
 
@@ -244,7 +270,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **And this week the warehouses are worse than they have ever been.** The sweep put a whole stretch of impounded berth into Compact warehouses at once (The Quarantined Barge, above) — **more cargo than the floors were meant for, stacked in a hurry by men under orders.** *Kids are being sent into those stacks right now.*
 
-**Who holds the binding: Mercer** *(2026-10-07; `characters/mercer.md`)*. He owns the worst floors on the dock, takes children in, binds them until fourteen, and **places** them — on his own floors, with the sweeps, in the smokehouses and ropewalks — for a fee from every master. *He keeps a standing reward for returned runaways, which is what handing Bean over actually pays.* **Whether he answers to the five families is Chris's backstory to say, and is not written ahead of it** (The Red Scarves, Who is above them, above).
+**Who holds the binding: Mercer** *(2026-10-07; `characters/mercer.md`)*, **a Bellows man** (The Many Mask's legacy, above). He owns the worst floors on the dock, takes children in, binds them until fourteen, and **places** them — on his own floors, with the sweeps, in the smokehouses and ropewalks — for a fee from every master. *He keeps a standing reward for returned runaways, which is what handing Bean over actually pays.* *He answers to the Bellows — the family growing too strong* (The Many Mask's legacy, above).
 
 **The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Jonah was one* (`characters/jonah.md`).
 
@@ -561,7 +587,10 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 *The high country, added 2026-09-24 (The Shape of the Ground, above). All of this is new ground and none of it is settled.*
 
-- **Whether Mercer answers to the five families** (What they ran from, above) — *Chris's backstory to say*
+- ~~**Whether Mercer answers to the five families**~~ — *the Bellows (Drew, 2026-10-08)*
+- **Which family the kid crews answer to.** *Proposed to Chris: **the Strays**, which is very nearly what the kids are already called*
+- **Knot** — proposed to Chris in place of his **Seam** (The Many Mask's legacy, above). *His to accept or replace*
+- **The Mask Quest** — its path, its trials, its price. *Chris's*
 - ~~**What happens to a Scarf who grows too big for the Ribs.**~~ *Settled 2026-10-07: fourteen is apprenticeship age, and they leave to find a trade (What they ran from, Fourteen)*
 - **The name of the high country.** The animal was named on 2026-09-25 (`bestiary/gollop.md`); the range still has no name at all, and the Gollop's cards carry a NEST tag until it does (`cards/gollop.md`)
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set

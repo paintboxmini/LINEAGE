@@ -32,7 +32,7 @@ A permanent thin violet haze clings to the ground. The air hums at a frequency t
 ## Notable Landmarks
 
 **The Central Gateway**
-At the bottom of the descent: a massive, pulsating violet portal. The largest known rift in Eclipseria. Everything here radiates outward from it. Its stability isn't self-sustaining — a floating stabilizing crystal deep in the Cathedral maintains the rift's integrity, and breaking it would collapse the passage entirely. See The Cathedral, below.
+At the bottom of the descent: a massive, pulsating violet portal. The largest known rift in Eclipseria. **It exists to connect planes** *(Drew, 2026-10-08)* — it is how Code came here, and the Academy above calls it **the Hell Gate** (Gemstone University — Reserved, The Hell Gate and the Lion's Scourge). Everything here radiates outward from it. Its stability isn't self-sustaining — a floating stabilizing crystal deep in the Cathedral maintains the rift's integrity, and breaking it would collapse the passage entirely. See The Cathedral, below.
 
 **The Cathedral**
 A fallen priest's ground, tremor-door sealed, holding the stabilizing crystal that keeps the Central Gateway from collapsing. Full encounter: `quests/abyssal-ruins-cathedral.md`.
@@ -68,7 +68,17 @@ A depression twenty feet below the ruins floor. The violet haze pools here over 
 
 *The name and the man came off that list on 2026-09-19 because their owner supplied them. Everything else on it stays.*
 
-**Its scholars are called Runewrights** *(Chris's player, session 0, 2026-10-03)* — his father among them. The title is all that is set; what a Runewright does is Chris's.
+~~**Its scholars are called Runewrights**~~ — **corrected to Runemeisters** *(Drew, 2026-10-08)*, and per Chris's backstory document **they are an S-class adventuring band**, not the faculty's title: brotherhood and family, who explored lost places and stood against what others fled. **Rynmori Raines, Archmage of the School of Changement, was one of them** — Code's father (`campaign/chris.md`, The man who found him).
+
+### The Hell Gate and the Lion's Scourge
+
+*Chris's backstory document, 2026-10-08.* **The Academy calls the rift beneath it the Hell Gate** — a wound between planes that from time to time spills dangerous things into this one. *The rift exists to connect planes* (Drew, 2026-10-08; The Central Gateway, above), *and not everything that uses it is a lost probe.*
+
+**The Lion's Scourge came through it** — a Nightwalker King: twenty feet of shadow and hunger carrying the will of the Negative Energy Plane, draining life and unravelling form, its touch dissolving flesh and spirit alike. **The Runemeisters met it beneath the Academy.** They prevailed at a terrible cost — **their leader killed, their healer lost** — and, unable to destroy it, **imprisoned or banished it**, and the Gate was sealed.
+
+**Sealed is not gone.** **The Scourge can use the rift too** *(Drew, 2026-10-08)*. *What is holding it, where, and for how long is not written — and an institution that has chosen to live on the rim of the door it came through has made a decision about that.*
+
+**Decades later the surviving Runemeisters went back down and found the silver in the stone** — and that is where Code came from (`campaign/chris.md`, The man who found him; `campaign/silverlings.md`).
 
 **What it is known for, and who travels for it, wait on Chris as well** *(Drew, 2026-09-30)*. Its public face depends on what he writes about the inside, and the aim is for **his version to be the canon version** rather than a private one that drifts away from the table's. That only works if he hands it over, so the thing to do is ask him, not to write ahead of him.
 

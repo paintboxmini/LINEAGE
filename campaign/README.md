@@ -19,8 +19,8 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 
 | | |
 |---|---|
-| `campaign/chris.md` | The Seed of the Amalgam. Blade singer; the rift, the father, the moults, Magic Expression, Mimicry, and his three starters — MEASURE, SEED, KILLSWITCH |
-| `campaign/the-amalgam.md` | The hive mind he was sent ahead of, and the crossing that went wrong |
+| `campaign/chris.md` | Code Raines, a Silverling probe. Blade singer; the rift, the father, the moults, Magic Expression, Mimicry, and his three starters — MEASURE, SEED, KILLSWITCH |
+| `campaign/silverlings.md` | His people, the Silverlings — Chris's account — and the crossing that went wrong |
 | `campaign/pat.md` | Shunka. The Call, Wild Magic Summoning, Passives, Skills |
 | `campaign/pat-cards.md` | Pat's custom cards |
 | `campaign/kevin.md` | Combat chef. The family pepper, Gemstone University, Skills, Passives, the craft, the ingredients, the drinks, the card drafts |
