@@ -234,6 +234,8 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 *Chris's backstory document, 2026-10-08 — his history of the Red Scarves, written in with Drew's corrections. Where a word is changed from Chris's, it says so.*
 
+**Read this as the legend: the story the Nest tells itself** *(Drew, 2026-10-08)*. **The truth underneath is GM-only** (What actually happened, below) — *the gaps in Chris's page are Drew's to fill, so that what Chris finds at the table is new to him. He wrote the legend; he should not be able to coast on it.*
+
 **Long before they were thieves in the cracks of the Nest, the Red Scarves followed a promise.**
 
 **The First Many Mask.** Nobody remembers his true name; the legend grew larger every generation. **The greatest thief of his age, an unmatched mercenary, the Big Boss — and he helped make the Nest what it is.** *Chris's page has him found the city; softened to this, because the Nest has been rebuilt on top of itself for two centuries and is older than any one man* (Drew, 2026-10-08; The Ribs, below). **The greatest thing he left was an idea.**
@@ -242,7 +244,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **Six Masks, one promise.** The mask did not die with the first. **Six Many Masks carried the title across generations**, each the centre the Scarves gathered round. *The person beneath the mask could change; the promise could not.*
 
-**The Mask Quest.** **Before giving up the mantle, the Sixth Many Mask left a trial** to decide who was worthy to be the Seventh. The mantle can no longer be inherited, bought, voted for or simply claimed. Anyone who knew the path could attempt it; completing it was another matter. **Its trials demand more than skill, and failure carries a price.** *For nearly a century, no one has completed it.*
+**The Mask Quest.** **Before giving up the mantle** *(so the legend says)*, **the Sixth Many Mask left a trial** to decide who was worthy to be the Seventh. The mantle can no longer be inherited, bought, voted for or simply claimed. Anyone who knew the path could attempt it; completing it was another matter. **Its trials demand more than skill, and failure carries a price.** *For nearly a century, no one has completed it.*
 
 **The five families.** Without a Many Mask, the structure beneath the mantle became the structure above it. **The Marrows, the Bellows, the Rooks, the Vells and the Strays.** Each chose a representative — **a Knot** *(Chris's word was **Seam**; changed because a seam is already the Masons' thin place in reality across this repo — `factions-and-races/the-masons.md`. **Knot** keeps the cloth, and the Nest already teaches knots before letters, The People, above. Taken up by Drew, 2026-10-08)*. **The Knots once existed to hold the Scarves together and serve the Many Mask. With no Mask, they became rulers themselves.**
 
@@ -251,6 +253,20 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 **A new imbalance: the Bellows.** **Masters of the docks** — ships, cargo, smugglers, coin, contraband, and strangers all pass within their reach. **They are now the strongest of the five**, willing to go further than the rest, and their rivals have bought them influence nobody can ignore. *Some among them no longer believe the Red Scarves need a Many Mask at all.*
 
 **The Compact is the law; the Bellows are the power underneath it** *(Drew, 2026-10-08)*. The Tideward Compact governs the dock in daylight and takes its percentage (The Tideward Compact, above); **the Bellows own what moves through the gaps in that.** *Mercer is a Bellows man* (`characters/mercer.md`) — **the family growing too strong is the family that profits from bound children.**
+
+#### What actually happened — GM only
+
+*Drew, 2026-10-08, tentative until he has talked it through with Chris.*
+
+**The Red Scarves were not the whole outfit. They were the Many Mask's own branch** — one of six, standing with the five families. **Together they were freedom fighters**, and the Creed was something they meant.
+
+**Then the families betrayed them.** **The Sixth Many Mask saw it coming**, and **the Mask Quest was his last act**: a safeguard built so that the mantle could never be inherited, bought, voted for or simply claimed — *the four ways a family would try to take it.* **That is why it exists, and why it is so hard.**
+
+**He was overthrown, and probably killed. His branch was wiped out.** **The families kept the name, the Outfit and the Creed's words.** *"He relinquished the mantle" is their version, and after a century it is everybody's.*
+
+**The branch left orphans.** **They kept the scarf**, and the pieces of the Creed their parents had taught them — *and that is how the dock kids' Red Scarves began.* **Kids leave at fourteen** (Fourteen, below), **so the scarf has passed through five or six generations of street children since**, each handing on fragments of fragments. *Today's kids do not know where any of it came from.*
+
+**Which is why they are outside the five, why nobody counts them, and why Lusk can cheat them.** *The people the Many Mask's promise was actually kept for are the ones the Outfit treats as nothing* — **and whoever finishes the Mask Quest is heir to a branch whose only living line is a gang of dock kids.**
 
 **The mask still waits.** Nearly a hundred years without a Seventh. *And somewhere beneath the crime, ambition and blood, the Red Creed still promises what it promised at the beginning:* **Freedom.**
 
@@ -616,7 +632,8 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - ~~**Knot**~~ *in place of Chris's **Seam** — taken up by Drew, 2026-10-08*
 - **Lusk's appearance and voice**, and what the Ribs' bargain looks like on the day the goods stop
 - **What Lusk is obligated to** — *one that fits: the Strays' seat among the five is paid in what their eyes see, and if the information stops, so does the seat*
-- **The Mask Quest** — its path, its trials, its price. *Chris's*
+- **The Mask Quest** — its path, its trials, its price. *Not written by Chris; Drew's to fill, so the table finds it new*
+- **The betrayal** (What actually happened, above) — **who led it**, **whether the Sixth Many Mask is really dead**, who the branch was fighting for freedom *from*, and **what each family tells itself now**. *Tentative pending Drew's talk with Chris*
 - ~~**What happens to a Scarf who grows too big for the Ribs.**~~ *Settled 2026-10-07: fourteen is apprenticeship age, and they leave to find a trade (What they ran from, Fourteen)*
 - **The name of the high country.** The animal was named on 2026-09-25 (`bestiary/gollop.md`); the range still has no name at all, and the Gollop's cards carry a NEST tag until it does (`cards/gollop.md`)
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set

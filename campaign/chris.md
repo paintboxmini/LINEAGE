@@ -487,6 +487,8 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 *Told to Drew at session 0 (2026-10-03). **Chris's backstory document arrived on 2026-10-08** and supersedes anything here it covers — his people (`campaign/silverlings.md`), his father (The man who found him, above), and the Red Scarves (`places/vultures-nest.md`, The Red Scarves — the Many Mask's legacy).*
 
+*How the Red Scarves page is used* *(Drew, 2026-10-08)*: **it is recorded as the Nest's legend, and the truth underneath is Drew's to fill**, so Chris is surprised at the table rather than coasting on knowing the history. **Drew fills the gaps and changes enough to keep it new; he will talk it through with Chris.** *It is still Chris's story — the change is what Code finds out, not who it belongs to.*
+
 - ~~**He is already in the Red Scarves when session one starts.**~~ **Changed by Drew, 2026-10-08: he has had no direct contact with them yet, and meeting them happens at the table.** *Chris's original call, kept for the record:* *In what role is his doc's to say* — the kid side is a gang of under-fourteens (`places/vultures-nest.md`, The Red Scarves), and he has been in the Nest two months (Two months in the Nest, above).
 - **The Red Scarves are controlled by a crime ring led by five families.** Chris wrote it; the detail is in his doc (`places/vultures-nest.md`, The Red Scarves).
 - **~~Runewrights~~ → Runemeisters** *(Drew, 2026-10-08)* — and per Chris's doc, **Rynmori's adventuring band**, not the faculty's title (`places/abyssal-ruins.md`, Gemstone University — Reserved).
