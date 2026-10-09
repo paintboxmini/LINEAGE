@@ -27,6 +27,21 @@ It was here before the city. The city was built on the premise that maps are tru
 - `bestiary/fogcaller.md` — primary predator
 - `bestiary/echo.md` — ambient, no combat
 
+### Design note — a group hunter that measures first
+
+*Drew, 2026-10-09. Not designed yet; this is the brief.*
+
+**An enemy for the basin that works in groups, with scouts that take the measure of their targets before the main attackers come in.** *The party's own MEASURE, turned round* (`rules/card-glossary.md`, Reveal stats).
+
+**What the brief already implies, worth keeping when it gets built:**
+
+- **Two roles in one group: scouts, then attackers.** The scouts' cards reveal a character's stats; **the attackers hit harder, or choose better, against a character who has been measured.** *The fight should be readable: the party sees the scouts working before the real blow arrives, and has a turn or two to answer it.*
+- **The answer is in the files already.** **Obscure** stops anything reading you (`rules/card-glossary.md`, Obscure), and **the Low Lantern grants it for a combat — sold at the Nest** (`items/vultures-nest-items.md`). Killing or blinding the scouts first is the other answer.
+- **The fog is on their side.** Blind terrain at the GM's discretion (Environmental Rules, above) — *scouts that can see in it, or do not need to, against a party that cannot.*
+- **A reason it is here and not elsewhere**: the basin is a threshold where things watch travellers pass (Echoes, above). *A hunter that studies before it strikes belongs in that.*
+
+**Open:** what it is; whether it is the Fogcallers' prey, their rival, or something they avoid; stats, cards and how many; and what "measured" gives the attackers mechanically.
+
 
 ---
 
@@ -63,6 +78,10 @@ The basin operates on folk logic. Everything physical corresponds to something i
 The Fogcallers understand this instinctively. Pell understands it practically. Most travelers don't understand it until after.
 
 ---
+
+## Not Yet Set
+
+- **The basin's group hunter** — scouts that measure, attackers that follow (Encounters, Design note — a group hunter that measures first). *Brief written 2026-10-09; nothing designed*
 
 ## Related Documents
 
