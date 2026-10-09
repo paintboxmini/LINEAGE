@@ -42,44 +42,39 @@ ________________________________________________________________________________
 
 # Duskwick — Measured
 
+*Measured — and there was nothing to read.*
 
 | Mind | Body | Soul | HP |
 |---|---|---|---|
-| 2 | 1 | 3 | 9 |
+| ______ | ______ | ______ | ______ |
 
-**Skills:** none. **Passives:** none.
+**Skills:** ____________________ **Traits:** ____________________ **Passives:** ____________________
 
-**Trait — Never Legible:** nobody reads what a Duskwick is carrying or planning. *It is permanently Obscure — no card needed.*
-
-**Its cards** — it plays one for each colour it draws:
+**Its cards:**
 
 ```
-SNUFF
-RED — BODY
-Attack: Body + d6
-Effect: Defender gains Blind until the end of their next turn.
-Defense Effect: Gain Evade.
-Range: Melee
-"The wick knows the difference between seeing and looking."
+______________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
 ```
 
 ```
-HALF-SEEN
-BLUE — MIND
-Attack: Mind + d4
-Effect: Look at the Defenders hand and discard 1 of them.
-Defense Effect: Gain Evade
-Range: Ranged
-"You're not sure you saw it at all."
+______________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
 ```
 
 ```
-GUTTERING
-GREEN — SOUL
-Attack: Soul + d8. If you are below half HP, +1d6.
-Effect: None.
-Defense Effect: If you are below half HP, gain Resist and Evade.
-Range: Both
-"Brightest, right before the dark."
+______________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
 ```
-

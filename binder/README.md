@@ -17,12 +17,23 @@
 
 ## Pages
 
-| Creature | Field notes | Measured |
+| Creature | Pages | Note |
 |---|---|---|
-| Wrackclaw | `binder/wrackclaw.md` | same file |
-| Redjaw | `binder/redjaw.md` | same file |
-| Duskwick | `binder/duskwick.md` | same file — *the ordinary one; the Large One at Briarwatch is not on it* |
-| Flapjack Octopus | `binder/flapjack-octopus.md` | same file |
-| Foulhaul | `binder/foulhaul.md` | same file, **plus a third page for the Grandfather** |
-| Gollop | `binder/gollop.md` | same file |
-| Gowra | `binder/gowra.md` | same file — *no cards on it: a gowra is not a simple creature, so measuring reveals its sheet, not its deck* |
+| Wrackclaw | `binder/wrackclaw.md` | |
+| Redjaw | `binder/redjaw.md` | |
+| Duskwick | `binder/duskwick.md` | **Measured is printed blank** — it is Obscure (`rules/card-glossary.md`, Obscure). *The ordinary one; the Large One at Briarwatch is not on it* |
+| Flapjack Octopus | `binder/flapjack-octopus.md` | |
+| Foulhaul | `binder/foulhaul.md` | **Plus a page for the Grandfather**, with his own cards |
+| Gollop | `binder/gollop.md` | |
+| Gowra | `binder/gowra.md` | Its own four cards |
+| Ocellus | `binder/ocellus.md` | The pup. *No cards of its own — the page shows the three it plays* |
+| Glassgut | `binder/glassgut.md` | The spooklight that is an animal. *Most spooklights are nothing and get no page* |
+| Gene-Thief Tardigrade | `binder/gene-thief-tardigrade.md` | The baseline; **a line to write in what this one started with** |
+| Muirn Hunter, Vaun, Neshi, Draksa | `binder/muirn-hunter.md`, `binder/vaun.md`, `binder/neshi.md`, `binder/draksa.md` | **People.** Hand the page over once the party knows the name |
+
+**Field notes only — nothing to measure:**
+
+| | | |
+|---|---|---|
+| Driftfire | `binder/driftfire.md` | **Not a fight.** Its second page is **In the Water** — the Thread Save, handed over the first time someone goes in |
+| Bicolor Spider, High-Altitude Bat, Sapphire Ant | `binder/bicolor-spider.md`, `binder/high-altitude-bat.md`, `binder/sapphire-ant.md` | **Harvest creatures**, with no stat block — the notes ask how they took one and what it is good for |

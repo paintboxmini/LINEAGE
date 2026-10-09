@@ -104,3 +104,25 @@ able to think."
 
 **Trait — The Offering:** he does not attack first, and **he does not attack anyone who has just given him something.** Put a body in front of him — anything no longer moving — and he takes it and goes.
 
+**His own cards:**
+
+```
+THE LONG REACH
+RED — BODY
+Attack: Body + d10
+Effect: None.
+Range: Both
+Defense Effect: Gain Resist 1.
+"The back rank was never out of range. Nobody had measured him."
+```
+
+```
+WHAT IS OWED
+GREEN — SOUL
+Attack: Soul + d6
+Effect: If anything in this position is dead, downed, or no longer moving, he
+takes it — and does not attack again this round.
+Defense Effect: Gain Resist 1.
+"Pneum has a word for this. The word is wrong and it has worked for two
+hundred years."
+```
