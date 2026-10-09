@@ -20,3 +20,9 @@
 | Creature | Field notes | Measured |
 |---|---|---|
 | Wrackclaw | `binder/wrackclaw.md` | same file |
+| Redjaw | `binder/redjaw.md` | same file |
+| Duskwick | `binder/duskwick.md` | same file — *the ordinary one; the Large One at Briarwatch is not on it* |
+| Flapjack Octopus | `binder/flapjack-octopus.md` | same file |
+| Foulhaul | `binder/foulhaul.md` | same file, **plus a third page for the Grandfather** |
+| Gollop | `binder/gollop.md` | same file |
+| Gowra | `binder/gowra.md` | same file — *no cards on it: a gowra is not a simple creature, so measuring reveals its sheet, not its deck* |
