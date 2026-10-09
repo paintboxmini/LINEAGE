@@ -20,7 +20,7 @@ cd "$(dirname "$0")"
 CHECK=0
 [ "${1:-}" = "--check" ] && CHECK=1
 
-CARD_SETS=(core briarwatch mason oracle oracle-1 oracle-2 oracle-3 oracle-expansion items items-field washed-ashore signatures)
+CARD_SETS=(core nest briarwatch mason oracle oracle-1 oracle-2 oracle-3 oracle-expansion items items-field washed-ashore signatures)
 RULES_DOCS=(packet play-reference turn-guide)
 
 # Which sheets get a PDF. The PDFs are **not** in git — they are build
@@ -32,7 +32,7 @@ RULES_DOCS=(packet play-reference turn-guide)
 # Four sheets are deliberately not here — briarwatch, mason, items and
 # items-field. They have never had a PDF. Add them if you want them; the
 # only cost is a Chrome launch each.
-PDF_SHEETS=(card-print-core card-print-oracle card-print-oracle-1
+PDF_SHEETS=(card-print-core card-print-nest card-print-oracle card-print-oracle-1
             card-print-oracle-2 card-print-oracle-3
             card-print-oracle-expansion card-print-washed-ashore
             character-sheets packet play-reference

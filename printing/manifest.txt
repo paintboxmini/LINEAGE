@@ -25,6 +25,7 @@
   card-print-items-field           3 cards  cf2682d5260f
   card-print-items                14 cards  6add9eb62875
   card-print-mason                 6 cards  c6964790d2d6
+  card-print-nest                 50 cards  a4f7dc2f07eb
   card-print-oracle-1             21 cards  a884ea1d3d8c
   card-print-oracle-2             21 cards  266201d5ea1d
   card-print-oracle-3             21 cards  1480367dce4b

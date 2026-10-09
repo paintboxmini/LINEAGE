@@ -37,6 +37,8 @@ A GM who takes the warning away to get a surprise round has removed the only int
 
 **Deck (7 — 1 Blue / 4 Red / 2 Green):** DISTRACT *(blue)* · OVERBEAR, BURDENED, STRIKE, TRAMPLE *(red)* · THE SMELL OF IT, PATIENCE *(green)*
 
+**Blank deck:** Blue — DISTRACT *(Melee)* · Red — OVERBEAR *(Melee)* · Green — THE SMELL OF IT *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck). *Added 2026-10-09. It has two Red signatures and the sheet names OVERBEAR, because a Foulhaul arriving on top of you is the animal; BURDENED stays in the real deck. Blue is a core card — it has no Blue signature.*
+
 **Trait — Reek:** Every enemy in the same position as a Foulhaul has 1 Weak at all times — the next damage roll each of them makes subtracts a d6 (`rules/card-glossary.md`). It does not stack from a second Foulhaul in the same position; the air is already as bad as it gets.
 
 **Trait — Carries Off:** When a Foulhaul brings a character to Collapse, **it does not finish them.** It picks them up and leaves — off the bank, into the trees, at a walking pace, without hurrying and without defending itself on the way out. It has what it came for.

@@ -58,6 +58,28 @@ SETS = {
             '../campaign/passives.md',
         ],
     },
+    # The Vulture's Nest region's creatures and people, so every blank the
+    # GM plays has a printed card to match (rules/gm-guide.md, Running simple
+    # creatures from a blank deck). Ocellus and Glassgut play core cards, which
+    # are in 'core'.
+    'nest': {
+        'title': "Vulture's Nest Encounter Set",
+        'files': [
+            '../cards/wrackclaw.md',
+            '../cards/duskwick.md',
+            '../cards/flapjack-octopus.md',
+            '../cards/foulhaul.md',
+            '../cards/gollop.md',
+            '../cards/gowra.md',
+            '../cards/gene-thief-tardigrade.md',
+            '../cards/redjaw.md',
+            '../cards/muirn-hunter.md',
+            '../cards/vaun.md',
+            '../cards/neshi.md',
+            '../cards/draksa.md',
+            '../cards/harlock.md',
+        ],
+    },
     'briarwatch': {
         'title': 'Briarwatch Encounter Set',
         'files': [

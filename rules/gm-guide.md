@@ -49,6 +49,8 @@ You don't need a backstory. You need an intent.
 
 **One stock of blanks runs every simple creature in the game.** The card faces already exist (`printing/generate-blanks.py` tiles them onto a cut sheet).
 
+**Old printings make the best blanks** *(Drew, 2026-10-09)*. **Any outdated card works as a blank — only its colour counts, and its text is ignored.** That turns every retired printing into one pool: count out a creature's colours from it and any simple creature in the bestiary, **or one invented on the spot**, is ready to run. *When one is revealed, play the creature's card for that colour from its sheet — the face the players can see is not the card.* **Keep this pile apart from the old printings used as real enemy cards** (Old card printings are a free source of enemy variance, below), where the old text *is* the card.
+
 **Two things the sheet has to get right, because with one card per colour a card's Range switches off that whole colour at once:**
 
 - **Exactly one card per colour the creature has.** Usually its signatures; where it has none in a colour, one of the core cards already in its deck. Where it has two signatures of a colour, the sheet names which one the blank is.
