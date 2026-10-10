@@ -30,13 +30,13 @@ So what comes back is what fits in a closed pack against your spine and survives
 
 ## What it does
 
-**Proposed, not set.** Ground and worked into a charge it wants to be **Blind** (`rules/card-glossary.md`) — the eyes-streaming property doing mechanically what it does in the mouth.
+**Nothing set, on purpose** *(Drew, 2026-10-10: Kevin's ingredients get hints, not effects — `campaign/kevin.md`, The Ingredients)*.
 
-*That would suit Kevin's kit, which is built on rare seasonings and currently covers damage, Rooted, initiative and forced movement and nothing that touches accuracy* (`campaign/kevin.md`, Ingredients). **Blind is the swingier option** — a coin flip on a whole exchange, attacking or defending. **Weak is the quieter one** and would also fit the fiction. Either is a real addition; Blind is the more exciting and the more dangerous to hand over early.
+**What it hints at:** it makes your eyes stream and your nose run before it is even in your mouth, and a pinch of the dust in the air clears a room of cooks. **Whatever Kevin makes of it is a conversation between him and Drew at the table.**
 
 ## Open
 
-- **What it does** — Blind or Weak, see above
+- **What Kevin makes of it** — his and Drew's to work out when he has some
 - **Whether it grows inside Gollop ranges, between them, or without any pattern at all.** The most useful answer is probably that the best seams are inside, since that makes the good harvest and the dangerous ground the same place
 - **Whether anybody in the Nest already climbs for it**, which decides whether a party is doing something ordinary or something nobody bothers with
 - Season, if it has one. Nothing requires it to

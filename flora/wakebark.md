@@ -24,7 +24,7 @@
 
 **In Elowen, it is how the village is still alive.** Chewed raw, as often as they can stand.
 
-**In Kevin's kitchen, it is a drink and nothing else** (`campaign/kevin.md`, The beverages). **It does not survive the burn**, so it cannot charge a round — the same exception Burnrind is in the other direction (`flora/burnrind.md`). **One measure makes two servings of Up All Night**, and there is nothing else the measure could have been.
+**In Kevin's kitchen, it is whatever he and Drew work out at the table** (Drew, 2026-10-10; `campaign/kevin.md`, The Ingredients). **The hints:** it is bitter enough to make your jaw ache, it sharpens you without steadying you, and boiled down it goes from bitter to something closer to a slap.
 
 ## Related Documents
 

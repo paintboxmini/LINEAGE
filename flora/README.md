@@ -31,6 +31,8 @@ The other four are Turnroot Weald, where the framing fact is a law instead: **no
 
 **Forget-Me-Not is the first from an island of its own** (`places/forget-me-not-island.md`), and its gate is the island's effect rather than anything about the plant. **Bloodelm is the second** (`flora/bloodelm.md`, `places/elowen.md`), and its gate is people: the craft lives in a handful of families and nowhere else. **Wakebark grows under it** (`flora/wakebark.md`). **Tearseed is the first from the Abyssal Ruins** (`flora/tearseed.md`), and its gate is deliberately unwritten until the players have tried for one.
 
+**If Kevin could cook with it, describe it and stop** *(Drew, 2026-10-10)*. **Hint at what it might be good for — a smell, a burn, what it does to the hands — and do not write what it does in his grinder or a drink.** That is decided at the table between Kevin and Drew (`campaign/kevin.md`, The Ingredients).
+
 **These lived in `bestiary/` until 2026-09-18**, under a note on the Hush Bloom reading "flora rather than fauna, filed here with the other ingredient organisms." That was a workaround and it is gone; anything pointing at the old paths has been repointed.
 
 ---

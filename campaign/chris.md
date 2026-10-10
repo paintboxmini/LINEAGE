@@ -159,15 +159,17 @@ What the kit delivers so far:
 
 *Set 2026-09-27, Chris's call at the table. No roll — Drew gave it to him.*
 
-**He and Kevin have been at Vulture's Nest a couple of months** when session one opens. Long enough to have found the Red Scarves (`places/vultures-nest.md`), and long enough to have bought what a man on the run needs first.
+**He and Kevin have been at Vulture's Nest a couple of months** when session one opens. Long enough to have found **Lusk's shop** — the black-market counter of the man who leads the Strays (`places/vultures-nest.md`, The Strays, and Lusk) — and long enough to have bought what a man on the run needs first. **Kevin knew where to find it** *(Drew, 2026-10-08)*; *a boy who grew up on the shady end of the temple's shipping routes knows where a port keeps its back rooms* (`campaign/kevin.md`, What he learned at the shady end of the route).
 
-**He has identification papers. They are not forged — they are real, and they were stolen off somebody.** *That distinction is the whole of it.* A forgery fails when a careful person examines the document. **These papers survive any examination, because there is nothing wrong with them.** Somewhere there is a person who owns this name, and the Scarves lifted a purse with the papers still in it.
+**He has identification papers. They are not forged — they are real, and they were stolen off somebody.** *That distinction is the whole of it.* A forgery fails when a careful person examines the document. **These papers survive any examination, because there is nothing wrong with them.** Somewhere there is a person who owns this name, and **the Scarves lifted a purse with the papers still in it, and sold it on to Lusk**, who sold the papers to Code *(Drew, 2026-10-08)*.
 
 **Eight gold**, off a starting purse of 25 (Starting gold, below).
 
-**And it is cheap because of who was selling.** The Scarves are dock kids running a theft operation. Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Chris walked in.* Eight gold is a very good week for a fifteen-year-old and a third of everything Chris had, and both of those are true at once, which is what a fair price looks like when nothing is on a shelf.
+**And it is cheap because of how it reached the shelf.** Lusk paid the kids next to nothing for the purse — he always does (`places/vultures-nest.md`, The Strays, and Lusk). Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Code walked in.* **Eight gold is a third of everything he had, and a fat margin on whatever Lusk paid a child for it**, and both of those are true at once.
 
-**What the Scarves know, and what they do not.** *They know the papers were not his.* They sold them to him; there is no version where that is a secret. **They do not know who he actually is** — not his real name, not the University, not what he is. To them he is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about this makes Kino a threat. It makes him someone who knows one true thing.*
+**What Lusk knows, and what he does not.** *He knows the papers were not Code's* — he sold them to him. **He does not know who Code actually is**: not his real name, not the University, not what he is. To him Code is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about that makes Lusk a threat yet. It makes him someone who knows one true thing, and he is the kind of man who sells those.*
+
+**Code has had no direct contact with the Red Scarves** *(Drew, 2026-10-08)*. **That happens at the table, not before it.** *The kids stole the purse; Kino knows whose it was* (Not Yet Set, below); *neither of them has ever met the man carrying the papers.*
 
 ### The papers describe somebody, and Chris cannot be them
 
@@ -277,8 +279,8 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 - **Living silver.** He does not need to **eat, drink, breathe or sleep**, and **poison and disease do not take** in him. *He still rests — a short or long rest is stillness and recovery, and he takes it like anybody; he just is not asleep for it* (`rules/resting.md`).
 - **Tongues.** **He understands any language he has listened to for about a minute.** Understanding is not speaking; speaking one is learned like anybody else.
-- **Fluid.** **He swims as well as he walks, and he can pour himself through a gap an inch wide.** *His mass comes through with him and it takes the time it takes.* **He fits where the Scarves fit** (`places/vultures-nest.md`, The Ribs).
-- **Compact.** **He can draw himself down to a smaller shape** — the same mass, so heavy for its size, never hollow (Trait — Mimicry, What it can't do).
+- **Fluid.** **He swims as well as he walks, and he can pour himself through a gap an inch wide.** *His mass comes through with him and it takes the time it takes.* **Thinned out, he has no strength** *(Drew, 2026-10-08)*: he can flow through a gap, not push, grip, force or hold anything while he does. **He cannot force himself into a person** — down a throat, into a wound, past anything that is closed against him. *A gap he can use; a body he cannot.* **He fits where the Scarves fit** (`places/vultures-nest.md`, The Ribs).
+- **Compact.** **He can draw himself down to a smaller shape — at most half his bulk, never less** *(Drew, 2026-10-08: no more than 50% compression)* — the same mass, so heavy for its size, never hollow (Trait — Mimicry, What it can't do).
 
 **What the rest of the race page already is:**
 
@@ -328,6 +330,8 @@ His stats want **4 Blue / 3 Red / 2 Green**, and since 2026-09-20 the three sign
 ## Cards
 
 Three customs, one per colour. **They have landed: `cards/chris.md` is the card, this section is the argument for it.** Both copies are worth keeping and they must not drift — `python3 agent-tools/check-card-drift.py` is what notices when they do.
+
+**What "reveals their stats" gets him** *(Drew, 2026-10-08, already told to Chris)*: stats and HP, **Skills, Traits and Passives** — and for a simple creature, **its signature cards** (`rules/card-glossary.md`, Reveal stats). **Each one he lands earns that creature's Measured page for his bestiary binder** (`binder/README.md`) — *Chris is the table's note-taker, and MEASURE is how the binder fills.*
 
 **MEASURE — no repeated note.** The flow card, and the one that runs every turn. **Red and Melee-only since 2026-09-20**, having started Blue and Both. *Taking someone's measure means closing with them* — you read a person by standing inside their reach, not by thinking about them from across the room, and the card was doing the second thing while claiming the first. The reveal is still written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
 
@@ -485,7 +489,9 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 
 *Told to Drew at session 0 (2026-10-03). **Chris's backstory document arrived on 2026-10-08** and supersedes anything here it covers — his people (`campaign/silverlings.md`), his father (The man who found him, above), and the Red Scarves (`places/vultures-nest.md`, The Red Scarves — the Many Mask's legacy).*
 
-- **He is already in the Red Scarves when session one starts.** Chris's call. *In what role is his doc's to say* — the kid side is a gang of under-fourteens (`places/vultures-nest.md`, The Red Scarves), and he has been in the Nest two months (Two months in the Nest, above).
+*How the Red Scarves page is used* *(Drew, 2026-10-08)*: **it is recorded as the Nest's legend, and the truth underneath is Drew's to fill**, so Chris is surprised at the table rather than coasting on knowing the history. **Drew fills the gaps and changes enough to keep it new; he will talk it through with Chris.** *It is still Chris's story — the change is what Code finds out, not who it belongs to.*
+
+- ~~**He is already in the Red Scarves when session one starts.**~~ **Changed by Drew, 2026-10-08: he has had no direct contact with them yet, and meeting them happens at the table.** *Chris's original call, kept for the record:* *In what role is his doc's to say* — the kid side is a gang of under-fourteens (`places/vultures-nest.md`, The Red Scarves), and he has been in the Nest two months (Two months in the Nest, above).
 - **The Red Scarves are controlled by a crime ring led by five families.** Chris wrote it; the detail is in his doc (`places/vultures-nest.md`, The Red Scarves).
 - **~~Runewrights~~ → Runemeisters** *(Drew, 2026-10-08)* — and per Chris's doc, **Rynmori's adventuring band**, not the faculty's title (`places/abyssal-ruins.md`, Gemstone University — Reserved).
 - **MEND does not heal himself, and he is fine with it** — "target ally" never means you (`rules/combat.md`, You Are Not Your Own Ally).
