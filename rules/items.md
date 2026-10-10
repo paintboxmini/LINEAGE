@@ -22,13 +22,7 @@ Three questions the table actually needs to answer, in this order:
 
 **This is already how Senshi works.** The Naturalist Collection (`places/capital/gilded-tusk.md`) isn't a menu he wrote in advance — it's built dish by dish from whatever creature the party actually brought him, worked out at the counter each time. Any other crafter in the world runs on the same principle: react to what's in hand, don't roll a formula.
 
----
-
-## Consumable Effects
-
-**One food or potion effect active at a time, lasting up to an hour.** Eating or drinking a second one while the first is still active doesn't stack it — the new one **replaces** the old outright, whatever the old one was doing.
-
-Exceptions get written as their own line on a character sheet, same as any other named exception to a general rule (a Skill, a Passive) — none exist yet, but the shape is ready the first time a build actually wants one.
+**How many of these effects stack at once isn't this file's rule to state — it's `rules/combat.md`, One drink at a time.** Kevin's Gluttony (`campaign/kevin.md`) is the one named exception to it.
 
 ---
 
