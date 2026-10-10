@@ -190,6 +190,8 @@ Six seasonings, gated six different ways: Sapphire Ant is **bought**, the Scorch
 
 Ingredients don't have a colour. A seasoning is a seasoning; what it does is what it does, whatever card it rides on.
 
+**New ingredients come with hints, not effects** *(Drew, 2026-10-10)*. **From here on, an ingredient is written as a description with a few vague gestures at what it might be good for — and no rule for what it does in a round or a drink.** **What Kevin makes of it is worked out between Kevin and Drew at the table**, when he has some in his hands. *The six loads below were written before this and keep their effects.*
+
 **The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, seven times over.
 
 | Load | Effect | Defense Effect | Source |
