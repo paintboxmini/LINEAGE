@@ -1,0 +1,41 @@
+# The Glasskin
+
+*Glasslight Reach. Full description at `places/glasslight-reach.md`, The People — the Glasskin — this entry is the roster stub, not the source.*
+
+**The name is an outsider's.** *Glasskin*, or cruder, *glass-skins* — never what they call themselves and never accurate either. What reads as frosted translucent skin is a short dense coat over the whole body, felt-textured, semi-transparent enough that skin and veins show softly through it. Camouflage, evolved for pale quartz and the cold that comes with it.
+
+**Build.** Ordinary human-looking eyes, the one feature that isn't strange at a glance. Long slender ears tapering to tufts; the tail matches. A thicker mane from crown down the neck. Real claws on hands and feet — digging into unstable stone is how the town gets built and rebuilt at all.
+
+**Their own name is a chord, not a word.** Made of the sound the cliff fractures make when wind passes through them. No single voice can produce it. The truest thing they call themselves is something none of them can say alone, ever — only with each other, which is also the logic of how they speak: gently, rarely interrupting, as though loud certainty could crack something.
+
+**That is one word, not the language.** A glasskin talks the way anybody talks — alone, at length, in whatever tongue they grew up in, and in the common speech if they learned it. **The chord applies to the people-name and to nothing else.** A glasskin alone in a room is not impaired, not half-mute, and not waiting for a second voice to finish their sentences; they simply cannot say that one thing, and will use an outsider's word for themselves instead, usually with visible distaste.
+
+*Worth stating plainly because it is an easy line to over-read: a glasskin player character has no speech restriction of any kind. The chord is a piece of poignancy about identity, not a disability, and running it as one would take a race off the table for no good reason.*
+
+**Where they are.** Concentrated at Glasslight Reach and thin everywhere else. Most of the Cartographers Guild's surveyors are Glasskin, trained first on the Soft Edge (`factions-and-races/the-cartographers-guild.md`, Structure). Most who leave don't stop wanting to come back — losing the town means losing the only other voices that can complete your own name with you, and that pull doesn't fade the way ordinary homesickness does.
+
+**The one real exception is Pneum** (`places/pneum.md`), a People of Promise island northeast of Vulture's Nest founded by glasskin who left the Reach centuries ago. **The pull did not fade there, and it did not win either.** Their funeral barges still run the founders' road all the way back — down to the quay at the foot of the Glasslight cliffs, where the dead are released into the grey water — and then they turn around and go home. ***They tie up at the bottom of the cliff and they do not climb.*** *Every generation comes back to the town, stands under it, and leaves without going up. Nobody wrote that rule and nobody breaks it.*
+
+**Named:** `characters/mirel.md`, `characters/rue.md`, `characters/marren.md`, `characters/thess.md`, `characters/sett-and-aria.md`. **Also Jonas Widdlepen**, the Vulture's Nest ledger-keeper (`places/vultures-nest.md`) — a Reach ear two hundred years out of step with the one congregation that left, which is a problem somebody else's quarantine turned into his.
+
+---
+
+## Passive — ADAPTIVE CAMOUFLAGE
+
+The coat doesn't just sit the colour of quartz. It takes the colour of whatever light is currently on it, and a Glasskin who stops moving against the right surface stops being a shape anyone is tracking. In a town built inside cliffs that change hue every time the dance rewrites them (`places/glasslight-reach.md`, The Soft Edge), that isn't a trick — it's the only way to keep camouflage in a place whose colours won't hold still.
+
+**ADAPTIVE CAMOUFLAGE**
+BLUE — MIND
+Attack: Mind + d4
+Applies When: There is something to match — light with real colour in it, and a surface or pattern worth reading against. Flat, featureless, evenly lit ground gives it nothing. Nothing at all against a hunter that doesn't work by sight (`bestiary/stonecoil.md`).
+Range: Ranged
+*"They don't vanish. The wall just gets one shade more convincing."*
+
+Blue and Mind because it's a read of the environment rather than a change of the body — the skin does the easy half, and the work is knowing what to stand against and when to stop moving. Ranged because it's already failed if anything is close enough to touch.
+
+**On the die.** The rule allows d6 for giving up Both, and this takes d4 anyway, for two reasons that both point the same way.
+
+**The name is doing most of the work.** A Passive is never spent, so its name grants Advantage forever on every check it plausibly supports (`rules/resolution.md`, Advantage & Disadvantage) — and *adaptive camouflage* plausibly supports an enormous amount: hiding, tailing, holding still, going unremarked in a room, setting an ambush. STRONGJAW's name buys grip and biting. That gap is worth more than two pips.
+
+**And Ranged is the cheaper restriction.** Giving up Both to be Melee-only costs real access — Melee needs the Frontline on both sides. Ranged-only gives up much less (`rules/combat.md`, Range). A d6 is priced for a restriction that bites; this one barely does. Between a name that broad and a restriction that soft, d4 is the easy call rather than a concession.
+

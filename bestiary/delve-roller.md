@@ -7,6 +7,8 @@
 
 
 **Deck (4 — 1 Blue / 2 Red / 1 Green):** ANTICIPATE *(blue)* · PLANT, GORE *(red)* · PATIENCE OF STONE *(green)*
+
+**Blank deck:** Blue — ANTICIPATE *(Melee)* · Red — PLANT *(Both)* · Green — PATIENCE OF STONE *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 **Cards:** `cards/delve-roller-hollow.md`
 
 ---
@@ -21,7 +23,7 @@ Two antennae sweep constantly ahead of it. Long, thin, whip-fast. They sense vib
 
 ---
 
-## Passive — Rolled Shell
+## Trait — Rolled Shell
 
 **Armour 1** (`rules/card-glossary.md`). Reduce all incoming attack damage by 1, every attack, all fight.
 
@@ -51,7 +53,7 @@ The Delve Roller will not leave Frontline voluntarily. If repositioned, it retur
 
 ## Encounter Notes
 
-Works well as a choke point blocker in the Hollow's narrow tunnels. The party cannot ignore it — it fills the passage. Pushing past it costs Wounds. Fighting it costs time.
+Works well as a choke point blocker in the Hollow's narrow tunnels — placed in the narrow predator tunnel out of Flood Shelf Chamber (`quests/hollow-below-briarwatch.md`, The Stonecoils). The party cannot ignore it — it fills the passage. Pushing past it costs Wounds. Fighting it costs time.
 
 Pairs with Stonecoils: the Roller occupies the front, the Stonecoil waits behind the next turn. Party is Wounded before the ambush lands.
 

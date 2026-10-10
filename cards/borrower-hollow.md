@@ -24,4 +24,14 @@ Range: Ranged
 
 ---
 
+**BURROW**
+RED — BODY — HOLLOW
+Attack: Body + d6
+Effect: Gain Evade 2. Your next attack deals +3 damage.
+Defense Effect: Gain Evade 2.
+Range: Both
+*"They don't hide. They go through the one space that isn't a tunnel yet."*
+
+---
+
 *TUNNEL KNOWLEDGE was promoted to core, de-flavored, and now lives in `cards/green-soul.md` as HEAVE AND HAUL — Borrower's deck uses that core card in its place.*

@@ -29,13 +29,70 @@ Every location in Eclipseria has its own logic. The Turnroot Weald redirects. Vu
 An enemy needs:
 - **Stats** — Body, Mind, Soul (same as players, same functions)
 - **HP** — use `(4 × Body) + Soul + Mind`, or pick a number that fits the fiction
-- **A deck** — size = the creature's total stats, color counts = each stat; 3 themed signature cards + core fill (see `rules/cards.md`, Deck Building). Enemies draw to hand size (Mind, minimum 2) like everyone else.
+- **A deck** — size = the creature's total stats, color counts = each stat; 3 themed signature cards + core fill (see `rules/cards.md`, Deck Building). Enemies draw to hand size (Mind, no minimum) like everyone else.
 - **A position** — Frontline or Backline to start
 - **An intent** — what does this enemy actually want in this fight?
 
 Intent is the part most GMs skip and most regret skipping. An enemy that wants to kill the party fights differently than one that wants to capture someone, or buy time, or protect something behind it. Intent changes which targets they prioritize, when they flee, and what happens if the party collapses.
 
 You don't need a backstory. You need an intent.
+
+### Running simple creatures from a blank deck
+
+*Drew's method, 2026-09-28.* **Bosses, mini-bosses and key NPCs get a real deck**, cut and assembled. **Everything else runs from one shared stock of blank coloured cards** — generic foes, ordinary creatures, the people who are in the way.
+
+**How it works at the table:**
+
+1. **Build the creature's deck from blanks at its colour ratio** — a Mind 2 / Body 3 / Soul 1 creature gets 2 blue, 3 red and 1 green blank. Deck size is still its total stats.
+2. **Draw to hand size** as normal. You're holding colours, not cards.
+3. **When it plays a blank, it plays its card of that colour** — look it up on the creature's sheet, under *Blank deck*. One card per colour, every time. Colour, Range, Effect and Defense Effect all come from that card.
+
+**One stock of blanks runs every simple creature in the game.** The card faces already exist (`printing/generate-blanks.py` tiles them onto a cut sheet).
+
+**Old printings make the best blanks** *(Drew, 2026-10-09)*. **Any outdated card works as a blank — only its colour counts, and its text is ignored.** That turns every retired printing into one pool: count out a creature's colours from it and any simple creature in the bestiary, **or one invented on the spot**, is ready to run. *When one is revealed, play the creature's card for that colour from its sheet — the face the players can see is not the card.* **Keep this pile apart from the old printings used as real enemy cards** (Old card printings are a free source of enemy variance, below), where the old text *is* the card.
+
+**Two things the sheet has to get right, because with one card per colour a card's Range switches off that whole colour at once:**
+
+- **Exactly one card per colour the creature has.** Usually its signatures; where it has none in a colour, one of the core cards already in its deck. Where it has two signatures of a colour, the sheet names which one the blank is.
+- **At least one colour usable in each position** — a Both-range card, or a Melee card and a Ranged card between them. A creature split between Melee and Ranged loses a colour or two depending on where it stands, and that is its shape rather than a flaw. **A creature with no usable colour in some position is a creature you beat by getting there**, which is fine when it's the point — and then its sheet says so.
+
+**What simple creatures carry beyond that: a Trait or none.** No Passives — creatures have Traits, not Passives (`rules/character-creation.md`, Passives and Traits), and a Passive would be a fourth card to track, which undoes the reason for the blank deck. No Skills either: a Skill is a bonus on a roll somebody chooses to make, and a creature isn't making those. **If a creature is good at something, it's a Trait or it's the difficulty the players face.** **One Trait is the target for a new simple creature** — something you're running in a crowd should be holdable in your head without looking.
+
+*Not yet applied to the existing bestiary, on purpose.* Twelve simple creatures already carry two or more Traits — Briarbundles six; Wallows Slime, The Descended and Flapjack Octopus three; Void Runner, Spooklight, Shockquills, Phase Leach, Ocellus, Gene-Thief Tardigrade, Chitterer and Blowback Beetle two. **Some of those are load-bearing** (Armour and Thorns are Traits), so trimming them is a design call rather than a tidy-up, and it hasn't been made.
+
+### How many of them
+
+**Count is the balance lever, not the creature.** A weak creature is only weak alone, and the honest way to make a fight harder is to add another one rather than to inflate the one you have.
+
+**The number that makes a fight genuinely uncertain is:**
+
+> **N ≈ (the party's combined total stats) ÷ (the creature's CTR)**
+
+Three starting characters at nine stats each is 27. Against a CTR 9 creature that is three of them; against CTR 4 it is six or seven; against a CTR 13 or 14 it is two. **Take one off for a fight the party should win and still remember. Add one for a fight they will probably lose.**
+
+Measured against the simulator at a thousand fights per row (`combat-simulations/encounter_budget.py`), and accurate to about ±1 across party sizes from two to five. It drifts at both extremes and in opposite directions: it **over-counts swarms** of very weak creatures, because a lot of small things get a lot of actions, and **under-counts heavies**, because a big party can focus one down before it spends its turns. Trust it in the middle; sanity-check the edges.
+
+*Re-checked 2026-10-03, when ties started landing the hit (`rules/combat.md`, Attack Resolution): **the formula still holds.** Fights end faster on both sides, and that pulls the two ends apart a little. One or two of a thing got a few points easier, because the party finishes it sooner. A crowd got harder, because every body's ties land now too — five rootstalkers went from a 20% fight to 13%, three minotaurs from 18% to 9%. **Lean a step toward the smaller count when a fight is a swarm.***
+
+**There is a headcount cap, and below CTR 5 it binds before the formula does.** Bodies are worth more than the stats on them, because every body is another turn on the wheel. **Somewhere around twice the party's number, a fight tips regardless of how weak the individuals are** — measured at 2.0x, 2.0x and 1.8x against parties of two, three and five, and at that point the swarm is carrying only about two-thirds of the party's total stats and winning half the time anyway.
+
+So: nine creatures at one-in-every-stat sounds like an even match against three starting characters, because nine times CTR 3 is exactly the party's 27. It is not. **Six is the even fight and eight is a guaranteed wipe.** Take the formula's answer and the headcount cap, and use whichever is smaller.
+
+**Count alone has good resolution at the weak end and almost none at the strong end.** Against CTR 4 creatures a GM can dial four, five, six or seven and get four different fights. Against a CTR 13 creature there are three settings and only one of them is a fight: one is a formality, two is real, three is a wipe.
+
+**Mix CTRs to get the settings back.** This is the fine-tuning lever, and it is the answer to a boss encounter that needs to be hard but survivable. One minotaur against three starting characters is a formality at 100%; two is 70%. But one minotaur plus one, two, three or four CTR-3 creatures reads 98%, 95%, 84%, 48% — four usable settings inside a gap that count alone could not divide at all.
+
+*Those six percentages are rounded references taken off an earlier, incomplete engine, and they are illustrating the shape rather than reporting the current number — the point is that mixing divides a gap that count alone cannot, not that one minotaur is exactly 100%. Re-running `combat-simulations/encounter_budget.py` today gives 95% and 64% for the first two, and that is drift in the instrument, not an error in the guidance. **Don't treat them as a target to reproduce**, and don't update them one at a time; if they are ever refreshed, refresh the row together.*
+
+**And note which way that cuts.** One minotaur and four small things is 26 total stats and a 48% fight. Two minotaurs is 28 total stats and a 70% fight. *Fewer stats, harder fight* — because five bodies act more often than two do. When you want pressure rather than a bigger number, add bodies.
+
+**The real limiter on mixed encounters is fiction, not math.** What makes sense hunting together, or hired by the same person, or living in the same ruin. A GM who needs a specific difficulty and cannot justify the adds should change the terrain instead.
+
+**There is no soft-loss band.** One creature past even, the party's win rate falls to single digits and the losses are not near-misses: a wiped three-person party averages two dead and one down, not three bloodied survivors. The step from "in doubt" to "obituary" is one creature wide the whole way up the scale. Decide before the session which side of that you meant to be on.
+
+**Party size moves the line harder than anything else.** A fourth character shifts every threshold by a full creature and sometimes two — two Harlocks against three starting characters is a 43% win; against four it is 88%. Recompute the number when a seat fills or empties, and **never carry an encounter built for four into a session where one player didn't show up.**
+
+*These numbers were first measured as a structural floor — dice, HP, range, the reveal, positioning and the wheel — back when the simulator did not execute card Effects, with the reasoning that Effects raise both sides. **The simulator runs most of them now, and the both-sides argument mostly held.** Re-measured on 2026-09-18 at three thousand fights a row with roughly seven in eight Effect halves modelled: the heavy end did not move at all — one and two minotaurs read 94.5% and 65.0% against 94.5% and 64.6% before. **The swarm end moved, and it moved the way this section already warned it would.** Six wrackclaws were a 48% fight on the structural floor and are a 54–56% fight with Effects running: the formula over-counts swarms, and executing Effects widens that gap by about half a creature rather than closing it. At the weak end, take the formula's answer, take the headcount cap, and lean on the cap. Still read the 50% line as "a real fight" rather than a precise coin flip — an eighth of the pool is still narrated, and a party built around those cards will drift from this.*
 
 **Signature cards double as loot.** When a memorable enemy is defeated, its signature cards can enter the Oracle after the fight. They're a good way to make an enemy leave a permanent mark on the campaign.
 
@@ -70,9 +127,13 @@ A session in Tales Untold typically has:
 
 That last one is important. Not every question needs an answer by session's end. Not every threat needs to be addressed. The world has things happening in it that aren't about the players — and occasionally reminding them of that makes the world feel much larger.
 
+**How lethal a session should be: about one character death in twenty** *(set 2026-09-22)*. Not one fight in twenty — **one session**, across however many fights that session holds. At one or two fights a sitting that works out around 2.5–5% per fight, and it is the number encounters get measured against (`combat-simulations/encounter_budget.py`).
+
+*It is a budget rather than a promise, and it is deliberately low.* **A campaign where the dice bury somebody every few months is tense; one where they do it every few weeks is a campaign nobody gets attached to.** Downs are a different matter and should be common — going down is the cost that teaches, and a party that has never seen one has not been in a real fight yet.
+
 End of session, each player runs the Oracle ritual — a question answered, a card glimpsed and buried, a pick from three. That's the mechanical heartbeat. Everything else is negotiable. The Price step is worth running with intention: the buried card stays in the pool, and what a player glimpses and doesn't get is often what they start playing toward.
 
-The very first time this ritual runs — Session 0, character creation — deserves its own tone: see `places/island-in-a-ship.md`, Setting the Tone.
+The very first time this ritual runs — Session 0, character creation — deserves its own tone: see `quests/washed-ashore.md`, which is where Session 0 actually happens.
 
 ---
 
@@ -83,6 +144,14 @@ Not every action needs a roll. If success is guaranteed, describe it and move on
 The Perception modes are your friend here. When players are poking at something, ask yourself which mode applies before you ask for a roll. *What are they actually trying to notice?* The answer shapes what they find — and what they miss.
 
 **Good roleplay should move the difficulty, not remove it.** A scene played well enough that success feels inevitable is still worth a roll — just an easy one. Drop the DC to 5 or 7 instead of skipping the check outright. The dice still matter this way: a bad roll on an easy check is a real, rare stumble worth playing honestly, not a guaranteed miss wearing tension as a costume. This also keeps the reward proportional — the roleplay earned the low DC, not automatic success, so an exceptional roll on top of it can still mean *more* than the baseline outcome, not just the same outcome with extra steps.
+
+**The final say on whether an attempt succeeds is yours, and the lever is the check** *(Drew, 2026-09-27)*. Basic supplies are assumed and players say what they are carrying (`rules/character-creation.md`, Starting garb and weapon), so sooner or later somebody reaches into a bag and produces the thing that answers your whole encounter. **When an item would break a scene rather than solve a problem inside it, the check simply does not work.** The item is real, the idea was good, the attempt happens — it does not get the result.
+
+**The test is whether the item answers the problem or deletes it.** *A rope on a cliff answers the cliff, and that is what rope is for* — let it work and let them feel clever. **A rope that makes the chase, the guard and the locked gate all irrelevant at once is not answering anything; it is skipping the scene.** Only the second one is yours to stop.
+
+**Use it sparingly, and the reason is specific rather than a matter of taste.** *Overuse makes difficulty unpredictable*, and a table that cannot predict difficulty stops planning — which costs you the exact thing rope was interesting for. **Every one of these spends a little of the players' ability to reason about the world.** Two or three across a campaign is a tool. Two or three in a session is a wall.
+
+**And say it in the fiction rather than as a ruling, wherever you can.** *"The only thing up there to tie off to is a dead branch"* is a fact about **this place**: a player learns something and carries the habit of checking to the next cliff. *Keep the reason local to the spot — an example that makes a claim about the world's materials in general is a setting decision made by accident.* *"That doesn't work"* teaches nothing and reads as exactly what it is. **The first costs no predictability at all — it adds some**, which is the whole difference between holding the final say and using it.
 
 **Mechanical detail is earned by a roll, not handed over before one.** When a player looks at something before committing to an action — the top of a rubble pile, the far side of a chasm, a locked door — resist naming the trap's trigger conditions, its DC, or its failure state up front. Let the look be its own free, safe action (an Easy Perception check, gated to what that mode would actually reveal), and answer the question they actually asked before assuming which mechanic they're walking into. A room can define a loud/forceful action that trips a hazard and *also* define a quiet way to learn about it first — both belong in the text, and the quiet option goes first at the table.
 

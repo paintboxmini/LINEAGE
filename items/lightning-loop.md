@@ -1,18 +1,18 @@
 # The Lightning Loop
 
-*Resonant item. Storm Seat aligned. Currently in Kaine's possession.*
+*Resonant item. Aligned to Vitality and Destruction — the Storm Seat, as most people call it (`world/seats.md`). Currently in Wade's possession.*
 
 ---
 
-A ring. The Loop is small enough to conceal among other rings on Kaine's hand, or to wear on a chain as a necklace when he wants the source of his signs harder to identify. He does not present it as the source of anything he does.
+A ring. The Loop is small enough to conceal among other rings on Wade's hand, or to wear on a chain as a necklace when he wants the source of his signs harder to identify. He does not present it as the source of anything he does.
 
-The Loop grants Kaine limited control over lightning. The Loop's lightning can be expressed as energizing force through people and objects, not only as a direct electrical strike. The same underlying energy can produce different mechanical manifestations depending on what it is expressed through. The exact limits of this capability are not established here.
+The Loop grants Wade limited control over lightning. The Loop's lightning can be expressed as energizing force through people and objects, not only as a direct electrical strike. The same underlying energy can produce different mechanical manifestations depending on what it is expressed through. The exact limits of this capability are not established here.
 
 ---
 
-## What Kaine Does With It
+## What Wade Does With It
 
-The Loop is concealed from the people who watch Kaine perform his signs and wonders. Kaine knows exactly what is producing them. He tells the Final Current that the wonders are the result of what repeated bathing in the Unheld has unlocked in him.
+The Loop is concealed from the people who watch Wade perform his signs and wonders. Wade knows exactly what is producing them. He tells the Final Current that the wonders are the result of what repeated bathing in the Unheld has unlocked in him.
 
 The first demonstrations are deliberately ordinary in appearance:
 
@@ -25,13 +25,13 @@ These are different expressions of the same underlying capability. The Loop's en
 
 **What it costs him stays open on purpose** (`rules/equipment.md`, Artifacts — the Price). Not a flat HP tax — whatever reality takes for lightning specifically, expressed through whatever the Loop was just asked to do. The shape is already implied by what he's used it for: restorative water could cost him equivalent vitality — he heals, he pays. Igniting wood could burn him on the way to burning what he touched. Lightning at range could arc somewhere he didn't aim it — a devotee, not the pole. None of that has necessarily happened yet. Invent the actual cost the first time a GM needs one, in a form that answers what was just asked of the ring — not a number, a consequence.
 
-The miracles are real. The deception is their provenance. The people watching are given Kaine's interpretation of what they are seeing: the bath unlocked him. The Loop remains hidden inside the story.
+The miracles are real. The deception is their provenance. The people watching are given Wade's interpretation of what they are seeing: the bath unlocked him. The Loop remains hidden inside the story.
 
 The exact origin of the Loop is unknown and intentionally open.
 
 ---
 
-## After Kaine
+## After Wade
 
 If the party takes the ring, they hold something Storm Seat-aligned that grants limited control over lightning and can express that energy through people and objects in different ways. What the Loop ultimately is, where it came from, and what its connection to the Storm Seat means remain unanswered.
 
@@ -39,5 +39,5 @@ If the party takes the ring, they hold something Storm Seat-aligned that grants 
 
 ## Open
 
-- Where did Kaine get it?
-- Does the Storm Seat have a bearer the way the Seat of Love/Binding has Aurora? (`world/seats.md` records the Seat as unheld in the present tense, with Greed fated to it and the how and when deliberately unestablished. Whether Kaine's claim on this ring relates to that fate at all is still unanswered.)
+- Where did Wade get it?
+- Does this Seat have a bearer the way Love and Binding has Aurora? **Nothing establishes one.** The Seat is listed as **Vitality and Destruction**, with Storm as its common name (`world/seats.md`), and its Named Archons line is empty. The only candidate anywhere is a line in `characters/wade.md`: *"Does the Storm Seat have a bearer? Greed could play a role in future development. Perhaps if Dakota plays he can receive the lightning loop."* That is a maybe resting on a player who may or may not join, not a fate already written for Greed. Whether Wade's claim on this ring relates to any of it is unanswered too.

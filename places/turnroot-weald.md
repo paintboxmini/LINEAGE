@@ -9,7 +9,7 @@ Paths exist — but they never lead to the same place twice.
 - Trees lean slightly toward you, as if listening first.
 - Roots surface like old roads, then sink again when you try to follow them.
 - Branches sway in response to movement.
-- Moss grows in lines that almost spell directions.
+- Moss grows in lines that almost spell directions — waymoss (`flora/waymoss.md`), which redraws itself over hours and stops the moment it is cut.
 - Walk north long enough and you'll arrive somewhere that needed you — not somewhere you intended.
 - Naming a destination aloud alters the routing.
 
@@ -26,11 +26,17 @@ Those who stay long-term develop habits instead of maps. They tie cords to their
 Mutated plants, luminescent mosses, and predators adapted to near-total darkness are common. Many organisms exhibit unfamiliar behaviors or symbiotic relationships not found elsewhere.
 
 Notable species:
-- Black thorn vines — the vine of the Thorne Throne, a single continuous strand wrapped around itself so many times over that no one's ever found either end. That's the actual echo in the name — not just the faint sound the seeds carry when shaken. Ground into dust and mixed with reagents, the seeds amplify spells and incantations.
-- Luminova Leaves — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food.
+- Black thorn vines (`flora/black-thorn-vine.md`) — the vine of the Thorne Throne, a single continuous strand wrapped around itself so many times over that no one's ever found either end. That's the actual echo in the name — not just the faint sound the seeds carry when shaken. Ground into dust and mixed with reagents, the seeds amplify spells and incantations. Taking seed costs it nothing. Cutting it is one debt to one creature, and nobody has ever been able to total it.
+- Luminova Leaves (`flora/luminova.md`) — translucent, bioluminescent. Dried and crushed into powder, they enhance healing in potions and food. The light does not go out when they are picked, so a full pack is a lantern you cannot cover, on a route that will not be the same route back.
+- Kelbi — small deer with living, flowering branches instead of antlers. The canopy's ordinary meat animal, and the only thing in the Weald that accepts the routing without complaint. They never leave the canopy.
 - Rootstalker — signature predator. Appears at Pressure 2+ when navigation fails.
 - Skeinwing — high-altitude glider, native to the sky above the canopy.
+- Blowback Beetle — dog-sized, plated, eats resinous understory, and blasts itself an open clearing wherever it stops. The only thing under this canopy that makes ground instead of being routed across it.
+- Bicolor Spider (`bestiary/bicolor-spider.md`) — walnut-sized orb-weaver, orange at the front and blue at the back. Webs wherever the forest meets rock.
+- Sapphire Ant (`bestiary/sapphire-ant.md`) — tiny, azure, colonial, in the mineral soil where roots break up through stone. The soldiers are the harvest.
 
 ## Geography
 
 The Turnroot Weald wraps the northeastern edge of the Ashfall Wastes acting as a natural boundary.
+
+- `flora/hush-bloom.md` — the pale flower of the deep shade, and why gathering it takes an hour of sitting still

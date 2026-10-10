@@ -2,7 +2,7 @@
 
 Signature cards for the Corrupted Bather. See `bestiary/corrupted-bather.md`. Tagged as UNHELD — obtainable via the Oracle deck after encounters with what the Unheld Ocean returns.
 
-**Obscure** (NOTHING TO READ, below) is no longer a `rules/card-glossary.md` keyword — defined here since this card is the one still using it: enemies cannot look at or manipulate your hand or deck. Does not prevent status cards from being added to your deck. Lasts until end of combat unless the source states otherwise.
+**Obscure** (NOTHING TO READ, below) is defined in `rules/card-glossary.md` *(back in the glossary since 2026-10-09, when the Duskwick made it the third thing to use it)*: enemies cannot look at or manipulate your hand or deck, and nothing reveals your stats.
 
 ---
 
@@ -19,7 +19,7 @@ Range: Ranged
 **CUTS BOTH WAYS**
 RED — BODY — UNHELD
 Attack: Body + d8
-Effect: Deal 2 damage to one ally in your position. If you do, deal +4 damage.
+Effect: Deal 2 damage to target ally in your position. If you do, deal +4 damage.
 Defense Effect: Gain Thorns 4.
 Range: Melee
 *"The Runners keep them at the back of the boat. It does not always help."*

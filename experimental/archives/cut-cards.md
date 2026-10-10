@@ -62,6 +62,46 @@ Range: Melee
 
 *Cut 2026-09-06. Staggered came out of the Oracle entirely that day — a status that eats a whole attack or a whole defence is a swing the starting deck should not hand out freely, and four cards were handing it out. Red keeps one, OFF BALANCE, and only on a clean win. This card had no gate and no colour left to sit in: at d4 Melee it was also Blue paying twice, the smallest die at the tightest range, which is the defect that surfaced it in the first place.*
 
+## Core set — cut on 2026-09-18
+
+**WAITING GAME**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
+Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
+Range: Both
+*"Why build what's already standing right there?"*
+
+*Cut 2026-09-18, out of the Oracle expansion's Blue Both seat. It moved Red → Blue in the colour-identity pass on 2026-09-09 on the argument that stealing and copying enemy buffs is enemy control; the card that survived that move copies up to two buffs at once off whoever it is facing, and does nothing at all against anything that has none. SLIPSTREAM takes the seat at the same d4.*
+
+*It was the only card in either set that referenced Positive Status Effects by the collective term, so the expansion is at zero on it now. The 84 still teaches the term — LEVEL THE FIELD carries it in the Oracle 63.*
+
+## Core set — cut as the last vanilla Thorns card
+
+**BRAMBLE**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Gain Thorns 2.
+Defense Effect: Gain Thorns 2.
+Range: Both
+*"Everything that reaches through leaves some of itself."*
+
+*Cut 2026-09-18. It granted Thorns 2 on both halves and did nothing else, which was its entire design — it existed to be the Green rung of the colour-scaled Thorns ladder, and that ladder was retired the day before (`rules/cards.md`). Without the ladder there is no argument for a card whose whole content is the cheapest amount of one keyword twice, especially with BRISTLE and CONFRONT both carrying Green Thorns at melee already. Nothing referenced it outside the Oracle list and the ladder table it was an example in.*
+
+## Core set — cut for inflicting Staggered without the keyword
+
+**ABANDON**
+RED — BODY
+Attack: Body + 2d8
+Effect: Cannot defend until your next turn
+Defense Effect: The attacker cannot defend next time you attack them
+Range: Melee
+*"Guard is a thing you can put down. So put it down."*
+
+*Cut 2026-09-17, during the early-campaign screen (`rules/early-campaign-cards.md`). Staggered has been near-banned since 2026-09-06 because it eats a whole attack or a whole defence, and the ban is written against the keyword. ABANDON's defence half stops the attacker defending at all the next time you attack them, which is the same swing with the word left off, so nothing caught it for eleven days. The doubled die was the other half of the problem: `2d8` gave it the highest damage ceiling of any Red melee card, paid for with a drawback that only hurts you on a turn you were attacking anyway. It goes rather than moving to the middle tier — a card whose whole design is a loophole in a rule is not a card the rule should have to keep answering.*
+
+*Two consequences. `rules/cards.md` cited ABANDON's `2d8` twice as the example of a doubled die on the Attack line, and it was the only card in the pool with that shape; both citations now point at TWIN STRIKE's `(Soul + d4) x 2` instead, which doubles the whole attack rather than the die. And the Corrupted Bather ran it (`bestiary/corrupted-bather.md`), where MAUL takes the slot — d8 with Deadly and +2 damage, the nearest Red melee card by output without reaching for a d10.*
+
 ## Core set — cut as strictly dominated
 
 **HESITATE**

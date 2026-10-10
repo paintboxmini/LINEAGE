@@ -1,6 +1,6 @@
 # Equipment
 
-Weapons, Armor, and Artifacts — the three Equipment Slots (`rules/character-creation.md`). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see `rules/items.md`.
+Weapons, Armor, Artifacts and Accessories — the five Equipment Slots (`rules/character-creation.md`). This file covers how to design and price them. For the actual catalog of items and equipment already in the world, sorted by where they come from, see `rules/items.md`.
 
 ---
 
@@ -8,9 +8,11 @@ Weapons, Armor, and Artifacts — the three Equipment Slots (`rules/character-cr
 
 Fiction is unrestricted. A character can carry, wear, and wield anything the story supports — three swords, a full suit of borrowed armor, a pocket full of trinkets. None of that needs a rule.
 
-**Only equipment that grants an actual mechanical effect is restricted to the three Equipment Slots**: Weapon, Armor, Artifact. The slot system isn't a limit on what a character can *carry* — it's a limit on how much raw mechanical power a character can have *active* at once. Everything else — how it looks, what it's called, how many of them you own — is free.
+**Only equipment that grants an actual mechanical effect is restricted to the five Equipment Slots**: Weapon, Armor, Artifact, and two Accessories. The slot system isn't a limit on what a character can *carry* — it's a limit on how much is switched on at once. Everything else — how it looks, what it's called, how many of them you own — is free.
 
-Carried items (potions, tools, one-use consumables) don't compete for these slots at all. They're used via the Interact action and are a separate category entirely — see `rules/items.md` for where those actually live.
+**The slots exist because the tier curve is superlinear on purpose.** A point of power costs 200 gold at Tier 1, 400 at Tier 2 and 667 at Tier 3 (below), which prices concentration at a premium — and that premium only means anything if breadth is capped. Without the slots, two Tier 1 armors would out-perform a Tier 2 at half the price, and the whole ladder would invert.
+
+Carried items (potions, tools, one-use consumables) are a separate category entirely — used via the Interact action, see `rules/items.md` for where those live.
 
 ---
 
@@ -18,11 +20,15 @@ Carried items (potions, tools, one-use consumables) don't compete for these slot
 
 Weapons and Armor both scale on the same three-tier system. Each tier is a **power budget** — a fixed amount of mechanical value — spendable as a flat numeric bonus, or split across smaller effects, at the designer's discretion.
 
-| Tier | Weapon (default spend) | Armor (default spend) | Approximate Value |
-|------|------------------------|------------------------|--------------------|
-| 1 | +1 attack damage | Armour 1 | ~200 gold |
-| 2 | +2 attack damage | Armour 2 | ~800 gold |
-| 3 | +3 attack damage | Armour 3 | ~2,000 gold |
+| Tier | Weapon (default spend) | Armor (default spend) | Accessory (default spend) | Weapon / Armor | Accessory |
+|------|------------------------|------------------------|---------------------------|----------------|-----------|
+| 1 | +1 attack damage | Armour 1 | +1 to one Skill tag | ~200 gold | ~100 gold |
+| 2 | +2 attack damage | Armour 2 | +2 to one Skill tag | ~800 gold | ~400 gold |
+| 3 | +3 attack damage | Armour 3 | +3 to one Skill tag | ~2,000 gold | ~1,000 gold |
+
+**One ladder, three slots' worth of ways to spend it.** Weapons, Armor and Accessories sit on the same three tiers. What changes is which slot the tier is bought in, and therefore what the budget buys — damage, reduction, or a number outside a fight.
+
+**Accessories cost half, and the half is the combat fraction.** Roughly half this table's time is spent in fights (`rules/gm-guide.md`, Pacing Sessions), and an accessory does nothing in one. A Tier 1 weapon is +1 damage on every attack in every fight forever — fifteen or twenty rolls a session. A Tier 1 accessory is +1 on a tag that might come up once. **Charged the same, the accessory is a trap option nobody buys twice**, and the bottom of its ladder would be decorative. Half is a principle rather than a fudge: if the table's combat share ever moves, so does this number.
 
 The gold values are a reference point for pricing at market or as loot, not a hard rule — a GM can move a specific item up or down for scarcity, condition, or story reasons the same way any priced object can.
 
@@ -53,40 +59,85 @@ The Gilded Tusk's menu (`places/capital/gilded-tusk.md`) shows the whole range i
 
 ---
 
+<!-- print:skip-start -->
 ## Pacing — How Fast Gear Should Arrive
 
-**A session's work is worth about one fifth of the tier being shopped for — per character, not per party.**
+**Income doubles every six sessions. That is the whole rule.**
 
-| Shopping at | A session pays each character | Sessions to afford it |
+| Sessions | A session pays each character |
+|---|---|
+| 1–6 | ~40 gold |
+| 7–12 | ~80 gold |
+| 13–18 | ~160 gold |
+| 19–24 | ~320 gold |
+| 25+ | ~640 gold |
+
+**Multiply by party size for what a job actually pays.** A four-person party finishing a session in the first band has earned about 160 gold between them; a two-person party, about 80. Every number written into a quest's *What It Pays* section is the per-character figure and scales the same way.
+
+**It depends on nothing but the session count**, which is the point. The GM does not have to know what anyone is saving for, or agree with the party about what they are saving for, or recalculate when somebody changes their mind. **Look up the band, pay the band.**
+
+### What the curve produces
+
+*Cumulative earnings per character, so what somebody actually owns depends on what they bought along the way.*
+
+| Earned | By session | Buys |
 |---|---|---|
-| Tier 1 (~200 gold) | ~40 gold | ~5 |
-| Tier 2 (~800 gold) | ~160 gold | ~5 |
-| Tier 3 (~2,000 gold) | ~400 gold | ~5 |
+| 100 g | 3 | a first Tier 1 accessory — **the cheapest real purchase in the game** |
+| 200 g | 5 | a first Tier 1 weapon or armor |
+| 600 g | 11 | a full Tier 1 kit — weapon, armor, two accessories |
+| 800 g | 13 | a first Tier 2 weapon or armor |
+| 2,000 g | 19 | a first Tier 3 item |
+| 2,400 g | 21 | a full Tier 2 kit |
+| 6,000 g | 28 | a full Tier 3 kit |
 
-**Multiply by party size for what a job actually pays.** A four-person party finishing a Tier 1 session has earned about 160 gold between them; a two-person party, about 80. Every number written into a quest's *What It Pays* section is the per-character figure and scales the same way.
+**Roughly five or six sessions per meaningful step, forever**, without anybody tracking a target. The first Tier 1 item lands about when the campaign first reaches Eclipseria — gear arrives when the party first stands somewhere that sells it.
 
-The ratio is the rule; the numbers are what it produces. A GM needs to know exactly one thing to price a session — which tier the party is currently reaching for — and income scales with them without anyone maintaining a table.
-
-**Why five.** It puts each character's first real piece of equipment at roughly the point the campaign reaches Eclipseria (`memory.md`, Campaign Status). Gear arrives when the party first stands somewhere that sells it.
+**A character who skips a tier gets there faster**, which is correct and should not be corrected. Saving thirteen sessions for one Tier 2 weapon instead of buying four Tier 1 pieces is a real strategy with a real cost: twelve sessions of going without.
 
 **Gold has two sources.** Somebody pays them for solving a problem, or they sell something they found and carried out. Creatures do not drop coins. The Bone Collector's treasure (`bestiary/bone-collector.md`) is a hoard — a curator with a lair full of sorted remains, which is a place with money in it — not a creature with a wallet, and it is not a precedent for putting gold on stat blocks.
 
 **The number is a budget, not a purse.** What a session is worth and what changes hands are different questions. A farmer whose ground is collapsing may pay in Fenwool, or the neighbours may pool it, or he may simply owe them and everyone knows it. Fiction picks the form; the budget only says how much it was worth.
 
+**Sessions, not time.** A band advances when the table plays, not when the calendar does. A campaign that skips two months is still on whatever session it left off at.
+
+### Starting Gold
+
+**Nobody starts with enough to buy anything on the ladder above, and that is the whole design constraint.** The cheapest real purchase in the game is a Tier 1 accessory at ~100 gold (Pricing Accessories, below), so **starting gold is capped at 40 — one session's pay in the first band.** Above that it stops being a starting purse and becomes a free session, and the first Tier 1 item arrives early for reasons nobody planned.
+
+**What it is actually for is levelling the sheets, not the fiction.** Characters come out of creation holding wildly different amounts of *stuff* — one has a weapon and a trade and a bag of supplies, another has a Trait and the clothes they ran in. None of that is visible in stats, cards or Passives, which the rules already keep even. **Gold is the one lever that fixes it without touching anything the rules balance.**
+
+| Starts with | Gold | The read |
+|---|---|---|
+| A real kit — a weapon, a trade, supplies to spend | **0–10** | They already spent it. Handing them more is handing the richest character more |
+| Some possessions, none of which cost money | **20–25** | Objects without value. The gold is what they would have if anyone had thought about it |
+| Nothing | **40** | The ceiling, and the most you can give before it reads as a gift |
+
+**Background is the second input, not the first.** Decide the number off what the sheet is missing, then check it against who the person is and adjust by a few gold rather than a band. *A poor character who came out of creation with nothing still gets the 40 — the fiction explains where a soldier's savings or a thief's stash came from, and there is always an explanation. The case that needs care is the opposite one: a wealthy background on a character who is already carrying everything, which is a reason to write the money into the world rather than onto the sheet.*
+
+**It is a one-time adjustment and it does not recur.** After session one everyone is on the same band (Pacing, above). Starting gold corrects the sheet once and then stops existing.
+
 ## Pricing Consumables
 
 Equipment uses the tier system above: a **permanent, always-on** point costs ~200 gold, because it works in every fight for the rest of the campaign.
 
-A consumable spends the same point once. **Price single-use items at roughly 15 gold per point**, using the same 1-point scale the tiers use — +1 flat damage or reduction, one stack of a Positive Status Effect, one debuff stack.
+A consumable spends the same point once. **Price single-use items at roughly 10 gold per point**, using the same 1-point scale the tiers use — +1 flat damage or reduction, one stack of a Positive Status Effect, one debuff stack.
 
-The anchor is already in the world: Luminova Leaves heal 4 HP for ~15 gold, and Luminova Powder heals 8 for ~30 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
+The anchor is already in the world: Luminova Leaves heal 4 HP for ~10 gold, and Luminova Powder heals 8 for ~20 (`items/hollow-and-weald-items.md`, `items/turnroot-weald-items.md`). One point, two points. Everything else is priced against those two.
+
+**Free-action use is not a premium, because it is the default.** A consumable is used with a free action unless the item says otherwise (`rules/combat.md`, Free Actions), so it buys nothing and adds nothing to a price. Two items used to pay a point for it — the Universal Pin and the Turnroot Charm — and both were repriced down on 2026-09-21 when the default flipped. *Worth knowing how that happened: they each cited this section for a premium this section never described. A citation is supposed to be read, not just written.*
+
+**What is now unusual is an item that costs your Action**, and that is a downside rather than a feature. It does not raise a price and, all else equal, should lower one. **The anchors have not been re-cut for that** — Luminova Leaves heal 4 for ~10 gold and cost an Action, which is the same price as a one-point consumable that is free. Whether the anchor moves or the Luminova items get cheaper is a call nobody has made.
+
+**Why ten and not fifteen.** Consumables are meant to be a restock, not a rival to saving. At Tier 1 pacing a character earns about 40 gold a session (Pacing, above) — at fifteen a point, that bought two or three simple items, and a single good two-point item cost most of a session's income, which quietly made the correct play *never buy anything*. At ten, a session's earnings cover a handful of small items and a good one, and gear money is still gear money.
 
 Adjust from there for what actually happens at the table:
 
 - **A real drawback lowers the price.** Something that Roots you afterward, or costs a card every turn, is worth less than the same effect clean.
-- **Free-action use raises it.** Not spending your action is worth about a point on its own.
+- **An Action cost lowers it.** Free-action use is the default and buys nothing (above); an item that costs your Action instead is worse than its effect suggests and should price under the flat rate.
 - **Rarity can raise it above utility**, but a single-use item should not cost more than a Tier 1 permanent — if it does, either the price or the effect is wrong.
 - **Pure utility with no combat effect prices by fiction**, not by this scale. A rope is worth what a rope is worth.
+- **Ingredients and crafting materials are not on this scale at all.** A Rootstalker Core is priced by what a crafter will pay for it, not by what the thing you make does (`items/turnroot-weald-items.md`); Senshi's going rates for Weald harvest are the same (`items/turnroot-weald-items.md`, Future-Lock Wasp Larvae). **If somebody buys it to make something else out of it, the market sets the number** — and those prices move with demand and scarcity in a way an effect-priced consumable never does.
+- **Reusable non-permanent items have their own rate**, below, and are not consumables either — the Mile-Marker Ring and Ledger Weight are its anchors and should not be dragged onto this one.
 
 **Not everything is priced in gold, and that is deliberate.** Pell sells fog goggles for a memory, a secret, or a name (`items/fog-basin-items.md`), and the Underground Bazaar is built on the same premise. An item with no gold price is not an oversight when its seller doesn't take gold — say what they take instead.
 
@@ -94,9 +145,51 @@ Adjust from there for what actually happens at the table:
 
 **Found gear is off this curve entirely.** The Harvest Bead, Barbed Wrap, the Lightning Loop — equipment that turns up in the world is a separate channel, priced by the story that produced it. A party can be several sessions from affording a Tier 1 weapon and already carrying something better because of where they went.
 
-## Pricing Reusable, Non-Slotted Items
+## Pricing Accessories
 
-Some carried items are neither single-use nor a permanent equipment slot — Mile-Marker Ring and Ledger Weight (`items/capital-items.md`) are the two live examples: a real effect, capped at once per combat, gated behind spending the action you'd already be taking (Move Position, an attack), but the item itself never runs out.
+**Accessories use the same three tiers at half the price** — Tier 1 ~100 gold, Tier 2 ~400, Tier 3 ~1,000 (Weapon and Armor Tiers, above).
+
+**Half, because half the table's time is a fight and an accessory is not in it.** That is the entire reasoning and it is worth keeping legible: an accessory is not a worse item, it is an item that is switched off for half the session. Priced level with a weapon it is a trap option — nobody spends five sessions' savings on +1 Climbing when the same money is +1 damage on every attack they will ever make.
+
+**Which makes the Tier 1 accessory the first real purchase in the game.** At 100 gold it lands around session 3 (Pacing, above), before anybody owns a weapon — so a character starts being specifically themselves early, cheaply, and in a way that shows up outside combat rather than in it.
+
+### What a tier buys: +1, +2, or +3 to one Skill tag
+
+**An accessory names a Skill tag, not a description.** Same vocabulary as a character's own Skills (`rules/character-creation.md`, Skills): a specific trained action — Lockpicking, Negotiation, Animal Handling, Climbing, Forgery, Tracking — **or** one whole Perception mode (Reason, Senses, Read).
+
+**That is the whole fix for the hardest question in this category.** A Skill is a literal tag that either plainly covers what you are attempting or does not, with no table judgement call, and an accessory inherits that exactly. *Boots of +2 Climbing* is an accessory. *A ring that helps in social situations* is not — it is three tags in a trench coat, and it should be priced as whichever one it actually is.
+
+**Stacking falls out of it and needs no separate ruling:**
+
+- **A Skill and an accessory stack.** Different sources — training and equipment. A character with Lockpicking and a Tier 2 lockpick charm is at +4.
+- **Two accessories on the same tag do not.** Take the larger. A Tier 1 and a Tier 3 stealth item is +3, not +4.
+- **Two accessories on different tags never interact**, which is the normal case and why two slots is genuinely a choice.
+
+### Initiative accessories pay full price
+
+**An accessory may add to the initiative roll, and it is the only combat number one is allowed to touch.** It also does not get the discount.
+
+| | Grant | Price |
+|---|---|---|
+| Tier 1 | +1 initiative | ~200 gold |
+| Tier 2 | +2 initiative | ~800 gold |
+| Tier 3 | — | — |
+
+**Full price because the discount was the combat fraction and this is in the fight.** Half was never a statement that accessories are worth less; it was a statement that they are switched off for half the session. An initiative accessory is not switched off, so it pays what a weapon pays.
+
+**There is no Tier 3 rung, and the reason is that the slot is already taken.** A Tier 3 Weapon or Armor can grant **+1 Soul** for the same ~2,000 gold (Weapon and Armor Tiers, above) — which is +1 initiative *and* Green card damage *and* HP. A +3 initiative accessory at that price would be strictly worse than an item already on the shelf, so it should not exist. **Above +2, buy the stat.**
+
+**Initiative is worth more than it looks on a 1d6 + Soul roll.** The die is small and the spread is narrow, so +2 is close to a guarantee against most of a table — treat it as the ceiling it is rather than the middle of a longer ladder.
+
+**A Perception-mode accessory is broader and should cost a tier more than it looks like it should.** Reason, Senses and Read each cover a whole category of rolls (`rules/resolution.md`, Perception). Price a +1 to a Perception mode at Tier 2 (~400 gold), not Tier 1, and a +2 at Tier 3 (~1,000). **There is no +3 to a Perception mode.**
+
+**One number per tier, no budget maths.** This list is supposed to get enormous, and a category meant to hold hundreds of objects cannot carry a calculation per item — the design cost has to be near zero or nobody writes the hundredth one. If an accessory feels worth more than its tier, it is naming too broad a tag.
+
+---
+
+## Pricing Reusable, Non-Permanent Items
+
+Some carried items are neither single-use nor a permanent piece of equipment — Mile-Marker Ring and Ledger Weight (`items/capital-items.md`) are the two live examples: a real effect, capped at once per combat, gated behind spending the action you'd already be taking (Move Position, an attack), but the item itself never runs out.
 
 That's a third bucket, priced between the other two. Worth more than a consumable, since it's never used up. Worth far less than a Tier 1 permanent, since it isn't passive and isn't unlimited — once per combat is the ceiling, and only on a turn you're already spending the relevant action. **Price it at roughly 50 gold per point**, the same 1-point scale as the other two categories, just at its own rate. Mile-Marker Ring (60g) and Ledger Weight (45g) are the anchors here, the same role Luminova Leaves plays for consumables.
 
@@ -129,6 +222,7 @@ Straightforward, single-idea equipment across the tiers — no names, no flavor 
 - *Tier 3:* +1 to a single stat (Mind, Body, or Soul), no other bonus. (Whole budget on the stat point.)
 
 ---
+<!-- print:skip-end -->
 
 ## Artifacts
 
@@ -136,31 +230,35 @@ Artifacts don't run on the tier budget above — they're a different kind of obj
 
 That's a formula's absence, not a sale's — Brother Alden does put a number on the two he carries (`items/capital-items.md`: the Quiet Index, 400 gold + a true secret archived; Cord of the Held, 250 gold + a real vow), and the shape of those two prices is the tell that nothing's actually broken: gold alone never closes the sale, there's always a second, non-gold cost standing in for what the item really is. What Alden charges to hand one over and what the Artifact costs to actually invoke (the Price, below) are two separate accountings — the second one still isn't predefined, and still emerges at the table the same as ever.
 
-**Name comes first**, the same four parts as a person or a place — Drew's own breakdown, flagged as probably incomplete rather than closed: what something is, an actual name, traits, and history.
+**Name comes first**, the same four parts as a person or a place — probably incomplete rather than closed: what something is, an actual name, traits, and history.
 
 - **What it is.** The essential nature or function underneath the specifics — "a sword" isn't Named yet at this stage, just categorized.
 - **An actual name.** The Lightning Loop, not "a ring." An Artifact earns its Name the way anything does: specificity, not a formula.
 - **Traits.** What makes it recognizably itself and not another Artifact of the same rough shape — what it's exactly capable of, and what it costs to use.
 - **History.** Where it came from, who made it or found it, and what it was used for before the party ever touched it.
 
-**The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the Second Cut (`world/seats.md`, Binding and Holding) working the way it already does everywhere else in this cosmology — nothing is exempt from Price, and what gets extracted answers the shape of what was taken, not a fixed exchange rate.
+**The Price isn't a flat cost — it's an expression of what's being forced through the item.** Not *"use artifact, lose 3 HP"* as a universal tax. The world permits the effect; the cost manifests in a way that answers it. Direct vitality transfer (healing someone costs the user their own vitality), physical reflection (igniting something burns the user), collateral consequence (lightning arcs to someone nearby instead of the target), loss or degradation (a memory effect costs a memory), a binding consequence (holding something in place leaves the user Anchored), a narrative one (a public miracle creates witnesses, or costs belief) — all legitimate, none of them the default. This isn't a new mechanic bolted onto Artifacts; it's the same rule the whole world runs on — **nothing here is exempt from cost**, and what gets extracted answers the shape of what was taken, not a fixed exchange rate. *The Masons have a doctrine that explains exactly why (`factions-and-races/the-masons-three-cuts.md`, The Second Cut). The rule works at the table whether or not they're right about it.*
 
 **Price scales with magnitude.** A minor working costs less than a major one — heal a scrape versus heal a mortal wound, spark a candle versus level a wall. The relationship isn't a lookup table, but the direction always holds: the more reality an effect bends, the more it costs to bend it.
 
-**An Archon's will can lighten or deepen that cost** (`world/archons.md`, An Archon's Will Shapes Price) — acting in the grain of a seated Archon's nature reduces the Price, acting against it increases it. This only applies where a Seat actually has a bearer. An unheld Seat has no will to align with or defy; its Price is paid on magnitude alone.
+**An Archon's will can lighten or deepen that cost** (`world/seats.md`) — acting in the grain of a seated Archon's nature reduces the Price, acting against it increases it. This only applies where a Seat actually has a bearer. An unheld Seat has no will to align with or defy; its Price is paid on magnitude alone.
 
 **The Price doesn't have to land entirely on whoever triggered it.** An effect can cost an ally something too, without that lessening what the actor themselves still pays — the consequence propagates through whoever the working actually touched, it doesn't get divided up and handed off.
 
 **Nobody chooses their own Price, and Resonance doesn't come with an instruction manual.** A wielder might know an item is dangerous from experience, tradition, or a scar that's still healing, without knowing the actual law behind it — two people can hold the same item with two different, incomplete understandings of what it costs. Skill and familiarity can shift *where or how* a Price lands, not whether it's paid or how much — that's the difference between understanding a law well enough to act inside it and having any authority over it at all.
 
+<!-- print:skip-start -->
 **Don't predefine every Artifact's Price up front.** Establish what the item does and what domain it draws on; let the actual cost emerge the first time a GM needs one, in a form that answers that specific use — then treat that as the pattern going forward, rather than inventing a generic tax nobody asked for. The Lightning Loop's Price (`items/lightning-loop.md`) is deliberately still open for exactly this reason.
+<!-- print:skip-end -->
 
-**Distance** applies too, though it isn't a system this section prices — see `agent-tools/design-principles.md`, Distance — What Can Never Be: a sword can never be a plow, a crown can never be the person who wears it. Worth asking of any Artifact worth building, the same as Name and Price are.
+**Distance** applies too, though it isn't a system this section prices. Distance is what can never be: a sword can never be a plow, a crown can never be the person who wears it. Worth asking of any Artifact worth building, the same as Name and Price are.
 
 See `world/resonant-items.md` for what makes an object Resonant in the first place — Intentional or Accumulated — and why a Resonant Item doesn't need its Seat Filled to work at all.
 
+<!-- print:skip-start -->
 ---
 
 ## Building Items As Standard Practice
 
 When building out a location, NPC, or bestiary entry, treat at least one real item as part of the standard deliverable set, the same as its cards: does this place, this creature, this person leave something behind worth carrying? Not every entry needs one — but the question should get asked every time, not just when it happens to come up. New items go in `rules/items.md`'s catalog once built, sorted by where they actually come from.
+<!-- print:skip-end -->

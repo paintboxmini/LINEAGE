@@ -1,6 +1,6 @@
 # Rootstalker
 
-*Signature predator of the Turnroot Weald. During Overgrowth (this campaign, `bestiary/root-heart.md`) — hunting from the moment the party steps under canopy; Pressure controls trail quality, not whether they're looking at all (`quests/turnroot-weald-adventure.md`, Rootstalker Trail Quality). Once Overgrowth ends, reverts to the original gate: appears at Pressure 2+ when navigation fails.*
+*Signature predator of the Turnroot Weald. During Overgrowth (this campaign, `bestiary/root-heart.md`, The Overgrowth Cycle) — hunting from the moment the party steps under canopy; Pressure controls trail quality, not whether they're looking at all (`quests/turnroot-weald-adventure.md`, Pressure Track). Once Overgrowth ends, reverts to the original gate: appears at Pressure 2+ when navigation fails.*
 
 **Cards:** `cards/rootstalker-weald.md`
 
@@ -9,6 +9,8 @@
 
 
 **Deck (7 — 2 Blue / 2 Red / 3 Green):** CAMOUFLAGE STRIKE, VEIL *(blue)* · LIMB-SNAPPER, SPLINTER-BURST *(red)* · THORN-BIND, BRISTLE, PATIENCE *(green)*
+
+**Blank deck:** Blue — CAMOUFLAGE STRIKE *(Ranged)* · Red — LIMB-SNAPPER *(Ranged)* · Green — THORN-BIND *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Description
@@ -37,7 +39,7 @@ Older stories, and anyone who left the Weald years ago, won't know this. Anyone 
 - Effect: Pull target to the Frontline.
 - Defense Effect: Gain Rooted.
 
-**Passive — Predator Focus**
+**Trait — Predator Focus**
 Each consecutive attack on the same target deals +1 damage (stacks up to +3). Resets if target changes or dies.
 
 *The roots tighten around the same limb, digging deeper each time.*
@@ -48,13 +50,13 @@ Each consecutive attack on the same target deals +1 damage (stacks up to +3). Re
 
 Ambush from roots → Rushdown → Grapple weakest player → Stack Focus damage.
 
-During Overgrowth (this campaign): hunting from entry, trail quality scaling with Pressure rather than gated behind it — see `quests/turnroot-weald-adventure.md`, Rootstalker Trail Quality, for the full table. At Pressure 3+, the Stalker Nest is a live threat rather than a POI the party can pass safely. Once Overgrowth ends: spawns on failed navigation at Pressure 2+ only, same as before.
+During Overgrowth (this campaign): hunting from entry, trail quality scaling with Pressure rather than gated behind it — see `quests/turnroot-weald-adventure.md`, Pressure Track, for the full table. At Pressure 3+, the Stalker Nest is a live threat rather than a POI the party can pass safely. Once Overgrowth ends: spawns on failed navigation at Pressure 2+ only, same as before.
 
 ---
 
 ## Loot
 
-Harvesting takes a short rest or a successful DC 12 Body/Senses check to avoid wasting.
+Harvesting takes a short rest or a successful Normal (13) Body/Senses check to avoid wasting.
 
 **Note:** If Pressure is high, harvesting raises it by 1. The forest notices you taking pieces of itself.
 
@@ -75,7 +77,7 @@ Thin, flexible, incredibly strong. Still faintly warm; pulse slowly when held. W
 ---
 
 ### Sap Vial
-*Rare — 1 per kill. DC 14 Senses/Body check to collect without wasting.*
+*Rare — 1 per kill. Hard (16) Body/Senses check to collect without wasting.*
 
 Thick, dark-green sap. Smells metallic and green.
 

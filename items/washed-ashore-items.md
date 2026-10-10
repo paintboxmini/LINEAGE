@@ -19,7 +19,7 @@ The first successful attack against an enemy each combat inflicts Weak. **Breaks
 **BRINE-SET WRAP**
 *Consumable — a length of cloth cured in salt and some tide-plant resin nobody in the party can name*
 *Source: Hullback's den*
-*Reference price: ~15 gold*
+*Reference price: ~10 gold*
 Use (1): Heal 4 HP.
 
 ---

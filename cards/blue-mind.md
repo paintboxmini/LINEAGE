@@ -14,7 +14,7 @@ Range: Melee
 
 **CALCULATE**
 BLUE — MIND
-Attack: Mind + d6
+Attack: Mind + d4
 Effect: Move any target to the position of your choice.
 Defense Effect: Move any target to the position of your choice.
 Range: Ranged
@@ -26,7 +26,7 @@ Range: Ranged
 BLUE — MIND
 Attack: Mind + d4
 Effect: Discard 2, draw 2
-Defense Effect: Give any target Deadly.
+Defense Effect: Make a DC 13 Mind/Reason check. On a success, the attacker reveals their stats.
 Range: Ranged
 *"Small observations build great understanding."*
 
@@ -46,7 +46,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d6
 Effect: Scry 2, return this card to your hand
-Defense Effect: Apply Initiative Shift +2 to yourself.
+Defense Effect: Apply Initiative Shift +1 to yourself.
 Range: Ranged
 *"Clarity rewards the prepared mind."*
 
@@ -55,8 +55,8 @@ Range: Ranged
 **TURN**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Defender gains Weak
-Defense Effect: Redirect this attack's damage, in full, to a target of your choice. Only on a clean win — not a tie.
+Effect: Defender gains Weak. Apply Initiative Shift -2 to them.
+Defense Effect: Only on a clean win — not a tie. The attack is not stopped: it resolves against any target other than you, at full damage, spending the attacker's statuses on it as it goes.
 Range: Ranged
 *"It has to land somewhere. Somewhere is negotiable."*
 
@@ -106,7 +106,7 @@ Range: Melee
 BLUE — MIND
 Attack: Mind + d4
 Effect: Attack deals half damage (rounded up) to an additional enemy
-Defense Effect: Enemy must target you again on their next turn if possible
+Defense Effect: The attacker must target you again on their next turn if possible
 Range: Ranged
 *"It does not stop at the first one. That is the whole idea."*
 
@@ -122,31 +122,31 @@ Range: Ranged
 
 ---
 
-**ALIGN**
+**MATCHED PAIR**
 BLUE — MIND
 Attack: Mind + d4
 Effect: Scry 2. If they share a color, draw 1 and gain Resist
 Defense Effect: Scry 2. If they share a color, draw 1 and gain Deadly
 Range: Ranged
-*"Clarity sharpens in alignment."*
+*"Two of a kind, face down, exactly where you left them."*
 
 ---
 
-**UNDERSTANDING**
+**PIECE TOGETHER**
 BLUE — MIND
 Attack: Mind + d8. Discard a card; if you do, +1d6.
 Effect: None.
 Defense Effect: Scry 2. If you bottom both, heal 4 HP
 Range: Ranged
-*"Clarity is not given, it is reconstructed."*
+*"Clarity is not given. It is assembled, out of what you were willing to give up for it."*
 
 ---
 
 **PARTITION**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Target cannot attack or be attacked until your next turn.
-Defense Effect: Target cannot attack or be attacked until your next turn.
+Effect: The defender cannot attack or be attacked until your next turn.
+Defense Effect: The attacker cannot attack or be attacked until your next turn.
 Range: Ranged
 *"True boundaries are drawn in thought before they're drawn in blood."*
 
@@ -203,16 +203,6 @@ Range: Ranged
 
 ---
 
-**CLIMB**
-BLUE — MIND
-Attack: Mind + d8
-Effect: Look at the bottom 2 cards of your deck. Discard any of them or place any of them on top, in any order.
-Defense Effect: Your maximum hand size increases by 1 until the end of this combat
-Range: Melee
-*"The higher you rise, the farther you see."*
-
----
-
 **SIDESTEP**
 BLUE — MIND
 Attack: Mind + d4
@@ -226,8 +216,8 @@ Range: Both
 **ERODE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Defender loses 1 Soul this combat.
-Defense Effect: Attacker loses 1 Soul this combat.
+Effect: The defender loses 1 Soul this combat.
+Defense Effect: The attacker loses 1 Soul this combat.
 Range: Ranged
 *"Not a blow. A season."*
 
@@ -246,8 +236,8 @@ Range: Melee
 **PROFILE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Scry 2, then draw 1 card
-Defense Effect: Scry 1, then draw 1 card
+Effect: Scry 1, then you may reveal the top card of your deck. If it matches the defender's card color, they gain Vulnerable.
+Defense Effect: Scry 1, then you may reveal the top card of your deck. If it matches the attacker's card color, they gain Weak.
 Range: Ranged
 *"He already knew what you'd reach for."*
 
@@ -256,7 +246,7 @@ Range: Ranged
 **SLIPSTREAM**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Anchored — the next time an ally passes through your position in the initiative order, draw a card.
+Effect: Anchored — when an ally passes through your position in the initiative order, draw a card.
 Defense Effect: Gain Evade.
 Range: Both
 *"Stay close. The gap they leave behind is yours to fill."*
@@ -348,7 +338,7 @@ Range: Ranged
 **RETORT**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Gain Thorns 3.
+Effect: Defender gains Vulnerable.
 Defense Effect: Attacker gains Weak.
 Range: Ranged
 *"Every insult carries its own answer."*
@@ -425,21 +415,21 @@ Range: Melee
 
 ---
 
-**CORNER**
+**THINK TWICE**
 BLUE — MIND
 Attack: Mind + d8
-Effect: Neither you nor the defender may change position until your next turn.
-Defense Effect: Neither you nor the attacker may change position until your next turn.
+Effect: Each time the defender changes position before your next turn, they take 3 damage.
+Defense Effect: Each time the attacker changes position before your next turn, they take 3 damage.
 Range: Melee
-*"Now it is only the two of us, and only this much room."*
+*"Go on, then. It is not free."*
 
 ---
 
 **PROBE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Scry 1, then draw 1.
-Defense Effect: Scry 1, then draw 1.
+Effect: Look at the defender's hand.
+Defense Effect: Scry 2, then draw 1.
 Range: Ranged
 *"A small question, asked early."*
 
@@ -447,7 +437,7 @@ Range: Ranged
 
 **DISSECT**
 BLUE — MIND
-Attack: Mind + d4
+Attack: Mind + d8
 Effect: Exile 1 card from your discard pile, then draw 1.
 Defense Effect: Exile 1 card from your discard pile, then draw 1.
 Range: Ranged
@@ -475,10 +465,41 @@ Range: Ranged
 
 ---
 
-**WAITING GAME**
+**PRESSURE**
+BLUE — MIND
+Attack: Mind + d8
+Effect: The defender cannot play the color they just played on their next reveal.
+Defense Effect: The attacker cannot play the color they just played on their next reveal.
+Range: Melee
+*"You showed me that one already."*
+
+---
+
+**FOCUSED STANCE**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Copy up to two different Positive Status Effects of your choice that the defender currently has.
-Defense Effect: Copy up to two different Positive Status Effects of your choice that the attacker currently has.
-Range: Both
-*"Why build what's already standing right there?"*
+Effect: Anchored — Scry 2. Gain Ward.
+Defense Effect: Anchored — Scry 2. Gain Ward.
+Range: Melee
+*"Still here, still reading. That is the whole technique."*
+
+---
+
+**PARRY**
+BLUE — MIND
+Attack: Mind + d6
+Effect: Defender gains Blind.
+Defense Effect: Gain Evade.
+Range: Melee
+*"Meet it early enough and it stops being a problem."*
+
+---
+
+**INTERCEPT**
+BLUE — MIND
+Attack: Mind + d8
+Effect: The defender must target you on their next turn if possible.
+Defense Effect: Gain Protect and Ward.
+Range: Melee
+*"They were going somewhere else. Not anymore."*
+

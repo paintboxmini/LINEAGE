@@ -7,12 +7,14 @@ Usage:
   python3 generate-cards.py              → core cards  (card-print-core.html)
   python3 generate-cards.py briarwatch  → Briarwatch encounter set
   python3 generate-cards.py items       → player item cards
+  python3 generate-cards.py oracle-1     → one even third of the Oracle
   python3 generate-cards.py <set-name>  → any named set below
 
 Print settings: Margins = None, Background graphics = On, Scale = 100%.
 """
 
 import re
+import collections
 import html as html_mod
 import os
 import sys
@@ -42,6 +44,40 @@ SETS = {
             '../cards/red-body.md',
             '../cards/green-soul.md',
             '../cards/colorless.md',
+        ],
+    },
+    # Everything the three players carry that nobody drafts: nine signature
+    # cards and six Passives. The Passives' Applies When gates are parsed and
+    # dropped on purpose — see the parser above.
+    'signatures': {
+        'title': 'Signature Cards & Passives',
+        'files': [
+            '../cards/chris.md',
+            '../cards/kevin.md',
+            '../cards/pat.md',
+            '../campaign/passives.md',
+        ],
+    },
+    # The Vulture's Nest region's creatures and people, so every blank the
+    # GM plays has a printed card to match (rules/gm-guide.md, Running simple
+    # creatures from a blank deck). Ocellus and Glassgut play core cards, which
+    # are in 'core'.
+    'nest': {
+        'title': "Vulture's Nest Encounter Set",
+        'files': [
+            '../cards/wrackclaw.md',
+            '../cards/duskwick.md',
+            '../cards/flapjack-octopus.md',
+            '../cards/foulhaul.md',
+            '../cards/gollop.md',
+            '../cards/gowra.md',
+            '../cards/gene-thief-tardigrade.md',
+            '../cards/redjaw.md',
+            '../cards/muirn-hunter.md',
+            '../cards/vaun.md',
+            '../cards/neshi.md',
+            '../cards/draksa.md',
+            '../cards/harlock.md',
         ],
     },
     'briarwatch': {
@@ -85,35 +121,6 @@ SETS = {
             '../cards/trisect-ashfall.md',
         ],
     },
-    'frost': {
-        'title': "Frost's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
-        # `../characters/frost.md` — order matches that file's own
-        # Red/Blue/Green grouping, not registration order in the core files.
-        'cards': [
-            'REPAY', 'BLEED', 'BURN BRIGHT', 'SPARK OF VIOLENCE',
-            'AXIOM', 'DEFLECT', 'REALIGNMENT', 'CLIMB', 'FRACTURE',
-            'TWIN STRIKE',
-        ],
-    },
-    'steele': {
-        'title': "Steele's Deck",
-        'files': [
-            '../cards/red-body.md',
-            '../cards/blue-mind.md',
-            '../cards/green-soul.md',
-        ],
-        # `../characters/steele.md`
-        'cards': [
-            'BLOOD TITHE', "GAMBLER'S RUIN", 'PAIN IS FUEL', 'REPEL',
-            'FORGET', 'PARADOX', 'ALIGN', 'ANTICIPATE',
-            'MIRROR STEP', 'RENEWAL',
-        ],
-    },
     'oracle': {
         'title': 'Oracle Deck',
         'files': [
@@ -121,8 +128,11 @@ SETS = {
             '../cards/blue-mind.md',
             '../cards/green-soul.md',
         ],
-        # `../Oracle/baseoracledeck.md` — matches `content.py`'s ORACLE_DECK
-        # verbatim. Fixed composition since 2026-08-03: 21 per colour, each
+        # This list is the Oracle deck's definition. It used to be a copy of
+        # one, kept in step with an Oracle/ directory and a content.py that no
+        # longer exist — both were cited here until 2026-09-12, long after they
+        # were gone. Nothing else defines the 63 now; edit them here.
+        # Fixed composition since 2026-08-03: 21 per colour, each
         # led by that colour's own range identity. The ideal split is 12/6/3
         # and all three colours are on it; the per-colour notes below say
         # which slots each change spent.
@@ -154,11 +164,11 @@ SETS = {
             #        SHARPEN (ranged — reworked Both -> Ranged to keep the
             #        3 ranged slots HEALING SONG's departure would have cost)
             'ATTRITION', 'BLINDSIDE', 'GUARD', 'OFF BALANCE', 'OPEN GUARD',
-            'PAIN IS FUEL', 'PUSH', 'TRAMPLE', 'UNBROKEN', 'WEATHERED',
+            'PAIN IS FUEL', 'STRIKE', 'PUSH', 'UNBROKEN', 'WEATHERED',
             'CLOSE IN', 'RETALIATE',
             'CHARGE', 'FOOTWORK', 'GROUNDING STANCE', 'PULL', 'SECOND WIND',
             'SLIP THE BLADE',
-            'CERTAIN STRIKE', 'STARING CONTEST', 'SHARPEN',
+            'CERTAIN STRIKE', 'SHATTER', 'SHARPEN',
             # Blue (21) — ranged 12 / melee 6 / both 3, on the ideal split.
             # 2026-09-06, in two passes. First: PREDICT (melee, cut with the
             # Sealed keyword) -> DISTRACT, and PROFILE (ranged, read the
@@ -173,10 +183,17 @@ SETS = {
             #   in:      INTERRUPT + REBUTTAL + CLIMB (melee),
             #            CALLED SHOT (ranged), STILL POINT (both)
             # See the Oracle content rule above the SETS table.
-            'AXIOM', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
-            'LAST RESORT', 'MARKED', 'PARTITION', 'CALLED SHOT', 'STILL POINT',
-            'STUDY', 'VEIL', 'ANTICIPATE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
-            'CLIMB', 'REALIGNMENT', 'REBUTTAL', 'SIDESTEP', 'DISTRACT',
+            'DISSECT', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
+            'LAST RESORT', 'MARKED', 'CHAIN', 'CALLED SHOT', 'STILL POINT',
+            'STUDY', 'VEIL', 'PRESSURE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
+            # 2026-09-26: CORNER left the player pool entirely, to the
+            # Minotaur. Its fiction needs a wall and a starting deck never
+            # gets to pick the room (`rules/cards.md`, A card that needs
+            # terrain belongs to whoever picks it). Blue's melee bench was
+            # TAINT, UNNAME and UNRAVEL, all three barred, so the seat could
+            # not be filled from the bench and THINK TWICE was written for
+            # it — same d8, so Blue melee's mean die does not move.
+            'INTERCEPT', 'REALIGNMENT', 'THINK TWICE', 'SIDESTEP', 'DISTRACT',
             # Green (21) — both 12 / ranged 6 / melee 3, back on the ideal
             # split. OPENING moved Melee to Both on 2026-09-06, taking Green
             # off it; the green pass put it back by swapping GIVE WAY (both)
@@ -228,13 +245,38 @@ SETS = {
             #            hackles going up fits Pat's Shunka where a thorn
             #            bush does not, and BRAMBLE covers Green's Thorns at
             #            Both range anyway.
-            'RELEASE', 'BRAMBLE', 'INSTINCT', 'LEVEL THE FIELD',
-            'MIRROR STEP', 'QUICKEN', 'RENEWAL', 'SHADE AWAY', 'PRIORITY',
+            'RELEASE', 'SHARED BURDEN', 'INSTINCT', 'LEVEL THE FIELD',
+            'MIRROR STEP', 'QUICKEN', 'ALIGN', 'SHADE AWAY', 'STIR',
             'OPENING', 'PATIENCE', 'MEND',
-            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'HEALING SONG',
+            'AID', 'COMMUNION', 'DISORIENT', 'MOCKERY', 'SHELTER',
             'FLOW',
             'BIND', 'SMOKESCREEN', 'BRISTLE',
         ],
+    },
+    # The Oracle's 63 dealt into three 21-card sheets, each an even share of
+    # both colour and range. Derived from 'oracle' rather than listed by hand:
+    # the composition above is edited often, and a hand-copied third would go
+    # stale the first time a card was swapped without anyone noticing which
+    # sheet it had been sitting on.
+    #
+    # Each third comes out 7 Red / 7 Blue / 7 Green AND 7 Melee / 7 Ranged /
+    # 7 Both, both at once. That is not a coincidence to be proud of — it
+    # falls out of the deck's own shape. Every colour is 21 at 12/6/3, so
+    # every (colour, range) bucket in the deck is 12, 6 or 3, and all three
+    # divide by three. Deal each bucket round-robin and both axes land even
+    # together. Break the 12/6/3 ratio and the thirds stop being exact; the
+    # build says so rather than printing a lopsided sheet quietly.
+    'oracle-1': {
+        'title': 'Oracle Deck — 1 of 3',
+        'split': ('oracle', 3, 0),
+    },
+    'oracle-2': {
+        'title': 'Oracle Deck — 2 of 3',
+        'split': ('oracle', 3, 1),
+    },
+    'oracle-3': {
+        'title': 'Oracle Deck — 3 of 3',
+        'split': ('oracle', 3, 2),
     },
     'oracle-expansion': {
         'title': 'Oracle Deck — Expansion',
@@ -255,59 +297,232 @@ SETS = {
         # Four cards needed rebalancing to qualify, all in `cards/`:
         #   UNNAME  — its defence half forced a random discard. Now mirrors
         #             the attack half: the attacker's Effect does not fire.
-        #   FORGET  — its attack half forced a discard. Now mirrors its own
-        #             legal defence half, exiling the played card on a clean
-        #             win, which is what the card was always about.
-        #   PROFILE — its defence half read the attacker's hand. Now a
-        #             smaller version of its own attack half.
+        #   FORGET  — its attack half forced a discard, so it was made to
+        #             mirror its defence half instead, exiling the played
+        #             card on a clean win. That rewrite did not qualify it:
+        #             the defence half it copied was never legal either, and
+        #             the card left the set on 2026-09-17. See that pass.
+        #   PROFILE — its defence half read the attacker's hand. That was
+        #             the 2026-09-08 fix; on 2026-09-17 the card was rebuilt
+        #             again, around opponent interaction rather than
+        #             self-Scry — see the fourth round below.
         #   CONSUME — destroying a card out of your own hand was mandatory,
-        #             which is a trap in a starting deck. Now "you may".
-        # The first three were barred by the content rule, and they were
-        # Blue's ONLY three melee bench cards — without the rewrites Blue
-        # could not have filled its two melee slots from the pool at all.
+        #             which is a trap in a starting deck. Now "you may", and
+        #             since 2026-09-17 it Exiles rather than destroys. The
+        #             card itself left the set in that same pass; both
+        #             rewrites stand in the pool.
+        # The first three were barred by the content rule, and the rewrites
+        # cleared UNNAME and PROFILE; FORGET stayed illegal. (An older note
+        # called those three Blue's only melee bench cards. They were not —
+        # PROFILE is Ranged, and Blue's whole melee bench is TAINT, UNNAME,
+        # UNRAVEL and CORNER, of which only UNRAVEL and CORNER are legal.)
         #
         # What the 21 were chosen to fill, measured against the first set:
         #   Exile, Lifesteal and Unpreventable were all at 0 in the Oracle
         #     while living in the pool — BURN BRIGHT and FORGET, PARADOX and
-        #     CONSUME, SPARK OF VIOLENCE.
+        #     CONSUME, SPARK OF VIOLENCE. CONSUME and FORGET both left on
+        #     2026-09-17, so Lifesteal is down to PARADOX alone and Exile to
+        #     BURN BRIGHT alone. One card each, but not zero.
         #   Scry was at 3 and three more were asked for: UNDERSTANDING,
-        #     PROFILE, ALIGN. All Blue, because no Green or Red bench card
-        #     has ever carried Scry.
+        #     PROFILE, MATCHED PAIR. All Blue, which is where the bench
+        #     keeps Scry — not the only place it could come from, though:
+        #     STIR is a Green bench card that carries it.
         #   Blue had no d8 anywhere: UNDERSTANDING is the only one on the
         #     bench and it is a Scry card, so it answers both at once.
         #   Protect sat at 1 card for a mechanic with its own Damage
-        #     Pipeline step: SHARED BURDEN.
+        #     Pipeline step: SHARED BURDEN. (It moved to the Oracle 63 on
+        #     2026-09-18; SHARED BURDEN's Protect is still in the beginner
+        #     pool, just in the other set.)
         #   Immunity lost its Green rung when UNTOUCHED left the first 21.
         #     UNTOUCHED comes back here, which restores the ladder without
         #     spending a slot in the deck Drew is happy with.
         #   Green had no Weak: CONSUME. Green had one d8: SHARED BURDEN and
-        #     HEAVE AND HAUL make three.
+        #     HEAVE AND HAUL make three. Both of those cards left on
+        #     2026-09-17 and SHARED BURDEN dropped to d4, so neither gap is
+        #     filled any more — see that pass for why the trade was worth it.
         #
         # 2026-09-09, the colour-identity pass: WAITING GAME moved Red ->
         # Blue (stealing and copying enemy buffs is enemy control), so it
         # moved from the Red block to the Blue one and took SLIPSTREAM's
-        # Both slot — the expansion keeps its Positive Status Effects
-        # teacher either way. PROVOKE, which moved Green -> Red the same
-        # day, fills the Red Both slot it vacated.
+        # Both slot. PROVOKE, which moved Green -> Red the same day, fills
+        # the Red Both slot it vacated. (WAITING GAME was cut on
+        # 2026-09-18 and SLIPSTREAM has its slot back. The expansion no
+        # longer has a Positive Status Effects card; LEVEL THE FIELD
+        # carries the term in the Oracle 63.)
         #   Green forced enemy movement died with SWAY: HEAVE AND HAUL.
+        #     (Reversed on 2026-09-17 — the card was too strong for the set
+        #     and the gap is open again.)
         #   Red had no Rooted: GRAPPLE, which is also the card the glossary
         #     cites to explain Anchored holding Rooted open.
         #
-        # Not fillable from the bench: Green has no Counter Attack card
-        # anywhere in the core pool, so that gap survives this expansion.
+        # 2026-09-17, Drew's balance pass over the printed expansion sheet.
+        # The measured complaint was Green: its mean die was 3.357 and Red's
+        # was 3.357, exactly level, which inverts the one thing Red is
+        # supposed to own. It lands at 2.93 by the end, with Red unmoved
+        # and Blue between them. A second round the same day follows the
+        # first list.
+        #   out:     HEAVE AND HAUL — too strong for this set. Untouched in
+        #            the pool.
+        #   out:     CONSUME — and it took the set's only Blind with it.
+        #            Blind sits at 0 across these 21 now, which is
+        #            survivable: the first 21 teach it five times over.
+        #   in:      CHANNEL, Both, d6 — the pool's only modal card, "choose
+        #            one of three" on its attack half (`rules/cards.md`).
+        #            Neither Oracle set has taught that decision shape.
+        #   in:      CONFRONT, Melee, d6 — which closes the gap the old
+        #            version of this note called unfillable, and brings
+        #            Thorns with it. Both were at 0 across these 21.
+        #   changed: SHARED BURDEN d8 -> d4, which leaves the expansion with
+        #            no Green d8 at all and FLOW still the only one in the
+        #            first 21.
+        #   changed: BLOOD TITHE healed 6 on its attack half and 8 on its
+        #            defence half for the same 2 HP paid; both are 5 now.
+        #            RENEWAL is the only other card across the 84 whose
+        #            defence half heals more than its attack half (4 and 8),
+        #            and there the 8 is gated to a Collapsed ally. BLOOD
+        #            TITHE's was not gated to anything.
+        #   changed: OVERCOMMIT, which is in neither set — its +1d6 rider
+        #            is +1d8 now, and the defence half that had been empty
+        #            gains Resist. It is the pool's damage ceiling and
+        #            UNDERSTANDING had climbed to within a point of it: 8.0
+        #            mean on the dice against 9.0. The ceiling is 10.0, and
+        #            it moved rather than the Blue card getting cut down.
+        #            The first version of this change put a flat +1 on the
+        #            Effect line; Drew pointed out that a die step does the
+        #            same arithmetic and keeps Effect: None, which is the
+        #            whole point of the card. No card in the pool carries a
+        #            flat integer on an Attack line either.
+        #
+        # Second round, same day:
+        #   out:     FORGET — it exiles the enemy's played card, which is
+        #            the content rule's "manipulate an enemy's deck" wearing
+        #            a costume: the card leaves their discard-and-reshuffle
+        #            cycle for the rest of the fight. Every other card in
+        #            both sets touches only its own side's cards or the
+        #            board; FORGET was the single exception, and the
+        #            2026-09-08 rewrite recorded above made it worse rather
+        #            than legal. FRACTURE does the same thing and is bench,
+        #            where the rule is already doing its job.
+        #   in:      UNRAVEL, Melee, d6 — pure status application, so it is
+        #            legal, and it fills Blind and Vulnerable, both of which
+        #            were at 0 across these 21 once CONSUME left.
+        #   changed: CHANNEL narrows from all allies to one. It was the
+        #            three-way choice AND a party-wide payout; the choice is
+        #            the card, so the scale is what gives. A tie gate was
+        #            tried first and dropped — it would have nerfed the
+        #            card by making it fire rarely, which costs the set the
+        #            decision shape it was seated to teach.
+        #   changed: ROOTED OATH d6 -> d4 and FIELD MEDICINE d4 -> d6. The
+        #            pair leaves Green's mean exactly where it was — the die
+        #            moved off the Anchored per-turn engine, which did not
+        #            need it, onto the Wound-clearing card, which did.
+        #   changed: BURN BRIGHT's defence half heals 2 on top of the
+        #            discard-pile Exile it already had. Exiling out of your
+        #            own discard is upkeep, not a play; it needed something
+        #            in the exchange itself.
+        #   kept:    SHARED BURDEN's defence half transfers an uncapped
+        #            amount of HP from you to an ally. Raised as a possible
+        #            hole and kept on purpose — you can only spend what you
+        #            have, and the ceiling is your own HP. Do not "fix" it
+        #            in a later pass without asking.
+        #
+        # Third round, same day. Three Blue cards come out as too advanced
+        # for a first campaign, not for anything wrong with them — each one
+        # switches off or reverses a rule the players are still learning
+        # (`rules/early-campaign-cards.md` for the screen and the reasons):
+        #     UNNAME  — the defender's Defense Effect never fires.
+        #     UNRAVEL — Vulnerable and Blind stacked on one half.
+        #     PARADOX — reverses the RPS outcome, the core resolution.
+        # All three are untouched in the pool.
+        #
+        # Blue is whole again, 7 of 7, and the 84 is back. When the three
+        # came out, Blue's entire melee bench was TAINT, UNNAME, UNRAVEL and
+        # CORNER — three of them gone on this screen or the content rule,
+        # leaving one card for two seats. Four Blue melee cards were written
+        # on 2026-09-17 to fix that: PRESSURE, FOCUSED STANCE, PARRY and
+        # INTERCEPT. PARRY and FOCUSED STANCE took the seats, because
+        # between them they put Blind and Ward back — both went to zero when
+        # UNRAVEL and PARADOX left. PRESSURE is the better card and stays on
+        # the bench: it fills no gap and its d8 would have pushed Blue level
+        # with Red, which is the exact shape this pass spent a round fixing
+        # in Green. Blue lands at 3.071 instead, under Red's 3.357 and over
+        # Green's 2.929.
+        #   Still at zero across the 21: Lifesteal and Quick. No Blue bench
+        #     card carries either, so they would need another colour or a
+        #     new card, and neither is obviously owed a seat. Vulnerable
+        #     was on this list until PROFILE's rewrite, below.
+        #
+        # Fourth round, same day. PROBE and PROFILE were a dominance bug:
+        # same colour, same Ranged, identical defence halves, and PROFILE
+        # held both the bigger die and the better attack half, so PROBE was
+        # strictly worse in every state of the game. Both were rebuilt
+        # around opponent interaction instead of self-Scry, which separates
+        # them and lands them in different tiers (`cards/tiers/`).
+        #   PROBE   — attack half looks at the defender's hand; defence half
+        #             Scry 2, then draw 1. Reading an enemy hand is barred by
+        #             the content rule, so PROBE is middle tier now. It has
+        #             taken over the job PROFILE's defence half was rewritten
+        #             out of on 2026-09-08.
+        #   PROFILE — Scry 1, then you may reveal your own top card; if it
+        #             matches the colour the other side played, they gain
+        #             Vulnerable on the attack half, Weak on the defence.
+        #             The Scry is what makes it a decision instead of a coin
+        #             flip — you set up the card you are about to reveal.
+        #             It keeps its seat and brings Vulnerable back to the
+        #             expansion, which had sat at zero since UNRAVEL left.
+        #   TURN    — the Initiative Shift added earlier the same day is off
+        #             again. The redirect stands, and TURN is middle tier.
+        #
+        # The ranged seat went to RETORT on 2026-09-17, on two counts.
+        # Thorns scales by colour rather than by die and range — Green 2,
+        # Blue 3, Red 4, a game-wide rule (`rules/cards.md`) — and across
+        # all 81 seated cards Thorns appears three times in Green and once
+        # in Red, at the documented exception value of 2. Blue's rung was
+        # never taught anywhere in the deck, and RETORT is the card the
+        # rules doc cites to explain it. It also takes Weak from 1 to 2,
+        # and at d4 it is exactly the die the colour mean has room for:
+        # two melee d6s after it put Blue back on 3.214, where it sat
+        # before the three cards came out.
+        #   Passed over: DISSECT (Exile 1 -> 2, but self-facing upkeep),
+        #     CHAIN (the only splash damage in either set — a real gap, but
+        #     splash is not a promised ladder the way Thorns is), DRAIN
+        #     (a third buff-manipulation card behind WAITING GAME and LEVEL
+        #     THE FIELD — WAITING GAME has since been cut for the second of
+        #     those reasons — and dead against anything with no buffs), UNMAKE
+        #     (two Exhaust into a new player's hand), DECODE and REDIRECT
+        #     (both d8, no room in the budget), PROBE and TURN (both have
+        #     problems of their own — see `rules/early-campaign-cards.md`).
+        #
+        # Also this round: ALIGN -> MATCHED PAIR, which is what the card
+        # always was (Scry 2, check whether the two match — nothing about
+        # that is alignment). The freed word now names a new Green bench
+        # card that earns it, allies lined up by position and by the
+        # initiative order. An earlier version of this round renamed four
+        # more seated cards for name breadth; Drew reverted all four. The
+        # breadth rule is real, but removing a card from the early set is
+        # the answer to a card that does not belong in it, not renaming.
+        #
+        # 2026-09-18. SHARED BURDEN left for the Oracle 63, where SEED had
+        # been sitting for a day and did not belong — SEED plants a payoff
+        # at a position and collects it a turn later if you are still
+        # standing there, which is a specialist's card, not something a
+        # first deck should be teaching. WAIT takes the expansion seat:
+        # same d4, so Green holds at 2.929, and it brings Initiative Shift
+        # to a set that had one card carrying it. The uncapped transfer
+        # note below travels with SHARED BURDEN and still stands.
         'cards': [
             # Red (7) — melee 4 / both 2 / ranged 1
-            'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S RUIN",
+            'SPARK OF VIOLENCE', 'GRAPPLE', 'DOUBLE DOWN', "GAMBLER'S FOLLY",
             'BLOOD TITHE', 'PROVOKE',
             'BURN BRIGHT',
             # Blue (7) — ranged 4 / melee 2 / both 1
-            'UNDERSTANDING', 'PARADOX', 'PROFILE', 'ALIGN',
-            'UNNAME', 'FORGET',
-            'WAITING GAME',
+            'PIECE TOGETHER', 'PROFILE', 'MATCHED PAIR', 'RETORT',
+            'PARRY', 'FOCUSED STANCE',
+            'SLIPSTREAM',
             # Green (7) — both 4 / ranged 2 / melee 1
-            'SHARED BURDEN', 'HEAVE AND HAUL', 'ROOTED OATH', 'UNTOUCHED',
+            'WAIT', 'CHANNEL', 'ROOTED OATH', 'UNTOUCHED',
             'GUIDE', 'FIELD MEDICINE',
-            'CONSUME',
+            'CONFRONT',
         ],
     },
 }
@@ -388,6 +603,13 @@ def parse_cards(filepath):
                 card['effect'] = line[7:].strip()
             elif line.startswith('Defense Effect:'):
                 card['defense_effect'] = line[15:].strip()
+            elif line.startswith('Applies When:'):
+                # A Passive carries a fiction gate instead of the two halves
+                # (`rules/character-creation.md`, Passives and Traits). The
+                # gate is a judgement the table makes, it runs long, and Drew
+                # does not want it on the printed card — so the flag is kept
+                # and the text is deliberately dropped.
+                card['passive'] = True
             elif line.startswith('Range:'):
                 card['range'] = line[6:].strip()
             else:
@@ -450,8 +672,53 @@ def parse_items(filepath):
     return items
 
 
+def split_evenly(cards, parts, index):
+    """Deal `cards` into `parts` shares even on colour and range at once,
+    and return share number `index`.
+
+    Dealing bucket by bucket is what makes both axes come out even together.
+    Balancing colour and then balancing range inside it is the obvious
+    approach and it fights itself; bucketing on the pair and dealing each
+    bucket round-robin means every share takes a proportional slice of each
+    (colour, range) combination, and the colour totals and range totals fall
+    out of that rather than being negotiated against each other.
+
+    A bucket that does not divide by `parts` splits as evenly as it can —
+    the remainder lands in the low-numbered shares. Callers report the
+    residue rather than hiding it: an uneven sheet is a fine thing to print
+    and a bad thing to be surprised by.
+
+    Original order is preserved within each share, so a part keeps the
+    parent's colour grouping and reads the same way down the page.
+    """
+    buckets = {}
+    for i, card in enumerate(cards):
+        buckets.setdefault((card['color'], card['range']), []).append(i)
+    keep = set()
+    for idxs in buckets.values():
+        keep.update(idxs[index::parts])
+    return [c for i, c in enumerate(cards) if i in keep]
+
+
+def split_residue(cards, parts):
+    """(colour, range) buckets of `cards` that don't divide by `parts`, as
+    a list of 'RED Melee 13' strings. Empty means every share is exact."""
+    buckets = {}
+    for card in cards:
+        key = (card['color'], card['range'])
+        buckets[key] = buckets.get(key, 0) + 1
+    return [f'{col} {rng} {n}' for (col, rng), n in sorted(buckets.items())
+            if n % parts]
+
+
 def load_set(set_name):
     cfg = SETS[set_name]
+
+    # A split set has no files of its own — it is a share of another set.
+    if 'split' in cfg:
+        parent, parts, index = cfg['split']
+        return split_evenly(load_set(parent), parts, index)
+
     is_items = cfg.get('type') == 'items'
     parser = parse_items if is_items else parse_cards
 
@@ -495,11 +762,16 @@ def card_to_html(card):
     if card.get('special_rule'):
         rows += f'<tr><td class="lbl">Special</td><td>{h(card["special_rule"])}</td></tr>'
 
-    effect = card.get('effect', 'None')
-    rows += f'<tr><td class="lbl">Effect</td><td>{h(effect)}</td></tr>'
+    if card.get('passive'):
+        # No Effect and no Defense rows — a Passive has neither, and printing
+        # "None" twice reads as missing data rather than as the card's shape.
+        rows += '<tr><td class="lbl">Type</td><td>Passive</td></tr>'
+    else:
+        effect = card.get('effect', 'None')
+        rows += f'<tr><td class="lbl">Effect</td><td>{h(effect)}</td></tr>'
 
-    de = card.get('defense_effect', 'None')
-    rows += f'<tr><td class="lbl">Defense</td><td>{h(de)}</td></tr>'
+        de = card.get('defense_effect', 'None')
+        rows += f'<tr><td class="lbl">Defense</td><td>{h(de)}</td></tr>'
 
     if card.get('range'):
         rows += f'<tr><td class="lbl">Range</td><td>{h(card["range"])}</td></tr>'
@@ -514,11 +786,25 @@ def card_to_html(card):
     # slightly smaller wordy card than a truncated one.
     weight = sum(len(str(card.get(k, ''))) for k in
                  ('attack', 'special_rule', 'effect', 'defense_effect', 'range', 'flavor'))
-    density = ' denser' if weight > 285 else (' dense' if weight > 195 else '')
+    # Thresholds measured, not guessed. Every card in the pool was rendered at
+    # full size and asked for its own scrollHeight against the 84mm card: 199
+    # of 200 fit, and the only one that did not was FOLLOW-UP at 412
+    # characters, over by 16px. CONSUME, the next heaviest, fits at 331. The
+    # old 195/285 pair was inherited from Georgia at 9.5pt and was
+    # shrinking 32 cards to solve one.
+    density = ' denser' if weight > 460 else (' dense' if weight > 360 else '')
 
+    stock = {'RED': 'red', 'BLUE': 'blue', 'GREEN': 'green',
+             'COLORLESS': 'colorless'}[color]
+    # 15pt italic fits about 14 characters on one line at 60mm; past that the
+    # title steps down rather than wrapping into the rules block.
+    chars = len(card['name'])
+    name_fit = ' longer' if chars > 18 else (' long' if chars > 14 else '')
     return f'''<div class="card{density}" style="background:{bg_color};border-color:{hex_color}99">
+  <div class="stock" style="background-image:url('assets/grain-{stock}.png')"></div>
+  <div class="inset" style="border-color:{hex_color}55"></div>
   <div class="card-top">
-    <div class="card-name">{h(card["name"])}</div>
+    <div class="card-name{name_fit}">{h(card["name"])}</div>
     <div class="dot" style="background:{hex_color}"></div>
   </div>
   <div class="card-sub" style="color:{hex_color}">{h(stat_label)}</div>
@@ -579,9 +865,29 @@ def generate_html(all_cards, title):
   margin: 10mm;
 }}
 
+@font-face {{ font-family: 'CardName';  src: url('assets/fonts/cormorant-garamond-italic.ttf') format('truetype'); font-style: italic; }}
+@font-face {{ font-family: 'CardCaps';  src: url('assets/fonts/cormorant-sc.ttf') format('truetype'); }}
+@font-face {{ font-family: 'CardBody';  src: url('assets/fonts/eb-garamond.ttf') format('truetype'); }}
+@font-face {{ font-family: 'CardQuote'; src: url('assets/fonts/im-fell-english-italic.ttf') format('truetype'); font-style: italic; }}
+
 body {{
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'CardBody', Georgia, "Times New Roman", serif;
   background: #bbb;
+}}
+
+/* Card stock: paper grain and colour wash in one image, drawn once per
+   card, never repeated. A CSS gradient or a repeating background becomes a
+   PDF tiling pattern, and viewers draw a hairline at every pattern cell —
+   the faint grid that appeared across the first styled sheet. See
+   make-grain.py. */
+.stock {{
+  position: absolute; inset: 0; pointer-events: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}}
+.inset {{
+  position: absolute; inset: 1.6mm; pointer-events: none;
+  border: .5px solid;
 }}
 
 .page {{
@@ -611,9 +917,10 @@ body {{
 }}
 
 .card {{
+  position: relative;
   width: 60mm;
   height: 84mm;
-  border: 1.5px solid;
+  border: 1.2px solid;
   border-radius: 7px;
   padding: 2.5mm 3mm 2mm;
   display: flex;
@@ -622,6 +929,7 @@ body {{
 }}
 
 .card-top {{
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -629,36 +937,41 @@ body {{
 }}
 
 .card-name {{
-  font-size: 12pt;
-  font-weight: bold;
-  line-height: 1.12;
+  font-family: 'CardName', Georgia, serif;
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 1.02;
   flex: 1;
-  letter-spacing: 0.01em;
 }}
 
 .dot {{
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-left: 5px;
-  margin-top: 2px;
+  margin-left: 6px;
+  margin-top: 1px;
+  /* a pale rim so it reads as pigment set into the stock rather than a
+     sticker on top of it, the way the sheet's corner discs do */
+  box-shadow: 0 0 0 1.2px #F3EEDF;
 }}
 
 .card-sub {{
+  position: relative;
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7.5pt;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin-bottom: 3px;
-  font-style: italic;
 }}
 
 .divider {{
+  position: relative;
   height: 1px;
   margin-bottom: 3px;
 }}
 
 .tbl {{
+  position: relative;
   width: 100%;
   border-collapse: collapse;
   flex: 1;
@@ -672,10 +985,9 @@ body {{
 }}
 
 .tbl .lbl {{
+  font-family: 'CardCaps', Georgia, serif;
   font-size: 7pt;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: #555;
   white-space: nowrap;
   padding-right: 4px;
@@ -685,16 +997,24 @@ body {{
 
 .card.dense .tbl td {{ font-size: 8.2pt; line-height: 1.22; }}
 .card.dense .flavor {{ font-size: 8pt; }}
-.card.dense .card-name {{ font-size: 11pt; }}
 
 .card.denser .tbl td {{ font-size: 7pt; line-height: 1.18; }}
 .card.denser .flavor {{ font-size: 7pt; }}
-.card.denser .card-name {{ font-size: 10pt; }}
 .card.denser .tbl .lbl {{ font-size: 6pt; }}
 
+/* The name is sized by its own length and nothing else. It used to ride the
+   body-density step-down, which meant a card with a lot of rules text got a
+   smaller title regardless of the title — REND, four characters, was being
+   set at 11pt because its effect text is long. Wordy rules are a reason to
+   shrink the rules. */
+.card-name.long {{ font-size: 12.5pt; }}
+.card-name.longer {{ font-size: 10.5pt; }}
+
 .flavor {{
+  position: relative;
+  font-family: 'CardQuote', Georgia, serif;
   font-style: italic;
-  font-size: 9pt;
+  font-size: 8.8pt;
   color: #555;
   line-height: 1.3;
   margin-top: auto;
@@ -739,4 +1059,20 @@ if __name__ == '__main__':
     last = len(all_cards) % CARDS_PER_PAGE or CARDS_PER_PAGE
     if last < CARDS_PER_PAGE:
         print(f'  (last page has {last})')
+
+    # For a share of another set, say what the share actually came out as.
+    # The whole point of a split is the balance, so print it every time
+    # rather than trusting the comment in the SETS table to stay true.
+    if 'split' in cfg:
+        parent, parts, _ = cfg['split']
+        by_color = collections.Counter(c['color'] for c in all_cards)
+        by_range = collections.Counter(c['range'] for c in all_cards)
+        fmt = lambda t: '  '.join(f'{k} {v}' for k, v in sorted(t.items()))
+        print(f'  colour: {fmt(by_color)}')
+        print(f'  range:  {fmt(by_range)}')
+        residue = split_residue(load_set(parent), parts)
+        if residue:
+            print(f'  ! uneven — {parts} does not divide: {", ".join(residue)}')
+            print(f'    the shares differ by one card in each; '
+                  f'see the SETS note on the 12/6/3 ratio')
     print('\nPrint settings: Margins = None, Background graphics = On, Scale = 100%')

@@ -12,6 +12,10 @@ The bazaar sprawls before you — not the desperate predatory maze you expected 
 
 This is a settled transience. Everything looks temporary. Most of it has been here for years.
 
+**Who lives here.** People who could not pay the capital's taxes and stopped being registered because of it (`places/capital/capital.md`, Where the Food Comes From). They weren't exiled and nobody arrested them — the city simply requires you to be on a list to do business in it, and they came off the list. Most of them didn't leave. They went down.
+
+**The Wardens call them unregistered**, which is an administrative status, reversible in principle, and nobody's fault. **Down here the word is *priced out*,** which is a thing that was done to you. Which word someone uses tells you where they stand before they've said anything else.
+
 ## Atmosphere — Everyday Misbehavior
 
 - Coins occasionally roll uphill when dropped
@@ -22,7 +26,7 @@ This is a settled transience. Everything looks temporary. Most of it has been he
 
 ### The Card Economy
 
-Refugees trade their abilities to survive. In Tales Untold that takes the form of cards.
+The priced out trade their abilities to survive. In Tales Untold that takes the form of cards.
 
 A common thread among them: displaced by **the Ashfall War** roughly thirty years ago, or born to parents who were (`places/ashfall-wastes.md`, `places/turnroot-weald.md`). Turnroot Weald absorbed most of that displacement, but not everyone who fled the Wastes' edge stayed in the forest — some kept moving, all the way to the capital, and this is usually where that kind of specific, hard-earned technique surfaces first.
 
@@ -57,6 +61,10 @@ Purple canopy. Symbols on the fabric that rearrange when no one's looking. The s
 Giblets is a ghoul — unhinged in a way that is not the same as tragic. The stall sells food: whatever eldritch thing is currently on the grill, served with memory seasoning and mood marinades. Digestive divination is free with every meal.
 
 The line in front of the stall is one of the bazaar's most famous features. It bends around corners that weren't there before. Impatient people find it longer when they look back. Polite people find it merely long.
+
+**The stall is named for what it sells under the counter.** A **FourthEye** is a dose, not a meal — a thumbnail of grey grit that shows the taker a real place, truthfully, for about four minutes, always a little before people arrive in it or a little after they left, and spends their own capacity to notice anything in the process (`items/fourtheye.md`). The free digestive divination that comes with every meal is the sober, harmless, showman's version of the same trick, which is exactly why nobody official has ever thought twice about the name.
+
+**This is the end of the chain the Regency is working backward along.** The drug comes up through the tunnels (`factions-and-races/the-cellar-custodians.md`) from somewhere out on the river, and the pandemic the council caught, it caught here. Giblets does not know where it starts and has never asked. A detective is currently at the other end of it (`places/vultures-nest.md`).
 
 **The Tattooist — Keeper of Echoes**
 
@@ -130,6 +138,8 @@ A plant sold at one of the vendor stalls. Shaped like a figure holding a child. 
 The offspring are harmless at first. If they survive long enough to reach adolescence, they become briefly dangerous. If they reach maturity, they take on the form of the Mother again.
 
 The symbiotic variant bonds to whoever tends it and begins to resemble them. The environmental variant, if left unchecked, grows to enormous size. Players who deal with an oversized one earn a FourthEye — and move to the front of the line. Temporarily.
+
+**Worth knowing what the reward actually is.** A FourthEye is a dose of the drug (`items/fourtheye.md`), handed over as payment by a cheerful ghoul who considers it a generous tip. Taking it is one true vision and one permanent curse card. Nothing about the offer is a trap on Giblets's part — he simply does not think of it as a dangerous thing to give someone, which is its own kind of information about him.
 
 **Oversized variant encounter:** Combat. The Mother is the primary target. Offspring scatter throughout the fight as a secondary clock — uncontrolled offspring mature into adolescence (briefly dangerous, attack on instinct) and eventually full maturity (spawn a new Mother). Prioritizing the Mother leaves the offspring problem. Prioritizing offspring leaves the Mother free. Neither is obviously correct.
 

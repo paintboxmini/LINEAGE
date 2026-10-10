@@ -4,10 +4,16 @@
 
 **Cards:** `cards/duskwick.md`
 
-**Mind 4 / Body 2 / Soul 5 — HP 17**
-**Creature Threat Rating:** 11
+**Mind 2 / Body 1 / Soul 3 — HP 9**
+**Creature Threat Rating:** 6
 
-**Deck (11 — 4 Blue / 2 Red / 5 Green):** SNUFF, DART *(red)* · HALF-SEEN, BLANK, SIDESTEP, TRACE *(blue)* · GUTTERING, SHADE AWAY, FLOW, DISORIENT, MOCKERY *(green)*
+**Six cards — 2 Blue / 1 Red / 3 Green, run from blanks only.** **Its signature cards and nothing else** *(Drew, 2026-10-09)*: every Blue it plays is HALF-SEEN, its Red is SNUFF, and every Green is GUTTERING (Blank deck, below).
+
+**Blank deck:** Blue — HALF-SEEN *(Ranged)* · Red — SNUFF *(Melee)* · Green — GUTTERING *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck). *The ordinary Duskwick is a simple creature; the Large One below keeps its full deck.*
+
+**How hard** *(measured 2026-10-09 against Chris, Kevin and Pat, run from blanks, fighting to the end)*: **two are a skirmish, three cost about one Down, four is a real fight** (about 72%), **and five is a likely loss** (about 25%). *They are solitary, so more than two at once is a choice the GM makes on purpose.*
+
+*Changed 2026-10-09 by Drew, from Mind 4 / Body 2 / Soul 5 (HP 17, Threat 11) with a core-card fill. **A cat-sized thing at the edge of the light should be a small fight**, and it is now — the Large One below is where the threat lives.*
 
 Found in Eclipseria and Vulture's Nest — not native to either, exactly, just present the way a stray alley cat is present: nobody put it there, nobody feeds it, it's simply part of the city's edges. One has taken up with Iron, the farmer at Briarwatch's Western Property (`characters/iron.md`) — a companion, not a pet. It came on its own and it isn't obeying anyone.
 
@@ -50,7 +56,7 @@ It has no eyes, so it isn't a face it's reading. It's the small tells nobody mea
 
 It doesn't press an opening it doesn't need. A clean shot gets a bite and a retreat, not a fight. Corner it instead — box it in, hurt it past the point it can slip away — and the patience runs out. That's when it stops being careful.
 
-**Passive:** Nobody reads what a Duskwick is carrying or planning. It's simply never legible — not a trick it turns on, just what it is. Mechanically: permanently Obscure, no card required, no GM roll to enable it — same rule as the keyword (`rules/card-glossary.md`), just innate rather than granted by a played card. HALF-SEEN's own Defense Effect grants Evade rather than Obscure for exactly this reason — the passive already covers Obscure unconditionally, so the card earns its slot doing something the passive doesn't.
+**Trait:** Nobody reads what a Duskwick is carrying or planning. It's simply never legible — not a trick it turns on, just what it is. Mechanically: permanently Obscure, no card required, no GM roll to enable it — same rule as the keyword (`rules/card-glossary.md`, Obscure), just innate rather than granted by a played card. **So measuring a Duskwick reveals nothing, and its Measured page in the binder is printed blank** *(Drew, 2026-10-09)*. HALF-SEEN's own Defense Effect grants Evade rather than Obscure for exactly this reason — the passive already covers Obscure unconditionally, so the card earns its slot doing something the passive doesn't.
 
 ---
 

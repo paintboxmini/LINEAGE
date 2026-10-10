@@ -39,7 +39,7 @@ Not a damage sponge. A positioning predator.
 
 ---
 
-## Passive — Correction Protocol
+## Trait — Correction Protocol
 
 Whenever the Marshal takes damage from an attack, shuffle 1 Exhaust into the attacker's deck.
 

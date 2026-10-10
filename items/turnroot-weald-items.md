@@ -8,17 +8,17 @@ Items native to or harvestable within the Turnroot Weald. For encounter context,
 
 ### Echothorn Seed
 *Source: The Thorne Throne*
-*Price: ~45 gold (two points of effect at the flat 15/point rate, plus a point for genuinely free-action use — the same premium the Universal Pin pays, `rules/equipment.md`, Pricing Consumables)*
+*Price: ~20 gold (two points of effect at the flat 10/point rate; `rules/equipment.md`, Pricing Consumables)*
 
 Small, crystalline seeds that resonate with a faint, haunting echo when shaken. Ground into a fine dust and mixed with other reagents, they amplify spells and incantations.
 
-**Use:** Single-use. +2 to next card damage or healing roll. Does not cost an Action to use.
+**Use:** Single-use. +2 to next card damage or healing roll.
 
 ---
 
 ### Luminova Powder
 *Source: Luminova Clearing*
-*Price: ~30 gold*
+*Price: ~20 gold*
 
 Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of processing — translucent, bioluminescent. The powder glows faintly in the dark. Grinding the raw leaf into powder roughly doubles its potency; a real crafting relationship between two separate items, not the same one twice.
 
@@ -27,8 +27,8 @@ Ground from 1 Luminova Leaf (`items/hollow-and-weald-items.md`) and 1 hour of pr
 ---
 
 ### Sap Vial
-*Source: Rootstalker (rare — DC 14 Senses/Body to collect without wasting)*
-*Price: ~25 gold*
+*Source: Rootstalker (rare — Hard (16) Body/Senses to collect without wasting)*
+*Price: ~17 gold*
 
 Thick, dark-green sap that smells metallic and green.
 
@@ -42,7 +42,7 @@ Thick, dark-green sap that smells metallic and green.
 
 ### Vision Shard
 *Source: The Mirror-Slick Pond*
-*Price: ~45 gold*
+*Price: ~30 gold*
 
 A fragment of something pulled from the surface of the black water — or perhaps left there. It reflects things that haven't happened yet, or things that almost happened.
 
@@ -54,7 +54,7 @@ A fragment of something pulled from the surface of the black water — or perhap
 
 ### Rusted Armor
 *Source: The Floating Gallery*
-*Price: ~20 gold*
+*Price: ~13 gold*
 
 A piece of armor recovered from the forest's repulsion field. Clean of rust only where the hovering leaves once brushed past it. Still functional, if battered.
 
@@ -103,9 +103,20 @@ Thin, flexible, incredibly strong. Still faintly warm when fresh; pulse slowly w
 
 ---
 
+### Flowering Branch
+*Source: Kelbi (`bestiary/kelbi.md`) — shed and found, or taken from a kill*
+
+A forked length of living wood with cream-and-rust blooms still on it. Cut from a kill it stays in flower about a day; found already shed, it is usually most of the way through its bloom already. Either way it is a material with a clock on it, and outside the canopy the clock runs faster.
+
+Forest families use them for cord-wrist work, for marking a gift, and for the gesture itself — a branch left where the forest can see it is a reciprocal offering that costs the giver something real, which is the only kind that counts (`quests/turnroot-weald-adventure.md`, Violation Consequence Matrix).
+
+**Use:** Not a combat item. A branch offered as a deliberate reciprocal offering clears the thieves-of-the-body standing a second Taking Without Gesture violation applies. Dried and pressed, it keeps its shape and loses its colour, and is worth about what any handsome dried flower is worth to somebody who wasn't there.
+
+---
+
 ### Rootstalker Core
 *Source: Rootstalker (very rare — 1-in-6 chance, or only at Pressure 3+)*
-*Price: ~60 gold*
+*Price: ~60 gold (a crafting ingredient, priced by what a crafter will pay and not on the consumable scale; `rules/equipment.md`, Pricing Consumables)*
 
 A fist-sized knot of pale wood threaded with red veins. Still twitches occasionally, as if dreaming of prey.
 
@@ -128,19 +139,19 @@ A bead made from a precisely carved vertebra, threaded on silk. One of dozens in
 ---
 
 ### Bone Collector Flesh
-*Source: The Bone Collector — harvested fresh only (DC 12 Body/Senses check to preserve the casing intact)*
+*Source: The Bone Collector — harvested fresh only (Normal (13) Body/Senses check to keep the casing intact)*
 *Price: ~40 gold (Senshi's going rate — half that if the casing cracked on harvest)*
 
 The body of a caterpillar roughly the size of a large dog, with a patchwork casing of insect husks and bone fragments woven over it. The flesh beneath changes flavor depending on what the Collector had incorporated — bitter-mineral from bone, sweet-fatty from chitin, metallic-bright from weapon fittings. No two specimens are identical.
 
-**Quest item:** Required for Senshi's Bone Collector Crisps at the Gilded Tusk. He will inspect it. Deliver intact or negotiate a discount.
+**Quest item:** What Senshi's Commission is for (`places/capital/gilded-tusk.md`) — the one Bone Collector, which he has never cooked. He will inspect it. Deliver intact or negotiate a discount.
 
-**Harvesting:** Must be collected fresh. If the body sits too long or the casing is damaged, Senshi refuses it entirely ("You've cooked it already and done it wrong"). DC 12 Body/Senses to harvest cleanly. On failure, the casing cracks — Senshi accepts it at half price.
+**Harvesting:** Must be collected fresh. If the body sits too long or the casing is damaged, Senshi refuses it entirely ("You've cooked it already and done it wrong"). Normal (13) Body/Senses to harvest cleanly. On failure, the casing cracks — Senshi accepts it at half price.
 
 ---
 
 ### Future-Lock Wasp Larvae
-*Source: The Hanging Gallery — DC 14 Body/Senses, or free harvest after swarm dispersal*
+*Source: The Hanging Gallery — Hard (16) Body/Senses, or free harvest after swarm dispersal*
 *Price: ~35 gold (Senshi's going rate — must be delivered alive within a day)*
 
 Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis venom is concentrated in the larval stage. Smell faintly chemical.
@@ -152,5 +163,5 @@ Small, pale larvae from wasp nests in the Hanging Gallery. The metamorphosis ven
 ## Harvesting Rules
 
 Harvesting from the Turnroot Weald requires time and care:
-- Harvesting takes a short rest **or** a successful DC 12 Body/Senses check to avoid wasting the material.
+- Harvesting takes a short rest **or** a successful Normal (13) Body/Senses check to avoid wasting the material.
 - At high Pressure levels, harvesting from the forest (especially from Rootstalkers) raises Pressure by 1. The forest notices.

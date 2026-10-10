@@ -11,7 +11,7 @@
 **TARGETING LOCK**
 BLUE — MIND — ENGINE
 Attack: Mind + d6
-Effect: Expose Red — choose 1 card in the target's hand without looking. If it is Red, inflict Staggered.
+Effect: Expose Red — choose 1 card in the defender's hand without looking. If it is Red, inflict Staggered.
 Defense Effect: Scry 2.
 Range: Ranged
 *"The prism rotates. The pattern identified."*
@@ -31,7 +31,7 @@ Range: Ranged
 **SYSTEM PURGE**
 GREEN — SOUL — ENGINE
 Attack: Soul + d4
-Effect: All Frontline enemies move to Backline.
+Effect: All enemies in the Frontline move to the Backline.
 Defense Effect: Gain Evade.
 Range: Both
 *"Tick. Tick. Tick."*
@@ -41,7 +41,7 @@ Range: Both
 **CORRECTION LOAD**
 RED — BODY — ENGINE
 Attack: Body + d6
-Effect: Shuffle 1 Exhaust into target's deck.
+Effect: Shuffle 1 Exhaust into the defender's deck.
 Defense Effect: Gain Resist.
 Range: Ranged
 *"The engine does not tire."*
@@ -51,7 +51,7 @@ Range: Ranged
 **FAULT EXPLOIT**
 BLUE — MIND — ENGINE
 Attack: Mind + d4
-Effect: If target has Exhaust in their deck, deal +4 damage.
+Effect: If the defender has Exhaust in their deck, deal +4 damage.
 Defense Effect: Gain Evade.
 Range: Both
 *"Compromise identified. Correction applied."*

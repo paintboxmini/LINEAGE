@@ -9,6 +9,8 @@
 
 **Deck (6 — 3 Blue / 1 Red / 2 Green):** BLOOM STILLNESS, PETAL FEINT, VENOM MIND *(blue)* · NEEDLE BITE *(red)* · COIL DROP, SHED *(green)*
 
+**Blank deck:** Blue — BLOOM STILLNESS *(Both)* · Red — NEEDLE BITE *(Melee)* · Green — SHED *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
 ## Description

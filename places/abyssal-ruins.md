@@ -2,7 +2,7 @@
 
 Vast. Ancient. Warped by forces that are no longer fully understood — possibly by forces that were never fully understood. What's known, at least to the few who'd have reason to know it: this was a target once, and something in Ashfall has it aimed again. See `quests/war-engine.md`.
 
-The civilization that held this ground before the ruin was already losing that war when the strike came. Believed, not confirmed, to be where the Thessians originated (`characters/black-maggie.md`) — a dying race now, scattered thin across the world, long before anyone connected the two. Not defenseless — building its own answer, the slow way: a captive river-serpent, fed and grown toward something meant to be turned on Ashfall in kind. It never got the chance. Whatever held it didn't survive the first strike either, and it fled the only way anything that size could. See `places/the-coil.md`, "What Happened To It" (GM-only).
+The civilization that held this ground before the ruin was already losing that war when the strike came. Believed, not confirmed, to be where the Thessians originated — a dying race now, scattered thin across the world, long before anyone connected the two. Not defenseless — building its own answer, the slow way: a captive river-serpent, fed and grown toward something meant to be turned on Ashfall in kind. It never got the chance. Whatever held it didn't survive the first strike either, and it fled the only way anything that size could. See `places/the-coil.md`, "What Happened To It" (GM-only).
 
 Architecture bends at angles that seem to require more than three dimensions to describe. Streets are interrupted by huge crevices. Fractured monuments to forgotten figures glow faintly with runes that respond to proximity and attention — brighter when observed, dimmer when not.
 
@@ -12,10 +12,27 @@ A permanent thin violet haze clings to the ground. The air hums at a frequency t
 
 ---
 
+## The Descent
+
+*Set 2026-10-02, one line a layer. Each gets written properly when the party is heading into it.*
+
+**A huge hole in the ground, and the University sits in the rim at the top** (Gemstone University, below). **The walls are sheer, and it is difficult to get in at all without going through the University.** *For Chris and Kevin, both wanted there, the way down starts as a break-in.* **The way there is a river** running south from Vulture's Nest, sailable most of the way, with a short walk at the end to the rim (`world/geography-overview.md`, Past the hubs).
+
+**One rule holds the layers together: the deeper you go, the more the rift has changed things.** It is one stretch of ground, worked on harder the closer it sits to the Gateway — which makes this an inverted volcano: the heat is at the bottom, and it comes from the rift rather than the rock. **Every layer leans toward Change or toward Destruction** (`world/seats.md`), and so should what lives and grows in it.
+
+1. **The Ruined City** *(Destruction)* — the old civilization's streets under the violet haze, just below the rim: the Shattered Spires, the Echoing Plaza, the Observatory and the Trench. What was struck, still standing where it fell.
+2. **The Dark Garden** *(Change)* — a garden that grows without light. Pale, colourless and blind, it feeds on the violet haze pooling down from above, and it **leans toward the Gateway the way a surface plant leans toward the sun.** Bring a lamp in and it folds shut and turns away, so a party carrying light walks through a garden closing itself around them. The ground Chris's father was studying (`campaign/chris.md`). **Tearseeds float in it** — pale points visible from far off, too faint to light anything, and going off like flashbangs at a touch; the plants fold shut as one drifts near (`flora/tearseed.md`). **The weeping wolves hunt here** — the grown Ocellus, all eyes in the one layer that has none (`bestiary/weeping-wolf.md`).
+3. **The Crystal Layer** *(Change)* — the crystal abyss. Cold, glassy and refracting, where living things are slowly turning to gem, and where the University's name comes from.
+4. **The Deep Past** *(Change)* — what the rift changed first and has been changing longest: huge, old and long settled into what it became. The Elder Tower Creatures in the Trench are the first sign of it reaching upward (`places/abyssal-trench.md`).
+5. **The Burn** *(Destruction)* — the Gateway's heat, where rock runs molten and everything is being unmade rather than changed.
+6. **The Gateway** *(both)* — the rift itself, at the very bottom. Where Chris came through.
+
+*Ashfall is Destruction paired with possibility; the Ruins are Destruction paired with Change. They share the one Seat because one struck the other.*
+
 ## Notable Landmarks
 
 **The Central Gateway**
-At the heart of the ruins: a massive, pulsating violet portal. The largest known rift in Eclipseria. Everything here radiates outward from it. Its stability isn't self-sustaining — a floating stabilizing crystal deep in the Cathedral maintains the rift's integrity, and breaking it would collapse the passage entirely. See The Cathedral, below.
+At the bottom of the descent: a massive, pulsating violet portal. The largest known rift in Eclipseria. **It exists to connect planes** *(Drew, 2026-10-08)* — it is how Code came here, and the Academy above calls it **the Hell Gate** (Gemstone University — Reserved, The Hell Gate and the Lion's Scourge). Everything here radiates outward from it. Its stability isn't self-sustaining — a floating stabilizing crystal deep in the Cathedral maintains the rift's integrity, and breaking it would collapse the passage entirely. See The Cathedral, below.
 
 **The Cathedral**
 A fallen priest's ground, tremor-door sealed, holding the stabilizing crystal that keeps the Central Gateway from collapsing. Full encounter: `quests/abyssal-ruins-cathedral.md`.
@@ -29,10 +46,60 @@ A wide open area where the sound of past events surfaces on the wind. The scream
 **The Obsidian Observatory**
 A partially intact dome overlooking the central rift. The best vantage point in the ruins. Almost certainly guarded.
 
+**Gemstone University** *(the Academy)*
+Cut into the inside face of the rim, looking in. Not a camp and not an expedition — a permanent building in the rock, put there by people who decided the way to study what is in the abyss was to live at the edge of it and keep looking. It is the last standing structure before the descent and the only easy way into it (The Descent, above), which is either the whole point or the whole problem depending on who is asked.
+
+**Named by Chris's player on 2026-09-19**, which was his to name. It is a real university with real students: Kevin reads culinary arts there, which is where the two of them met (`campaign/kevin.md`). *The Abyssal Ruins keep their own name — the University is the institution in the rim, not a name for the place it stands in.*
+
+Everything else about it is open on purpose. **See Gemstone University — Reserved, below.**
+
 **The Abyssal Trench** *(also called The Trench)*
 A depression twenty feet below the ruins floor. The violet haze pools here over bioluminescent growth. The floor is colonized by hazardous sponge organisms. Ambush predators hunt between them. At the deepest point, ancient tower-like organisms grow from the stone — older than the ruins themselves, unclassified. See `places/abyssal-trench.md`.
 
 ---
+
+---
+
+## Gemstone University — Reserved
+
+**The details of this place belong to Chris's player**, who found it by writing toward it and named it on 2026-09-19. What is written above is only the shape needed for it to exist in the world: it is a university, it is built into the rim, it studies the abyss, it teaches — including subjects with nothing to do with the abyss — and a man who worked there found something that came down through the Gateway (`campaign/chris.md`).
+
+**Not written, and not to be written by anyone else:** who runs it, how many people are in it, how it is funded, how long it has been there, what it has actually learned, and what it does about the fact that exposure here carries a risk nobody can characterise.
+
+*The name and the man came off that list on 2026-09-19 because their owner supplied them. Everything else on it stays.*
+
+~~**Its scholars are called Runewrights**~~ — **corrected to Runemeisters** *(Drew, 2026-10-08)*, and per Chris's backstory document **they are an S-class adventuring band**, not the faculty's title: brotherhood and family, who explored lost places and stood against what others fled. **Rynmori Raines, Archmage of the School of Changement, was one of them** — Code's father (`campaign/chris.md`, The man who found him).
+
+### The Hell Gate and the Lion's Scourge
+
+*Chris's backstory document, 2026-10-08.* **The Academy calls the rift beneath it the Hell Gate** — a wound between planes that from time to time spills dangerous things into this one. *The rift exists to connect planes* (Drew, 2026-10-08; The Central Gateway, above), *and not everything that uses it is a lost probe.*
+
+**The Lion's Scourge came through it** — a Nightwalker King: twenty feet of shadow and hunger carrying the will of the Negative Energy Plane, draining life and unravelling form, its touch dissolving flesh and spirit alike. **The Runemeisters met it beneath the Academy.** They prevailed at a terrible cost — **their leader killed, their healer lost** — and, unable to destroy it, **imprisoned or banished it**, and the Gate was sealed.
+
+**Sealed is not gone.** **The Scourge can use the rift too** *(Drew, 2026-10-08)*. *What is holding it, where, and for how long is not written — and an institution that has chosen to live on the rim of the door it came through has made a decision about that.*
+
+**Decades later the surviving Runemeisters went back down and found the silver in the stone** — and that is where Code came from (`campaign/chris.md`, The man who found him; `campaign/silverlings.md`).
+
+**What it is known for, and who travels for it, wait on Chris as well** *(Drew, 2026-09-30)*. Its public face depends on what he writes about the inside, and the aim is for **his version to be the canon version** rather than a private one that drifts away from the table's. That only works if he hands it over, so the thing to do is ask him, not to write ahead of him.
+
+### It is an antagonist now
+
+**Also set 2026-09-19, and it changes how this place should be run.** The man who found the thing that came through the Gateway was **a scholar of plant life at the University**, and he did not report it — he raised the child as his own, in secret, away from the building (`campaign/chris.md`).
+
+**The University had him anyway, as a child, and experimented on him** before his father got him out and hid him *(canon, 2026-09-28; `campaign/chris.md`, The man who found him)*. **Years later it found him again and sent men to take him by force**, having decided that something which came through the largest rift in the world and can be anything is no longer a subject to study but an instrument to own. The father held them off and told the boy to run. **What became of him is unwritten on purpose.**
+
+**So this is not a neutral institution and should not be played as one.** It is a body of scholars at the rim that reached, at least once, for a person. *How far that goes — whether it is the whole University, a faction inside it, or one office nobody else knows about — is still reserved, and is exactly the kind of thing worth leaving to the player whose father it took.*
+
+**Its men are still looking**, which puts a live pursuit into the campaign from session one.
+
+**Two things that are already true and are worth knowing before anyone writes into them**, because they are the world's rather than the Academy's:
+
+- **The risk is real and it is not consistent** (above). An institution that has chosen to be permanent next to that has made a decision about it — one it presumably has a position on, and possibly a wrong one.
+- **The ground is aimed at.** Something in Ashfall has the ruins targeted again (`quests/war-engine.md`). Whether the Academy knows that, and what a body of scholars at the rim would be to either side of that, is a live question and not a settled one.
+
+**A third thing: it is not only Chris's door in.** Kevin studied there, met him there, and was in the fight when the University came for him (`campaign/kevin.md`), so this is a place two player characters share a history with — and share having fled. That does not move who owns it; it does mean anyone writing into it is writing into two backstories at once.
+
+*Filed here rather than in `campaign/` because the University is a place in the world and will outlast any one character's use of it. The person who gets to say what it is, is still Chris.*
 
 ## Hazards
 

@@ -9,6 +9,8 @@
 
 **Deck (4 — 1 Blue / 1 Red / 2 Green):** RUSTLE AND GONE *(blue)* · PECK *(red)* · UNDERBRUSH DASH, STILL AS LITTER *(green)*
 
+**Blank deck:** Blue — RUSTLE AND GONE *(Both)* · Red — PECK *(Melee)* · Green — UNDERBRUSH DASH *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
 ## Description

@@ -9,6 +9,8 @@
 
 **Deck (7 — 1 Blue / 2 Red / 4 Green):** YOUR OWN HEARTBEAT *(blue)* · FOLLOWS WARMTH, IRON GRIP *(red)* · ENVELOP, BIND, FIELD MEDICINE, SHARED BURDEN *(green)*
 
+**Blank deck:** Blue — YOUR OWN HEARTBEAT *(Both)* · Red — FOLLOWS WARMTH *(Ranged)* · Green — ENVELOP *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
 ## Appearance
@@ -27,7 +29,7 @@ Being enveloped is warm and still. The person inside can hear their own heartbea
 
 ---
 
-## Passives
+## Traits
 
 **Does Not Attack**
 The slime's attacks deal no damage. Ever, to anyone, under any circumstance. Effects still apply in full.

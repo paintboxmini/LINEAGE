@@ -2,7 +2,7 @@
 
 A large orb-weaver, body roughly the size of a walnut. The coloration is stark and unmistakable: the front half of the abdomen is vivid orange, the rear half deep blue. The division is clean — not a gradient, not a pattern. A hard line across the middle.
 
-Found in forest margins and cave entrances where there is both vegetation and rock. Builds large, well-structured orb webs anchored between mixed surfaces.
+Found in forest margins and cave entrances where there is both vegetation and rock — **placed in the high country above Vulture's Nest and in the Turnroot Weald** (`places/vultures-nest.md`, What lives up there; `places/turnroot-weald.md`, Flora & Fauna). Builds large, well-structured orb webs anchored between mixed surfaces.
 
 ---
 

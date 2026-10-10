@@ -9,6 +9,8 @@
 
 **Deck (8 — 1 Blue / 4 Red / 3 Green):** CERTAIN STRIKE, RHYTHM BREAK, GROUNDING STANCE, DIG IN *(red)* · BLANK *(blue)* · STILL COUNTING, PATIENCE, FLOW *(green)*
 
+**Blank deck:** Blue — BLANK *(Ranged)* · Red — GROUNDING STANCE *(Both)* · Green — STILL COUNTING *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 *CERTAIN STRIKE and RHYTHM BREAK are the promoted-to-core versions of this creature's original NEVER LIFTED and YOU CHANGED WALLS (`cards/red-body.md`) — same cards, de-flavored names.*
 
 ---

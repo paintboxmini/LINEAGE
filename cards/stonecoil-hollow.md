@@ -47,7 +47,7 @@ Range: Melee
 **COIL LATCH**
 RED — BODY — HOLLOW
 Attack: Body + d6
-Effect: If the target moved this turn, deal +2 damage.
+Effect: If the defender moved this turn, deal +2 damage.
 Defense Effect: Attacker gains Rooted.
 Range: Melee
 *"The unyielding clasp of stone restraint."*
@@ -57,7 +57,7 @@ Range: Melee
 **STILL GROUND**
 BLUE — MIND — HOLLOW
 Attack: Mind + d4
-Effect: If the target changed positions since their last turn, deal +1 damage and Scry 1.
+Effect: If the defender changed positions since their last turn, deal +1 damage and Scry 1.
 Defense Effect: Scry 1 of your own deck.
 Range: Both
 *"Tethered thoughts in a shifting world."*
@@ -75,8 +75,8 @@ Range: Both
 **ROLLING THUNDER**
 RED — BODY — HOLLOW
 Attack: Body + d8
-Special Rule: Alpha only. 1 copy. Resolve RPS separately against each Frontline target.
-Effect: Attack all Frontline targets simultaneously. Targets hit are pushed to Backline.
-Defense Effect: All Frontline targets gain Rooted.
+Special Rule: Alpha only. 1 copy. Resolve RPS separately against each enemy in the Frontline.
+Effect: Attack all enemies in the Frontline simultaneously. Enemies hit are pushed to the Backline.
+Defense Effect: All enemies in the Frontline gain Rooted.
 Range: Melee
 *"One motion. The floor decides the rest."*

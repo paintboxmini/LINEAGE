@@ -13,9 +13,11 @@ More structure than a slime. Aware in the way that makes it dangerous — it res
 
 **Deck (9 — 3 Blue / 3 Red / 3 Green):** GENETIC SAMPLE, FOCUS, SIDESTEP *(blue)* · ADAPTIVE BITE, STRIKE, BRACE *(red)* · DISSOLVE AND KEEP, PATIENCE, FLOW *(green)*
 
+**Blank deck:** Blue — GENETIC SAMPLE *(Melee)* · Red — ADAPTIVE BITE *(Melee)* · Green — DISSOLVE AND KEEP *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
-## Passives
+## Traits
 
 **Genetic Absorption**
 Track each card color separately throughout the combat.
@@ -38,6 +40,8 @@ Each Tardigrade reflects its dietary history. The baseline form starts combat wi
 Stat blocks and card sets vary widely depending on the variant. DMs who want to run a variant will need to build their own unless using the baseline above.
 
 The three variants below describe dietary history and starting state only.
+
+**It can be met anywhere, and it always looks like where it was met** *(set 2026-09-29)*. A tardigrade has no home range — its form is shaped by the biome it has been living and eating in, so there is no wrong place to put one and no default one to put there. **The three below are examples, not a list.** A tardigrade from the Nest's high country, the Ashfall Wastes or the Wallows is built the same way: decide what it has been eating, and that is the variant.
 
 ---
 

@@ -6,21 +6,20 @@ Signature cards for Rasp. See `characters/rasp.md`.
 
 ---
 
-**OUT OF REACH**
+**STEP BACK**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Evade.
-Defense Effect: Gain Evade.
-**Passive** — While you are in the Backline, enemies cannot target you with attacks. Ends immediately the moment you attack or change position.
+Effect: Move to the Backline. Anchored — draw 1 at the start of each of your turns.
+Defense Effect: Move to the Backline. Gain Evade.
 Range: Both
-*"You were never actually aiming at her."*
+*"Don't thank her. She isn't there."*
 
 ---
 
 **QUIET POISON**
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Target takes 1 damage at the start of each of their turns until the end of combat.
+Effect: The defender takes 1 damage at the start of each of their turns until the end of combat.
 Defense Effect: Attacker takes 1 damage at the start of each of their turns until the end of combat.
 Range: Melee
 *"Small enough to ignore. That's the point."*
@@ -30,7 +29,7 @@ Range: Melee
 **SEPTIC STRIKE**
 RED — BODY
 Attack: Body + d6
-Effect: If the target is currently taking damage from QUIET POISON, deal +6 damage and end that effect immediately.
+Effect: If the defender is currently taking damage from QUIET POISON, deal +6 damage and end that effect immediately.
 Defense Effect: Deal 2 damage to attacker.
 Range: Melee
 *"Once in a while, everything she planted comes due at once."*

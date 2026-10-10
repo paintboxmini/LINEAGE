@@ -22,21 +22,59 @@ Distribute **3 additional points** among these stats. No single stat may exceed 
 
 ## What Stats Do
 
-**Body**
-- Determines damage for Red cards (Attack: Body + die)
-- Sets your maximum HP: **(4 × Body) + Soul + Mind** — Body's own share is weighted 4× the other two
+**Each stat owns three things: one card colour, one derived resource, and one way of solving problems.**
 
-**Mind**
-- Determines damage for Blue cards (Attack: Mind + die)
-- Sets your hand size: **Mind** (minimum 2)
-- Also feeds your maximum HP, at 1× weight (see Body, above)
+| | **Body** | **Mind** | **Soul** |
+|---|---|---|---|
+| **Colour** | Red | Blue | Green |
+| **Damage** | Body + die on Red | Mind + die on Blue | Soul + die on Green |
+| **Derived** | **HP**, weighted 4× | **Hand size** (no minimum) | **Initiative**, 1d6 + Soul |
+| **Also governs** | Physical speed and force | Reasoning and control | Reflexes |
+| **Check** | Overcome a physical obstacle, impose physical control | Obtain or interpret information, solve, predict, argue | Create and hold bonds, resist spiritual pressure, enforce oaths |
+| **Save** | Fatigue, falls, cold, pain, forced movement | Illusions, manipulation, memory interference | Fear, corruption, possession, despair |
+| **Perception** | **Senses** — timing and physical signal | **Reason** — pattern and detail | **Read** — intent and weight |
 
-**Soul**
-- Determines damage for Green cards (Attack: Soul + die)
-- Sets your initiative modifier: **1d6 + Soul**
-- Also feeds your maximum HP, at 1× weight (see Body, above)
+**Maximum HP = (4 × Body) + Mind + Soul.** Body's share is weighted four times the other two.
 
-Stats also determine which mode you use for checks, saves, and perception. A character built around Soul reads rooms and holds oaths. A character built around Mind anticipates and controls. A character built around Body endures, positions, and breaks things.
+**Deck size = Body + Mind + Soul.** That part is the rule, for players and creatures alike, so a character's deck is the same size as a creature of the same weight.
+
+**Matching each colour's count to its stat is a heuristic, not a law** (`rules/cards.md`, Deck Building). It is a strong default — damage runs off the matching stat, so a matched deck has every card pulling at full strength — and a deck is still legal when it is off-ratio. **An off-ratio deck is simply worse unless something pays for it**, which is a design space rather than a mistake.
+
+---
+
+### The three resources are three different currencies
+
+That is the actual design, and it is worth understanding before you spend your three points.
+
+- **Body buys durability.** How much you can absorb before it matters.
+- **Mind buys options.** How many cards you are choosing between in each exchange.
+- **Soul buys tempo.** Whether you are acting into their decision or they are acting into yours.
+
+**Body is the only stat with no cleverness in it** — more damage and more HP, nothing else — which is exactly right for the colour whose whole identity is raw damage and the biggest dice.
+
+**Mind is the only one that increases the number of decisions you make.** Cards are committed face down and revealed together (`rules/combat.md`, Attack Resolution), so hand size is the number of answers you get to compare before guessing. Mind 5 is not a bit better than Mind 4 at that. It is a different experience of the same fight.
+
+---
+
+### Speed is Body. Reflexes are Soul.
+
+**This is the least intuitive part of the split and it is deliberate, so it is worth stating plainly.**
+
+**Body is how fast you move.** Ground covered, force delivered, a door taken off its hinges. When the fiction asks how quickly somebody crossed a room, that is Body.
+
+**Soul is how fast you *know*.** Initiative is not a footrace — it is who was already moving before the thing happened. **Reflex, here, is closer to a sixth sense than to a twitch**: the read, the prickle, the fact that you had turned around before you could have said why.
+
+**Yes, real reflexes are physical, and Green therefore carries the tiniest crossover into Body's territory.** That is acknowledged rather than argued away. The game equates reflexes to intuition on purpose, for balance: **it keeps Body from owning both the damage ceiling and the turn order**, and it gives Soul — the stat of bonds, oaths and reading a room — something that matters in every single fight rather than only in the fights about people.
+
+*A high-Body character gets there first. A high-Soul character was already going.*
+
+---
+
+### The consequence that drives deckbuilding
+
+**A card's damage runs off its own colour's stat, not your best one.** A Mind 5 / Body 2 character playing a Red card deals Body damage — 2 and a die. That is why colour counts match stats: it keeps every card in your deck firing at full strength.
+
+So **one point in a stat does three things at once**: bigger damage on that colour, one more card of that colour in your deck, and HP (four of it, if it is Body). A stat is a commitment, not a slider.
 
 Your stat spread is a statement about how your character solves problems.
 
@@ -44,19 +82,56 @@ Your stat spread is a statement about how your character solves problems.
 
 ## Equipment
 
-Every character has **3 equipment slots:**
+Every character has **5 equipment slots:**
 
-- 1 Weapon
-- 1 Armor
-- 1 Artifact
+- 1 **Weapon**
+- 1 **Armor**
+- 1 **Artifact**
+- 2 **Accessories**
 
-Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more.
+Only equipped items grant mechanical effects. Carrying something unequipped means carrying it — nothing more. **The slots are not a limit on what you own or carry**, only on how much is switched on at once; own six swords if you like, nobody is counting.
+
+**Armor does not layer.** One body, one piece of armor doing the work. A mail shirt under a coat is a description of one armor, not two.
 
 **Artifacts** are resonant objects closely aligned with a Seat's domain (`world/resonant-items.md`). They are not ordinary equipment. They carry weight — cosmological, narrative, and mechanical. Wearing one is a statement about what you're willing to be near.
 
-**Carried items** (potions, tools, objects picked up in the field) don't occupy an equipment slot — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure).
+**Accessories are the small stuff**, and they are deliberately the easiest category in the game to fill: a cloak that hides you, a ring that makes people listen, boots that hold a bank, a lens, a charm, a good pair of gloves.
 
-**Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is — the cards are your damage, the gear is who you are.
+- **An accessory modifies checks, saves and perception.** No damage, no Armour, no keywords, no card effects. The moment one of those touches a fight it is a Weapon, Armor or Artifact instead.
+- **Initiative is the one exception, and it costs full price.** An accessory may add to your initiative roll — but initiative happens inside a fight, so it does not get the half-price discount, which was only ever the combat fraction (`rules/equipment.md`, Pricing Accessories). +1 at ~200 gold, +2 at ~800, and there is no +3.
+- **Every accessory names a Skill tag and grants +1, +2 or +3 to it** — the same vocabulary as your own Skills (Skills, below): a specific trained action like Lockpicking or Negotiation, or one whole Perception mode. *Boots of +2 Climbing.* *A +1 Forgery lens.* Not "a ring that helps socially" — that is three tags in a coat.
+- **They sit on the same tier ladder as weapons and armor, at half the price** — ~100, ~400, ~1,000 gold (`rules/equipment.md`). Half because half the table's time is a fight and an accessory is not in it. That makes a Tier 1 accessory the cheapest real purchase in the game, and usually the first.
+- **A Skill and an accessory stack. Two accessories on the same tag do not.** Training and equipment are different sources, so Lockpicking plus a +2 lockpick charm is +4 — but a +1 and a +3 stealth item is +3, take the larger.
+
+**Carried items** (potions, tools, objects picked up in the field) never needed a slot and still don't — you use them on your turn via the Use an Item action, same as any other action choice (`rules/combat.md`, Turn Structure). *Consumables are the exception and go the other way: free action unless the item says it costs your Action (`rules/combat.md`, Free Actions).*
+
+**Starting garb and weapon.** Every character chooses what they wear and carry at creation — a sword, a bow, a walking stick, a good coat, a set of tools, whatever fits the person you made. None of it has stats and none of it has a gold value: it grants no bonus, fills no slot, and can't be sold. Nobody is going to ask you what your sword's damage is; the cards are your damage, and **the gear is free precisely because it is not carrying anything.** Describe it, change it, lose it, replace it.
+
+**Basic supplies are assumed, and there is no inventory list** *(Drew, 2026-09-27)*. Rope, torches, travelling rations, a waterskin, flint, a blanket — **a player says they have it and they have it**, within reason. Nobody writes it down, nobody tracks it, and nobody is asked to have bought it in advance.
+
+***The limit is the person, not a list.*** The only reason a character would not have ordinary kit is that their own story says so, and that question answers itself off what is already written: **Code grew up in a dark vertical ruin where climbing is how you get anywhere, so rope and a light are second nature to him** (`places/abyssal-ruins.md`); **Kevin grew up in a temple that runs cargo boats** (`characters/ossian.md`); **Caine spent twenty years in an army.** *Two of the three fled somewhere in a hurry and it still does not bite, because they have been at the Nest two months and a port sells rope.*
+
+**A specialist tool is a claim rather than an assumption** — lockpicks, a grappling hook, a disguise kit. Same test asked harder: *would this person have this, and why.* **A yes is fine and common**, because owning a thing was never the problem: **an object does not buy permission and does not buy success.** Having it is why the table might agree the attempt exists (What a discard buys, in `rules/resolution.md`); whether it works is still a check.
+
+**And the check is where the GM holds the final say.** If an item would break a scene rather than solve a problem inside it, *the check does not work* — the item stays real and the attempt still happens. **That is a sparing tool with a stated cost**, and the rule for using it is in `rules/gm-guide.md`, When to Call for Rolls.
+
+***Who the character is does not live here*** *(corrected 2026-09-27)*. It is in the stats, the cards, the Passives, a Trait, the Skills and the Price — and in Magic Expression, which puts what a card *looks like* in the player's hands rather than in an object's (Magic Expression, below). **A character holding nothing is not a character with something missing.** *This paragraph used to end "the gear is who you are," which took a true sentence about gear having no mechanical weight and turned it into a false one about gear carrying all the character weight. It also read as a demand — decide what you own before you are allowed to be somebody — which is the opposite of what the rule is for.*
+
+<!-- print:skip-start -->
+**And the first table to use this rule proved it in three directions at once** *(2026-09-27)*. Nobody coordinated it:
+
+| | |
+|---|---|
+| **Caine** | **Chose no gear at all**, and asked for one object — a scrap of cloth with no bonus on it (`campaign/pat.md`, The scrap) |
+| **Code** | **Gear is nearly incoherent for him.** He is a fixed quantity of metal that becomes other things; his one object is a book with no rules attached (`campaign/chris.md`) |
+| **Kevin** | **Built entirely out of gear.** A grinder, a knife, a bandolier and three supply economies, and the character does not function without them (`campaign/kevin.md`) |
+
+**A rule that supports both ends of that without a patch is priced correctly.** One character loses nothing by owning nothing and another is constructed out of what he carries, and neither needed an exception written for them.
+
+**And none of the three reached for the obvious move**, which was worth noticing: an object grants no bonus but can still make an attempt *plausible*, so a packing list of quiet enablers was available to anybody who wanted one. **Nobody built one.** *Which is the good outcome and does not need a rule behind it — basic supplies are assumed anyway (above), so there was never anything to win by listing them, and* ***a list is not a person***: *"a man who left with a single object is a clearer character than a man with a packing list"* (`campaign/pat.md`).
+<!-- print:skip-end -->
+
+**Starting gold is set by the GM, once, and is capped at 40** (`rules/equipment.md`, Starting Gold). It is not a reward and it is not rolled — it is the one lever for levelling sheets that came out of creation holding very different amounts of *stuff*, since stats, cards and Passives are already even. **Nobody starts with enough to buy anything off the gear ladder**, which is deliberate: the cheapest real purchase is a Tier 1 accessory at ~100 gold and it is meant to arrive around session three, not session one.
 
 **It still matters, constantly.** Not in a fight — out of one. What you happen to be carrying is a standing answer to problems the world puts in front of you, and the GM will take it seriously:
 
@@ -73,6 +148,8 @@ See `rules/equipment.md` for the Weapon/Armor tier system and how to design new 
 ## Starting Deck
 
 Every character starts with **9 cards** drafted from the Oracle deck. *How* they get drafted is up to the table — what follows are two methods that work, not a required procedure. Any process that ends with nine cards chosen under real constraint is doing the job.
+
+**Nine is not a constant — it is your total stats.** Maximum deck size equals Body + Mind + Soul, which is 9 for everyone at creation (2/2/2 plus the 3 you distributed) and moves only when a stat does. It is the same rule every creature in the world is built on (`rules/cards.md`, Deck Building), so a character's deck is the same size as a creature of the same weight.
 
 ### Method One — The Shared Offer
 
@@ -92,7 +169,20 @@ Pick order alternates each round — if Player A picks first in round one, Playe
 
 This one plays differently. You see a whole pile at once, which means you also see what you are handing to the person next to you — and you will watch your own pile come back around, lighter, missing the card you were hoping would survive the trip. It rewards paying attention to what everyone else is building, and it makes denial a real option in a way the shared offer never does.
 
-*Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 60-card starting pool seats six comfortably. Below that, the piles run dry before anyone finishes and the shared offer is the better method.*
+*Each pile has to survive nine passes, so this needs an Oracle of at least **9 cards per player** — the 63-card Oracle seats seven exactly, and the full 84 with the expansion seats nine. Past that the piles run dry before anyone finishes and the shared offer is the better method.*
+
+### Method Three — The Packs
+
+1. Shuffle the Oracle. Deal **one pack of 9** to each player and set the rest of the deck aside unseen.
+2. Everyone looks at their own pack and takes **1 card**.
+3. Pass the pack **to the left**, and repeat until every player has **9 cards total for their deck** — with three customs in hand that means **6 picks each**.
+4. **Stop there. The packs are not emptied**, and what is left in them does not return to the Oracle.
+
+**Closest to a trading-card draft, and the difference from Method Two is what stays hidden.** The Passing Piles divide the whole Oracle, so between them the table sees all of it. The Packs put a fixed 9 per player on the table and leave the rest face down — with three players that is 27 cards seen and **36 never looked at**. What is not drafted is not gone; it is unmet, and still in the deck for advancement and for whatever the advancement decks are built from afterwards.
+
+*Needs exactly 9 cards per player, so the 63-card Oracle seats seven. Scales the same way Method Two does.*
+
+**The remnant is the method's real output.** Stopping early leaves a few cards in every pack, and those cards are not leftovers — **they are the ones the whole table declined, repeatedly, with the pack in front of them.** Three players picking six from a nine-card pack means each pack passes each player **twice**, so a card still sitting there at the end was put in front of somebody and turned down **six times**. Set them aside. That is the strongest read on a card the table will ever hand you for free, and it costs nothing to collect (`cards/tiers/README.md` — when it matters, the answer is usually a tier move, not a rewrite).
 
 ---
 
@@ -143,6 +233,8 @@ Pick **two** at creation — either a specific trained action (Lockpicking, Nego
 
 A Skill is a literal tag on the sheet, not a card. It either plainly covers what you're attempting or it doesn't — no table judgment call the way a card's name needs one. Mechanical effect: `rules/resolution.md`, Skills.
 
+**A broad Skill bundles several tags into one, at +1 instead of +2** *(Drew, 2026-10-03)*. Persuasion, Deception and Intimidation as a single Skill is the example it was written for (`campaign/chris.md`, Skills). Agree the tags it covers with the GM when you take it and write them on the sheet — **it is still a literal tag, just a wider one**, and it covers exactly what it names. *Trading depth for reach is the whole deal: wider than any ordinary Skill, never as sharp as one.*
+
 ---
 
 ## Passives
@@ -163,6 +255,38 @@ Each Passive:
 
 Once concealment is resolved, a Passive plays exactly like any other card: `rules/combat.md`, Attack Resolution.
 
+### Passives and Traits
+
+**A Passive is a card. A Trait is a rule.**
+
+A **Passive** is the card-shaped thing described above: printed colour, Range, die, an Applies When, sitting face up in its own zone. Playing one spends your Action exactly like playing a card from hand. What it saves you is the card, never the turn.
+
+**A Passive can attack or block**, ruled 2026-09-19. It is a card, and a card defends — so it is a legal defence on any exchange its Range and its Applies When allow, exactly as it is a legal attack. It never leaves its zone either way.
+
+*This is load-bearing and is easy to under-read.* **A character holding a Both-range Passive is never without a legal defence**, whatever is in their hand — measured at **0.0% no-legal-defence across all three stat spreads**, against 38.8%, 19.4% and 41.7% without one. It is the floor under every character, and it is most of what stops a low-Mind character from being punished for a small hand.
+
+*When to reach for it is a question about cards, not about strength.* A Passive costs nothing — it never leaves its zone — and a card out of hand is gone until you draw back up at the start of your turn. So the question at any exchange is whether you can afford the card, and that is answerable: count the enemy turns before your own, divide by how many of you are standing, and if your hand covers that many more blocks the card is free to spend. **The Passive is for when it does not.** `combat-simulations/README.md`, What Passives are actually for.
+
+A **Trait** is rules text that is simply true. It costs no Action, is never played, has no colour or die, and is never a choice — Armour 2, a bite that re-grants Rooted, a nose that can't be Blinded, a spirit's rolled HP. If a thing spends an Action, it is not a Trait; it is a card, and it should be written as one.
+
+**Creatures have Traits, not Passives** (`bestiary/`). Every creature stat block uses that word now. The distinction matters because a creature's innate rules and a player's Passive were never the same object and shared a name for no reason: a Minotaur's Relentless has no die, no colour, and nothing to play it on.
+
+**A player character can carry a Trait too**, and it doesn't cost them a Passive slot — it isn't one. Pat's Wild Magic Summoning is a Trait (`campaign/pat.md`): a line on the sheet, always true, rolling a spirit's HP when a card summons one, alongside his two actual Passives.
+
+---
+
+### Passives, Skills, and Ancestry
+
+**Ancestry is where most Passives come from, and it is the only way ancestry touches the sheet.** There is no ancestry table, no stat modifier, and no list of granted abilities. What a character's people does is decide what they can justify here — STRONGJAW is a dogkin's bite, ADAPTIVE CAMOUFLAGE is Glasskin skin (`factions-and-races/README.md`) — and that constraint at creation is the entire mechanic. Ancestry isn't the only source; an innate nature that isn't a people works the same way (`campaign/passives.md`, AMALGAMOUS FORM).
+
+**A Passive you can't justify becomes a Skill instead.** A human with a real natural ability takes the corresponding Passive like anybody else. A human without one isn't short a resource — they take an extra Skill in its place, and a character who can justify neither Passive takes four Skills. Trained breadth is what a body that doesn't do anything unusual has instead.
+
+The exchange is **one Skill per unjustified Passive**, so every character leaves creation holding four of something.
+
+**Nothing about this is a hard restriction list.** No file says which Passives a race may take, and none should. The check is the same one every signature card gets: does the fiction actually support this, for this character, from this people. A Glasskin taking something other than ADAPTIVE CAMOUFLAGE is fine if they can support it. A human taking a Passive is fine if they can support it.
+
+---
+
 Gaining a Passive beyond your starting two: see Promotion, under Advancement, below.
 
 ---
@@ -182,25 +306,71 @@ Players may also propose custom cards as the campaign develops. These enter the 
 
 ---
 
+## Magic Expression
+
+When you play a card, you choose what it looks like.
+
+The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
+
+A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
+
+None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
+
+You don't have to explain the metaphysics. Neither does your character.
+
+### Working without a card
+
+*(2026-09-27.)* **A character's deck is not the limit of what their magic is.** The section above says the card gives the outcome and the look is yours. The question underneath it is what happens when a player wants an outcome **no card in their hand covers** — Pat sending a spirit ahead to scout, when nothing in his nine says scout.
+
+**The answer is yes, and it costs a Price.** *Nothing here is exempt from cost* (`rules/equipment.md`, The Price): the world permits the working and then answers it. **A card is a working that has already been paid for** — bought at creation or earned at advancement — which is why playing one costs an Action and nothing else. **Off-card there is nothing standing between the character and the world, so the world collects directly.**
+
+**The Price is negotiated before the working happens**, and the negotiation is the player proposing and the GM deciding.
+
+***That is not the character choosing their own Price, which stays barred*** (`rules/equipment.md`: nobody chooses their own Price, and skill shifts *where* a Price lands rather than whether it is paid or how much). **The player and the character are two different people.** The character reaches out and finds out what it costs; the table agrees what that was. *Exactly the split the game already runs when a table negotiates which stat a save uses* (`rules/resolution.md`, Core Resolution).
+
+**Negotiating first is the point rather than a politeness.** A Price named afterwards is a punishment. **A Price named before is a decision** — the player hears the cost and can decline and do something else. *So the sequence is: say what you want, hear what it costs, then choose.*
+
+**What a Price is made of.** Everything `rules/equipment.md` says about Artifact Prices holds here — it answers the shape of what was taken, it scales with magnitude, and it need not land only on whoever reached. The currencies this game has to hand: **HP; a card out of hand or off the top; an Exhaust or a Wound into the deck; time on whatever clock is running; control, where the thing arrives and is not yours; and being noticed by something that was not watching before.** *That last one is the most useful and the least mechanical.*
+
+**A floor, so that negotiable does not drift to free: the Price has to cost something this session will notice.** A cost that lands only in some later session nobody has planned is not a Price, it is a promise.
+
+**And a ceiling on how often.** Off-card working is for the thing a player wants that their deck cannot say — not a second way to take a turn. ***If it is happening every session then the card is missing, not the rule.*** Write the card and put it in that character's advancement deck (Advancement, below), where a working that keeps being wanted belongs.
+
+<!-- print:skip-start -->
+**Worked example, 2026-09-27 — the scouting spirit, and the Price is control.** Pat wants to send a spirit up the road ahead of the party. Nothing in his nine cards says scout, so it is off-card, and **the Price is that the spirit goes and what comes back is what it noticed** — not an answer to the question he asked. He wanted to know how many are at the gate. He learns there is meat somewhere past it, that two of them smell like the river, and that something under the cart did not like being looked at.
+
+*Why control is the right currency here rather than HP or a card.* **The working succeeded** — charging HP for it would make the Price a tax on trying, which is the thing a flat cost always becomes. Control is instead **the shape of what was taken**: he asked the world for a creature to act on his behalf and got one, and a creature acting on your behalf is not you. **A spirit that reports exactly what was asked is a free card. A spirit that reports what it saw is a working with a cost inside it.**
+
+*And it is the easy ruling to make at the table, which matters more than it sounds.* The GM does not have to price an exchange or invent a consequence — **they answer as the dog.** It also repeats without inflating: the cost does not climb the fifth time, it is the same shape every time, and a player who keeps paying it is learning to ask questions a dog can answer. *Which is a better skill than having the card.*
+<!-- print:skip-end -->
+
+---
+
 ## Advancement
 
 ### End of Session
-At the close of every session, each player meets the Oracle alone — the ritual run per player at the table (`places/island-in-a-ship.md`), in three frames:
+The GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
 
-1. **Name** — the Oracle asks one question. The player answers.
-2. **Price** — one card is revealed from the Oracle deck, then buried back into it. The player does not receive it. Growth costs something — but the glimpse is real: the card stays in the pool, and a player can plan toward it.  
-   The Oracle may remember. A card previously revealed and buried as an earlier session Price can return with greater weight; the GM is free to read the repetition as meaningful rather than coincidental.  
-   The Oracle is permitted to remember what it has already shown.
-3. **Distance** — the GM reveals **3 cards**; the player chooses **1** to add to their deck permanently.
+### One Advancement Deck Per Player
 
-Growth is never handed over whole. This is the default rhythm of it.
+*Set 2026-09-24.* **The shared Oracle deck splits into a separate deck per player**, and from that point it is simpler to call it the **advancement deck**. The split happens once character creation and deck building are done, **and after the first night's advancement** — so the table's first draft is still dealt from one pool, together, the way learning the game should be.
 
-The deck begins at 9 cards. There is no maximum — a deck that has survived long enough becomes its own history.
+**The reason is custom cards.** Every character carries cards nobody else should ever draw: three signature customs each, Passives, and — where a player is building them — spotlight cards earned from that character's own scenes (`experimental/code-concept-cards.md`). **A single shared pool leaks them.** Kevin drawing SEED, or Pat drawing a card that is a memory of a night Code survived, is not a lucky draw; it is somebody else's life turning up in your hand.
+
+**So a card a character earns goes into that character's advancement deck and nowhere else.** The pools diverge from the split onward, and they are meant to — after a long campaign, what a player is drawing from is a record of who their character has become rather than a pile everyone shares.
+
+**What each deck holds at the split: the cards nobody ever saw.** Running Method Three (The Packs, above), the Oracle is only partly spent at creation — the drafted packs and the cards revealed at the first advancement are a fraction of it, and the rest was never turned face up. **That unseen remainder is what the advancement decks are built from, split by character rather than dealt at random**: the GM assigns each card to the player it suits. Nothing needs printing twice, and no card is in two decks at once.
+
+**Permanently yours is not the same as in your deck.** Maximum deck size is your total stats (see Starting Deck, above), and a card that doesn't fit goes to your **card bank**: kept, permanent, and out of the shuffle. A long campaign doesn't thicken the deck — it deepens what's behind it.
+
+**Advancement is when the bank opens.** Swap between deck and bank freely then, in either direction and as many cards as you like, as long as the deck ends at or under its maximum. Between advancements the deck is what it is.
 
 ### Stat Increases
-Stat increases are rare and are not tied to sessions or card count. They happen after **pivotal character development** — a moment where something in the character genuinely and permanently changes. What qualifies is the GM's call. When it happens, the player adds 1 point to a stat of their choice.
+Stat increases are rare and are not tied to card count. They are earned by **pivotal character development** — a moment where something in the character genuinely and permanently changes — and what qualifies is the GM's call. **They are taken at advancement**, like everything else that changes a sheet permanently: the moment earns the increase, advancement is where it lands.
 
 These moments should feel earned, not scheduled.
+
+A stat increase raises maximum deck size by 1, since the maximum is the stat total. Because it happens at advancement, the new slot can be filled from the bank in the same sitting.
 
 ### Promotion
 
@@ -220,35 +390,15 @@ The retiring card returns to the GM/Oracle pool, same as any card leaving a deck
 
 **Permanent Removal** — Cards can be permanently removed from a deck. This can be a boon (cutting a weak card to tighten what remains) or a bane (losing something valuable as a consequence). A deck that has had things removed is not diminished — it is shaped.
 
+This is a different thing from banking a card, and the difference is whether you still own it. A banked card is out of the deck and still yours; a removed card is gone, and a card removed as a consequence does not land safely in the bank on the way out.
+
 **Curse & Status Cards** — Certain encounters, locations, or narrative consequences can force cards into a player's deck. These are not chosen. They represent something the character is carrying — a wound, a debt, a mark left by the world. They may be removable. They may not be.
 
----
-
-## Resting
-
-### Short Rest
-**Duration:** 20 minutes  
-**Limit:** 3 per day  
-**Effect:** Recover **2d6 + Body** HP
-
-Short rests can be chained — three back-to-back is an hour of recovery. The daily limit resets on a long rest.
-
-### Long Rest
-**Duration:** 7½ hours  
-**Effect:** Full heal
-
-A long rest requires genuine safety and uninterrupted time. The GM determines whether current circumstances allow one. In most regions of Eclipseria, they often don't.
+**They sit outside the cap.** A curse does not evict one of your cards to make room for itself — it goes on top, and your deck is simply larger than your stats until you are rid of it. That is the shape of the cost: the deck you built is still in there whole, diluted, and every draw is a little less likely to find it.
 
 ---
 
-## Magic Expression
+## Open
 
-When you play a card, you choose what it looks like.
-
-The card tells you the mechanical outcome — the stat, the damage die, the effect. What it doesn't tell you is how your character gets there. That part is yours.
-
-A Body card might be a punch, a shove, a weapon strike, the ground shifting underfoot. A Mind card might be a precise observation, a feint, a command that lands exactly right. A Soul card might be a ward, a breath, a moment of held stillness that changes the room.
-
-None of it is wrong as long as it fits your character. The cards are a frame. You're the one making it mean something.
-
-You don't have to explain the metaphysics. Neither does your character.
+- Whether a card **permanently removed** from a deck returns to that player's advancement deck or leaves the game entirely
+- **What pays for an off-ratio deck.** The imbalance is a real cost and the interesting version is a mechanic that answers it — see `rules/cards.md`, Deck Building, Paying for an off-ratio deck. Nothing in the bestiary does this yet

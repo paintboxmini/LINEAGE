@@ -2,12 +2,12 @@
 
 ## Session 0 — The First Night
 
-This is also the party's actual Session 0. Before the trail, before the Roadhouse, during the first night on this beach is when the Oracle finds them (source `places/island-in-a-ship.md`, Session 0 — First Visit), characters are named, and decks are built. It's the plainest the Island will ever look: no prior threshold to reflect, just sand, the Oracle's table, and the cave. Run this before moving the party inland the next morning.
+This is also the party's actual Session 0. Before the trail, before the Roadhouse, during the first night on this beach is when the Oracle finds them (`rules/character-creation.md`, Advancement), characters are named, and decks are built. It's the plainest the Island will ever look: no prior threshold to reflect, just sand, the Oracle's table, and the cave. Run this before moving the party inland the next morning.
 
 ---
 ## The Hook
 
-The party wakes washed ashore on the beach at the edge of the Unheld Ocean — coordinates roughly **(0, −11)** on the relative grid (`world/geography-overview.md`), directly south of the Roadhouse (0, −7), about a day's journey on foot. No memory of the crossing. No ship, no wreckage, nothing to explain how they got here or where "here" was before it was this.
+The party wakes washed ashore on the beach at the edge of the Unheld Ocean (`places/unheld-shoreline.md` — the terrain, the river cave, and what lives there). No memory of the crossing. No ship, no wreckage, nothing to explain how they got here or where "here" was before it was this.
 
 **How they crossed the Unheld without coming back changed goes deliberately unexplained.** Every existing account of a living thing crossing that threshold says it comes back marked — reversed handedness, eyes that reflect wrong colors, subtler things (`world/the-unheld.md`). This party doesn't show any of it. Don't resolve why. Let it sit exactly as unresolved as the Ferryman's own unexplained knowledge at the Coil, or what the Stone Voice already knows about the party before anyone's said a word — same register, same restraint.
 
@@ -22,22 +22,19 @@ The party wakes washed ashore on the beach at the edge of the Unheld Ocean — c
 
 ---
 
-**The riverbank** — a place a GM can seed a second small find if the table wants one. See `items/washed-ashore-items.md`.
+**What's on this beach** — the coral river, the outcroppings, the cave, the riverbank find — is all in `places/unheld-shoreline.md`. What matters for running the session:
 
-Sections of the river turn to coral — Muted colors here, not tropical: dusty pink, grey-green, fitting the world's flat light. A **Flapjack Octopus** (`bestiary/flapjack-octopus.md` — not tied to a single body of water) works the coral shelves: one dart of movement, then gone.
+**Wrackclaw** (`bestiary/wrackclaw.md`, CTR 4) — the world's first real threat, on the riverbank or just past it. The payoff is surviving the party's first fight with nothing but starting cards, not gear.
 
-**Wrackclaw** (`bestiary/wrackclaw.md`, CTR 4) — the worlds first real threat, encountered on the riverbank or just past it. A swarm of small scavengers that reads a freshly-washed-up party the same way it reads fresh food. — the payoff here is surviving the party's first fight with nothing but starting cards, not gear. 
+**Hullback** (`bestiary/hullback.md`, CTR 17 — calibrated against the full party, not a single attacker, with a deliberately capped 9-card deck rather than the 13 its stats would normally buy) — a real, optional risk, avoidable by giving the rocks distance and genuinely worth the danger if the party wants what it's sitting on. Its den is where the party's first actual equipment comes from (`items/washed-ashore-items.md`).
 
-**Hullback** (`bestiary/hullback.md`, CTR 17 — calibrated against the full party, not a single attacker, with a deliberately capped 9-card deck rather than the 13 its stats would normally buy) — a solitary, much older predator holding the rock outcroppings cave in the river. A real, optional risk: avoidable by giving the rocks distance, genuinely worth the danger if the party wants what it's sitting on. Its den is where the party's first actual equipment comes from — see `items/washed-ashore-items.md`.
-
-
-**The trail leads to the Roadhouse** (`places/roadhouse.md`, coordinates (0, −7)) — the nearest real waypoint, and the first place with people in it.
+**The trail leads to the Roadhouse** (`places/roadhouse.md`) — the nearest real waypoint, and the first place with people in it.
 
 ---
 
 ## The Walk — Crossing the In-Between
 
-Everything past the river crossing is the In-Between (`world/the-in-between.md`) — unnamed ground between the shoreline and the Roadhouse, the first real haven on the road.
+The shoreline to the Roadhouse is a day of unnamed but unremarkable country with one pocket of In-Between sitting across it (`places/unheld-shoreline.md`, Inland). The party has no way to know it's coming and no route around. They enter it, they cross it, and the far side is ordinary ground again.
  
 ---
 
@@ -73,7 +70,8 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 
 - **This is a first pass, not a finished module.** Encounters between the shoreline and the Roadhouse, and how the Roadhouse night with Aege actually plays out beat-by-beat, are still open — Drew's own words, "my first thought is," not a locked plan.
 - **The expected campaign shape**: Shoreline → Roadhouse (meets Aege, learns about Turnroot secondhand rather than by letter) → Briarwatch (`quests/hollow-below-briarwatch.md`) → Turnroot Weald, following after her once Briarwatch is done. Not forced — just the likely path, since she gave them a real, human reason to care rather than an assignment.
-- **Aege's situation is the same in both openings now — she got the letter, she's going herself, that's all.** The only real difference is where the party meets her (Vulture's Nest's east gate, where she's their actual guide the whole way to Briarwatch, vs. here at the Roadhouse, where she's just a fellow traveler for one night) and whether she personally escorts them to Briarwatch (yes there, no here). See `characters/aege.md` for her full profile.
+- **Aege's introduction has moved to Vulture's Nest**, which is the live opening (`campaign/session-1-convergence.md`). She now takes her letter from Salla across the Listing Keel's bar while the party is buying a room, eats with them later the same day, and — this is the change — **does not decide to leave for the Turnroot at all.** She states a worry and finishes her meal (`places/vultures-nest.md`, The Letter; `characters/aege.md`, Story Hook). The Roadhouse version below is kept as written because this opening may still get used, but it is the older staging: there she is already going, and here she is not yet.
+- **If this opening is ever run, two things it leaned on Aege for need an answer** — who feeds a party with no coin on their first night, and who gives them a human reason to care about Briarwatch and the Weald. Flagging rather than filling: inventing a replacement NPC for a superseded opening would be building in the wrong direction.
 - **The unexplained-survival hook is a long-term thread, not a session-one payoff.** Resist the pull to explain it early. It should still be unexplained the first time an NPC reacts to it with astonishment.
 
 ---
@@ -81,13 +79,14 @@ In the morning she's simply gone ahead — she doesn't wait for an answer, doesn
 ## Related Documents
 
 - `characters/aege.md` — her full profile, backstory, and GM Secret
-- `places/vultures-nest.md` — the former (riverboat) opening this replaced; still a live location if the party travels there later
-- `places/island-in-a-ship.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
+- `places/vultures-nest.md` — the alternate opening, and where a Vulture's Nest start would begin instead (`campaign/session-1-convergence.md`)
+- `rules/character-creation.md` — the Oracle ritual, Session 0, now anchored to this opening's first night
+- `places/unheld-shoreline.md` — the beach itself: terrain, the river cave, what lives there, the walk inland
 - `places/roadhouse.md` — where the trail leads
 - `bestiary/wrackclaw.md`, `bestiary/hullback.md` — the coast's two creature encounters
 - `bestiary/flapjack-octopus.md` — the river crossing's creature
 - `items/washed-ashore-items.md` — what's actually findable between the beach and the Roadhouse
-- `world/the-in-between.md` — the rules the whole Walk section runs on
+- `world/eclipseria-overview.md` — the In-Between, and the pocket of it the Walk crosses
 - `bestiary/skeinwing.md`, `bestiary/stonecoil.md`, `bestiary/trisect.md` — the strange sightings and the possible fight
 - `world/the-unheld.md` — what crossing is supposed to do to a living thing, and why this party not showing it is a real anomaly
 - `world/geography-overview.md` — the coordinate grid

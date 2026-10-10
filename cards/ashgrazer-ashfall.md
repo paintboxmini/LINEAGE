@@ -11,7 +11,7 @@ Signature cards for the Ashgrazer Alpha and Packgrazer. Tagged as ASHFALL — ob
 **SENSE THE SPENT**
 GREEN — SOUL — ASHFALL
 Attack: Soul + d4
-Effect: If the target has an Exhaust card in their deck, this attack deals +2 damage. If this attack wins the reveal, shuffle 1 Exhaust into the target's deck.
+Effect: If the defender has an Exhaust card in their deck, this attack deals +2 damage. If this attack wins the reveal, shuffle 1 Exhaust into the defender's deck.
 Defense Effect: Burrow — if this card loses the reveal, remove the Alpha from play until the start of its next turn. It cannot be targeted while Burrowed.
 Range: Ranged
 *"It finds the ones already burning."*
@@ -45,7 +45,7 @@ Range: Ranged
 **ASHBURY**
 RED — BODY — ASHFALL
 Attack: Body + d4
-Effect: If the target has 2 or fewer cards in hand, Rushdown them. If they cannot move, deal +2 damage and shuffle 1 Exhaust into their deck.
+Effect: If the defender has 2 or fewer cards in hand, Rushdown them. If they cannot move, deal +2 damage and shuffle 1 Exhaust into their deck.
 Defense Effect: Scatter — when this card loses the reveal, move this Packgrazer to Backline.
 Range: Melee
 *"It waits for the stumble."*

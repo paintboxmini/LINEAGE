@@ -1,6 +1,6 @@
 # Sapphire Ant
 
-A small ant, workers roughly half a centimeter long, with an iridescent azure coloration that intensifies in direct light. Colonial. Found in mineral-rich soil environments — rocky outcroppings, cliff margins, dry riverbeds where mineral deposits are close to the surface.
+A small ant, workers roughly half a centimeter long, with an iridescent azure coloration that intensifies in direct light. Colonial. **Placed in the high country above Vulture's Nest and in the Turnroot Weald** (`places/vultures-nest.md`, What lives up there; `places/turnroot-weald.md`, Flora & Fauna). Found in mineral-rich soil environments — rocky outcroppings, cliff margins, dry riverbeds where mineral deposits are close to the surface.
 
 The colony's diet is the notable feature: foraging in mineral-dense substrate produces a salt compound in the body chemistry unlike standard ant pheromone profiles. The result is a genuine umami concentration in the dried form, with a faint blue shimmer on pale surfaces when ground.
 
@@ -22,4 +22,4 @@ Foragers collected individually with small glass tubes — a slow process requir
 
 ## Culinary Note
 
-See `places/capital/gilded-tusk.md` — Sapphire Ant Seasoning Crystals. Azure ants dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Two copper, add to any dish.
+See `places/capital/gilded-tusk.md` — Sapphire Ant Seasoning Crystals. It is also one of the charges in Kevin's grinder, alongside `bestiary/scorchback-beetle.md` and `flora/hush-bloom.md` (`campaign/kevin.md`). Azure ants dried and ground. Mineral-salt diet produces genuine umami and a blue shimmer on pale dishes. Two copper, add to any dish.

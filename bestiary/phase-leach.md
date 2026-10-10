@@ -9,6 +9,8 @@
 
 **Deck (6 — 2 Blue / 1 Red / 3 Green):** SIDESTEP, BORROWED SCREAM *(blue)* · OBSIDIAN SIX *(red)* · MIRROR STEP, MOCKERY, SIPHON *(green)*
 
+**Blank deck:** Blue — BORROWED SCREAM *(Ranged)* · Red — OBSIDIAN SIX *(Melee)* · Green — SIPHON *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
 ---
 
 ## Appearance
@@ -25,7 +27,7 @@ Near the Echoing Plaza, it may absorb the ambient screams from the air and proje
 
 ---
 
-## Passives
+## Traits
 
 **Blink**
 At the start of each of its turns, the Phase-Leach gains Evade.

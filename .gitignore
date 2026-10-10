@@ -1,2 +1,16 @@
 __pycache__/
 *.pyc
+
+# Print artifacts are build output, not source. `printing/generate-all.sh`
+# rebuilds every one of them from the markdown, and committing them cost
+# a full new copy of each file per rebuild — a PDF is compressed binary,
+# so git cannot store one as a small difference from the last one the way
+# it does for prose. See printing/README.md.
+printing/*.pdf
+
+# The generated HTML, same reasoning as the PDFs and applied later. Fifteen
+# files, eight thousand lines, rewritten by ninety-six commits in three
+# weeks, and nobody reads them. What they were for was the staleness diff,
+# and `printing/manifest.txt` does that in fifteen lines instead — one per
+# artifact, with a hash. The HTML is output; the manifest is the record.
+printing/*.html

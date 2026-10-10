@@ -9,6 +9,8 @@
 
 
 **Deck (5 — 1 Blue / 1 Red / 3 Green):** FREEZE *(blue)* · NIP *(red)* · BOLT, QUICKSTEP, MOCKERY *(green)*
+
+**Blank deck:** Blue — FREEZE *(Both)* · Red — NIP *(Melee)* · Green — QUICKSTEP *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 ---
 
 ## Description

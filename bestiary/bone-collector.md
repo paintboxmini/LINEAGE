@@ -35,7 +35,9 @@ Fog thickens. Ancient spider webs span between trees like abandoned bridges.
 
 **Deck (10 — 4 Blue / 4 Red / 2 Green):** AXIOM, BLANK, UNNAME, SILK THREAD MEASURE *(blue)* · GORE, SPARK OF VIOLENCE, RETALIATE, PRECISE REMOVAL *(red)* · CONSUME, STITCHED CASE *(green)*
 
-**Passive — Stitched Armor:** Armour 2.
+**Blank deck:** Blue — SILK THREAD MEASURE *(Ranged)* · Red — PRECISE REMOVAL *(Melee)* · Green — STITCHED CASE *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+
+**Trait — Stitched Armor:** Armour 2.
 
 **Appearance:** A massive caterpillar wearing a patchwork case of large insect husks, leather bracers, bone fragments, weapon hilts, and jewelry — all precisely woven together.
 
@@ -89,11 +91,15 @@ This isn't just predation — it's *curation*. The Bone Collector was building s
 
 ### Investigation Checks
 
-| DC | Skill | Reveal |
-|----|-------|--------|
-| 15 | Investigation | The arrangement follows some kind of blueprint |
-| 18 | Nature | This isn't normal caterpillar behavior — something taught it to organize |
-| 20 | Insight | The patterns suggest it was building toward something larger |
+2d10 + a stat, against the ordinary ladder (`rules/resolution.md`, Core Resolution). Each is a Perception check, written stat/mode (`rules/resolution.md`, Perception) — a player may propose a different mode if the fiction supports it.
+
+| Difficulty | Check | Reveal |
+|------------|---------|--------|
+| Normal (13) | Mind/Reason | The arrangement follows some kind of blueprint |
+| Hard (16) | Mind/Reason | This isn't normal caterpillar behavior — something taught it to organize |
+| Extreme (19) | Soul/Read | The patterns suggest it was building toward something larger |
+
+*Converted 2026-09-29 from D&D-style checks (DC 15 Investigation, 18 Nature, 20 Insight), keeping the same order of difficulty.*
 
 ---
 
