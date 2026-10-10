@@ -1,8 +1,8 @@
 # Wrackclaw — Field Notes
 
-*Fist-sized crabs of the tideline.*
+*Fist-sized crabs of the riverbank.*
 
-**Black-shelled, and lying in the wrack** — the band of dark, rotting weed the tide leaves behind. A black shell in black weed is nothing at all until it moves. **You do not see a Wrackclaw. You see the weed shift.**
+**Black-shelled, and lying in the wrack** — the band of dark, rotting weed the river leaves along its banks. A black shell in black weed is nothing at all until it moves. **You do not see a Wrackclaw. You see the weed shift.**
 
 **Short, hard spines at every joint**, angled back. You cannot simply take hold of one and pull it off.
 
@@ -79,6 +79,6 @@ Effect: The second time this card succeeds against the same target,
 that target goes into the water. Counted per target, for the whole fight.
 Defense Effect: Gain Thorns 1.
 Range: Melee
-"Everything on this beach gets dragged back to the water eventually."
+"Everything on this bank gets dragged back to the water eventually."
 ```
 

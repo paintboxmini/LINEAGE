@@ -92,9 +92,9 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **The Compact's position.** Unregistered communicable material, origin unconfirmed. It crosses two of the three hard lines above — too destructive, too visible — so the council cannot take a percentage and look away. Bartho wants it gone quietly. Jonas cannot make the paperwork balance. Harlock thinks the whole thing is other people's problem until it costs him a berth.
 
-**The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth — and then the whole dock. Everything on that stretch is impounded into a Compact warehouse behind a question nobody can answer yet, and everyone who was standing on it when it closed is still standing on it. Anyone whose freight is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
+**The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth — and then the whole dock. Everything on that stretch is impounded into a Compact warehouse behind a question nobody can answer yet, and everyone who was standing on it when it closed is still standing on it. Anyone whose boat or cargo is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
 
-**The party's boat is inside the cordon and the party is not** — Kevin's temple ship, the Merry Mint (`campaign/kevin.md`, From session 0) — they were elsewhere when it shut. That is the situation the first job runs on: they are the only people involved who can still move, with everything they own on the wrong side of a rope (`quests/the-quarantined-barge.md`).
+**The party is impounded with everything else** *(Drew, 2026-10-10)*. Kevin's temple ship, the Merry Mint (`campaign/kevin.md`, From session 0), is inside the cordon, and so are they: they were on that stretch when it shut, they are on the list of people who may not leave, and the boat is the way out they no longer have. **They carry no freight** — the Merry Mint is empty. *Walking the town is fine; leaving the Nest is not.* That is the situation the first job runs on (`quests/the-quarantined-barge.md`).
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
 
@@ -155,7 +155,7 @@ He also reports to the Regency. Bartho knows this. It is part of the arrangement
 
 *The party should have already seen her once by then, collecting a letter at the Listing Keel without looking at them, and probably eaten a meal across from her (The Listing Keel, The Letter). The gate is the hire, not the introduction.*
 
-She takes the party the whole leg to Briarwatch, tells them about her family at the Roadhouse on the first night out, hands over a Carrion Feather on arrival, and continues to the Turnroot Weald alone.
+She takes the party the whole leg to Briarwatch, hands over a Carrion Feather on arrival, and continues to the Turnroot Weald alone.
 
 **Harlock** — captain of the **Arcadia**, leader of the pirates operating out of the Nest. Known for his violent temper. Works within the Tideward Compact because it suits him. Would burn it down if it stopped suiting him. Stat block, traits and deck at `characters/harlock.md`.
 
@@ -202,16 +202,6 @@ Fragments the party might catch. None complete. Each pointing at something witho
 
 *"The man with the boomstick has been asking about the Moving Crate."*
 
-**Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs a kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
-
-He will hand the bags back completely clean if it comes to that. Charming about it. The party will like him despite themselves. *In progress — see note below.*
-
-**Bean** — second in command. Probably not his real name either. Too eager. Telegraphs everything with his eyes a half-second before it happens. The visible one. Players who think they've figured out the operation because of Bean have not figured out the operation.
-
-Kino keeps him close anyway.
-
-Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it. Bean acts as the distraction while Kino makes the move.
-
 ## The Red Scarves
 
 The kid gang operating on the docks. Named by the scarves, not an official name. Every kid in the operation has one. Different ways of wearing it — Kino's tied proper, Bean's halfway falling off. You earn the scarf. The name is fake. The scarves are real.
@@ -229,6 +219,18 @@ If the party insists on carrying their own bags, they've already been pilfered. 
 **If caught in the act:** Kino doesn't freeze. He runs — immediately, no hesitation, no negotiation. The other kids scatter in two directions at once, knocking into stalls and cutting through the crowd to create cover. By the time the dust settles, Kino is gone and any recovered item came back clean. He has plans within plans for exactly this. If the party gives chase, they can catch Bean. Bean knows nothing useful and will say everything he knows immediately.
 
 Kino surfaces again if the party stays long enough or returns. He'll pretend it never happened. Confident about it.
+
+### Kino and Bean
+
+**Kino / "Sawyer"** — fifteen. Messy brown hair, green eyes. Red scarf tied properly. Runs a kid theft operation on the docks. Gives the name Sawyer without hesitation. Doesn't correct people who use it. Keeps Kino private.
+
+He will hand the bags back completely clean if it comes to that. Charming about it. The party will like him despite themselves. *In progress — see note below.*
+
+**Bean** — second in command. Probably not his real name either. Too eager. Telegraphs everything with his eyes a half-second before it happens. The visible one. Players who think they've figured out the operation because of Bean have not figured out the operation.
+
+Kino keeps him close anyway.
+
+Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it. Bean acts as the distraction while Kino makes the move.
 
 ### The Many Mask's legacy
 
@@ -314,7 +316,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Jonah was one* (`characters/jonah.md`).
 
-**Fourteen.** *Drew, 2026-10-07.* **At fourteen a child counts as an adult for responsibility**: they can be hired for real work on their own word, and **taken on as an apprentice to learn a profession.** *It is apprenticeship age.* **Every binding ends there**, and nobody can be "taken in" after it. **So that is what the Red Scarves are for: getting kids to fourteen free.** The Ribs is sized for under-fourteens because that is who needs it (The Ribs, below), and a Scarf who reaches fourteen hangs the scarf on the nail wall and goes and finds a trade. *Kino, at fifteen, is the one who stayed* — running it rather than leaving it, and the only one who does not sleep there (Key NPCs, Kino / "Sawyer").
+**Fourteen.** *Drew, 2026-10-07.* **At fourteen a child counts as an adult for responsibility**: they can be hired for real work on their own word, and **taken on as an apprentice to learn a profession.** *It is apprenticeship age.* **Every binding ends there**, and nobody can be "taken in" after it. **So that is what the Red Scarves are for: getting kids to fourteen free.** The Ribs is sized for under-fourteens because that is who needs it (The Ribs, below), and a Scarf who reaches fourteen hangs the scarf on the nail wall and goes and finds a trade. *Kino, at fifteen, is the one who stayed* — running it rather than leaving it, and the only one who does not sleep there (The Red Scarves, Kino and Bean).
 
 **What fourteen is worth depends on who you are when you get there.** A kid off Mercer's floors walks out with no trade and gets hired back as a dockhand at the bottom wage (`characters/mercer.md`). **A kid with somebody to vouch for them gets a master.** *That gap is what Jonah is trying to close* (`characters/jonah.md`).
 
@@ -352,7 +354,7 @@ Kino surfaces again if the party stays long enough or returns. He'll pretend it 
 
 **Who knows.** Bartho knows, and has never done anything about it, which is the most Bartho fact in this file. Marta knows (she does not mention it and there is always more bread than she sold). Salla probably knows and has never had cause to care. Jonas does not know, and would have to write it down if he did, which is exactly why nobody has told him.
 
-**Kino does not sleep there.** He is the only one. He runs it, he feeds it, and at the end of the night he goes somewhere else — which is where the name Kino lives, and Sawyer is the one who comes back in the morning (Key NPCs, Kino / "Sawyer"). *Where he actually goes is not set.*
+**Kino does not sleep there.** He is the only one. He runs it, he feeds it, and at the end of the night he goes somewhere else — which is where the name Kino lives, and Sawyer is the one who comes back in the morning (The Red Scarves, Kino and Bean). *Where he actually goes is not set.*
 
 **How a party gets in.** Bean. He is already written as the one who will say everything he knows immediately, and this is the thing he knows. After that the problem is not finding it, it is fitting — so the ways in are: send someone small, get invited, or negotiate at a gap with a kid on the other side who has no reason to hurry.
 
@@ -516,7 +518,7 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 ### Beat three and a half — what the crash put in the water
 
-**The spill is the dinner bell.** Timber, crates and a season's worth of somebody's freight go over the edge on a slow tide — sluggish, heavy water that carries a smell a long way and does not carry it off (The Tide, above). **Wrackclaws come up the stones for it** (`bestiary/wrackclaw.md`). They are wreck-scavengers and this is the largest wreck on this coast today.
+**The spill is the dinner bell.** Timber, crates and a season's worth of somebody's freight go over the edge on a slow tide — sluggish, heavy water that carries a smell a long way and does not carry it off (The Tide, above). **Wrackclaws come up the stones for it** (`bestiary/wrackclaw.md`). They are riverbank wreck-scavengers and this is the largest wreck on the river today.
 
 **Nobody else on the dock will touch it, and that is the lockdown's doing.** Every hand on that frontage works for the Compact and is under an order not to go near loose cargo off an impounded berth — putting hands on it is the precise thing they have been forbidden. Bartho is occupied with Harlock. **The party are the only people standing there with no rule stopping them**, which is the same reason Bartho was talking to them in the first place.
 
@@ -576,7 +578,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 
 **The job is small and he will not decorate it.** There is a crate on his deck — **a sealed packing crate, heavy, unremarkable, no markings worth reading** *(2026-09-21)*. He wants it carried off, through the crowd, and set down in the market. Not hidden, not stored, not taken anywhere quiet — **set down in the open and left there**, which is the part that sounds wrong and is the part he will not explain (The Arcadia's Hold, below). The money is good and it is offered without haggling, which from a man famous for his temper is itself information.
 
-**Why he asks them and not his own crew.** His crew carrying his cargo off his ship during an impound, minutes before a count, is a confession with witnesses. Three people who were already on this dock being told no about their own freight, who have just been seen dealing with something in the water that nobody else would touch, are a work crew. **The fact that they are strangers is the qualification.**
+**Why he asks them and not his own crew.** His crew carrying his cargo off his ship during an impound, minutes before a count, is a confession with witnesses. Three people who were already on this dock being told no about their own boat, who have just been seen dealing with something in the water that nobody else would touch, are a work crew. **The fact that they are strangers is the qualification.**
 
 **The clock is visible.** Jonas is fetching a ledger. The party can see him go and see the length of the dock he has to come back down. Nothing about this requires the GM to announce a timer — *the timer is a man walking.* **How short it is, is the dial** (Beat five, above): at ten minutes the pressure is the point, and at two hours Harlock makes this same offer when they come back from the market.
 
@@ -587,7 +589,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 ### What it leaves running
 
 - **A choice already made, or about to be.** At the short setting Harlock's offer and Jonas's walk are the same ten minutes and the party cannot take both (Beat six). Whichever way it went, the other one happened anyway and they will find out how. **What is in the hold is below.**
-- **Their freight is still impounded.** Nothing in this scene fixed that. It is now behind a dockmaster having a considerably worse day.
+- **They and their boat are still impounded.** Nothing in this scene fixed that. It is now behind a dockmaster having a considerably worse day.
 - **A man in a long hat by the wall did not look up at the crash.** He looked at the party (Key NPCs, Erubeth). Nothing comes of it yet.
 - **They have been marked.** The kids have them.
 
@@ -639,5 +641,5 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - **Where the FourthEye finishing house actually is**, and whether it is a natural feature somebody moved into — a cut, an overhang, an old working — or something built. Low and well hidden is all that is set
 - **Who runs it and who walks it.** The Nest end of that chain is Harlock's business (The Moving Crate, above), and whether the people at the mountain end are his, partners of his, or somebody he has never met is unwritten
 - **How the climb works for ordinary people.** Whether there are known ways up the cliff that a gatherer uses, how long the trip takes, and whether anybody makes a living at it
-- **What actually grows up there.** The Nest's flora is all waterline — Stiltwood and Dock beard (What Grows Here, above). Nothing in `flora/` is a high-country plant yet, and every plant needs a gate that is not a stat check (`flora/README.md`)
+- **What else grows up there.** Seepleaf is the one high-country plant written so far (`flora/seepleaf.md`); everything else in the Nest's flora is made ground or water (What Grows Here, above). Any more need a gate that is not a stat check (`flora/README.md`)
 - **Whether the finishing house sits inside a troop's range or between two of them.** Now that the Gollops are territorial with lookouts (`bestiary/gollop.md`, They Hold Ground), the question sharpens: a smuggling operation that needs the same quiet approach every week either found a gap in the map of troop ranges, pays some kind of cost to use one, or has been lucky for longer than luck usually runs. **A gap is the strongest answer** — it makes the location genuinely hard to find for anyone who doesn't already know where the ranges are, and it means the Gollops are the operation's outer wall without anyone having arranged it

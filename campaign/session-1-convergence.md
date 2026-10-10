@@ -87,7 +87,7 @@ So: **the water is where the campaign returns, not where it is confined.** A GM 
 
 **Settled 2026-09-19.** Chris has the strongest reason of the three, and Kevin is inside it.
 
-**What happened.** Chris came through the rift at the bottom of the Abyssal Ruins as a small child and was raised in secret by the scholar who found him — a plant specialist at **Gemstone University**, studying what the rift does to what grows near it, who chose to be a father rather than a discoverer (`campaign/chris.md`, Where He Landed). Kevin was at the same University, reading culinary arts and barely attending, and the two of them were friends.
+**What happened.** Chris came through the rift at the bottom of the Abyssal Ruins as living silver and lay dormant in the stone, until **Rynmori Raines** broke it open and a boy came out (`campaign/chris.md`, Where He Landed). Rynmori — an archmage of Changement and a scholar at **Gemstone University**, studying what the rift does to what grows near it — raised him in secret, and chose to be a father rather than a discoverer. Kevin was at the same University, reading culinary arts and barely attending, and the two of them were friends.
 
 **The University found him again** — it had experimented on him once already, as a child, before his father hid him — **and sent men to take Chris by force** — to make a weapon of the thing that came through the largest rift in the world. There was a fight. **Kevin was in it.** Chris's father put himself between his son and the men and told him to run, and **Kevin is the one who physically tore Chris away from that moment** and got him out. What became of the father is unknown and stays unknown (`places/abyssal-ruins.md`, It is an antagonist now).
 
@@ -170,7 +170,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 - **The Temple of Unity's wine** is new. The temple exists; a wine reputation doesn't.
 - **`quests/washed-ashore.md` stays.** It is not retired and this doesn't replace it — the shoreline opening is a written, live adventure, and the beach itself now has its own file (`places/unheld-shoreline.md`) so nothing about that ground depends on which opening a table runs. Vulture's Nest already carries its own entry text (`places/vultures-nest.md`, Entry — If the Party Arrives Here). Two openings, both real; which one a given group starts on is a table decision, not a canon one.
 
-**The first job is written** at `quests/the-quarantined-barge.md`, and **the Nest opening has its scene written beat by beat** at `places/vultures-nest.md`, The Opening Scene — the impound conversation with Bartho that puts the party in one room without any of them choosing to, the Scarves working the edge of it, Harlock's ship hitting the dock, and Bartho sending Jonas aboard to count the hold. It runs off the convergence device already in this file (the sweep takes everyone's freight, and Bartho deals with a party rather than a queue) and it ends pointed at the market and the tavern.
+**The first job is written** at `quests/the-quarantined-barge.md`, and **the Nest opening has its scene written beat by beat** at `places/vultures-nest.md`, The Opening Scene — the impound conversation with Bartho that puts the party in one room without any of them choosing to, the Scarves working the edge of it, Harlock's ship hitting the dock, and Bartho sending Jonas aboard to count the hold. It runs off the convergence device already in this file (the sweep impounds everyone on that stretch, boats included, and Bartho deals with a party rather than a queue) and it ends pointed at the market and the tavern.
 - **The cursegiver bloodline** is written into `factions-and-races/races-lizardkin.md`, The Cursegivers. The living descendant is **Osha** (`characters/osha.md`), searching the islands near Gharial for her ancestor.
 
 ---
@@ -181,8 +181,7 @@ Nothing yet — this file asserts nothing in canon on its own. If the opening ho
 
 **What is genuinely still open:**
 
-- **What happened to Chris's father** — deliberately unwritten, and a thread rather than a gap.
-- **His name**, and Chris's own character name.
+- **What happened to Rynmori, Chris's father** — deliberately unwritten, and a thread rather than a gap.
 - **How far the University's hostility goes** — the whole institution, a faction, or one office (`places/abyssal-ruins.md`, It is an antagonist now). Reserved for Chris's player.
 - **When the pursuit shows up.** It only has to be true in session one, not present.
 - **The fourth seat**, unchanged.
