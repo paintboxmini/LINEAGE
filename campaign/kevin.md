@@ -65,6 +65,8 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 **He is not a good student and he is barely a student.** He attends. He does not really attend. Nobody is checking, the fees are his father's problem, and *right now they probably don't even know he is gone.* The reference the table reached for was Mugen and Jin — the two of them are not the same kind of person and were never going to be, and that is the fun of it.
 
+**He has cleared the Temple of Unity's kitchen more than once** *(Drew, 2026-10-10)*. Not with any one recipe — with the kind of thing he is always trying to make: something that smokes, stings the eyes, catches in the throat or goes off on the stove. **The temple's cooks were trying to make lunch for a cathedral**, and the boy in the corner reducing peppers until the air turned was a recurring reason they could not. *Every cook in that building has a story about the day they had to leave the kitchen to him, and none of them tell it fondly.*
+
 **Going to college was the excuse, and it worked because it was not a lie.** His father wants him in the order. Kevin does not want the order. *I'm going to go learn* is the one sentence that gets a Pepper out of the Temple District with the family's blessing and the use of the family's boats, and Kevin meant it enough to say it.
 
 **He went, he got the knife, and he came back.** The vibro knife came from Chris — an alien with a piece of technology this world does not otherwise have, and a friend who did not need a reason to hand it over (Gear, below).
@@ -154,7 +156,7 @@ Everything he fires or throws goes through the same preparation. It is cooking, 
 
 **Drew's note, 2026-09-19, and it is the most important paragraph in this file for the person holding the sheet.**
 
-Look at what has accumulated: **a ranged d8**, carrying **the most powerful modality built for anyone so far** — seven different cards out of one slot, switchable between turns. Plus **explosives**. Plus **drinks that hand out Quick, Ward, Resist, healing and initiative**. Nobody else at the table has three economies.
+Look at what has accumulated: **a ranged d8**, carrying **the most powerful modality built for anyone so far** — six different cards out of one slot, switchable between turns. Plus **explosives**. Plus **drinks that hand out Quick, Ward, Resist, healing and initiative**. Nobody else at the table has three economies.
 
 **All three of them run on the same fuel, and none of it is free.** Gold, time, ingredients, and the difficulty of the prep itself are the balancing levers on this character — not the dice. *When the kit looks strong on paper, that is because it is being read with a full bandolier.*
 
@@ -164,7 +166,7 @@ Look at what has accumulated: **a ranged d8**, carrying **the most powerful moda
 
 **What that means at the table, concretely:**
 
-- **Restocking is a quest, not a shopping trip**, for everything except sapphire crystal. Five of the six loads have to be taken off something — or someone — that did not want to give them up.
+- **Restocking is a quest, not a shopping trip**, for everything except sapphire crystal. Four of the five loads have to be taken off something that did not want to give them up.
 - **The drinks compete with the rounds** for the same measures of the same rare seasonings (Supply and restocking, above). Three rounds *or* two drinks per session of work — he cannot have both.
 - **The oranges do not compete — they are scarcer instead.** They come off Burnrind (`flora/burnrind.md`), its own supply and a smaller one, so the grenade is genuinely finite rather than a cheap trade off the seasoning budget.
 - **The free action caps how much of it he can spend per turn anyway** (One free action, three things that want it, below). Carrying more does not mean using more.
@@ -184,7 +186,7 @@ Look at what has accumulated: **a ranged d8**, carrying **the most powerful moda
 
 ## The Ingredients
 
-Six seasonings, gated six different ways: Sapphire Ant is **bought**, the Scorchback is **dangerous to harvest**, the Hush Bloom is **slow to harvest**, the Shockquill is **dangerous to harvest correctly**, the Blowback simply has to be **beaten in a fight**, and redgum is **on somebody else's tree** *(added 2026-10-06; `flora/bloodelm.md`, Redgum)*.
+Five seasonings, gated five different ways: Sapphire Ant is **bought**, the Scorchback is **dangerous to harvest**, the Hush Bloom is **slow to harvest**, the Shockquill is **dangerous to harvest correctly**, and the Blowback simply has to be **beaten in a fight**. *Redgum and wakebark, from Elowen, were given effects on 2026-10-06 and turned back into hints on 2026-10-10* (`flora/bloodelm.md`, Redgum; `flora/wakebark.md`).
 
 **Leadfoot was hush petal until session 0** *(2026-10-03)*. Kevin's ask: the name did not fit an ingredient that roots a person where they stand. The flower is still the Hush Bloom; **leadfoot is what the dried petal is called once it is a seasoning** — the numbing goes to the legs first, and the feet go heavy. Same split as Scorchback and cinder flake.
 
@@ -192,7 +194,7 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 
 **New ingredients come with hints, not effects** *(Drew, 2026-10-10)*. **From here on, an ingredient is written as a description with a few vague gestures at what it might be good for — and no rule for what it does in a round or a drink.** **What Kevin makes of it is worked out between Kevin and Drew at the table**, when he has some in his hands. *The six loads below were written before this and keep their effects.*
 
-**The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, seven times over.
+**The load is the card** *(2026-09-19)*. GRIND SHOT prints no Effect of its own; both of its lines are filled in by whatever is in the chamber. So the table below is the card, six times over.
 
 | Load | Effect | Defense Effect | Source |
 |------|--------|----------------|--------|
@@ -202,9 +204,8 @@ Ingredients don't have a colour. A seasoning is a seasoning; what it does is wha
 | **Leadfoot** | Defender gains Rooted | Attacker gains Rooted | `flora/hush-bloom.md` — the Turnroot Weald |
 | **Spinstone** | Initiative Shift -2 to the defender | Initiative Shift -2 to the attacker | `bestiary/shockquills.md` — the Briarwatch red dirt |
 | **Bellows dust** | Push the defender to the Backline | Push the attacker to the Backline | `bestiary/blowback-beetle.md` — the Turnroot understory |
-| **Redgum** | Defender gains Weak | Attacker gains Weak | `flora/bloodelm.md` — Elowen *(2026-10-06; he has none yet)* |
 
-**Five of the six flip straight across**, because "defender" and "attacker" name the same person from opposite sides of the exchange. **Cinder flake is the one that could not**, and it is worth knowing why rather than just reading the fix: *a Defense Effect never has an attack to modify.* Defender wins, no damage; tie, the damage is the attacker's, landing on him; attacker wins and the Defense Effect does not fire at all. There is no outcome in Attack Resolution where "+3 damage" on *his* side has anything to attach to (`rules/combat.md`). So it burns them instead — unpreventable, because it is fire rather than an attack landing, the same reasoning the orange runs on.
+**Four of the five flip straight across**, because "defender" and "attacker" name the same person from opposite sides of the exchange. **Cinder flake is the one that could not**, and it is worth knowing why rather than just reading the fix: *a Defense Effect never has an attack to modify.* Defender wins, no damage; tie, the damage is the attacker's, landing on him; attacker wins and the Defense Effect does not fire at all. There is no outcome in Attack Resolution where "+3 damage" on *his* side has anything to attach to (`rules/combat.md`). So it burns them instead — unpreventable, because it is fire rather than an attack landing, the same reasoning the orange runs on.
 
 **Three of them are better on defence than on offence.** Rooting, shoving down the initiative order, and blowing someone off you are all worth more against the person who just committed to attacking you than against someone you picked. *The defence half is not the afterthought here; some turns it is the reason to hold the card.*
 
@@ -225,15 +226,14 @@ Prepared drinks, handed out before the fight and drunk with a free action by who
 | **Still Water** | Gain Ward and heal 3 HP | Leadfoot | ~20 gold |
 | **Second Wind Cider** | Gain Resist and draw 1 | Cinder flake | ~20 gold |
 | **Hair of the Quill** | Apply Initiative Shift +2 to yourself and gain Quick | Spinstone | ~30 gold |
-| **Up All Night** | Gain Ward and draw 1 | Wakebark *(drink only)* | ~20 gold |
 
-The two plain ones are the floor, the same way plain rounds are. **Up All Night is the one drink whose charge is good for nothing else** — wakebark does not survive the burn, so a measure of it is two of these and never a round (`flora/wakebark.md`, *added 2026-10-06; he has none yet*). Stronger recipes get worked out at the table as he actually makes them (`rules/items.md`, Crafting).
+The two plain ones are the floor, the same way plain rounds are.
 
 **What is actually in them is deliberately unsettled** *(2026-09-27)*. The names do not commit: **Bitter Shot** reads as coffee at least as easily as spirits, **The Early Cup** is a morning cup, and **Still Water** is the one that leans liquor — *the water a still produces.* **That ambiguity is worth keeping rather than resolving**, and it leaves two doors open that a fixed answer would shut: **Kevin gets to decide what he actually put in any given batch**, and any character at the table can take a restriction about what they will drink without a single recipe needing rewriting (`campaign/pat.md`, Straight edge). *He is a cook. If somebody will not drink a thing, he makes it again differently, and that is a five-second answer rather than a rules problem.*
 
 **The gold is what somebody else pays, priced 2026-09-21 at the flat rate of 10 a point** (`rules/equipment.md`, Pricing Consumables) — one point for a status stack, and healing 4 as the anchor, so Still Water's heal 3 and Ward is two points. *Two of these numbers rest on a judgement the scale does not make: Initiative Shift and card draw are not on it. A +1 shift and a draw are counted as a point each here because they feel like one. If a shift is worth more than that at the table, The Early Cup and Hair of the Quill both go up.*
 
-**Three of the six cost him a round he would otherwise have fired.** Still Water eats a leadfoot, Second Wind Cider a cinder flake, Hair of the Quill a spinstone — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
+**Three of the five cost him a round he would otherwise have fired.** Still Water eats a leadfoot, Second Wind Cider a cinder flake, Hair of the Quill a spinstone — so their real price to him is not the gold, it is the shot he no longer has. **The two plain ones are the only drinks that cost him nothing but time**, which is most of why they are the floor.
 
 ### What any of it is actually worth to him
 
@@ -265,7 +265,7 @@ His real exchange rate is already written above under Supply and restocking: **o
 
 **Raw and unspent: two measures of bellows dust and one of leadfoot** *(Drew, 2026-10-07 — they replace the sapphire crystal and spinstone he was first written with)*. Each measure is three rounds *or* two drinks, and he cannot have both out of one — **so his first downtime is still a real choice.** *Bellows dust has no drink, so those two are six rounds of shoving people off him whatever he decides. The leadfoot is the decision: three more Rooted rounds, or two Still Waters.*
 
-*None of the raw measures was harvested by him.* Bellows dust comes off a Blowback Beetle that has been beaten in a fight, in the Turnroot understory (`bestiary/blowback-beetle.md`), and leadfoot off a Hush Bloom that only opens for patience (`flora/hush-bloom.md`). **He traded for all three, somewhere on the road, off people who had done the hard part** — **the Persuasion +2 doing the work the Cooking +2 cannot.** *Redgum (2026-10-06) is the one seasoning where asking is the whole gate* (`flora/bloodelm.md`, Redgum).
+*None of the raw measures was harvested by him.* Bellows dust comes off a Blowback Beetle that has been beaten in a fight, in the Turnroot understory (`bestiary/blowback-beetle.md`), and leadfoot off a Hush Bloom that only opens for patience (`flora/hush-bloom.md`). **He traded for all three, somewhere on the road, off people who had done the hard part** — **the Persuasion +2 doing the work the Cooking +2 cannot.**
 
 **The whole loadout, counted in ingredients rather than in items**, because that is the number that actually constrains him:
 
@@ -412,7 +412,7 @@ Range: Ranged
 "One crank. Whatever you fed it is what comes out."
 ```
 
-**The card has no text of its own, and that is the card** *(2026-09-19)*. A weapon whose entire personality is *what did you load it with* should be honest about that on its face. Both lines are filled in at the moment it resolves, from the table in The Ingredients, above — **one card, seven behaviours, and the choice was made before the turn started rather than during it.**
+**The card has no text of its own, and that is the card** *(2026-09-19)*. A weapon whose entire personality is *what did you load it with* should be honest about that on its face. Both lines are filled in at the moment it resolves, from the table in The Ingredients, above — **one card, six behaviours, and the choice was made before the turn started rather than during it.**
 
 **There is precedent for this shape and it is not a house exception.** FOLLOW-UP already prints *"Effect: Replaced by the copied card's Effect"* (`cards/colorless.md`); a card whose halves resolve out of something else is an existing thing in this corpus.
 

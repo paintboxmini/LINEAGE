@@ -123,4 +123,4 @@
 - `characters/osha.md`, `factions-and-races/races-lizardkin.md` — her line
 - `places/forget-me-not-island.md` — where she lived before
 - `campaign/pat.md` — the scrap
-- `campaign/kevin.md` — redgum and Up All Night
+- `campaign/kevin.md` — what redgum and wakebark might become

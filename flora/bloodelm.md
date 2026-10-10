@@ -34,7 +34,7 @@
 
 **The sap that runs out of a ringed tree sets on the bark as a dark red gum**, thick at the bottom of the ring. *The villagers scrape it off and burn it, or leave it; it has never been worth anything to them.*
 
-**It is worth something to Kevin** (`campaign/kevin.md`, The Ingredients). **Worked into a round it goes tacky in the burn**, and what it hits comes away with heavy, gummed-up hands — **Weak**, either direction.
+**It might be worth something to Kevin** (`campaign/kevin.md`, The Ingredients) — *what, is his and Drew's to work out at the table* (Drew, 2026-10-10). **The hints:** it stays tacky for days, it does not wash off hands so much as wear off them, and it burns slow and smoky with a smell like hot iron.
 
 **The gate: it is on somebody's tree.** *Every ringed tree on Elowen belongs to a felling family*, and so does whatever runs out of it. **Taking it means asking**, in a village that has started looking for somebody to blame (`places/elowen.md`) — and for the families that are gone, there is nobody left to ask. *A stranger scraping gum off a dead man's tree is exactly the story this village is ready to believe.*
 
