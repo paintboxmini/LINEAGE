@@ -1,6 +1,6 @@
 # Harlock
 
-*Captain of the **Arcadia**. Third seat on the Tideward Compact, and the only one of the three who would burn it down.*
+*Captain of the **Arcadia** and head of the Pirate Guild on this stretch of the web. Third seat on the Tideward Compact, and the only one of the three who would burn it down.*
 
 **Cards:** `cards/harlock.md`
 
@@ -28,6 +28,22 @@ He'll tell you loyalty is a transaction and nothing more, and say it like he's s
 **He deals honestly, which surprises people.** A transaction is a transaction; welching would make his word worth less and his word is the thing he sells. What he will not do is anything for free, or anything on the strength of having done it before.
 
 **Soul 3 is the lowest number on his sheet and it is the exact thing his doctrine is about.** He is hard to frighten, hard to out-fight, and unusually easy to reach through a bond — a person he owed something to, a name from before the Nest, an appeal that is not an offer. A party that tries to buy him gets a fair price. A party that gets under the doctrine gets something he did not intend to give.
+
+---
+
+## The Pirate Guild
+
+*Drew, 2026-10-12.*
+
+**Harlock heads the Pirate Guild in this part of the river web, and that is why he sits on the Compact.** The Guild is the Nest's privateers — **legally sanctioned, sailing under Regency licence.** Bartho holds the dock, Jonas holds the ledger, and **Harlock holds the ships that go out armed.** *His seat is the Guild's seat.*
+
+**The water around the Nest is crowded with other people's countries.** Tribes and nations on the islands and along the far banks, many of them rivals, none of them the Regency's. **Attacking, raiding and plundering them is legal work out of the Nest**, done under licence, logged, and taxed like any other cargo — the Compact takes its percentage of every prize (`places/vultures-nest.md`, The Tideward Compact).
+
+**So it is a trade, and a respectable one by the Nest's measure.** A privateer captain is a man of standing on the dock. A crew signs articles, shares out a prize by rule, and comes home with money in a port that knows how to spend it. *It is fast ships, boarding actions, rivals with their own captains, and a cargo hold that is full on the way home* — **and that is the door to pirate adventures, if the party wants one.** It is offered, never pushed.
+
+**Which is also why the Ocellus crates matter.** Everything the Guild takes is on paper. **The crates are not** — they are Harlock's private arrangement, outside the licence (`places/vultures-nest.md`, The Arcadia's hold). *A Regency ledger noting a privateer's prizes is routine. The same ledger noting a living crate is the end of him.* That is what makes the count in session one bite.
+
+**His first mate is Amelia** (`characters/amelia.md`) — the one who keeps the charter, runs the ship, and signs on crew.
 
 ---
 
@@ -84,7 +100,15 @@ High Body, real Mind, no Soul. He hits like the front of a ship and he is not st
 
 - **Forget-me-nots.** Sends the party to Forget-Me-Not Island for FourthEye's refining, on a chart; a few sessions later tells them the flowers are gone and asks them to watch for a new source (`places/forget-me-not-island.md`).
 
+## Not Yet Set
+
+- **Which tribes and nations the Guild raids**, and which ones raid back. *The Vessk are the obvious candidate if the table wants the privateer thread to cross Caine's search* (`factions-and-races/races-lizardkin.md`) — offered, not set
+- **The charter's terms** — what may be taken, from whom, where a prize is declared, and who in the Regency signs the licence
+- **The Guild's other captains**, and whether any of them want Harlock's seat
+
 ## Related Documents
+
+- `characters/amelia.md` — his first mate
 
 - `places/vultures-nest.md` — the Compact, the Opening Scene, the Arcadia and her hold
 - `bestiary/ocellus.md` — what he is actually carrying, and does not know the purpose of
