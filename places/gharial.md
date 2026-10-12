@@ -12,6 +12,8 @@
 
 **The Muirn live here**, the smaller, southern of the two Lizardkin tribes. **They are shamanic**, with a culture they have been fostering for longer than anyone outside counts, and **cursegiving came out of it** (`factions-and-races/races-lizardkin.md`, The Muirn). *The Vessk in the north are the ones with the army. The Muirn are the ones with the technique.*
 
+**They hunt boats that come too close, and the Nest's privateers hunt theirs** (`factions-and-races/the-pirate-guild.md`, The Muirn). *No Guild ship has ever followed one home*, which is part of why Gharial is still not a name on the dock.
+
 ## The Family
 
 **One family here holds the technique**, and it is hiding the line: keeping it secret, keeping it from the Shunka, and waiting for the curse to finish its work so the Vessk can take the ground the first war could not (`factions-and-races/races-lizardkin.md`, The family now).

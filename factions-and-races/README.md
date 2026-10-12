@@ -22,6 +22,7 @@ Beyond the sheet, what a race gives a character is where they're from, who compl
 | `factions-and-races/races-borrowers.md` | Subterranean. Read stone by feel, dig everything, fight only because the Stonecoils won't stop |
 | `factions-and-races/races-riverdogs.md` | **Not written.** Named and nothing else yet |
 | `factions-and-races/races-lizardkin.md` | Lizard-folk river people, deadly in water. Shunka history calls them the Tithebound |
+| `factions-and-races/races-rasha.md` | Cat-folk. Slender, balanced, and able to see by very little light. Amelia of the Arcadia |
 | `factions-and-races/races-sirens.md` | **Reserved — Ollie's.** Same race as her mermaids; `experimental/ollies-island.md` is the source. Not to be drafted by anyone else |
 | `factions-and-races/races-fairies.md` | **Reserved — Sophie's.** Nothing approved yet, name included. Not to be drafted by anyone else |
 
@@ -35,3 +36,4 @@ Beyond the sheet, what a race gives a character is where they're from, who compl
 | `factions-and-races/the-weavers.md` | Keep the Grid running, and keep repairing an extraction they know is wrong |
 | `factions-and-races/the-cellar-custodians.md` | The Waterworks guild. The city's first line against what comes up the channels |
 | `factions-and-races/demon-court.md` | Oni masks as rank and as fear instrument |
+| `factions-and-races/the-pirate-guild.md` | Vulture's Nest privateers under Regency licence. Cedric's commissions, Isabella's prize court, and the Muirn |

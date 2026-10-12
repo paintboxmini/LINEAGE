@@ -37,9 +37,7 @@ He'll tell you loyalty is a transaction and nothing more, and say it like he's s
 
 **Harlock heads the Pirate Guild in this part of the river web, and that is why he sits on the Compact.** The Guild is the Nest's privateers — **legally sanctioned, sailing under Regency licence.** Bartho holds the dock, Jonas holds the ledger, and **Harlock holds the ships that go out armed.** *His seat is the Guild's seat.*
 
-**The water around the Nest is crowded with other people's countries.** Tribes and nations on the islands and along the far banks, many of them rivals, none of them the Regency's. **Attacking, raiding and plundering them is legal work out of the Nest**, done under licence, logged, and taxed like any other cargo — the Compact takes its percentage of every prize (`places/vultures-nest.md`, The Tideward Compact).
-
-**So it is a trade, and a respectable one by the Nest's measure.** A privateer captain is a man of standing on the dock. A crew signs articles, shares out a prize by rule, and comes home with money in a port that knows how to spend it. *It is fast ships, boarding actions, rivals with their own captains, and a cargo hold that is full on the way home* — **and that is the door to pirate adventures, if the party wants one.** It is offered, never pushed.
+**The Guild itself — the licence through Cedric, Isabella's prize court, and the standing feud with the Muirn — is `factions-and-races/the-pirate-guild.md`.** Attacking, raiding and plundering the Nest's rivals is legal work under it, and the Compact takes its percentage of every prize. *It is the door to pirate adventures, if the party wants one*, and the captain to go through it with, if not Harlock, is Captain Drake (`characters/drake.md`).
 
 **Which is also why the Ocellus crates matter.** Everything the Guild takes is on paper. **The crates are not** — they are Harlock's private arrangement, outside the licence (`places/vultures-nest.md`, The Arcadia's hold). *A Regency ledger noting a privateer's prizes is routine. The same ledger noting a living crate is the end of him.* That is what makes the count in session one bite.
 
@@ -102,14 +100,12 @@ High Body, real Mind, no Soul. He hits like the front of a ship and he is not st
 
 ## Not Yet Set
 
-- **Which tribes and nations the Guild raids**, and which ones raid back. *The Vessk are the obvious candidate if the table wants the privateer thread to cross Caine's search* (`factions-and-races/races-lizardkin.md`) — offered, not set
-- **The charter's terms** — what may be taken, from whom, where a prize is declared, and who in the Regency signs the licence
-- **The Guild's other captains**, and whether any of them want Harlock's seat
+- **Whether anybody wants his seat** at the head of the Guild (`factions-and-races/the-pirate-guild.md`, Open)
 
 ## Related Documents
 
 - `characters/amelia.md` — his first mate
-
+- `factions-and-races/the-pirate-guild.md` — the Guild
 - `places/vultures-nest.md` — the Compact, the Opening Scene, the Arcadia and her hold
 - `bestiary/ocellus.md` — what he is actually carrying, and does not know the purpose of
 - `characters/erubeth.md` — the man working up the chain Harlock is a link in
