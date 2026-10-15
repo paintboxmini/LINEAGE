@@ -9,7 +9,8 @@ it is spent are on his sheet under Seeds (`campaign/chris.md`), not on the
 card, the same arrangement Kevin's rounds and drinks use. The card says the
 part that happens at the table; the sheet holds the part that is his.
 
-His deck is **4 Blue / 3 Red / 2 Green** (Mind 4 / Body 3 / Soul 2), so one
+His stats are **Mind 4 / Soul 3 / Body 2**, so the heuristic draft is
+**4 Blue / 3 Green / 2 Red** — one
 signature per colour and six more from the Oracle draft at the table
 (`rules/character-creation.md`, Starting Deck).
 

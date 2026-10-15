@@ -32,7 +32,7 @@ Range: Melee
 
 He has a Passive for solving things and a Passive for cutting things.
 
-**Green since 2026-10-15** *(Drew)*, from Red and Body, to match his colours; everything else on it is unchanged. **What it costs: Soul 2 + d6 is 5.5 a hit, where Body 3 + d6 was 6.5** — a point down, and now a point *under* AMALGAMOUS FORM's Mind 4 + d4 (6.5). *It used to hit harder because it did less. Now it is the narrower Passive and the softer one, and its case is the colour, not the damage.* **If that wants restoring, the die is the lever**: Soul 2 + d8 is 6.5 again, the same Melee-only step MEASURE took when it went Red (`campaign/chris.md`, Cards).
+**Green since 2026-10-15** *(Drew)*, from Red and Body, to match his colours; everything else on it is unchanged. **With Chris at Soul 3** (`campaign/chris.md`, Stats), Soul 3 + d6 is **6.5 a hit — exactly what it was as Red on Body 3**, and level with AMALGAMOUS FORM's Mind 4 + d4. *It still hits as hard as before; it just hits off the stat he actually has.*
 
 **The Applies When is a real gate even though it fires often**, the same way STRONGJAW's does. A blade needs something to cut. Against an Object it is illegal, against stone it is illegal, and against anything with no body to open it is illegal — which is exactly when a player reaches for the other Passive instead, and that reach is the point.
 

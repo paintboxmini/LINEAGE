@@ -90,17 +90,33 @@ Story beats center on keeping the mind link off. It's not a switch he holds down
 
 ## Stats
 
-**Mind 4 / Body 3 / Soul 2 — HP 18**
+**Mind 4 / Soul 3 / Body 2 — HP 15** *(Chris's choice, recorded 2026-10-15)*
 
 | Stat | Value | Drives |
 |------|-------|--------|
 | Mind | 4 | Blue card damage; hand size 4 |
-| Body | 3 | Red card damage; HP weighted 4× |
-| Soul | 2 | Green card damage; Initiative 1d6 + 2 |
+| Soul | 3 | Green card damage; Initiative 1d6 + 3 |
+| Body | 2 | Red card damage; HP weighted 4× |
 
-Nine total, which is exactly the starting deck size, so his draft comes out **4 Blue / 3 Red / 2 Green** (`rules/character-creation.md`).
+Nine total, which is exactly the starting deck size; the colour heuristic would put his draft at **4 Blue / 3 Green / 2 Red** (`rules/character-creation.md`). His actual deck is 3 / 3 / 3 (Deck, below).
 
-*Changed from Mind 5 / Body 2 / Soul 2. Body 3 was what made MIMETIC BLADE a real attack instead of a gesture, and it cost him a card of hand size to get there. MIMETIC BLADE has been Green since 2026-10-15 (`campaign/passives.md`), so Body 3 now buys his Red cards and his HP.*
+### What the stats moved
+
+*This file used to read Mind 4 / Body 3 / Soul 2, HP 18, and much of the reasoning below was written against that line. Where it matters, here is the new arithmetic — expected damage a hit:*
+
+| | Was | Now |
+|---|---|---|
+| **HP** | 18 | **15** — the thinnest at the table |
+| **Initiative** | 1d6 + 2 | **1d6 + 3** |
+| **MEASURE** (Red, Body + d8) | 7.0 | **6.5** |
+| **SEED / SHARD** (Green, Soul + d6) | 5.5 | **6.5** |
+| **MIMETIC BLADE** (Green since 2026-10-15, Soul + d6) | 6.5 as Red | **6.5** — the recolour and the stat change land it where it was |
+| **KILLSWITCH**, **AMALGAMOUS FORM** (Mind + d4) | 6.5 | 6.5 |
+| **His drafted Reds** (SHARPEN, UNBROKEN) | | **a point down** |
+| **His drafted Greens** (MEND, FLOW) | | **a point up** |
+| **A seed or shard's cap** (his maximum HP) | 18 | **15** |
+
+**So every signature and both Passives now sit at 6.5.** *His kit is level across the colours, and the cost is three HP off a body that was already the smallest at the table.* Where a paragraph below says Soul is his weakest stat, or that Blue is four of his nine cards, read it as history: **Body is now his weakest stat**, and his deck runs 3 / 3 / 3.
 
 ## The Fantasy — Blade Singer
 
@@ -337,7 +353,7 @@ Three customs, one per colour. **They have landed: `cards/chris.md` is the card,
 
 **Its condition is Cadence** *(2026-10-05)* — the last card he revealed, attacking or defending, against this one's colour (`rules/card-glossary.md`, Cadence). *Before that it read "the card you played last turn", which left out his blocks and was broken by a turn spent moving; Cadence counts every card he shows and nothing else.*
 
-**The swap is damage-neutral by construction.** Blue put it on Mind 4 with a d6, which is 7.0 expected. Red puts it on Body 3, and Melee-only earns the die step that pays the difference back: Body 3 + d8 is 7.0 again. That is the standard trade the whole corpus makes, and Red Melee averages d7.00 across the core pool, so a d8 sits at the top of its band rather than outside it (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
+**The swap is damage-neutral by construction.** Blue put it on Mind 4 with a d6, which is 7.0 expected. Red puts it on Body 3, and Melee-only earns the die step that pays the difference back: Body 3 + d8 is 7.0 again. *Since 2026-10-15 he is Body 2, so MEASURE is 6.5 — level with the rest of his kit rather than above it (What the stats moved, above).* That is the standard trade the whole corpus makes, and Red Melee averages d7.00 across the core pool, so a d8 sits at the top of its band rather than outside it (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
 
 **What he actually pays is the Range, and it is a real price on this card.** A defender's card has to satisfy its own Range as though they were attacking (`rules/combat.md`, Attack Resolution), so a Melee card cannot block at all unless both combatants are Frontline. The half that reads the *attacker* now only exists when he is already in the scrum — which is where a blade singer should have to stand to be reading anybody.
 
@@ -351,7 +367,7 @@ Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**SEED.** A piece of himself left somewhere to grow. Green because it is patience, and because Soul is the stat he has least of — the card he can least afford to lean on, which is the right home for a payoff that arrives late.
+**SEED.** A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
 
 ```
 SEED
@@ -461,11 +477,11 @@ Range: Both
 >
 > **Harvesting.** While you are in the **same position as the shard**, you may take it back as a **free action**: the shard is gone, the card goes to your discard pile, and **your next attack deals bonus damage equal to the shard's HP.**
 >
-> **The bonus is spent by that attack, whatever happens.** It lands with the hit. **A loss or a miss consumes it** with nothing to show for it. Blocking neither uses it nor spends it — it waits for an attack of yours.
+> **The bonus is spent by the next card you play, attacking or blocking** *(Drew, 2026-10-15)*. **It adds its damage only to an attack of yours that lands.** A loss, a miss or a block uses it up with nothing to show for it.
 
 **The difference from SEED is the HP he paid.** A seed gives back what he put in; **a shard does not** — the 3 HP is gone, and what comes back is an edge.
 
-**Worth knowing before the table tests it: at the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is, and wasted at full HP; **a damage bonus is never wasted**, and a shard left five turns is up to +18 on one swing (his maximum HP). *It is still a single attack that a loss throws away, and everything he banks is standing where an enemy can hit it.* **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
+**Worth knowing before the table tests it: at the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is, and wasted at full HP; **a damage bonus is never wasted**, and a shard left four turns is up to +15 on one swing (his maximum HP). **What holds it back is the block rule**: the next card he shows spends it, so carrying a shard means choosing, every time somebody swings at him, between blocking and losing it or taking the hit undefended to keep it. *It is still a single attack that a loss throws away, and everything he banks is standing where an enemy can hit it.* **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
 
 ## Held Back — FOLLOW THROUGH
 
