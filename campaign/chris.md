@@ -477,11 +477,11 @@ Range: Both
 >
 > **Harvesting.** While you are in the **same position as the shard**, you may take it back as a **free action**: the shard is gone, the card goes to your discard pile, and **your next attack deals bonus damage equal to the shard's HP.**
 >
-> **The bonus is spent by the next card you play, attacking or blocking** *(Drew, 2026-10-15)*. **It adds its damage only to an attack of yours that lands.** A loss, a miss or a block uses it up with nothing to show for it.
+> **The bonus is spent by your next attack, whatever happens** *(Drew, 2026-10-15)*. It lands with the hit. **If that attack is blocked or misses, the bonus is gone** with nothing to show for it. Your own blocks do not touch it — it waits for your next attack.
 
 **The difference from SEED is the HP he paid.** A seed gives back what he put in; **a shard does not** — the 3 HP is gone, and what comes back is an edge.
 
-**Worth knowing before the table tests it: at the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is, and wasted at full HP; **a damage bonus is never wasted**, and a shard left four turns is up to +15 on one swing (his maximum HP). **What holds it back is the block rule**: the next card he shows spends it, so carrying a shard means choosing, every time somebody swings at him, between blocking and losing it or taking the hit undefended to keep it. *It is still a single attack that a loss throws away, and everything he banks is standing where an enemy can hit it.* **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
+**Worth knowing before the table tests it: at the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is, and wasted at full HP; **a damage bonus is never wasted**, and a shard left four turns is up to +15 on one swing (his maximum HP). **What holds it back is that one block throws it away**: the whole bank rides on a single attack, and a defender who wins the reveal takes all of it off the table. *It is still a single attack that a loss throws away, and everything he banks is standing where an enemy can hit it.* **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
 
 ## Held Back — FOLLOW THROUGH
 
