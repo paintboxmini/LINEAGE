@@ -49,6 +49,8 @@
 
 *Even across all three, the way she runs a ship: nothing neglected, nothing favoured. All core cards — her signature is the trait.* **Blue is the navigator** reading the fight like a chart; **Red is a deck that does not move under her**; **Green is the nerve to give an order once.**
 
+**Passive — CATCH THE LIGHT**, the Rasha night eyes (`factions-and-races/races-rasha.md`).
+
 **Skills — Intimidation +2, Sailing +3.** *Sailing is one above the +2 a player starts with: a life spent on it.* Intimidation is the voice that only has to say a thing once.
 
 ### Trait — All Hands
@@ -76,7 +78,6 @@
 - **The Rasha** — who they are and where they are from
 - **Age, voice, and how long she has sailed with Harlock**
 - **Whether she knows about the crates**, and what she thinks (The Crates, above)
-- **CATCH THE LIGHT** — whether the Rasha Passive is hers (`factions-and-races/races-rasha.md`)
 
 ## Related Documents
 

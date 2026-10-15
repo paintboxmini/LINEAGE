@@ -14,9 +14,9 @@
 
 **A Rasha on a ship is unremarkable at the Nest.** Balance and night eyes make good sailors, and the docks have seen enough of them to stop looking. *Away from the water that is not set* — whether a Rasha in a farming town is a familiar face or a stranger is open.
 
-## Passive — CATCH THE LIGHT *(proposal)*
+## Passive — CATCH THE LIGHT
 
-**Offered, not set.** The night eyes, written the way ADAPTIVE CAMOUFLAGE writes Glasskin skin (`factions-and-races/races-glasskin.md`).
+**Set by Drew, 2026-10-15.** The night eyes, written the way ADAPTIVE CAMOUFLAGE writes Glasskin skin (`factions-and-races/races-glasskin.md`).
 
 **CATCH THE LIGHT**
 BLUE — MIND
@@ -32,7 +32,6 @@ Range: Both
 - **Where they come from** — a homeland, or a people already scattered
 - **What they call themselves**, and whether *Rasha* is their word or the continent's
 - **Culture, customs, and what a room assumes about them** away from the docks
-- **Whether CATCH THE LIGHT is the Passive** (above)
 
 ## Related Documents
 

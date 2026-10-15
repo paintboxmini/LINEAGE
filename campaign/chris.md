@@ -100,7 +100,7 @@ Story beats center on keeping the mind link off. It's not a switch he holds down
 
 Nine total, which is exactly the starting deck size, so his draft comes out **4 Blue / 3 Red / 2 Green** (`rules/character-creation.md`).
 
-*Changed from Mind 5 / Body 2 / Soul 2. Body 3 is what makes MIMETIC BLADE a real attack instead of a gesture, and it costs him a card of hand size to get there.*
+*Changed from Mind 5 / Body 2 / Soul 2. Body 3 was what made MIMETIC BLADE a real attack instead of a gesture, and it cost him a card of hand size to get there. MIMETIC BLADE has been Green since 2026-10-15 (`campaign/passives.md`), so Body 3 now buys his Red cards and his HP.*
 
 ## The Fantasy — Blade Singer
 
@@ -297,7 +297,7 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 ## Passives
 
 - **AMALGAMOUS FORM** — `campaign/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
-- **MIMETIC BLADE** — `campaign/passives.md`. His arm as a sword; Red, Melee, d6. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at, and it hits harder because it does less.
+- **MIMETIC BLADE** — `campaign/passives.md`. His arm as a sword; **Green** (Soul), Melee, d6 — Red until 2026-10-15. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at.
 
 ## Deck
 
@@ -440,6 +440,32 @@ Range: Ranged
 **So the rate is the lever, not the cap.** If it plays hot at the table, take it to 2 a turn before touching anything else; the cap only bites after five growths and most fights end first.
 
 **The line it is built for.** Plant at the Frontline, move to the Backline, change stance where there is room to, come back and take it. That is three turns of not attacking, and the seed is what pays for them.
+
+## SHARD — the damage seed
+
+*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing. **The name is a placeholder** — rename freely.*
+
+```
+SHARD
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Plant a shard.
+Defense Effect: Cadence: plant a shard.
+Range: Both
+"What he leaves behind is sharper when he comes back for it."
+```
+
+**It works exactly like a seed** (Seeds, above) **until it is harvested:**
+
+> **Planting, growing, afterwards** — as a seed. Pay **3 HP**; a shard with **3 HP** appears at your position as an **Object** (`rules/combat.md`, Objects), tracked by the SHARD card face up in front of you. It gains **3 HP** at the start of each of your turns, to a maximum of your own maximum HP, and not on a turn you begin Collapsed. It can be attacked. It stays standing when the fight ends.
+>
+> **Harvesting.** While you are in the **same position as the shard**, you may take it back as a **free action**: the shard is gone, the card goes to your discard pile, and **your next attack deals bonus damage equal to the shard's HP.**
+>
+> **The bonus is spent by that attack, whatever happens.** It lands with the hit. **A loss or a miss consumes it** with nothing to show for it. Blocking neither uses it nor spends it — it waits for an attack of yours.
+
+**The difference from SEED is the HP he paid.** A seed gives back what he put in; **a shard does not** — the 3 HP is gone, and what comes back is an edge.
+
+**Worth knowing before the table tests it: at the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is, and wasted at full HP; **a damage bonus is never wasted**, and a shard left five turns is up to +18 on one swing (his maximum HP). *It is still a single attack that a loss throws away, and everything he banks is standing where an enemy can hit it.* **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
 
 ## Held Back — FOLLOW THROUGH
 
@@ -596,6 +622,7 @@ Range: Melee
 
 ## Not Yet Set
 
+- **Where SHARD goes** — his starting nine and his advancement deck's three customs are both full (SHARD, above)
 - **Assimilation's extra Skill slots** — when each unlocks, and how many in all (Assimilation, above)
 
 - ~~**His father's name**~~ — *Rynmori Raines (Chris, 2026-10-08).* **What actually happened to him** is still open

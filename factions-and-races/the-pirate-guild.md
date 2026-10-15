@@ -24,6 +24,8 @@
 
 **A capture is not a prize until a court says so.** **Lady Isabella, the Panther**, Supreme Magistrate, presides over the Temple of Justice (`world/the-regency.md`; `places/capital/capital.md`, Temple of Justice), and **prize cases are hers.**
 
+**The prize courts sit in Vulture's Nest** *(Drew, 2026-10-15)*. Different people run them, **and every one is under Isabella's jurisdiction** — a capture is condemned where it lands, not eight days away in the capital. *Who sits a given bench is worth naming once the party is standing in front of one.*
+
 1. **Take the ship and bring it in.** Crew, cargo and hull, to port.
 2. **Do not open the hold.** Breaking into cargo before the court has ruled is the oldest way to lose a prize — *the court wants to see what was taken, not what is left.*
 3. **The court condemns it.** It hears whether the capture fell inside the commission. If it did, the prize is **condemned** — declared lawfully taken — and sold.
@@ -43,7 +45,7 @@
 ## Open
 
 - **The other tribes and nations** the commissions name, and which raid the Nest back
-- **Where the prize court sits.** The Temple of Justice is eight days away in the capital. *Proposal: a prize bench at the Nest under Isabella's authority, so a capture is condemned where it lands* — and whoever sits it is worth naming once the party is in front of them
+- **Who runs the Nest's prize courts**, and how many there are
 - **The articles** — how shares are counted, and who gets what
 - **How the Guild chooses its head**, and whether anyone wants Harlock's seat
 

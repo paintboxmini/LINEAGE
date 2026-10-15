@@ -20,17 +20,19 @@ Liquid metal, reshaped on demand — a blade up close, a longer reach at range, 
 ## MIMETIC BLADE — Chris
 
 **MIMETIC BLADE**
-RED — BODY
-Attack: Body + d6
+GREEN — SOUL
+Attack: Soul + d6
 Applies When: A cutting edge is the answer — something in reach with a body to open. Not against what a blade does nothing to: stone, an Object, a swarm, anything with no shape a cut would matter to.
 Range: Melee
 *"There is no draw and no sheath. There is only whether the arm is a sword yet."*
 
 **His arm, as a sword.** Not a copy of anyone's weapon — the metal taking the one form he has actually perfected. *Mimetic* is the material imitating a blade, not him imitating a swordsman.
 
-**Which is the whole distinction from AMALGAMOUS FORM**, and it's improvisation against mastery. AMALGAMOUS FORM is everything the metal can do: any shape, either range, a thrown piece, a wall that costs him HP. Broad, Blue, Mind, d4 — a clever answer to an unusual problem. MIMETIC BLADE is the one thing he is *good* at. Narrow, Red, Body, Melee, d6 — no thinking involved, because the thinking finished years ago.
+**Which is the whole distinction from AMALGAMOUS FORM**, and it's improvisation against mastery. AMALGAMOUS FORM is everything the metal can do: any shape, either range, a thrown piece, a wall that costs him HP. Broad, Blue, Mind, d4 — a clever answer to an unusual problem. MIMETIC BLADE is the one thing he is *good* at. Narrow, Green, Soul, Melee, d6 — no thinking involved, because the thinking finished years ago.
 
-He has a Passive for solving things and a Passive for cutting things, and the second one hits harder precisely because it does less.
+He has a Passive for solving things and a Passive for cutting things.
+
+**Green since 2026-10-15** *(Drew)*, from Red and Body, to match his colours; everything else on it is unchanged. **What it costs: Soul 2 + d6 is 5.5 a hit, where Body 3 + d6 was 6.5** — a point down, and now a point *under* AMALGAMOUS FORM's Mind 4 + d4 (6.5). *It used to hit harder because it did less. Now it is the narrower Passive and the softer one, and its case is the colour, not the damage.* **If that wants restoring, the die is the lever**: Soul 2 + d8 is 6.5 again, the same Melee-only step MEASURE took when it went Red (`campaign/chris.md`, Cards).
 
 **The Applies When is a real gate even though it fires often**, the same way STRONGJAW's does. A blade needs something to cut. Against an Object it is illegal, against stone it is illegal, and against anything with no body to open it is illegal — which is exactly when a player reaches for the other Passive instead, and that reach is the point.
 
