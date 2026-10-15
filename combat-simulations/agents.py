@@ -877,6 +877,13 @@ class KitAI(SimpleAI):
         # of a bank over a tick is that it waits (`campaign/chris.md`,
         # Seeds). So take it when the healing would not be wasted.
         banked = self._my_seed(me)
+        if banked and self._my_seed_is_shard(me):
+            # A shard pays out on one attack, so it is worth taking back
+            # once it has grown past a hit's worth, and never while a
+            # bonus is already waiting to be spent.
+            if not me.shard_bonus and banked >= 9:
+                return ('harvest',)
+            banked = 0
         if banked:
             missing = me.max_hp - me.hp
             if missing >= banked or (hurt and missing >= banked * 0.6):
@@ -918,6 +925,12 @@ class KitAI(SimpleAI):
                      if o.is_object and o.is_seed and o.summoner is me
                      and o.position == me.position and o.alive()), None)
         return seed.hp if seed is not None else 0
+
+    def _my_seed_is_shard(self, me):
+        import engine
+        return any(o.is_object and o.is_seed and o.is_shard and o.summoner is me
+                   and o.position == me.position and o.alive()
+                   for o in engine.table())
 
     def _best_round(self, me, rounds=None):
         import effects as fx

@@ -317,7 +317,7 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, KILLSWITCH and **SHARD, which replaced SEED at the start of session one** *(Drew, 2026-10-15)*, all written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
 
 **Drafted at session 0, 2026-10-03:** SHARPEN and UNBROKEN (Red), DEFLECT and LAST RESORT (Blue), MEND and FLOW (Green) — all six from `cards/`, printed as written. **With the three signatures that is 3 Red / 3 Blue / 3 Green**, one Green over and one Blue under what his stats suggest. That is allowed and worth knowing rather than fixing: matching colour to stat is a heuristic, and the draft is exactly where it bends (`rules/cards.md`, Deck Building).
 
@@ -367,7 +367,7 @@ Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**SEED.** A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
+**SEED** — *replaced by SHARD at the start of session one (SHARD — the damage seed, below).* A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
 
 ```
 SEED
@@ -459,7 +459,7 @@ Range: Ranged
 
 ## SHARD — the damage seed
 
-*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.*
+*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.* **It replaces SEED in his starting deck from the start of session one.** *SEED's card and rules stay above, because SHARD is defined against them.*
 
 ```
 SHARD
@@ -644,7 +644,6 @@ Range: Melee
 
 ## Not Yet Set
 
-- **Where SHARD goes** — his starting nine and his advancement deck's three customs are both full (SHARD, above)
 - **Assimilation's extra Skill slots** — when each unlocks, and how many in all (Assimilation, above)
 
 - ~~**His father's name**~~ — *Rynmori Raines (Chris, 2026-10-08).* **What actually happened to him** is still open
@@ -656,7 +655,7 @@ Range: Melee
 - **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
 - Appearance, voice, backstory detail beyond the above
 - Price
-- **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
+- **MEASURE, SHARD, KILLSWITCH** — his starters, one per colour; SHARD replaced SEED at the start of session one. SHARD's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
 - **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open. **The favoured shape, if they go public, is a cover story: Code wanted for the disappearance of his father** *(Drew, 2026-09-28: "diabolical")*. It recruits the whole kingdom without saying what he is, the one man who could clear him is the man he is accused of, and **anybody who saw that night from outside saw a son flee while his father went down — dragged off by a friend.** *That last part lands on Kevin too* (`campaign/kevin.md`, And then it ended badly). Still a hook, not a decision

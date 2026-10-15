@@ -19,7 +19,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 
 | | |
 |---|---|
-| `campaign/chris.md` | Code Raines, a Silverling probe. Blade singer; the rift, the father, the moults, Magic Expression, Mimicry, and his three starters — MEASURE, SEED, KILLSWITCH |
+| `campaign/chris.md` | Code Raines, a Silverling probe. Blade singer; the rift, the father, the moults, Magic Expression, Mimicry, and his three starters — MEASURE, SHARD (in place of SEED from session one), KILLSWITCH |
 | `campaign/silverlings.md` | His people, the Silverlings — Chris's account — and the crossing that went wrong |
 | `campaign/pat.md` | Shunka. The Call, Wild Magic Summoning, Passives, Skills |
 | `campaign/pat-cards.md` | Pat's custom cards |

@@ -2576,6 +2576,26 @@ def _r_plant_seed(m):
     return [PlantSeed()]
 
 
+class PlaceShard(PlantSeed):
+    """`campaign/chris.md`, SHARD — the damage seed. A seed in every way
+    until it is taken back, when it pays its HP out as bonus damage on the
+    next attack instead of healing (`engine.harvest_seed`)."""
+
+    def apply(self, ctx):
+        from engine import table
+        before = set(id(o) for o in table())
+        super().apply(ctx)
+        for o in table():
+            if id(o) not in before and o.is_seed:
+                o.is_shard = True
+                o.name = o.name.replace("'s seed", "'s shard")
+
+
+@menu(r'^place a shard\.?$')
+def _r_place_shard(m):
+    return [PlaceShard()]
+
+
 @menu(r'^if the top card of your discard pile is a different colou?r than '
       r'this one, (.+?)\.?$')
 def _r_gated_on_discard(m):
