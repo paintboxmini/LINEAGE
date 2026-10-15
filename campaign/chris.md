@@ -459,29 +459,35 @@ Range: Ranged
 
 ## SHARD — the damage seed
 
-*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing. **The name is a placeholder** — rename freely.*
+*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.*
 
 ```
 SHARD
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Plant a shard.
-Defense Effect: Flow: plant a shard.
+Effect: Place a shard.
+Defense Effect: Flow: place a shard.
 Range: Both
-"What he leaves behind is sharper when he comes back for it."
+"What you leave behind is sharper when you come back for it."
 ```
 
-**It works exactly like a seed** (Seeds, above) **until it is harvested:**
+**A seed is planted; a shard is placed** *(Drew, 2026-10-15)* — a piece of edge set down, not something grown from. **The flavour line speaks to the player** — *you*, not *he*.
 
-> **Planting, growing, afterwards** — as a seed. Pay **3 HP**; a shard with **3 HP** appears at your position as an **Object** (`rules/combat.md`, Objects), tracked by the SHARD card face up in front of you. It gains **3 HP** at the start of each of your turns, to a maximum of your own maximum HP, and not on a turn you begin Collapsed. It can be attacked. It stays standing when the fight ends.
+**It works exactly like a seed** (Seeds, above) **until it is taken back:**
+
+> **Placing.** Pay **3 HP**. A shard with **3 HP** — the HP you paid — appears at your position. It is an **Object** (`rules/combat.md`, Objects): it takes no turn, never acts, and **can be attacked**. Leave the SHARD card face up in front of you to track it. One card, one shard.
 >
-> **Harvesting.** While you are in the **same position as the shard**, you may take it back as a **free action**: the shard is gone, the card goes to your discard pile, and **your next attack deals bonus damage equal to the shard's HP.**
+> **Growing.** At the start of each of your turns it gains **3 HP**, to a maximum of **your own maximum HP**. It does not grow on a turn you begin Collapsed.
 >
-> **The bonus is spent by your next attack, whatever happens** *(Drew, 2026-10-15)*. It lands with the hit. **If that attack is blocked or misses, the bonus is gone** with nothing to show for it. Your own blocks do not touch it — it waits for your next attack.
+> **Taking it back.** While you are in the **same position as the shard**, you may take it back as a **free action**: the shard is gone, the card goes to your discard pile, and **your next attack deals bonus damage equal to the shard's HP.**
+>
+> **The bonus is spent by your next attack, whatever happens** *(Drew, 2026-10-15)*. It lands with the hit. **If that attack is blocked or misses, the bonus is gone.** Your own blocks do not touch it — it waits for your next attack.
+>
+> **Afterwards.** A shard left standing when a fight ends is still there, and keeps growing at the start of each of your turns in the next one.
 
 **The difference from SEED is the HP he paid.** A seed gives back what he put in; **a shard does not** — the 3 HP is gone, and what comes back is an edge.
 
-**Worth knowing before the table tests it: at the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is, and wasted at full HP; **a damage bonus is never wasted**, and a shard left four turns is up to +15 on one swing (his maximum HP). **What holds it back is that one block throws it away**: the whole bank rides on a single attack, and a defender who wins the reveal takes all of it off the table. *It is still a single attack that a loss throws away, and everything he banks is standing where an enemy can hit it.* **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
+**At the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is and wasted at full HP; **a damage bonus is never wasted**, and a shard left four turns is up to +15 on one swing (his maximum HP). **What holds it back is that everything rides on one attack**: a defender who wins the reveal takes the whole bank off the table, and until then it is standing where an enemy can hit it. **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
 
 ## Held Back — FOLLOW THROUGH
 
