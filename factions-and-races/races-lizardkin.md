@@ -24,6 +24,8 @@ That proximity is the whole history. The Lizardkin island was small, the river's
 
 **The Vessk forced them into the war** *(Drew, 2026-10-01)*. When the invasion failed and the Vessk learned there was a shaman on Gharial who could reach past a lost battle, **they came to Gharial, attacked the Muirn and ransacked them, and threatened worse.** The northern tribe had the numbers and the grievance; the southern tribe had the one thing they wanted.
 
+**They hunt boats** *(Drew, 2026-10-12)*. **The Muirn take vessels that sail close to their territory**, and the privateers of Vulture's Nest return the favour — Muirn boats are lawful prizes under the Pirate Guild's commissions (`factions-and-races/the-pirate-guild.md`, The Muirn). *To the Nest they are the southern Lizardkin; the name Muirn and the island stay off the dock* (`places/gharial.md`).
+
 ## The Tithe
 
 Their religion, and a grounded one once put plainly: you take from the river, so you give back to the river, or eventually there's nothing left to take. Ritual payment — catch, or something dearer when the catch wasn't enough — kept that reciprocity honest.

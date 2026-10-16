@@ -56,7 +56,7 @@ Then: **the crash needs the lockdown** (the berth is short because the barge has
 
 **Skipped.** It cannot be skipped — it is the frame. It *can* be three sentences.
 
-**Leaves behind.** Their freight is still impounded. Nothing in the day fixes that.
+**Leaves behind.** They and the Merry Mint are still impounded. Nothing in the day fixes that.
 
 ---
 
@@ -242,7 +242,7 @@ Then: **the crash needs the lockdown** (the berth is short because the barge has
 
 Very little.
 
-- **Their freight is still impounded.** Nothing in the day fixes it, and it is now behind a dockmaster having a much worse day than he started with.
+- **They and their boat are still impounded.** Nothing in the day fixes it, and it is now behind a dockmaster having a much worse day than he started with.
 - **The count resolved one way or another** — Jonas boarded, or he did not, or he boarded with company. *If the gap ran long and it is still pending at the end of the night, that is a good place to stop.*
 - **One thing did not resolve cleanly** (`rules/gm-guide.md`, Pacing Sessions).
 - **The Oracle ritual runs.** That is the mechanical heartbeat and it is not optional.

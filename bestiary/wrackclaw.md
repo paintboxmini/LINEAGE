@@ -2,7 +2,7 @@
 
 **Cards:** `cards/wrackclaw.md`
 
-*General field encounter along the Unheld Ocean's coastline — the shoreline south of the Roadhouse (`quests/washed-ashore.md`), and any other stretch of that same coast a GM wants to use one on. Not tied to a single beach.*
+*A riverbank creature first* *(Drew, 2026-10-10)* — *wherever a river deposits enough wrack to eat, including the dock at Vulture's Nest, where the session-one spill brings them up the stones (`places/vultures-nest.md`, Beat three and a half). **They turn up on the beaches of the Unheld only where a river comes down nearby**, which is why the shoreline south of the Roadhouse has them, working its riverbank and just past it (`places/unheld-shoreline.md`, `quests/washed-ashore.md`). Not tied to a single bank.*
 
 **Mind 1 / Body 1 / Soul 1 — HP 6**
 **Creature Threat Rating:** 3
@@ -21,15 +21,15 @@
 
 ## Description
 
-**Fist-sized, black-shelled, and numerous wherever the tideline deposits enough to eat.** *Black is the hide, not a warning* — they live in the wrack itself, in the band of dark rotting weed the tide leaves, and a black shell in black weed is nothing at all until it moves. **You do not see a Wrackclaw. You see the weed shift.**
+**Fist-sized, black-shelled, and numerous wherever a river bank collects enough to eat.** *Black is the hide, not a warning* — they live in the wrack itself, in the band of dark rotting weed and drift the water leaves along the bank, and a black shell in black weed is nothing at all until it moves. **You do not see a Wrackclaw. You see the weed shift.**
 
 **Spines stand out of the shell at every joint** — short, hard, angled back. They are not a weapon and the creature never uses them for anything. **They are why you cannot simply take hold of one and pull it off**, which is the only thing anybody ever wants to do to a Wrackclaw and the thing it is built to make expensive.
 
 **Two arms, like any crab. Three fingers on each claw.** *That is the part nobody notices from a distance and nobody forgets afterwards.* A normal claw is a hinge — two opposing fingers, one line of force, and a grip that can be levered apart by anything that finds the angle. **A three-fingered claw closes on itself from three sides. There is no angle.** *It does not have to be strong. It only has to not let go.*
 
-They don't distinguish between driftwood, dead fish, and anything else that's salt-wet and hasn't stopped moving yet — a party freshly washed ashore reads to a Wrackclaw exactly like the rest of the wrack line does.
+They don't distinguish between driftwood, dead fish, and anything else that's wet and hasn't stopped moving yet — a party freshly washed ashore, or standing on a dock edge, reads to a Wrackclaw exactly like the rest of the wrack line does.
 
-**They don't hunt so much as collect.** A Wrackclaw doesn't need to kill what it's pinched — it needs to drag it back to the water, where the rest of the swarm is waiting. Losing a fight against Wrackclaws rarely means dying; it means getting pulled toward the surf one claw-length at a time until someone breaks the grip.
+**They don't hunt so much as collect.** A Wrackclaw doesn't need to kill what it's pinched — it needs to drag it back to the water, where the rest of the swarm is waiting. Losing a fight against Wrackclaws rarely means dying; it means getting pulled toward the water one claw-length at a time until someone breaks the grip.
 
 *And the grip is the whole animal.* Everything on it serves holding on and nothing serves killing: three fingers so it cannot be levered, spines so it cannot be gripped back, a shell the colour of the thing it is lying in so the first you know of it is the weight. **A creature this weak is only a threat because it will not come off** — and because there are a great many of them, all pulling the same way.
 
@@ -57,13 +57,13 @@ They don't distinguish between driftwood, dead fish, and anything else that's sa
 
 **So the count clears when the target leaves the Frontline**, and that is the whole rule. *One sentence, no subsystem, no tokens.* **A party that works out they can pull somebody back off the line has solved the card**, and they should get to — a creature this simple should have exactly one answer and it should be findable in the first fight.
 
-*Do not build machinery for any of this. It is fantasy tracking, and the rules are serving the narrative rather than the other way round — which is the only reason a two-position system can express a beach at all.*
+*Do not build machinery for any of this. It is fantasy tracking, and the rules are serving the narrative rather than the other way round — which is the only reason a two-position system can express a riverbank at all.*
 
 ---
 
 ## Encounter Setup
 
-Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't reposition tactically, they just close and grab. *Three is the measured first-fight number. **Four is about five times as lethal and five is not a first fight at all** (Open — the 2026-09-21 review, below).* The first real threat the party meets after washing ashore, before the trail is even found.
+Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't reposition tactically, they just close and grab. *Three is the measured first-fight number. **Four is about five times as lethal and five is not a first fight at all** (Open — the 2026-09-21 review, below).* On the dock at the Nest they are the session-one fight; on the Unheld shoreline they are the first real threat the party meets after washing ashore, before the trail is even found.
 
 *Teaching moment: Rooted shows up here, on a card a brand-new party has never seen work against them before — this is where "cannot voluntarily change position" starts meaning something at the table rather than on a card nobody had reason to read closely.*
 
@@ -87,7 +87,7 @@ Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't 
 
 **They don't fight to the death and they don't flee at a threshold either** — a Wrackclaw that's taken real damage simply lets go and scuttles back into the wrack line on its own next turn, mid-fight, without needing an HP trigger. It isn't defeat. It's this specific piece of driftwood turning out not to be worth the effort.
 
-**A parked Wrackclaw encounter is also the honest reason a party has nothing on them yet.** If a GM wants a reason the party's clothes are salt-stiff and their weapons already look older than they should, a swarm that's already had a go at anything loose in their packs before the party woke up is a clean, wordless answer — no dialogue needed, just a beach that's already been picked over once by the time anyone's conscious.
+**A parked Wrackclaw encounter is also the honest reason a party has nothing on them yet.** If a GM wants a reason the party's clothes are salt-stiff and their weapons already look older than they should, a swarm that's already had a go at anything loose in their packs before the party woke up is a clean, wordless answer — no dialogue needed, just a shore that's already been picked over once by the time anyone's conscious.
 
 ---
 

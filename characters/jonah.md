@@ -42,7 +42,7 @@
 
 **Because everyone who ever said they wanted to help them sold them.** The man who promised their family an apprenticeship; the kind woman with the hot soup and the cart waiting round the corner. *Most people who claim to want to help end up selling the kids off to a warehouse or a sweep* (Drew, 2026-10-07). **A priest offering a home is the oldest version of that trick there is.**
 
-**So they test him**, and they will go on testing him. *He passes by doing the same thing every day for a long time.* **The way in is Kino** (`places/vultures-nest.md`, Key NPCs), who decides what the Scarves do — and who does not sleep in the Ribs, and so has his own reasons to think hard about a door with no lock.
+**So they test him**, and they will go on testing him. *He passes by doing the same thing every day for a long time.* **The way in is Kino** (`places/vultures-nest.md`, The Red Scarves, Kino and Bean), who decides what the Scarves do — and who does not sleep in the Ribs, and so has his own reasons to think hard about a door with no lock.
 
 ## Not Yet Set
 

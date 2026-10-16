@@ -1137,13 +1137,13 @@ GATES = [
     # card played to defend was played on someone else's turn — see
     # `engine.Combatant.last_color`. So the rotation has to be kept up
     # rather than merely started.
-    # Cadence (`rules/card-glossary.md`, 2026-10-05): the last card you
+    # Flow (`rules/card-glossary.md`, 2026-10-05): the last card you
     # revealed, attacking or defending, is a different colour from this one.
-    (re.compile(r'^cadence:\s*', re.I),
+    (re.compile(r'^flow:\s*', re.I),
      lambda ctx: (getattr(ctx.actor, 'flow_prev', None) is not None
                   and ctx.card is not None
                   and ctx.actor.flow_prev != ctx.card.color),
-     'cadence'),
+     'flow'),
     (re.compile(r'^if the card you played last turn was a different '
                 r'colou?r than this one,\s*', re.I),
      lambda ctx: (getattr(ctx.actor, 'last_color', None) is not None
@@ -2574,6 +2574,26 @@ class PlantSeed(Op):
 @menu(r'^plant a seed\.?$')
 def _r_plant_seed(m):
     return [PlantSeed()]
+
+
+class PlaceShard(PlantSeed):
+    """`campaign/chris.md`, SHARD — the damage seed. A seed in every way
+    until it is taken back, when it pays its HP out as bonus damage on the
+    next attack instead of healing (`engine.harvest_seed`)."""
+
+    def apply(self, ctx):
+        from engine import table
+        before = set(id(o) for o in table())
+        super().apply(ctx)
+        for o in table():
+            if id(o) not in before and o.is_seed:
+                o.is_shard = True
+                o.name = o.name.replace("'s seed", "'s shard")
+
+
+@menu(r'^place a shard\.?$')
+def _r_place_shard(m):
+    return [PlaceShard()]
 
 
 @menu(r'^if the top card of your discard pile is a different colou?r than '

@@ -272,7 +272,7 @@ def _bonus(text, actor, opponent, card):
 
 
 def test_flow_counts_every_reveal():
-    """Cadence (`rules/card-glossary.md`, 2026-10-05): the last card you
+    """Flow (`rules/card-glossary.md`, 2026-10-05): the last card you
     revealed, attacking *or* defending, against this card's colour."""
     print('\nFlow reads the last card you revealed, a block included')
     import engine
@@ -285,9 +285,9 @@ def test_flow_counts_every_reveal():
                           rng=random.Random(0), log=QUIET)
     check('a block rolls the last-revealed colour forward',
           a.last_reveal_color == 'RED', a.last_reveal_color)
-    measure = pool['MEASURE']           # Red, so Cadence needs a non-Red prior
+    measure = pool['MEASURE']           # Red, so Flow needs a non-Red prior
     a.flow_prev = 'BLUE'
-    check('Cadence pays when the last card shown was another colour',
+    check('Flow pays when the last card shown was another colour',
           _bonus(measure.effect, a, b, measure) == 2)
     a.flow_prev = 'RED'
     check('and not when it was the same colour',
@@ -1218,6 +1218,56 @@ def test_seed_is_placed():
     check('and it is spent — a seed grows once', a.deadly == 2, a.deadly)
 
 
+def test_shard():
+    print('\nSHARD is a seed taken back as damage (campaign/chris.md)')
+    import engine
+    pool = cardlib.by_name(cardlib.core_pool())
+    a, b = duo()
+    a.hp = b.hp = 400
+    hp0 = a.hp
+    run('Place a shard.', a, b)
+    shard = next(o for o in engine.table() if o.is_object and o.summoner is a)
+    check('placing one costs 3 HP', a.hp == hp0 - 3, a.hp)
+    check('and it is a shard, holding the 3', shard.is_shard and shard.hp == 3,
+          (shard.is_shard, shard.hp))
+    engine.grow_objects(a)
+    check('it grows like a seed', shard.hp == 6, shard.hp)
+    before = a.hp
+    got = engine.harvest_seed(a)
+    check('taking it back heals nothing', a.hp == before, a.hp)
+    check('and banks its HP as a bonus', a.shard_bonus == 6 and got == 6,
+          a.shard_bonus)
+
+    # Landed: STRIKE's floor plus the 6.
+    lows = []
+    for seed in range(30):
+        a.shard_bonus = 6
+        b.hp = 400
+        before = b.hp
+        engine.resolve_attack(a, b, pool['STRIKE'], None,
+                              rng=random.Random(seed), log=QUIET)
+        lows.append(before - b.hp)
+    check('an attack that lands carries it',
+          min(lows) >= a.body + 1 + 6, min(lows))
+    check('and spends it', a.shard_bonus == 0, a.shard_bonus)
+
+    # Blocked: lost, and the next attack does not get it.
+    a.shard_bonus = 6
+    b.evade = 5
+    engine.resolve_attack(a, b, pool['STRIKE'], None,
+                          rng=random.Random(0), log=QUIET)
+    check('an attack that misses still spends it', a.shard_bonus == 0,
+          a.shard_bonus)
+    b.evade = 0
+
+    # The holder's own block leaves it alone.
+    a.shard_bonus = 6
+    engine.resolve_attack(b, a, pool['STRIKE'], None,
+                          rng=random.Random(0), log=QUIET)
+    check('being attacked does not touch it', a.shard_bonus == 6,
+          a.shard_bonus)
+
+
 def test_defense_effects_silenced():
     print('\nUNNAME silences Defense Effects without stopping the defence')
     import engine
@@ -1783,6 +1833,7 @@ def test_wolf_traits():
 
 
 if __name__ == '__main__':
+    test_shard()
     test_compile()
     test_out_of_mind()
     test_weeping_veil()

@@ -54,13 +54,11 @@ The horror is administrative, and the thing that makes it unsolvable is not mali
 
 ## The Party's Position
 
-**They were not on the dock when it closed.** That is the whole design of their situation and it is worth being explicit about at the table: **the party can move freely and their boat cannot.**
-
-Their vessel is inside the cordon, with everything aboard it. So are the goods that brought at least one of them here in the first place (`campaign/session-1-convergence.md`).
+**They were on the dock when it closed, and they are impounded with everyone else** *(Drew, 2026-10-10)*. It is worth being explicit about at the table: **they can walk the town and they cannot leave the Nest**, and their boat — the Merry Mint, empty, no freight aboard — is inside the cordon (`campaign/session-1-convergence.md`). Their names are one shrug away from Jonas's ledger.
 
 **This gives them two live approaches from the first hour, and both are real:**
 
-1. **Get the boat out.** Steal it, bribe it out, float it off on a fast tide, talk somebody into signing for it. The party are the only people in this story with the freedom of movement to try.
+1. **Get the boat out.** Steal it, bribe it out, float it off on a fast tide, talk somebody into signing for it. *Leaving with it means slipping the lockdown themselves*, which is harder and louder than it sounds in a port where everyone is watching the same rope.
 2. **Solve the quarantine**, which gets everyone's property released, including theirs.
 
 **Do not steer them toward the second.** The first is a legitimate solution to their actual problem and a party that takes it has read the situation correctly. It is also the version where the dock stays shut behind them and they find out later what that cost, which is a perfectly good campaign.

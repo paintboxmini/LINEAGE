@@ -16,6 +16,16 @@ the Temples, the Marketplace, the Gilded Tusk, and the Citadel that stands at th
 the Waterworks
 a citywide utility layer running under the entire capital, the bazaar and tavern are a small, hidden pocket inside it, and the Demon Court that branches off into the deeper cave system that runs underneath the capital.
 
+## Horizontal Layout — The Three Rings
+
+Three concentric rings, walled off from each other, rather than one undifferentiated sprawl.
+
+**The Inner Precinct** — innermost ring, the Citadel at its center, where the Regency Council governs. Already the city's administrative core (`The Inner Precinct`, below) — four Halls, each standing under the political shadow of the council member who runs it.
+
+**The middle ring** — the Marketplace, the Commons, and the Temple District. Where most of the capital's population actually lives — the city's real center of gravity, even though it's neither the geographic nor the political center.
+
+**The outer ring** — farmland and rural communities, the city gates, and most of the Waterworks' surface entrances into the tunnel system beneath the capital. The quietest of the three, and the one people living in the middle ring rarely have reason to visit.
+
 ## Arrival — The Gate
 
 The road out of the Fog Basin climbs and the city wall rises ahead.
