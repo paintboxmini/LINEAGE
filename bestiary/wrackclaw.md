@@ -2,6 +2,8 @@
 
 **Cards:** `cards/wrackclaw.md`
 
+**Art:** `bestiary/images/wrackclaw-art-01.png` *(2026-10-16)*
+
 *A riverbank creature first* *(Drew, 2026-10-10)* — *wherever a river deposits enough wrack to eat, including the dock at Vulture's Nest, where the session-one spill brings them up the stones (`places/vultures-nest.md`, Beat three and a half). **They turn up on the beaches of the Unheld only where a river comes down nearby**, which is why the shoreline south of the Roadhouse has them, working its riverbank and just past it (`places/unheld-shoreline.md`, `quests/washed-ashore.md`). Not tied to a single bank.*
 
 **Mind 1 / Body 1 / Soul 1 — HP 6**
