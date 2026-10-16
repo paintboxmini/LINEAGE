@@ -10,7 +10,7 @@
 
 **The Riverdogs' culture is still theirs and still mostly unwritten** (`factions-and-races/races-riverdogs.md`). *An earlier draft of this file invented a sailing culture wholesale — rivermen with a use-name for this animal, a shared superstition, a practice of reading portents — past a guard that existed to prevent exactly that. All of it is gone.*
 
-**What Drew has set is below and it is not much: they swim, and they have an arrangement with this creature.** **Everything else about them stays unwritten on purpose** — *his note on it is that the name already tells him who they are, which is why the file is short rather than neglected.*
+**Drew wrote their baseline on 2026-10-16** — otterkin, burrows and raft communities, fishing, aquaculture and trade (`factions-and-races/races-riverdogs.md`). **Read that file for who they are; what this one adds is only the arrangement**, and anything about how they tell it is still theirs.
 
 ---
 
@@ -111,7 +111,7 @@
 
 ## Related Documents
 
-- `factions-and-races/races-riverdogs.md` — **read first.** The sailing culture is unwritten and this creature should not be given one
+- `factions-and-races/races-riverdogs.md` — **read first.** The Riverdogs, otterkin; don't add culture to them from this file
 - `world/geography-overview.md` — River system: the circuit, the tides, and the one place the web touches the Unheld
 - `places/unheld-shoreline.md` — the coral, and the flat light the mane contradicts
 - `places/the-coil.md` — what else came out of the coral-banked reaches, and which way it went

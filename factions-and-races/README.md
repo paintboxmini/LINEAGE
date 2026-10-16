@@ -20,7 +20,7 @@ Beyond the sheet, what a race gives a character is where they're from, who compl
 | `factions-and-races/races-shunka.md` | Dogkin. A warrior people carrying a Price nobody in the line agreed to pay. **STRONGJAW**, **HACKLES RISE** |
 | `factions-and-races/races-forest-people.md` | Turnroot Weald. Live under canopy year-round and navigate by habit, not maps |
 | `factions-and-races/races-borrowers.md` | Subterranean. Read stone by feel, dig everything, fight only because the Stonecoils won't stop |
-| `factions-and-races/races-riverdogs.md` | **Not written.** Named and nothing else yet |
+| `factions-and-races/races-riverdogs.md` | Otterkin. River swimmers who see through silt; burrows, rafts and trade, and proud with it. **RIVERBORN**, **WEBBED CLAWS** proposed |
 | `factions-and-races/races-lizardkin.md` | Lizard-folk river people, deadly in water. Shunka history calls them the Tithebound |
 | `factions-and-races/races-rasha.md` | Cat-folk. Slender, balanced, and able to see by very little light. Amelia of the Arcadia |
 | `factions-and-races/races-sirens.md` | **Reserved — Ollie's.** Same race as her mermaids; `experimental/ollies-island.md` is the source. Not to be drafted by anyone else |
