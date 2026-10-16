@@ -33,7 +33,13 @@
 
 **And the nomadic Riverdogs**, who belong to no city at all: **free-spirited, on the move, living off the water wherever it takes them.**
 
-**The Shunka know them** *(Drew, 2026-10-16)*. **Many Riverdogs have come to Shunka lands to barter.** *The Shunka island is not on any trade route* (`world/geography-overview.md`, River system) — **so the traders who reach it are the ones who do not follow routes: the nomads.** *That reading is a proposal; the familiarity is set.*
+**The Shunka know them** *(Drew, 2026-10-16)*. **Many nomadic Riverdogs have come to Shunka lands to barter.** *The Shunka island is not on any trade route* (`world/geography-overview.md`, River system), **and the traders who reach it are the ones who do not follow routes.**
+
+## Shared Ancestry — the Shunka
+
+**The Riverdogs and the Shunka were one people, a very long time ago** *(Drew, 2026-10-16)*. **Older than anything Shunka history holds** — before the war with the Lizardkin, before the curse, before the wild-magic line (`factions-and-races/races-shunka.md`). *Long enough ago that the two peoples now look, live and think nothing alike.*
+
+**The names are a coincidence.** *Riverdog* and the Shunka's dogkin are not an echo of that shared past — two peoples who once were one simply ended up with names that rhyme, which is the kind of thing the world finds funny without knowing why.
 
 ## Who They Are
 
@@ -73,4 +79,5 @@ Range: Melee
 
 - **Which cities they live in** beyond Vulture's Nest, and where the raft communities and outposts sit on the web. *They are a people of the river web's sailing culture, not necessarily the whole of it* (`world/geography-overview.md`, River system)
 - **What the Shunka trade them**, and what they bring
-- **Whether the name rhymes with the Shunka's for any reason**, or is a coincidence the world would find funny
+- **Whether either people knows they were once one** — a story, a scholar's guess, or nothing at all
+- **What split them**, and when
