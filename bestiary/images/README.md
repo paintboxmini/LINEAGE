@@ -4,7 +4,7 @@ Creature art, one file per piece, named for the creature it shows. Each one is r
 
 *GM side, like the rest of `bestiary/` — art that goes to players goes out printed, on a binder page or a card (`binder/README.md`).*
 
-**At the table they are position markers** *(Drew, 2026-10-16)*: a creature's art is printed at card size, sleeved, and set down at Frontline or Backline for each creature in the fight. **The recipe:** nine copies to a letter page at the card sheet's geometry — 60 × 84 mm, 3 × 3, 10 mm page margin (`printing/generate-cards.py`) — with the image cropped to fill the card. Built in chat like every other printed artifact (`printing/README.md`).
+**At the table they are position markers** *(Drew, 2026-10-16)*: a creature's art is printed at card size, sleeved, and set down at Frontline or Backline for each creature in the fight. **The recipe:** nine copies to a letter page at the card sheet's geometry — 60 × 84 mm, 3 × 3, 10 mm page margin (`printing/generate-cards.py`) — with the image cropped to fill the card. **Brightened for a home printer first** — the Wrackclaw art went from about 23% average brightness to about 42%, through a gamma lift — and **the wrack shifted from brown toward kelp green**, which touches only the warm, coloured pixels, so the near-grey crabs and water stay as they were (Drew, 2026-10-16). Built in chat like every other printed artifact (`printing/README.md`).
 
 ## Contents
 
