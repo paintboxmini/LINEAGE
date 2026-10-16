@@ -1,8 +1,8 @@
 # Riverdogs — the Otterkin
 
-**Otterkin.** *Riverdogs* and *otterkin* are the same people *(Drew, 2026-10-16)* — two names in use for one folk. *Which one they use for themselves is not set.*
+**Otterkin, and they call themselves Riverdogs** *(Drew, 2026-10-16)*. *Otterkin* is a description other people use; **Riverdogs** is their own name.
 
-*Baseline from Drew, 2026-10-16. Everything below that came from him is written as set; the two Passives are proposals and say so.*
+*Baseline from Drew, 2026-10-16.*
 
 ---
 
@@ -22,11 +22,18 @@
 
 - **They swim**, and well enough that deep water is not a barrier to them.
 - **They have an arrangement with the Deepmane** (`bestiary/deepmane.md`, The arrangement): scraps and bread over the side, and in exchange an enormous bright-maned animal stands up out of the river over the dangerous water. **Neither side finds this remarkable.**
-- **A Driftfire bloom forces them out of the water** (`bestiary/driftfire.md`). It burns on contact and it sits on a stretch for as long as the tide is slow, so the people most at home in deep water are the ones it puts on the bank. **The Deepmanes are down too — it kills them — so the danger marks stop at the same time.** *Their hardiness against poison does nothing here: a bloom has no toxin, only barbs.*
+- **A Driftfire bloom keeps them out of the water** (`bestiary/driftfire.md`). It burns on contact and it sits on a stretch for as long as the tide is slow. **It does not stop boating** — *during a bloom a Riverdog is on the bank or on the boat, never in the water.* **The Deepmanes are down too — it kills them — so the danger marks stop at the same time.** *Their hardiness against poison does nothing here: a bloom has no toxin, only barbs.*
+- **A bloom is downtime, and they use it** *(Drew, 2026-10-16)*: mending and readying nets, smoking meat and fish, the work that waits for a day off the water. **And more stories around the fire** — *a long bloom is a long run of evenings with nothing to do but talk.*
 
 ## How They Live
 
 **Riverbank burrows, coastal outposts, and floating raft communities**, living off **fishing, aquaculture and trade.** *A people who farm the water as well as fish it.*
+
+**No country and no government of their own** *(Drew, 2026-10-16)*. **Riverdogs are part of several cities** — Vulture's Nest among them (`places/vultures-nest.md`) — living in them as neighbours, not as a nation inside one.
+
+**And the nomadic Riverdogs**, who belong to no city at all: **free-spirited, on the move, living off the water wherever it takes them.**
+
+**The Shunka know them** *(Drew, 2026-10-16)*. **Many Riverdogs have come to Shunka lands to barter.** *The Shunka island is not on any trade route* (`world/geography-overview.md`, River system) — **so the traders who reach it are the ones who do not follow routes: the nomads.** *That reading is a proposal; the familiarity is set.*
 
 ## Who They Are
 
@@ -38,9 +45,9 @@
 
 ---
 
-## Passives *(proposals)*
+## Passives
 
-**Offered, not set.** Drew's baseline names claws, an affinity for the water, and hardiness against poison. Ancestry reaches the sheet through Passives (`factions-and-races/README.md`), so these are those three things in that shape.
+**Set by Drew, 2026-10-16.** His baseline names claws, an affinity for the water, and hardiness against poison. Ancestry reaches the sheet through Passives (`factions-and-races/README.md`), so these are those three things in that shape.
 
 **RIVERBORN**
 GREEN — SOUL
@@ -64,8 +71,6 @@ Range: Melee
 
 ## To Establish
 
-- **Which name they use for themselves** — *Riverdogs*, *otterkin*, or neither
-- **Where their raft communities and outposts sit** on the web. The river web's sailing culture is still mostly unattributed (`world/geography-overview.md`, River system) — *they are a people of it, not necessarily the whole of it*
-- **Whether they relate to the Shunka at all**, or whether the resemblance in the name is a coincidence the world would find funny
-- **What they do while a bloom keeps them out of the water** (`bestiary/driftfire.md`)
-- **Whether RIVERBORN and WEBBED CLAWS are their Passives**
+- **Which cities they live in** beyond Vulture's Nest, and where the raft communities and outposts sit on the web. *They are a people of the river web's sailing culture, not necessarily the whole of it* (`world/geography-overview.md`, River system)
+- **What the Shunka trade them**, and what they bring
+- **Whether the name rhymes with the Shunka's for any reason**, or is a coincidence the world would find funny

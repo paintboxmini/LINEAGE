@@ -57,6 +57,7 @@ The smell: pitch, citrus peel, river silt, wet wood.
 - Everyone has two names — the one they answer to, and the one they only share with their closest.
 - Children learn knots before letters. Lies before prayers.
 - Outsiders are welcomed loudly and watched quietly.
+- **Riverdogs live here** as part of the town, not a quarter apart from it (`factions-and-races/races-riverdogs.md`) — and nomadic ones tie up for a night and are gone.
 
 ## The Tideward Compact
 
