@@ -299,7 +299,7 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 ***Since session one*** *he has put in a good word for Code with Kino, and failed to place the symbol on Caine's scrap* (`campaign/session-1-log.md`).
 
-**At the table:** sly, friendly, never in a hurry, and **always the one who comes out ahead.** *He is a social scene, not a fight.* What he looks like and sounds like is not set.
+**At the table:** sly, friendly, never in a hurry, and **always the one who comes out ahead.** *He is a social scene, not a fight.* **An overweight man in his forties, with bad breath** *(session one)* — *bad enough to notice over the smell of Vulture's Nest, which is saying something.* His voice is not set.
 
 
 
@@ -638,7 +638,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - ~~**Whether Mercer answers to the five families**~~ — *the Bellows (Drew, 2026-10-08)*
 - ~~**Which family the kid crews answer to.**~~ *Settled 2026-10-08: none — they are outside the five, and sell to the Strays through Lusk (The Many Mask's legacy, above)*
 - ~~**Knot**~~ *in place of Chris's **Seam** — taken up by Drew, 2026-10-08*
-- **Lusk's appearance and voice**, and what the Ribs' bargain looks like on the day the goods stop
+- **Lusk's voice**, and what the Ribs' bargain looks like on the day the goods stop
 - **What Lusk is obligated to** — *one that fits: the Strays' seat among the five is paid in what their eyes see, and if the information stops, so does the seat*
 - **The Mask Quest** — its path, its trials, its price. *Not written by Chris; Drew's to fill, so the table finds it new*
 - **The betrayal** (What actually happened, above) — **who led it**, **whether the Sixth Many Mask is really dead**, who the branch was fighting for freedom *from*, and **what each family tells itself now**. *Tentative pending Drew's talk with Chris*

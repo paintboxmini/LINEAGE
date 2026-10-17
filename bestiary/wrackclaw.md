@@ -25,6 +25,8 @@
 
 **Fist-sized, black-shelled, and numerous wherever a river bank collects enough to eat.** *Black is the hide, not a warning* — they live in the wrack itself, in the band of dark rotting weed and drift the water leaves along the bank, and a black shell in black weed is nothing at all until it moves. **You do not see a Wrackclaw. You see the weed shift.**
 
+**Edible, but not good** *(session one)*. There is meat in the claws and not much else, and it tastes of the wrack it lives in.
+
 **Spines stand out of the shell at every joint** — short, hard, angled back. They are not a weapon and the creature never uses them for anything. **They are why you cannot simply take hold of one and pull it off**, which is the only thing anybody ever wants to do to a Wrackclaw and the thing it is built to make expensive.
 
 **Two arms, like any crab. Three fingers on each claw.** *That is the part nobody notices from a distance and nobody forgets afterwards.* A normal claw is a hinge — two opposing fingers, one line of force, and a grip that can be levered apart by anything that finds the angle. **A three-fingered claw closes on itself from three sides. There is no angle.** *It does not have to be strong. It only has to not let go.*

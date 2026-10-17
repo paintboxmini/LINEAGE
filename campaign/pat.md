@@ -124,7 +124,7 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 *Which makes this the only physical trace of her that exists anywhere, held by the one person hunting her line.*
 
-**It carries a family emblem** *(granted to Pat at the table, session one — `campaign/session-1-log.md`)*. Lusk could not place it; Flint knew it for Lizardkin. **The emblem is the family's, not hers**, which is why the unmaking left it: it names a line, not the woman the world deleted (above). **And it is on cloth in one of the crates the party pulled out of the river** — Muirn cloth, off a boat Harlock took.
+**It carries a family emblem** *(granted to Pat at the table, session one — `campaign/session-1-log.md`)*. Lusk could not place it; Flint knew it for Lizardkin. **The emblem is the family's, not hers**, which is why the unmaking left it: it names a line, not the woman the world deleted (above). **And the scrap's fibre matches the cloth in one of the crates the party pulled out of the river** — the same plant, woven coarse and sturdy, off a Muirn boat Harlock took. *So the scrap is Muirn work.*
 
 ### What it actually does at the table
 
