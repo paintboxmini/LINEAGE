@@ -13,11 +13,11 @@
 **Lusk's shop.** *A narrow counter off the back of the dock with no sign, a hundred small things on the shelves and none of them in sets* — the description used at the table, so it is the shop now (`places/vultures-nest.md`, The Strays, and Lusk).
 
 - **Lusk put in a good word for Code with Kino.** **Code wants to join the Red Scarves.** *He has not met them yet.*
-- **Caine asked Lusk about a symbol on his scrap of cloth** (`campaign/pat.md`, The scrap). **Lusk rolled and failed** — he did not know it. **Flint rolled and knew it: a Lizardkin symbol.** *It didn't move Caine's search on much. The gesture was the point.*
+- **Caine asked Lusk about a symbol on his scrap of cloth** (`campaign/pat.md`, The scrap). **It is a family emblem**, granted to Pat at the table. **Lusk rolled and failed** — he did not know it. **Flint rolled and knew it for Lizardkin.** *It didn't move Caine's search on much. The gesture was the point.*
 
 **Marta's** — *a small, run-down brick establishment*, the description used at the table (`places/vultures-nest.md`, The Market).
 
-- **Caine bought five jerky** — each heals 1 HP — at 3 gold.
+- **Caine bought five jerky** — each heals 1 HP — for 3 gold, all five.
 - **Caine gave Marta 20 gold to feed the Red Scarves**, and **Code added 5.** *Caine's Price is "I always share with those in greater need than me", and it fired on its first morning at the table* (`campaign/pat.md`, The Price).
 - **Flint gave Marta some of his grace peppers** and is working toward **a steady trade for the family business.** She was blown away by the quality, and **traded him her whole remaining supply of cinder flake — 5 measures.**
 
@@ -31,7 +31,9 @@
 - **The Arcadia crashed into the dock** and lost cargo into the river.
 - **During the salvage, Wrackclaws came up the stones**, and **the party saved Bartho's dock labourers** (`bestiary/wrackclaw.md`).
 - **They talked Bartho into letting them use their own ship** — the impounded Merry Mint — **to bring the lost goods back out of the river.**
-- **Three crates came up that nobody else noticed, and they kept them.** Harlock does not have them back.
+- **The cargo went two ways** *(Drew)*: **some was swept away, and most was pushed onto the bank.** So the Arcadia's logs will be short **more than three crates** — and the party's three are hidden inside a loss nobody can account for exactly.
+- **Three crates came up in their nets that nobody else noticed, and they kept them.** Harlock does not have them back.
+- **The nets also brought up five Wrackclaws**, alive. **The party is keeping them in a barrel.**
 - **Harlock paid them 30 gold** for the salvage, after some persuading. **Bartho paid 18**, because it was his dockworkers they saved.
 
 ## The money
@@ -42,9 +44,7 @@
 |---|---|---|---|---|
 | **Code** | 17 | +16 | −5 to Marta | **28** |
 | **Flint** | 10 | +16 | — | **26** |
-| **Caine** | 40 | +16 | −15 jerky, −20 to Marta | **21** |
-
-*Caine's row assumes the jerky was 3 gold apiece; at 3 gold for all five, he has 33.*
+| **Caine** | 40 | +16 | −3 jerky, −20 to Marta | **33** |
 
 **Flint's bag** also gained **5 measures of cinder flake** and lost some grace (`campaign/kevin.md`, What he starts with).
 
@@ -70,19 +70,23 @@
 
 ## The three crates — the big new thread
 
-**What is in them is the pressing question; whether Harlock finds out can wait.** Decided by Drew so far:
+*Drew, 2026-10-17.* **They are from a recent target of Harlock's — a Muirn boat**, the Guild's standing enemy (`factions-and-races/the-pirate-guild.md`, The Muirn).
 
-- **They are from a recent target of Harlock's.**
-- **One crate is textiles — a coarse but sturdy fabric.**
+1. **Textiles — a coarse, sturdy fabric, carrying the same family emblem as Caine's scrap.** *The first real clue in his search: his scrap is Muirn work, from the southern tribe.* **Whether this was the cursegiving family's own boat, or their cloth traded on, is open** — and it matters, because that family is out on the water looking for Osha (`characters/osha.md`)
+2. **Muirn shaman's goods** — dried swamp plants, bone charms, wax-sealed clay jars. **For Flint, these are hints, not effects** (`campaign/kevin.md`, The Ingredients): what they smell of, what they do to the hands, and nothing about what they do in a round or a drink
+3. **Goods the Muirn had already taken off somebody else** — cargo stamped with **the Bellows' mark**, from a Nest boat the Muirn seized before Harlock took it back off them. *The Bellows are the strongest of the five families and the masters of the docks* (`places/vultures-nest.md`, The Many Mask's legacy) — **they will want it, and they will want to know who has it**
 
-**Still to decide:** the other two crates, and whether anybody saw them taken.
+**A Red Scarf saw them take the crates** *(Drew)*. **Kino knows.** *Which lands just as Code is asking to join — the kids have leverage over the party before the first conversation.*
+
+**How Harlock finds out is not settled, and need not be soon.** The cargo was a prize not yet before the court (`factions-and-races/the-pirate-guild.md`, The Prize Court), so **everything missing weakens his claim**; Amelia logs every crate, but with so much swept away the count says *more is gone*, not *these three*. *The witness is the sharper route — and it belongs to Kino.*
 
 ---
 
 ## Still open
 
-- **The other two crates**, and **whether anyone saw**
-- **The symbol on Caine's scrap**, and how it sits with the scrap's own fiction (`campaign/pat.md`, The scrap) — *the file says the unmaking left nothing legible of her, no name, face or symbol. A Lizardkin mark that is a people's or a craft's, rather than hers, keeps both true*
+- **Whose boat it was** — the cursegivers' own, or a boat carrying their cloth
+- **What the five Wrackclaws are for** — Flint's kitchen, bait, or something else; *hints, not effects, if it's the kitchen*
+- **Which Red Scarf saw**, and what Kino does with it
 - **What Kino makes of Code** — a grown man asking to join a gang that exists to get children to fourteen (`places/vultures-nest.md`, Fourteen)
 - **Whether the count still happens** (`places/vultures-nest.md`, Beat five), with three of the Arcadia's crates now missing
 - **Flint's trade with Marta** — what she pays in from here on, and what the Peppers say about a son selling grace on his own
