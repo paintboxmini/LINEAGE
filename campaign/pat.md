@@ -124,6 +124,8 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 *Which makes this the only physical trace of her that exists anywhere, held by the one person hunting her line.*
 
+**It carries a Lizardkin symbol** *(session one, `campaign/session-1-log.md`)*. Lusk could not place it; Flint knew it for Lizardkin. *How a symbol sits with an unmaking that left nothing legible of her (above) is open — a mark of a people or a craft, rather than of her, keeps both true.*
+
 ### What it actually does at the table
 
 **It cannot find anyone.** Four hundred islands do not get swept by a nose, and the search still fails productively at the Nest the way it is supposed to (`campaign/session-1-convergence.md`, Pat — chasing one living person).

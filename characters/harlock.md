@@ -96,7 +96,7 @@ High Body, real Mind, no Soul. He hits like the front of a ship and he is not st
 
 ## Threads
 
-- **Three of his crates.** The party pulled them out of the river after the crash in session one and kept them; he paid them 30 gold for the rest of the salvage (`campaign/session-1-log.md`). *He does not know yet.*
+- **Three of his crates.** The party pulled them out of the river after the crash in session one and kept them; he paid them 30 gold for the rest of the salvage (`campaign/session-1-log.md`). *He does not know yet.* **They are from a recent target of his; one is textiles, a coarse, sturdy fabric.**
 - **Forget-me-nots.** Sends the party to Forget-Me-Not Island for FourthEye's refining, on a chart; a few sessions later tells them the flowers are gone and asks them to watch for a new source (`places/forget-me-not-island.md`).
 
 ## Not Yet Set
