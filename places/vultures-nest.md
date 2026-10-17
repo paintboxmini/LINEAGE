@@ -295,6 +295,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **What he knows is worth more than what he sells.** The papers he sold Code came with a question he did not ask — *and a man with half the Nest's homeless for eyes does not need to ask.*
 
+***Since session one*** *he has put in a good word for Code with Kino* (`campaign/session-1-log.md`).
+
 **At the table:** sly, friendly, never in a hurry, and **always the one who comes out ahead.** *He is a social scene, not a fight.* What he looks like and sounds like is not set.
 
 
@@ -372,7 +374,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 - **It came off the Arcadia** on an earlier run, and there is another one in her hold right now (The Opening Scene, The Arcadia's hold). Harlock is the carrier and does not know what the animals are for.
 - **What is in the market is the cage, dressed as a crate** *(2026-09-21)*. They ship inside an ordinary sealed packing crate; **that outer box gets broken down and taken away at setup**, and what stays is the inner cage, slatted and shimmed to read as freight somebody forgot. *So the tell for anyone who stops and actually looks is that it is not a crate: no lid seam, no shipping marks, no cooper's stamp, and slats where a crate would have boards.*
 
-**Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
+**Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't. ***Since session one*** *the party supplies her stall with meat and flour and has given her money to feed the Red Scarves* (`campaign/session-1-log.md`).
 
 She believes the docks look after their own quietly, or nobody looks after them at all — help that announces itself isn't help, it's a receipt. Somebody fed her once, the same unannounced way, back when she needed it and had nothing to trade for it. She's never called that kindness out loud either. She just calls it how things are done here, and keeps doing it.
 

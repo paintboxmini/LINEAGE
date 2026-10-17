@@ -15,6 +15,8 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 
 **Fiction is the player's, mechanics are the GM's** *(2026-09-26)*. Who the character is, what they want, what they want to be able to do: theirs, and the reason any of these files are worth reading. **The rule that makes it work at the table is Drew's**, because balance is only visible from the whole pool and because the game has to outlive any one character. A player's mechanical idea is input and it is wanted — it gets taken seriously and then designed. *Chris asked for a touch restriction on Mimicry; the three-rung ladder it became is `campaign/chris.md`, What it can't do.*
 
+**Weekly Friday games** from session one, 2026-10-16.
+
 ## Contents
 
 | | |
@@ -26,6 +28,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 | `campaign/kevin.md` | Combat chef. The family pepper, Gemstone University, Skills, Passives, the craft, the ingredients, the drinks, the card drafts |
 | `campaign/session-1-cards.md` | **The draft and the first advancement** — how the 63-card Oracle is dealt, what the GM says about deckbuilding and what he deliberately doesn't, and where all 63 cards end up |
 | `campaign/session-1-convergence.md` | Why all of them are at Vulture's Nest, and what the opening is for |
+| `campaign/session-1-log.md` | **What actually happened in session one** — the record, and where it stopped |
 | `campaign/session-1-threads.md` | **The threads of the opening as modular pieces rather than a running order** — what each one is, how to touch it lightly, how deep it goes, and what skipping it costs |
 | `campaign/passives.md` | Every player Passive written so far, with the reasoning for each |
 | `campaign/images/` | Player reference art |
