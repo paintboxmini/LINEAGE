@@ -20,6 +20,33 @@
 
 ---
 
+### Fights for two — Code and Caine without Flint
+
+*Measured 2026-10-18, Code and Caine only, 1,000 fights a row across two seeds, everyone fighting to the end. **Flint is most of the party's damage** — his loads, oranges and drinks (`campaign/kevin.md`, What this build actually costs) — **so every fight is a size smaller without him.** Win rate and Downs are the numbers to use; the simulator's deaths are a ceiling.*
+
+| Fight | Two win | Downs a fight | Read |
+|---|---|---|---|
+| **3 Wrackclaws** | ~100% | ~0.0 | Nothing |
+| **4 Wrackclaws** | ~98% | ~0.3 | Warm-up |
+| **5 Wrackclaws** | ~78% | ~0.9 | **Strong** |
+| **2 Toughs** | ~93% | ~0.4 | Warm-up |
+| **1 Tough + 1 Slinger** | ~86% | ~0.6 | **Strong-ish** — the Slinger is out of Caine's Thorns |
+| **Boss + 1 Tough** | **~70%** | **~1.0** | **The strong fight for two** |
+| **3 Toughs** | ~63% | ~1.0 | Hard |
+| **Boss + 1 Slinger** | ~53% | ~1.2 | Hard |
+| **2 Toughs + 1 Slinger** | ~37% | ~1.5 | Too much |
+| **Boss + 1 Tough + 1 Slinger** | ~19% | ~1.8 | **Too much** — the three-player strong fight is a loss for two |
+| **1 Foulhaul** | ~100% | ~0.1 | Nothing |
+| **2 Foulhauls** | **~85%** | **~0.7** | **Strong** — and Carries Off makes it tenser than that (not run) |
+| **3 Foulhauls** | ~32% | ~1.6 | Too much |
+| **2 Duskwicks** | ~92% | ~0.5 | Warm-up |
+| **3 Duskwicks** | ~45% | ~1.4 | Hard |
+| **2 Gollops** | ~78% | ~0.8 | Strong — and the troop keeps arriving, so it gets worse |
+| **3 Gollops** | ~17% | ~1.8 | Too much |
+| **1 Gowra, flat** | ~78% | ~0.8 | Strong on open ground; *the roar and the hole make it far worse* |
+
+**For a light on the mud with two: two Foulhauls, not three.** **For Toughs with two: Boss + one Tough.**
+
 ## 1. The mockery — at the Moving Crate
 
 *Drew:* **During or after the Moving Crate**, a few Red Scarves turn up. **They know one thing**: Lusk has told them a grown man wants a scarf. **They know nothing about the food or Hojan.** They mock him, throw something, and run. **The point is to darken Code's mood and raise what joining costs him**, before Kino puts it right.

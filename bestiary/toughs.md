@@ -60,6 +60,8 @@
 
 **Read the deaths with a pinch of salt.** *The simulator fights to the last character and keeps hitting the Downed; a table rarely does. Six Wrackclaws measured as a death in one fight in three, and at the table the party rolled over them. Use the win rate and the Downs; the deaths are the ceiling.*
 
+**With two players, every group is a size smaller** — Boss + one Tough is the strong fight for Code and Caine alone (`campaign/session-2-scarves.md`, Fights for two).
+
 **The lever is the Slinger.** *One more Slinger moves a fight further than one more Tough does.*
 
 ## Using Them
