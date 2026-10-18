@@ -319,18 +319,18 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **Who holds the binding: Mercer** *(2026-10-07; `characters/mercer.md`)*, **a Bellows man** (The Many Mask's legacy, above). He owns the worst floors on the dock, takes children in, binds them until fourteen, and **places** them — on his own floors, with the sweeps, in the smokehouses and ropewalks — for a fee from every master. *He keeps a standing reward for returned runaways, which is what handing Bean over actually pays.* *He answers to the Bellows — the family growing too strong* (The Many Mask's legacy, above).
 
-**The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Jonah was one* (`characters/jonah.md`).
+**The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Hojan was one* (`characters/hojan.md`).
 
 **Fourteen.** *Drew, 2026-10-07.* **At fourteen a child counts as an adult for responsibility**: they can be hired for real work on their own word, and **taken on as an apprentice to learn a profession.** *It is apprenticeship age.* **Every binding ends there**, and nobody can be "taken in" after it. **So that is what the Red Scarves are for: getting kids to fourteen free.** The Ribs is sized for under-fourteens because that is who needs it (The Ribs, below), and a Scarf who reaches fourteen hangs the scarf on the nail wall and goes and finds a trade. *Kino, at fifteen, is the one who stayed* — running it rather than leaving it, and the only one who does not sleep there (The Red Scarves, Kino and Bean).
 
-**What fourteen is worth depends on who you are when you get there.** A kid off Mercer's floors walks out with no trade and gets hired back as a dockhand at the bottom wage (`characters/mercer.md`). **A kid with somebody to vouch for them gets a master.** *That gap is what Jonah is trying to close* (`characters/jonah.md`).
+**What fourteen is worth depends on who you are when you get there.** A kid off Mercer's floors walks out with no trade and gets hired back as a dockhand at the bottom wage (`characters/mercer.md`). **A kid with somebody to vouch for them gets a master.** *That gap is what Hojan is trying to close* (`characters/hojan.md`).
 
 ### People looking in
 
 **Three people the party can meet who want something from the Scarves.** *All three are about the same question — who gets to say where a child goes.*
 
 - **Mercer**, the warehouse owner — *wants his runaways back* (`characters/mercer.md`)
-- **Jonah**, priest of the Rivers — *wants to give them a house with no lock on the door, and cannot get one of them through it* (`characters/jonah.md`)
+- **Hojan**, priest of the Rivers — *wants to give them a house with no lock on the door, and cannot get one of them through it* (`characters/hojan.md`)
 - **The Ashbys** — *want their son*
 
 **The Ashbys.** *Created 2026-10-07: Drew asked for a family looking for a kid.* **Dell and Maren Ashby**, from upriver, ordinary people, here in the Nest asking every stall and every dockhand about a boy. **Two hard winters ago, one of Mercer's agents came through** and told them their son would be fed and taught a trade. **They signed with a mark.** *They thought they were giving him a future. They were giving him to a warehouse floor.*
@@ -338,6 +338,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 **The boy is Tib**, eleven now, and **he ran from the floor a year ago and is a Red Scarf.** *He is the kid at the edge of the market who will not look at the couple asking questions.* **Tib thinks his parents sold him.** *By the paper, they did.* **They think they were lied to.** *They were.* Both of those are true, and the party may be the only people who ever hear both sides.
 
 **They have saved to buy his binding back**, and it is not enough — and **Mercer would sell it them**, which is the worst thing about him. *What they do not know is that Tib is not on the floor any more, and that a Scarf does not let a grown-up near another Scarf, parents included.*
+
+**They are going to Mercer's to buy the contract, and Hojan wants them escorted** (`characters/hojan.md`, The Ashbys — Hojan's ask).
 
 ---
 
@@ -376,7 +378,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 - **It came off the Arcadia** on an earlier run, and there is another one in her hold right now (The Opening Scene, The Arcadia's hold). Harlock is the carrier and does not know what the animals are for.
 - **What is in the market is the cage, dressed as a crate** *(2026-09-21)*. They ship inside an ordinary sealed packing crate; **that outer box gets broken down and taken away at setup**, and what stays is the inner cage, slatted and shimmed to read as freight somebody forgot. *So the tell for anyone who stops and actually looks is that it is not a crate: no lid seam, no shipping marks, no cooper's stamp, and slats where a crate would have boards.*
 
-**Marta's Jerky and Bake** — the stall the Red Scarves recommend: *a small, run-down brick establishment* (session one). Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't. **The Red Scarves have stolen food from her many times over the years** *(Drew, 2026-10-18)*. ***Since session one*** *Caine and Code have given her money to feed them, **and she is giving the food to Jonah to pass on rather than to the kids directly** (`characters/jonah.md`), and **Flint is selling her grace** — she traded him her cinder flake for it and is making a spicier jerky* (`campaign/session-1-log.md`).
+**Marta's Jerky and Bake** — the stall the Red Scarves recommend: *a small, run-down brick establishment* (session one). Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't. **The Red Scarves have stolen food from her many times over the years** *(Drew, 2026-10-18)*. ***Since session one*** *Caine and Code have given her money to feed them, **and she is giving the food to Hojan to pass on rather than to the kids directly** (`characters/hojan.md`), and **Flint is selling her grace** — she traded him her cinder flake for it and is making a spicier jerky* (`campaign/session-1-log.md`).
 
 She believes the docks look after their own quietly, or nobody looks after them at all — help that announces itself isn't help, it's a receipt. Somebody fed her once, the same unannounced way, back when she needed it and had nothing to trade for it. She's never called that kindness out loud either. She just calls it how things are done here, and keeps doing it.
 

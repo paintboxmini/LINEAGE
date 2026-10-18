@@ -13,7 +13,8 @@
   - **The word *cursed*** — the dock's name for the barge's people, which is what sent him looking in the first place (`campaign/session-1-log.md`, For session 2)
   - **The cloth in Harlock's crate** — the same plant fibre as his scrap (`campaign/session-1-log.md`, The three crates). *Somebody in the Nest knows where that plant grows*
   - **Corvel**, held by the Compact, whose congregation's Speaker is a Lizardkin (`places/pneum.md`, The Speaker) — *the first person who can tell him one of them lives out on the water*
-  - **Bartho's request** to see whether anyone is alive on Pneum (`campaign/session-1-log.md`, For session 2)
+  - **Bartho's request** to see whether anyone is alive on Pneum (`campaign/session-1-log.md`, For session 2) — *or Caine digs into the barge himself*
+  - **Hojan's ask** — escort the Ashbys to Mercer's warehouse to buy back their son's contract (`characters/hojan.md`, The Ashbys — Hojan's ask). **The son is Tib**, who is with the Scarves on Code's side of the table. *The cleanest split this night has*
 
 *Two players on two threads, cut between at the cliffhangers: Code with a hand in a stranger's coat, Caine with a question somebody won't answer.*
 
@@ -21,7 +22,7 @@
 
 ## 1. The mockery — at the Moving Crate
 
-*Drew:* **During or after the Moving Crate**, a few Red Scarves turn up. **They know one thing**: Lusk has told them a grown man wants a scarf. **They know nothing about the food or Jonah.** They mock him, throw something, and run. **The point is to darken Code's mood and raise what joining costs him**, before Kino puts it right.
+*Drew:* **During or after the Moving Crate**, a few Red Scarves turn up. **They know one thing**: Lusk has told them a grown man wants a scarf. **They know nothing about the food or Hojan.** They mock him, throw something, and run. **The point is to darken Code's mood and raise what joining costs him**, before Kino puts it right.
 
 **Where they stand.** *Not right at the crate.* Nothing is ever stolen within a few paces of it, and the kids give that patch the same wide berth everyone does without knowing why (`bestiary/ocellus.md`, Telling One Is There). **They call to him from just past it** — which, if anyone is paying attention, is a tell about the crate.
 
@@ -51,7 +52,7 @@
 
 *Drew:* **Later in session 2, Kino appears for the first time.** He apologises for his crew, **thanks the party for the food**, and says he had to see for himself who sent it — and when it turned out to be the same man asking to join, he had to come.
 
-**How he found out.** **The food reached the Scarves through Jonah** (`characters/jonah.md`) — *the first thing Jonah has ever had to offer them that they took.* Kino does not take anything without knowing where it came from, so **he asked Jonah, and Jonah told him** whose money it was. *Which means Jonah has just had his first real conversation with Kino — and the party made it happen.*
+**How he found out.** **The food reached the Scarves through Hojan** (`characters/hojan.md`) — *the first thing Hojan has ever had to offer them that they took.* Kino does not take anything without knowing where it came from, so **he asked Hojan, and Hojan told him** whose money it was. *Which means Hojan has just had his first real conversation with Kino — and the party made it happen.*
 
 **Kino** — fifteen, messy brown hair, green eyes, red scarf tied properly. Gives the name **Sawyer**, and only the name Sawyer (`places/vultures-nest.md`, Kino and Bean). Charming, unhurried, and in control of every conversation he is in.
 

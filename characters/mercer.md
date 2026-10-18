@@ -26,7 +26,7 @@
 
 **Every Red Scarf who ran from a binding is, by the paper, still his.** He keeps **a standing reward for returned runaways**, and every dockhand knows it. *A party that catches Bean and hands him over can collect* (`places/vultures-nest.md`, What they ran from).
 
-**And Jonah is a problem** (`characters/jonah.md`). A house with no lock is a house that empties his floors, and a priest finding kids real apprenticeships at fourteen is a priest telling every family on the river what Mercer's paper actually says.
+**And Hojan is a problem** (`characters/hojan.md`). A house with no lock is a house that empties his floors, and a priest finding kids real apprenticeships at fourteen is a priest telling every family on the river what Mercer's paper actually says.
 
 ## At the Table
 
@@ -42,4 +42,4 @@
 ## Related Documents
 
 - `places/vultures-nest.md` — the warehouses, the sweeps, the Red Scarves
-- `characters/jonah.md` — the priest who wants to empty his floors
+- `characters/hojan.md` — the priest who wants to empty his floors
