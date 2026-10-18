@@ -100,7 +100,7 @@ Then: **the crash needs the lockdown** (the berth is short because the barge has
 
 **Pulled by** — it comes to them, but they can decline. Nothing forces this fight.
 
-**Light.** **Three wrackclaws** against three starting characters: **the party wins essentially every time, somebody Collapses in about one fight in ten, and a character dies in about one in thirty** — measured 2026-09-22 across three seeds at 1,000 fights each, deck as `bestiary/wrackclaw.md` writes it and all three Frontline. *Inside the session budget of roughly one death in twenty (`rules/gm-guide.md`, Pacing Sessions).* **Four is several times as lethal and is a different encounter, not a bigger one.**
+**Light.** **Three wrackclaws** against three starting characters: **the party wins every time and almost never takes a Down** — re-measured 2026-10-18 against Code, Flint and Caine as drafted, three seeds at 1,000 fights each. *The 2026-09-22 figures (a Collapse in one fight in ten, a death in one in thirty) were measured against pre-session-0 decks; the drafted party is far stronger, and the card changes of 2026-10-18 barely moved it.* **Five is where somebody goes Down in about one fight in four; six is a real fight**, with a death in about one in three.
 
 **Deep.** It is the Range tutorial with the floor: wet timber at the edge is Frontline, dry stone behind is Backline, and a Melee card needs both of you out on the timber. A player who works that out in their first fight has learned the thing the Oracle spends a third of its design space on, by standing somewhere.
 

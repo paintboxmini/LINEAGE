@@ -1,6 +1,21 @@
-# Session 2 — Code and the Red Scarves
+# Code and the Red Scarves
 
 *Drew's plan, 2026-10-18, with the scenes built out. **Three beats, in this order: the kids mock him, Kino comes to see him, and the trial.** What Code does in each of them is Chris's; this file is the world's side.*
+
+**When it runs.** **The mockery comes with the Moving Crate**, whenever that lands. **Kino and the trial are held for a night Kevin can't make, or is late to** *(Drew, 2026-10-18)* — **Code and Caine at the table, and Drew bouncing between them.**
+
+### Caine, on the same night
+
+**Two ways to play it, and both can happen in one evening:**
+
+- **With Code.** Caine helps on the trial — a second adult is another door the kids can't open, and **mark B tests Caine as much as Code**: a man whose Price is *"I always share with those in greater need than me"* (`campaign/pat.md`, The Price) standing next to the satchel of papers that binds children to Mercer's floors.
+- **On his own.** Caine breaks off after his own thread while Code works the job. What is waiting for him in the Nest:
+  - **The word *cursed*** — the dock's name for the barge's people, which is what sent him looking in the first place (`campaign/session-1-log.md`, For session 2)
+  - **The cloth in Harlock's crate** — the same plant fibre as his scrap (`campaign/session-1-log.md`, The three crates). *Somebody in the Nest knows where that plant grows*
+  - **Corvel**, held by the Compact, whose congregation's Speaker is a Lizardkin (`places/pneum.md`, The Speaker) — *the first person who can tell him one of them lives out on the water*
+  - **Bartho's request** to see whether anyone is alive on Pneum (`campaign/session-1-log.md`, For session 2)
+
+*Two players on two threads, cut between at the cliffhangers: Code with a hand in a stranger's coat, Caine with a question somebody won't answer.*
 
 ---
 

@@ -8,7 +8,7 @@
 
 **Two claws, three fingers on each.** A claw that closes from three sides. Once it has hold of you, there is no angle to lever it open.
 
-**They pull.** Whatever they get hold of, they drag back toward the water.
+**They pull.** Whatever they get hold of, they drag back toward the water — **and they spit a sticky web to do it from a distance.**
 
 ---
 
@@ -63,22 +63,22 @@ Range: Melee
 
 ```
 SIDELONG SCUTTLE
-BLUE — MIND
-Attack: Mind + d4
-Effect: Apply Initiative Shift -1 to the defender.
+GREEN — SOUL
+Attack: Soul + d4
+Effect: You may change position.
 Defense Effect: Gain Evade.
-Range: Ranged
+Range: Both
 "It feels you coming through the sand before it sees you."
 ```
 
 ```
 CARRION PULL
-GREEN — SOUL
-Attack: Soul + d4
+BLUE — MIND
+Attack: Mind + d4
 Effect: The second time this card succeeds against the same target,
 that target goes into the water. Counted per target, for the whole fight.
 Defense Effect: Gain Thorns 1.
-Range: Melee
+Range: Ranged
 "Everything on this bank gets dragged back to the water eventually."
 ```
 
