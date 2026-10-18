@@ -20,6 +20,10 @@
 
 ---
 
+**Shared ancestry with the Rasha** *(Drew, 2026-10-16)*. **The Glasskin and the Rasha were one people a very long time ago** (`factions-and-races/races-rasha.md`) — *the tufted ears, the tail and the claws are what is left of it. One branch went into the cliffs and grew a coat for the quartz; the other went light and quick and kept its night eyes.* **Whether either remembers is not set.**
+
+---
+
 ## Passive — ADAPTIVE CAMOUFLAGE
 
 The coat doesn't just sit the colour of quartz. It takes the colour of whatever light is currently on it, and a Glasskin who stops moving against the right surface stops being a shape anyone is tracking. In a town built inside cliffs that change hue every time the dance rewrites them (`places/glasslight-reach.md`, The Soft Edge), that isn't a trick — it's the only way to keep camouflage in a place whose colours won't hold still.

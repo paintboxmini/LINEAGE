@@ -66,7 +66,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **What happened to his father is unknown, and stays unknown.** Dead or alive is deliberately unwritten — it is a thread to play with rather than a fact to record, and the not-knowing is the point. Chris did not see how it ended, because Kevin did not let him.
 
-**They got out of the Ruins together**, and reached the Nest aboard the Merry Mint, Kevin's temple ship (`campaign/kevin.md`, From session 0). And the men are still looking.
+**They got out of the Ruins together**, and reached the Nest aboard the Holly Mint, Kevin's temple ship (`campaign/kevin.md`, From session 0). And the men are still looking.
 
 ---
 
@@ -90,17 +90,33 @@ Story beats center on keeping the mind link off. It's not a switch he holds down
 
 ## Stats
 
-**Mind 4 / Body 3 / Soul 2 — HP 18**
+**Mind 4 / Soul 3 / Body 2 — HP 15** *(Chris's choice, recorded 2026-10-15)*
 
 | Stat | Value | Drives |
 |------|-------|--------|
 | Mind | 4 | Blue card damage; hand size 4 |
-| Body | 3 | Red card damage; HP weighted 4× |
-| Soul | 2 | Green card damage; Initiative 1d6 + 2 |
+| Soul | 3 | Green card damage; Initiative 1d6 + 3 |
+| Body | 2 | Red card damage; HP weighted 4× |
 
-Nine total, which is exactly the starting deck size, so his draft comes out **4 Blue / 3 Red / 2 Green** (`rules/character-creation.md`).
+Nine total, which is exactly the starting deck size; the colour heuristic would put his draft at **4 Blue / 3 Green / 2 Red** (`rules/character-creation.md`). His actual deck is 3 / 3 / 3 (Deck, below).
 
-*Changed from Mind 5 / Body 2 / Soul 2. Body 3 is what makes MIMETIC BLADE a real attack instead of a gesture, and it costs him a card of hand size to get there.*
+### What the stats moved
+
+*This file used to read Mind 4 / Body 3 / Soul 2, HP 18, and much of the reasoning below was written against that line. Where it matters, here is the new arithmetic — expected damage a hit:*
+
+| | Was | Now |
+|---|---|---|
+| **HP** | 18 | **15** — the thinnest at the table |
+| **Initiative** | 1d6 + 2 | **1d6 + 3** |
+| **MEASURE** (Red, Body + d8) | 7.0 | **6.5** |
+| **SEED / SHARD** (Green, Soul + d6) | 5.5 | **6.5** |
+| **MIMETIC BLADE** (Green since 2026-10-15, Soul + d6) | 6.5 as Red | **6.5** — the recolour and the stat change land it where it was |
+| **KILLSWITCH**, **AMALGAMOUS FORM** (Mind + d4) | 6.5 | 6.5 |
+| **His drafted Reds** (SHARPEN, UNBROKEN) | | **a point down** |
+| **His drafted Greens** (MEND, FLOW) | | **a point up** |
+| **A seed or shard's cap** (his maximum HP) | 18 | **15** |
+
+**So every signature and both Passives now sit at 6.5.** *His kit is level across the colours, and the cost is three HP off a body that was already the smallest at the table.* Where a paragraph below says Soul is his weakest stat, or that Blue is four of his nine cards, read it as history: **Body is now his weakest stat**, and his deck runs 3 / 3 / 3.
 
 ## The Fantasy — Blade Singer
 
@@ -168,6 +184,8 @@ What the kit delivers so far:
 **And it is cheap because of how it reached the shelf.** Lusk paid the kids next to nothing for the purse — he always does (`places/vultures-nest.md`, The Strays, and Lusk). Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Code walked in.* **Eight gold is a third of everything he had, and a fat margin on whatever Lusk paid a child for it**, and both of those are true at once.
 
 **What Lusk knows, and what he does not.** *He knows the papers were not Code's* — he sold them to him. **He does not know who Code actually is**: not his real name, not the University, not what he is. To him Code is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about that makes Lusk a threat yet. It makes him someone who knows one true thing, and he is the kind of man who sells those.*
+
+**Session one:** *Code wants to join the Red Scarves, and Lusk has put in a good word for him with Kino. They have still not met* (`campaign/session-1-log.md`).
 
 **Code has had no direct contact with the Red Scarves** *(Drew, 2026-10-08)*. **That happens at the table, not before it.** *The kids stole the purse; Kino knows whose it was* (Not Yet Set, below); *neither of them has ever met the man carrying the papers.*
 
@@ -297,11 +315,11 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 ## Passives
 
 - **AMALGAMOUS FORM** — `campaign/passives.md`. Liquid metal reshaped on demand; Blue, Both range, d4. The improvising half.
-- **MIMETIC BLADE** — `campaign/passives.md`. His arm as a sword; Red, Melee, d6. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at, and it hits harder because it does less.
+- **MIMETIC BLADE** — `campaign/passives.md`. His arm as a sword; **Green** (Soul), Melee, d6 — Red until 2026-10-15. Not a copy of anyone's weapon — *mimetic* is the metal imitating a blade. Where AMALGAMOUS FORM is improvisation, this is the one thing he's good at.
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED, KILLSWITCH, all three written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, KILLSWITCH and **SHARD, which replaced SEED at the start of session one** *(Drew, 2026-10-15)*, all written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
 
 **Drafted at session 0, 2026-10-03:** SHARPEN and UNBROKEN (Red), DEFLECT and LAST RESORT (Blue), MEND and FLOW (Green) — all six from `cards/`, printed as written. **With the three signatures that is 3 Red / 3 Blue / 3 Green**, one Green over and one Blue under what his stats suggest. That is allowed and worth knowing rather than fixing: matching colour to stat is a heuristic, and the draft is exactly where it bends (`rules/cards.md`, Deck Building).
 
@@ -335,9 +353,9 @@ Three customs, one per colour. **They have landed: `cards/chris.md` is the card,
 
 **MEASURE — no repeated note.** The flow card, and the one that runs every turn. **Red and Melee-only since 2026-09-20**, having started Blue and Both. *Taking someone's measure means closing with them* — you read a person by standing inside their reach, not by thinking about them from across the room, and the card was doing the second thing while claiming the first. The reveal is still written in the corpus's own phrasing — STUDY says *the attacker reveals their stats* (`cards/blue-mind.md`), so this one does too.
 
-**Its condition is Cadence** *(2026-10-05)* — the last card he revealed, attacking or defending, against this one's colour (`rules/card-glossary.md`, Cadence). *Before that it read "the card you played last turn", which left out his blocks and was broken by a turn spent moving; Cadence counts every card he shows and nothing else.*
+**Its condition is Flow** *(2026-10-05)* — the last card he revealed, attacking or defending, against this one's colour (`rules/card-glossary.md`, Flow). *Before that it read "the card you played last turn", which left out his blocks and was broken by a turn spent moving; Flow counts every card he shows and nothing else.*
 
-**The swap is damage-neutral by construction.** Blue put it on Mind 4 with a d6, which is 7.0 expected. Red puts it on Body 3, and Melee-only earns the die step that pays the difference back: Body 3 + d8 is 7.0 again. That is the standard trade the whole corpus makes, and Red Melee averages d7.00 across the core pool, so a d8 sits at the top of its band rather than outside it (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
+**The swap is damage-neutral by construction.** Blue put it on Mind 4 with a d6, which is 7.0 expected. Red puts it on Body 3, and Melee-only earns the die step that pays the difference back: Body 3 + d8 is 7.0 again. *Since 2026-10-15 he is Body 2, so MEASURE is 6.5 — level with the rest of his kit rather than above it (What the stats moved, above).* That is the standard trade the whole corpus makes, and Red Melee averages d7.00 across the core pool, so a d8 sits at the top of its band rather than outside it (`rules/cards.md`, Why Red has the biggest dice — range pays for them).
 
 **What he actually pays is the Range, and it is a real price on this card.** A defender's card has to satisfy its own Range as though they were attacking (`rules/combat.md`, Attack Resolution), so a Melee card cannot block at all unless both combatants are Frontline. The half that reads the *attacker* now only exists when he is already in the scrum — which is where a blade singer should have to stand to be reading anybody.
 
@@ -345,20 +363,20 @@ Three customs, one per colour. **They have landed: `cards/chris.md` is the card,
 MEASURE
 RED — BODY
 Attack: Body + d8
-Effect: Cadence: deal +2 damage and the defender reveals their stats.
-Defense Effect: Cadence: the attacker reveals their stats.
+Effect: Flow: deal +2 damage and the defender reveals their stats.
+Defense Effect: Flow: the attacker reveals their stats.
 Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**SEED.** A piece of himself left somewhere to grow. Green because it is patience, and because Soul is the stat he has least of — the card he can least afford to lean on, which is the right home for a payoff that arrives late.
+**SEED** — *replaced by SHARD at the start of session one (SHARD — the damage seed, below).* A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
 
 ```
 SEED
 GREEN — SOUL
 Attack: Soul + d6
 Effect: Plant a seed.
-Defense Effect: Cadence: plant a seed.
+Defense Effect: Flow: plant a seed.
 Range: Both
 "He plants what he can spare. It remembers the rest."
 ```
@@ -367,7 +385,7 @@ Range: Both
 
 **Replaced RIPOSTE on 2026-09-20.** RIPOSTE was a good card and a generic one — gain Deadly, gain it twice on a clean block — and nothing about it was Chris rather than any competent swordsman. SEED is not a card anyone else could hold: it costs him his own body to plant.
 
-**The defence half is gated, and that is the whole reason it is allowed to plant at all.** Blocking costs no Action, so an ungated planting half would let him seed for free every time somebody swung at him. The gate is **Cadence** (`rules/card-glossary.md`, Cadence) — the same colour rotation MEASURE runs on. *Until 2026-10-05 it read off the top of his discard pile instead; Cadence, defined that day, made the two cards ask the same question.* He has two Green cards total, so the pile is usually not Green and the gate is usually open; a green turn shuts it.
+**The defence half is gated, and that is the whole reason it is allowed to plant at all.** Blocking costs no Action, so an ungated planting half would let him seed for free every time somebody swung at him. The gate is **Flow** (`rules/card-glossary.md`, Flow) — the same colour rotation MEASURE runs on. *Until 2026-10-05 it read off the top of his discard pile instead; Flow, defined that day, made the two cards ask the same question.* He has two Green cards total, so the pile is usually not Green and the gate is usually open; a green turn shuts it.
 
 **Rebuilt from the core card of the same name**, which held an Oracle seat for one day in September and was pulled for being a specialist's card (`cards/tiers/beginner.md`). Nothing survives but the name and the die. The old one planted a buff at a position and collected it a turn later; this one plants *him*.
 
@@ -441,6 +459,38 @@ Range: Ranged
 
 **The line it is built for.** Plant at the Frontline, move to the Backline, change stance where there is room to, come back and take it. That is three turns of not attacking, and the seed is what pays for them.
 
+## SHARD — the damage seed
+
+*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.* **It replaces SEED in his starting deck from the start of session one.** *SEED's card and rules stay above, because SHARD is defined against them.*
+
+```
+SHARD
+GREEN — SOUL
+Attack: Soul + d6
+Effect: Place a shard.
+Defense Effect: Flow: place a shard.
+Range: Both
+"What you leave behind is sharper when you come back for it."
+```
+
+**A seed is planted; a shard is placed** *(Drew, 2026-10-15)* — a piece of edge set down, not something grown from. **The flavour line speaks to the player** — *you*, not *he*.
+
+**It works exactly like a seed** (Seeds, above) **until it is taken back:**
+
+> **Placing.** Pay **3 HP**. A shard with **3 HP** — the HP you paid — appears at your position. It is an **Object** (`rules/combat.md`, Objects): it takes no turn, never acts, and **can be attacked**. Leave the SHARD card face up in front of you to track it. One card, one shard.
+>
+> **Growing.** At the start of each of your turns it gains **3 HP**, to a maximum of **your own maximum HP**. It does not grow on a turn you begin Collapsed.
+>
+> **Taking it back.** While you are in the **same position as the shard**, you may take it back as a **free action**: the shard is gone, the card goes to your discard pile, and **your next attack deals bonus damage equal to the shard's HP.**
+>
+> **The bonus is spent by your next attack, whatever happens** *(Drew, 2026-10-15)*. It lands with the hit. **If that attack is blocked or misses, the bonus is gone.** Your own blocks do not touch it — it waits for your next attack.
+>
+> **Afterwards.** A shard left standing when a fight ends is still there, and keeps growing at the start of each of your turns in the next one.
+
+**The difference from SEED is the HP he paid.** A seed gives back what he put in; **a shard does not** — the 3 HP is gone, and what comes back is an edge.
+
+**At the same rate, a shard is the stronger of the two.** A heal is capped by how hurt he is and wasted at full HP; **a damage bonus is never wasted**, and a shard left four turns is up to +15 on one swing (his maximum HP). **What holds it back is that everything rides on one attack**: a defender who wins the reveal takes the whole bank off the table, and until then it is standing where an enemy can hit it. **The lever is the same as SEED's — the rate first** (What it is worth, above): 2 a turn before touching anything else.
+
 ## Held Back — FOLLOW THROUGH
 
 **Not before the party has middle-tier cards** *(Drew, 2026-10-04)* — it is too good to arrive earlier, so it is **not one of the three customs in his advancement deck** (`campaign/session-1-cards.md`, The advancement decks). **Written, priced, and not a starter.** This is the fourth card, kept as a later reward rather than one of the three he begins with. The reason is the one the design already argued: it buys a turn. That is the strongest thing a card in this system can do, and it should arrive as something earned at the table rather than something he opens the campaign holding.
@@ -507,7 +557,7 @@ The wheel is a fixed ring of slots, one per combatant (`combat-simulations/wheel
 TRANSPOSE
 GREEN — SOUL
 Attack: Soul + d4
-Effect: Gain Quick. Cadence: gain another.
+Effect: Gain Quick. Flow: gain another.
 Defense Effect: You may change position.
 Range: Both
 "Same song. Different key."
@@ -529,8 +579,8 @@ Range: Both
 RUBATO
 BLUE — MIND
 Attack: Mind + d4
-Effect: Apply Initiative Shift +1 to yourself and -1 to the defender. Cadence: make both 2.
-Defense Effect: Apply Initiative Shift +1 to yourself and -1 to the attacker. Cadence: make both 2.
+Effect: Apply Initiative Shift +1 to yourself and -1 to the defender. Flow: make both 2.
+Defense Effect: Apply Initiative Shift +1 to yourself and -1 to the attacker. Flow: make both 2.
 Range: Both
 "Stolen time. Paid back later, maybe."
 ```
@@ -547,8 +597,8 @@ Range: Both
 INTERFERENCE
 BLUE — MIND
 Attack: Mind + d6
-Effect: Cadence: choose one: the defender gains Weak, Blind or Rooted.
-Defense Effect: Cadence: choose one: the attacker gains Weak, Blind or Rooted.
+Effect: Flow: choose one: the defender gains Weak, Blind or Rooted.
+Defense Effect: Flow: choose one: the attacker gains Weak, Blind or Rooted.
 Range: Ranged
 "Static. Then the wrong note. Then nothing you meant to do."
 ```
@@ -567,7 +617,7 @@ Range: Ranged
 ACCELERANDO
 BLUE — MIND
 Attack: Mind + d6
-Effect: Apply Initiative Shift +1 to yourself. Cadence: make it +2.
+Effect: Apply Initiative Shift +1 to yourself. Flow: make it +2.
 Defense Effect: Apply Initiative Shift +1 to yourself.
 Range: Melee
 "Faster, and faster, and nobody noticed when it started."
@@ -607,7 +657,7 @@ Range: Melee
 - **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
 - Appearance, voice, backstory detail beyond the above
 - Price
-- **MEASURE, SEED, KILLSWITCH** — all three settled as his starters, one per colour, recoloured 2026-09-20. SEED's growth rate and KILLSWITCH's d4 both want a table test
+- **MEASURE, SHARD, KILLSWITCH** — his starters, one per colour; SHARD replaced SEED at the start of session one. SHARD's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
 - **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open. **The favoured shape, if they go public, is a cover story: Code wanted for the disappearance of his father** *(Drew, 2026-09-28: "diabolical")*. It recruits the whole kingdom without saying what he is, the one man who could clear him is the man he is accused of, and **anybody who saw that night from outside saw a son flee while his father went down — dragged off by a friend.** *That last part lands on Kevin too* (`campaign/kevin.md`, And then it ended badly). Still a hook, not a decision

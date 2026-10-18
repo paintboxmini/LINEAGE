@@ -4,12 +4,13 @@ The three custom cards Chris starts with. See `campaign/chris.md` for the
 character, the stats they are built against, and why each one is the colour
 it is — **that file holds the reasoning, this one holds the cards.**
 
-**SEED is deliberately thin.** What a seed costs, what it grows into and how
-it is spent are on his sheet under Seeds (`campaign/chris.md`), not on the
-card, the same arrangement Kevin's rounds and drinks use. The card says the
-part that happens at the table; the sheet holds the part that is his.
+**SHARD is deliberately thin.** What a shard costs, what it grows into and how
+it is spent are on his sheet (`campaign/chris.md`, SHARD — the damage seed),
+not on the card, the same arrangement Kevin's rounds and drinks use. **SHARD
+replaced SEED at the start of session one** *(Drew, 2026-10-15)*.
 
-His deck is **4 Blue / 3 Red / 2 Green** (Mind 4 / Body 3 / Soul 2), so one
+His stats are **Mind 4 / Soul 3 / Body 2**, so the heuristic draft is
+**4 Blue / 3 Green / 2 Red** — one
 signature per colour and six more from the Oracle draft at the table
 (`rules/character-creation.md`, Starting Deck).
 
@@ -22,20 +23,20 @@ deck (`rules/cards.md`, Deck Building).
 **MEASURE**
 RED — BODY
 Attack: Body + d8
-Effect: Cadence: deal +2 damage and the defender reveals their stats.
-Defense Effect: Cadence: the attacker reveals their stats.
+Effect: Flow: deal +2 damage and the defender reveals their stats.
+Defense Effect: Flow: the attacker reveals their stats.
 Range: Melee
 *"A bar is not a bar because of the notes in it. It is a bar because of where it ends."*
 
 ---
 
-**SEED**
+**SHARD**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Plant a seed.
-Defense Effect: Cadence: plant a seed.
+Effect: Place a shard.
+Defense Effect: Flow: place a shard.
 Range: Both
-*"He plants what he can spare. It remembers the rest."*
+*"What you leave behind is sharper when you come back for it."*
 
 ---
 

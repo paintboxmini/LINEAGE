@@ -22,6 +22,8 @@ Three questions the table actually needs to answer, in this order:
 
 **This is already how Senshi works.** The Naturalist Collection (`places/capital/gilded-tusk.md`) isn't a menu he wrote in advance — it's built dish by dish from whatever creature the party actually brought him, worked out at the counter each time. Any other crafter in the world runs on the same principle: react to what's in hand, don't roll a formula.
 
+**How many of these effects stack at once isn't this file's rule to state — it's `rules/combat.md`, One drink at a time.** Kevin's Gluttony (`campaign/kevin.md`) is the one named exception to it.
+
 ---
 
 ## Briarwatch

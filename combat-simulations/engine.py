@@ -174,6 +174,9 @@ class Combatant:
         # belong to the one kind that gets bigger on its own
         # (`campaign/chris.md`, Seeds); a spirit has neither.
         self.is_seed = False
+        self.is_shard = False     # SHARD: a seed taken back as damage, not HP
+        self.shard_bonus = 0      # banked by taking a shard back; spent by the next attack
+        self.shard_live = 0       # the bonus riding on the attack now resolving
         self.grows_by = 0
         self.tracker = None       # the card sitting face up for this Object
         self.tie_win_for = None   # HERE BOY: whose tie-win this spirit holds
@@ -234,9 +237,9 @@ class Combatant:
         self.last_color = None
         self.color_this_turn = None
 
-        # Cadence (`rules/card-glossary.md`): the colour of the last card this
+        # Flow (`rules/card-glossary.md`): the colour of the last card this
         # combatant revealed, attacking or defending. `flow_prev` is the one
-        # before the card now resolving, which is what a Cadence clause asks.
+        # before the card now resolving, which is what a Flow clause asks.
         self.last_reveal_color = None
         self.flow_prev = None
 
@@ -698,12 +701,19 @@ def resolve_attack(attacker, defender, atk_card, def_card, rng=random,
     # anything asking about a colour change. Recorded here rather than in
     # play.py so an extra attack handed back mid-turn also counts, and only
     # for the attacker — a defence is played on someone else's turn.
-    # Cadence: every revealed card counts, a block included, so both sides
+    # Flow: every revealed card counts, a block included, so both sides
     # roll their last-revealed colour forward here, on the reveal.
     for who, card in ((attacker, atk_card), (defender, def_card)):
         if card is not None:
             who.flow_prev = who.last_reveal_color
             who.last_reveal_color = card.color
+
+    # SHARD (`campaign/chris.md`, SHARD — the damage seed): a bonus taken
+    # back from a shard is spent by the next attack whatever happens. It
+    # adds to the damage only if this attack lands; blocked or missed, it
+    # is simply gone. The holder's own blocks never reach this line.
+    attacker.shard_live = attacker.shard_bonus
+    attacker.shard_bonus = 0
 
     if atk_card is not None:
         attacker.color_this_turn = atk_card.color
@@ -934,7 +944,7 @@ def _finish(outcome, attacker, defender, atk_card, def_card, log,
         else:
             rolled = roll_damage(
                 attacker, atk_card, rng,
-                bonus=(ctx.dmg_bonus if ctx else 0) + bonus,
+                bonus=(ctx.dmg_bonus if ctx else 0) + bonus + attacker.shard_live,
                 extra_dice=ctx.dmg_dice if ctx else (),
                 mult=(ctx.dmg_mult if ctx else 1) * mult,
                 explode=ctx.explode if ctx else 0)
@@ -1271,6 +1281,12 @@ def harvest_seed(who, log=None):
     if seed is None:
         return 0
     amount = seed.hp
+    if seed.is_shard:
+        who.shard_bonus = amount
+        log(f'  {who.name} takes the shard back — +{amount} on the next attack.')
+        seed.hp = 0
+        seed.dissipate(log)
+        return amount
     healed = who.heal(amount, log=log)
     log(f'  {who.name} takes the seed back — {healed} HP.')
     seed.hp = 0

@@ -74,9 +74,9 @@ Where that points him, and how the search runs: `campaign/session-1-convergence.
 
 What's summoned: the spirits of the three Shunka royals born cursed — the last of that line (`factions-and-races/races-shunka.md`). Four triggers: HERE BOY and LET'S GO in his starting deck, STAY and GOOD BOY for advancement (`campaign/pat-cards.md`).
 
-**Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — a reasonable extension of an existing rule, not a new one, but worth confirming rather than assuming.
+**Spirits are Objects, not combatants.** Confirmed: they don't act, take no turn, and never get a token on the initiative wheel — the "summoned combatant enters the wheel" rule (`rules/combat.md`, Initiative) doesn't apply, because they aren't combatants. They just hold their rolled HP at Pat's position until something reduces them to 0, same as a totem. **They can be attacked directly** — an enemy can target the spirit instead of Pat or an ally. Since a spirit has no cards and can't choose a defense, the natural reading is that an attack against one auto-hits, no RPS — the same outcome already defined for any target that can't or won't defend (`rules/combat.md`, Attack Resolution) — and that is now the written rule (`rules/combat.md`, Objects).
 
-**"Object" as a formal category doesn't exist in `rules/combat.md` yet** — it did before this repo's rebuild, but didn't survive. Deliberately not formalizing it off one example: Pat's spirits work fine defined narrowly as they are above. Worth writing as a real general rule once there are more Objects to generalize from, not before.
+**Object is a formal category now** (`rules/combat.md`, Objects, 2026-09-20). It was held back until there were more examples than Pat's spirits, and it was written once AMALGAMOUS FORM's walls and Chris's seeds made three.
 
 **In the simulator, as of 2026-09-19.** Spirits are modelled as Combatants carrying an `is_object` flag rather than as their own class — the damage pipeline, targeting and positions then all work on them unchanged, and having no hand they can never choose a defence, which *is* the auto-hit reading above rather than a special case written to produce it. They take no turn because nothing puts them on the wheel, and a side is not still standing because a totem is. The d10 goes into Soul, because max HP is derived and must stay derived (`rules/invariants.md`), and 4×0 + 0 + HP is exactly the roll.
 
@@ -123,6 +123,8 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 **A smell is not legible.** It is not a name, not a face, not a symbol — it is residue, and the unmaking had no grip on it. **That is why one scrap of cloth outlasted a woman the world deleted**, and why it is faint: it is the last of something reality no longer keeps a slot for.
 
 *Which makes this the only physical trace of her that exists anywhere, held by the one person hunting her line.*
+
+**It carries a family emblem** *(granted to Pat at the table, session one — `campaign/session-1-log.md`)*. Lusk could not place it; Flint knew it for Lizardkin. **The emblem is the family's, not hers**, which is why the unmaking left it: it names a line, not the woman the world deleted (above). **And the scrap's fibre matches the cloth in one of the crates the party pulled out of the river** — the same plant, woven coarse and sturdy, off a Muirn boat Harlock took. *So the scrap is Muirn work.*
 
 ### What it actually does at the table
 

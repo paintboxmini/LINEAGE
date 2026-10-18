@@ -41,7 +41,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # The party as written, at session one: nine total stats each, so nine-card
 # decks (`rules/character-creation.md`, Starting Deck).
 PARTY = [
-    ('Chris', dict(mind=4, body=3, soul=2), FRONT, 'campaign/chris.md'),
+    ('Chris', dict(mind=4, body=2, soul=3), FRONT, 'campaign/chris.md'),
     ('Kevin', dict(mind=3, body=4, soul=2), FRONT, 'campaign/kevin.md'),
     ('Pat',   dict(mind=2, body=3, soul=4), BACK,  'campaign/pat.md'),
 ]

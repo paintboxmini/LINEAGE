@@ -32,6 +32,8 @@
 
 *This is the party's part, and none of it is written as solved.*
 
+**Since session one:** *Marta is sending him food for the Red Scarves, paid for by Caine and Code* (`campaign/session-1-log.md`). **It is the first thing he has had to offer them besides a step by the water.** *He has not met the party.*
+
 - **A building.** He has a shrine on a step and nothing with a roof
 - **Money**, to buy or rent one and to feed what comes through the door
 - **Masters who will take an apprentice from him**, which means somebody with standing vouching for him on the dock
@@ -42,7 +44,7 @@
 
 **Because everyone who ever said they wanted to help them sold them.** The man who promised their family an apprenticeship; the kind woman with the hot soup and the cart waiting round the corner. *Most people who claim to want to help end up selling the kids off to a warehouse or a sweep* (Drew, 2026-10-07). **A priest offering a home is the oldest version of that trick there is.**
 
-**So they test him**, and they will go on testing him. *He passes by doing the same thing every day for a long time.* **The way in is Kino** (`places/vultures-nest.md`, Key NPCs), who decides what the Scarves do — and who does not sleep in the Ribs, and so has his own reasons to think hard about a door with no lock.
+**So they test him**, and they will go on testing him. *He passes by doing the same thing every day for a long time.* **The way in is Kino** (`places/vultures-nest.md`, The Red Scarves, Kino and Bean), who decides what the Scarves do — and who does not sleep in the Ribs, and so has his own reasons to think hard about a door with no lock.
 
 ## Not Yet Set
 

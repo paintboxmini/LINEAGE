@@ -19,6 +19,8 @@ Predators execute the forest's will.
 
 Those who stay long-term develop habits instead of maps. They tie cords to their wrists, hum route-songs, or simply let the wood guide them completely. Forest families live under canopy year-round.
 
+**Where they came from.** Not always here. Roughly thirty years ago, a war was fought at the Wastes' edge — the Ashfall War (`places/ashfall-wastes.md`) — over one of the relics buried in the ash, not the War Engine itself. Whoever held that ground lost enough of it that staying wasn't survivable, and fled into the Weald rather than hold it. A full generation has grown up inside that choice since — long enough that the cords and route-songs above aren't a recent adaptation to anyone actually living them now. They're just how it's always been, for anyone young enough to have been born into it.
+
 ## Flora & Fauna
 
 Mutated plants, luminescent mosses, and predators adapted to near-total darkness are common. Many organisms exhibit unfamiliar behaviors or symbiotic relationships not found elsewhere.
