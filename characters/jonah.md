@@ -32,6 +32,8 @@
 
 *This is the party's part, and none of it is written as solved.*
 
+**Since session one:** *Marta is sending him food for the Red Scarves, paid for by Caine and Code* (`campaign/session-1-log.md`). **It is the first thing he has had to offer them besides a step by the water.** *He has not met the party.*
+
 - **A building.** He has a shrine on a step and nothing with a roof
 - **Money**, to buy or rent one and to feed what comes through the door
 - **Masters who will take an apprentice from him**, which means somebody with standing vouching for him on the dock

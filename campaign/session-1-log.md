@@ -18,7 +18,7 @@
 **Marta's** — *a small, run-down brick establishment*, the description used at the table (`places/vultures-nest.md`, The Market).
 
 - **Caine bought five jerky** — each heals 1 HP — for 3 gold, all five.
-- **Caine gave Marta 20 gold to feed the Red Scarves**, and **Code added 5.** *Caine's Price is "I always share with those in greater need than me", and it fired on its first morning at the table* (`campaign/pat.md`, The Price).
+- **Caine gave Marta 20 gold to feed the Red Scarves**, and **Code added 5.** **Marta will give the food to Jonah** (`characters/jonah.md`) **rather than to the kids directly** *(Drew, 2026-10-18)* — *the Scarves have stolen from her for years, and Jonah is the one person on the dock trying to give them somewhere to eat.* *Caine's Price is "I always share with those in greater need than me", and it fired on its first morning at the table* (`campaign/pat.md`, The Price).
 - **Flint gave Marta some of his grace peppers** and is working toward **a steady trade for the family business.** She was blown away by the quality, and **traded him her whole remaining supply of cinder flake — 5 measures.**
 
 > **Marta:** *"Easiest choice I've ever made."* There was no comparison in the heat. **She has been looking for a way to make a spicier jerky, and now she has a sustainable one.**
@@ -30,7 +30,7 @@
 - **They came to the quarantine.** **The infected were never seen** — they are in a warehouse, out of sight, waiting for Bartho to question them (`places/vultures-nest.md`, The Quarantined Barge).
 - **The Arcadia crashed into the dock** and lost cargo into the river.
 - **During the salvage, Wrackclaws came up the stones**, and **the party saved Bartho's dock labourers** (`bestiary/wrackclaw.md`).
-- **They talked Bartho into letting them use their own ship** — the impounded Merry Mint — **to bring the lost goods back out of the river.**
+- **They talked Bartho into letting them use their own ship** — the impounded Holly Mint — **to bring the lost goods back out of the river.**
 - **The cargo went two ways** *(Drew)*: **some was swept away, and most was pushed onto the bank.** So the Arcadia's logs will be short **more than three crates** — and the party's three are hidden inside a loss nobody can account for exactly.
 - **Three crates came up in their nets that nobody else noticed, and they kept them.** Harlock does not have them back.
 - **The nets also brought up five Wrackclaws**, alive. **The party is keeping them in a barrel.** *Edible, but not good.* **They plan to give them to Marta** — to try as jerky, or baked into a bread, maybe with her new grace.

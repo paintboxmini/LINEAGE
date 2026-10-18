@@ -54,7 +54,7 @@ The horror is administrative, and the thing that makes it unsolvable is not mali
 
 ## The Party's Position
 
-**They were on the dock when it closed, and they are impounded with everyone else** *(Drew, 2026-10-10)*. It is worth being explicit about at the table: **they can walk the town and they cannot leave the Nest**, and their boat — the Merry Mint, empty, no freight aboard — is inside the cordon (`campaign/session-1-convergence.md`). Their names are one shrug away from Jonas's ledger.
+**They were on the dock when it closed, and they are impounded with everyone else** *(Drew, 2026-10-10)*. It is worth being explicit about at the table: **they can walk the town and they cannot leave the Nest**, and their boat — the Holly Mint, empty, no freight aboard — is inside the cordon (`campaign/session-1-convergence.md`). Their names are one shrug away from Jonas's ledger.
 
 **This gives them two live approaches from the first hour, and both are real:**
 

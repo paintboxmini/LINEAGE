@@ -56,7 +56,7 @@ Then: **the crash needs the lockdown** (the berth is short because the barge has
 
 **Skipped.** It cannot be skipped — it is the frame. It *can* be three sentences.
 
-**Leaves behind.** They and the Merry Mint are still impounded. Nothing in the day fixes that.
+**Leaves behind.** They and the Holly Mint are still impounded. Nothing in the day fixes that.
 
 ---
 
