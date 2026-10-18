@@ -29,7 +29,7 @@
 
 - **They came to the quarantine.** **The infected were never seen** — they are in a warehouse, out of sight, waiting for Bartho to question them (`places/vultures-nest.md`, The Quarantined Barge).
 - **The Arcadia crashed into the dock** and lost cargo into the river.
-- **During the salvage, Wrackclaws came up the stones**, and **the party saved Bartho's dock labourers** (`bestiary/wrackclaw.md`).
+- **During the salvage, six Wrackclaws came up the stones**, and **the party saved Bartho's dock labourers** (`bestiary/wrackclaw.md`). **Code arrived first** and used Performance — *a crossed-arms pose worthy of a ninja* — to rally the dockworkers holding the cargo. **The party rolled the Wrackclaws over.** Drew sent every attack at Caine and got him to half HP; **Caine had PAIN IS FUEL running before the fight** (`cards/red-body.md`) — *Resist and Thorns 2 every time he is hit*, and Thorns stacks, so every bite at him made the next one cost more.
 - **They talked Bartho into letting them use their own ship** — the impounded Holly Mint — **to bring the lost goods back out of the river.**
 - **The cargo went two ways** *(Drew)*: **some was swept away, and most was pushed onto the bank.** So the Arcadia's logs will be short **more than three crates** — and the party's three are hidden inside a loss nobody can account for exactly.
 - **Three crates came up in their nets that nobody else noticed, and they kept them.** Harlock does not have them back.
@@ -69,6 +69,14 @@
 **Bartho's request, when he makes it** *(Drew)*. **His fear is that the barge got infected on the way here.** He has their story and cannot believe it without somebody checking, and if he can be convinced they are no danger to Vulture's Nest, he will let them go.
 
 > *"Just go see if there's anyone alive on that island. If there's people there who have the same kinds of illness and they aren't dead, then I'll believe their story about taking their dead for a glasskin burial ceremony at the quartz cliffs. But as it stands I've got a barge full of either dead or infected people and I can't take their word at face value."*
+
+**Watch Pat.** *He is quiet at the table* (Drew) — **give Caine the first beat of the night**, and the *cursed* rumour is exactly that beat.
+
+**A fight that bites.** Six Wrackclaws were no contest. For a real fight in the Nest:
+
+- **Toughs** (`bestiary/toughs.md`) — **Boss + 1 Tough + 1 Slinger** is the strong fight (~81%, about one Down). **The Slinger shoots from the back, which is the answer to Caine's Thorns.** Reskin as smugglers, Bellows men, Mercer's men, or low-lifes leaning on the Scarves
+- **An optional creature fight — a light on the mud.** At night, on a slow tide, a steady low light on the bank reads as *somebody down there in trouble*, and people go (`bestiary/spooklight.md`). **What is on that mud is a Foulhaul family** (`bestiary/foulhaul.md`). **Three Foulhauls: ~92%, about one Down** — and their trait is the drama: **a Foulhaul that drops somebody picks them up and walks off with them.** *The smell gives a minute's warning first, and that minute is the scene.* **The hook writes itself from session one**: one of the dock labourers they saved goes to answer a light at two in the morning
+- **Later, a set piece — the Gowra** (`bestiary/gowra.md`). One, never two. *Nobody in the Nest believes in it, and the party will not be believed either*
 
 ## The three crates — the big new thread
 
