@@ -29,6 +29,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 | `campaign/session-1-cards.md` | **The draft and the first advancement** — how the 63-card Oracle is dealt, what the GM says about deckbuilding and what he deliberately doesn't, and where all 63 cards end up |
 | `campaign/session-1-convergence.md` | Why all of them are at Vulture's Nest, and what the opening is for |
 | `campaign/session-1-log.md` | **What actually happened in session one** — the record, and where it stopped |
+| `campaign/session-2-crate.md` | **Session 2: Harlock's crate** — the ask, the carry, the drop at Buttons and Such |
 | `campaign/session-2-scarves.md` | **Session 2: Code and the Red Scarves** — the mockery at the Moving Crate, Kino's apology, and the trial job |
 | `campaign/session-1-threads.md` | **The threads of the opening as modular pieces rather than a running order** — what each one is, how to touch it lightly, how deep it goes, and what skipping it costs |
 | `campaign/passives.md` | Every player Passive written so far, with the reasoning for each |
