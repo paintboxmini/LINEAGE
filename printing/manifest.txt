@@ -13,7 +13,7 @@
     cleared, on the bench    42
     middle tier              37
 
-  every card in cards/      418   (Red 146, Blue 129, Green 139, colourless 4)
+  every card in cards/      421   (Red 147, Blue 130, Green 140, colourless 4)
 
 ## Print artifacts
 
@@ -25,7 +25,7 @@
   card-print-items-field           3 cards  cf2682d5260f
   card-print-items                14 cards  6add9eb62875
   card-print-mason                 6 cards  c6964790d2d6
-  card-print-nest                 50 cards  b8293cb657d4
+  card-print-nest                 53 cards  e17f88f7c09c
   card-print-oracle-1             21 cards  a884ea1d3d8c
   card-print-oracle-2             21 cards  266201d5ea1d
   card-print-oracle-3             21 cards  1480367dce4b

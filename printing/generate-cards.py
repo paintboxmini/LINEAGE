@@ -66,6 +66,7 @@ SETS = {
         'title': "Vulture's Nest Encounter Set",
         'files': [
             '../cards/wrackclaw.md',
+            '../cards/stiltjaw.md',
             '../cards/duskwick.md',
             '../cards/flapjack-octopus.md',
             '../cards/foulhaul.md',
@@ -117,6 +118,7 @@ SETS = {
         'title': 'Washed Ashore Encounter Set',
         'files': [
             '../cards/wrackclaw.md',
+            '../cards/stiltjaw.md',
             '../cards/hullback.md',
             '../cards/trisect-ashfall.md',
         ],

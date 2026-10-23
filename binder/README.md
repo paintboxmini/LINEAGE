@@ -20,6 +20,7 @@
 | Creature | Pages | Note |
 |---|---|---|
 | Wrackclaw | `binder/wrackclaw.md` | |
+| Stiltjaw | `binder/stiltjaw.md` | Shell — Armour 2 — on the Measured page |
 | Redjaw | `binder/redjaw.md` | |
 | Duskwick | `binder/duskwick.md` | **Measured is printed blank** — it is Obscure (`rules/card-glossary.md`, Obscure). *The ordinary one; the Large One at Briarwatch is not on it* |
 | Flapjack Octopus | `binder/flapjack-octopus.md` | |
