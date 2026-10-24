@@ -75,6 +75,8 @@ Range: Melee
 
 ---
 
+**Named:** `characters/barb.md` — a river navigator at the Listing Keel, sailing for the party since session two.
+
 ## To Establish
 
 - **Which cities they live in** beyond Vulture's Nest, and where the raft communities and outposts sit on the web. *They are a people of the river web's sailing culture, not necessarily the whole of it* (`world/geography-overview.md`, River system)

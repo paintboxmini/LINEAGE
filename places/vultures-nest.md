@@ -396,6 +396,15 @@ She believes the docks look after their own quietly, or nobody looks after them 
 
 **The Ticking Box** — it ticks. Not like a clock. More like something inside counting toward or away from something. Whatever's in it is alive or was recently. Dess keeps it on the counter because the back room made her uncomfortable. At least out front she can see it.
 
+## Named at the Table
+
+*Places and people that came out of play, session two (`campaign/session-2-log.md`).*
+
+- **The Golden Thread** — a tailor's. **Taylor** works there. *Code has a silk scarf on order.*
+- **The Crossroad's Hilt** — a simple smithy. **Ashen** is the smith. *Caine has barbed-wire gauntlets on order.*
+- **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
+- **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
+
 ## The Listing Keel — Tavern
 
 The building sits two degrees off level. Nobody fixed it after the last rebuild. Furniture has been shimmed so many times the legs are all different lengths.

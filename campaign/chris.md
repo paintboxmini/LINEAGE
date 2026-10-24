@@ -185,6 +185,8 @@ What the kit delivers so far:
 
 **What Lusk knows, and what he does not.** *He knows the papers were not Code's* — he sold them to him. **He does not know who Code actually is**: not his real name, not the University, not what he is. To him Code is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about that makes Lusk a threat yet. It makes him someone who knows one true thing, and he is the kind of man who sells those.*
 
+**Session two:** *Kino invited him to Buttons and Such at ten that night for his shot at joining; the initiation runs between sessions. He has a silk scarf on order from Taylor at The Golden Thread, and took **WEATHERED** at the first advancement* (`campaign/session-2-log.md`).
+
 **Session one:** *Code wants to join the Red Scarves, and Lusk has put in a good word for him with Kino. They have still not met* (`campaign/session-1-log.md`).
 
 **Code has had no direct contact with the Red Scarves** *(Drew, 2026-10-08)*. **That happens at the table, not before it.** *The kids stole the purse; Kino knows whose it was* (Not Yet Set, below); *neither of them has ever met the man carrying the papers.*
