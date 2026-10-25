@@ -139,6 +139,27 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 ---
 
+## After session two
+
+**The second advancement drew from the single Oracle** (`campaign/session-2-log.md`, The first advancement), **so the planned decks lost cards before they were used:**
+
+| | Lost | Left of the six |
+|---|---|---|
+| **Flint** | STRIKE (to Caine), WEATHERED (to Code), CALLED SHOT (passed) | ENFEEBLE, OPENING, BIND — **three short** |
+| **Caine** | GUARD (passed) | INSTINCT, SHADE AWAY, DISORIENT, COMMUNION, REALIGNMENT — **one short** |
+| **Code** | — | all six |
+
+**Out of the reserve:** ALIGN, BRISTLE, PATIENCE, SMOKESCREEN (to Flint). **Passed cards are kept separate**, in no deck.
+
+**The reserve now:** ATTRITION, BLINDSIDE, CHARGE, FOOTWORK, GROUNDING STANCE, OFF BALANCE, PUSH (Red); DISSECT, INTERCEPT, SIDESTEP, THINK TWICE (Blue); MIRROR STEP, SHELTER, STIR (Green).
+
+**Refills, proposed — Drew's call:**
+
+- **Flint (3):** OFF BALANCE (Red), THINK TWICE (Blue), SHELTER (Green) — *still a grab bag: a setup for the grinder, a toll on anyone who leaves him, and cover*
+- **Caine (1):** GROUNDING STANCE (Red) — *standing your ground, in GUARD's seat*
+
+**From here on, each player draws from their own deck** *(Drew, 2026-10-24)*.
+
 ## Open
 
 - Whether the spotlight cards Code earns (`experimental/code-concept-cards.md`) count against his nine, or sit outside the cap

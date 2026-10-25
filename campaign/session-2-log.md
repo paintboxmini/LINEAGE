@@ -8,7 +8,9 @@
 
 **They moved it, and it went smoothly** (`campaign/session-2-crate.md`). The crate is down at **Buttons and Such**.
 
-**Harlock paid 275 gold** — *nearly ten times the suggested 30; Drew's note: "I may have overpaid a tad."* **How it was split is not recorded.**
+**Harlock paid 275 gold** — *nearly ten times the suggested 30; Drew's note: "I may have overpaid a tad."* **Split evenly — about 91 each.**
+
+**Drew knows it was too much, and the gauntlets too cheap — early, and easily recovered.** *The players themselves suggested it: if they get unfairly rich, have the Red Scarves rob them.* **Which is a better scene now than it would have been a week ago — Code is about to be one of them.**
 
 ## The market — spending it
 
@@ -16,7 +18,17 @@
 
 **Caine commissioned a pair of gauntlets** from **Ashen**, the smith at **The Crossroad's Hilt** — *also named at the table.* **Barbed wire forge-welded into a wrap. 20 gold. Thorns 1.**
 
-**Flint found a stall selling leadfoot, bellows dust and luminova leaves.** **He bought 10 luminova leaves at 2 gold each — an insane bargain — plus 1 bellows dust and 2 leadfoot.** *Luminova is a Weald plant whose harvest lights the harvester up* (`flora/luminova.md`); **what it does for Flint is hints, not effects** (`campaign/kevin.md`, The Ingredients).
+**Flint found a stall selling leadfoot, bellows dust and luminova leaves.** **He bought 10 luminova leaves at 2 gold each — an insane bargain — plus 1 bellows dust and 2 leadfoot**, about 15 gold in all. *Luminova is a Weald plant whose harvest lights the harvester up* (`flora/luminova.md`); **what it does for Flint is hints, not effects** (`campaign/kevin.md`, The Ingredients).
+
+## The money
+
+| | After session one | Session two | Spent | Now |
+|---|---|---|---|---|
+| **Code** | 28 | +91 | scarf, price not set | **119, less the scarf** |
+| **Flint** | 26 | +91 | ~15 ingredients | **~102** |
+| **Caine** | 33 | +91 | 20 gauntlets | **104** |
+
+*275 does not split into three; the odd 2 gold is unrecorded.*
 
 ## Kino
 
@@ -46,7 +58,17 @@
 | **Caine** | **STRIKE** (Red) | CALLED SHOT, PATIENCE |
 | **Flint** | **SMOKESCREEN** (Green) | CORNER, GUARD |
 
-*A new card goes in the deck or the bank; the deck's maximum is the character's total stats, so each of them either swapped something out or banked it* (`rules/character-creation.md`, One Advancement Deck Per Player).
+**The passed cards are kept separate**, out of every deck.
+
+**This advancement drew from the single Oracle; the individual advancement decks start next time** *(Drew)*. That drew cards out of the decks planned for them (`campaign/session-1-cards.md`, The advancement decks): **STRIKE, WEATHERED and CALLED SHOT were three of Flint's six; GUARD was one of Caine's; ALIGN, BRISTLE, PATIENCE and SMOKESCREEN were in the reserve.** *CORNER should not have been there at all — it left the player pool on 2026-09-26 and is the Minotaur's now* (`cards/tiers/beginner.md`).
+
+*A new card goes in the deck or the bank; the deck's maximum is the character's total stats* (`rules/character-creation.md`, One Advancement Deck Per Player).
+
+## The quarantine — the word is planted
+
+**Caine heard *cursed*.** **The quarantine was a point of argument at the table**: Flint wanted to leave town, then changed his mind. **They plan to follow the thread soon.**
+
+*Table joke: Drew keeps throwing things at the party to stop them leaving, so that he can tell them they got infected.*
 
 ## Not reached
 
@@ -56,9 +78,7 @@
 
 ## Open
 
-- **How the 275 gold was split**
-- **What Flint paid for the bellows dust and leadfoot**
+- **What Code's scarf cost**
 - **The two new crewmen's names**, and **what Barb and the crew are paid**
 - **Whether each new card went into the deck or the bank**, and what came out
-- **Whether Caine heard the word *cursed***
 - **The initiation** — written up once Chris and Drew have played it
