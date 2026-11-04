@@ -40,13 +40,15 @@
 
 **The party went to the Keel and found Barb**, a beautiful Riverdog and **an experienced river navigator**, surrounded by Riverdog men (`factions-and-races/races-riverdogs.md`; `characters/barb.md`).
 
-- **Code slipped in** and talked her outside to meet **Caine**, whom he had spent some time talking up.
+**The fight came out of Code being Caine's wingman** *(corrected 2026-11-04)*. **Caine was interested in Barb.** Code cut through the other suitors, went to her directly, and asked her to give his Shunka friend a chance.
+
+- **Code talked her outside** to meet Caine, whom he had spent some time talking up.
 - **Three drunk Riverdogs followed them out, angry, and picked a fight.** Drew ran them as **Boss + Tough + Slinger** (`bestiary/toughs.md`). **Code went down to 1 HP** before the party won. *The "strong fight" played the way it measured: they won, and they felt it.*
 - **Caine seduced Barb** and **convinced her to sail for the party** — then took her up to his room.
-- **Two more Riverdog men joined the crew** — *possibly the Tough and the Slinger from the fight.* **Not named yet.**
+- **Barb is hired as the Holly Mint's navigator.** **Two more Riverdog sailors are hired as crew** — *possibly the Tough and the Slinger from the fight.* **Not named yet.**
 - **Pay was not discussed.**
 
-*A crew of three Riverdogs for the Holly Mint — which is still impounded.*
+**Why the crew matters.** **None of the players took a sailing Skill**, despite the group having talked about the kind of game they wanted — *an oversight, or a deliberate refusal to metagame.* **So the Holly Mint sails on an NPC crew**, which opens room for recurring crew personalities and life aboard. *The ship is still impounded.*
 
 ## The first advancement
 
@@ -69,6 +71,47 @@
 **Caine heard *cursed*.** **The quarantine was a point of argument at the table**: Flint wanted to leave town, then changed his mind. **They plan to follow the thread soon.**
 
 *Table joke: Drew keeps throwing things at the party to stop them leaving, so that he can tell them they got infected.*
+
+## Between sessions — the first night *(ongoing)*
+
+*The party has split up for the night, and the players are carrying on by group chat. **What follows is current, not finished** — Drew's plans are marked as plans, and nothing here is canon until it is played.*
+
+### Code — the initiation
+
+**Code is at Buttons and Such. Kino is watching from a stall roof.** *Drew's message to Chris, 2026-11-04:*
+
+> *You receive a nudge from a small Red Scarf. When you look at him, he just nods his head up to one of the shop stall roofs. There, watching down on the marketplace, Kino smiles at you and he waves his hand in a wide sweeping gesture towards the people walking the marketplace — a gesture that's to say, "Take your pick."*
+>
+> *The member who approached you is waiting, watching people's feet as they pass like a hawk. "I recommend choosing a mark by how they walk," he whispers.*
+
+**Drew's intended direction — plans, not events:**
+
+- **Code chooses a mark and tries his luck.**
+- **Depending on how it goes, he may still have to hand over some of what he took** to buy his way in.
+- **The climax: a race between Code and Bean to the Ribs**, through tight spaces, on a few rolls (`places/vultures-nest.md`, The Ribs).
+- **It ends with Kino and Code working out an arrangement.**
+
+*Code's choices and how the mark goes decide the shape of it.*
+
+### Caine — Barb
+
+**Caine is sleeping with Barb at the Listing Keel.** *Her job as navigator ties the two of them to the Holly Mint and every voyage after.*
+
+### Flint — the Thieves Den
+
+**Flint was not satisfied with how the evening went.** After the fight and the split, **he went to a much sketchier establishment: the Thieves Den** (`places/vultures-nest.md`, Named at the Table).
+
+**What he wants, as Kevin has it:**
+
+- **Relationships with pirates**
+- **Eventually, a pirate ship of his own**
+- **The Holly Mint kept as the legitimate trading vessel**, with a separate ship for piracy and rogue adventure
+
+**His first idea** was to hire pirates to do the work while he stayed aboard the Holly Mint running the honest business. **Drew suggested the other way round**: automate the ordinary trading so Flint can go on the pirating himself.
+
+**All of it is open.** *The Thieves Den may change a lot about what comes next.* **A secret gold reserve is possible** if Flint finds a reason to hide money from the others — *entirely optional; he is more likely to bring the party in openly.*
+
+**Don't tie these together early.** *Three player-driven threads on one night; Drew wants to see what the players make of them.*
 
 ## Not reached
 

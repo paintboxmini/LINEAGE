@@ -404,6 +404,7 @@ She believes the docks look after their own quietly, or nobody looks after them 
 - **The Crossroad's Hilt** — a simple smithy. **Ashen** is the smith. *Caine has barbed-wire gauntlets on order.*
 - **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
 - **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
+- **The Thieves Den** — *a much sketchier establishment than the Keel.* **Code and Flint have history there from before session one**: on their first visit to the Nest they **lost their money gambling** and **Flint lost his vibro knife**, and they got it back together (`campaign/kevin.md`, Starting gold). **Flint went back alone on the night after session two**, looking for pirates (`campaign/session-2-log.md`, Between sessions).
 
 ## The Listing Keel — Tavern
 

@@ -4,7 +4,9 @@
 
 **Beautiful, and an experienced river navigator.** Found at the Listing Keel surrounded by Riverdog men. **Code talked her outside to meet Caine; Caine talked her into sailing for the party** — and into his room.
 
-**She is the party's navigator now**, with two more Riverdogs crewing alongside her (unnamed). *Their boat is the Holly Mint, still impounded.*
+**She is the Holly Mint's navigator, hired**, with two more Riverdog sailors hired alongside her (unnamed). **Nobody in the party took a sailing Skill, so the crew does the sailing** — *which makes Barb and the two of them recurring faces aboard.* *The ship is still impounded.*
+
+**How Caine met her** *(corrected 2026-11-04)*: **Code played wingman** — cut through the Riverdog men around her and asked her to give his Shunka friend a chance. Three of those men took it badly, and that was the fight. *Caine is with her at the Keel tonight.*
 
 ## Not Yet Set
 
