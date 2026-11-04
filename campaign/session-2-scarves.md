@@ -117,7 +117,7 @@
 
 *B is the one with weight. Kino would not tell Code why he chose him; Tib would know.*
 
-**B and C are the same family and different business** *(2026-11-04)*. **Mercer is a Bellows man, not their head** (`characters/mercer.md`). **The agent's satchel holds binding papers** — children's names, possibly Tib's — and the trouble that follows is **Mercer's**: his standing reward, his men, Hojan in the crossfire. **The clerk's holds the night's coin and a tally of what moved through the gaps the Compact doesn't watch** — no children's papers — and the trouble that follows is **the whole family's**.
+**B and C are the same family and different business** *(2026-11-04)*. **Mercer is a Bellows man, not their head** (`characters/mercer.md`). **The agent's satchel holds binding papers** — **new ones, signed on this trip upriver, for children who have not been delivered yet.** *Not Tib's: **Mercer keeps Tib's contract himself**, which is what he sells the Ashbys in Hojan's thread* (`characters/hojan.md`, The Ashbys — Hojan's ask). *Lift the satchel and those children never reach the floor.* And the trouble that follows is **Mercer's**: his standing reward, his men, Hojan in the crossfire. **The clerk's holds the night's coin and a tally of what moved through the gaps the Compact doesn't watch** — no children's papers — and the trouble that follows is **the whole family's**.
 
 ### Running it — roles, rolls and heat
 

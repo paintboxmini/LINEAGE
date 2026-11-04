@@ -44,7 +44,7 @@
 
 *Drew, 2026-10-18.* **Hojan seeks the party out.** **Dell and Maren Ashby** (`places/vultures-nest.md`, People looking in) **are going to Mercer's warehouse to buy back their son's work contract**, and **Hojan does not trust Mercer not to take advantage of them.** *He needs an escort — people Mercer has to be careful in front of.* **Hojan cannot be the escort himself**: Mercer knows exactly what Hojan is for (`characters/mercer.md`).
 
-**What nobody in that room says out loud.** **Their son is Tib, and Tib is not on Mercer's floor** — he ran a year ago and is a Red Scarf. **Mercer will sell them the paper anyway.** *A contract for a runaway is worth more sold to his parents than it will ever be worth to Mercer.*
+**What nobody in that room says out loud.** **Their son is Tib, and Tib is not on Mercer's floor** — he ran a year ago and is a Red Scarf. **Mercer will sell them the paper anyway** — *he keeps it himself, on his own floor; his agents only carry the new ones.* *A contract for a runaway is worth more sold to his parents than it will ever be worth to Mercer.*
 
 **And buying it still matters.** **The paper is what makes Tib a runaway with a reward on him.** *Bought back, the reward is gone and he is free in law — whether or not he ever forgives the people who paid for it.* **He thinks they sold him** (`places/vultures-nest.md`, People looking in).
 
