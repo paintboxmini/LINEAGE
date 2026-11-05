@@ -404,7 +404,21 @@ She believes the docks look after their own quietly, or nobody looks after them 
 - **The Crossroad's Hilt** — a simple smithy. **Ashen** is the smith. *Caine has barbed-wire gauntlets on order.*
 - **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
 - **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
-- **The Thieves Den** — *a much sketchier establishment than the Keel.* **Code and Flint have history there from before session one**: on their first visit to the Nest they **lost their money gambling** and **Flint lost his vibro knife**, and they got it back together (`campaign/kevin.md`, Starting gold). **Flint went back alone on the night after session two**, looking for pirates (`campaign/session-2-log.md`, Between sessions).
+- **The Thieves Den** — see its own section, below.
+
+## The Thieves Den
+
+*Named at the table; played 2026-11-05 (`campaign/session-2-log.md`, Between sessions).*
+
+**A much sketchier establishment than the Keel**, and **where crews wait to be hired.** *Everyone in it is drinking and passing the time one way or another until the next ship takes them on.* **If you want a ship and a crew off the books, this is where you ask.**
+
+**Maxa** keeps the bar — *straight with a customer, and the one who decides which options a customer is given.*
+
+**House rule: everybody brings their own dice, and every set is inspected before it touches the table.** *It is a very big deal here.* **Liar's dice** is the game (`items/the-mangy-dogs-dice.md`).
+
+**Regulars:** **the Mangy Dog** (`characters/mangy-dog.md`), a captain with no ship, in the back corner with a jug; **Xander** (`characters/xander.md`), a Riverdog sailor who collects his debts in person.
+
+**History with the party:** **before session one**, Code and Flint lost their money gambling here and Flint lost his vibro knife; they got it back together (`campaign/kevin.md`, Starting gold). **After session two**, Flint came back looking for pirates and left with a captain and a first mate — after the whole bar had a fight.
 
 ## The Listing Keel — Tavern
 

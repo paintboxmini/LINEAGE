@@ -111,6 +111,21 @@
 
 **All of it is open.** *The Thieves Den may change a lot about what comes next.* **A secret gold reserve is possible** if Flint finds a reason to hide money from the others — *entirely optional; he is more likely to bring the party in openly.*
 
+#### What happened — played by phone, 2026-11-05 *(finished)*
+
+*Drew: some of the most fun roleplay he's done in a while.*
+
+- **Flint asked the barkeep, Maxa** (`places/vultures-nest.md`, The Thieves Den), **how to hire a ship and a crew.** *"You're in the right place for it. Everyone here's just drinking and passing the time, waiting for the next ship to hire them."*
+- **He asked for a captain** — *not popular, not well known, but skilled at always finding a way.* **Maxa hesitated, then pointed at the back corner**: a shrouded, slouched man with his head on one arm and his other hand round a jug of rum. ***"That there's the Mangy Dog, or at least that's what he goes by. You're just as likely to not come back at all when you voyage out with him."*** (`characters/mangy-dog.md`)
+- **The Mangy Dog never lifted his head** through Flint's introduction — but at the offer of work he raised the jug and waved Flint closer. **Flint bought another jug.** The Dog's plan, once he'd gathered himself, had two steps: **find the best sailor in here and make him first mate, let him hire the rest while we drink — and then, oh yeah, get a ship.**
+- **Flint went back to the bar**, nominally after the rum: *is there really no one better? He doesn't even have a ship.* **Maxa:** *"He told me to give you the options you got, son. This is it."* **Then Maxa nodded at a Riverdog by the wall** — large, intimidating, remarkably clean and well dressed for a pirate, arms crossed, watching a darts game and visibly upset.
+- **That was Xander** (`characters/xander.md`). *"I just got back from my last trip, and some of these men owe me money they never made right on. I'm going to make it right tonight, one way or another. I don't care how many of them there are."* **Flint offered to help.** Xander didn't answer — **he charged the man throwing darts**, caught the dart thrown at him, put it into the man's cheek and knocked him cold.
+- **The whole bar ended up fighting.** Flint clotheslined one man, tore another off Xander's back and kicked the one holding Xander's knee where it counts. **The Mangy Dog stumbled through the whole brawl** — *"All right, I'm coming to help, guys, don't worry, I'm coming"* — never quite arriving, while every man who went for him got blindsided by some random patron. *Jack Sparrow, on purpose.*
+- **After, the three of them sat back down to drink and nurse their wounds.** The Dog balked: *he's sailed with Xander before — "an uptight ass," and he won't sail with him again.* **Flint talked him round.**
+- **The ship.** **The Mangy Dog lost his ship a month ago at liar's dice** — playing with **an extremely high-quality set of loaded dice that got swapped without him noticing.** *It has been sitting in port ever since* (`items/the-mangy-dogs-dice.md`).
+
+**Where it stands:** **Flint has a captain (the Mangy Dog) and a first mate (Xander), who will hire the rest.** **They have no ship** — the Dog's is in port, lost at the table.
+
 **Don't tie these together early.** *Three player-driven threads on one night; Drew wants to see what the players make of them.*
 
 ## Not reached
