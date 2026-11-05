@@ -101,6 +101,17 @@
 
 **Where it stands** *(Drew, 2026-11-05)*: **Hardwire on the grandmother works.** **Drew has asked Chris whether she is already screaming as he approaches Mercer's agent, or whether he waits to set her off until he is close.** **Drew's plan:** *the first sign of chaos — the scream, and a child running to Mercer's agent for help — sets off the Bellows clerk and his guards, and they leave on high alert. The third lift is the one that goes badly.* **Drew is talking the grandmother through with Chris** — *what puppeting her means, before Chris decides, so the consequences are never a surprise.*
 
+**Played by text, 2026-11-06:**
+
+- **The first lift went off perfectly.** **Code took the papers from Mercer's agent and was gone before anyone saw.**
+- **In the crowd, Bean** — *the small Red Scarf who first nudged him* — **watched him go, impressed**, as Code made his way back to the grandmother.
+- **The complication:** at the grandmother's scream **the Bellows clerk's guards went on high alert and are ushering him out.** *Code can still follow, but it will be much harder.*
+- **The merchant** looked round at the disturbance and **went back to his business, unbothered.**
+- **The man in the long coat is scanning the crowd**, narrow-eyed (`characters/erubeth.md`).
+- **Kino is no longer on the stall roof.**
+
+**Drew and Chris settled on cyberpsychosis as the working theory for Hardwire's cost, to develop slowly** (`campaign/chris.md`, Hardwire's cost). *Aiming to finish the initiation before session three.*
+
 ### Caine — Barb
 
 **Caine is sleeping with Barb at the Listing Keel.** *Her job as navigator ties the two of them to the Holly Mint and every voyage after.*
