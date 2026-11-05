@@ -48,6 +48,20 @@
 
 **Flint's bag** also gained **5 measures of cinder flake** and lost some grace (`campaign/kevin.md`, What he starts with).
 
+## The first advancement
+
+*From Drew's photos, 2026-11-05 — **the top card in each photo is the one taken.***
+
+| | Took | Passed |
+|---|---|---|
+| **Code** | **QUICKEN** (Green) | SHADE AWAY, INTERCEPT |
+| **Caine** | **STIR** (Green) *— read from the photo's layout; to confirm* | BLINDSIDE, SLIP THE BLADE |
+| **Flint** | **DISSECT** (Blue) | ENFEEBLE, FOOTWORK |
+
+**The passed cards are kept separate**, out of every deck. **With session two's cards, every player now holds eleven** — and chooses nine at the start of next session (`campaign/session-2-log.md`, The second advancement).
+
+**Drew's printed QUICKEN reads Soul + d6.** *The repo changed it to d4 on 2026-10-05* (`cards/green-soul.md`) — *which one the table plays is Drew's call.*
+
 ## Where it stopped
 
 **Mid-scene**, before:

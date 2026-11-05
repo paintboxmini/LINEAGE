@@ -50,7 +50,7 @@
 
 **Why the crew matters.** **None of the players took a sailing Skill**, despite the group having talked about the kind of game they wanted — *an oversight, or a deliberate refusal to metagame.* **So the Holly Mint sails on an NPC crew**, which opens room for recurring crew personalities and life aboard. *The ship is still impounded.*
 
-## The first advancement
+## The second advancement
 
 **Three cards each, take one** (`rules/character-creation.md`, Advancement):
 
@@ -66,7 +66,7 @@
 
 *A new card goes in the deck or the bank; the deck's maximum is the character's total stats* (`rules/character-creation.md`, One Advancement Deck Per Player).
 
-**Every player holds eleven cards** *(Drew, 2026-11-05)* — **the starting nine and two from advancement** — **and chooses nine at the start of next session.** *Code's two are QUICKEN and WEATHERED. The other players' second card is not recorded here.*
+**Every player holds eleven cards** *(Drew, 2026-11-05)* — **the starting nine and two from advancement** — **and chooses nine at the start of next session.** *Code's two are QUICKEN and WEATHERED; Caine's STIR and STRIKE; Flint's DISSECT and SMOKESCREEN* (`campaign/session-1-log.md`, The first advancement).
 
 ## The quarantine — the word is planted
 
