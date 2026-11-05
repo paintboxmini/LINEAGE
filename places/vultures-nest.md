@@ -405,6 +405,7 @@ She believes the docks look after their own quietly, or nobody looks after them 
 - **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
 - **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
 - **The Thieves Den** — see its own section, below.
+- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers**, and **Code's headquarters.** *Hojan preaches from a step with no roof over him* (`characters/hojan.md`) — **an empty River church is the obvious house for his door with no lock**, and Code got there first.
 
 ## The Thieves Den
 

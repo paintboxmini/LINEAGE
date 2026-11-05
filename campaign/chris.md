@@ -4,9 +4,9 @@
 
 **The epithet is doing real work and was not chosen to.** *The Silver Sword* is MIMETIC BLADE stated as a title — the arm that is the sword, the one form he has perfected — and it lands on the Blade Singer fantasy this sheet was already built around (The Fantasy — Blade Singer, below). It arrived from a character concept built without the rules in front of it, which makes the fit an independent confirmation that the fantasy is legible.
 
-## Chris's packet, 2026-11-05 — pending Drew's ruling
+## Chris's packet, 2026-11-05 — and Drew's rulings
 
-*Chris sent a full Sol Card and card catalog. **Nothing below is ruled yet**; where it differs from this file, this file stands until Drew decides.*
+*Chris sent a full Sol Card and card catalog. **Drew ruled on it the same day** (below the list); anything not ruled, this file stands.*
 
 - **Background Prisoner; "Many Mask"** as his title on the card; **Red Scarves** as affiliation. *Class and alignment are on the card as flavour — the game has neither.*
 - **Skills: Hardwire +2 and Performance +2**, Hardwire in place of Netrunner. **Hardwire as written is a power, not a skill**: *a magical overlay on a living host's nervous system — Code commands the body while the host stays conscious inside.*
@@ -16,7 +16,22 @@
 - **Equipment: the Ever Switch** (Rynmori's stone data pad, made from fragments created when Code came through; deeper functions locked), **the Iron Scarf** (red silk embroidered MM — *the scarf commissioned from Taylor at The Golden Thread*), **and the Mini Mask, "Mini Me"** (a tiny marionette, a scout and future dispersal vessel). **All powers unconfirmed**, meant to grow with him.
 - **The catalog lists 11 action cards**: MEASURE, SHARPEN, WEATHERED, UNBROKEN, SEED, FLOW, QUICKEN, MEND, LAST RESORT, KILLSWITCH, DEFLECT.
 
-**Also in it:** *Saint Adollo of the River's Rain Church* — **Code's headquarters** — and *Vulture's Rest Marketplace*. **Neither is in the files yet.**
+**Also in it:** *Saint Adollo of the River's Rain Church* — **Code's headquarters** (`places/vultures-nest.md`, Named at the Table).
+
+### Drew's rulings *(2026-11-05)*
+
+- **Hardwire is an ability, not a skill.** **Code has one fewer Skill than the others — Performance +2 only — and one extra ability.** *Netrunner is gone.* **Limits, given to Chris directly:**
+  - **One host at a time**, and only **a host already infected by a Seed**, with **Mini Me close by**
+  - **The host gets a Soul Save to resist**, against Code's **Mind + 10**
+  - **The host stays conscious, and remembers**
+  - **It ends the moment Code stops concentrating**
+  - *And the cost that matters: puppeting a body is what the Hive does. Each use can ask a Soul Save of Code — the closed door to the link, pushing open* (The Live Thread, below)
+- **SEED stays.** **Its look is a cloud of airborne Silverling nanobots** — healing Code, or infecting a host for Hardwire. **SHARD is a planned advancement card Chris knows about**; he chose SEED.
+- **The current setup stays: Mimicry is a Trait; AMALGAMOUS FORM and MIMETIC BLADE are his Passives**, as written in `campaign/passives.md` — MIMETIC BLADE Green, Melee, d6.
+- **His cards: eleven** — the nine he started with, plus **QUICKEN and WEATHERED**. **He chooses his nine at the start of next session**; the other two go to his bank. *Every player is holding eleven.*
+- **"Many Mask" is Chris's aspiration for Code**, not a title Code goes about announcing. **Code knows nothing of the Many Mask legend in character** (`places/vultures-nest.md`, The Many Mask's legacy).
+- **His child shape is his own face — the one he imprinted, Rynmori's — run back in age.** *There is no real child to hunt for what he does in it: the child is his father, long ago.*
+- **The equipment is gear that grows with him**: powers unconfirmed, nothing until Drew decides what each unlocks.
 
 ## What He Is
 
@@ -266,7 +281,9 @@ What the kit delivers so far:
 
 ## Skills
 
-- **Netrunner +1** — a custom Skill, chosen at session 0 *(2026-10-03)* in place of Nature +2. It is **Persuasion, Deception and Intimidation in one tag**, done as a mind hack rather than a conversation. **Three Skills' worth of ground is why it is +1 rather than +2** — the general rule for a broad Skill, which this one is where it came from (`rules/character-creation.md`, Skills). What a hack looks like from the outside is Chris's to describe.
+**One Skill and one ability** *(Drew, 2026-11-05)*: **Netrunner is replaced by Hardwire, which is an ability, not a Skill** (Chris's packet — Drew's rulings, above).
+
+- ~~**Netrunner +1**~~ — *retired 2026-11-05 for Hardwire.* A custom Skill, chosen at session 0 *(2026-10-03)* in place of Nature +2. It is **Persuasion, Deception and Intimidation in one tag**, done as a mind hack rather than a conversation. **Three Skills' worth of ground is why it is +1 rather than +2** — the general rule for a broad Skill, which this one is where it came from (`rules/character-creation.md`, Skills). What a hack looks like from the outside is Chris's to describe.
 - **Performance +2** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
 
 ## Trait — Mimicry
@@ -337,7 +354,7 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, KILLSWITCH and **SHARD, which replaced SEED at the start of session one** *(Drew, 2026-10-15)*, all written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED and KILLSWITCH, all written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
 
 **Drafted at session 0, 2026-10-03:** SHARPEN and UNBROKEN (Red), DEFLECT and LAST RESORT (Blue), MEND and FLOW (Green) — all six from `cards/`, printed as written. **With the three signatures that is 3 Red / 3 Blue / 3 Green**, one Green over and one Blue under what his stats suggest. That is allowed and worth knowing rather than fixing: matching colour to stat is a heuristic, and the draft is exactly where it bends (`rules/cards.md`, Deck Building).
 
@@ -387,7 +404,7 @@ Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**SEED** — *replaced by SHARD at the start of session one (SHARD — the damage seed, below).* A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
+**SEED.** A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
 
 ```
 SEED
@@ -479,7 +496,7 @@ Range: Ranged
 
 ## SHARD — the damage seed
 
-*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.* **It replaces SEED in his starting deck from the start of session one.** *SEED's card and rules stay above, because SHARD is defined against them.*
+*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.* **A planned card for his advancement deck, which Chris knows about** *(Drew, 2026-11-05)*. *He chose to keep SEED rather than take SHARD in its place.*
 
 ```
 SHARD
@@ -675,7 +692,7 @@ Range: Melee
 - **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
 - Appearance, voice, backstory detail beyond the above
 - Price
-- **MEASURE, SHARD, KILLSWITCH** — his starters, one per colour; SHARD replaced SEED at the start of session one. SHARD's growth rate and KILLSWITCH's d4 both want a table test
+- **MEASURE, SEED, KILLSWITCH** — his starters, one per colour. *Chris kept SEED; SHARD is planned for his advancement deck (Drew, 2026-11-05).* SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
 - **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open. **The favoured shape, if they go public, is a cover story: Code wanted for the disappearance of his father** *(Drew, 2026-09-28: "diabolical")*. It recruits the whole kingdom without saying what he is, the one man who could clear him is the man he is accused of, and **anybody who saw that night from outside saw a son flee while his father went down — dragged off by a friend.** *That last part lands on Kevin too* (`campaign/kevin.md`, And then it ended badly). Still a hook, not a decision

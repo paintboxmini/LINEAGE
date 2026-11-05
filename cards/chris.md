@@ -4,10 +4,10 @@ The three custom cards Chris starts with. See `campaign/chris.md` for the
 character, the stats they are built against, and why each one is the colour
 it is — **that file holds the reasoning, this one holds the cards.**
 
-**SHARD is deliberately thin.** What a shard costs, what it grows into and how
-it is spent are on his sheet (`campaign/chris.md`, SHARD — the damage seed),
-not on the card, the same arrangement Kevin's rounds and drinks use. **SHARD
-replaced SEED at the start of session one** *(Drew, 2026-10-15)*.
+**SEED is deliberately thin.** What a seed costs, what it grows into and how
+it is spent are on his sheet under Seeds (`campaign/chris.md`), not on the card,
+the same arrangement Kevin's rounds and drinks use. **Chris kept SEED; SHARD is a
+planned card for his advancement deck, and he knows about it** *(Drew, 2026-11-05)*.
 
 His stats are **Mind 4 / Soul 3 / Body 2**, so the heuristic draft is
 **4 Blue / 3 Green / 2 Red** — one
@@ -30,13 +30,13 @@ Range: Melee
 
 ---
 
-**SHARD**
+**SEED**
 GREEN — SOUL
 Attack: Soul + d6
-Effect: Place a shard.
-Defense Effect: Flow: place a shard.
+Effect: Plant a seed.
+Defense Effect: Flow: plant a seed.
 Range: Both
-*"What you leave behind is sharper when you come back for it."*
+*"He plants what he can spare. It remembers the rest."*
 
 ---
 

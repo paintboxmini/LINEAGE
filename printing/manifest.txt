@@ -31,7 +31,7 @@
   card-print-oracle-3             21 cards  1480367dce4b
   card-print-oracle-expansion     21 cards  c6350a642d46
   card-print-oracle               63 cards  a24af7c9e5a4
-  card-print-signatures           15 cards  d1a9719f3997
+  card-print-signatures           15 cards  7b19df7d4628
   card-print-washed-ashore         9 cards  5d36ef3b35f4
   character-sheets                4 sheets  39b0a7b322a9
   packet                       15 sections  f3368dcf8ea1

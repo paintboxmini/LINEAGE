@@ -66,6 +66,8 @@
 
 *A new card goes in the deck or the bank; the deck's maximum is the character's total stats* (`rules/character-creation.md`, One Advancement Deck Per Player).
 
+**Every player holds eleven cards** *(Drew, 2026-11-05)* — **the starting nine and two from advancement** — **and chooses nine at the start of next session.** *Code's two are QUICKEN and WEATHERED. The other players' second card is not recorded here.*
+
 ## The quarantine — the word is planted
 
 **Caine heard *cursed*.** **The quarantine was a point of argument at the table**: Flint wanted to leave town, then changed his mind. **They plan to follow the thread soon.**
@@ -94,6 +96,8 @@
 *Code's choices and how the mark goes decide the shape of it.*
 
 **Code's plan: Operation Catch 'Em All** *(Chris, 2026-11-05)* — **explicitly a plan, not an outcome**: *"The operation is Code's plan. What really happens is our game."* **All three marks — Mercer's agent, the Bellows clerk, the merchant.** In outline: **as an eleven-year-old boy**, he infects **the grandmother** with a focused Seed and holds her through Hardwire and Mini Me; **puppets her into screaming, then laughing, then sobbing** as cover; lifts the agent while begging him for help, then the clerk and the merchant in the crowd; **steers the long-coated stranger's eye onto her**; deactivates the Seeds with a silver needle and releases her before rage; **escorts her to Saint Adollo of the River's Rain Church**, Code's headquarters, and takes a reward only if offered. **Chris wants it tested, challenged and played** — *Code thinks in operations; that is how he means to play him.*
+
+**Where it stands** *(Drew, 2026-11-05)*: **Hardwire on the grandmother works.** **Drew has asked Chris whether she is already screaming as he approaches Mercer's agent, or whether he waits to set her off until he is close.** **Drew's plan:** *the first sign of chaos — the scream, and a child running to Mercer's agent for help — sets off the Bellows clerk and his guards, and they leave on high alert. The third lift is the one that goes badly.* **Drew is talking the grandmother through with Chris** — *what puppeting her means, before Chris decides, so the consequences are never a surprise.*
 
 ### Caine — Barb
 

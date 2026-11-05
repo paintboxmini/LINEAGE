@@ -141,6 +141,8 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 ## After session two
 
+**Drew has not built the advancement decks yet** *(2026-11-05)* — **the sixes above were proposals.** *What follows is what the shared draw took out of those proposals; it is a guide for building the real decks, not a record of decks that existed.*
+
 **The second advancement drew from the single Oracle** (`campaign/session-2-log.md`, The first advancement), **so the planned decks lost cards before they were used:**
 
 | | Lost | Left of the six |

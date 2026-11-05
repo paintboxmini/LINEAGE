@@ -34,7 +34,7 @@
 
 **Since session one:** *Marta is sending him food for the Red Scarves, paid for by Caine and Code* (`campaign/session-1-log.md`). **It is the first thing he has had to offer them besides a step by the water.** *He has not met the party.*
 
-- **A building.** He has a shrine on a step and nothing with a roof
+- **A building.** He has a shrine on a step and nothing with a roof. *There is an abandoned church of his own faith in the Nest — Saint Adollo of the River's Rain Church — and Code uses it as his headquarters* (`places/vultures-nest.md`, Named at the Table). **The line to take** *(Drew, 2026-11-05)*: **it would make a good destination for Hojan**
 - **Money**, to buy or rent one and to feed what comes through the door
 - **Masters who will take an apprentice from him**, which means somebody with standing vouching for him on the dock
 - **Room to work without Mercer stopping him** (`characters/mercer.md`). Every kid in Hojan's house is a kid not on Mercer's floors, and Mercer will notice
