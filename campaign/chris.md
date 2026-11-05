@@ -25,13 +25,33 @@
   - **The host gets a Soul Save to resist**, against Code's **Mind + 10**
   - **The host stays conscious, and remembers**
   - **It ends the moment Code stops concentrating**
-  - *And the cost that matters: puppeting a body is what the Hive does. Each use can ask a Soul Save of Code — the closed door to the link, pushing open* (The Live Thread, below)
+  - **The cost is to Code himself, not to the Hive link** *(Chris's direction, 2026-11-05)* — Hardwire's Cost, below
 - **SEED stays.** **Its look is a cloud of airborne Silverling nanobots** — healing Code, or infecting a host for Hardwire. **SHARD is a planned advancement card Chris knows about**; he chose SEED.
 - **The current setup stays: Mimicry is a Trait; AMALGAMOUS FORM and MIMETIC BLADE are his Passives**, as written in `campaign/passives.md` — MIMETIC BLADE Green, Melee, d6.
 - **His cards: eleven** — the nine he started with, plus **QUICKEN and WEATHERED**. **He chooses his nine at the start of next session**; the other two go to his bank. *Every player is holding eleven.*
 - **"Many Mask" is Chris's aspiration for Code**, not a title Code goes about announcing. **Code knows nothing of the Many Mask legend in character** (`places/vultures-nest.md`, The Many Mask's legacy).
 - **His child shape is his own face — the one he imprinted, Rynmori's — run back in age.** *There is no real child to hunt for what he does in it: the child is his father, long ago.*
 - **The equipment is gear that grows with him**: powers unconfirmed, nothing until Drew decides what each unlocks.
+
+### Hardwire's cost — losing himself *(Chris's idea, 2026-11-05; the mechanics are a proposal)*
+
+**Chris's direction:** *not reconnection to the Hive — disconnection from himself.* **Every time Code overrides someone else's consciousness, his own slips a little**: emotion goes flat, personality thins, the sense of who he is loosens — **until Code Raines is still aware but no longer in control**, and what is left is cold, calculating, and running on instinct and programming. *Chris's reference is cyberpsychosis; in the world it is Silverling code doing what it was built to do.* **The irony is the point: taking away someone else's free will costs him his own.**
+
+**Two of Chris's limits on it, both kept:**
+
+- **Code does not know this is possible.** *His first use is an unfamiliar tug he doesn't understand.*
+- **Leave the Hive out of it.** *The Hive is too big to spend as the threat this early — it may even turn out to be the thing that can save him from this.*
+
+**And it is not fully implemented yet** — *Chris wants to explore it before it has numbers.*
+
+**A shape for when it does get numbers** — *Drew's call:*
+
+- **Each use of Hardwire, Code makes a Soul Save afterwards.** *Longer holds, deeper overrides and a host who fights back make it harder.* **The GM keeps the count, hidden** — *Code doesn't know there is one.*
+- **A failure is a step down.** **The first few are narrated, not mechanical** — *a moment where he doesn't feel what he should, a line Chris plays colder than he meant.* **Further down, it reaches the sheet**: Disadvantage on Soul checks that lean on a bond; then **Performance stops working the way it did**, because performance needs something underneath it to perform from.
+- **At the bottom, the cold takes over** — *in a fight, the GM can call it: Code plays the round, but as the machine would.*
+- **The way back is people and memory**, never a roll alone: *Flint, Rynmori's book, the Scarves he has chosen.* **What heals it is left open on purpose**, Chris's open door for the Hive included.
+
+**A name for it in the world — a placeholder: *the Override.*** *What he does to a host, done back to himself.* **And it rhymes with his own card**: KILLSWITCH is already the stance he flips on purpose (Cards, below); *this is the one that flips without him.*
 
 ## What He Is
 
