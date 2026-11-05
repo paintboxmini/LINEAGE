@@ -29,6 +29,8 @@
 
 **Riverbank burrows, coastal outposts, and floating raft communities**, living off **fishing, aquaculture and trade.** *A people who farm the water as well as fish it.*
 
+**Sailing is primarily a Riverdog's trade** *(Drew, 2026-11-05)*. **Crews are mostly Riverdogs, and a captain who is not one is very rare** — *which is how a human captain earns a name like the Mangy Dog* (`characters/samuel-gullis.md`).
+
 **No country and no government of their own** *(Drew, 2026-10-16)*. **Riverdogs are part of several cities** — Vulture's Nest among them (`places/vultures-nest.md`) — living in them as neighbours, not as a nation inside one.
 
 **And the nomadic Riverdogs**, who belong to no city at all: **free-spirited, on the move, living off the water wherever it takes them.**
@@ -79,7 +81,7 @@ Range: Melee
 
 ## To Establish
 
-- **Which cities they live in** beyond Vulture's Nest, and where the raft communities and outposts sit on the web. *They are a people of the river web's sailing culture, not necessarily the whole of it* (`world/geography-overview.md`, River system)
+- **Which cities they live in** beyond Vulture's Nest, and where the raft communities and outposts sit on the web. *Sailing on the web is mostly theirs* (`world/geography-overview.md`, River system)
 - **What the Shunka trade them**, and what they bring
 - **Whether either people knows they were once one** — a story, a scholar's guess, or nothing at all
 - **What split them**, and when

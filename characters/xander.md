@@ -8,7 +8,7 @@
 
 **He is Flint's first mate**, and the plan is that **he hires the rest of the crew.**
 
-**The Mangy Dog has sailed with him before** and calls him *"an uptight ass"* (`characters/mangy-dog.md`). *Flint talked the Dog into sailing with him again. An uptight first mate under a drunk captain is a ship that might actually work.*
+**The Mangy Dog has sailed with him before** and calls him *"an uptight ass"* (`characters/samuel-gullis.md`). *Flint talked the Dog into sailing with him again. An uptight first mate under a drunk captain is a ship that might actually work.*
 
 ## Not Yet Set
 
@@ -19,5 +19,5 @@
 
 ## Related Documents
 
-- `characters/mangy-dog.md`
+- `characters/samuel-gullis.md`
 - `places/vultures-nest.md` — the Thieves Den

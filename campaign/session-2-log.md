@@ -116,7 +116,7 @@
 *Drew: some of the most fun roleplay he's done in a while.*
 
 - **Flint asked the barkeep, Maxa** (`places/vultures-nest.md`, The Thieves Den), **how to hire a ship and a crew.** *"You're in the right place for it. Everyone here's just drinking and passing the time, waiting for the next ship to hire them."*
-- **He asked for a captain** — *not popular, not well known, but skilled at always finding a way.* **Maxa hesitated, then pointed at the back corner**: a shrouded, slouched man with his head on one arm and his other hand round a jug of rum. ***"That there's the Mangy Dog, or at least that's what he goes by. You're just as likely to not come back at all when you voyage out with him."*** (`characters/mangy-dog.md`)
+- **He asked for a captain** — *not popular, not well known, but skilled at always finding a way.* **Maxa hesitated, then pointed at the back corner**: a shrouded, slouched man with his head on one arm and his other hand round a jug of rum. ***"That there's the Mangy Dog, or at least that's what he goes by. You're just as likely to not come back at all when you voyage out with him."*** (`characters/samuel-gullis.md`)
 - **The Mangy Dog never lifted his head** through Flint's introduction — but at the offer of work he raised the jug and waved Flint closer. **Flint bought another jug.** The Dog's plan, once he'd gathered himself, had two steps: **find the best sailor in here and make him first mate, let him hire the rest while we drink — and then, oh yeah, get a ship.**
 - **Flint went back to the bar**, nominally after the rum: *is there really no one better? He doesn't even have a ship.* **Maxa:** *"He told me to give you the options you got, son. This is it."* **Then Maxa nodded at a Riverdog by the wall** — large, intimidating, remarkably clean and well dressed for a pirate, arms crossed, watching a darts game and visibly upset.
 - **That was Xander** (`characters/xander.md`). *"I just got back from my last trip, and some of these men owe me money they never made right on. I'm going to make it right tonight, one way or another. I don't care how many of them there are."* **Flint offered to help.** Xander didn't answer — **he charged the man throwing darts**, caught the dart thrown at him, put it into the man's cheek and knocked him cold.
@@ -124,9 +124,9 @@
 - **After, the three of them sat back down to drink and nurse their wounds.** The Dog balked: *he's sailed with Xander before — "an uptight ass," and he won't sail with him again.* **Flint talked him round.**
 - **The ship.** **The Mangy Dog lost his ship a month ago at liar's dice** — playing with **an extremely high-quality set of loaded dice that got swapped without him noticing.** *It has been sitting in port ever since* (`items/the-mangy-dogs-dice.md`).
 
-**The ship went to Captain Barracuda** (`characters/barracuda.md`), the Dog's rival, on a *spot on* call against the Dog's last die — **with the Dog's own loaded dice in Barracuda's hand.**
+**The Mangy Dog is Samuel Gullis, a human captain** — *rare on a Riverdog's water* (`characters/samuel-gullis.md`). **His ship, the Water Wing, went to Captain Barracuda** (`characters/barracuda.md`), his first captain and his rival, the Dog's rival, on a *spot on* call against the Dog's last die — **with the Dog's own loaded dice in Barracuda's hand.**
 
-**Where it stands:** **Flint has a captain (the Mangy Dog) and a first mate (Xander), who will hire the rest.** **They have no ship** — the Dog's is in port, and Barracuda has it. **Paused there** while Flint sounds out the other players on whether to pursue it at the table.
+**Where it stands:** **Flint has a captain (the Mangy Dog) and a first mate (Xander), who will hire the rest.** **They have no ship** — the Water Wing is rotting at the docks, and Barracuda has her. **Paused there** while Flint sounds out the other players on whether to pursue it at the table.
 
 ## Looking ahead *(Drew's prediction, not a plan)*
 
