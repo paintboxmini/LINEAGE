@@ -16,7 +16,7 @@
 - **Equipment: the Ever Switch** (Rynmori's stone data pad, made from fragments created when Code came through; deeper functions locked), **the Iron Scarf** (red silk embroidered MM — *the scarf commissioned from Taylor at The Golden Thread*), **and the Mini Mask, "Mini Me"** (a tiny marionette, a scout and future dispersal vessel). **All powers unconfirmed**, meant to grow with him.
 - **The catalog lists 11 action cards**: MEASURE, SHARPEN, WEATHERED, UNBROKEN, SEED, FLOW, QUICKEN, MEND, LAST RESORT, KILLSWITCH, DEFLECT.
 
-**Also in it:** *Saint Adollo of the River's Rain Church* — **Code's headquarters** (`places/vultures-nest.md`, Named at the Table).
+**Also in it:** *Saint Adollo of the River's Rain Church* — **Code's headquarters, as an aspiration** *(Drew, 2026-11-05)*, like "Many Mask": **not yet true in the story.** It is an abandoned church, and **the Red Scarves' main entrance is a false bottom in its podium** (`places/vultures-nest.md`, Named at the Table).
 
 ### Drew's rulings *(2026-11-05)*
 

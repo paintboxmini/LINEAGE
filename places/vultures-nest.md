@@ -347,7 +347,7 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **The town is built on top of itself** (see the opening line of this file), which means there is an older Nest down under the current one: a dock level from two or three rebuilds ago, boxed in when they laid the new deck over it and never filled. Dockhands call the layered structure *the ribs*. The kids took the word and made it an address.
 
-**It is Strays ground, held at Lusk's pleasure** *(2026-10-08; Lusk, above)*. **It is not hidden. It is unusable.** Anyone can find it — Bartho could point at the spot. Almost nobody can get into it: the ways in are gaps between old pilings, a flooded stair, and a hatch under a crane housing, and every one of them is sized for somebody under about fourteen. **That is the entire security model**, and it is better than a lock. A chase that goes well for the party still ends at a hole they cannot fit through, with a kid on the other side of it not even breathing hard.
+**It is Strays ground, held at Lusk's pleasure** *(2026-10-08; Lusk, above)*. **It is not hidden. It is unusable.** Anyone can find it — Bartho could point at the spot. Almost nobody can get into it: **the main way in is through the false bottom of the podium in Saint Adollo of the River's Rain Church** *(2026-11-05; Named at the Table, above)*, and the rest are gaps between old pilings, a flooded stair, and a hatch under a crane housing, and every one of them is sized for somebody under about fourteen. **That is the entire security model**, and it is better than a lock. A chase that goes well for the party still ends at a hole they cannot fit through, with a kid on the other side of it not even breathing hard.
 
 **Every route has three exits.** Nothing in there is a dead end, on purpose, and the kids know which ones go to water. An adult who does get in is in a crawl with no way to cut off what they are chasing.
 
@@ -405,7 +405,7 @@ She believes the docks look after their own quietly, or nobody looks after them 
 - **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
 - **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
 - **The Thieves Den** — see its own section, below.
-- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers**, and **Code's headquarters.** *Hojan preaches from a step with no roof over him* (`characters/hojan.md`) — **an empty River church is the obvious house for his door with no lock**, and Code got there first.
+- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers**, and **the main entrance to the Red Scarves' nest** *(Drew, 2026-11-05)*: **a false bottom in the podium**, and a gap below it that leads down into their hideout (The Ribs, below). *Chris has it as Code's headquarters — **an aspiration, like "Many Mask", not yet true in the story.*** **And it is the obvious house for Hojan** (`characters/hojan.md`) — *a priest who wants to give the Scarves a door with no lock, and the abandoned church of his own faith is already standing on top of theirs.*
 
 ## The Thieves Den
 

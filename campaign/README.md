@@ -17,6 +17,8 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 
 **Weekly Friday games** from session one, 2026-10-16.
 
+**Advancement photos** *(Drew, 2026-11-05)*: **after each session Drew sends a photo of each player's three advancement cards; the top card in each photo is the one the player took**, the other two the ones passed. *The session log records them that way.*
+
 ## Contents
 
 | | |
