@@ -10,7 +10,11 @@
 
 ## The ship he lost
 
-**He lost it a month ago at liar's dice**, at the Den. **He was playing with an extremely high-quality set of loaded dice — and somebody swapped them without his noticing.** *The ship has been sitting in port ever since* (`items/the-mangy-dogs-dice.md`).
+**He lost it a month ago at liar's dice**, at the Den, **to his rival, Captain Barracuda** (`characters/barracuda.md`). **He was playing with an extremely high-quality set of loaded dice — and somebody swapped them without his noticing.** *The ship has been sitting in port ever since* (`items/the-mangy-dogs-dice.md`).
+
+**The last hand:** the Dog, on his last die, bid six sixes. **Barracuda, holding five sixes on the loaded dice, called *spot on*** — and the Dog's die was a six. **Caught telling the truth, at liar's dice, in the Thieves Den.**
+
+**People make fun of him for it, endlessly.** *Sometimes he doesn't answer. Sometimes he threatens to gut them. Sometimes he just drinks more.*
 
 ## Xander
 
@@ -19,13 +23,14 @@
 ## Not Yet Set
 
 - **His real name**, people, appearance and voice beyond the above
-- **His ship** — its name, where it lies, and **who won it**
-- **Who swapped his dice**, and where the real set went
+- **His ship** — its name and where it lies. *Barracuda has it*
+- **Who swapped his dice** — *Barracuda was playing them on the last hand* — **and whether the Dog knows**
 - **Whether he sails under a Guild commission** (`factions-and-races/the-pirate-guild.md`) — *or is exactly the kind of pirate a commission is meant to tell apart*
 - **What Flint is paying him**
 
 ## Related Documents
 
+- `characters/barracuda.md` — the rival who has his ship
 - `characters/xander.md` — the first mate
 - `items/the-mangy-dogs-dice.md` — the dice, and Flint's collection thread
 - `places/vultures-nest.md` — the Thieves Den

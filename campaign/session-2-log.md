@@ -124,7 +124,13 @@
 - **After, the three of them sat back down to drink and nurse their wounds.** The Dog balked: *he's sailed with Xander before — "an uptight ass," and he won't sail with him again.* **Flint talked him round.**
 - **The ship.** **The Mangy Dog lost his ship a month ago at liar's dice** — playing with **an extremely high-quality set of loaded dice that got swapped without him noticing.** *It has been sitting in port ever since* (`items/the-mangy-dogs-dice.md`).
 
-**Where it stands:** **Flint has a captain (the Mangy Dog) and a first mate (Xander), who will hire the rest.** **They have no ship** — the Dog's is in port, lost at the table.
+**The ship went to Captain Barracuda** (`characters/barracuda.md`), the Dog's rival, on a *spot on* call against the Dog's last die — **with the Dog's own loaded dice in Barracuda's hand.**
+
+**Where it stands:** **Flint has a captain (the Mangy Dog) and a first mate (Xander), who will hire the rest.** **They have no ship** — the Dog's is in port, and Barracuda has it. **Paused there** while Flint sounds out the other players on whether to pursue it at the table.
+
+## Looking ahead *(Drew's prediction, not a plan)*
+
+**Session three: a ship theft in the first half — and the Pneum thread in the second.** *Still waiting on Chris's pick of mark for the initiation.*
 
 **Don't tie these together early.** *Three player-driven threads on one night; Drew wants to see what the players make of them.*
 

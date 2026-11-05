@@ -416,6 +416,8 @@ She believes the docks look after their own quietly, or nobody looks after them 
 
 **House rule: everybody brings their own dice, and every set is inspected before it touches the table.** *It is a very big deal here.* **Liar's dice** is the game (`items/the-mangy-dogs-dice.md`).
 
+**And the Den's own call: *spot on*.** *The usual choices on a bid are to raise it or call the bidder a liar.* **Calling *spot on* says the opposite — "I've caught you telling the truth."** **If the bid turns out exactly right when the dice are counted, the bidder loses a die; if not, the caller does.** *It is how the Mangy Dog lost his ship* (`characters/barracuda.md`).
+
 **Regulars:** **the Mangy Dog** (`characters/mangy-dog.md`), a captain with no ship, in the back corner with a jug; **Xander** (`characters/xander.md`), a Riverdog sailor who collects his debts in person.
 
 **History with the party:** **before session one**, Code and Flint lost their money gambling here and Flint lost his vibro knife; they got it back together (`campaign/kevin.md`, Starting gold). **After session two**, Flint came back looking for pirates and left with a captain and a first mate — after the whole bar had a fight.
