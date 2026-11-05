@@ -75,6 +75,8 @@
 
 ## Not Yet Set
 
+- **What it is to be a Rasha among Riverdogs** — *Drew, 2026-11-05: to be developed.* **The crews are mostly Riverdogs and the captains nearly all are** (`factions-and-races/races-riverdogs.md`); **Harlock is one, and she runs his ship.** *Samuel Gullis was mocked off a deck for being human* (`characters/samuel-gullis.md`) — *how a Rasha rose to first mate on the same water is a story*
+
 - **The Rasha** — who they are and where they are from
 - **Age, voice, and how long she has sailed with Harlock**
 - **Whether she knows about the crates**, and what she thinks (The Crates, above)

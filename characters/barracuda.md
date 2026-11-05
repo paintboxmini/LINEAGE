@@ -2,6 +2,8 @@
 
 *Pirate Captain **Hex Barracuda** — "Captain Barracuda" to everyone. **The Mangy Dog's rival**, and **the man who won his ship** (`characters/samuel-gullis.md`). Set by Drew, 2026-11-05. **Barbossa is the inspiration.***
 
+**A Riverdog** *(Drew, 2026-11-05)* — *which is half of why a human cabin boy on his deck got called a mangy dog* (`characters/samuel-gullis.md`, Why "the Mangy Dog").
+
 ## How he won the ship
 
 **At the Thieves Den, at liar's dice** (`places/vultures-nest.md`, The Thieves Den), **a month ago.** On the final hand **Barracuda had all five dice left and the Mangy Dog was down to his last one.**

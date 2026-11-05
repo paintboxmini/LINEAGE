@@ -4,6 +4,20 @@
 
 **The epithet is doing real work and was not chosen to.** *The Silver Sword* is MIMETIC BLADE stated as a title — the arm that is the sword, the one form he has perfected — and it lands on the Blade Singer fantasy this sheet was already built around (The Fantasy — Blade Singer, below). It arrived from a character concept built without the rules in front of it, which makes the fit an independent confirmation that the fantasy is legible.
 
+## Chris's packet, 2026-11-05 — pending Drew's ruling
+
+*Chris sent a full Sol Card and card catalog. **Nothing below is ruled yet**; where it differs from this file, this file stands until Drew decides.*
+
+- **Background Prisoner; "Many Mask"** as his title on the card; **Red Scarves** as affiliation. *Class and alignment are on the card as flavour — the game has neither.*
+- **Skills: Hardwire +2 and Performance +2**, Hardwire in place of Netrunner. **Hardwire as written is a power, not a skill**: *a magical overlay on a living host's nervous system — Code commands the body while the host stays conscious inside.*
+- **SEED reimagined as airborne Silverling nanobots** that can heal Code or infect organic life; **Hardwire controls an infected host**; **Mini Me** strengthens the link. **Treated as Level 1 of about five stages.**
+- **Passives: Mimicry** (Blue, Mind + d4, Both) **and Mimetic Blade** (Green, Soul + d6, **Both** — *flagged by Chris as needing approval*). *AMALGAMOUS FORM is not on the card; Mimicry is a Passive rather than a Trait.*
+- **Traits: Living Silver, Amorphous Form, Translation** — *the Silverling trait as written here, renamed.*
+- **Equipment: the Ever Switch** (Rynmori's stone data pad, made from fragments created when Code came through; deeper functions locked), **the Iron Scarf** (red silk embroidered MM — *the scarf commissioned from Taylor at The Golden Thread*), **and the Mini Mask, "Mini Me"** (a tiny marionette, a scout and future dispersal vessel). **All powers unconfirmed**, meant to grow with him.
+- **The catalog lists 11 action cards**: MEASURE, SHARPEN, WEATHERED, UNBROKEN, SEED, FLOW, QUICKEN, MEND, LAST RESORT, KILLSWITCH, DEFLECT.
+
+**Also in it:** *Saint Adollo of the River's Rain Church* — **Code's headquarters** — and *Vulture's Rest Marketplace*. **Neither is in the files yet.**
+
 ## What He Is
 
 **A Silverling** (`campaign/silverlings.md`) — a living-silver construct of the Great Source, shapeshifting and joined to a hive mind, **sent as a probe** ahead of an assimilation that hasn't come yet. *The repo called this "a Seed of the Amalgam" until Chris's backstory document arrived on 2026-10-08 and named his people.* He arrived with his telepathic link to the Amalgam severed and most of his memory gone with it, and has had to build back up from almost nothing since.

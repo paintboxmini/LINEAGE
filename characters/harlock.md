@@ -13,6 +13,8 @@
 
 ## Appearance
 
+**A Riverdog** *(Drew, 2026-11-05)* — sailing is mostly a Riverdog's trade (`factions-and-races/races-riverdogs.md`).
+
 Big through the shoulders and heavier than he looks, because most of it is under the coat. Weathered past his age. Hands scarred across the backs rather than the palms — the marks of someone who has punched more things than he has gripped.
 
 Never armed obviously. There is always something within reach, and he has never once had to look for it.

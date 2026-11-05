@@ -93,6 +93,8 @@
 
 *Code's choices and how the mark goes decide the shape of it.*
 
+**Code's plan: Operation Catch 'Em All** *(Chris, 2026-11-05)* — **explicitly a plan, not an outcome**: *"The operation is Code's plan. What really happens is our game."* **All three marks — Mercer's agent, the Bellows clerk, the merchant.** In outline: **as an eleven-year-old boy**, he infects **the grandmother** with a focused Seed and holds her through Hardwire and Mini Me; **puppets her into screaming, then laughing, then sobbing** as cover; lifts the agent while begging him for help, then the clerk and the merchant in the crowd; **steers the long-coated stranger's eye onto her**; deactivates the Seeds with a silver needle and releases her before rage; **escorts her to Saint Adollo of the River's Rain Church**, Code's headquarters, and takes a reward only if offered. **Chris wants it tested, challenged and played** — *Code thinks in operations; that is how he means to play him.*
+
 ### Caine — Barb
 
 **Caine is sleeping with Barb at the Listing Keel.** *Her job as navigator ties the two of them to the Holly Mint and every voyage after.*

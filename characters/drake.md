@@ -2,6 +2,8 @@
 
 *A captain of the Pirate Guild at Vulture's Nest (`factions-and-races/the-pirate-guild.md`). Created by Drew, 2026-10-12, after Sir Francis Drake.*
 
+**A Riverdog** *(Drew, 2026-11-05)* — like most captains on this water (`factions-and-races/races-riverdogs.md`).
+
 **The pirate a party works with if they want one who is not Harlock.** Harlock runs the Guild and carries things he will not explain. **Drake runs one ship, takes small prizes often, and explains everything** — at length, cheerfully, mostly about himself.
 
 ---
@@ -33,7 +35,7 @@
 ## Not Yet Set
 
 - **His ship's name** — the Pelican is a proposal
-- **Appearance and voice**, and race (human unless said otherwise)
+- **Appearance and voice**
 - **What the Muirn call him**
 - **Whether he has a title**, and whether he would like one
 - **Stat block**, if he ends up in a fight
