@@ -134,6 +134,17 @@
 
 **This is the last leg of the trial: the chase** (`campaign/session-2-scarves.md`, The trial) — *and where Code, and Chris, get the full picture.* **Drew has asked Chris for a Soul Save first** — *Hardwire's first cost* (`campaign/chris.md`, Hardwire's cost).
 
+**The Soul Save: 9 — a failure** against DC 13. *Hardwire's first step down. Chris does not know what the save was for.*
+
+**The chase, as Chris plays it** *(2026-11-06)*:
+
+- **"You devil!"** — Code laughs, and goes after him, **using QUICKEN and FLOW** for speed and movement through the alleys.
+- **Chris's proposal: Code has no pockets.** His clothes are part of his Silverling body, and what he carries is held inside that material — **so Bean reached into Code himself, and a thin residue of living silver came away on the papers or on Bean.** **Code can sense and track separated pieces of himself**, so the residue is a beacon. *Not yet ruled* (below).
+- **He changes face with Mimicry whenever he breaks line of sight**, so Bean never knows the stranger behind him is the same man.
+- **He does not mean to catch Bean.** *He wants access.* **The plan: follow Bean home, go in as "Donni the Disabled", find a hiding place, wait for Bean to hand in the gold and the papers — and then step out: "Surprise!"**
+
+**For Drew to rule:** the residue beacon; who **Donni the Disabled** is (not in the files); and how a grown man gets through an entrance sized for children (The Ribs, `places/vultures-nest.md`).
+
 **What Bean saw of the change** *(Drew, 2026-11-06)*: **Bean whispers to Kino that he's pretty sure he saw Code shrink**, and **they question Code directly.** **How the Scarves come out of it is Chris's call** — *fully aware of what Code is, or believing it was a convincing change of posture.* *It plays the same at the table either way.*
 
 **Drew and Chris settled on cyberpsychosis as the working theory for Hardwire's cost, to develop slowly** (`campaign/chris.md`, Hardwire's cost). *Aiming to finish the initiation before session three.*
