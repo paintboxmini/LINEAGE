@@ -231,6 +231,8 @@ He will hand the bags back completely clean if it comes to that. Charming about 
 
 Kino keeps him close anyway.
 
+**Donni** *(named 2026-11-06)* — **a Red Scarf who begs outside the Listing Keel.** **He works a fixed spot because of his limp**; mostly **he is a lookout and an eavesdropper.** *Code studied his face there — whether because he suspected something, or only to have it, is not set.*
+
 Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it. Bean acts as the distraction while Kino makes the move.
 
 ### The Many Mask's legacy
@@ -357,6 +359,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **And the unsellable haul**, which is the part that matters for play. Everything pilfered that can't be moved for coin ends up in a crate down there and stays: letters, a child's carving, a locket with somebody's name inside it, a key to a door in another town. **This is where a party's stolen personal effect actually went**, and it is still there weeks later — which is the honest version of the note above about playing a recovered item for texture rather than punishment.
 
+**Inside** *(Drew, 2026-11-06, the first time anyone grown saw it)*: **blankets and pillows everywhere, arranged the way kids on their own would arrange them — which is to say, any way at all.** **Fifteen or so kids**, scattered into holes and cubbies. **Kino swinging in a massive hammock at the centre.** **A girl dyeing stolen scarves red.** **In one corner, another girl with a child no older than five on her lap.**
+
 **It is warm and it is dry.** In a river port that is not a small thing; it is most of what the scarf is worth. A kid earning one is being given a floor out of the wet, and a GM who plays the Ribs as squalid has missed what these children built.
 
 **The tide decides the water doors.** On a deep slow tide — the long, low one the whole town watches the banks for (The Tide, above) — the water drops far enough to put the underside of the docks in plain sight, and the Scarves' water-side ways in are briefly *visible to anybody looking*. On a fast tide they are invisible and the water outside them runs hard enough to be a genuine risk to a small body. **Their door is either hidden or safe, never both**, and every kid in the operation can tell you which it is today without looking.
@@ -407,7 +411,7 @@ She believes the docks look after their own quietly, or nobody looks after them 
 - **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
 - **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
 - **The Thieves Den** — see its own section, below.
-- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers**, and **the main entrance to the Red Scarves' nest** *(Drew, 2026-11-05)*: **a false bottom in the podium**, and a gap below it that leads down into their hideout (The Ribs, below). *Chris has it as Code's headquarters — **an aspiration, like "Many Mask", not yet true in the story.*** **And it is the obvious house for Hojan** (`characters/hojan.md`) — *a priest who wants to give the Scarves a door with no lock, and the abandoned church of his own faith is already standing on top of theirs.*
+- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers** — **large, built like a great cathedral, and not too far gone** *(Drew, 2026-11-06)* — and **the main entrance to the Red Scarves' nest** *(Drew, 2026-11-05)*: **a narrow gap under the old stone podium**, down into **impossibly old, overlapping wooden supports** — *the dock from rebuilds ago* — and on into their hideout (The Ribs, below). *Chris has it as Code's headquarters — **an aspiration, like "Many Mask", not yet true in the story.*** **And it is the obvious house for Hojan** (`characters/hojan.md`) — *a priest who wants to give the Scarves a door with no lock, and the abandoned church of his own faith is already standing on top of theirs.*
 
 ## The Thieves Den
 

@@ -143,7 +143,13 @@
 - **He changes face with Mimicry whenever he breaks line of sight**, so Bean never knows the stranger behind him is the same man.
 - **He does not mean to catch Bean.** *He wants access.* **The plan: follow Bean home, go in as "Donni the Disabled", find a hiding place, wait for Bean to hand in the gold and the papers — and then step out: "Surprise!"**
 
-**For Drew to rule:** the residue beacon; who **Donni the Disabled** is (not in the files); and how a grown man gets through an entrance sized for children (The Ribs, `places/vultures-nest.md`).
+**Drew's rulings:** **the residue beacon works.** **Donni** is a Red Scarf who begs outside the Listing Keel — *a fixed spot, because of his limp; a lookout and eavesdropper* — **whom Code had studied there** (`places/vultures-nest.md`, Kino and Bean).
+
+**The nest.** **Code followed Bean to Saint Adollo's** — *large and cathedral-like, not too dilapidated* — **and watched him slip through a narrow gap under the old stone podium.** **Below: impossibly old, overlapping wooden supports.** *Bean had no chance of losing a shapeshifter in there, however small or skilled.*
+
+**"Surprise!"** — **Code popped up in the Ribs wearing Donni's face, just as Bean was handing the goods to Kino.** **Both of them looked completely shocked.** *Around them: blankets and pillows, fifteen or so kids in holes and cubbies, Kino in a massive hammock at the centre, a girl dyeing stolen scarves red, and another girl holding a child no older than five* (`places/vultures-nest.md`, The Ribs).
+
+**Code is the first grown person ever inside the Ribs** — *the one place built so that no adult can follow.*
 
 **What Bean saw of the change** *(Drew, 2026-11-06)*: **Bean whispers to Kino that he's pretty sure he saw Code shrink**, and **they question Code directly.** **How the Scarves come out of it is Chris's call** — *fully aware of what Code is, or believing it was a convincing change of posture.* *It plays the same at the table either way.*
 
