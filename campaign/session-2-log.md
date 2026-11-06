@@ -130,6 +130,10 @@
 
 **What Bean carries back to Kino: a purse, a red button, the words "Many Mask" — and a suspicion that Code shrank.**
 
+**Bean's turn** *(Drew, 2026-11-06)*: **he took the button warmly** — *"The Many Mask, what's that? Are you like a hero in training or something?"* — **and then held up the papers.** ***Bean had lifted Mercer's agent's documents off Code.*** *"And what about these fancy schmancy things, eh? Weren't gonna share this with the group?"* — flicking the ribbon on its wax seal — **and bolted into the crowd and the alleys.**
+
+**This is the last leg of the trial: the chase** (`campaign/session-2-scarves.md`, The trial) — *and where Code, and Chris, get the full picture.* **Drew has asked Chris for a Soul Save first** — *Hardwire's first cost* (`campaign/chris.md`, Hardwire's cost).
+
 **What Bean saw of the change** *(Drew, 2026-11-06)*: **Bean whispers to Kino that he's pretty sure he saw Code shrink**, and **they question Code directly.** **How the Scarves come out of it is Chris's call** — *fully aware of what Code is, or believing it was a convincing change of posture.* *It plays the same at the table either way.*
 
 **Drew and Chris settled on cyberpsychosis as the working theory for Hardwire's cost, to develop slowly** (`campaign/chris.md`, Hardwire's cost). *Aiming to finish the initiation before session three.*
