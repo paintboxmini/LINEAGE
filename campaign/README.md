@@ -35,6 +35,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 | `campaign/session-2-crate.md` | **Session 2: Harlock's crate** — the ask, the carry, the drop at Buttons and Such |
 | `campaign/session-2-scarves.md` | **Session 2: Code and the Red Scarves** — the mockery at the Moving Crate, Kino's apology, and the trial job |
 | `campaign/session-1-threads.md` | **The threads of the opening as modular pieces rather than a running order** — what each one is, how to touch it lightly, how deep it goes, and what skipping it costs |
+| `campaign/gm-reads.md` | **Drew's private reads on the characters** — speculation, never canon, never shown to a player |
 | `campaign/passives.md` | Every player Passive written so far, with the reasoning for each |
 | `campaign/images/` | Player reference art |
 
