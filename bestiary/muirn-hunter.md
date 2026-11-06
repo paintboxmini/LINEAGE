@@ -9,7 +9,7 @@
 **Mind 2 / Body 3 / Soul 2 — HP 16**
 **Creature Threat Rating:** 7
 
-**Deck (7 — 2 Blue / 3 Red / 2 Green):** CAST THE NET, PINNED *(blue)* · INTO THE MUD, GRAPPLE, SKEWER *(red)* · CLOSE THE RING, SHADE AWAY *(green)*
+**Deck (7 — 2 Blue / 3 Red / 2 Green):** CAST THE NET, NAILED *(blue)* · INTO THE MUD, GRAPPLE, SKEWER *(red)* · CLOSE THE RING, SHADE AWAY *(green)*
 
 **Blank deck:** Blue — CAST THE NET *(Ranged)* · Red — INTO THE MUD *(Melee)* · Green — CLOSE THE RING *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 **Trait — Better in the Water:** while fighting in or from water, a hunter's attacks deal +2 damage — the same as Vaun's. *Lizardkin are far more dangerous submerged than on land* (`factions-and-races/races-lizardkin.md`).
@@ -18,7 +18,7 @@
 
 ## How They Hunt
 
-**As a family, around Vaun.** They hold a target in place — the mud, the net, PINNED — and close in together; CLOSE THE RING is what three people who grew up together do without discussing it. **Vaun's FOR THE REST gives every one of them Resist** (`cards/vaun.md`), and he brought them to bring them home.
+**As a family, around Vaun.** They hold a target in place — the mud, the net, NAILED — and close in together; CLOSE THE RING is what three people who grew up together do without discussing it. **Vaun's FOR THE REST gives every one of them Resist** (`cards/vaun.md`), and he brought them to bring them home.
 
 **They are not trying to kill the party.** They are trying to reach Osha, and the party is in the way. *A party that steps aside is a party they leave alone — which is a choice worth putting in front of the players before the first card is played.*
 

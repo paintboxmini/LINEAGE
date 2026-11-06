@@ -355,7 +355,7 @@ Range: Ranged
 
 ---
 
-**PINNED**
+**NAILED**
 BLUE — MIND
 Attack: Mind + d6
 Effect: Defender gains Rooted.

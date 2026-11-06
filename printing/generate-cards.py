@@ -177,7 +177,7 @@ SETS = {
             # attacker's hand) -> PARTITION. Then the blue balance pass:
             #   renamed: TELL -> UNDERMINE -> DOUBT -> ENFEEBLE (also
             #            Melee -> Ranged),
-            #            DEAD END -> PINNED, FORESEEN -> FORESEE,
+            #            DEAD END -> PINNED -> NAILED, FORESEEN -> FORESEE,
             #            SECOND GUESS -> FALTER
             #   out:     HESITATE and FALTER (both cut — FALTER with the
             #            Staggered ban), TURN, EXPOSED, RETORT,
@@ -185,7 +185,7 @@ SETS = {
             #   in:      INTERRUPT + REBUTTAL + CLIMB (melee),
             #            CALLED SHOT (ranged), STILL POINT (both)
             # See the Oracle content rule above the SETS table.
-            'DISSECT', 'CALCULATE', 'PINNED', 'FOCUS', 'FORESEE',
+            'DISSECT', 'CALCULATE', 'NAILED', 'FOCUS', 'FORESEE',
             'LAST RESORT', 'MARKED', 'CHAIN', 'CALLED SHOT', 'STILL POINT',
             'STUDY', 'VEIL', 'PRESSURE', 'DEFLECT', 'INTERRUPT', 'ENFEEBLE',
             # 2026-09-26: CORNER left the player pool entirely, to the

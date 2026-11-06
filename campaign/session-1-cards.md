@@ -58,7 +58,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 | Card | Colour | Range | Die |
 |---|---|---|---|
 | **PULL** | Red | Both | d6 |
-| **PINNED** | Blue | Ranged | d6 |
+| **NAILED** *(was PINNED)* | Blue | Ranged | d6 |
 | **MARKED** | Blue | Ranged | d6 |
 | **FORESEE** | Blue | Ranged | d6 |
 | **VEIL** | Blue | Ranged | d4 |
@@ -77,7 +77,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 **Out — 27, and that is the whole of night one:**
 
-- **Left in the draft packs (9):** PULL, PINNED, AID, MARKED, FORESEE, VEIL, STUDY, SHARED BURDEN, INTERRUPT — to review, above.
+- **Left in the draft packs (9):** PULL, NAILED (was PINNED), AID, MARKED, FORESEE, VEIL, STUDY, SHARED BURDEN, INTERRUPT — to review, above.
 - **Drafted by Chris (6):** SHARPEN, UNBROKEN, DEFLECT, LAST RESORT, MEND, FLOW (`campaign/chris.md`, Deck).
 - **Drafted by Pat (6):** CLOSE IN, PAIN IS FUEL, OPEN GUARD, SHATTER, CHAIN, LEVEL THE FIELD (`campaign/pat.md`, Deck).
 - **Drafted by Kevin (6):** RETALIATE, CERTAIN STRIKE, SECOND WIND, FOCUS, STILL POINT, RELEASE (`campaign/kevin.md`, From session 0).

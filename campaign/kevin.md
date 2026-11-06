@@ -463,7 +463,7 @@ Range: Ranged
 "Pinned from the sky."
 ```
 
-**Renamed from OVER THE PASS to PINNED** *(Drew, 2026-11-07)*, **and the printed Special Rule is just *You throw your knife*.** **What that means stays on this sheet:** when it resolves, attacking or defending, the knife stays face up at the opponent's position instead of going to the discard; while it is out he cannot play BREAK DOWN; a free action in Melee range of it picks it up and returns the card to his hand; it comes back at the end of combat. **Name clash:** *there is a core Blue card called PINNED* (`cards/blue-mind.md`) — *left in a draft pack at session 0 and out of play at Drew's table, but the two share a name.*
+**Renamed from OVER THE PASS to PINNED** *(Drew, 2026-11-07)*, **and the printed Special Rule is just *You throw your knife*.** **What that means stays on this sheet:** when it resolves, attacking or defending, the knife stays face up at the opponent's position instead of going to the discard; while it is out he cannot play BREAK DOWN; a free action in Melee range of it picks it up and returns the card to his hand; it comes back at the end of combat. *The core Blue card that was called PINNED is NAILED now* (`cards/blue-mind.md`, 2026-11-07), *so the name is Flint's alone.*
 
 *Was OVER THE PASS:* **the pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Pinned from the sky"* (Drew) is the Rooted half, and the arc it took getting there.
 
