@@ -162,7 +162,9 @@
 
 **What Code said, watching the last contract burn** *(Chris, 2026-11-06)*: **freedom is what he has wanted more than anything** — **and the Ribs, for all they have sheltered the kids, are a cage that has kept them small.** *"I want every child here to have the chance to live freely… I think it's time we started building something worth growing into."* **Then: "So, Kino, I'm moving in upstairs"** — pointing at the bell tower.
 
-**Chris's request, pending Drew's ruling:** **buy Saint Adollo's** — *100 gold for the property, 10 more to make the bell tower his home, **The Nest*** — **no quest, just the purchase**, and **develop "Saint Adolla's Bath & Respite" slowly in the background** while they adventure. *He sent a four-page packet for it.* **Spelling: "Adolla" in this packet, "Adollo" before** — to confirm.
+**Chris's request, pending Drew's ruling:** **buy Saint Adollo's** — *100 gold for the property, 10 more to make the bell tower his home, **The Nest*** — **no quest, just the purchase**, and **develop "Saint Adolla's Bath & Respite" slowly in the background** while they adventure. *He sent a four-page packet for it.*
+
+**Drew said yes** *(2026-11-06)*: **the title belongs to Lusk the fence, and Code buys it from him — a formality.** **Code owns Saint Adollo's.** **Spelling: "Adolla" in this packet, "Adollo" before** — to confirm.
 
 **Initiation complete.** *Hardwire's first step down was taken (the failed save) and is still unspoken.*
 

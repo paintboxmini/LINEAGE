@@ -299,7 +299,7 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **The kids still prefer it.** **It is not the warehouse.** *A thief who is cheated is still free at the end of the day, and that is the whole of the bargain* (What they ran from, below).
 
-**He sold Code his papers** (`campaign/chris.md`, Two months in the Nest). *Kevin knew where the shop was.*
+**He sold Code his papers** (`campaign/chris.md`, Two months in the Nest). *Kevin knew where the shop was.* **And he sold Code the church** — *the deed to Saint Adollo's, roof over the Scarves' front door* (Named at the Table, above).
 
 **What he knows is worth more than what he sells.** The papers he sold Code came with a question he did not ask — *and a man with half the Nest's homeless for eyes does not need to ask.*
 
@@ -417,7 +417,7 @@ She believes the docks look after their own quietly, or nobody looks after them 
 - **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
 - **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
 - **The Thieves Den** — see its own section, below.
-- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers** — **large, built like a great cathedral, and not too far gone** *(Drew, 2026-11-06)* — and **the main entrance to the Red Scarves' nest** *(Drew, 2026-11-05)*: **a narrow gap under the old stone podium**, down into **impossibly old, overlapping wooden supports** — *the dock from rebuilds ago* — and on into their hideout (The Ribs, below). *Chris has it as Code's headquarters — **an aspiration, like "Many Mask", not yet true in the story.*** **And it is the obvious house for Hojan** (`characters/hojan.md`) — *a priest who wants to give the Scarves a door with no lock, and the abandoned church of his own faith is already standing on top of theirs.*
+- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers** — **large, built like a great cathedral, and not too far gone** *(Drew, 2026-11-06)* — and **the main entrance to the Red Scarves' nest** *(Drew, 2026-11-05)*: **a narrow gap under the old stone podium**, down into **impossibly old, overlapping wooden supports** — *the dock from rebuilds ago* — and on into their hideout (The Ribs, below). **Lusk held the title** *(Drew, 2026-11-06)* — *which is why the Ribs below it were Strays ground, held at his pleasure* (The Ribs, below). **Code bought it from him after his initiation: 100 gold, and the bell tower is his home.** *Chris means to grow it slowly into a bathhouse and respite house.* **And it is the obvious house for Hojan** (`characters/hojan.md`) — *a priest who wants to give the Scarves a door with no lock, and the abandoned church of his own faith is already standing on top of theirs.*
 
 ## The Thieves Den
 
