@@ -110,6 +110,15 @@
 - **The man in the long coat is scanning the crowd**, narrow-eyed (`characters/erubeth.md`).
 - **Kino is no longer on the stall roof.**
 
+**Continued:**
+
+- **Code went back to the grandmother**, knelt, and **withdrew the Seeds with a silver needle at his fingertip** — *releasing her before rage.* **He helped her up, took her somewhere quiet, and made sure she was recovering and had someone to help her** before he turned back to the market.
+- **The Bellows clerk got away.** **Code went for the merchant instead** — *"if not, the papers are good enough."*
+- **Bean fumbled in front of the merchant as the distraction; Code lifted the purse.** *Code had winked at Bean on his way back into the crowd.*
+- **Walking away together, unnoticed, Bean held out his hand:** *"Okay, quick — pass me the take. I gotta say, I don't know how you convinced that old lady to play along, but it was like the two of you had practised for this exact moment your entire lives."*
+
+**Bean thinks the grandmother was in on it.**
+
 **Drew and Chris settled on cyberpsychosis as the working theory for Hardwire's cost, to develop slowly** (`campaign/chris.md`, Hardwire's cost). *Aiming to finish the initiation before session three.*
 
 ### Caine — Barb
