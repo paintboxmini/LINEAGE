@@ -147,17 +147,17 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 | | Customs | Oracle six | Swapped in, for |
 |---|---|---|---|
-| **Flint** | OVER THE PASS, FRESH GROUND, TODAY'S SPECIAL | OFF BALANCE, ATTRITION, THINK TWICE, PUSH, OPENING, BIND | **OFF BALANCE** for STRIKE · **ATTRITION** for WEATHERED · **THINK TWICE** for CALLED SHOT · **PUSH** for ENFEEBLE |
+| **Flint** | OVER THE PASS, FRESH GROUND, TODAY'S SPECIAL | OFF BALANCE, ATTRITION, CHARGE, PUSH, OPENING, BIND | **OFF BALANCE** for STRIKE · **ATTRITION** for WEATHERED · **CHARGE** for CALLED SHOT · **PUSH** for ENFEEBLE |
 | **Code** | TRANSPOSE, INTERFERENCE, ACCELERANDO | CALCULATE, PRESSURE, DISTRACT, MOCKERY, SIDESTEP, MIRROR STEP | **SIDESTEP** for SLIP THE BLADE · **MIRROR STEP** for QUICKEN |
 | **Caine** | STAY, GOOD BOY, SPEAK | INSTINCT, GROUNDING STANCE, DISORIENT, COMMUNION, SHELTER, REALIGNMENT | **GROUNDING STANCE** for GUARD · **SHELTER** for SHADE AWAY |
 
 **Why these:**
 
-- **Flint — still a grab bag.** OFF BALANCE and ATTRITION keep the big Red hits STRIKE and WEATHERED were; **THINK TWICE** punishes anyone who steps out of knife range; **PUSH** is a bellows-dust shove on a card. *He runs Red-heavy now — five of the nine — which suits Body 4.*
+- **Flint — still a grab bag.** OFF BALANCE and ATTRITION keep the big Red hits STRIKE and WEATHERED were; **CHARGE** drags him and his target into the thick of it; **PUSH** is a bellows-dust shove on a card. *He runs Red-heavy now — five of the nine — which suits Body 4.*
 - **Code — movement.** **SIDESTEP** is SLIP THE BLADE's shape in Blue: a move on the block. **MIRROR STEP** moves him and his target both — *movement and control in one.* *Initiative still comes from ACCELERANDO and DISTRACT.*
 - **Caine — holding the line, buying time.** **GROUNDING STANCE** stands his ground where GUARD did; **SHELTER** keeps a dropped ally alive.
 
-**Left in the Oracle, unseen:** CHARGE.
+**Left in the Oracle, unseen:** *nothing at Drew's table.* **Drew's printed Oracle is an older print without THINK TWICE** — *it still had CORNER, which THINK TWICE replaced on 2026-09-26* (`cards/tiers/beginner.md`) — **so CHARGE took THINK TWICE's place in Flint's deck** *(Drew, 2026-11-06)*.
 
 **Chris's three customs say *Flow*, not *Cadence*, in the reprint** — the printed decks had the old word (`rules/card-glossary.md`, Flow).
 
