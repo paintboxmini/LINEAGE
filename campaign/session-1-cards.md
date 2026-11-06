@@ -139,28 +139,27 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 ---
 
-## After session two
+## The advancement decks, as built *(2026-11-06)*
 
-**Drew has not built the advancement decks yet** *(2026-11-05)* — **the sixes above were proposals.** *What follows is what the shared draw took out of those proposals; it is a guide for building the real decks, not a record of decks that existed.*
+**Drew built them from the proposals above, then swapped out every card the players had already been shown at advancement** — sessions one and two — **for cards from the Oracle nobody has seen.**
 
-**The second advancement drew from the single Oracle** (`campaign/session-2-log.md`, The second advancement), **so the planned decks lost cards before they were used:**
+**Revealed at advancement so far** (`campaign/session-1-log.md`, The first advancement; `campaign/session-2-log.md`, The second advancement): QUICKEN, SHADE AWAY, INTERCEPT, STIR, BLINDSIDE, SLIP THE BLADE, DISSECT, ENFEEBLE, FOOTWORK, WEATHERED, ALIGN, BRISTLE, STRIKE, CALLED SHOT, PATIENCE, SMOKESCREEN, GUARD *(and CORNER, which is not an Oracle card)*. **All kept separate, in no deck.**
 
-| | Lost | Left of the six |
-|---|---|---|
-| **Flint** | STRIKE (to Caine), WEATHERED (to Code), CALLED SHOT (passed) | ENFEEBLE, OPENING, BIND — **three short** |
-| **Caine** | GUARD (passed) | INSTINCT, SHADE AWAY, DISORIENT, COMMUNION, REALIGNMENT — **one short** |
-| **Code** | — | all six |
+| | Customs | Oracle six | Swapped in, for |
+|---|---|---|---|
+| **Flint** | OVER THE PASS, FRESH GROUND, TODAY'S SPECIAL | OFF BALANCE, ATTRITION, THINK TWICE, PUSH, OPENING, BIND | **OFF BALANCE** for STRIKE · **ATTRITION** for WEATHERED · **THINK TWICE** for CALLED SHOT · **PUSH** for ENFEEBLE |
+| **Code** | TRANSPOSE, INTERFERENCE, ACCELERANDO | CALCULATE, PRESSURE, DISTRACT, MOCKERY, SIDESTEP, MIRROR STEP | **SIDESTEP** for SLIP THE BLADE · **MIRROR STEP** for QUICKEN |
+| **Caine** | STAY, GOOD BOY, SPEAK | INSTINCT, GROUNDING STANCE, DISORIENT, COMMUNION, SHELTER, REALIGNMENT | **GROUNDING STANCE** for GUARD · **SHELTER** for SHADE AWAY |
 
-**Out of the reserve:** ALIGN, BRISTLE, PATIENCE, SMOKESCREEN (to Flint). **Passed cards are kept separate**, in no deck.
+**Why these:**
 
-**The reserve now:** ATTRITION, BLINDSIDE, CHARGE, FOOTWORK, GROUNDING STANCE, OFF BALANCE, PUSH (Red); DISSECT, INTERCEPT, SIDESTEP, THINK TWICE (Blue); MIRROR STEP, SHELTER, STIR (Green).
+- **Flint — still a grab bag.** OFF BALANCE and ATTRITION keep the big Red hits STRIKE and WEATHERED were; **THINK TWICE** punishes anyone who steps out of knife range; **PUSH** is a bellows-dust shove on a card. *He runs Red-heavy now — five of the nine — which suits Body 4.*
+- **Code — movement.** **SIDESTEP** is SLIP THE BLADE's shape in Blue: a move on the block. **MIRROR STEP** moves him and his target both — *movement and control in one.* *Initiative still comes from ACCELERANDO and DISTRACT.*
+- **Caine — holding the line, buying time.** **GROUNDING STANCE** stands his ground where GUARD did; **SHELTER** keeps a dropped ally alive.
 
-**Refills, proposed — Drew's call:**
+**Left in the Oracle, unseen:** CHARGE.
 
-- **Flint (3):** OFF BALANCE (Red), THINK TWICE (Blue), SHELTER (Green) — *still a grab bag: a setup for the grinder, a toll on anyone who leaves him, and cover*
-- **Caine (1):** GROUNDING STANCE (Red) — *standing your ground, in GUARD's seat*
-
-**From here on, each player draws from their own deck** *(Drew, 2026-10-24)*.
+**Chris's three customs say *Flow*, not *Cadence*, in the reprint** — the printed decks had the old word (`rules/card-glossary.md`, Flow).
 
 ## Open
 
