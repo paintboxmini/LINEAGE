@@ -450,24 +450,22 @@ Range: Both
 
 *Written 2026-10-04 at Drew's ask, from what Kevin wants: **a grab bag** — more ways to answer a fight, not a bigger version of one. None is in his starting nine; all three are the customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks).*
 
-### OVER THE PASS — he throws the knife
+### PINNED — he throws the knife
 
 ```
-OVER THE PASS
+PINNED
 RED — BODY
 Attack: Body + d6
 Effect: Defender gains Vulnerable and Rooted.
 Defense Effect: Attacker gains Vulnerable and Rooted.
-Special Rule: The knife leaves your hand. When this resolves, attacking or
-defending, it stays face up at your opponent's position instead of going to
-your discard. While it is out you cannot play BREAK DOWN. Spend a free action
-in Melee range of it to pick it up: this card returns to your hand. It comes
-back to you at the end of combat.
+Special Rule: You throw your knife.
 Range: Ranged
 "Pinned from the sky."
 ```
 
-**The pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Pinned from the sky"* (Drew) is the Rooted half, and the arc it took getting there.
+**Renamed from OVER THE PASS to PINNED** *(Drew, 2026-11-07)*, **and the printed Special Rule is just *You throw your knife*.** **What that means stays on this sheet:** when it resolves, attacking or defending, the knife stays face up at the opponent's position instead of going to the discard; while it is out he cannot play BREAK DOWN; a free action in Melee range of it picks it up and returns the card to his hand; it comes back at the end of combat. **Name clash:** *there is a core Blue card called PINNED* (`cards/blue-mind.md`) — *left in a draft pack at session 0 and out of play at Drew's table, but the two share a name.*
+
+*Was OVER THE PASS:* **the pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Pinned from the sky"* (Drew) is the Rooted half, and the arc it took getting there.
 
 - **Two statuses on one half is the above-average upside.** MARKED gives Vulnerable alone at d6 Ranged (`cards/blue-mind.md`); this adds Rooted — the knife pins them where they stand. *A pinned target with Vulnerable on it is exactly what GRIND SHOT wants to be aimed at.*
 - **The price is the knife.** It is his only blade (Gear, above), so while it is out **BREAK DOWN is dead in his hand** and so is this card. Getting it back costs **his free action** — the one his reload, his drink and his oranges already fight over — **in Melee range of where it landed** *(Drew, 2026-10-04)*. Thrown at range, that is usually the enemy's side of the field, and Rooted means whoever he hit is still standing next to it.

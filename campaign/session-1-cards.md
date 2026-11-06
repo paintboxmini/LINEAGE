@@ -119,7 +119,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 | | Written | Still to write |
 |---|---|---|
-| **Kevin** | OVER THE PASS, FRESH GROUND, TODAY'S SPECIAL (`campaign/kevin.md`, Held Back) | — |
+| **Kevin** | PINNED, FRESH GROUND, TODAY'S SPECIAL (`campaign/kevin.md`, Held Back) | — |
 | **Chris** | TRANSPOSE, INTERFERENCE, ACCELERANDO (`campaign/chris.md`, For advancement) *(FOLLOW THROUGH and RUBATO wait for the middle tier)* | — |
 | **Pat** | STAY, GOOD BOY, SPEAK (`campaign/pat-cards.md`, For advancement) | — |
 
@@ -147,7 +147,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 | | Customs | Oracle six | Swapped in, for |
 |---|---|---|---|
-| **Flint** | OVER THE PASS, FRESH GROUND, TODAY'S SPECIAL | OFF BALANCE, ATTRITION, CHARGE, PUSH, OPENING, BIND | **OFF BALANCE** for STRIKE · **ATTRITION** for WEATHERED · **CHARGE** for CALLED SHOT · **PUSH** for ENFEEBLE |
+| **Flint** | PINNED, FRESH GROUND, TODAY'S SPECIAL | OFF BALANCE, ATTRITION, CHARGE, PUSH, OPENING, BIND | **OFF BALANCE** for STRIKE · **ATTRITION** for WEATHERED · **CHARGE** for CALLED SHOT · **PUSH** for ENFEEBLE |
 | **Code** | TRANSPOSE, INTERFERENCE, ACCELERANDO | CALCULATE, PRESSURE, DISTRACT, MOCKERY, SIDESTEP, MIRROR STEP | **SIDESTEP** for SLIP THE BLADE · **MIRROR STEP** for QUICKEN |
 | **Caine** | STAY, GOOD BOY, SPEAK | INSTINCT, GROUNDING STANCE, DISORIENT, COMMUNION, SHELTER, REALIGNMENT | **GROUNDING STANCE** for GUARD · **SHELTER** for SHADE AWAY |
 
@@ -159,7 +159,7 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 **Left in the Oracle, unseen:** *nothing at Drew's table.* **Drew's printed Oracle is an older print without THINK TWICE** — *it still had CORNER, which THINK TWICE replaced on 2026-09-26* (`cards/tiers/beginner.md`) — **so CHARGE took THINK TWICE's place in Flint's deck** *(Drew, 2026-11-06)*.
 
-**Chris's three customs say *Flow*, not *Cadence*, in the reprint** — the printed decks had the old word (`rules/card-glossary.md`, Flow).
+**Chris's cards say *Cadence*** — *the keyword's name for good since 2026-11-07* (`rules/card-glossary.md`, Cadence).
 
 ## Open
 
