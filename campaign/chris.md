@@ -234,7 +234,7 @@ What the kit delivers so far:
 
 **What Lusk knows, and what he does not.** *He knows the papers were not Code's* — he sold them to him. **He does not know who Code actually is**: not his real name, not the University, not what he is. To him Code is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about that makes Lusk a threat yet. It makes him someone who knows one true thing, and he is the kind of man who sells those.*
 
-**Now, between sessions:** *Code is at Buttons and Such, a small Scarf at his elbow and Kino on a stall roof gesturing at the crowd — take your pick* (`campaign/session-2-log.md`, Between sessions).
+**Between sessions — the initiation** *(2026-11-06)*: **Code passed.** **He is a Red Scarf — two scarves now, Bean's and his own — and the Scarves know he can change shape.** *He lifted the papers, released the grandmother, gave Bean the purse and a red button, named the Many Mask aloud, and walked into the Ribs wearing Donni's face* (`campaign/session-2-log.md`, Between sessions).
 
 **Session two:** *Kino invited him to Buttons and Such at ten that night for his shot at joining; the initiation runs between sessions. He has a silk scarf on order from Taylor at The Golden Thread, and took **WEATHERED** at the first advancement* (`campaign/session-2-log.md`).
 

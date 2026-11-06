@@ -24,7 +24,7 @@
 
 | | After session one | Session two | Spent | Now |
 |---|---|---|---|---|
-| **Code** | 28 | +91 | scarf, price not set | **119, less the scarf** |
+| **Code** | 28 | +91, +~30 from Kino | scarf, price not set | **~149, less the scarf** |
 | **Flint** | 26 | +91 | ~15 ingredients | **~102** |
 | **Caine** | 33 | +91 | 20 gauntlets | **104** |
 
@@ -150,6 +150,19 @@
 **"Surprise!"** — **Code popped up in the Ribs wearing Donni's face, just as Bean was handing the goods to Kino.** **Both of them looked completely shocked.** *Around them: blankets and pillows, fifteen or so kids in holes and cubbies, Kino in a massive hammock at the centre, a girl dyeing stolen scarves red, and another girl holding a child no older than five* (`places/vultures-nest.md`, The Ribs).
 
 **Code is the first grown person ever inside the Ribs** — *the one place built so that no adult can follow.*
+
+**The ending** *(Chris and Drew, 2026-11-06)*:
+
+- **Code waited for someone to ask what was wrong, then pointed at his eye — *"This one's called… EYE HAVE YOU!"* — and let Donni's face melt off.** *"What, did you get tired? I thought you'd try harder!"* **He offered to teach the kids tricks — "it looks like all of you could use them" — and bowed to Kino: "Did I pass your test yet?"**
+- **Kino clapped, slowly. Bean pulled a red scarf from his pocket and gave it to Code** — *"I know you already got one, but two can't hurt."* **Code is in.**
+- **Kino opened the papers with ceremony: work contracts for children.** *"Destroying these removes any company's legitimacy when it comes to their forced-compliance practices involving any children with the same names. I'm studying these things, you see — you have to understand how the mechanisms work if you want to ever fight against it."*
+- **He handed Code back the purse he'd lifted — about 30 gold — "as thanks from all of us; some of these names were bound to know."** Then **he read each contract and burned it.**
+- **One had Tib's name.** *"Is it for me or Tab?"* — **"No, sorry lad, this one's got your name on it."** **Tib threw it in the fire without looking at it.** *Kino: "Tib, don't worry, man. We're gonna find where they got her working. We found you, right?"*
+- **They talked a while longer, and Code went back to the Listing Keel to rejoin the party.**
+
+**Initiation complete.** *Hardwire's first step down was taken (the failed save) and is still unspoken.*
+
+**What it changes:** **Code is a Red Scarf.** **The Scarves know he changes shape.** **Mercer has lost a satchel of new contracts — and with it, Kino would say, his hold on every child named in them.** **Tib has a sister, Tab, still bound somewhere.** **A contract with Tib's name is ash** — *which collides with Hojan's thread* (`characters/hojan.md`, The Ashbys — Hojan's ask).
 
 **What Bean saw of the change** *(Drew, 2026-11-06)*: **Bean whispers to Kino that he's pretty sure he saw Code shrink**, and **they question Code directly.** **How the Scarves come out of it is Chris's call** — *fully aware of what Code is, or believing it was a convincing change of posture.* *It plays the same at the table either way.*
 

@@ -231,6 +231,10 @@ He will hand the bags back completely clean if it comes to that. Charming about 
 
 Kino keeps him close anyway.
 
+**Kino studies the bindings** *(2026-11-06)*. *"You have to understand how the mechanisms work if you want to ever fight against it."* **His reading: destroying the contracts takes away a company's legitimacy over every child named in them** — *Kino's belief; whether the law agrees is not set.* **He burns them one at a time, after reading each.**
+
+**Code is a Red Scarf** *(2026-11-06)* — **the first grown member**; passed his trial (`campaign/session-2-log.md`, Between sessions).
+
 **Donni** *(named 2026-11-06)* — **a Red Scarf who begs outside the Listing Keel.** **He works a fixed spot because of his limp**; mostly **he is a lookout and an eavesdropper.** *Code studied his face there — whether because he suspected something, or only to have it, is not set.*
 
 Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it. Bean acts as the distraction while Kino makes the move.
@@ -340,6 +344,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 **The Ashbys.** *Created 2026-10-07: Drew asked for a family looking for a kid.* **Dell and Maren Ashby**, from upriver, ordinary people, here in the Nest asking every stall and every dockhand about a boy. **Two hard winters ago, one of Mercer's agents came through** and told them their son would be fed and taught a trade. **They signed with a mark.** *They thought they were giving him a future. They were giving him to a warehouse floor.*
 
 **The boy is Tib**, eleven now, and **he ran from the floor a year ago and is a Red Scarf.** *He is the kid at the edge of the market who will not look at the couple asking questions.* **Tib thinks his parents sold him.** *By the paper, they did.* **They think they were lied to.** *They were.* Both of those are true, and the party may be the only people who ever hear both sides.
+
+**Tib has a sister, Tab** *(2026-11-06)* — **still bound, and the Scarves are looking for where they have her working.** *Kino to Tib: "We're gonna find where they got her working. We found you, right?"*
 
 **They have saved to buy his binding back**, and it is not enough — and **Mercer would sell it them**, which is the worst thing about him. *What they do not know is that Tib is not on the floor any more, and that a Scarf does not let a grown-up near another Scarf, parents included.*
 
