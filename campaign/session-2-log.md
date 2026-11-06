@@ -160,6 +160,10 @@
 - **One had Tib's name.** *"Is it for me or Tab?"* — **"No, sorry lad, this one's got your name on it."** **Tib threw it in the fire without looking at it.** *Kino: "Tib, don't worry, man. We're gonna find where they got her working. We found you, right?"*
 - **They talked a while longer, and Code went back to the Listing Keel to rejoin the party.**
 
+**What Code said, watching the last contract burn** *(Chris, 2026-11-06)*: **freedom is what he has wanted more than anything** — **and the Ribs, for all they have sheltered the kids, are a cage that has kept them small.** *"I want every child here to have the chance to live freely… I think it's time we started building something worth growing into."* **Then: "So, Kino, I'm moving in upstairs"** — pointing at the bell tower.
+
+**Chris's request, pending Drew's ruling:** **buy Saint Adollo's** — *100 gold for the property, 10 more to make the bell tower his home, **The Nest*** — **no quest, just the purchase**, and **develop "Saint Adolla's Bath & Respite" slowly in the background** while they adventure. *He sent a four-page packet for it.* **Spelling: "Adolla" in this packet, "Adollo" before** — to confirm.
+
 **Initiation complete.** *Hardwire's first step down was taken (the failed save) and is still unspoken.*
 
 **What it changes:** **Code is a Red Scarf.** **The Scarves know he changes shape.** **Mercer has lost a satchel of new contracts — and with it, Kino would say, his hold on every child named in them.** **Tib has a sister, Tab, still bound somewhere.** **A contract with Tib's name is ash** — *which collides with Hojan's thread* (`characters/hojan.md`, The Ashbys — Hojan's ask).
