@@ -119,6 +119,17 @@
 
 **Bean thinks the grandmother was in on it.**
 
+**Code's answer** *(Chris, 2026-11-06)*:
+
+- **He laughed, praised Bean's fall, and called the grandmother "the legendary Widow's Wail"** — *a trick every thief worth his buttons knows; maybe he'll teach it to Bean someday.* **That is the cover story.**
+- **He dropped the whole purse into Bean's hand** — *take your portion, and offer the rest to Kino as good faith.* **The papers are not mentioned; he appears to have kept them.**
+- **He gave Bean a red button — his calling card.** *"If you ever find yourself in trouble, need a hand, or simply need someone in your corner, you give me a call. Wherever I am, I'll do my best to be there. But I expect the same from you."*
+- **Then a heroic pose:** *"For wherever there's trouble, wherever there's mischief, wherever a friend is in need — the Many Mask shall answer!"* — *"Well, eventually! Still working on that last part."*
+
+**Code knows the Many Mask legend** — *the history today's kids have lost* (`places/vultures-nest.md`, What actually happened). **Drew's working idea: he read it in the Academy's books.** *Fine details still to settle with Chris.*
+
+**What Bean carries back to Kino: a purse, a red button, the words "Many Mask" — and a suspicion that Code shrank.**
+
 **What Bean saw of the change** *(Drew, 2026-11-06)*: **Bean whispers to Kino that he's pretty sure he saw Code shrink**, and **they question Code directly.** **How the Scarves come out of it is Chris's call** — *fully aware of what Code is, or believing it was a convincing change of posture.* *It plays the same at the table either way.*
 
 **Drew and Chris settled on cyberpsychosis as the working theory for Hardwire's cost, to develop slowly** (`campaign/chris.md`, Hardwire's cost). *Aiming to finish the initiation before session three.*

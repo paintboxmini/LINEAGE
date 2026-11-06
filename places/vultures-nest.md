@@ -275,6 +275,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **The kids are not part of the five families** *(Drew, 2026-10-08)*. They wear the scarf — the Creed's own sign — and nobody in the Outfit counts them. **They sell what they steal to the Strays**, through **Lusk**, who leads that family (below), **and he is the reason they have the Ribs.** *The scarf on a dock kid is the oldest thing about the Red Scarves and the least regarded.*
 
+**Code knows the legend** *(Drew, 2026-11-06)* — *probably from the Academy's books at Gemstone University* — **and today's kids do not.** **A written record far from the Nest may be closer to *What actually happened* than the story the families tell** — *whether it is, is Drew's call.* **On his initiation night he told Bean "the Many Mask shall answer."** *The five families have not heard that name spoken as a promise in a century, and the Bellows are the ones who think the Scarves no longer need a Mask.*
+
 **Code has had no direct contact with the Red Scarves when session one starts** *(Drew, 2026-10-08)*. **Meeting them happens at the table.** *He has met Lusk, who sold him his papers* (`campaign/chris.md`, Two months in the Nest). *A shapeshifter in an outfit waiting a century for its next Many Mask is Chris's thread to pull* — **not written ahead of him.**
 
 ### The Strays, and Lusk

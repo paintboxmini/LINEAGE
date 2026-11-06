@@ -29,7 +29,7 @@
 - **SEED stays.** **Its look is a cloud of airborne Silverling nanobots** — healing Code, or infecting a host for Hardwire. **SHARD is a planned advancement card Chris knows about**; he chose SEED.
 - **The current setup stays: Mimicry is a Trait; AMALGAMOUS FORM and MIMETIC BLADE are his Passives**, as written in `campaign/passives.md` — MIMETIC BLADE Green, Melee, d6.
 - **His cards: eleven** — the nine he started with, plus **QUICKEN and WEATHERED**. **He chooses his nine at the start of next session**; the other two go to his bank. *Every player is holding eleven.*
-- **"Many Mask" is Chris's aspiration for Code**, not a title Code goes about announcing. **Code knows nothing of the Many Mask legend in character** (`places/vultures-nest.md`, The Many Mask's legacy).
+- **"Many Mask" is Chris's aspiration for Code**, not a title Code goes about announcing. ***Revised 2026-11-06:* Code does know the legend** — *the history the Red Scarves' kids have forgotten* — **most likely from the Academy's book collection** (`places/vultures-nest.md`, The Many Mask's legacy). *Details to settle with Chris. He said the name aloud to Bean on his initiation night* (`campaign/session-2-log.md`, Between sessions).
 - **His child shape is his own face — the one he imprinted, Rynmori's — run back in age.** *There is no real child to hunt for what he does in it: the child is his father, long ago.*
 - **The equipment is gear that grows with him**: powers unconfirmed, nothing until Drew decides what each unlocks.
 
