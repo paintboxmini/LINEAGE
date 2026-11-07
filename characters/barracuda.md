@@ -20,6 +20,8 @@
 
 **Session three** *(2026-11-07)*: **told that Samuel had a new ship and was at sea again, he finished preparing in a rush and left the Nest almost at once** — *presumably after his rival.* **While he was gone, the Water Wing was stolen** — **by a man wearing his face**, who told the dock he was trolling for the Mangy Dog (`campaign/session-3-log.md`).
 
+**From here, a sea encounter** *(Drew, 2026-11-07)*. **He would know the Water Wing under any paint** — *same hull, same cabin, same hold, same mast; years of feuding.*
+
 ## Not Yet Set
 
 - **Where the Water Wing lies**, and who, if anyone, watches her

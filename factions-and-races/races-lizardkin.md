@@ -42,6 +42,8 @@ It rhymes with the Masons' Price (`factions-and-races/the-masons-three-cuts.md`,
 
 **An army, notably, rather than magic.** They are described as rebuilding a force, not rebuilding the technique — and one live reading of that is they learned from losing to the Shunka's own strength and intend to come back and win that way instead, rather than repeat a one-time horror they may not be able to repeat at all. Not decided; it could as easily be both.
 
+**A Vessk in the Nest** *(session three)*: **one guards the Strays' liar's dice table, and keeps company with a few other Vessk.** **He has met a Shunka asking after the cursegiver family**, and insulted the queen to his face (`campaign/session-3-log.md`). *Why Vessk are working doors this far south is not set.*
+
 ## The Cursegivers
 
 **One Muirn family, one technique, kept inside a bloodline.** Not an order, not a school, and not for hire by anyone who walks up with coin. Cursegiving grew out of the Muirn's shamanic tradition, and a single family of theirs has passed it down for as long as anyone has been counting, taught to their own and to nobody else.

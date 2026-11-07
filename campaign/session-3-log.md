@@ -37,6 +37,17 @@
 
 **New at the Den** *(Drew)*: **the liar's dice game is owned and run by the Strays** — *one of their money-makers* (`places/vultures-nest.md`, The Strays, and Lusk).
 
+## Consequences — Drew's calls *(2026-11-07)*
+
+- **The fire: only the Thieves Den burned.** Collateral kept minimal.
+- **The Compact and the Strays are both investigating.**
+- **The Strays are back in business** somewhere new — *it has been three or four days while the party was at Pneum.* **They are now a threat to Caine.**
+- **Barracuda becomes a sea encounter** during adventuring — **and he would know the Water Wing anywhere.** *Same size, same cabin, same hold, same mast position; the two have feuded on this water for years. Red paint and a new name won't fool him.* **The players already worried about this at the table** and talked about **hiding Fortune's Fancy on a small island near the Nest** and coming into the city by dinghy or on the Holly Mint. *Whether they brought her into harbour is not settled.*
+- **News of a ship stolen by a man wearing another man's face reaches the Academy at the Abyssal Ruins** — *slowly* — **and they send people to look.** *A Nest with stories of a new Red Scarf who changes faces makes Code easy to find* (`campaign/chris.md`, The Night They Ran).
+- **The Vessk guard spends time with a few other Vessk**, and can pass on that **a Shunka is searching the Nest with a scrap of cloth bearing the cursegivers' family emblem** (`campaign/pat.md`, The scrap). *He was made up on the spot and is not otherwise connected.*
+- **Pneum, as played (simplified at the table):** **the Foulhaul was taking people in the night**, and it **hurt the congregation's practice**: *every person taken was a set of afflictions — blessings, to them — lost from the gene pool and never shared.* **Each taking made their communion poorer.** *This is the table's version and it stands* (`places/pneum.md`, Why they can be wrong, and stay wrong).
+- **Next session should be combat-heavy: two or three fights.**
+
 ---
 
 ## Open
