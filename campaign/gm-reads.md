@@ -25,6 +25,13 @@
 
 **What each one answers is worth writing down afterwards** — *a yes and a no say equally much.*
 
+**What they answered** *(2026-11-07)*:
+
+- **Caine: "I would still be me."** *Obligation, answered as identity — he does not think the duty is what he is. Worth testing: what is left when it is lifted?*
+- **Code: freedom.** *Against the status read. He has now said it to reality itself; watch whether what he reaches for agrees.*
+- **Flint: he'll think about what it means.** *Pleasure deferring the question — which is its own answer, for now.*
+- **"Who is waiting?" — the Oracle answered for them: their families.** *Ossian, Rynmori, Caine's mother's line.*
+
 ## Related Documents
 
 - `campaign/chris.md`, `campaign/kevin.md`, `campaign/pat.md`

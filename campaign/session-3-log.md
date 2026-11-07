@@ -37,6 +37,29 @@
 
 **New at the Den** *(Drew)*: **the liar's dice game is owned and run by the Strays** — *one of their money-makers* (`places/vultures-nest.md`, The Strays, and Lusk).
 
+## Back at the Nest
+
+**They finished at Pneum and are back in Vulture's Nest.** *How the Foulhaul job ended is not recorded yet.*
+
+## The third advancement — the Oracle on her island
+
+*From Drew's photos; the top card is the pick. The first draw from each player's own advancement deck.*
+
+| | Took | Passed |
+|---|---|---|
+| **Flint** | **FRESH GROUND** (Red) | PINNED *(printed as OVER THE PASS)*, CHARGE |
+| **Caine** | **SPEAK** (Red) | SHARED BURDEN, GUARD |
+| **Code** | **ACCELERANDO** (Blue) *— read from a sideways photo; it's the card on its own* | MIRROR STEP, DISTRACT |
+
+**The passed cards go back into each player's own advancement deck** — *unlike the shared Oracle, these decks hold only that player's cards* (`rules/character-creation.md`, One Advancement Deck Per Player). *Code's printed ACCELERANDO still says Flow; the reprint says Cadence.*
+
+**The Oracle's readings** (`campaign/gm-reads.md`, The Oracle readings — session 3):
+
+- **Caine** — *"Who would you be if someone lifted it off you?"* — **"I would still be me."**
+- **Code** — *"Free, or seen?"* — **he chose freedom.**
+- **Flint** — *"What do you do when the room goes quiet?"* — **he said he would think about what it all means.**
+- **The last question — "who is waiting for you to come back?"** — *Drew answered it himself before anyone could:* **"I'm pretty sure it's all your guys' families. It's getting pretty late, isn't it?"** **And the vision of the Oracle on her island faded.**
+
 ## Consequences — Drew's calls *(2026-11-07)*
 
 - **The fire: only the Thieves Den burned.** Collateral kept minimal.
@@ -58,5 +81,6 @@
 - **The Pneum Foulhaul** — what "help" the party promised, and to whom
 - **The quarantine** — whether what they saw at Pneum is enough to satisfy Bartho
 - **Names**: the retired master sailor; Barb's two crewmen
-- **The advancement** — the photos (top card is the pick), each player's nine out of eleven, and **how each one answered the Oracle**
+- **How the Pneum Foulhaul ended**
+- **Each player's nine** out of what they now hold
 - **Gold** — what the repairs and the new crew cost
