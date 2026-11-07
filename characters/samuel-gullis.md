@@ -28,6 +28,8 @@
 
 **People make fun of him for it, endlessly.** *Sometimes he doesn't answer. Sometimes he threatens to gut them. Sometimes he just drinks more.*
 
+**Session three** *(2026-11-07)*: **the party talked Barracuda into believing Samuel already had a new ship and was pirating again — Barracuda sailed after him — and they stole the Water Wing.** **She is *Fortune's Fancy* now**, repainted, re-rigged and repaired (`campaign/session-3-log.md`).
+
 ## Xander
 
 **He has sailed with Xander before** (`characters/xander.md`) — *"an uptight ass,"* and he refused to sail with him again. **Flint talked him round.**
