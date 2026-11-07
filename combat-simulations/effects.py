@@ -1137,7 +1137,7 @@ GATES = [
     # card played to defend was played on someone else's turn — see
     # `engine.Combatant.last_color`. So the rotation has to be kept up
     # rather than merely started.
-    # Cadence (`rules/card-glossary.md`, 2026-10-05): the last card you
+    # Flow (`rules/card-glossary.md`, 2026-10-05): the last card you
     # revealed, attacking or defending, is a different colour from this one.
     (re.compile(r'^(?:cadence|flow):\s*', re.I),
      lambda ctx: (getattr(ctx.actor, 'flow_prev', None) is not None

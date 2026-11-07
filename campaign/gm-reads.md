@@ -29,7 +29,7 @@
 
 - **Caine: "I would still be me."** *Obligation, answered as identity — he does not think the duty is what he is. Worth testing: what is left when it is lifted?*
 - **Code: freedom.** *Against the status read. He has now said it to reality itself; watch whether what he reaches for agrees.*
-- **Flint: he'll think about what it means.** *Pleasure deferring the question — which is its own answer, for now.*
+- **Flint: "I would think about what it all means."** *Not a deferral — an answer. In the quiet, the man who chases the noise would reflect. Pleasure with something underneath it.*
 - **"Who is waiting?" — the Oracle answered for them: their families.** *Ossian, Rynmori, Caine's mother's line.*
 
 ## Related Documents

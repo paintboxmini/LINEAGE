@@ -39,7 +39,7 @@
 
 ## Back at the Nest
 
-**They finished at Pneum and are back in Vulture's Nest.** *How the Foulhaul job ended is not recorded yet.*
+**They killed the Foulhaul** — and **did not go back to the village to report it.** *Pneum asked them for help and would surely have thanked them — gold, or some reward — but the party was too disgusted by the place to return.* **The reward is unclaimed.** **They are back in Vulture's Nest.**
 
 ## The third advancement — the Oracle on her island
 
@@ -51,13 +51,13 @@
 | **Caine** | **SPEAK** (Red) | SHARED BURDEN, GUARD |
 | **Code** | **ACCELERANDO** (Blue) *— read from a sideways photo; it's the card on its own* | MIRROR STEP, DISTRACT |
 
-**The passed cards go back into each player's own advancement deck** — *unlike the shared Oracle, these decks hold only that player's cards* (`rules/character-creation.md`, One Advancement Deck Per Player). *Code's printed ACCELERANDO still says Flow; the reprint says Cadence.*
+**Advancement is one shared pool from here, with each player's customs kept separate** (`campaign/session-1-cards.md`, After session three). *Code's cards say Flow — Chris prefers it.*
 
 **The Oracle's readings** (`campaign/gm-reads.md`, The Oracle readings — session 3):
 
 - **Caine** — *"Who would you be if someone lifted it off you?"* — **"I would still be me."**
 - **Code** — *"Free, or seen?"* — **he chose freedom.**
-- **Flint** — *"What do you do when the room goes quiet?"* — **he said he would think about what it all means.**
+- **Flint** — *"What do you do when the room goes quiet?"* — **"I would think about what it all means."**
 - **The last question — "who is waiting for you to come back?"** — *Drew answered it himself before anyone could:* **"I'm pretty sure it's all your guys' families. It's getting pretty late, isn't it?"** **And the vision of the Oracle on her island faded.**
 
 ## Consequences — Drew's calls *(2026-11-07)*
@@ -81,6 +81,6 @@
 - **The Pneum Foulhaul** — what "help" the party promised, and to whom
 - **The quarantine** — whether what they saw at Pneum is enough to satisfy Bartho
 - **Names**: the retired master sailor; Barb's two crewmen
-- **How the Pneum Foulhaul ended**
+- **Pneum's unclaimed reward** — *and what the congregation makes of rescuers who never came back*
 - **Each player's nine** out of what they now hold
 - **Gold** — what the repairs and the new crew cost

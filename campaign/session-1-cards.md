@@ -159,7 +159,16 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 **Left in the Oracle, unseen:** *nothing at Drew's table.* **Drew's printed Oracle is an older print without THINK TWICE** — *it still had CORNER, which THINK TWICE replaced on 2026-09-26* (`cards/tiers/beginner.md`) — **so CHARGE took THINK TWICE's place in Flint's deck** *(Drew, 2026-11-06)*.
 
-**Chris's cards say *Cadence*** — *the keyword's name for good since 2026-11-07* (`rules/card-glossary.md`, Cadence).
+**Chris's cards say *Flow*** — *Chris prefers it* (`rules/card-glossary.md`, Flow).
+
+## After session three — one shared pool *(Drew, 2026-11-08)*
+
+**The advancement decks got dropped and shuffled together.** Drew pulled out each player's **custom cards** and redistributed the rest at random. **And that is how it runs from now on:**
+
+- **Each player's custom cards stay theirs** — *character-specific, never drawn by anyone else.*
+- **Every other advancement card is one shared pool**, *discoverable by anybody, completely random.* **Not tracked per player any more.**
+
+*The per-deck lists above are history.*
 
 ## Open
 
