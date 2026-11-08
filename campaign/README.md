@@ -31,6 +31,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 | `campaign/session-1-cards.md` | **The draft and the first advancement** — how the 63-card Oracle is dealt, what the GM says about deckbuilding and what he deliberately doesn't, and where all 63 cards end up |
 | `campaign/session-1-convergence.md` | Why all of them are at Vulture's Nest, and what the opening is for |
 | `campaign/session-1-log.md` | **What actually happened in session one** — the record, and where it stopped |
+| `campaign/session-4-plan.md` | **Plans for session four** — Muirn raiders on the water |
 | `campaign/session-3-log.md` | **What actually happened in session three** — the Water Wing stolen, Pneum, the Thieves Den fire |
 | `campaign/session-2-log.md` | **What actually happened in session two** |
 | `campaign/session-2-crate.md` | **Session 2: Harlock's crate** — the ask, the carry, the drop at Buttons and Such |
