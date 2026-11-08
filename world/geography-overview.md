@@ -47,7 +47,7 @@ Which is why river sailors are skilled at two different things rather than one: 
 
 ### Named on the water
 
-- **The Shred** — *a dangerous stretch of river between Vulture's Nest and Pneum, named at the table in session three* (`campaign/session-3-log.md`). The party sailed it with skill rolls, took damage and came through. *What makes it the Shred is not set.*
+- **The Shred** — *a dangerous stretch of river between Vulture's Nest and Pneum, named at the table in session three* (`campaign/session-3-log.md`). **Rapids running over reefs** *(Drew, 2026-11-08)* — fast white water with hard reef just under it, so the current throws a hull straight onto what tears it open. The party sailed it with skill rolls, took damage and came through.
 
 ### How a boat actually moves
 

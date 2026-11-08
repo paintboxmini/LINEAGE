@@ -25,7 +25,7 @@
 
 ### The Shred
 
-**A stretch of river called the Shred**, on the way to Pneum *(named at the table)*. **Drew ran it as a sailing section: a few skill rolls, the ship took damage and was repaired, and they came through well overall.** *Where exactly it lies and what makes it the Shred are not written down yet.*
+**A stretch of river called the Shred**, on the way to Pneum *(named at the table)*. **Drew ran it as a sailing section: a few skill rolls, the ship took damage and was repaired, and they came through well overall.** **Rapids and reefs together** — *white water over reef* (`world/geography-overview.md`, Named on the water).
 
 ## Pneum
 
