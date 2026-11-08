@@ -45,6 +45,10 @@ Which is why river sailors are skilled at two different things rather than one: 
 
 ---
 
+### Named on the water
+
+- **The Shred** — *a dangerous stretch of river between Vulture's Nest and Pneum, named at the table in session three* (`campaign/session-3-log.md`). The party sailed it with skill rolls, took damage and came through. *What makes it the Shred is not set.*
+
 ### How a boat actually moves
 
 **Sail is the exception on the web, not the rule.** Most river craft spend most of their working lives under one of three methods, and a crew chooses between them the way a carter chooses a gear.

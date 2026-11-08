@@ -23,6 +23,10 @@
 - **2.5 days out; 1 day back**, *running with the current on the return* (`world/geography-overview.md`, River system).
 - **On the way out they stopped at a small unnamed village** — about twenty people — to restock. **Code asked whether anyone there had ever sailed.** *Drew rolled for the odds and rolled very high:* **a retired master sailor lives there, and they hired him.** *Not yet named.*
 
+### The Shred
+
+**A stretch of river called the Shred**, on the way to Pneum *(named at the table)*. **Drew ran it as a sailing section: a few skill rolls, the ship took damage and was repaired, and they came through well overall.** *Where exactly it lies and what makes it the Shred are not written down yet.*
+
 ## Pneum
 
 **It went about as expected.** **They arrived, and were immediately repulsed** when they understood what the island was doing (`places/pneum.md`).
