@@ -82,6 +82,12 @@
 - **Every two weeks Harlock sends a shipment to the capital.** **The run is two weeks there and two weeks back**, so one ship can only make half of them. **Harlock is paying Flint to run the other half.**
 - **The cargo is FourthEye** (`items/fourtheye.md`).
 
+**The details** *(Drew, 2026-11-10)*:
+
+- **Flint does not know what the cargo is.** *He has the crates and has made no attempt to look inside.*
+- **The ship is Fortune's Fancy, under Samuel and Xander**, with **a full crew** — hired at **the re-established Thieves Den, in a much nicer location this time**: *any pirate who seemed qualified.*
+- **Caine is completely in the dark** — *Pat's own wish for the character.* **Code probably knows, or has a vague outline from Flint** — *not confirmed.*
+
 **What that makes Flint:** **a link in the FourthEye chain** — *the transport leg, between the finishing house north of the Nest and the Cellar Custodians and the Underground Bazaar at the far end* (`places/vultures-nest.md`, The finishing house; `factions-and-races/the-cellar-custodians.md`). **It is the chain Erubeth is in the Nest to trace** (`characters/erubeth.md`), **and the cargo that crosses all three of the Regency's hard lines.**
 
 ---
@@ -97,4 +103,4 @@
 - **Pneum's unclaimed reward** — *and what the congregation makes of rescuers who never came back*
 - **Each player's nine** out of what they now hold
 - **Gold** — what the repairs and the new crew cost
-- **The FourthEye runs** — whether Flint knows what the cargo is; which ship is making them, and under whose command; what Harlock pays; and whether the rest of the party knows
+- **The FourthEye runs** — what Harlock pays, and exactly how much Code knows

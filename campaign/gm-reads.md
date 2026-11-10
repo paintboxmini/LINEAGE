@@ -48,6 +48,8 @@
 
 **What protects it either way:** **his fate is "unknown, and stays unknown"** — *nothing written closes this door.* **And the cost to weigh:** *"He was the first to show him kindness" is the heart of Chris's own backstory. Taking it away is the biggest thing a GM could do to this character — worth doing only if Chris would love the betrayal, and worth seeding slowly enough to back out of.* **A middle version exists:** *the kindness was real **and** it was the experiment — a man who came to love what he was studying, and never stopped studying it.*
 
+**Drew's lean** *(2026-11-10)*: **the middle version.** **The kindness was real — he came to love Code.** **But he is bound by obligation and by his role in the Academy**, and has to follow through on whatever its deeper goals are. *Still a lean, not canon. And it rhymes with Caine: obligation again, this time as the thing that makes a good man do harm.*
+
 ## Related Documents
 
 - `campaign/chris.md`, `campaign/kevin.md`, `campaign/pat.md`
