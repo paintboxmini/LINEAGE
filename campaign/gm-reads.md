@@ -32,6 +32,22 @@
 - **Flint: "I would think about what it all means."** *Not a deferral — an answer. In the quiet, the man who chases the noise would reflect. Pleasure with something underneath it.*
 - **"Who is waiting?" — the Oracle answered for them: their families.** *Ossian, Rynmori, Caine's mother's line.*
 
+## Rynmori — what if he is the one behind it? *(speculation)*
+
+*Drew, 2026-11-10. **An idea being turned over, not a decision, and never to reach Chris before the table does.***
+
+**The thought:** **Rynmori is the villain of Code's thread.** Chris's background has the Academy experimenting on Code, with Rynmori as the one decent figure in it — smuggling him books on science, medicine, history, nature, how to survive. **What if the kindness was the experiment?** **Rynmori ran it all: the mastermind, not the exception.**
+
+**What it would re-read, if true:**
+
+- **The books** — *a curriculum. A probe that imprints and learns, fed exactly what its keeper chose* (`campaign/silverlings.md`).
+- **"He raised the boy in secret, away from the University"** — *a controlled environment with one variable.*
+- **The Night They Ran** — *"told him to run, and was still holding them when the running started"* — **the release phase.** *What does a Variant do with freedom? Somebody may be taking notes* (`campaign/chris.md`, The Night They Ran).
+- **Hardwire's cost** — *the kill switch Chris imagines buried in his own programming might not be Silverling at all. It might be Rynmori's.*
+- **The Ever Switch** — *Rynmori's data pad, with "deeper functions locked", carried everywhere by the subject.*
+
+**What protects it either way:** **his fate is "unknown, and stays unknown"** — *nothing written closes this door.* **And the cost to weigh:** *"He was the first to show him kindness" is the heart of Chris's own backstory. Taking it away is the biggest thing a GM could do to this character — worth doing only if Chris would love the betrayal, and worth seeding slowly enough to back out of.* **A middle version exists:** *the kindness was real **and** it was the experiment — a man who came to love what he was studying, and never stopped studying it.*
+
 ## Related Documents
 
 - `campaign/chris.md`, `campaign/kevin.md`, `campaign/pat.md`

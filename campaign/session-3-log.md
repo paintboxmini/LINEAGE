@@ -75,6 +75,15 @@
 - **Pneum, as played (simplified at the table):** **the Foulhaul was taking people in the night**, and it **hurt the congregation's practice**: *every person taken was a set of afflictions — blessings, to them — lost from the gene pool and never shared.* **Each taking made their communion poorer.** *This is the table's version and it stands* (`places/pneum.md`, Why they can be wrong, and stay wrong).
 - **Next session should be combat-heavy: two or three fights.**
 
+## Downtime after session three *(Drew, 2026-11-10)*
+
+**Flint finished hiring his pirate crew — and has already sent them out on a job from Harlock.**
+
+- **Every two weeks Harlock sends a shipment to the capital.** **The run is two weeks there and two weeks back**, so one ship can only make half of them. **Harlock is paying Flint to run the other half.**
+- **The cargo is FourthEye** (`items/fourtheye.md`).
+
+**What that makes Flint:** **a link in the FourthEye chain** — *the transport leg, between the finishing house north of the Nest and the Cellar Custodians and the Underground Bazaar at the far end* (`places/vultures-nest.md`, The finishing house; `factions-and-races/the-cellar-custodians.md`). **It is the chain Erubeth is in the Nest to trace** (`characters/erubeth.md`), **and the cargo that crosses all three of the Regency's hard lines.**
+
 ---
 
 ## Open
@@ -88,3 +97,4 @@
 - **Pneum's unclaimed reward** — *and what the congregation makes of rescuers who never came back*
 - **Each player's nine** out of what they now hold
 - **Gold** — what the repairs and the new crew cost
+- **The FourthEye runs** — whether Flint knows what the cargo is; which ship is making them, and under whose command; what Harlock pays; and whether the rest of the party knows
