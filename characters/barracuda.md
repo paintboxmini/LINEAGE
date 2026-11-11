@@ -24,6 +24,8 @@
 
 **He is back in the Nest** *(Drew, 2026-11-11)*. **He got word while chasing a rival who was never at sea, and came home during the party's four days at Pneum.** **His intuition: they lied to him so they could steal the ship.** **The first thing he does is send a group of his men to bring the party in front of him. He wants answers.** *He was a sea encounter in waiting; he is a summons now.*
 
+**What he could do with the FourthEye runs, if he learns of them** *(Drew, 2026-11-11)*: **use them to try to overthrow Harlock** at the head of the Guild, **or take the cargo off Fortune's Fancy.**
+
 ## Not Yet Set
 
 - **Where the Water Wing lies**, and who, if anyone, watches her

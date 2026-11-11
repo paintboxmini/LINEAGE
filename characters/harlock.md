@@ -104,7 +104,7 @@ High Body, real Mind, no Soul. He hits like the front of a ship and he is not st
 
 ## Not Yet Set
 
-- **Whether anybody wants his seat** at the head of the Guild (`factions-and-races/the-pirate-guild.md`, Open)
+- **Whether anybody wants his seat** at the head of the Guild (`factions-and-races/the-pirate-guild.md`, Open). *Barracuda would, if he learned about the FourthEye runs* (`campaign/session-4-plan.md`, Barracuda's summons)
 
 ## Related Documents
 

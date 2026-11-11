@@ -27,6 +27,8 @@
 - **The dock will tell him "he" took her out himself** — *"Barracuda" at the helm, trolling for the Mangy Dog* (`campaign/session-3-log.md`). **So he knows somebody wore his face.** *That is the question he will most want answered, and Code is the only answer.*
 - **He does not know where the ship is** unless the party brought Fortune's Fancy into harbour.
 
+**If he learns what Fortune's Fancy carries** *(Drew, 2026-11-11)*: **FourthEye is Harlock's illegal business** — *outside the Guild's licence, off every ledger* (`characters/harlock.md`, The Pirate Guild). **Barracuda could use that to try to overthrow Harlock**, or **simply take the cargo off Fortune's Fancy at sea.** *Either way the party's secret becomes his weapon — and Flint, who has never opened a crate, is the man carrying it.*
+
 **What he wants:** *answers first.* **His ship, or what she is worth, second** — *and a man who wore his face, if anyone will give him one.*
 
 ## Open
