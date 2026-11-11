@@ -15,6 +15,20 @@
 - **What they could say about Barracuda** *(suggestions)*: **his ship went through their water days ago, heading somewhere** — *which tells the party where he is* — **or they took the party for one of his**. *Either keeps him as the sea encounter waiting ahead.*
 - **What they will not say: anything about the cursegiver family.** *They are raiders. If Caine shows the scrap, they go quiet in a way that tells him the emblem means something to them.*
 
+## Barracuda's summons
+
+*Drew, 2026-11-11.* **Barracuda is back in the Nest and has sent men to bring the party before him.** *He thinks they lied to send him off, and stole the ship while he was gone.*
+
+**His men:** **the Toughs sheet** (`bestiary/toughs.md`) — **a Boss leading, a Tough or two.** *They have come to fetch, not to kill: a fight starts only if the party refuses.* **Boss + Tough is the strong fight for two; Boss + Tough + Slinger for three.**
+
+**What he knows, and what he doesn't:**
+
+- **He knows the ship is gone** and that he was sent chasing a rival who was never at sea.
+- **The dock will tell him "he" took her out himself** — *"Barracuda" at the helm, trolling for the Mangy Dog* (`campaign/session-3-log.md`). **So he knows somebody wore his face.** *That is the question he will most want answered, and Code is the only answer.*
+- **He does not know where the ship is** unless the party brought Fortune's Fancy into harbour.
+
+**What he wants:** *answers first.* **His ship, or what she is worth, second** — *and a man who wore his face, if anyone will give him one.*
+
 ## Open
 
 - **Whether the raiders survive, are let go, or are brought back to the Nest** — *and what Muirn prisoners in the Nest would set off*

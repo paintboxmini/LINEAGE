@@ -20,7 +20,9 @@
 
 **Session three** *(2026-11-07)*: **told that Samuel had a new ship and was at sea again, he finished preparing in a rush and left the Nest almost at once** — *presumably after his rival.* **While he was gone, the Water Wing was stolen** — **by a man wearing his face**, who told the dock he was trolling for the Mangy Dog (`campaign/session-3-log.md`).
 
-**From here, a sea encounter** *(Drew, 2026-11-07)*. **He would know the Water Wing under any paint** — *same hull, same cabin, same hold, same mast; years of feuding.*
+**He would know the Water Wing under any paint** *(Drew, 2026-11-07)* — *same hull, same cabin, same hold, same mast; years of feuding.*
+
+**He is back in the Nest** *(Drew, 2026-11-11)*. **He got word while chasing a rival who was never at sea, and came home during the party's four days at Pneum.** **His intuition: they lied to him so they could steal the ship.** **The first thing he does is send a group of his men to bring the party in front of him. He wants answers.** *He was a sea encounter in waiting; he is a summons now.*
 
 ## Not Yet Set
 
