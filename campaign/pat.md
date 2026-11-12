@@ -102,6 +102,8 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 ## Gear and coin
 
+**His papers** *(2026-11-12)*: **made on entry by a Compact light cartographer — bare, a traveller exploring the region's plants and animals, on a one-month pass.** *Now imprinted in Jonas's ledger too* (`campaign/session-3-log.md`, Back in the Nest).
+
 **Session two:** *barbed-wire gauntlets on order from Ashen at The Crossroad's Hilt — 20 gold, **Thorns 1**. Took **STRIKE** at the first advancement. Barb, a Riverdog navigator, sails for the party on his word* (`campaign/session-2-log.md`, `characters/barb.md`).
 
 **He owns nothing yet, and that is a statement about the sheet rather than about him** — gear simply has not been worked on (the note at the top of this file). Everything below is the correction for that, not a decision about who he is.

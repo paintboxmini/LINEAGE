@@ -48,7 +48,7 @@
 - **Barb is hired as the Holly Mint's navigator.** **Two more Riverdog sailors are hired as crew** — *possibly the Tough and the Slinger from the fight.* **Not named yet.**
 - **Pay was not discussed.**
 
-**Why the crew matters.** **None of the players took a sailing Skill**, despite the group having talked about the kind of game they wanted — *an oversight, or a deliberate refusal to metagame.* **So the Holly Mint sails on an NPC crew**, which opens room for recurring crew personalities and life aboard. *The ship is still impounded.*
+**Why the crew matters.** **None of the players took a sailing Skill**, despite the group having talked about the kind of game they wanted — *an oversight, or a deliberate refusal to metagame.* **So the Holly Mint sails on an NPC crew**, which opens room for recurring crew personalities and life aboard. 
 
 ## The second advancement
 

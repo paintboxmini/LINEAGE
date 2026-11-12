@@ -16,7 +16,7 @@
 - **They got her out of the city**, **then painted her, changed every sail, replaced a lot of the wood and repaired what they'd broken.**
 - **She is renamed *Fortune's Fancy*.**
 
-*The party has two ships now: the **Holly Mint** — still the legitimate trader, and impounded when last noted — and **Fortune's Fancy**, Samuel's ship under a new name.*
+*The party has two ships now: the **Holly Mint** — the legitimate trader, **released from the impound in session one** — and **Fortune's Fancy**, Samuel's ship under a new name.*
 
 ## The voyage to Pneum
 
@@ -91,12 +91,14 @@
 - **Jonas did the paperwork.** **Code, wearing Alden Coise's face, signed the barge over to "the Red Button Society" — a charity that helps those in need — with Alden Coise as its leader.** *The red button is Code's calling card* (`campaign/session-2-log.md`, Between sessions).
 - **Jonas asked for everyone's identification papers.** **Flint slipped away first** — *known on the dock as the wine-and-pepper trader's son, so taken to be keeping his name off a charity; minimal suspicion at most.* **Code and Caine showed theirs, and Jonas imprinted both into his ledger by light cartography.**
 
+**Caine's papers** *(Drew)*: **made for him on entry to the Nest** — Compact guards took him to a small room and **a light cartographer made them on the spot.** **Very bare: where he came from, and his stated purpose — to explore the region and learn its plants and animals.** **They mark him a traveller, with a one-month pass to stay.**
+
 **What that means:** **Alden Coise's papers and Caine's are now in Jonas's ledger** — *the one cross-referenced against Quartermaster Voss's intake at Eclipseria South Gate* (`places/vultures-nest.md`, The Tideward Compact). **Code's alias, his charity and his lookalike's face are on Regency record.**
 
 ### After
 
 - **Caine collected his barbed-wire gauntlets** from Ashen *(Thorns 1)*, and is **browsing the market for a piece of jewellery to give Barb** at their date tonight.
-- **Flint went with Xander to finish hiring a full crew for Fortune's Fancy.**
+- **Flint went with Xander to finish hiring a full crew for Fortune's Fancy.** **The first FourthEye run has not left** *(corrected)*: **Kevin and Pat want to make it in person, and haven't talked to Chris about it yet.**
 
 ### Pay, not yet settled
 
@@ -131,4 +133,5 @@
 - **Pneum's unclaimed reward** — *and what the congregation makes of rescuers who never came back*
 - **Each player's nine** out of what they now hold
 - **Gold** — what the repairs and the new crew cost
-- **The FourthEye runs** — what Harlock pays, and exactly how much Code knows
+- **The FourthEye runs** — **the first one waits on the party**: Kevin and Pat want to sail it themselves, and Chris hasn't been asked. *Caine is meant to be in the dark — sailing it himself puts him on board with the cargo.* Also: what Harlock pays, and how much Code knows
+- **Caine's one-month pass** — *when it runs out*
