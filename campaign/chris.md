@@ -228,6 +228,8 @@ What the kit delivers so far:
 
 **He has identification papers. They are not forged — they are real, and they were stolen off somebody.** *That distinction is the whole of it.* A forgery fails when a careful person examines the document. **These papers survive any examination, because there is nothing wrong with them.** Somewhere there is a person who owns this name, and **the Scarves lifted a purse with the papers still in it, and sold it on to Lusk**, who sold the papers to Code *(Drew, 2026-10-08)*.
 
+**On record now** *(2026-11-12)*: **Alden Coise is the registered leader of "the Red Button Society"**, a charity Code named on the spot, **and his papers are imprinted in Jonas's ledger** (`campaign/session-3-log.md`, Back in the Nest).
+
 **The name on them is Alden Coise** *(Chris, via Drew, 2026-11-12)*. **The likeness is a gentleman in his late forties or early fifties.** *So the face Code wears to carry these papers — the lookalike he studied in the Nest (The papers describe somebody, below) — is a man of that age, not the young face he wears as himself.*
 
 **Eight gold**, off a starting purse of 25 (Starting gold, below).

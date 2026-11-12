@@ -75,6 +75,34 @@
 - **Pneum, as played (simplified at the table):** **the Foulhaul was taking people in the night**, and it **hurt the congregation's practice**: *every person taken was a set of afflictions — blessings, to them — lost from the gene pool and never shared.* **Each taking made their communion poorer.** *This is the table's version and it stands* (`places/pneum.md`, Why they can be wrong, and stay wrong).
 - **Next session should be combat-heavy: two or three fights.**
 
+## Back in the Nest — before session four *(group chat, 2026-11-12)*
+
+### On the water, both ways
+
+- **Flint got his cooking done** on the voyages — *his own records hold what rounds and drinks he made.*
+- **Caine spent time alone with Barb** on the way home. **She told him to wait until they're back in the Nest and ask her out properly.** *He has a date with her tonight.*
+- **Code spent the whole trip shadowing the retired master sailor**, learning as much about sailing as he could. *The sailor is still unnamed.*
+
+### Bartho, and the barge
+
+- **They reported Pneum to Bartho.** **He was annoyed**: they had refused him last time, so **he had already hired another crew to check the island — due back in a day — and would not pay the party.**
+- **Code had a plan.** **Fine — they always meant to help for free. And they'd do Vulture's Nest one more good turn: take the quarantined barge safely out of the city.** **His framing: the people aboard are going off to die quietly somewhere of their own, and handled carefully they are no danger to anyone.**
+- **A very high roll.** **Bartho bought it completely** and **handed the barge to the party, on condition that they get it out of the city** so he can wash his hands of the whole thing.
+- **Jonas did the paperwork.** **Code, wearing Alden Coise's face, signed the barge over to "the Red Button Society" — a charity that helps those in need — with Alden Coise as its leader.** *The red button is Code's calling card* (`campaign/session-2-log.md`, Between sessions).
+- **Jonas asked for everyone's identification papers.** **Flint slipped away first** — *known on the dock as the wine-and-pepper trader's son, so taken to be keeping his name off a charity; minimal suspicion at most.* **Code and Caine showed theirs, and Jonas imprinted both into his ledger by light cartography.**
+
+**What that means:** **Alden Coise's papers and Caine's are now in Jonas's ledger** — *the one cross-referenced against Quartermaster Voss's intake at Eclipseria South Gate* (`places/vultures-nest.md`, The Tideward Compact). **Code's alias, his charity and his lookalike's face are on Regency record.**
+
+### After
+
+- **Caine collected his barbed-wire gauntlets** from Ashen *(Thorns 1)*, and is **browsing the market for a piece of jewellery to give Barb** at their date tonight.
+- **Flint went with Xander to finish hiring a full crew for Fortune's Fancy.**
+
+### Pay, not yet settled
+
+- **Samuel and Xander haven't agreed terms** — *they needed to steal the ship and get out of town first.* **Terms come after the crew is hired.**
+- **Barb and her two sailors** *(named by Kevin; names not yet in the files)* **took the Pneum run free**, on the understanding that **if Flint hires them on long-term they'll be paid very well.** *Back from Pneum, they expect pay to be sorted soon.*
+
 ## Downtime after session three *(Drew, 2026-11-10)*
 
 **Flint finished hiring his pirate crew — and has already sent them out on a job from Harlock.**
