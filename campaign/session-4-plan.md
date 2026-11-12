@@ -37,6 +37,22 @@
 - **Erubeth tries to board Fortune's Fancy to inspect the cargo** (`characters/erubeth.md`). *He is Regency-backed, with papers in order and authority to act* (`places/vultures-nest.md`, Key NPCs) — **so he can ask lawfully, and refusing him is its own answer.** *He is the one man in the Nest who would know FourthEye on sight.*
 - **The new pirate crew wants to know what they are carrying** — *not only fair terms. Common pirate sense: you don't carry something until you know what it is.* **That pushes Flint to open a crate** — *and whoever is in the room when he does finds out with him.*
 
+## Getting out in the bush — the Coil? *(Drew, 2026-11-12)*
+
+**The players want to leave the Nest and explore somewhere nobody sent them** — *feeling the heat, not following an errand.* **Drew's instinct: something crunchy. The Coil** (`places/the-coil.md`) — *a labyrinth grown out of a petrified coil in the deep lake east of the Nest, with a navigation rule, a pressure track, minotaurs, chitterers and modular rooms.*
+
+**The one snag: the Coil is written as found through the Night Ferryman** — *an NPC giving them the reason, which is what they don't want.* **The fix: they stumble on it.** *Island-hopping on the deep lake, a dark hump breaks the water where no chart has an island — warm water around it, a low stone arch.* **The Ferryman's line can still come later, as the explanation, not the invitation.** *And it surfaces for a while and then goes back under, so it is there to find once.*
+
+**How hard** *(measured 2026-11-12, everyone fighting to the end)*:
+
+| | Code, Flint, Caine | Code + Caine |
+|---|---|---|
+| **One minotaur** | ~97%, ~0.5 Downs | **~70%, ~1 Down — strong** |
+| **Two minotaurs** | **~54%, ~2 Downs — a coin flip** | ~8% |
+| **Chitterers** | three are nothing | — |
+
+**One minotaur at a time.** *The pressure track is what brings them; let it bring one.* **And the Lizardkin are coming the same session** — *a Coil night and a raider fight together is a long, bloody evening.*
+
 ## Open
 
 - **Whether the raiders survive, are let go, or are brought back to the Nest** — *and what Muirn prisoners in the Nest would set off*
