@@ -228,6 +228,8 @@ What the kit delivers so far:
 
 **He has identification papers. They are not forged — they are real, and they were stolen off somebody.** *That distinction is the whole of it.* A forgery fails when a careful person examines the document. **These papers survive any examination, because there is nothing wrong with them.** Somewhere there is a person who owns this name, and **the Scarves lifted a purse with the papers still in it, and sold it on to Lusk**, who sold the papers to Code *(Drew, 2026-10-08)*.
 
+**The name on them is Alden Coise** *(Chris, via Drew, 2026-11-12)*. **The likeness is a gentleman in his late forties or early fifties.** *So the face Code wears to carry these papers — the lookalike he studied in the Nest (The papers describe somebody, below) — is a man of that age, not the young face he wears as himself.*
+
 **Eight gold**, off a starting purse of 25 (Starting gold, below).
 
 **And it is cheap because of how it reached the shelf.** Lusk paid the kids next to nothing for the purse — he always does (`places/vultures-nest.md`, The Strays, and Lusk). Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Code walked in.* **Eight gold is a third of everything he had, and a fat margin on whatever Lusk paid a child for it**, and both of those are true at once.
@@ -711,7 +713,7 @@ Range: Melee
 - **What the spell book is** — whose, and what is in it
 - **What the University wanted to make him into**, in any detail beyond "a weapon"
 - **Whose papers Chris is carrying.** *Deliberately open* (Two months in the Nest, above). Somewhere there is a real person who owns that name — robbed on a dock a couple of months ago, and since then either gone home, still in town, wanted for something of their own, or dead. **Every one of those is a different thread and none of them needs deciding until somebody pulls it.** Kino knows whose purse it came out of. *And the likeness on the papers answers the dead-or-alive half of it for anyone who looks closely* — sharp if he lives, fading if he does not (The papers describe somebody, above)
-- **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
+- ~~**What name is on them**~~ — **Alden Coise** *(Chris, via Drew, 2026-11-12)*
 - Appearance, voice, backstory detail beyond the above
 - Price
 - **MEASURE, SEED, KILLSWITCH** — his starters, one per colour. *Chris kept SEED; SHARD is planned for his advancement deck (Drew, 2026-11-05).* SEED's growth rate and KILLSWITCH's d4 both want a table test
