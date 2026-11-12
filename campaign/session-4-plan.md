@@ -31,6 +31,12 @@
 
 **What he wants:** *answers first.* **His ship, or what she is worth, second** — *and a man who wore his face, if anyone will give him one.*
 
+## Also coming *(Drew, 2026-11-12)*
+
+- **The Lizardkin come next session, one way or another** — *Muirn raiders on the water* (above).
+- **Erubeth tries to board Fortune's Fancy to inspect the cargo** (`characters/erubeth.md`). *He is Regency-backed, with papers in order and authority to act* (`places/vultures-nest.md`, Key NPCs) — **so he can ask lawfully, and refusing him is its own answer.** *He is the one man in the Nest who would know FourthEye on sight.*
+- **The new pirate crew wants to know what they are carrying** — *not only fair terms. Common pirate sense: you don't carry something until you know what it is.* **That pushes Flint to open a crate** — *and whoever is in the room when he does finds out with him.*
+
 ## Open
 
 - **Whether the raiders survive, are let go, or are brought back to the Nest** — *and what Muirn prisoners in the Nest would set off*
