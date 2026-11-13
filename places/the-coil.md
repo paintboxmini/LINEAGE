@@ -58,6 +58,10 @@ He waits in the boat. He does not look at the entrance while he waits.
 
 ---
 
+## Code and the walls *(Drew, 2026-11-13)*
+
+**Code can pour himself through the Coil's walls — but only at a seam he has found.** **A Perception check finds one**; the walls are living, and a seam is where the body never quite closed. *Not arbitrarily, and not anywhere he likes.*
+
 ## The Navigation Rule
 
 **The hidden rule:** On entry, choose a wall — left or right — and keep that hand in contact with it for the entire traversal. Do not switch. Do not lift contact at junctions to deliberate. The rule is never stated inside the labyrinth.
@@ -369,6 +373,8 @@ The passage widens. Nothing here was ever reinforced — no stonework to give ou
 *Develop what the party actually finds here when the story knows what it needs — see The Nagamani, below, for what's known about it. The labyrinth is a trial for the party's bonds; what they find at the center should reflect how they navigated.*
 
 ---
+
+**At Drew's table** *(2026-11-13)*: **when someone touches the Nagamani, a voice asks what treasure they seek.** *Played from there.*
 
 ## The Nagamani
 
