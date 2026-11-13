@@ -172,7 +172,7 @@ They do not guard the entrance. They are already inside.
 
 **At track 7+:** Encounter. They fight in tight corridors. They do not enter the center.
 
-**Stat block:** `bestiary/minotaur.md` *(pending)*
+**Stat block:** `bestiary/minotaur.md`. **Labyrinth Bond gives every Minotaur attack +d6 while the track is 5 or more — so the encounter at 7+ is always the boosted one.** *Measured 2026-11-13 with that on: one Minotaur ~94% for Code, Flint and Caine (~0.7 Downs); ~56% for Code and Caine alone; two Minotaurs ~34%.*
 
 ---
 
@@ -186,7 +186,7 @@ They carry crystal knives and arrowheads — small, sharp, clearly worked. The c
 
 If the party lingers near their territory or handles things they shouldn't: the Chitterers chitter furiously. Like a squirrel that has decided to make its feelings known. They do not attack. They do not stop chittering until the party moves on.
 
-**Stat block:** `bestiary/chitterer.md` *(pending)*
+**Stat block:** `bestiary/chitterer.md`
 
 ---
 

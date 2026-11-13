@@ -53,13 +53,14 @@
 
 **The one snag: the Coil is written as found through the Night Ferryman** — *an NPC giving them the reason, which is what they don't want.* **The fix: they stumble on it.** *Island-hopping on the deep lake, a dark hump breaks the water where no chart has an island — warm water around it, a low stone arch.* **The Ferryman's line can still come later, as the explanation, not the invitation.** *And it surfaces for a while and then goes back under, so it is there to find once.*
 
-**How hard** *(measured 2026-11-12, everyone fighting to the end)*:
+**How hard** *(re-measured 2026-11-13 with Labyrinth Bond's +d6 on, since the fight only comes at track 7+; everyone fighting to the end)*:
 
 | | Code, Flint, Caine | Code + Caine |
 |---|---|---|
-| **One minotaur** | ~97%, ~0.5 Downs | **~70%, ~1 Down — strong** |
-| **Two minotaurs** | **~54%, ~2 Downs — a coin flip** | ~8% |
+| **One minotaur** | ~94%, ~0.7 Downs | **~56%, ~1.2 Downs — hard** |
+| **Two minotaurs** | **~34%, ~2.4 Downs — likely a loss** | — |
 | **Chitterers** | three are nothing | — |
+| **Wall-Reader** | one ~99%, two ~97% | — |
 
 **One minotaur at a time.** *The pressure track is what brings them; let it bring one.* **And the Lizardkin are coming the same session** — *a Coil night and a raider fight together is a long, bloody evening.*
 
