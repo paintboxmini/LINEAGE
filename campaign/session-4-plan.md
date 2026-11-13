@@ -45,6 +45,8 @@
 - **Mercer's men have grabbed two Red Scarves off the streets: Bean, and Donni** — *Code learns it from Kino the next time he goes to the Ribs.* **Why Donni:** *the lookout with the limp who begs outside the Keel — easy to catch, and the face Code wore into the Ribs.* **Why now:** *Mercer's agent was robbed by "a child" in the market, and Mercer has lost a satchel of new contracts.*
 - **Hojan brings the Ashbys' escort to Flint.** **Tib is gone from the floor; Tab is dead** (`characters/hojan.md`).
 
+**Played by text after session four, not at the table** *(Drew, 2026-11-13)*: **the Strays at Caine's date, Mercer and the Scarves, and Hojan with the Ashbys.** *Not enough time before Friday; they wait for the downtime after it.*
+
 ## Getting out in the bush — the Coil? *(Drew, 2026-11-12)*
 
 **The players want to leave the Nest and explore somewhere nobody sent them** — *feeling the heat, not following an errand.* **Drew's instinct: something crunchy. The Coil** (`places/the-coil.md`) — *a labyrinth grown out of a petrified coil in the deep lake east of the Nest, with a navigation rule, a pressure track, minotaurs, chitterers and modular rooms.*
