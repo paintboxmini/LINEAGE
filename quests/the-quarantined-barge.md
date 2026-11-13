@@ -183,7 +183,7 @@ These are people who have not been allowed to leave, work or sell for two days, 
 
 ## How it ended at Drew's table *(2026-11-12)*
 
-**Bartho signed the barge over to the party** — *to "the Red Button Society", led by "Alden Coise" (Code in disguise)* — **on condition they get it out of the city.** **Code sold him a story**: the congregation was leaving to die quietly somewhere of their own and was safe if handled carefully. **A second crew Bartho hired to check Pneum is due back a day later** (`campaign/session-3-log.md`, Back in the Nest). **Corvel goes with his people**, for now — *he is from Pneum.* **The lockdown is over.** *What the party means to do with the barge and its people is not set.*
+**Bartho signed the barge over to the party** — *to "the Red Button Society", named as led by "Alden Coise", signed by Code in his own face, with Caine's papers on file* — **on condition they get it out of the city.** **Code sold him a story**: the congregation was leaving to die quietly somewhere of their own and was safe if handled carefully. **A second crew Bartho hired to check Pneum is due back a day later** (`campaign/session-3-log.md`, Back in the Nest). **Corvel goes with his people**, for now — *he is from Pneum.* **The lockdown is over.** *What the party means to do with the barge and its people is not set.*
 
 ## Ways It Ends
 
