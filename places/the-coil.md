@@ -314,6 +314,12 @@ The face waits. It does not repeat itself. It does not react to silence.
 
 *The GM should pick the question based on what's actually true about the party at this point in the campaign.*
 
+**At Drew's table — a riddle instead** *(Drew, 2026-11-13)*:
+
+> *"I consume what I covet. If you look for me, you'll never find me. I always succeed when I fail. What am I?"*
+
+**The answer is the shadow** — *the part of a person they won't own.* **It covets what they deny themselves and swallows it; turn round to look for it and it's always behind you; and every time a person fails, it's the part of them that got its way.** **"Desire" is accepted too** — *it eats what it wants, can't be hunted, and lives only while unfulfilled.* *A riddle with a true answer keeps the module's spirit: the face asks something real about whoever is standing there.*
+
 ---
 
 ## Module — The Mirror Maze
