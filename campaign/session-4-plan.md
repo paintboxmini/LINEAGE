@@ -37,6 +37,14 @@
 - **Erubeth tries to board Fortune's Fancy to inspect the cargo** (`characters/erubeth.md`). *He is Regency-backed, with papers in order and authority to act* (`places/vultures-nest.md`, Key NPCs) — **so he can ask lawfully, and refusing him is its own answer.** *He is the one man in the Nest who would know FourthEye on sight.*
 - **The new pirate crew wants to know what they are carrying** — *not only fair terms. Common pirate sense: you don't carry something until you know what it is.* **That pushes Flint to open a crate** — *and whoever is in the room when he does finds out with him.*
 
+## Where things stand when play resumes *(Drew, 2026-11-13)*
+
+- **Paused at Jonas recording the IDs.** **Fortune's Fancy is hidden on a nearby island; they came into the Nest by dinghy.**
+- **The Strays haven't moved yet** — *the party left for Pneum right after the fire.* **Now they're back, the Strays move fast: they come for Caine on his date night with Barb.**
+- **A warning that Barracuda is back in town**, before his men arrive — *someone on the dock, a Scarf, or Samuel hearing it at the new Den.*
+- **Mercer's men have grabbed two Red Scarves off the streets: Bean, and Donni** — *Code learns it from Kino the next time he goes to the Ribs.* **Why Donni:** *the lookout with the limp who begs outside the Keel — easy to catch, and the face Code wore into the Ribs.* **Why now:** *Mercer's agent was robbed by "a child" in the market, and Mercer has lost a satchel of new contracts.*
+- **Hojan brings the Ashbys' escort to Flint.** **Tib is gone from the floor; Tab is dead** (`characters/hojan.md`).
+
 ## Getting out in the bush — the Coil? *(Drew, 2026-11-12)*
 
 **The players want to leave the Nest and explore somewhere nobody sent them** — *feeling the heat, not following an errand.* **Drew's instinct: something crunchy. The Coil** (`places/the-coil.md`) — *a labyrinth grown out of a petrified coil in the deep lake east of the Nest, with a navigation rule, a pressure track, minotaurs, chitterers and modular rooms.*

@@ -48,7 +48,9 @@
 
 **But a contract with Tib's name on it was burned in the Ribs** *(2026-11-06; `campaign/session-2-log.md`, Between sessions)* — **among the papers Code lifted from Mercer's agent, and Tib threw it in the fire himself.** **Whether that was the only copy is open, and it decides this thread:** *if Mercer's floor keeps the original in his ledger, he still has a paper to sell the Ashbys; if the burned one was it, he will sell them a paper he no longer has — or tell them the boy is gone.*
 
-**And Tib has a sister, Tab** *(2026-11-06)*, **still bound somewhere** — *the Scarves have not found where.* **Whether the Ashbys know she was taken too, or are looking only for their son, is not set.** *A contract for a runaway is worth more sold to his parents than it will ever be worth to Mercer.*
+**Tib's sister Tab is dead** *(GM only, Drew, 2026-11-13)* — **crushed by crates on Mercer's floor after Tib escaped.** *Nobody outside the warehouse knows: not the Scarves, not Tib, not the Ashbys.* **Whether Mercer tells the Ashbys, hides it, or sells them a paper for a dead girl is the scene.**
+
+**Hojan takes the ask to Flint** *(Drew, 2026-11-13)*. **Flint learns first that Tib is no longer on the floor** — *as already set.*
 
 **And buying it still matters.** **The paper is what makes Tib a runaway with a reward on him.** *Bought back, the reward is gone and he is free in law — whether or not he ever forgives the people who paid for it.* **He thinks they sold him** (`places/vultures-nest.md`, People looking in).
 

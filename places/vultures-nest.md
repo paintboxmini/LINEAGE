@@ -345,7 +345,7 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **The boy is Tib**, eleven now, and **he ran from the floor a year ago and is a Red Scarf.** *He is the kid at the edge of the market who will not look at the couple asking questions.* **Tib thinks his parents sold him.** *By the paper, they did.* **They think they were lied to.** *They were.* Both of those are true, and the party may be the only people who ever hear both sides.
 
-**Tib has a sister, Tab** *(2026-11-06)* — **still bound, and the Scarves are looking for where they have her working.** *Kino to Tib: "We're gonna find where they got her working. We found you, right?"*
+**Tib had a sister, Tab** *(2026-11-06)*. **GM only** *(Drew, 2026-11-13)*: **after Tib escaped, Tab was crushed to death under falling crates on Mercer's floor.** *The Scarves don't know — Kino promised Tib "we're gonna find where they got her working" — and neither do the Ashbys.* **Hojan brings the escort to Flint, and Flint learns first that Tib is gone from the floor** (`characters/hojan.md`).
 
 **They have saved to buy his binding back**, and it is not enough — and **Mercer would sell it them**, which is the worst thing about him. *What they do not know is that Tib is not on the floor any more, and that a Scarf does not let a grown-up near another Scarf, parents included.*
 
