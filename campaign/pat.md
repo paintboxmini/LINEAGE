@@ -6,11 +6,11 @@
 
 ## Stats
 
-Mind 2 / Body 3 / Soul 4 — HP 18
+**Mind 3 / Body 3 / Soul 4 — HP 19** *(stat increase, session four, 2026-11-14: Mind 2 → 3)*. **Deck maximum 10, hand size 3.** *Was Mind 2, HP 18.*
 
 | Stat | Value | Drives |
 |------|-------|--------|
-| Mind | 2 | Blue card damage; hand size 2 |
+| Mind | 3 | Blue card damage; hand size 3 |
 | Body | 3 | Red card damage; HP weighted 4× |
 | Soul | 4 | Green card damage; Initiative 1d6 + 4 |
 

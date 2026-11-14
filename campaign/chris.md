@@ -139,13 +139,13 @@ Story beats center on keeping the mind link off. It's not a switch he holds down
 
 ## Stats
 
-**Mind 4 / Soul 3 / Body 2 — HP 15** *(Chris's choice, recorded 2026-10-15)*
+**Mind 4 / Soul 3 / Body 3 — HP 19** *(stat increase, session four, 2026-11-14: Body 2 → 3)*. **Deck maximum 10, hand size 4.** *Was Body 2, HP 15 (Chris's choice, recorded 2026-10-15).*
 
 | Stat | Value | Drives |
 |------|-------|--------|
 | Mind | 4 | Blue card damage; hand size 4 |
 | Soul | 3 | Green card damage; Initiative 1d6 + 3 |
-| Body | 2 | Red card damage; HP weighted 4× |
+| Body | 3 | Red card damage; HP weighted 4× |
 
 Nine total, which is exactly the starting deck size; the colour heuristic would put his draft at **4 Blue / 3 Green / 2 Red** (`rules/character-creation.md`). His actual deck is 3 / 3 / 3 (Deck, below).
 
