@@ -14,7 +14,7 @@
 
 - **They scouted the warehouse district and drew a rough map**, and **correctly picked the smallest, most isolated building** as where the grabbed kids were held.
 - **Over a fence, in quietly: one guard asleep in the corner, and Bean and two other kids (unnamed) tied to chairs in the middle of the room, held for questioning.**
-- **Code killed the sleeping guard.** They got the kids back over the fence and sent them to the Ribs.
+- **Code killed the sleeping guard — with KILLSWITCH.** *The stance card, the switch that flips, used to end a man in his sleep.* They got the kids back over the fence and sent them to the Ribs.
 - **Code went on alone to the central warehouse** — *again guessing right that Mercer's office was there* — **wearing the face of the guard he had just killed.**
 - **In the office he went straight to threats: he shifted into tentacles** and told Mercer to **leave the orphans of Vulture's Nest alone.** **He formed a blade from his hand and drove it through a large book on the desk** — *"Do I make myself clear?"*
 - **Mercer folded at once**: *"Oh yes, no more kids, of course — please don't hurt me."*
@@ -55,15 +55,27 @@
 - **Code has Mercer's book.** *What it is — his ledger, the binding contracts, the Bellows' accounts — is open.* **For Kino, who studies how the bindings work, it may be the most valuable thing anyone has ever stolen.**
 - **Kino and Bean are at sea, and the Ribs are run by the older girl**, on Code's 30 gold. **No stealing until they're back.**
 - **Four Muirn are crew on Fortune's Fancy.** *They are Osha's people — the southern tribe — and Caine is hunting the cursegiver family among them.* **And they have every reason to hate the ship they're on.**
-- **Code killed a man who was asleep.** *Worth sitting next to Hardwire's cost — the cold that his failed Soul Save left unspoken.*
+- **Code killed a man who was asleep, with KILLSWITCH.** *Drew: so thematic I could die.* **It sits right next to Hardwire's cost** — *the cold that his failed Soul Save left unspoken.*
+
+## Settled since *(Drew, 2026-11-14)*
+
+- **Fortune's Fancy is bound for the capital, carrying Harlock's FourthEye.**
+- **Where Flint is was left vague on purpose**, for Kevin to decide.
+- **Chris names the four Muirn** — he captured them.
+- **The two kids freed with Bean stay unnamed.** **The Red Scarves take them in** — *and one day they may turn up to repay it: a distraction that breaks a street ambush on the party.*
+- **Erubeth waits** until the party is back in the Nest.
+
+## Flint's week — text downtime with Kevin
+
+**Where the timeline puts him:** after the papers with Jonas, **Flint left with Xander to finish hiring the crew at the Thieves Den** (`campaign/session-3-log.md`, Back in the Nest). **This week, by text, Drew plays out his time at the newly re-established Den** — *and whatever else Kevin chooses to do.*
+
+**At some point, Barracuda's men try to grab Flint and take him to Barracuda** (`characters/barracuda.md`). **Made challenging and thorough on purpose** — *it is how Flint earns the stat point and the card the others got tonight.*
 
 ## Open
 
-- **Where Fortune's Fancy is bound**, and **whether Harlock's FourthEye cargo is aboard** — *Code had meant to take Bean "on a voyage to the capital"*
-- **Flint** — *Kevin was out: was Flint aboard, or left in the Nest?*
+- **Flint** — *Kevin's to decide*
 - **What Mercer's book is**
-- **The two kids freed with Bean** — names, and whether they reached the Ribs
 - **The older girl now running the Ribs** — her name
-- **The four Muirn** — names, and what they know about the cursegivers
-- **What became of Barracuda's summons, Erubeth and the crew's question about the cargo** — *none happened at the table*
+- **The four Muirn** — *Chris names them*; what they know about the cursegivers
+- **The crew's question about the cargo** — *they're carrying it to the capital now*
 - **The passed advancement cards**, from the photos
