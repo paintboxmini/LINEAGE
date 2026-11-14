@@ -65,6 +65,10 @@
 - **The two kids freed with Bean stay unnamed.** **The Red Scarves take them in** — *and one day they may turn up to repay it: a distraction that breaks a street ambush on the party.*
 - **Erubeth waits** until the party is back in the Nest.
 
+## Barracuda gives chase
+
+**Barracuda is chasing Fortune's Fancy toward the capital** *(Drew, 2026-11-14)* — *he means to flay the party in front of his crew.* **She is carrying Harlock's FourthEye**, which is the one thing he could use to bring Harlock down.
+
 ## Flint's week — text downtime with Kevin
 
 **Where the timeline puts him:** after the papers with Jonas, **Flint left with Xander to finish hiring the crew at the Thieves Den** (`campaign/session-3-log.md`, Back in the Nest). **This week, by text, Drew plays out his time at the newly re-established Den** — *and whatever else Kevin chooses to do.*

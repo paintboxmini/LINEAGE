@@ -7,7 +7,7 @@
 ## Barracuda, and the Water Wing
 
 - **The party went to Captain Barracuda to buy Samuel's ship back.** He would not sell (`characters/barracuda.md`).
-- **But they convinced him that Samuel already had a new ship and was out pirating again.** **Barracuda was furious — and was already readying to leave the Nest that day.** **He finished his preparations in a rush and sailed almost at once**, *presumably after his rival.*
+- **But they convinced him that Samuel already had a new ship and was out pirating again.** **Flint was there for it** *(Drew, 2026-11-14)*. **Barracuda was furious — and was already readying to leave the Nest that day.** **He finished his preparations in a rush and sailed almost at once**, *presumably after his rival.*
 - **With Barracuda gone, they stole the Water Wing** (`characters/samuel-gullis.md`):
   - **A deadwood log was chained to her rudder. Code went under and turned his hand into a giant lockpick** to open the padlock on the chain.
   - **The mooring chains ran through her portholes and were wrapped round her rails in sections** — *getting them off meant damaging the ship quite a bit.*
