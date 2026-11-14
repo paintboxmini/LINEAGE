@@ -24,7 +24,7 @@
 
 **He is back in the Nest** *(Drew, 2026-11-11)*. **He got word while chasing a rival who was never at sea, and came home during the party's four days at Pneum.** **His intuition: they lied to him so they could steal the ship.** **The first thing he does is send a group of his men to bring the party in front of him. He wants answers.** *He was a sea encounter in waiting; he is a summons now.*
 
-**And a pursuer** *(Drew, 2026-11-14)*: **he lost days on a wild goose chase and came home to find the ship really gone — and he wants to flay the party in front of his crew.** **He chases Fortune's Fancy on her way to the capital.** *Flint, who was there for the lie, may still be in the Nest — where Barracuda's men try to grab him* (`campaign/session-4-log.md`, Flint's week).
+**And a pursuer** *(Drew, 2026-11-14)*: **he lost days on a wild goose chase and came home to find the ship really gone — and he wants to flay the party in front of his crew.** **He chases Fortune's Fancy on her way to the capital.** *His men try to grab Flint in the Nest while Code and Caine are at the warehouses* (`campaign/session-4-log.md`, Flint's week).
 
 **What he could do with the FourthEye runs, if he learns of them** *(Drew, 2026-11-11)*: **use them to try to overthrow Harlock** at the head of the Guild, **or take the cargo off Fortune's Fancy.**
 

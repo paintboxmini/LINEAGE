@@ -73,7 +73,9 @@
 
 **Where the timeline puts him:** after the papers with Jonas, **Flint left with Xander to finish hiring the crew at the Thieves Den** (`campaign/session-3-log.md`, Back in the Nest). **This week, by text, Drew plays out his time at the newly re-established Den** — *and whatever else Kevin chooses to do.*
 
-**At some point, Barracuda's men try to grab Flint and take him to Barracuda** (`characters/barracuda.md`). **Made challenging and thorough on purpose** — *it is how Flint earns the stat point and the card the others got tonight.*
+**It happens at the same time as the warehouse rescue** *(Drew, 2026-11-14)* — Flint at the Den while Code and Caine are at Mercer's. **At some point, Barracuda's men try to grab Flint and take him to Barracuda** (`characters/barracuda.md`). **Made challenging and thorough on purpose** — *it is how Flint earns the stat point and the card the others got tonight.*
+
+**Where he ends up is Kevin's call:** **most likely aboard Fortune's Fancy with the party when she sails** — **or he stays behind, readies the Holly Mint, and sails her out to catch up.**
 
 ## Open
 
