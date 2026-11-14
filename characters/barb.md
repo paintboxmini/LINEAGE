@@ -8,6 +8,8 @@
 
 **How Caine met her** *(corrected 2026-11-04)*: **Code played wingman** — cut through the Riverdog men around her and asked her to give his Shunka friend a chance. Three of those men took it badly, and that was the fight. *Caine is with her at the Keel tonight.*
 
+**Stood up** *(session four, 2026-11-14)*: **Caine agreed to a date, then left the Nest that night without a word.** *She was waiting when the Strays came looking for him.*
+
 ## Not Yet Set
 
 - **Her pay**, and the crew's

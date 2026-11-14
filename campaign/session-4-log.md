@@ -26,6 +26,10 @@
 - **Kino and Bean came too** — *"Wait, you mean us too?!"* — *"The Red Scarves are safely hidden away and they've got enough gold to hold them over. We're always coming back; we just need to leave now."*
 - **They got out of Vulture's Nest.**
 
+**Caine left without a word to Barb.** *He'd agreed to a date that night, and ditched town instead. Chris tried to make time for a goodbye; Pat said no — he's playing the long game and will wait until he's back.* **So Barb is in the Nest, stood up, on the night the Strays planned to come for Caine at that date.**
+
+**The table nearly didn't leave** — *time, resources and story invested in the Nest against a shiny new city with no enemies breathing down their necks (yet).*
+
 ## The Muirn hunters
 
 - **A ship of Muirn hunters caught up with them outside the Nest.**
