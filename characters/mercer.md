@@ -34,6 +34,12 @@
 
 **Ruthless, not cruel.** He does not enjoy any of it. **A crushed child is a line in his ledger and a cost against the month**, and he will tell you, reasonably, what it would cost the Nest if he stopped. *The party should come away wanting to hit him and unable to point to the law he broke.*
 
+## On his guard *(Drew, 2026-11-14)*
+
+**Session four caught him complacent.** *He relied on his position for safety — a Bellows man on his own dock, in a town where everybody knows who he is* (`campaign/session-4-log.md`, Mercer's warehouses). **That is over.** *A shapeshifter walked into his office in a dead guard's face, drove a blade through his book, and took it.*
+
+**When the party next returns to the Nest, he is ready for them.** *What that looks like is open — more men, a locked office, the Compact's ear, the Bellows told what Code is — but the easy version of his warehouse does not exist any more.*
+
 ## Not Yet Set
 
 - **First name, appearance and voice**

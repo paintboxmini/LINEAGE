@@ -64,8 +64,18 @@
 
 ---
 
+## The capital is not the Nest *(Drew, 2026-11-14)*
+
+**Nest tricks were built for Nest problems.** *Mercer was complacent and relied on his position; the Nest runs on politics, and people inside it know who not to touch.* **Eclipseria is the most advanced place in the world in technology and magic**, and the people guarding what matters there **don't care about Vulture's Nest politics** — *a name or a face that worked at the dock buys nothing.*
+
+- **Stealing a high-value target there is a different job.** *Not a thug's floor of children with one guard at the door.*
+- **The inner districts have barriers**, and **getting past them is nothing like breaking into a warehouse.** *What the barriers are is not written yet* (`places/capital/capital.md`, The Inner Precinct).
+- **Even the gate is a search** — bags opened on the stone, magic noted on a slate and *quietly reported upward* (`places/capital/capital.md`, Arrival — The Gate).
+
 ## Open
 
 - **The route** — *which islands, and how many days*
 - **Barracuda's stat block and crew**, before the second meeting
 - **Whether the four Muirn turn** — and when
+- **How the FourthEye gets in.** *The capital's file only describes the road gate, and its search is exactly what Harlock's crates can't survive. Where a ship docks, who meets it, and who is paid not to look are not written*
+- **What the inner-district barriers are**
