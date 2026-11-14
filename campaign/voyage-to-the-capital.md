@@ -33,7 +33,7 @@
 
 **When they reach 6, he loses them** — *in a fog bank, behind an island, into water too rough for his keel.* **He doesn't give up. He knows where they're going.**
 
-*The cargo choice is the scene: dumping Harlock's FourthEye buys the escape and costs them with Harlock. Keeping it keeps the evidence Barracuda most wants aboard.*
+*The cargo choice is the scene: dumping Harlock's FourthEye buys the escape and costs them with Harlock.* **And Barracuda doesn't know about the cargo** — *his fight is Samuel* (`characters/barracuda.md`). **Crates over the side float, and he's right behind them.** *If he fishes one out, he learns what his rival is carrying, and whose it is, without anyone whispering to him.*
 
 ## Barracuda, again
 

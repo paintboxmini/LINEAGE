@@ -4,6 +4,10 @@
 
 **A Riverdog** *(Drew, 2026-11-05)* — *which is half of why a human cabin boy on his deck got called a mangy dog* (`characters/samuel-gullis.md`, Why "the Mangy Dog").
 
+**What drives him: Samuel.** *(Drew, 2026-11-14)* **The rivalry with the Mangy Dog is everything** — **he'll spit fire at the sight of Samuel at the helm of the reskinned Water Wing.** *The party matters to him because they gave her back to his rival.*
+
+**He does not know about the FourthEye** — *he has never had a lead on it.* **How he could find out without anyone whispering to him:** **he fishes a crate out of the water when the party lightens ship in the chase**; **he boards** at the second meeting; **one of the hired pirates talks** *(the crew asked what they were carrying)*; **or the four pressed Muirn tell him**, if they change sides.
+
 ## How he won the ship
 
 **At the Thieves Den, at liar's dice** (`places/vultures-nest.md`, The Thieves Den), **a month ago.** On the final hand **Barracuda had all five dice left and the Mangy Dog was down to his last one.**
