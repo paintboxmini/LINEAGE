@@ -186,6 +186,48 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 **To add today** *(Drew, 2026-11-15)*: **three Red for Chris; one of each colour for Pat and Kevin** — *twelve each when done.* **First, the draft leftovers that never went into any deck get worked on:** PULL, NAILED, FORESEE, VEIL, STUDY, AID, SHARED BURDEN *(MARKED and INTERRUPT, the other two, are in decks now)*.
 
+### The draft leftovers, worked *(Drew approved, 2026-11-15)*
+
+**The fixes went into the core cards themselves** (`cards/red-body.md`, `cards/blue-mind.md`, `cards/green-soul.md`), *so every table and every creature running them gets the fixed card.* **Three are renamed for this table** — *same text as the core card, a name for the character who holds it.*
+
+| Card | What was wrong | Fixed to | Goes to |
+|---|---|---|---|
+| **PULL** → **REEL IN** | Blank against anyone already on the Frontline, which is most fights | **Pull them in; if they were already there, +2 damage (attack) or Resist (defence)** | **Chris** — *Code's tentacles* |
+| **SHARED BURDEN** | The defence half had no limit | **Heals an ally up to 5; you lose that much** | **Pat** |
+| **NAILED** | Rooted only bites when the target wants to move | **d4; Rooted *and* Vulnerable** | **Pat** *(or FORESEE)* |
+| **FORESEE** | Plain, and the commonest keyword; the flavour is a dodge | **Evade instead of Resist** | *Pat's other option* |
+| **STUDY** → **SIZE UP** | A mid-fight roll, weak in combat | **Discard up to 2, draw that many; the defence reveals stats with no roll** — *a Measured page* (`binder/README.md`) | **Kevin** |
+| **AID** → **SECOND HELPING** | Nothing — nobody wanted it on the night | *Unchanged* | **Kevin** — *Flint's food* |
+| **VEIL** | **A copy** — DISORIENT (Flint's) and BLINDSIDE (Caine's) are the same card in Green and Red | *Not seated. Bench, or a fog creature* | — |
+
+**This table's printings:**
+
+**REEL IN**
+RED — BODY
+Attack: Body + d6
+Effect: Pull the defender to the Frontline. If they were already there, deal +2 damage this attack.
+Defense Effect: Pull the attacker to the Frontline. If they were already there, gain Resist.
+Range: Both
+*"Further than an arm should go."*
+
+**SIZE UP**
+BLUE — MIND
+Attack: Mind + d4
+Effect: Discard up to 2 cards, then draw that many.
+Defense Effect: The attacker reveals their stats.
+Range: Ranged
+*"Where's the good meat on you?"*
+
+**SECOND HELPING**
+GREEN — SOUL
+Attack: Soul + d4
+Effect: Target ally heals 4 and draws 1.
+Defense Effect: Target ally gains Resist and draws 1.
+Range: Ranged
+*"Eat. You'll fight better."*
+
+**Still to write: four new Red** — *two for Chris, one each for Pat and Kevin.*
+
 ## Open
 
 - Whether the spotlight cards Code earns (`experimental/code-concept-cards.md`) count against his nine, or sit outside the cap

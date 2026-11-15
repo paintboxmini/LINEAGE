@@ -25,8 +25,8 @@ Range: Ranged
 **STUDY**
 BLUE — MIND
 Attack: Mind + d4
-Effect: Discard 2, draw 2
-Defense Effect: Make a DC 13 Mind/Reason check. On a success, the attacker reveals their stats.
+Effect: Discard up to 2 cards, then draw that many.
+Defense Effect: The attacker reveals their stats.
 Range: Ranged
 *"Small observations build great understanding."*
 
@@ -318,8 +318,8 @@ Range: Ranged
 **FORESEE**
 BLUE — MIND
 Attack: Mind + d6
-Effect: Give any target Resist.
-Defense Effect: Give any target Resist.
+Effect: Give any target Evade.
+Defense Effect: Give any target Evade.
 Range: Ranged
 *"You already knew where the blow would land."*
 
@@ -357,8 +357,8 @@ Range: Ranged
 
 **NAILED**
 BLUE — MIND
-Attack: Mind + d6
-Effect: Defender gains Rooted.
+Attack: Mind + d4
+Effect: Defender gains Rooted and Vulnerable.
 Defense Effect: Attacker gains Rooted.
 Range: Ranged
 *"Whatever you were about to do, do it from there."*

@@ -1654,38 +1654,65 @@ def test_standing_mod_outlives_the_exchange():
           all(True for _ in [0]) and doubled and True)
 
 
-def test_study_is_a_check():
-    print('\nSTUDY rolls 2d10 + Mind against the DC')
-    passes = 0
-    for seed in range(200):
-        a, b = duo()
-        a.mind = 3
-        ops = fx.compile_half('Make a DC 13 Mind/Reason check. On a success, '
-                              'the attacker reveals their stats.')
-        seen = []
-        ctx = fx.Context(a, b, [], [b], None, 'defender wins',
-                         rng=random.Random(seed), log=seen.append)
-        for op in ops:
-            op.apply(ctx)
-        if any('Body' in line for line in seen):
-            passes += 1
-    # 2d10 + 3 >= 13 needs 10+ on two d10: 55/100 of the grid.
-    check('the success rate matches 2d10 + Mind against DC 13',
-          40 <= passes / 2 <= 70, passes / 2)
+def test_study_reveals_without_a_roll():
+    print('\nSTUDY reveals the attacker on defence, with no roll (2026-11-15)')
+    a, b = duo()
+    ops = fx.compile_half('The attacker reveals their stats.')
+    seen = []
+    ctx = fx.Context(a, b, [], [b], None, 'defender wins',
+                     rng=random.Random(0), log=seen.append)
+    for op in ops:
+        op.apply(ctx)
+    check('the stat line is read out', any('Body' in l for l in seen), seen)
 
 
-def test_shared_burden_is_uncapped_but_survivable():
-    print('\nSHARED BURDEN transfers a chosen amount, and never kills you')
+def test_study_cycles_up_to_two():
+    print('\nSTUDY discards up to 2 and draws that many')
+    import cards as cl
+    a, b = duo()
+    a.deck = list(cl.core_pool())[:6]
+    a.hand = [a.deck.pop()]
+    run('Discard up to 2 cards, then draw that many.', a, b)
+    check('a hand of one cycles one card, not two',
+          len(a.hand) == 1 and len(a.discard) == 1, (len(a.hand), len(a.discard)))
+
+
+def test_shared_burden_is_capped_and_survivable():
+    print('\nSHARED BURDEN moves up to 5, and never kills you')
     a, b = duo()
     mate = Combatant('M', 3, 3, 3, deck=[], position=FRONT, team='party')
     set_table([a, mate, b])
     mate.hp = 1
     a.hp = 18
-    run('Choose an amount. Target ally gains that much HP and you lose that '
-        'much HP.', a, b, allies=[mate])
-    check('the ally gained what the caster lost',
-          (mate.hp - 1) == (18 - a.hp) and mate.hp > 1, (a.hp, mate.hp))
+    run('Target ally heals up to 5. You lose that much HP.', a, b, allies=[mate])
+    check('the ally gained what the caster lost, and no more than 5',
+          (mate.hp - 1) == (18 - a.hp) and 0 < mate.hp - 1 <= 5, (a.hp, mate.hp))
+    a.hp = 2
+    mate.hp = 1
+    run('Target ally heals up to 5. You lose that much HP.', a, b, allies=[mate])
     check('the caster is still standing', a.hp >= 1, a.hp)
+
+
+def test_pull_or_the_rider():
+    print('\nPULL pulls a Backliner in; against a Frontliner it pays the rider')
+    from engine import BACK
+    a = Combatant('A', 3, 3, 3, deck=[], position=FRONT, team='party')
+    b = Combatant('B', 3, 3, 3, deck=[], position=BACK, team='foes')
+    set_table([a, b])
+    ops = fx.compile_half('Pull the attacker to the Frontline. If they were '
+                          'already there, gain Resist.')
+    ctx = fx.Context(a, b, [], [b], None, 'defender wins',
+                     rng=random.Random(0), log=QUIET)
+    for op in ops:
+        op.apply(ctx)
+    check('a Backliner is pulled in', b.position == FRONT, b.position)
+    check('and no rider', a.resist == 0, a.resist)
+    ctx = fx.Context(a, b, [], [b], None, 'defender wins',
+                     rng=random.Random(0), log=QUIET)
+    for op in ops:
+        op.apply(ctx)
+    check('already Frontline: the rider instead', a.resist == 1,
+          a.resist)
 
 
 def test_slipstream_is_the_ring_motion():
@@ -1874,8 +1901,10 @@ if __name__ == '__main__':
     test_understanding_reads_the_disposition()
     test_align_needs_adjacency()
     test_standing_mod_outlives_the_exchange()
-    test_study_is_a_check()
-    test_shared_burden_is_uncapped_but_survivable()
+    test_study_reveals_without_a_roll()
+    test_study_cycles_up_to_two()
+    test_shared_burden_is_capped_and_survivable()
+    test_pull_or_the_rider()
     test_slipstream_is_the_ring_motion()
     test_measure_reads_the_last_colour()
     test_last_colour_rolls_forward_on_your_own_turn()

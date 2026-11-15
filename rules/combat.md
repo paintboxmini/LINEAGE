@@ -142,7 +142,7 @@ Some cards carry a **Special Rule** line instead of — or alongside — an Effe
 **"Attacker"/"Defender" vs. "Target"** — two different things on card text:
 - **Attacker/Defender** means whoever you're resolving *this specific exchange* against. No choice involved.
 - **Target** means you genuinely choose — an ally among several, or a specific enemy when more than one is present.
-- **"Any target" includes yourself** *(Drew, 2026-10-04)*. It is not ally or enemy wording, so the rule below does not reach it: CALCULATE can move you, FORESEE can give you Resist.
+- **"Any target" includes yourself** *(Drew, 2026-10-04)*. It is not ally or enemy wording, so the rule below does not reach it: CALCULATE can move you, FORESEE can give you Evade.
 
 **The targeting words** *(Drew, 2026-10-05)*. Card text names who it reaches with these, and only these:
 

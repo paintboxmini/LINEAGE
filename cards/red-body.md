@@ -75,8 +75,8 @@ Range: Both
 **PULL**
 RED — BODY
 Attack: Body + d6
-Effect: Pull defender to frontline
-Defense Effect: Pull attacker to frontline
+Effect: Pull the defender to the Frontline. If they were already there, deal +2 damage this attack.
+Defense Effect: Pull the attacker to the Frontline. If they were already there, gain Resist.
 Range: Both
 *"The cliff always pulls things closer."*
 
