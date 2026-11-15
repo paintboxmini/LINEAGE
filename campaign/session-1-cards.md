@@ -176,7 +176,15 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 - **There is no reserve left** — *every card has a player.* **The 18-card shared reserve above is gone.**
 - **A card finished from here on is written for a specific player's deck.**
-- **The current lists are coming from Drew**; *until they land, no list here is current.*
+- **The lists, from Drew's photos (2026-11-15)** — *owners read off the custom cards in each pile:*
+
+| | Red | Blue | Green | |
+|---|---|---|---|---|
+| **Chris (Code)** | SLIP THE BLADE | INTERRUPT, CALCULATE, DISTRACT, INTERFERENCE, PRESSURE | SHARD, OPENING, TRANSPOSE | 9 |
+| **Pat (Caine)** | GUARD, PUSH, BLINDSIDE | INTERCEPT, STAY | PATIENCE, GOOD BOY, ALIGN, SHELTER | 9 |
+| **Kevin (Flint)** | FOOTWORK, PINNED, CHARGE | TODAY'S SPECIAL, MARKED, ENFEEBLE | MOCKERY, COMMUNION, DISORIENT | 9 |
+
+**To add today** *(Drew, 2026-11-15)*: **three Red for Chris; one of each colour for Pat and Kevin** — *twelve each when done.* **First, the draft leftovers that never went into any deck get worked on:** PULL, NAILED, FORESEE, VEIL, STUDY, AID, SHARED BURDEN *(MARKED and INTERRUPT, the other two, are in decks now)*.
 
 ## Open
 
