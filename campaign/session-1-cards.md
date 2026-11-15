@@ -194,8 +194,8 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 |---|---|---|---|
 | **PULL** → **REEL IN** | Blank against anyone already on the Frontline, which is most fights | **Pull them in; if they were already there, +2 damage (attack) or Resist (defence)** | **Chris** — *Code's tentacles* |
 | **SHARED BURDEN** | The defence half had no limit | **Heals an ally up to 5; you lose that much** | **Pat** |
-| **NAILED** | Rooted only bites when the target wants to move | **d4; Rooted *and* Vulnerable** | **Pat** *(or FORESEE)* |
-| **FORESEE** | Plain, and the commonest keyword; the flavour is a dodge | **Evade instead of Resist** | *Pat's other option* |
+| **NAILED** | Rooted only bites when the target wants to move | **d4; Rooted *and* Vulnerable** | **Pat** — *his pick (Drew, 2026-11-15)* |
+| **FORESEE** | Plain, and the commonest keyword; the flavour is a dodge | **Evade instead of Resist** | *Not seated — Pat took NAILED* |
 | **STUDY** → **SIZE UP** | A mid-fight roll, weak in combat | **Discard up to 2, draw that many; the defence reveals stats with no roll** — *a Measured page* (`binder/README.md`) | **Kevin** |
 | **AID** → **SECOND HELPING** | Nothing — nobody wanted it on the night | *Unchanged* | **Kevin** — *Flint's food* |
 | **VEIL** | **A copy** — DISORIENT (Flint's) and BLINDSIDE (Caine's) are the same card in Green and Red | *Not seated. Bench, or a fog creature* | — |
@@ -226,7 +226,41 @@ Defense Effect: Target ally gains Resist and draws 1.
 Range: Ranged
 *"Eat. You'll fight better."*
 
-**Still to write: four new Red** — *two for Chris, one each for Pat and Kevin.*
+### The four new Red *(proposed 2026-11-15)*
+
+*The players keep putting off brainstorming, and Drew's read is that they're happy and can't see a gap* (Drew, 2026-11-15). **So these are designed from what each character has done at the table**, and Pat's from what he asked for at session zero — *ties, summons, buying time* (`campaign/pat.md`).
+
+**THE SILVER SWORD** *(Chris)* — *his epithet; the arm that is a blade* (`campaign/chris.md`)
+RED — BODY
+Attack: Body + d8
+Effect: Deal +2 damage this attack.
+Defense Effect: Counter Attack. On a clean win only.
+Range: Melee
+*"It was an arm a moment ago."*
+
+**HARDEN** *(Chris)* — *silver going hard under the skin*
+RED — BODY
+Attack: Body + d6
+Effect: Gain Resist and Deadly.
+Defense Effect: Gain Resist.
+Range: Both
+*"Silver doesn't bruise."*
+
+**DRILLED** *(Pat)* — *sixteen years of his father's army; ties, and the barbed gauntlets*
+RED — BODY
+Attack: Body + d6
+Effect: Deal +2 damage this attack. If this is a tie, gain Thorns 1.
+Defense Effect: Gain Resist. If this is a tie, gain Thorns 1 as well.
+Range: Melee
+*"His father's voice, every morning, still."*
+
+**FILLET** *(Kevin)* — *the vibro knife, and a cook's eye for the soft part; pays off BREAK DOWN and MARKED*
+RED — BODY
+Attack: Body + d6
+Effect: Deal +2 damage this attack. If the defender is Vulnerable, deal +4 instead.
+Defense Effect: Gain Evade.
+Range: Melee
+*"The knife hums. The meat doesn't argue."*
 
 ## Open
 
