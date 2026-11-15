@@ -36,8 +36,12 @@
 - **The party gathered every flammable and explosive they had** — *none of Flint's* — **and made an improvised bomb, dropped off the stern at the perfect moment. The pursuing ship hit it: a hole blown in her side, and fire.**
 - **They took the dinghy and rowed straight at the oncoming ship — and rammed it through the hole**, into the hunters below decks fighting to save her. **The impact killed three Lizardkin outright and mortally wounded a fourth.**
 - **Code and Caine rolled excellently and jumped clear at the perfect moment**, straight into the fight. **Two of Fortune's Fancy's hired pirates** came with them, and recovered a little slower. **Bean came through the crash untouched and hid behind the dinghy.**
-- **Nine hunters at once**, *stats lowered slightly from the sheet*, **no Flint — and the party won easily.** *Drew: they got really lucky.*
-- **The last four Muirn surrendered**, and **were pressed into the crew of Fortune's Fancy.**
+- **The ship was fully crewed: sixteen hunters — thirteen below decks, three on top**, *each a variation on five stat points total.* **The crash took four**, leaving **nine below at once**, **no Flint.**
+- **They recovered from the crash so fast they got a surprise round before initiative** — *before the three on deck could come down.* **Then the rest of Fortune's Fancy's crew caught up and boarded, and took out the three on deck.**
+- **The party barely got hurt.** *Drew: they got really lucky — and did wonderfully.*
+- **The last four Muirn surrendered** — *trapped between the party below and the Fancy's crew above, which was a big part of why* — and **agreed to join the crew of Fortune's Fancy.**
+
+**What Drew had pictured** *(2026-11-15)*: **the hunters grappling onto the Fancy and boarding — an above-deck skirmish with both crews fully present.** *Instead the party took the fight to the whole ship with four people and a cabin boy.* **Chris argued for about five minutes, on seeing the numbers, that it was more than the party could handle.** *Drew's ruling stands: they knew the ship was fully crewed when they chose to board it, and a fight the party picks is not scaled down to fit them.*
 
 ## Advancement
 
