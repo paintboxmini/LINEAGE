@@ -8,7 +8,27 @@
 
 **He does not know about the FourthEye** — *he has never had a lead on it.* **How he could find out without anyone whispering to him:** **he fishes a crate out of the water when the party lightens ship in the chase**; **he boards** at the second meeting; **one of the hired pirates talks** *(the crew asked what they were carrying)*; **or the four pressed Muirn tell him**, if they change sides.
 
-**His crew's jagged rapiers open gashes** *(Drew, 2026-11-15)* — **the party's first Wounds** (`rules/card-glossary.md`, WOUND). *The core card already exists: REND — "if this attack deals damage, add 1 Wound to the bottom of defender's deck"; "The cut that keeps opening"* (`cards/red-body.md`). **The crew stay unnamed** — *they exist to be fought.*
+**Wounds come in with him** *(Drew, 2026-11-15)* — **the party's first** (`rules/card-glossary.md`, WOUND). **His crew's jagged rapiers shuffle Wounds into a deck; Barracuda puts them straight into a hand.** *The crew's cut turns up later, on a draw. His is felt now: a card slot gone, or an action spent tearing it out.* **The crew stay unnamed** — *they exist to be fought.*
+
+**Drafted, ahead of his stat block:**
+
+**JAGGED RAPIER** *(the crew)*
+RED — BODY
+Attack: Body + d6
+Effect: If this attack deals damage, shuffle 1 Wound into the defender's deck.
+Defense Effect: Counter Attack. On a clean win only.
+Range: Melee
+*"It doesn't cut clean. It isn't meant to."*
+
+**FLAY** *(Barracuda)*
+RED — BODY
+Attack: Body + d8
+Effect: If this attack deals damage, add 1 Wound to the defender's hand.
+Defense Effect: Shuffle 1 Wound into the attacker's deck.
+Range: Melee
+*"In front of my crew. Slowly."*
+
+*Neither is in `cards/` yet* — they move there with the stat block. *REND (`cards/red-body.md`) is the core card nearest the crew's, and puts its Wound at the bottom of the deck instead.*
 
 ## How he won the ship
 
