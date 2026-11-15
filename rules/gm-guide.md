@@ -104,6 +104,18 @@ Reserve this for **enemy decks only, never player decks.** A player's own cards 
 
 Not every old printing is worth the bother. A card that only changed by a die size won't register as a surprise. Look for printings where the Effect or Defense Effect itself changed — those are the ones a player's memory will actively mislead them on, which is the whole point.
 
+### Running a crowd
+
+*Tested at the table, session four (2026-11-14): sixteen Muirn hunters on their own ship, plus two of the party's hired sailors, all on cards — and it ran fast and smooth* (`campaign/session-4-log.md`, The Muirn hunters).
+
+- **Cap how many are in the fight at once, and say why in the fiction.** *Six hunters at a time, because the rest were too crowded out to reach.* **The rest wait in a reserve.**
+- **Refill at the end of each round.** However many died that round, that many step in from the reserve.
+- **One shared deck per side.** *Every hunter drew from one pirate deck; both sailors drew from one sailor deck.* **Each body still has its own stats and HP** — *the hunters were all variations on five stat points.* **Only the draw pile is shared.**
+
+**The cap is what makes a big number fair.** *A crowd's danger is how many of them get a turn* (the headcount cap, above). **A cap of six held the active fight near twice a party of three**, so sixteen bodies became a long fight rather than an impossible one. *Cap low against a small party, higher against a big one.*
+
+**It also works for the party's own hired hands.** *A shared deck for the crew means allies fight on real cards without each needing their own.*
+
 ---
 
 ## Using the Oracle
