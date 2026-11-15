@@ -170,6 +170,14 @@ With three players that is **9 cards revealed, 3 taken, 6 set aside**.
 
 *The per-deck lists above are history.*
 
+## Now — one deck per player again *(Drew, 2026-11-15)*
+
+**The shared pool above is history too.** **Drew sorted the generic cards into piles that suit each character best, and added each player's customs to their own pile.** **Every player has their own advancement deck.**
+
+- **There is no reserve left** — *every card has a player.* **The 18-card shared reserve above is gone.**
+- **A card finished from here on is written for a specific player's deck.**
+- **The current lists are coming from Drew**; *until they land, no list here is current.*
+
 ## Open
 
 - Whether the spotlight cards Code earns (`experimental/code-concept-cards.md`) count against his nine, or sit outside the cap
