@@ -226,11 +226,11 @@ Defense Effect: Target ally gains Resist and draws 1.
 Range: Ranged
 *"Eat. You'll fight better."*
 
-### The four new Red *(proposed 2026-11-15)*
+### The four new Red *(approved 2026-11-15)*
 
 *The players keep putting off brainstorming, and Drew's read is that they're happy and can't see a gap* (Drew, 2026-11-15). **So these are designed from what each character has done at the table**, and Pat's from what he asked for at session zero — *ties, summons, buying time* (`campaign/pat.md`).
 
-**THE SILVER SWORD** *(Chris)* — *his epithet; the arm that is a blade* (`campaign/chris.md`)
+**SILVER FLASH** *(Chris)* — *the blade arm, fast* (`campaign/chris.md`). **Not THE SILVER SWORD** *(Drew, 2026-11-15)*: **MIMETIC BLADE already embodies the blade, and Chris flavours almost every attack he makes as the blade arm**, so the card names the strike, not the weapon
 RED — BODY
 Attack: Body + d8
 Effect: Deal +2 damage this attack.
@@ -261,6 +261,12 @@ Effect: Deal +2 damage this attack. If the defender is Vulnerable, deal +4 inste
 Defense Effect: Gain Evade.
 Range: Melee
 *"The knife hums. The meat doesn't argue."*
+
+
+### The next refill *(Drew, 2026-11-15)*
+
+- **Diversify the mechanics.** *Drew is planning to give an outside AI a game summary with card examples, keywords left out, to see what shapes come back.*
+- **Reaching into an enemy's hand and deck belongs in it.** *That is barred from the starting Oracle only; "later Oracle additions" are named as where those cards go* (`rules/cards.md`, The Oracle Deck).
 
 ## Open
 
