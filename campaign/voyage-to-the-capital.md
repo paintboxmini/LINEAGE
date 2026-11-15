@@ -39,7 +39,7 @@
 
 **Later, where they thought they'd lost him** — *at an island where they stop to explore, at anchor in a fog, or waiting ahead because he guessed the route.* **This time he's ready.** *A summons, a boarding, or a parley — and the four Muirn may decide it's a good moment to change sides.*
 
-**This is where Wounds come in** *(Drew, 2026-11-15)* — **his crew's jagged rapiers shuffle them into decks; Barracuda's own blade puts them straight into a hand** (`characters/barracuda.md`, JAGGED RAPIER and FLAY).
+**This is where Wounds come in** *(Drew, 2026-11-15)* — **his crew's jagged rapiers shuffle them into decks; Barracuda's own blade puts them straight into a hand** (`characters/barracuda.md`).
 
 **He has no stat block yet.** *Write one before the second meeting.*
 
