@@ -41,7 +41,7 @@
 
 **This is where Wounds come in** *(Drew, 2026-11-15)* — **his crew's jagged rapiers shuffle them into decks; Barracuda's own blade puts them straight into a hand** (`characters/barracuda.md`).
 
-**He has no stat block yet.** *Write one before the second meeting.*
+**Stat block written** (`characters/barracuda.md`, Stats) — *his HP is still Drew's to set.* **Officers are the dial:** him with all three is a likely loss; with two, a fair fight (How hard he is).
 
 ---
 
@@ -77,7 +77,7 @@
 ## Open
 
 - **The route** — *which islands, and how many days*
-- **Barracuda's stat block and crew**, before the second meeting
+- **Barracuda's HP**
 - **Whether the four Muirn turn** — and when
 - **How the FourthEye gets in.** *The capital's file only describes the road gate, and its search is exactly what Harlock's crates can't survive. Where a ship docks, who meets it, and who is paid not to look are not written*
 - **What the inner-district barriers are**

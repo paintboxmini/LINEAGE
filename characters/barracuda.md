@@ -10,25 +10,38 @@
 
 **Wounds come in with him** *(Drew, 2026-11-15)* — **the party's first** (`rules/card-glossary.md`, WOUND). **His crew's jagged rapiers shuffle Wounds into a deck; Barracuda puts them straight into a hand.** *The crew's cut turns up later, on a draw. His is felt now: a card slot gone, or an action spent tearing it out.* **The crew stay unnamed** — *they exist to be fought.*
 
-**Drafted, ahead of his stat block:**
+**Cards:** `cards/barracuda.md` (FLAY) · **his crew:** `bestiary/barracudas-crew.md` (JAGGED RAPIER, `cards/barracudas-crew.md`)
 
-**JAGGED RAPIER** *(the crew)*
-RED — BODY
-Attack: Body + d6
-Effect: If this attack deals damage, shuffle 1 Wound into the defender's deck.
-Defense Effect: Counter Attack. On a clean win only.
-Range: Melee
-*"It doesn't cut clean. It isn't meant to."*
+## Stats *(Drew, 2026-11-15)*
 
-**FLAY** *(Barracuda)*
-RED — BODY
-Attack: Body + d8
-Effect: If this attack deals damage, add 1 Wound to the defender's hand.
-Defense Effect: Shuffle 1 Wound into the attacker's deck.
-Range: Melee
-*"In front of my crew. Slowly."*
+**Mind 4 / Body 4 / Soul 4 — HP: a custom pool, not yet set** *(the formula would give 24; he is a boss and gets more)*
 
-*Neither is in `cards/` yet* — they move there with the stat block. *REND (`cards/red-body.md`) is the core card nearest the crew's, and puts its Wound at the bottom of the deck instead.*
+**Deck 12 — 4 Red / 4 Blue / 4 Green.** Hand size 4. Initiative 1d6 + 4.
+
+| | |
+|---|---|
+| **Red** | **FLAY** · GAMBLER'S FOLLY *(the loaded dice)* · DEAD HEAT *(spot on)* · DOUBLE DOWN |
+| **Blue** | PARRY · PRESSURE · CALLED SHOT · DISTRACT |
+| **Green** | MOCKERY · INTIMIDATE · CONFRONT · SHADE AWAY |
+
+*The core picks are a proposal around FLAY: a gambler and a duellist who talks while he fights.*
+
+**Trait — The Hooked Blade** *(Drew, 2026-11-15)*: **whenever Barracuda deals attack damage, shuffle 1 Wound into the defender's deck.** **So FLAY lands two Wounds** — *one shuffled in by the blade, one straight into the hand by the card.* **His pirates have no such blade: their one Wound is their one card.**
+
+## How hard he is
+
+*Drew is aiming for more than one Barracuda fight* — **the party could win the first time, and probably won't.**
+
+*Measured 2026-11-15 against Chris, Kevin and Pat, 300 fights a row, fighting to the end, with the Hooked Blade and FLAY running.* **Treat these as harsh on the party**: the simulated party never stops to tear a Wound out of its hand, and has none of Kevin's loads or drinks — *and the real table beat sixteen Muirn hunters easily.*
+
+| With him | Barracuda at HP 30 | at HP 40 |
+|---|---|---|
+| **Alone** | the party always wins | 99% |
+| **+ 1 officer** | 93% | 85% |
+| **+ 2 officers** | **about half** | 45% |
+| **+ all 3 officers** | **15%** | **12%** |
+
+**The officers are the dial, not his HP.** *Each one changes the fight far more than ten points of health does.* **Full strength — him and all three — is a likely loss**, which is the fight a party meets once and comes back from. **Two officers is the fair fight.** *Every officer the party drops before he arrives, or keeps busy elsewhere, moves it a row up.*
 
 ## How he won the ship
 
@@ -57,9 +70,10 @@ Range: Melee
 ## Not Yet Set
 
 - **Where the Water Wing lies**, and who, if anyone, watches her
-- **His own ship and crew**
+- **His HP** — *a custom pool; see How hard he is*
+- **His own ship**
 - **Which of his men swapped the dice**
-- **His crew**, and whether he sails under a Guild commission (`factions-and-races/the-pirate-guild.md`)
+- **Whether he sails under a Guild commission** (`factions-and-races/the-pirate-guild.md`)
 - **Appearance and voice**, beyond Barbossa
 
 ## Related Documents

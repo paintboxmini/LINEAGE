@@ -623,9 +623,13 @@ class AddStatusCard(Op):
                 card = status_card(self.kind)
                 if self.where == 'hand':
                     who.hand.append(card)
+                elif self.where == 'shuffle':
+                    rng = ctx.rng or who.rng
+                    who.deck.insert(rng.randint(0, len(who.deck)), card)
                 else:
                     who.deck.insert(0, card)
-            where = 'hand' if self.where == 'hand' else 'the bottom of their deck'
+            where = {'hand': 'hand', 'shuffle': 'deck, shuffled in'}.get(
+                self.where, 'the bottom of their deck')
             ctx.log(f'  {self.n} {self.kind} to {who.name}\'s {where}.')
 
 
@@ -1309,6 +1313,18 @@ def _r_exhaust(m):
 @rule(r"^add (\d+) wound to the bottom of (?:the\s+)?(defender|attacker)'?s? deck")
 def _r_wound(m):
     return [AddStatusCard(OPPONENT, 'Wound', int(m.group(1)))]
+
+
+@rule(r"^shuffle (\d+) wounds? into (?:the\s+)?(defender|attacker)'?s? deck")
+def _r_wound_shuffle(m):
+    """JAGGED RAPIER (Barracuda's crew, 2026-11-15)."""
+    return [AddStatusCard(OPPONENT, 'Wound', int(m.group(1)), where='shuffle')]
+
+
+@rule(r"^add (\d+) wounds? to (?:the\s+)?(defender|attacker)'?s? hand")
+def _r_wound_hand(m):
+    """FLAY (Barracuda, 2026-11-15): straight into the hand."""
+    return [AddStatusCard(OPPONENT, 'Wound', int(m.group(1)), where='hand')]
 
 
 @rule(r"^remove all wounds (?:from target ally'?s? hand and discard pile|"

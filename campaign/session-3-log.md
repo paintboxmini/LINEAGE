@@ -43,7 +43,7 @@
 
 ## Back at the Nest
 
-**They killed the Foulhaul** — and **did not go back to the village to report it.** *Pneum asked them for help and would surely have thanked them — gold, or some reward — but the party was too disgusted by the place to return.* **The reward is unclaimed.** **They are back in Vulture's Nest.**
+**Drew ran the Foulhaul at Mind 2 / Soul 3 / Body 6**, *since it was a single foe* (Drew, 2026-11-15; the sheet's numbers are in `bestiary/foulhaul.md`). **They killed the Foulhaul** — and **did not go back to the village to report it.** *Pneum asked them for help and would surely have thanked them — gold, or some reward — but the party was too disgusted by the place to return.* **The reward is unclaimed.** **They are back in Vulture's Nest.**
 
 ## The third advancement — the Oracle on her island
 

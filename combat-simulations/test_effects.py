@@ -1715,6 +1715,17 @@ def test_pull_or_the_rider():
           a.resist)
 
 
+def test_wounds_shuffled_and_in_hand():
+    print('\nJAGGED RAPIER shuffles a Wound in; FLAY puts one in hand')
+    import cards as cl
+    a, b = duo()
+    b.deck = list(cl.core_pool())[:6]
+    run("Shuffle 1 Wound into the defender's deck.", a, b)
+    check('a Wound is in the deck', any(c.name == 'WOUND' for c in b.deck), len(b.deck))
+    run("Add 1 Wound to the defender's hand.", a, b)
+    check('a Wound is in the hand', any(c.name == 'WOUND' for c in b.hand), len(b.hand))
+
+
 def test_slipstream_is_the_ring_motion():
     print('\nSLIPSTREAM fires on being slid over, not on the marker arriving')
     from wheel import Wheel
@@ -1905,6 +1916,7 @@ if __name__ == '__main__':
     test_study_cycles_up_to_two()
     test_shared_burden_is_capped_and_survivable()
     test_pull_or_the_rider()
+    test_wounds_shuffled_and_in_hand()
     test_slipstream_is_the_ring_motion()
     test_measure_reads_the_last_colour()
     test_last_colour_rolls_forward_on_your_own_turn()
