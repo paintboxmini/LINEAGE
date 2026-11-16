@@ -90,6 +90,6 @@
 - **Flint** — *Kevin's to decide*
 - **What Mercer's book is**
 - **The older girl now running the Ribs** — her name
-- **The four Muirn** — *Chris names them*; what they know about the cursegivers
+- **The four Muirn** — *Chris names them* (`characters/the-four-muirn.md`, written 2026-11-16 for his Red Button Society plans)
 - **The crew's question about the cargo** — *they're carrying it to the capital now*
 - **The passed advancement cards**, from the photos
