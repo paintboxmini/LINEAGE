@@ -293,6 +293,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **Lusk leads them** *(Drew, 2026-10-08)*, and he is also their **Knot** — the family's voice among the five. **He runs a small black-market shop** off the back of the dock, where stolen things go to become merchandise, and **he is the kids' fence.** Everything sellable the chain lifts in the market reaches his counter within the hour (The operation, above).
 
+**The Strays hired Muirn raiders to chase Fortune's Fancy out of the Nest** *(Drew, 2026-11-16; `campaign/session-4-log.md`)* — *over the Den fire, once Caine had sailed before they could reach him. Four of those raiders now crew the Fancy* (`characters/the-four-muirn.md`). **The Strays will learn how that went.**
+
 **He gives them the Ribs.** *The Ribs is Strays ground*, and the kids hold it **for as long as they keep bringing him goods.** *Nobody has ever said what happens if they stop, and nobody has needed to.*
 
 **And he underpays them, every time**, because he can. **The power is all his**: they cannot sell anywhere else without crossing a family, and they cannot lose the floor. *A purse that goes out of his door for gold came in for copper.*
