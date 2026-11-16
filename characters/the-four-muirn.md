@@ -20,7 +20,7 @@
 
 **The steersman.** *The one who handled their boat.* **Reads moving water better than anyone aboard the Fancy** — *reed channels, the fast tide, where a keel will catch* (`world/geography-overview.md`, River system). **Skill: Sailing +2.** *Proud, quiet, and the one most bitter about the ship he lost.* — *Mind 2 / Body 2 / Soul 1*
 
-**The diver.** *Went over the side for them — hulls, anchors, cutting nets, coming up under a boat.* **Holds a breath far longer than any land-dweller, and works below the waterline.** **Skill: Athletics +2** *(swimming).* *Practical; treats the whole arrangement as a job until shown otherwise.* — *Mind 1 / Body 3 / Soul 1*
+**The diver.** *Went over the side for them — hulls, anchors, cutting nets, coming up under a boat.* **Holds a breath far longer than any land-dweller, and works below the waterline.** **Skill: Swimming +2.** *Practical; treats the whole arrangement as a job until shown otherwise.* — *Mind 1 / Body 3 / Soul 1*
 
 **The old one.** *The eldest of the four, and the one the others defer to.* **Trained in the tribe's small rites** — *the Tithe they keep each season* (`factions-and-races/races-lizardkin.md`, The Tithe), *salves out of swamp plants, reading the water for weather.* **Skill: Foraging +2** *(swamp plants)*. *Watches everyone. Says least.* — *Mind 1 / Body 2 / Soul 2*
 
