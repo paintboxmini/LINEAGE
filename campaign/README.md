@@ -32,6 +32,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 | `campaign/session-1-convergence.md` | Why all of them are at Vulture's Nest, and what the opening is for |
 | `campaign/session-1-log.md` | **What actually happened in session one** — the record, and where it stopped |
 | `campaign/voyage-to-the-capital.md` | **Plans for the voyage** — the Coil, Barracuda's chase, hazards and beasts |
+| `campaign/back-in-the-nest.md` | **Plans for the return** — who is after them, Harlock looking away, a new family, the shops they never found |
 | `campaign/session-4-log.md` | **What actually happened in session four** — the warehouse rescue, Mercer, the Muirn ship |
 | `campaign/session-4-plan.md` | **Plans for session four** — Muirn raiders on the water |
 | `campaign/session-3-log.md` | **What actually happened in session three** — the Water Wing stolen, Pneum, the Thieves Den fire |

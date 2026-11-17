@@ -100,6 +100,7 @@ High Body, real Mind, no Soul. He hits like the front of a ship and he is not st
 
 - **The capital runs.** A FourthEye shipment goes to the capital every two weeks; the trip is two weeks each way, so **he pays Flint's crew to run half of them** *(downtime after session three — `campaign/session-3-log.md`)*. *He has hired the people who are still holding three of his crates.*
 - **Three of his crates.** The party pulled them out of the river after the crash in session one and kept them; he paid them 30 gold for the rest of the salvage (`campaign/session-1-log.md`). *He does not know yet.* **They came off a Muirn boat he took** — Muirn cloth (the same plant fibre as Caine's scrap), shaman's goods, and Bellows-marked cargo the Muirn had seized first. **A Red Scarf saw the party take them.** *Most of the rest of the spill went to the bank and some was swept off, so his logs are short more than three* (`campaign/session-1-log.md`, The three crates).
+- **The Water Wing** *(Drew, 2026-11-17)*. **He has heard the party took her out from under Barracuda.** *As head of the Guild he would normally owe Barracuda support* — **but he likes the party and has not been told officially, so he looks the other way, for now** (`campaign/back-in-the-nest.md`).
 - **Forget-me-nots.** Sends the party to Forget-Me-Not Island for FourthEye's refining, on a chart; a few sessions later tells them the flowers are gone and asks them to watch for a new source (`places/forget-me-not-island.md`).
 
 ## Not Yet Set

@@ -38,6 +38,8 @@
 
 **Session four caught him complacent.** *He relied on his position for safety — a Bellows man on his own dock, in a town where everybody knows who he is* (`campaign/session-4-log.md`, Mercer's warehouses). **That is over.** *A shapeshifter walked into his office in a dead guard's face, drove a blade through his book, and took it.*
 
+**His men chased Code to the ship and were too slow** *(Drew, 2026-11-17)* — **but they saw the Strays send Muirn hunters after it.** **Mercer went to Lusk to find out why, and the Bellows and the Strays are allied against the party now** (`campaign/back-in-the-nest.md`).
+
 **When the party next returns to the Nest, he is ready for them.** *What that looks like is open — more men, a locked office, the Compact's ear, the Bellows told what Code is — but the easy version of his warehouse does not exist any more.*
 
 ## Not Yet Set

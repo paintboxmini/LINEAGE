@@ -43,6 +43,8 @@
 
 **The officers are the dial, not his HP.** *Each one changes the fight far more than ten points of health does.* **Full strength — him and all three — is a likely loss**, which is the fight a party meets once and comes back from. **Two officers is the fair fight.** *Every officer the party drops before he arrives, or keeps busy elsewhere, moves it a row up.*
 
+**He sails under the Guild** *(implied, Drew, 2026-11-17)* — **which would normally oblige Harlock to back him against the party.** *Harlock has heard, likes the party, hasn't been told officially, and is looking the other way* (`characters/harlock.md`, Threads).
+
 ## How he won the ship
 
 **At the Thieves Den, at liar's dice** (`places/vultures-nest.md`, The Thieves Den), **a month ago.** On the final hand **Barracuda had all five dice left and the Mangy Dog was down to his last one.**
@@ -73,7 +75,6 @@
 - **His HP** — *a custom pool; see How hard he is*
 - **His own ship**
 - **Which of his men swapped the dice**
-- **Whether he sails under a Guild commission** (`factions-and-races/the-pirate-guild.md`)
 - **Appearance and voice**, beyond Barbossa
 
 ## Related Documents
