@@ -40,6 +40,8 @@
 
 **His men chased Code to the ship and were too slow** *(Drew, 2026-11-17)* — **but they saw the Strays send Muirn hunters after it.** **Mercer went to Lusk to find out why, and the Bellows and the Strays are allied against the party now** (`campaign/back-in-the-nest.md`).
 
+**He and Lusk have compared notes** — *Code's name, papers, scarf and church; Caine and the fire; Flint's father* — **and agreed Code goes to Mercer when the hunters bring him back. The Red Scarves pay too, and anyone the party has spoken to** (`campaign/back-in-the-nest.md`, Mercer and Lusk compare notes).
+
 **When the party next returns to the Nest, he is ready for them.** *What that looks like is open — more men, a locked office, the Compact's ear, the Bellows told what Code is — but the easy version of his warehouse does not exist any more.*
 
 ## Not Yet Set
