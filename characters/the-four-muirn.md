@@ -38,7 +38,6 @@
 ## Not Yet Set
 
 - **What they were paid, and whether the Strays expect them back**
-
 - **Their names** — *Chris's*
 - **Their roles in the Red Button Society** — *Chris's plans*
 - **Whether they have family waiting in the swamps**, and what they'd risk to send word
