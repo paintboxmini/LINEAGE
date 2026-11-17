@@ -18,7 +18,9 @@
 
 ## A new family to meet
 
-**Have at least one of the other three ready when they come back** *(Drew)* — **the Marrows, the Rooks or the Vells** (`places/vultures-nest.md`, The Many Mask's legacy). *Two of the five are against them; the other three are the obvious people to want something from a party the Bellows and the Strays have both made an enemy of.*
+**Have at least one of the other three ready when they come back** *(Drew)* — **the Marrows, the Rooks or the Vells** (`places/vultures-nest.md`, The Many Mask's legacy).
+
+**The Vells** *(Drew, 2026-11-17)*: **loan sharks who trap families in debt and buy their children to settle it, supplying the Bellows' floors, and cleaning the money through the jeweller** (`places/vultures-nest.md`, The Vells). *That makes the window-shopping trip for Barb the way in: the jeweller is their laundry. **And it's a third family on the same side as the two already hunting the party** — or a family that doesn't know yet what the party did to its best customer.*
 
 ## The Nest they haven't seen
 
@@ -27,11 +29,11 @@
 **Still waiting for them:**
 
 - **Harwick Sundries** — **Dess Harwick** (`places/vultures-nest.md`, Harwick Sundries — Counter Items). *The Tuning Fork Sword, the Ticking Box.*
-- **The jeweller** — *Drew's, planned; not written yet.*
+- **The jeweller** — *Drew's, planned; **the Vells clean their money through the shop**.*
 
 *The return is a chance to show what kind of town the Nest is, and the town doesn't have to wait for them to ask.*
 
 ## Open
 
-- **Which family comes first**, and what it wants from the party
+- **Whether the Vells already know** what the party did to Mercer, and which side that puts them on
 - **The jeweller**

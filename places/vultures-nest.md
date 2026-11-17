@@ -313,6 +313,16 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 
 
+### The Vells
+
+*Drew, 2026-11-17.* **Loan sharks, and the Bellows' other supply line.** **The Vells lend to families who can't pay it back** — *a bad season, a sick parent, a boat lost* — **and when the debt comes due, they buy the children.** *The paper calls it settling an account.* **The children go to the Bellows' floors** (`characters/mercer.md`).
+
+**Two ways onto Mercer's floor, then.** *His own agents talk families into signing* — **the Ashbys' way** (People looking in, below). **The Vells make sure families have no choice.** *Mercer's way looks like a kindness; the Vells' looks like a contract honestly kept, and both of them are legal.*
+
+**Their money is cleaned through the jeweller** — *coin that came out of a family's ruin goes into stones and settings, and comes back out clean* (`campaign/back-in-the-nest.md`). **The jeweller is Drew's, planned and not yet written.**
+
+**Why they are the family to meet next** (`campaign/back-in-the-nest.md`): *Pat's errand for Barb leads straight into their shop.* **And Code runs a charity for the Nest's orphans** (`campaign/chris.md`) — *the Vells make orphans for a living.*
+
 ### What they ran from — the warehouses
 
 *Drew, 2026-10-07.* **Oliver Twist, on a river.** The touchstone is England in the Industrial Revolution: **children are labour here, and nobody in charge thinks that is strange.** *A gap in the files means an ordinary medieval world* (`CLAUDE.md`, Conventions); **this is a marked exception, and the Nest is where it lives.**
