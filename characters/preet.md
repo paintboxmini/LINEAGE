@@ -7,7 +7,7 @@
 ## What he has done
 
 - **He told Lusk about the Shunka asking questions** — *right before the old Thieves Den burned* (`campaign/session-3-log.md`). *He is why the Strays put the fire on Caine.*
-- **When word came through the Strays' street eyes that Caine was fleeing the Nest, he sent Muirn mercenaries after him** — *the raiders who chased Fortune's Fancy* (`campaign/session-4-log.md`, The Muirn hunters). **Their orders: bring Caine back, dead or alive.**
+- **When word came through the Strays' street eyes that Caine was fleeing the Nest, he sent Muirn mercenaries after him** — *the raiders who chased Fortune's Fancy* (`campaign/session-4-log.md`, The Muirn hunters). **Their orders: bring Caine back, dead or alive.** **Lusk paid with an enchanted gold filigree dagger**, *now in the party's hands* (`items/vultures-nest-items.md`).
 - **He is the go-between who made that hire possible.** *A Nest family does not deal with the Muirn — the Nest's privateers raid them* (`factions-and-races/the-pirate-guild.md`, The Muirn). **A Vessk can**, *because the Vessk already hold a knife at the Muirn's throat* (`factions-and-races/races-lizardkin.md`, The family now).
 
 ## GM read *(offered, not set)*
