@@ -32,7 +32,7 @@
 
 ## The Muirn hunters
 
-- **A ship of Muirn hunters caught up with them outside the Nest.** **The Strays had hired them to go after Fortune's Fancy** *(Drew, 2026-11-16)* — *the Strays' answer to Caine leaving before they could come for him* (`characters/the-four-muirn.md`).
+- **A ship of Muirn hunters caught up with them outside the Nest.** **The Strays had hired them to go after Fortune's Fancy** *(Drew, 2026-11-16)* — *the Strays' answer to Caine leaving before they could come for him* (`characters/the-four-muirn.md`). **Preet, the Vessk on the dice table, sent them, with orders to bring Caine back dead or alive** (`characters/preet.md`).
 - **The party gathered every flammable and explosive they had** — *none of Flint's* — **and made an improvised bomb, dropped off the stern at the perfect moment. The pursuing ship hit it: a hole blown in her side, and fire.**
 - **They took the dinghy and rowed straight at the oncoming ship — and rammed it through the hole**, into the hunters below decks fighting to save her. **The impact killed three Lizardkin outright and mortally wounded a fourth.**
 - **Code and Caine rolled excellently and jumped clear at the perfect moment**, straight into the fight. **Two of Fortune's Fancy's hired pirates** came with them, and recovered a little slower. **Bean came through the crash untouched and hid behind the dinghy.**

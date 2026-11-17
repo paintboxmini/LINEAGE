@@ -8,7 +8,7 @@
 
 ## Who they are
 
-**Muirn, the southern Lizardkin tribe**, from the swamps south of Vulture's Nest (`factions-and-races/races-lizardkin.md`, The Muirn). **Raiders, not family hunters**: *their crew takes boats that come close to Muirn water, the way the Nest's privateers take theirs* (`factions-and-races/the-pirate-guild.md`, The Muirn). **But this crew was hired: the Strays paid them to go after Fortune's Fancy** *(Drew, 2026-11-16)*. *The Strays meant to come for Caine on date night over the Den fire; he had already sailed, so they sent the Muirn after the ship* (`campaign/session-4-log.md`, `places/vultures-nest.md`, The Strays, and Lusk). **Not Vaun's family** — *the family's hunt is still to come* (`characters/vaun.md`).
+**Muirn, the southern Lizardkin tribe**, from the swamps south of Vulture's Nest (`factions-and-races/races-lizardkin.md`, The Muirn). **Raiders, not family hunters**: *their crew takes boats that come close to Muirn water, the way the Nest's privateers take theirs* (`factions-and-races/the-pirate-guild.md`, The Muirn). **But this crew was hired: the Strays paid them to go after Fortune's Fancy** *(Drew, 2026-11-16)*, **through Preet**, the Vessk who guards the Strays' dice table (`characters/preet.md`). **Their orders: bring Caine back, dead or alive** *(Drew, 2026-11-17)*. *The Strays meant to come for Caine on date night over the Den fire; he had already sailed, so they sent the Muirn after the ship* (`campaign/session-4-log.md`, `places/vultures-nest.md`, The Strays, and Lusk). **Not Vaun's family** — *the family's hunt is still to come* (`characters/vaun.md`).
 
 **Twelve of their crew died on that ship**, four of them in the dinghy crash. *They chose surrender when they were trapped between the party below and the Fancy's crew above. That is not the same as choosing the party.*
 
@@ -37,7 +37,6 @@
 
 ## Not Yet Set
 
-- **Who in the Strays hired them, and how** — *a Nest family paying the Muirn, whom the Nest's privateers raid, is not an ordinary deal. **One channel that fits**: the Vessk who guards the Strays' dice table, with Vessk friends — and the Vessk hold a knife at the Muirn's throat already* (`factions-and-races/races-lizardkin.md`, A Vessk in the Nest). *Offered, not set*
 - **What they were paid, and whether the Strays expect them back**
 
 - **Their names** — *Chris's*
