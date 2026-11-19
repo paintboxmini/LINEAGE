@@ -130,6 +130,10 @@ When you change a card or a stat block, check what else consumes it: the seated 
 
 ---
 
+## Raising harness issues *(2026-11-19)*
+
+**Bring them to Drew unprompted once three have piled up.** An issue is something a new session would trip on: an instruction here that has gone out of date, a tool that keeps misbehaving, a convention learned at the table that nothing here records yet, or a correction Drew has had to make twice. **Write each one to `agent-tools/harness-issues.md` when you notice it** — sessions don't carry memory between them, so the file is the count. At three, raise them in plain words with a proposed fix for each; once dealt with, clear them from the file.
+
 ## Checking work
 
 ```
