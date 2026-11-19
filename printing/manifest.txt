@@ -23,7 +23,7 @@
   card-print-briarwatch           20 cards  4127f2e86ceb
   card-print-core                166 cards  5b674f9085e1
   card-print-items-field           3 cards  cf2682d5260f
-  card-print-items                14 cards  6add9eb62875
+  card-print-items                15 cards  dab2b3e48b2f
   card-print-mason                 6 cards  c6964790d2d6
   card-print-nest                 53 cards  e17f88f7c09c
   card-print-oracle-1             21 cards  7deb625b82e9
@@ -36,5 +36,4 @@
   character-sheets                4 sheets  39b0a7b322a9
   packet                       15 sections  f3368dcf8ea1
   play-reference               44 sections  66d753b91183
-  simulator-narrated-cards      7 sections  92d3810b7240
   turn-guide                    4 sections  15c42da3f9f6

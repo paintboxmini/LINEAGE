@@ -35,10 +35,14 @@ RULES_DOCS=(packet play-reference turn-guide)
 PDF_SHEETS=(card-print-core card-print-nest card-print-oracle card-print-oracle-1
             card-print-oracle-2 card-print-oracle-3
             card-print-oracle-expansion card-print-washed-ashore
-            character-sheets packet play-reference
-            simulator-narrated-cards)
+            character-sheets packet play-reference)
 
-CHROME="${CHROME:-/opt/pw-browsers/chromium-1194/chrome-linux/chrome}"
+# The browser's folder name carries its build number and moves when the
+# container image updates (1194 -> 1243 by 2026-11), so find it rather than
+# naming it.
+if [ -z "${CHROME:-}" ]; then
+  CHROME="$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome 2>/dev/null | sort -V | tail -1)"
+fi
 
 echo "Regenerating card sheets..."
 for s in "${CARD_SETS[@]}"; do
@@ -112,7 +116,8 @@ if [ ${#NEED[@]} -gt 0 ]; then
   echo "Building PDFs..."
   if [ ! -x "$CHROME" ]; then
     echo "  ! Chrome not found at $CHROME — set CHROME=/path/to/chrome." >&2
-    echo "  ! ${#NEED[@]} PDF(s) not built." >&2
+    echo "  ! ${#NEED[@]} PDF(s) not built — the manifest is still written." >&2
+    python3 manifest.py >/dev/null
     exit 2
   fi
   for base in "${NEED[@]}"; do
