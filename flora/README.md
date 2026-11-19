@@ -21,6 +21,7 @@ Plants, filed by organism the way the bestiary files animals. One file each, sam
 | Tearseed | **left for the table on purpose.** Its gate gets found from what the players try first |
 | Bloodelm | **the village.** It has to be bled for months before it is felled, and only Elowen's felling families know how — half of whom died this month |
 | Wakebark | **the near ones are gone.** A month of a whole village chewing it has stripped every bush in reach; the rest is deep in the woods |
+| Flinchthorn | **somebody has to set it off.** The seed husks drop only after it has fired its needles, and in the Coil anything that sets it off costs pressure |
 | Seepleaf | **hands.** Finding and picking it are nothing; the gate is coming back down a cliff with it, and anything that has to be held is anything you are not climbing with |
 
 **Seepleaf is the folder's third framing and it is new as of 2026-09-25.** The Nest's plants are made-ground plants that came off a boat; the Weald's sit on a law about reciprocity. **The high country north of the Nest is neither** — it is the one stretch near that town nobody built, so what grows there is *native*, and its gates are about the climb rather than about logistics or debt (`places/vultures-nest.md`, The Shape of the Ground).

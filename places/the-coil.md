@@ -373,6 +373,51 @@ The hands disappear back into the stone the moment they let go. The shaft seals.
 
 ---
 
+## Module — The Root Floor *(trap, 2026-11-19)*
+
+**A stretch of floor that isn't stone.** *The Coil has been hollowed by roots for longer than anyone has counted, and here the roots grew across a shaft and the grit settled on top.* **It looks like the rest of the passage.**
+
+**Noticing it:** Perception. *Senses — it sounds hollow underfoot, and gives a little. Reason — the worn wall carries no marks across this stretch; nothing that knew the Coil walked here.*
+
+**It gives way under the second or third person to cross** — *whoever the GM likes; it held the first.* **Anyone on it makes a Body Save, DC 13.** **A character with a hand on the wall rolls with Advantage** — *the rule that gets them through the Coil is what lets them catch themselves.* **Failure: they fall.**
+
+**The fall is not deadly. It is a separation.** **2d4 damage**, a landing in the dark **in the Underground** (The Underground, above), **and no wall under the hand.** *The roots come down with them; the shaft above is sheer, and nobody climbs back up it.* **The crash is +1 pressure.**
+
+**Now there are two parties**, each to find the other — *the ones above working down, the ones below working through a level where the Minotaurs' cries come from overhead.* **Each half re-commits to a wall on its own.** *If they pick different walls, they keep missing each other* (The Navigation Rule, If the party splits).
+
+## Module — The Masons' Room *(hidden, for Code, 2026-11-19)*
+
+**A sealed room behind a seam.** *The Masons who came here made camp in a side chamber with an ordinary doorway. The Coil has grown over it since* — **there is no door now, only wall, and a seam** (Code and the walls, above). **Perception finds the seam; only Code can pour through it.**
+
+**Inside, nothing has moved in a long time:**
+
+- **Four bedrolls**, *one never slept in.*
+- **A tally on the wall** — *nineteen days, then it stops.*
+- **Chisels and a mallet**, laid out the way a Mason lays them out.
+- **A glyph half-cut into the far wall** — *the work they came to do, abandoned partway* (`factions-and-races/the-masons.md`).
+- **A journal.** *Its last pages are why they never left: they had come to bind a seam, and slowly understood it wasn't one; one of them would not take his hand off the wall* (GM Secret, below; `bestiary/wall-reader.md`).
+
+**It is silent.** **The pressure track doesn't rise while Code is inside**, *and nothing in the Coil comes here.* **It is the one place in the labyrinth to rest — for Code alone.** *What he can carry back out through a seam, and whether he can let anyone else in, is the table's call.*
+
+*It is a lodge, in the Masons' sense — "empty, and worth finding"* (`factions-and-races/the-masons.md`, The Order Now). **What Code learns here is the Coil's GM Secret, if he reads it.** *What he does with a half-cut glyph is Chris's.*
+
+## Loot *(2026-11-19)*
+
+*For bodies, alcoves and packs. Some of the dead are old and some are not* (Open Hooks, The bodies). **Roll a d10, or pick.**
+
+| d10 | Found |
+|---|---|
+| 1 | **Luminova leaves**, 1d3 — *each heals 4* (`items/hollow-and-weald-items.md`) |
+| 2 | **A purse**: 2d6 silver and a scatter of copper |
+| 3 | **A Vulture's Nest dock badge** — *somebody's, and somebody in the Nest knows whose* |
+| 4 | **A Mason's chisel** — *Tier 1 accessory, Perception (Reason) +1, ~100 gold* (`rules/equipment.md`). *Good for finding seams* |
+| 5 | **A knife of the Coil's own bone** — *Tier 1 weapon, +1 damage, ~200 gold.* Rare: reroll it a second time |
+| 6 | **A Low Lantern** (`items/vultures-nest-items.md`) |
+| 7 | **Thirty feet of rope**, half of it rotten — *which half is the question* |
+| 8 | **A crystal shard off the trapped deer's horns** (The Trapped Deer, above) — *the stuff the Chitterers make their weapons from* |
+| 9 | **Flinchthorn husks**, a handful (`flora/flinchthorn.md`) — *somebody paid for these* |
+| 10 | **Old coins nobody mints any more** — *a collector's d6 gold, and a question about where they came from* (What Happened To It, above) |
+
 ## The Center
 
 The passage widens. Nothing here was ever reinforced — no stonework to give out, because whoever came before never reached this deep, or never tried to. The walls curve in a way no mason built. Old bone shows through. Whatever is in the center has been here longer than the labyrinth around it, the same way a skull is older than however long it takes the rest of a body to finish breaking down.
