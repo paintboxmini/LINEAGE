@@ -176,6 +176,13 @@ They do not guard the entrance. They are already inside.
 
 **At track 7+:** Encounter. They fight in tight corridors. They do not enter the center.
 
+**At Drew's table** *(2026-11-19)*:
+
+- **They drag the fallen off. They do not finish them.** *A Down character is taken, not killed — and the party has to go and get them back.* **Where they take them is open** (Open Hooks, below).
+- **One Minotaur first, a second arriving later, and probably a third.** *Drew: past experience says the party will need it.*
+- **The Wall-Reader and the Chitterers are combat chances too** (`bestiary/wall-reader.md`, `bestiary/chitterer.md`).
+- **Resting is judged in the moment** — *what's plausible where they are, and how clever the party is about it.* **Not a fixed rule.**
+
 **Stat block:** `bestiary/minotaur.md`. **Labyrinth Bond gives every Minotaur attack +d6 while the track is 5 or more — so the encounter at 7+ is always the boosted one.** *Measured 2026-11-13 with that on: one Minotaur ~94% for Code, Flint and Caine (~0.7 Downs); ~56% for Code and Caine alone; two Minotaurs ~34%.*
 
 ---
@@ -427,6 +434,8 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`wo
 **What the party finds at the center, specifically.** The Nagamani is there; what state it's in, and what happens when someone actually reaches it, is left open deliberately. Build toward it when the story knows what it needs.
 
 **Whether a rescue has ever arrived in time.** The Coil rewards patience everywhere except here. Nobody knows if "in time" has ever actually happened, or if the stories about it are exactly as distorted as the stories about the treasure.
+
+**Where the Minotaurs drag the fallen** *(2026-11-19)*. *They don't enter the center. Somewhere they keep what they take — and a party going to fetch a friend is a party breaking every rule the Coil has.*
 
 **The bodies.** Some are old. Some are not. At least one has a Vulture's Nest dock badge.
 
