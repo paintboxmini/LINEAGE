@@ -413,7 +413,7 @@ The hands disappear back into the stone the moment they let go. The shaft seals.
 | 4 | **A Mason's chisel** — *Tier 1 accessory, Perception (Reason) +1, ~100 gold* (`rules/equipment.md`). *Good for finding seams* |
 | 5 | **A length of the Coil's own bone**, *loose where a wall has cracked. Hard as stone, light as wood, and faintly warm.* **Offered as material, not as an item** *(Drew, 2026-11-19)* — **what it becomes is the party's to decide**, and a smith's to make |
 | 6 | **A Low Lantern** (`items/vultures-nest-items.md`) |
-| 7 | **Thirty feet of rope**, half of it rotten — *which half is the question* |
+| 7 | **A ten-foot pole** — *tap the floor ahead with it* (The Root Floor, above) |
 | 8 | **A crystal shard off the trapped deer's horns** (The Trapped Deer, above) — *the stuff the Chitterers make their weapons from* |
 | 9 | **Flinchthorn husks**, a handful (`flora/flinchthorn.md`) — *somebody paid for these* |
 | 10 | **Old coins nobody mints any more** — *a collector's d6 gold, and a question about where they came from* (What Happened To It, above) |
