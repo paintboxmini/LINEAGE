@@ -25,7 +25,7 @@
 
 **It is blind** — *where eyes should sit there is only smooth, unbroken skin, never reopened.* **Its face never leaves the wall anyway.** *It walks with that blank face turned toward the stone, fixed on it, afraid of drifting out of reach.* **It never looks at the party** — *which is worse, the first time it does.*
 
-**Across its chest, an empty bandolier: worn leather, seven loops, nothing in any of them.** *GM only: they held a Mason's chisels* (`places/the-coil.md`, The Masons' Room; GM Secret). **Nobody at the table should read it as anything until Code finds that room.**
+**Across its chest, an empty bandolier: worn leather, seven loops, nothing in any of them.** *GM only: they held a Mason's chisels* (`places/the-coil.md`, The Masons' Room; GM Secret). **The chisels are lost somewhere in the Coil's maze** — *one may surface for the party* (`places/the-coil.md`, Loot). **Nobody at the table should read it as anything until Code finds that room.**
 
 **Nothing about it suggests violence. Nothing about it suggests peace either.** It is simply, completely, still doing the one thing it has been doing since before it was this.
 

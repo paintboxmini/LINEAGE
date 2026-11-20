@@ -393,7 +393,7 @@ The hands disappear back into the stone the moment they let go. The shaft seals.
 
 - **Four bedrolls**, *one never slept in.*
 - **A tally on the wall** — *nineteen days, then it stops.*
-- **Chisels and a mallet**, laid out the way a Mason lays them out.
+- **A mallet and an empty tool roll** — *the chisels went with the man who wore them, and the Coil's maze has them now* (`bestiary/wall-reader.md`, Appearance).
 - **A glyph half-cut into the far wall** — *the work they came to do, abandoned partway* (`factions-and-races/the-masons.md`).
 - **A journal.** *Its last pages are why they never left: they had come to bind a seam, and slowly understood it wasn't one; one of them would not take his hand off the wall* (GM Secret, below; `bestiary/wall-reader.md`).
 
@@ -410,7 +410,7 @@ The hands disappear back into the stone the moment they let go. The shaft seals.
 | 1 | **Luminova leaves**, 1d3 — *each heals 4* (`items/hollow-and-weald-items.md`) |
 | 2 | **A purse**: 2d6 silver and a scatter of copper |
 | 3 | **A Vulture's Nest dock badge** — *somebody's, and somebody in the Nest knows whose* |
-| 4 | **A Mason's chisel** — *Tier 1 accessory, Perception (Reason) +1, ~100 gold* (`rules/equipment.md`). *Good for finding seams* |
+| 4 | **A Mason's chisel** — *Tier 1 accessory, Perception (Reason) +1, ~100 gold* (`rules/equipment.md`). *Good for finding seams.* **One of the seven from the Wall-Reader's empty bandolier, lost in the maze** *(Drew, 2026-11-20)*. **One at most** |
 | 5 | **A length of the Coil's own bone**, *loose where a wall has cracked. Hard as stone, light as wood, and faintly warm.* **Offered as material, not as an item** *(Drew, 2026-11-19)* — **what it becomes is the party's to decide**, and a smith's to make |
 | 6 | **A Low Lantern** (`items/vultures-nest-items.md`) |
 | 7 | **A ten-foot pole** — *tap the floor ahead with it* (The Root Floor, above) |
