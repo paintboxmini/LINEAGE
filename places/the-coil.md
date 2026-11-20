@@ -279,7 +279,7 @@ There is writing on the far wall. It requires getting close enough to read. What
 
 ## Module — The Wall-Reader
 
-A creature that lives in the lower passages. Pale, long-limbed, blind. No eyes — just smooth skin where they would be. It navigates entirely by touch, one hand always trailing the left wall.
+A creature that lives in the lower passages. Pale, long-limbed, **with around twenty arms, every hand scrabbling to stay on the left wall as it walks**, its face turned to the stone and never away (`bestiary/wall-reader.md`, Appearance).
 
 It is following the same rule the party should be following.
 

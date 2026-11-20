@@ -1,6 +1,6 @@
 # Wall-Reader
 
-*A blind figure in the Coil's lower passages, following the same wall-following rule the party is. It was a person, once. Not anymore.*
+*A many-armed figure in the Coil's lower passages, following the same wall-following rule the party is. It was a person, once. Not anymore.*
 
 **Cards:** `cards/wall-reader.md`
 
@@ -17,11 +17,15 @@
 
 ## Appearance
 
-Pale — the color of skin that hasn't seen light in longer than anyone alive has been walking these passages. Long-limbed, human-shaped enough that the first look is the worst one: two arms, two legs, upright, the proportions just slightly wrong in a way that takes a second to name. Where eyes should sit, there's only more of the same smooth, unbroken skin — not scarred over, not healed shut, simply never reopened.
+*Redrawn by Drew, 2026-11-20, for his art.*
 
-One arm ends differently than the other. The left hand — always the left — has worn itself against stone for so long the fingers no longer fully separate, callused into something closer to a flat plane than a hand, shaped exactly to the texture of the wall it has never once left. The right hand is unmarked. Ordinary. A hand that stopped being used for anything but balance a long time ago.
+**Human-shaped at the core** — pale, long-limbed, the colour of skin that hasn't seen light in longer than anyone alive has been walking these passages — **and around twenty arms.** *They grow from the shoulders, the ribs, down the back and the flanks, too many to count at a glance.*
 
-It moves without hurry, the marked hand always in contact, trailing stone at shoulder height in the same corridor the party is being asked to walk. Nothing about it suggests violence. Nothing about it suggests peace either. It is simply, completely, still doing the one thing it has been doing since before it was this.
+**Every hand acts as if it has a mind of its own, and every one of them wants the same thing: to keep touching the wall.** As it walks, they **frantically reposition** — peeling off the stone behind, scrabbling forward over one another, slapping flat again ahead — *a constant crawling ripple down its wall side, never fewer than a dozen palms on the stone at once.* **The hands are desperate. The body is not**: it moves without hurry, carried along by them.
+
+**Its face never leaves the wall.** *It walks with its head turned toward the stone, fixed on it, afraid of drifting out of reach.* **It never looks at the party** — *which is worse, the first time it does.*
+
+**Nothing about it suggests violence. Nothing about it suggests peace either.** It is simply, completely, still doing the one thing it has been doing since before it was this.
 
 ---
 
