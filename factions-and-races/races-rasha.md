@@ -10,6 +10,10 @@
 
 ---
 
+## Shared Ancestry — the Glasskin
+
+**The Rasha and the Glasskin were one people, a very long time ago** *(Drew, 2026-10-16)* (`factions-and-races/races-glasskin.md`). *Long enough ago that they now share a shape and not much else.*
+
 ## How the World Reads Them
 
 **A Rasha on a ship is unremarkable at the Nest.** Balance and night eyes make good sailors, and the docks have seen enough of them to stop looking. *Away from the water that is not set* — whether a Rasha in a farming town is a familiar face or a stranger is open.
@@ -30,6 +34,7 @@ Range: Both
 ## Open
 
 - **Where they come from** — a homeland, or a people already scattered
+- **Whether either people knows about the shared ancestry**, and what split them
 - **What they call themselves**, and whether *Rasha* is their word or the continent's
 - **Culture, customs, and what a room assumes about them** away from the docks
 

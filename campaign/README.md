@@ -15,18 +15,32 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 
 **Fiction is the player's, mechanics are the GM's** *(2026-09-26)*. Who the character is, what they want, what they want to be able to do: theirs, and the reason any of these files are worth reading. **The rule that makes it work at the table is Drew's**, because balance is only visible from the whole pool and because the game has to outlive any one character. A player's mechanical idea is input and it is wanted — it gets taken seriously and then designed. *Chris asked for a touch restriction on Mimicry; the three-rung ladder it became is `campaign/chris.md`, What it can't do.*
 
+**Weekly Friday games** from session one, 2026-10-16.
+
+**Advancement photos** *(Drew, 2026-11-05)*: **after each session Drew sends a photo of each player's three advancement cards; the top card in each photo is the one the player took**, the other two the ones passed. *The session log records them that way.*
+
 ## Contents
 
 | | |
 |---|---|
-| `campaign/chris.md` | Code Raines, a Silverling probe. Blade singer; the rift, the father, the moults, Magic Expression, Mimicry, and his three starters — MEASURE, SHARD (in place of SEED from session one), KILLSWITCH |
+| `campaign/chris.md` | Code Raines, a Silverling probe. Blade singer; the rift, the father, the moults, Magic Expression, Mimicry, and his three starters — MEASURE, SEED, KILLSWITCH |
 | `campaign/silverlings.md` | His people, the Silverlings — Chris's account — and the crossing that went wrong |
 | `campaign/pat.md` | Shunka. The Call, Wild Magic Summoning, Passives, Skills |
 | `campaign/pat-cards.md` | Pat's custom cards |
 | `campaign/kevin.md` | Combat chef. The family pepper, Gemstone University, Skills, Passives, the craft, the ingredients, the drinks, the card drafts |
 | `campaign/session-1-cards.md` | **The draft and the first advancement** — how the 63-card Oracle is dealt, what the GM says about deckbuilding and what he deliberately doesn't, and where all 63 cards end up |
 | `campaign/session-1-convergence.md` | Why all of them are at Vulture's Nest, and what the opening is for |
+| `campaign/session-1-log.md` | **What actually happened in session one** — the record, and where it stopped |
+| `campaign/voyage-to-the-capital.md` | **Plans for the voyage** — the Coil, Barracuda's chase, hazards and beasts |
+| `campaign/back-in-the-nest.md` | **Plans for the return** — who is after them, Harlock looking away, a new family, the shops they never found |
+| `campaign/session-4-log.md` | **What actually happened in session four** — the warehouse rescue, Mercer, the Muirn ship |
+| `campaign/session-4-plan.md` | **Plans for session four** — Muirn raiders on the water |
+| `campaign/session-3-log.md` | **What actually happened in session three** — the Water Wing stolen, Pneum, the Thieves Den fire |
+| `campaign/session-2-log.md` | **What actually happened in session two** |
+| `campaign/session-2-crate.md` | **Session 2: Harlock's crate** — the ask, the carry, the drop at Buttons and Such |
+| `campaign/session-2-scarves.md` | **Session 2: Code and the Red Scarves** — the mockery at the Moving Crate, Kino's apology, and the trial job |
 | `campaign/session-1-threads.md` | **The threads of the opening as modular pieces rather than a running order** — what each one is, how to touch it lightly, how deep it goes, and what skipping it costs |
+| `campaign/gm-reads.md` | **Drew's private reads on the characters** — speculation, never canon, never shown to a player |
 | `campaign/passives.md` | Every player Passive written so far, with the reasoning for each |
 | `campaign/images/` | Player reference art |
 

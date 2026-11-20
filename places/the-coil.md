@@ -58,6 +58,10 @@ He waits in the boat. He does not look at the entrance while he waits.
 
 ---
 
+## Code and the walls *(Drew, 2026-11-13)*
+
+**Code can pour himself through the Coil's walls — but only at a seam he has found.** **A Perception check finds one**; the walls are living, and a seam is where the body never quite closed. *Not arbitrarily, and not anywhere he likes.*
+
 ## The Navigation Rule
 
 **The hidden rule:** On entry, choose a wall — left or right — and keep that hand in contact with it for the entire traversal. Do not switch. Do not lift contact at junctions to deliberate. The rule is never stated inside the labyrinth.
@@ -172,7 +176,14 @@ They do not guard the entrance. They are already inside.
 
 **At track 7+:** Encounter. They fight in tight corridors. They do not enter the center.
 
-**Stat block:** `bestiary/minotaur.md` *(pending)*
+**At Drew's table** *(2026-11-19)*:
+
+- **They drag the fallen off. They do not finish them.** *A Down character is taken, not killed — and the party has to go and get them back.* **Where they take them is open** (Open Hooks, below).
+- **One Minotaur first, a second arriving later, and probably a third.** *Drew: past experience says the party will need it.*
+- **The Wall-Reader and the Chitterers are combat chances too** (`bestiary/wall-reader.md`, `bestiary/chitterer.md`).
+- **Resting is judged in the moment** — *what's plausible where they are, and how clever the party is about it.* **Not a fixed rule.**
+
+**Stat block:** `bestiary/minotaur.md`. **Labyrinth Bond gives every Minotaur attack +d6 while the track is 5 or more — so the encounter at 7+ is always the boosted one.** *Measured 2026-11-13 with that on: one Minotaur ~94% for Code, Flint and Caine (~0.7 Downs); ~56% for Code and Caine alone; two Minotaurs ~34%.*
 
 ---
 
@@ -186,7 +197,7 @@ They carry crystal knives and arrowheads — small, sharp, clearly worked. The c
 
 If the party lingers near their territory or handles things they shouldn't: the Chitterers chitter furiously. Like a squirrel that has decided to make its feelings known. They do not attack. They do not stop chittering until the party moves on.
 
-**Stat block:** `bestiary/chitterer.md` *(pending)*
+**Stat block:** `bestiary/chitterer.md`
 
 ---
 
@@ -268,7 +279,7 @@ There is writing on the far wall. It requires getting close enough to read. What
 
 ## Module — The Wall-Reader
 
-A creature that lives in the lower passages. Pale, long-limbed, blind. No eyes — just smooth skin where they would be. It navigates entirely by touch, one hand always trailing the left wall.
+A creature that lives in the lower passages. Pale, long-limbed, **with around twenty arms, every hand scrabbling to stay on the left wall as it walks**, its face turned to the stone and never away (`bestiary/wall-reader.md`, Appearance).
 
 It is following the same rule the party should be following.
 
@@ -314,6 +325,12 @@ The face waits. It does not repeat itself. It does not react to silence.
 
 *The GM should pick the question based on what's actually true about the party at this point in the campaign.*
 
+**At Drew's table — a riddle instead** *(Drew, 2026-11-13)*:
+
+> *"I consume what I covet. If you look for me, you'll never find me. I always succeed when I fail. What am I?"*
+
+**The answer is the shadow** — *the part of a person they won't own.* **It covets what they deny themselves and swallows it; turn round to look for it and it's always behind you; and every time a person fails, it's the part of them that got its way.** **"Desire" is accepted too** — *it eats what it wants, can't be hunted, and lives only while unfulfilled.* *A riddle with a true answer keeps the module's spirit: the face asks something real about whoever is standing there.*
+
 ---
 
 ## Module — The Mirror Maze
@@ -356,6 +373,51 @@ The hands disappear back into the stone the moment they let go. The shaft seals.
 
 ---
 
+## Module — The Root Floor *(trap, 2026-11-19)*
+
+**A stretch of floor that isn't stone.** *The Coil has been hollowed by roots for longer than anyone has counted, and here the roots grew across a shaft and the grit settled on top.* **It looks like the rest of the passage.**
+
+**Noticing it:** Perception. *Senses — it sounds hollow underfoot, and gives a little. Reason — the worn wall carries no marks across this stretch; nothing that knew the Coil walked here.*
+
+**It gives way under the second or third person to cross** — *whoever the GM likes; it held the first.* **Anyone on it makes a Body Save, DC 13.** **A character with a hand on the wall rolls with Advantage** — *the rule that gets them through the Coil is what lets them catch themselves.* **Failure: they fall.**
+
+**The fall is not deadly. It is a separation.** **2d4 damage**, a landing in the dark **in the Underground** (The Underground, above), **and no wall under the hand.** *The roots come down with them; the shaft above is sheer, and nobody climbs back up it.* **The crash is +1 pressure.**
+
+**Now there are two parties**, each to find the other — *the ones above working down, the ones below working through a level where the Minotaurs' cries come from overhead.* **Each half re-commits to a wall on its own.** *If they pick different walls, they keep missing each other* (The Navigation Rule, If the party splits).
+
+## Module — The Masons' Room *(hidden, for Code, 2026-11-19)*
+
+**A sealed room behind a seam.** *The Masons who came here made camp in a side chamber with an ordinary doorway. The Coil has grown over it since* — **there is no door now, only wall, and a seam** (Code and the walls, above). **Perception finds the seam; only Code can pour through it.**
+
+**Inside, nothing has moved in a long time:**
+
+- **Four bedrolls**, *one never slept in.*
+- **A tally on the wall** — *nineteen days, then it stops.*
+- **A mallet and an empty tool roll** — *the chisels went with the man who wore them, and the Coil's maze has them now* (`bestiary/wall-reader.md`, Appearance).
+- **A glyph half-cut into the far wall** — *the work they came to do, abandoned partway* (`factions-and-races/the-masons.md`).
+- **A journal.** *Its last pages are why they never left: they had come to bind a seam, and slowly understood it wasn't one; one of them would not take his hand off the wall* (GM Secret, below; `bestiary/wall-reader.md`).
+
+**It is silent.** **The pressure track doesn't rise while Code is inside**, *and nothing in the Coil comes here.* **It is the one place in the labyrinth to rest — for Code alone.** *What he can carry back out through a seam, and whether he can let anyone else in, is the table's call.*
+
+*It is a lodge, in the Masons' sense — "empty, and worth finding"* (`factions-and-races/the-masons.md`, The Order Now). **What Code learns here is the Coil's GM Secret, if he reads it.** *What he does with a half-cut glyph is Chris's.*
+
+## Loot *(2026-11-19)*
+
+*For bodies, alcoves and packs. Some of the dead are old and some are not* (Open Hooks, The bodies). **Roll a d10, or pick.**
+
+| d10 | Found |
+|---|---|
+| 1 | **Luminova leaves**, 1d3 — *each heals 4* (`items/hollow-and-weald-items.md`) |
+| 2 | **A purse**: 2d6 silver and a scatter of copper |
+| 3 | **A Vulture's Nest dock badge** — *somebody's, and somebody in the Nest knows whose* |
+| 4 | **A Mason's chisel** — *Tier 1 accessory, Perception (Reason) +1, ~100 gold* (`rules/equipment.md`). *Good for finding seams.* **One of the seven from the Wall-Reader's empty bandolier, lost in the maze** *(Drew, 2026-11-20)*. **One at most** |
+| 5 | **A length of the Coil's own bone**, *loose where a wall has cracked. Hard as stone, light as wood, and faintly warm.* **Offered as material, not as an item** *(Drew, 2026-11-19)* — **what it becomes is the party's to decide**, and a smith's to make |
+| 6 | **A Low Lantern** (`items/vultures-nest-items.md`) |
+| 7 | **A ten-foot pole** — *tap the floor ahead with it* (The Root Floor, above) |
+| 8 | **A crystal shard off the trapped deer's horns** (The Trapped Deer, above) — *the stuff the Chitterers make their weapons from* |
+| 9 | **Flinchthorn husks**, a handful (`flora/flinchthorn.md`) — *somebody paid for these* |
+| 10 | **Old coins nobody mints any more** — *a collector's d6 gold, and a question about where they came from* (What Happened To It, above) |
+
 ## The Center
 
 The passage widens. Nothing here was ever reinforced — no stonework to give out, because whoever came before never reached this deep, or never tried to. The walls curve in a way no mason built. Old bone shows through. Whatever is in the center has been here longer than the labyrinth around it, the same way a skull is older than however long it takes the rest of a body to finish breaking down.
@@ -363,6 +425,8 @@ The passage widens. Nothing here was ever reinforced — no stonework to give ou
 *Develop what the party actually finds here when the story knows what it needs — see The Nagamani, below, for what's known about it. The labyrinth is a trial for the party's bonds; what they find at the center should reflect how they navigated.*
 
 ---
+
+**At Drew's table** *(2026-11-13)*: **when someone touches the Nagamani, a voice asks what treasure they seek.** *Played from there.*
 
 ## The Nagamani
 
@@ -415,6 +479,8 @@ The Night Ferryman is also more than he lets on — an Archon of Navigation (`wo
 **What the party finds at the center, specifically.** The Nagamani is there; what state it's in, and what happens when someone actually reaches it, is left open deliberately. Build toward it when the story knows what it needs.
 
 **Whether a rescue has ever arrived in time.** The Coil rewards patience everywhere except here. Nobody knows if "in time" has ever actually happened, or if the stories about it are exactly as distorted as the stories about the treasure.
+
+**Where the Minotaurs drag the fallen** *(2026-11-19)*. *They don't enter the center. Somewhere they keep what they take — and a party going to fetch a friend is a party breaking every rule the Coil has.*
 
 **The bodies.** Some are old. Some are not. At least one has a Vulture's Nest dock badge.
 

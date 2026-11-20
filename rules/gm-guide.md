@@ -74,6 +74,8 @@ Measured against the simulator at a thousand fights per row (`combat-simulations
 
 *Re-checked 2026-10-03, when ties started landing the hit (`rules/combat.md`, Attack Resolution): **the formula still holds.** Fights end faster on both sides, and that pulls the two ends apart a little. One or two of a thing got a few points easier, because the party finishes it sooner. A crowd got harder, because every body's ties land now too — five rootstalkers went from a 20% fight to 13%, three minotaurs from 18% to 9%. **Lean a step toward the smaller count when a fight is a swarm.***
 
+*Calibration at a real table* *(Drew, 2026-11-19)*: **the party plays well above these numbers, and that was always expected.** *The simulated party drafts at random, never retreats, never uses the terrain, and has none of a player's consumables or ideas. Six Muirn hunters at once measure as about an 8% party win (2026-11-15); sixteen of them, run six at a time, were an easy win at the table* (`campaign/session-4-log.md`, The Muirn hunters). **Read a measured win rate as the floor for a table that plays well, not the forecast.**
+
 **There is a headcount cap, and below CTR 5 it binds before the formula does.** Bodies are worth more than the stats on them, because every body is another turn on the wheel. **Somewhere around twice the party's number, a fight tips regardless of how weak the individuals are** — measured at 2.0x, 2.0x and 1.8x against parties of two, three and five, and at that point the swarm is carrying only about two-thirds of the party's total stats and winning half the time anyway.
 
 So: nine creatures at one-in-every-stat sounds like an even match against three starting characters, because nine times CTR 3 is exactly the party's 27. It is not. **Six is the even fight and eight is a guaranteed wipe.** Take the formula's answer and the headcount cap, and use whichever is smaller.
@@ -103,6 +105,18 @@ The same logic that says two members of the same species shouldn't share identic
 Reserve this for **enemy decks only, never player decks.** A player's own cards have to mean what they say, every time — that's a fairness floor. An enemy's deck is already the GM's secret information, same territory as anything else the party doesn't get to see coming.
 
 Not every old printing is worth the bother. A card that only changed by a die size won't register as a surprise. Look for printings where the Effect or Defense Effect itself changed — those are the ones a player's memory will actively mislead them on, which is the whole point.
+
+### Running a crowd
+
+*Tested at the table, session four (2026-11-14): sixteen Muirn hunters on their own ship, plus two of the party's hired sailors, all on cards — and it ran fast and smooth* (`campaign/session-4-log.md`, The Muirn hunters).
+
+- **Cap how many are in the fight at once, and say why in the fiction.** *Six hunters at a time, because the rest were too crowded out to reach.* **The rest wait in a reserve.**
+- **Refill at the end of each round.** However many died that round, that many step in from the reserve.
+- **One shared deck per side.** *Every hunter drew from one pirate deck; both sailors drew from one sailor deck.* **Each body still has its own stats and HP** — *the hunters were all variations on five stat points.* **Only the draw pile is shared.**
+
+**The cap is what makes a big number fair.** *A crowd's danger is how many of them get a turn* (the headcount cap, above). **A cap of six held the active fight near twice a party of three**, so sixteen bodies became a long fight rather than an impossible one. *Cap low against a small party, higher against a big one.*
+
+**It also works for the party's own hired hands.** *A shared deck for the crew means allies fight on real cards without each needing their own.*
 
 ---
 

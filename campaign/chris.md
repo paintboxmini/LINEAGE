@@ -4,6 +4,55 @@
 
 **The epithet is doing real work and was not chosen to.** *The Silver Sword* is MIMETIC BLADE stated as a title — the arm that is the sword, the one form he has perfected — and it lands on the Blade Singer fantasy this sheet was already built around (The Fantasy — Blade Singer, below). It arrived from a character concept built without the rules in front of it, which makes the fit an independent confirmation that the fantasy is legible.
 
+## Chris's packet, 2026-11-05 — and Drew's rulings
+
+*Chris sent a full Sol Card and card catalog. **Drew ruled on it the same day** (below the list); anything not ruled, this file stands.*
+
+- **Background Prisoner; "Many Mask"** as his title on the card; **Red Scarves** as affiliation. *Class and alignment are on the card as flavour — the game has neither.*
+- **Skills: Hardwire +2 and Performance +2**, Hardwire in place of Netrunner. **Hardwire as written is a power, not a skill**: *a magical overlay on a living host's nervous system — Code commands the body while the host stays conscious inside.*
+- **SEED reimagined as airborne Silverling nanobots** that can heal Code or infect organic life; **Hardwire controls an infected host**; **Mini Me** strengthens the link. **Treated as Level 1 of about five stages.**
+- **Passives: Mimicry** (Blue, Mind + d4, Both) **and Mimetic Blade** (Green, Soul + d6, **Both** — *flagged by Chris as needing approval*). *AMALGAMOUS FORM is not on the card; Mimicry is a Passive rather than a Trait.*
+- **Traits: Living Silver, Amorphous Form, Translation** — *the Silverling trait as written here, renamed.*
+- **Equipment: the Ever Switch** (Rynmori's stone data pad, made from fragments created when Code came through; deeper functions locked), **the Iron Scarf** (red silk embroidered MM — *the scarf commissioned from Taylor at The Golden Thread*), **and the Mini Mask, "Mini Me"** (a tiny marionette, a scout and future dispersal vessel). **All powers unconfirmed**, meant to grow with him.
+- **The catalog lists 11 action cards**: MEASURE, SHARPEN, WEATHERED, UNBROKEN, SEED, FLOW, QUICKEN, MEND, LAST RESORT, KILLSWITCH, DEFLECT.
+
+**Also in it:** *Saint Adollo of the River's Rain Church* — **Code's headquarters, as an aspiration** *(Drew, 2026-11-05)*, like "Many Mask": **not yet true in the story.** It is an abandoned church, and **the Red Scarves' main entrance is a false bottom in its podium** (`places/vultures-nest.md`, Named at the Table).
+
+### Drew's rulings *(2026-11-05)*
+
+- **Hardwire is an ability, not a skill.** **Code has one fewer Skill than the others — Performance +2 only — and one extra ability.** *Netrunner is gone.* **Limits, given to Chris directly:**
+  - **One host at a time**, and only **a host already infected by a Seed**, with **Mini Me close by**
+  - **The host gets a Soul Save to resist**, against Code's **Mind + 10**
+  - **The host stays conscious, and remembers**
+  - **It ends the moment Code stops concentrating**
+  - **The cost is to Code himself, not to the Hive link** *(Chris's direction, 2026-11-05)* — Hardwire's Cost, below
+- **SEED stays.** **Its look is a cloud of airborne Silverling nanobots** — healing Code, or infecting a host for Hardwire. **SHARD is a planned advancement card Chris knows about**; he chose SEED.
+- **The current setup stays: Mimicry is a Trait; AMALGAMOUS FORM and MIMETIC BLADE are his Passives**, as written in `campaign/passives.md` — MIMETIC BLADE Green, Melee, d6.
+- **His cards: eleven** — the nine he started with, plus **QUICKEN and WEATHERED**. **He chooses his nine at the start of next session**; the other two go to his bank. *Every player is holding eleven.*
+- **"Many Mask" is Chris's aspiration for Code**, not a title Code goes about announcing. ***Revised 2026-11-06:* Code does know the legend** — *the history the Red Scarves' kids have forgotten* — **most likely from the Academy's book collection** (`places/vultures-nest.md`, The Many Mask's legacy). *Details to settle with Chris. He said the name aloud to Bean on his initiation night* (`campaign/session-2-log.md`, Between sessions).
+- **His child shape is his own face — the one he imprinted, Rynmori's — run back in age.** *There is no real child to hunt for what he does in it: the child is his father, long ago.*
+- **The equipment is gear that grows with him**: powers unconfirmed, nothing until Drew decides what each unlocks.
+
+### Hardwire's cost — losing himself *(Chris's idea, 2026-11-05; the mechanics are a proposal)*
+
+**Chris's direction:** *not reconnection to the Hive — disconnection from himself.* **Every time Code overrides someone else's consciousness, his own slips a little**: emotion goes flat, personality thins, the sense of who he is loosens — **until Code Raines is still aware but no longer in control**, and what is left is cold, calculating, and running on instinct and programming. *Chris's reference is cyberpsychosis; in the world it is Silverling code doing what it was built to do.* **The irony is the point: taking away someone else's free will costs him his own.**
+
+**Two of Chris's limits on it, both kept:**
+
+- **Code does not know this is possible.** *His first use is an unfamiliar tug he doesn't understand.*
+- **Leave the Hive out of it.** *The Hive is too big to spend as the threat this early — it may even turn out to be the thing that can save him from this.*
+
+**And it is not fully implemented yet** — *Chris wants to explore it before it has numbers.*
+
+**A shape for when it does get numbers** — *Drew's call:*
+
+- **Each use of Hardwire, Code makes a Soul Save afterwards.** *Longer holds, deeper overrides and a host who fights back make it harder.* **The GM keeps the count, hidden** — *Code doesn't know there is one.*
+- **A failure is a step down.** **The first few are narrated, not mechanical** — *a moment where he doesn't feel what he should, a line Chris plays colder than he meant.* **Further down, it reaches the sheet**: Disadvantage on Soul checks that lean on a bond; then **Performance stops working the way it did**, because performance needs something underneath it to perform from.
+- **At the bottom, the cold takes over** — *in a fight, the GM can call it: Code plays the round, but as the machine would.*
+- **The way back is people and memory**, never a roll alone: *Flint, Rynmori's book, the Scarves he has chosen.* **What heals it is left open on purpose**, Chris's open door for the Hive included.
+
+**A name for it in the world — a placeholder: *the Override.*** *What he does to a host, done back to himself.* **And it rhymes with his own card**: KILLSWITCH is already the stance he flips on purpose (Cards, below); *this is the one that flips without him.*
+
 ## What He Is
 
 **A Silverling** (`campaign/silverlings.md`) — a living-silver construct of the Great Source, shapeshifting and joined to a hive mind, **sent as a probe** ahead of an assimilation that hasn't come yet. *The repo called this "a Seed of the Amalgam" until Chris's backstory document arrived on 2026-10-08 and named his people.* He arrived with his telepathic link to the Amalgam severed and most of his memory gone with it, and has had to build back up from almost nothing since.
@@ -66,7 +115,7 @@ Comic influences, for tone: Silver Surfer and Galactus (a herald built by a devo
 
 **What happened to his father is unknown, and stays unknown.** Dead or alive is deliberately unwritten — it is a thread to play with rather than a fact to record, and the not-knowing is the point. Chris did not see how it ended, because Kevin did not let him.
 
-**They got out of the Ruins together**, and reached the Nest aboard the Merry Mint, Kevin's temple ship (`campaign/kevin.md`, From session 0). And the men are still looking.
+**They got out of the Ruins together**, and reached the Nest aboard the Holly Mint, Kevin's temple ship (`campaign/kevin.md`, From session 0). And the men are still looking.
 
 ---
 
@@ -90,13 +139,13 @@ Story beats center on keeping the mind link off. It's not a switch he holds down
 
 ## Stats
 
-**Mind 4 / Soul 3 / Body 2 — HP 15** *(Chris's choice, recorded 2026-10-15)*
+**Mind 4 / Soul 3 / Body 3 — HP 19** *(stat increase, session four, 2026-11-14: Body 2 → 3)*. **Deck maximum 10, hand size 4.** *Was Body 2, HP 15 (Chris's choice, recorded 2026-10-15).*
 
 | Stat | Value | Drives |
 |------|-------|--------|
 | Mind | 4 | Blue card damage; hand size 4 |
 | Soul | 3 | Green card damage; Initiative 1d6 + 3 |
-| Body | 2 | Red card damage; HP weighted 4× |
+| Body | 3 | Red card damage; HP weighted 4× |
 
 Nine total, which is exactly the starting deck size; the colour heuristic would put his draft at **4 Blue / 3 Green / 2 Red** (`rules/character-creation.md`). His actual deck is 3 / 3 / 3 (Deck, below).
 
@@ -179,11 +228,25 @@ What the kit delivers so far:
 
 **He has identification papers. They are not forged — they are real, and they were stolen off somebody.** *That distinction is the whole of it.* A forgery fails when a careful person examines the document. **These papers survive any examination, because there is nothing wrong with them.** Somewhere there is a person who owns this name, and **the Scarves lifted a purse with the papers still in it, and sold it on to Lusk**, who sold the papers to Code *(Drew, 2026-10-08)*.
 
+**On record now** *(2026-11-12; retconned 2026-11-13)*: **Alden Coise is the named leader of "the Red Button Society"**, a charity Code named on the spot — **but Code was in his own face, said he'd left his papers on the ship, and Caine's papers went into Jonas's ledger instead.** *The Compact has never seen the Alden face* (`campaign/session-3-log.md`, Back in the Nest).
+
+**The real Alden Coise** *(Drew, 2026-11-12)*: **a small-time merchant who carries himself like nobility.** *How he plays in is still being worked out.*
+
+**The name on them is Alden Coise** *(Chris, via Drew, 2026-11-12)*. **The likeness is a gentleman in his late forties or early fifties.** *So the face Code wears to carry these papers — the lookalike he studied in the Nest (The papers describe somebody, below) — is a man of that age, not the young face he wears as himself.*
+
 **Eight gold**, off a starting purse of 25 (Starting gold, below).
 
 **And it is cheap because of how it reached the shelf.** Lusk paid the kids next to nothing for the purse — he always does (`places/vultures-nest.md`, The Strays, and Lusk). Stolen identification is inventory with exactly one possible buyer in the world — somebody who cannot use their own name — and no way to find that buyer except by luck. *Code walked in.* **Eight gold is a third of everything he had, and a fat margin on whatever Lusk paid a child for it**, and both of those are true at once.
 
 **What Lusk knows, and what he does not.** *He knows the papers were not Code's* — he sold them to him. **He does not know who Code actually is**: not his real name, not the University, not what he is. To him Code is a man who needed a name and paid for one, which describes half the people who pass through that port. *Nothing about that makes Lusk a threat yet. It makes him someone who knows one true thing, and he is the kind of man who sells those.*
+
+**Code owns Saint Adollo's** *(2026-11-06)* — **bought from Lusk, who held the title**; the bell tower is his home. *His own place, chosen for himself* (`campaign/session-2-log.md`, Between sessions).
+
+**Between sessions — the initiation** *(2026-11-06)*: **Code passed.** **He is a Red Scarf — two scarves now, Bean's and his own — and the Scarves know he can change shape.** *He lifted the papers, released the grandmother, gave Bean the purse and a red button, named the Many Mask aloud, and walked into the Ribs wearing Donni's face* (`campaign/session-2-log.md`, Between sessions).
+
+**Session two:** *Kino invited him to Buttons and Such at ten that night for his shot at joining; the initiation runs between sessions. He has a silk scarf on order from Taylor at The Golden Thread, and took **WEATHERED** at the first advancement* (`campaign/session-2-log.md`).
+
+**Session one:** *Code wants to join the Red Scarves, and Lusk has put in a good word for him with Kino. They have still not met* (`campaign/session-1-log.md`).
 
 **Code has had no direct contact with the Red Scarves** *(Drew, 2026-10-08)*. **That happens at the table, not before it.** *The kids stole the purse; Kino knows whose it was* (Not Yet Set, below); *neither of them has ever met the man carrying the papers.*
 
@@ -246,7 +309,9 @@ What the kit delivers so far:
 
 ## Skills
 
-- **Netrunner +1** — a custom Skill, chosen at session 0 *(2026-10-03)* in place of Nature +2. It is **Persuasion, Deception and Intimidation in one tag**, done as a mind hack rather than a conversation. **Three Skills' worth of ground is why it is +1 rather than +2** — the general rule for a broad Skill, which this one is where it came from (`rules/character-creation.md`, Skills). What a hack looks like from the outside is Chris's to describe.
+**One Skill and one ability** *(Drew, 2026-11-05)*: **Netrunner is replaced by Hardwire, which is an ability, not a Skill** (Chris's packet — Drew's rulings, above).
+
+- ~~**Netrunner +1**~~ — *retired 2026-11-05 for Hardwire.* A custom Skill, chosen at session 0 *(2026-10-03)* in place of Nature +2. It is **Persuasion, Deception and Intimidation in one tag**, done as a mind hack rather than a conversation. **Three Skills' worth of ground is why it is +1 rather than +2** — the general rule for a broad Skill, which this one is where it came from (`rules/character-creation.md`, Skills). What a hack looks like from the outside is Chris's to describe.
 - **Performance +2** — load-bearing, not decorative. See Mimicry, below: the Trait gets him the face and nothing else, so every copy he holds is a performance he is actively giving.
 
 ## Trait — Mimicry
@@ -317,7 +382,7 @@ He can take the appearance of a person he has looked at. **And of a creature**, 
 
 ## Deck
 
-Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, KILLSWITCH and **SHARD, which replaced SEED at the start of session one** *(Drew, 2026-10-15)*, all written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
+Nine cards total, same shape as any character (`rules/character-creation.md`, Starting Deck): **3 custom cards** — MEASURE, SEED and KILLSWITCH, all written below — plus **6 from the normal Oracle draft** alongside the rest of the table.
 
 **Drafted at session 0, 2026-10-03:** SHARPEN and UNBROKEN (Red), DEFLECT and LAST RESORT (Blue), MEND and FLOW (Green) — all six from `cards/`, printed as written. **With the three signatures that is 3 Red / 3 Blue / 3 Green**, one Green over and one Blue under what his stats suggest. That is allowed and worth knowing rather than fixing: matching colour to stat is a heuristic, and the draft is exactly where it bends (`rules/cards.md`, Deck Building).
 
@@ -367,7 +432,7 @@ Range: Melee
 "A bar is not a bar because of the notes in it. It is a bar because of where it ends."
 ```
 
-**SEED** — *replaced by SHARD at the start of session one (SHARD — the damage seed, below).* A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
+**SEED.** A piece of himself left somewhere to grow. Green because it is patience. *(Written when Soul was his weakest stat; since 2026-10-15 it is his second-best, and SEED hits a point harder for it — What the stats moved, above.)*
 
 ```
 SEED
@@ -459,7 +524,7 @@ Range: Ranged
 
 ## SHARD — the damage seed
 
-*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.* **It replaces SEED in his starting deck from the start of session one.** *SEED's card and rules stay above, because SHARD is defined against them.*
+*Drew, 2026-10-15, from what Chris wants: SEED's shape, paying out in damage instead of healing.* **A planned card for his advancement deck, which Chris knows about** *(Drew, 2026-11-05)*. *He chose to keep SEED rather than take SHARD in its place.*
 
 ```
 SHARD
@@ -652,10 +717,10 @@ Range: Melee
 - **What the spell book is** — whose, and what is in it
 - **What the University wanted to make him into**, in any detail beyond "a weapon"
 - **Whose papers Chris is carrying.** *Deliberately open* (Two months in the Nest, above). Somewhere there is a real person who owns that name — robbed on a dock a couple of months ago, and since then either gone home, still in town, wanted for something of their own, or dead. **Every one of those is a different thread and none of them needs deciding until somebody pulls it.** Kino knows whose purse it came out of. *And the likeness on the papers answers the dead-or-alive half of it for anyone who looks closely* — sharp if he lives, fading if he does not (The papers describe somebody, above)
-- **What name is on them**, which is Chris's to pick and worth him picking before session one, because he has been answering to it for two months
+- ~~**What name is on them**~~ — **Alden Coise** *(Chris, via Drew, 2026-11-12)*
 - Appearance, voice, backstory detail beyond the above
 - Price
-- **MEASURE, SHARD, KILLSWITCH** — his starters, one per colour; SHARD replaced SEED at the start of session one. SHARD's growth rate and KILLSWITCH's d4 both want a table test
+- **MEASURE, SEED, KILLSWITCH** — his starters, one per colour. *Chris kept SEED; SHARD is planned for his advancement deck (Drew, 2026-11-05).* SEED's growth rate and KILLSWITCH's d4 both want a table test
 - **FOLLOW THROUGH** — held back as a later reward; when and how it arrives is open
 - Whether Mimicry takes a Price on top of its restrictions, or whether the restrictions are the cost. **The touch rung, added 2026-09-26, pushes hard toward the second** — the Trait now has a three-step ladder where the good end costs a scene, and that is a real price paid in fiction instead of on the sheet
 - **Whether the University hunts him publicly or quietly.** A notice would be a drawn likeness (The papers describe somebody, above). Whether they would post one depends on what they want him for and how far their reach goes, both of which are open. **The favoured shape, if they go public, is a cover story: Code wanted for the disappearance of his father** *(Drew, 2026-09-28: "diabolical")*. It recruits the whole kingdom without saying what he is, the one man who could clear him is the man he is accused of, and **anybody who saw that night from outside saw a son flee while his father went down — dragged off by a friend.** *That last part lands on Kevin too* (`campaign/kevin.md`, And then it ended badly). Still a hook, not a decision

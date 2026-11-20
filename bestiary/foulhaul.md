@@ -76,6 +76,8 @@ Rivermen call him **the Grandfather**, which is not affection. It is the ordinar
 
 ## Running Them — measured counts
 
+**Re-measured 2026-10-18 against Code, Flint and Caine as drafted** (600 fights a row): **one or two Foulhauls are near-certain wins; three is a strong fight — the party wins about 92% and somebody goes Down about once a fight; four is a coin flip (~60%).** *Carries Off is not run, so a real three-Foulhaul fight is tenser than that: a Downed character is walking away. The table below is the older measurement, against pre-draft decks.*
+
 *Against three starting characters, 700 fights per row (`combat-simulations/encounter_budget.py`). Card Effects are not executed, so these are structural floors (`rules/gm-guide.md`, How many of them).*
 
 | Encounter | Party wins | Avg deaths |

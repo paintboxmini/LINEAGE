@@ -57,6 +57,7 @@ The smell: pitch, citrus peel, river silt, wet wood.
 - Everyone has two names — the one they answer to, and the one they only share with their closest.
 - Children learn knots before letters. Lies before prayers.
 - Outsiders are welcomed loudly and watched quietly.
+- **Riverdogs live here** as part of the town, not a quarter apart from it (`factions-and-races/races-riverdogs.md`) — and nomadic ones tie up for a night and are gone.
 
 ## The Tideward Compact
 
@@ -94,7 +95,7 @@ They are People of Promise (`places/pneum.md`). The Promise holds that everythin
 
 **The sweep is the part that matters for play.** A spooked Compact does not inspect one hull, it inspects the berth — and then the whole dock. Everything on that stretch is impounded into a Compact warehouse behind a question nobody can answer yet, and everyone who was standing on it when it closed is still standing on it. Anyone whose boat or cargo is in there needs the same hold lifted, and the Compact deals with a party rather than a queue of petitioners.
 
-**The party is impounded with everything else** *(Drew, 2026-10-10)*. Kevin's temple ship, the Merry Mint (`campaign/kevin.md`, From session 0), is inside the cordon, and so are they: they were on that stretch when it shut, they are on the list of people who may not leave, and the boat is the way out they no longer have. **They carry no freight** — the Merry Mint is empty. *Walking the town is fine; leaving the Nest is not.* That is the situation the first job runs on (`quests/the-quarantined-barge.md`).
+**The party is impounded with everything else** *(Drew, 2026-10-10)*. Kevin's temple ship, the Holly Mint (`campaign/kevin.md`, From session 0), is inside the cordon, and so are they: they were on that stretch when it shut, they are on the list of people who may not leave, and the boat is the way out they no longer have. **They carry no freight** — the Holly Mint is empty. *Walking the town is fine; leaving the Nest is not.* That is the situation the first job runs on (`quests/the-quarantined-barge.md`).
 
 **Where it leads.** Following the barge back leads to Pneum (`places/pneum.md`) — and it leads there under a misunderstanding, on purpose. Anyone chasing an actual curse will follow the word *cursed* straight to an island of people who chose it, are proud of it, and will explain warmly why he has it backwards.
 
@@ -230,6 +231,12 @@ He will hand the bags back completely clean if it comes to that. Charming about 
 
 Kino keeps him close anyway.
 
+**Kino studies the bindings** *(2026-11-06)*. *"You have to understand how the mechanisms work if you want to ever fight against it."* **His reading: destroying the contracts takes away a company's legitimacy over every child named in them** — *Kino's belief; whether the law agrees is not set.* **He burns them one at a time, after reading each.**
+
+**Code is a Red Scarf** *(2026-11-06)* — **the first grown member**; passed his trial (`campaign/session-2-log.md`, Between sessions).
+
+**Donni** *(named 2026-11-06)* — **a Red Scarf who begs outside the Listing Keel.** **He works a fixed spot because of his limp**; mostly **he is a lookout and an eavesdropper.** *Code studied his face there — whether because he suspected something, or only to have it, is not set.*
+
 Bean thinks the telegraphing is the problem and works harder every job to fix it — steadier hands, slower breath, a longer pause before he moves. It never works, because the trying is the tell now. He hasn't figured that out. Kino has, and has never once told him — the operation needs exactly one person who looks like the whole plan and isn't, and Bean auditions for the part every single time without knowing he already has it. Bean acts as the distraction while Kino makes the move.
 
 ### The Many Mask's legacy
@@ -274,6 +281,8 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **The kids are not part of the five families** *(Drew, 2026-10-08)*. They wear the scarf — the Creed's own sign — and nobody in the Outfit counts them. **They sell what they steal to the Strays**, through **Lusk**, who leads that family (below), **and he is the reason they have the Ribs.** *The scarf on a dock kid is the oldest thing about the Red Scarves and the least regarded.*
 
+**Code knows the legend** *(Drew, 2026-11-06)* — *probably from the Academy's books at Gemstone University* — **and today's kids do not.** **A written record far from the Nest may be closer to *What actually happened* than the story the families tell** — *whether it is, is Drew's call.* **On his initiation night he told Bean "the Many Mask shall answer."** *The five families have not heard that name spoken as a promise in a century, and the Bellows are the ones who think the Scarves no longer need a Mask.*
+
 **Code has had no direct contact with the Red Scarves when session one starts** *(Drew, 2026-10-08)*. **Meeting them happens at the table.** *He has met Lusk, who sold him his papers* (`campaign/chris.md`, Two months in the Nest). *A shapeshifter in an outfit waiting a century for its next Many Mask is Chris's thread to pull* — **not written ahead of him.**
 
 ### The Strays, and Lusk
@@ -284,19 +293,35 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **Lusk leads them** *(Drew, 2026-10-08)*, and he is also their **Knot** — the family's voice among the five. **He runs a small black-market shop** off the back of the dock, where stolen things go to become merchandise, and **he is the kids' fence.** Everything sellable the chain lifts in the market reaches his counter within the hour (The operation, above).
 
+**The Strays hired Muirn raiders to chase Fortune's Fancy out of the Nest** *(Drew, 2026-11-16; `campaign/session-4-log.md`)*, **through Preet, the Vessk on their dice table, with orders to bring Caine back dead or alive** (`characters/preet.md`) — *over the Den fire, once Caine had sailed before they could reach him. Four of those raiders now crew the Fancy* (`characters/the-four-muirn.md`). **The Strays will learn how that went.** **Mercer's men saw them send it, and the Bellows and the Strays are allied against the party now** (`campaign/back-in-the-nest.md`).
+
 **He gives them the Ribs.** *The Ribs is Strays ground*, and the kids hold it **for as long as they keep bringing him goods.** *Nobody has ever said what happens if they stop, and nobody has needed to.*
 
 **And he underpays them, every time**, because he can. **The power is all his**: they cannot sell anywhere else without crossing a family, and they cannot lose the floor. *A purse that goes out of his door for gold came in for copper.*
 
 **The kids still prefer it.** **It is not the warehouse.** *A thief who is cheated is still free at the end of the day, and that is the whole of the bargain* (What they ran from, below).
 
-**He sold Code his papers** (`campaign/chris.md`, Two months in the Nest). *Kevin knew where the shop was.*
+**He sold Code his papers** (`campaign/chris.md`, Two months in the Nest). *Kevin knew where the shop was.* **And he sold Code the church** — *the deed to Saint Adollo's, roof over the Scarves' front door* (Named at the Table, above).
 
 **What he knows is worth more than what he sells.** The papers he sold Code came with a question he did not ask — *and a man with half the Nest's homeless for eyes does not need to ask.*
 
-**At the table:** sly, friendly, never in a hurry, and **always the one who comes out ahead.** *He is a social scene, not a fight.* What he looks like and sounds like is not set.
+**His shop:** *a narrow counter off the back of the dock with no sign, a hundred small things on the shelves and none of them in sets* (session one).
+
+***Since session one*** *he has put in a good word for Code with Kino, and failed to place the symbol on Caine's scrap* (`campaign/session-1-log.md`).
+
+**At the table:** sly, friendly, never in a hurry, and **always the one who comes out ahead.** *He is a social scene, not a fight.* **An overweight man in his forties, with bad breath** *(session one)* — *bad enough to notice over the smell of Vulture's Nest, which is saying something.* His voice is not set.
 
 
+
+### The Vells
+
+*Drew, 2026-11-17.* **Loan sharks, and the Bellows' other supply line.** **The Vells lend to families who can't pay it back** — *a bad season, a sick parent, a boat lost* — **and when the debt comes due, they buy the children.** *The paper calls it settling an account.* **The children go to the Bellows' floors** (`characters/mercer.md`).
+
+**Two ways onto Mercer's floor, then.** *His own agents talk families into signing* — **the Ashbys' way** (People looking in, below). **The Vells make sure families have no choice.** *Mercer's way looks like a kindness; the Vells' looks like a contract honestly kept, and both of them are legal.*
+
+**Their money is cleaned through the jeweller** — *coin that came out of a family's ruin goes into stones and settings, and comes back out clean* (`campaign/back-in-the-nest.md`). **The jeweller is Drew's, planned and not yet written.**
+
+**Why they are the family to meet next** (`campaign/back-in-the-nest.md`): *Pat's errand for Barb leads straight into their shop.* **And Code runs a charity for the Nest's orphans** (`campaign/chris.md`) — *the Vells make orphans for a living.*
 
 ### What they ran from — the warehouses
 
@@ -314,25 +339,29 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **Who holds the binding: Mercer** *(2026-10-07; `characters/mercer.md`)*, **a Bellows man** (The Many Mask's legacy, above). He owns the worst floors on the dock, takes children in, binds them until fourteen, and **places** them — on his own floors, with the sweeps, in the smokehouses and ropewalks — for a fee from every master. *He keeps a standing reward for returned runaways, which is what handing Bean over actually pays.* *He answers to the Bellows — the family growing too strong* (The Many Mask's legacy, above).
 
-**The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Jonah was one* (`characters/jonah.md`).
+**The sweeps.** *Drew, 2026-10-07.* **The other place a small child is worth money is up a chimney.** The Nest smokes its fish, and a smokehouse flue is long, narrow and never cool; the merchants' houses up the bank have chimneys a grown man cannot fit. **Master sweeps buy climbing boys** — and girls — through Mercer, send them up the flues with a brush, and light a little straw underneath when they are slow. *Burns, soot in the lungs, knees and elbows scraped raw until they scar, and now and then a kid who sticks.* **A climbing child is only good until they grow**, which is why the sweeps want them young. *Hojan was one* (`characters/hojan.md`).
 
 **Fourteen.** *Drew, 2026-10-07.* **At fourteen a child counts as an adult for responsibility**: they can be hired for real work on their own word, and **taken on as an apprentice to learn a profession.** *It is apprenticeship age.* **Every binding ends there**, and nobody can be "taken in" after it. **So that is what the Red Scarves are for: getting kids to fourteen free.** The Ribs is sized for under-fourteens because that is who needs it (The Ribs, below), and a Scarf who reaches fourteen hangs the scarf on the nail wall and goes and finds a trade. *Kino, at fifteen, is the one who stayed* — running it rather than leaving it, and the only one who does not sleep there (The Red Scarves, Kino and Bean).
 
-**What fourteen is worth depends on who you are when you get there.** A kid off Mercer's floors walks out with no trade and gets hired back as a dockhand at the bottom wage (`characters/mercer.md`). **A kid with somebody to vouch for them gets a master.** *That gap is what Jonah is trying to close* (`characters/jonah.md`).
+**What fourteen is worth depends on who you are when you get there.** A kid off Mercer's floors walks out with no trade and gets hired back as a dockhand at the bottom wage (`characters/mercer.md`). **A kid with somebody to vouch for them gets a master.** *That gap is what Hojan is trying to close* (`characters/hojan.md`).
 
 ### People looking in
 
 **Three people the party can meet who want something from the Scarves.** *All three are about the same question — who gets to say where a child goes.*
 
 - **Mercer**, the warehouse owner — *wants his runaways back* (`characters/mercer.md`)
-- **Jonah**, priest of the Rivers — *wants to give them a house with no lock on the door, and cannot get one of them through it* (`characters/jonah.md`)
+- **Hojan**, priest of the Rivers — *wants to give them a house with no lock on the door, and cannot get one of them through it* (`characters/hojan.md`)
 - **The Ashbys** — *want their son*
 
 **The Ashbys.** *Created 2026-10-07: Drew asked for a family looking for a kid.* **Dell and Maren Ashby**, from upriver, ordinary people, here in the Nest asking every stall and every dockhand about a boy. **Two hard winters ago, one of Mercer's agents came through** and told them their son would be fed and taught a trade. **They signed with a mark.** *They thought they were giving him a future. They were giving him to a warehouse floor.*
 
 **The boy is Tib**, eleven now, and **he ran from the floor a year ago and is a Red Scarf.** *He is the kid at the edge of the market who will not look at the couple asking questions.* **Tib thinks his parents sold him.** *By the paper, they did.* **They think they were lied to.** *They were.* Both of those are true, and the party may be the only people who ever hear both sides.
 
+**Tib had a sister, Tab** *(2026-11-06)*. **GM only** *(Drew, 2026-11-13)*: **after Tib escaped, Tab was crushed to death under falling crates on Mercer's floor.** *The Scarves don't know — Kino promised Tib "we're gonna find where they got her working" — and neither do the Ashbys.* **Hojan brings the escort to Flint, and Flint learns first that Tib is gone from the floor** (`characters/hojan.md`).
+
 **They have saved to buy his binding back**, and it is not enough — and **Mercer would sell it them**, which is the worst thing about him. *What they do not know is that Tib is not on the floor any more, and that a Scarf does not let a grown-up near another Scarf, parents included.*
+
+**They are going to Mercer's to buy the contract, and Hojan wants them escorted** (`characters/hojan.md`, The Ashbys — Hojan's ask).
 
 ---
 
@@ -340,13 +369,15 @@ Bean thinks the telegraphing is the problem and works harder every job to fix it
 
 **The town is built on top of itself** (see the opening line of this file), which means there is an older Nest down under the current one: a dock level from two or three rebuilds ago, boxed in when they laid the new deck over it and never filled. Dockhands call the layered structure *the ribs*. The kids took the word and made it an address.
 
-**It is Strays ground, held at Lusk's pleasure** *(2026-10-08; Lusk, above)*. **It is not hidden. It is unusable.** Anyone can find it — Bartho could point at the spot. Almost nobody can get into it: the ways in are gaps between old pilings, a flooded stair, and a hatch under a crane housing, and every one of them is sized for somebody under about fourteen. **That is the entire security model**, and it is better than a lock. A chase that goes well for the party still ends at a hole they cannot fit through, with a kid on the other side of it not even breathing hard.
+**It is Strays ground, held at Lusk's pleasure** *(2026-10-08; Lusk, above)*. **It is not hidden. It is unusable.** Anyone can find it — Bartho could point at the spot. Almost nobody can get into it: **the main way in is through the false bottom of the podium in Saint Adollo of the River's Rain Church** *(2026-11-05; Named at the Table, above)*, and the rest are gaps between old pilings, a flooded stair, and a hatch under a crane housing, and every one of them is sized for somebody under about fourteen. **That is the entire security model**, and it is better than a lock. A chase that goes well for the party still ends at a hole they cannot fit through, with a kid on the other side of it not even breathing hard.
 
 **Every route has three exits.** Nothing in there is a dead end, on purpose, and the kids know which ones go to water. An adult who does get in is in a crawl with no way to cut off what they are chasing.
 
 **What's actually in it.** Almost nothing worth money. The chain moves anything sellable out within the hour — that is the whole design (see The operation, above) — so the Ribs holds the things kids keep: bedding, a stove they only light after dark because smoke over the deck at noon is an answer to a question, cooking pots, and a nail wall of scarves belonging to kids who left, got caught, or didn't come back. *Caught means taken back into the warehouses* (What they ran from, above). Nobody takes those down.
 
 **And the unsellable haul**, which is the part that matters for play. Everything pilfered that can't be moved for coin ends up in a crate down there and stays: letters, a child's carving, a locket with somebody's name inside it, a key to a door in another town. **This is where a party's stolen personal effect actually went**, and it is still there weeks later — which is the honest version of the note above about playing a recovered item for texture rather than punishment.
+
+**Inside** *(Drew, 2026-11-06, the first time anyone grown saw it)*: **blankets and pillows everywhere, arranged the way kids on their own would arrange them — which is to say, any way at all.** **Fifteen or so kids**, scattered into holes and cubbies. **Kino swinging in a massive hammock at the centre.** **A girl dyeing stolen scarves red.** **In one corner, another girl with a child no older than five on her lap.**
 
 **It is warm and it is dry.** In a river port that is not a small thing; it is most of what the scarf is worth. A kid earning one is being given a floor out of the wet, and a GM who plays the Ribs as squalid has missed what these children built.
 
@@ -371,7 +402,7 @@ The market doesn't fully close, and neither do the things that work its edges af
 - **It came off the Arcadia** on an earlier run, and there is another one in her hold right now (The Opening Scene, The Arcadia's hold). Harlock is the carrier and does not know what the animals are for.
 - **What is in the market is the cage, dressed as a crate** *(2026-09-21)*. They ship inside an ordinary sealed packing crate; **that outer box gets broken down and taken away at setup**, and what stays is the inner cage, slatted and shimmed to read as freight somebody forgot. *So the tell for anyone who stops and actually looks is that it is not a crate: no lid seam, no shipping marks, no cooper's stamp, and slats where a crate would have boards.*
 
-**Marta's Jerky and Bake** — the stall the Red Scarves recommend. Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't.
+**Marta's Jerky and Bake** — the stall the Red Scarves recommend: *a small, run-down brick establishment* (session one). Run by a broad woman with flour permanently in her hair who doesn't look up when she talks to you. The sweet jerky is genuinely the best thing the party eats for two weeks. She knows Kino by name and pretends she doesn't. **The Red Scarves have stolen food from her many times over the years** *(Drew, 2026-10-18)*. ***Since session one*** *Caine and Code have given her money to feed them, **and she is giving the food to Hojan to pass on rather than to the kids directly** (`characters/hojan.md`), and **Flint is selling her grace** — she traded him her cinder flake for it and is making a spicier jerky* (`campaign/session-1-log.md`).
 
 She believes the docks look after their own quietly, or nobody looks after them at all — help that announces itself isn't help, it's a receipt. Somebody fed her once, the same unannounced way, back when she needed it and had nothing to trade for it. She's never called that kindness out loud either. She just calls it how things are done here, and keeps doing it.
 
@@ -388,6 +419,33 @@ She believes the docks look after their own quietly, or nobody looks after them 
 **Guard Boots** — worn Briarwatch-style, thick sole for wet ground, resoled once with different leather. Dess took them in trade. They're the right size for whoever needs them to be.
 
 **The Ticking Box** — it ticks. Not like a clock. More like something inside counting toward or away from something. Whatever's in it is alive or was recently. Dess keeps it on the counter because the back room made her uncomfortable. At least out front she can see it.
+
+## Named at the Table
+
+*Places and people that came out of play, session two (`campaign/session-2-log.md`).*
+
+- **The Golden Thread** — a tailor's. **Taylor** works there. *Code has a silk scarf on order.*
+- **The Crossroad's Hilt** — a simple smithy. **Ashen** is the smith. *Caine has barbed-wire gauntlets on order.*
+- **An ingredient stall** selling leadfoot, bellows dust and luminova leaves — *luminova at 2 gold a leaf, which Flint called an insane bargain.*
+- **Barb**, a Riverdog navigator who drinks at the Keel (`characters/barb.md`).
+- **The Thieves Den** — see its own section, below.
+- **Saint Adollo of the River's Rain Church** — *named by Chris, 2026-11-05.* **An abandoned church of the Rivers** — **large, built like a great cathedral, and not too far gone** *(Drew, 2026-11-06)* — and **the main entrance to the Red Scarves' nest** *(Drew, 2026-11-05)*: **a narrow gap under the old stone podium**, down into **impossibly old, overlapping wooden supports** — *the dock from rebuilds ago* — and on into their hideout (The Ribs, below). **Lusk held the title** *(Drew, 2026-11-06)* — *which is why the Ribs below it were Strays ground, held at his pleasure* (The Ribs, below). **Code bought it from him after his initiation: 100 gold, and the bell tower is his home.** *Chris means to grow it slowly into a bathhouse and respite house.* **And it is the obvious house for Hojan** (`characters/hojan.md`) — *a priest who wants to give the Scarves a door with no lock, and the abandoned church of his own faith is already standing on top of theirs.*
+
+## The Thieves Den
+
+*Named at the table; played 2026-11-05 (`campaign/session-2-log.md`, Between sessions).*
+
+**A much sketchier establishment than the Keel**, and **where crews wait to be hired.** *Everyone in it is drinking and passing the time one way or another until the next ship takes them on.* **If you want a ship and a crew off the books, this is where you ask.**
+
+**Maxa** keeps the bar — *straight with a customer, and the one who decides which options a customer is given.*
+
+**House rule: everybody brings their own dice, and every set is inspected before it touches the table.** *It is a very big deal here.* **Liar's dice** is the game (`items/the-mangy-dogs-dice.md`). **The table is the Strays'** *(Drew, 2026-11-07)* — *one of their money-makers* (The Strays, and Lusk) — **and a Vessk Lizardkin guards it.** **Caine set the Den alight in session three, and it burned down** (`campaign/session-3-log.md`). **Within three or four days the Strays had the table running again somewhere new — a much nicer location than the old one** *(where is not set)* — **and the Compact and the Strays are both looking for whoever did it.**
+
+**And the Den's own call: *spot on*.** *The usual choices on a bid are to raise it or call the bidder a liar.* **Calling *spot on* says the opposite — "I've caught you telling the truth."** **If the bid turns out exactly right when the dice are counted, the bidder loses a die; if not, the caller does.** *It is how the Mangy Dog lost his ship* (`characters/barracuda.md`).
+
+**Regulars:** **Samuel Gullis, the Mangy Dog** (`characters/samuel-gullis.md`), a human captain with no ship, in the back corner with a jug; **Xander** (`characters/xander.md`), a Riverdog sailor who collects his debts in person.
+
+**History with the party:** **before session one**, Code and Flint lost their money gambling here and Flint lost his vibro knife; they got it back together (`campaign/kevin.md`, Starting gold). **After session two**, Flint came back looking for pirates and left with a captain and a first mate — after the whole bar had a fight.
 
 ## The Listing Keel — Tavern
 
@@ -523,7 +581,7 @@ This is the scene's exposition and it should be delivered as a man managing a pr
 
 **Nobody else on the dock will touch it, and that is the lockdown's doing.** Every hand on that frontage works for the Compact and is under an order not to go near loose cargo off an impounded berth — putting hands on it is the precise thing they have been forbidden. Bartho is occupied with Harlock. **The party are the only people standing there with no rule stopping them**, which is the same reason Bartho was talking to them in the first place.
 
-**Three wrackclaws** against three starting characters: **the party wins essentially every time, somebody Collapses in about one fight in ten, and a character dies in about one in thirty** — measured 2026-09-22 across three seeds at 1,000 fights each, deck as `bestiary/wrackclaw.md` writes it and all three Frontline. *Inside the session budget of roughly one death in twenty (`rules/gm-guide.md`, Pacing Sessions).* **Four is several times as lethal and is a different encounter, not a bigger one.**
+**Three wrackclaws** against three starting characters: **the party wins every time and almost never takes a Down** — re-measured 2026-10-18 against Code, Flint and Caine as drafted, three seeds at 1,000 fights each. *The 2026-09-22 figures (a Collapse in one fight in ten, a death in one in thirty) were measured against pre-session-0 decks; the drafted party is far stronger, and the card changes of 2026-10-18 barely moved it.* **Five is where somebody goes Down in about one fight in four; six is a real fight**, with a death in about one in three.
 
 *The old numbers here — one knee in six, a death in twenty — were measured off a tool that built the creature's deck illegally, and off a four-card creature that no longer exists. Both are fixed (`bestiary/wrackclaw.md`, The 2026-09-21 review).*
 
@@ -633,7 +691,7 @@ Jonas keeps the official port record, and the official port record is cross-refe
 - ~~**Whether Mercer answers to the five families**~~ — *the Bellows (Drew, 2026-10-08)*
 - ~~**Which family the kid crews answer to.**~~ *Settled 2026-10-08: none — they are outside the five, and sell to the Strays through Lusk (The Many Mask's legacy, above)*
 - ~~**Knot**~~ *in place of Chris's **Seam** — taken up by Drew, 2026-10-08*
-- **Lusk's appearance and voice**, and what the Ribs' bargain looks like on the day the goods stop
+- **Lusk's voice**, and what the Ribs' bargain looks like on the day the goods stop
 - **What Lusk is obligated to** — *one that fits: the Strays' seat among the five is paid in what their eyes see, and if the information stops, so does the seat*
 - **The Mask Quest** — its path, its trials, its price. *Not written by Chris; Drew's to fill, so the table finds it new*
 - **The betrayal** (What actually happened, above) — **who led it**, **whether the Sixth Many Mask is really dead**, who the branch was fighting for freedom *from*, and **what each family tells itself now**. *Tentative pending Drew's talk with Chris*

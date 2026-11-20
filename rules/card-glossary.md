@@ -50,7 +50,7 @@ A specific benefit persists as long as you do not change positions, triggering a
 
 Lasts until the end of your next turn unless the card specifies otherwise. Blind and Evade are separate checks, and a single exchange rolls every one that applies.
 
-**(12) Evade**
+**(13) Evade**
 50% chance to dodge an attack declared against you. Checked once the cards are face up — after you've chosen your defense or declined to — before Rock-Paper-Scissors and before any Special Rule (`rules/combat.md`, Attack Resolution) — triggered by being attacked, not by whether the attack would actually land, so it rolls (and a stack is spent) even when the attacker already missed to their own Blind. Roll 1d2 — on a 1, you auto-win the resolution exactly as if the RPS reveal had gone your way: the attacker's card is discarded and its own Effect does not trigger.
 
 Evade stacks. Each stack protects against one attack. Only one Evade triggers per attack — you cannot roll multiple times against the same attack.
@@ -107,7 +107,7 @@ Armour applies **before** Resist and Vulnerable, so a creature with both takes t
 
 Armour is the system's general-purpose flat damage reduction: it shows up as a creature passive, as the Armor equipment tier's own effect, and on consumables. Anything that says "reduce damage by X" is Armour X.
 
-**(7) Vulnerable**
+**(8) Vulnerable**
 The next time an enemy successfully attacks you, take 50% more damage, rounded down. Expires after the next successful attack against you — same shape as Resist, opposite direction. A Debuff, removable by Ward. Stacks the same way Resist does: each stack applies to one future successful attack, not a running multiplier. Cancels 1-for-1 with Resist (above) rather than ever applying alongside it.
 
 **(5) Rooted**
@@ -148,9 +148,9 @@ Prevent the next Debuff (above) applied to you. Triggers automatically the insta
 **Nobody can read you.** Enemies cannot look at or manipulate your hand or deck, **and anything that would reveal your stats reveals nothing** *(Drew, 2026-10-09)*. Does not stop status cards being added to your deck. Lasts until the end of combat unless the source says otherwise. *A Duskwick is Obscure permanently, which is why its Measured page in the binder is blank. Granted by NOTHING TO READ (`cards/corrupted-bather.md`) and the Low Lantern (`items/vultures-nest-items.md`); no core card uses it.*
 
 **(0) Flow**
-**Flow: X** means: **if the colour of the last card you revealed is different from this card's colour, X.** Attacking or defending, a Passive included — any card you turned face up counts. A turn spent moving reveals nothing and changes nothing; Flow looks at the last card you actually showed. *Defined 2026-10-05 (Drew) so the condition lives here once and each card only says what Flow gets it. It was briefly called Cadence and went back to Flow on 2026-10-15 (Drew) — the better name.* It is a signature keyword for now — Chris's cards are the ones that use it (`cards/chris.md`), which is why the core count is zero.
+**Flow: X** means: **if the colour of the last card you revealed is different from this card's colour, X.** Attacking or defending, a Passive included — any card you turned face up counts. A turn spent moving reveals nothing and changes nothing; Flow looks at the last card you actually showed. *Defined 2026-10-05 (Drew) so the condition lives here once and each card only says what Flow gets it. **Flow is the name — Chris prefers it** (Drew, 2026-11-08); it went back and forth with Cadence before that.*
 
-**Flow is not FLOW.** There is also a core card named FLOW (`cards/green-soul.md`). **Whenever card text says Flow, it means this keyword, never that card** — and the capitals tell them apart: the keyword is written *Flow*, the card's name is always *FLOW*.
+**Flow is not FLOW.** There is also a core card named FLOW (`cards/green-soul.md`), and Code holds it. **Whenever card text says Flow, it means this keyword, never that card** — the keyword is written *Flow*, the card's name always *FLOW*. It is a signature keyword for now — Chris's cards are the ones that use it (`cards/chris.md`), which is why the core count is zero.
 
 **(4) Immunity**
 The next attack damage you would take is reduced to 0. Nothing else about the exchange changes: cards are chosen and revealed as normal, the RPS outcome stands, and the attacker's Effect and any Defense Effect trigger exactly as they otherwise would. Only the damage is negated.

@@ -6,11 +6,11 @@
 
 ## Stats
 
-Mind 2 / Body 3 / Soul 4 — HP 18
+**Mind 3 / Body 3 / Soul 4 — HP 19** *(stat increase, session four, 2026-11-14: Mind 2 → 3)*. **Deck maximum 10, hand size 3.** *Was Mind 2, HP 18.*
 
 | Stat | Value | Drives |
 |------|-------|--------|
-| Mind | 2 | Blue card damage; hand size 2 |
+| Mind | 3 | Blue card damage; hand size 3 |
 | Body | 3 | Red card damage; HP weighted 4× |
 | Soul | 4 | Green card damage; Initiative 1d6 + 4 |
 
@@ -102,6 +102,10 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 
 ## Gear and coin
 
+**His papers** *(2026-11-12)*: **made on entry by a Compact light cartographer — bare, a traveller exploring the region's plants and animals, on a one-month pass.** *Now imprinted in Jonas's ledger too* (`campaign/session-3-log.md`, Back in the Nest).
+
+**Session two:** *barbed-wire gauntlets on order from Ashen at The Crossroad's Hilt — 20 gold, **Thorns 1**. Took **STRIKE** at the first advancement. Barb, a Riverdog navigator, sails for the party on his word* (`campaign/session-2-log.md`, `characters/barb.md`).
+
 **He owns nothing yet, and that is a statement about the sheet rather than about him** — gear simply has not been worked on (the note at the top of this file). Everything below is the correction for that, not a decision about who he is.
 
 **Starting gold: 40.** The maximum anybody starts with, and he gets it because he came out of creation with less on him than anyone at the table (`rules/equipment.md`, Starting Gold). *It is one session's pay in the first band, which means it buys supplies and cannot reach the gear ladder — a Tier 1 accessory is 100 and stays 100.*
@@ -123,6 +127,8 @@ What's summoned: the spirits of the three Shunka royals born cursed — the last
 **A smell is not legible.** It is not a name, not a face, not a symbol — it is residue, and the unmaking had no grip on it. **That is why one scrap of cloth outlasted a woman the world deleted**, and why it is faint: it is the last of something reality no longer keeps a slot for.
 
 *Which makes this the only physical trace of her that exists anywhere, held by the one person hunting her line.*
+
+**It carries a family emblem** *(granted to Pat at the table, session one — `campaign/session-1-log.md`)*. Lusk could not place it; Flint knew it for Lizardkin. **The emblem is the family's, not hers**, which is why the unmaking left it: it names a line, not the woman the world deleted (above). **And the scrap's fibre matches the cloth in one of the crates the party pulled out of the river** — the same plant, woven coarse and sturdy, off a Muirn boat Harlock took. *So the scrap is Muirn work.*
 
 ### What it actually does at the table
 

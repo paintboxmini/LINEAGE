@@ -623,9 +623,13 @@ class AddStatusCard(Op):
                 card = status_card(self.kind)
                 if self.where == 'hand':
                     who.hand.append(card)
+                elif self.where == 'shuffle':
+                    rng = ctx.rng or who.rng
+                    who.deck.insert(rng.randint(0, len(who.deck)), card)
                 else:
                     who.deck.insert(0, card)
-            where = 'hand' if self.where == 'hand' else 'the bottom of their deck'
+            where = {'hand': 'hand', 'shuffle': 'deck, shuffled in'}.get(
+                self.where, 'the bottom of their deck')
             ctx.log(f'  {self.n} {self.kind} to {who.name}\'s {where}.')
 
 
@@ -1139,7 +1143,7 @@ GATES = [
     # rather than merely started.
     # Flow (`rules/card-glossary.md`, 2026-10-05): the last card you
     # revealed, attacking or defending, is a different colour from this one.
-    (re.compile(r'^flow:\s*', re.I),
+    (re.compile(r'^(?:cadence|flow):\s*', re.I),
      lambda ctx: (getattr(ctx.actor, 'flow_prev', None) is not None
                   and ctx.card is not None
                   and ctx.actor.flow_prev != ctx.card.color),
@@ -1309,6 +1313,18 @@ def _r_exhaust(m):
 @rule(r"^add (\d+) wound to the bottom of (?:the\s+)?(defender|attacker)'?s? deck")
 def _r_wound(m):
     return [AddStatusCard(OPPONENT, 'Wound', int(m.group(1)))]
+
+
+@rule(r"^shuffle (\d+) wounds? into (?:the\s+)?(defender|attacker)'?s? deck")
+def _r_wound_shuffle(m):
+    """JAGGED RAPIER (Barracuda's crew, 2026-11-15)."""
+    return [AddStatusCard(OPPONENT, 'Wound', int(m.group(1)), where='shuffle')]
+
+
+@rule(r"^add (\d+) wounds? to (?:the\s+)?(defender|attacker)'?s? hand")
+def _r_wound_hand(m):
+    """FLAY (Barracuda, 2026-11-15): straight into the hand."""
+    return [AddStatusCard(OPPONENT, 'Wound', int(m.group(1)), where='hand')]
 
 
 @rule(r"^remove all wounds (?:from target ally'?s? hand and discard pile|"
@@ -1733,8 +1749,13 @@ class RevealTop(Op):
 
 
 class TransferHP(Op):
-    """SHARED BURDEN: "Choose an amount. Target ally gains that much HP and
-    you lose that much HP." Uncapped by design — see rules/cards.md."""
+    """SHARED BURDEN's defence half: "Target ally heals up to 5. You lose
+    that much HP." Capped at 5 since 2026-11-15 (Drew) — uncapped, it let one
+    player pour a whole health bar into another. `cap=None` is the old
+    uncapped wording, still read so an old printing runs."""
+
+    def __init__(self, cap=None):
+        self.cap = cap
 
     def apply(self, ctx):
         allies = ctx.resolve(ALLY, 'Give HP to')
@@ -1743,6 +1764,8 @@ class TransferHP(Op):
         who = allies[0]
         room = max(0, who.max_hp - who.hp)
         most = max(0, min(room, ctx.actor.hp - 1))
+        if self.cap is not None:
+            most = min(most, self.cap)
         if most <= 0:
             ctx.log('  nothing to transfer.')
             return
@@ -2020,6 +2043,47 @@ def _r_release_def(m):
       r'much HP')
 def _r_shared_burden(m):
     return [TransferHP()]
+
+
+@menu(r'^target ally heals up to (\d+)\. you lose that much HP')
+def _r_shared_burden_capped(m):
+    return [TransferHP(cap=int(m.group(1)))]
+
+
+class DiscardUpToDraw(Op):
+    """STUDY: "Discard up to 2 cards, then draw that many." The agent
+    always takes the full number its hand allows."""
+
+    def __init__(self, n):
+        self.n = n
+
+    def apply(self, ctx):
+        k = min(self.n, len(ctx.actor.hand))
+        if k <= 0:
+            return
+        Discard(SELF, k).apply(ctx)
+        Draw(SELF, k).apply(ctx)
+
+
+@menu(r'^discard up to (\d+)(?: cards?)?, then draw that many')
+def _r_discard_up_to(m):
+    return [DiscardUpToDraw(int(m.group(1)))]
+
+
+@menu(r'^pull the (defender|attacker) to the frontline\. '
+      r'if they were already there, (.+)$')
+def _r_pull_or_else(m):
+    """PULL (2026-11-15): the pull, or — against someone already on the
+    Frontline — the rider instead. Checked before the move, so the rider
+    reads where they stood when the card landed."""
+    from engine import FRONT
+    inner = compile_half(m.group(2))
+    if not inner:
+        return None
+    return [Gated(lambda ctx: ctx.opponent is not None
+                  and ctx.opponent.position == FRONT,
+                  inner, 'not already Frontline'),
+            Move(OPPONENT, FRONT)]
 
 
 @menu(r'^make a DC (\d+) (mind|body|soul)/\w+ check\. on a success, '

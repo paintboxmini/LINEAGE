@@ -4,6 +4,18 @@ Items found at, traded through, or native to Vulture's Nest. Sources noted per i
 
 ---
 
+## Found
+
+**THE FILIGREE DAGGER**
+*Weapon, Tier 1 — an enchanted dagger worked in gold filigree*
+*Source: Lusk's payment to the Muirn mercenaries sent after Caine; the party took it off them (`campaign/session-4-log.md`, The Muirn hunters; Drew, 2026-11-17)*
+*Value: ~200 gold, found rather than bought (`rules/equipment.md`, Pricing Consumables — found gear is off the curve)*
++1 attack damage.
+
+*It came off Lusk's counter, which is where stolen things go to become merchandise* (`places/vultures-nest.md`, The Strays, and Lusk). **Anyone who knows Lusk's stock may know it on sight** — *and it is proof of who paid for the hunt.* **Who in the party carries it is not set.**
+
+---
+
 ## Dock Equipment
 
 **DOCKHOOK LINE**

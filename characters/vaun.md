@@ -24,13 +24,13 @@
 
 **Red (4)** — FROM THE WATER *(signature)*, GRAPPLE, SKEWER, ENDURE
 
-**Blue (3)** — DO THE SUM *(signature)*, PINNED, MARKED
+**Blue (3)** — DO THE SUM *(signature)*, NAILED, MARKED
 
 **Green (3)** — FOR THE REST *(signature)*, PATIENCE, INSTINCT
 
 **Trait — Better in the Water:** while Vaun is fighting in or from water, his attacks deal +2 damage. *Lizardkin are far more dangerous submerged than on land* (`factions-and-races/races-lizardkin.md`), *and he will not meet anyone on dry ground if he can help it.*
 
-**How he fights.** He hunts, so he holds people in place: GRAPPLE and PINNED stop them leaving, FROM THE WATER opens them up, and DO THE SUM takes the strength out of whoever is hitting back. **FOR THE REST is the family** — every hunter with him gets Resist, because he brought them and he means to bring them home. *He is a fight you win by getting him out of the water, or by giving him a reason to stop.*
+**How he fights.** He hunts, so he holds people in place: GRAPPLE and NAILED stop them leaving, FROM THE WATER opens them up, and DO THE SUM takes the strength out of whoever is hitting back. **FOR THE REST is the family** — every hunter with him gets Resist, because he brought them and he means to bring them home. *He is a fight you win by getting him out of the water, or by giving him a reason to stop.*
 
 ## Not Yet Set
 

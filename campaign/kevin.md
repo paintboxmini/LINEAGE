@@ -79,7 +79,7 @@ Chronically shirked his actual studies and rituals to cook instead — and the c
 
 **Kevin was in that fight, and Kevin is the one who ended it for Chris.** He took hold of him and physically tore him out of the moment, away from his father, because Chris was not going to leave on his own. *That is the single most important thing on Kevin's sheet and it is not a stat.* He saved his friend's life and he took the choice away from him in the same motion, and nobody has said a word about it since.
 
-**Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, aboard the Merry Mint (From session 0, below), and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
+**Then he decided where they were going.** He had run temple wine into **Vulture's Nest** many times, he likes the place, and he likes it for the correct reasons: it is seedy, it is dark, and it has an underbelly a person can disappear into. So he took Chris there to hide, aboard the Holly Mint (From session 0, below), and the two of them were doing a reasonably good job of enjoying themselves at it — until the Promise barge came in and the Compact locked the berth (`campaign/session-1-convergence.md`).
 
 **What happened to Chris's father is unknown**, to Kevin as much as to anyone.
 
@@ -283,6 +283,8 @@ His real exchange rate is already written above under Supply and restocking: **o
 
 **The grinder can start with a special round chambered**, which is his call at the table and costs him nothing to make — loading is a free action, it can be done before a fight, and the round is only spent when GRIND SHOT actually resolves (THE PEPPER GRINDER, below). What it does cost is the decision: whichever of the five is in the chamber is the one he is committed to until he fires it or blocks with it.
 
+**Why he started broke — established at the table** *(Drew, 2026-11-04)*. **On their first visit to the Nest, Code and Flint went to the Thieves Den and lost their money gambling — and Flint lost his vibro knife.** They got it back together, which was the two of them's first piece of teamwork in the Nest (`places/vultures-nest.md`, Named at the Table). **Code kept some money; Flint came out genuinely broke**, and that is what the 10 gold below is. *Kevin found it hard at first — the wealthy son of a merchant-priest family, broke — and has since made it his own.*
+
 **Starting gold: 10, and it is the smallest purse at the table on purpose** (`rules/equipment.md`, Starting Gold). He is not poor — he is the opposite, and that is exactly why. **He converted everything he had into ingredients**, which is the whole character, and what is in the bag above is worth something in the region of 150 gold if he ever sold it (What any of it is actually worth to him, above). *Ten gold buys him lunch. Giving the richest man on the dock more money is the one adjustment that makes the sheets less even rather than more.*
 
 **And it is a small number next to the real one.** The grinder is written as **Tier 2 equipment**, which on the gear ladder is an ~800 gold object arriving about twelve sessions ahead of when anyone could afford one (`rules/equipment.md`, Pacing). *The file's own defence of that is good — loaded plain the grinder has no text at all, so it is a conditional weapon rather than a strong one, and the condition is the supply economy this whole section describes. Worth knowing anyway: the gap between Kevin's kit and everyone else's is measured in hundreds of gold, and a starting purse is measured in tens. Starting gold is not the lever that moves it, and nothing here is pretending otherwise.*
@@ -448,24 +450,22 @@ Range: Both
 
 *Written 2026-10-04 at Drew's ask, from what Kevin wants: **a grab bag** — more ways to answer a fight, not a bigger version of one. None is in his starting nine; all three are the customs in his advancement deck (`campaign/session-1-cards.md`, The advancement decks).*
 
-### OVER THE PASS — he throws the knife
+### PINNED — he throws the knife
 
 ```
-OVER THE PASS
+PINNED
 RED — BODY
 Attack: Body + d6
 Effect: Defender gains Vulnerable and Rooted.
 Defense Effect: Attacker gains Vulnerable and Rooted.
-Special Rule: The knife leaves your hand. When this resolves, attacking or
-defending, it stays face up at your opponent's position instead of going to
-your discard. While it is out you cannot play BREAK DOWN. Spend a free action
-in Melee range of it to pick it up: this card returns to your hand. It comes
-back to you at the end of combat.
+Special Rule: You throw your knife.
 Range: Ranged
 "Pinned from the sky."
 ```
 
-**The pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Pinned from the sky"* (Drew) is the Rooted half, and the arc it took getting there.
+**Renamed from OVER THE PASS to PINNED** *(Drew, 2026-11-07)*, **and the printed Special Rule is just *You throw your knife*.** **What that means stays on this sheet:** when it resolves, attacking or defending, the knife stays face up at the opponent's position instead of going to the discard; while it is out he cannot play BREAK DOWN; a free action in Melee range of it picks it up and returns the card to his hand; it comes back at the end of combat. *The core Blue card that was called PINNED is NAILED now* (`cards/blue-mind.md`, 2026-11-07), *so the name is Flint's alone.*
+
+*Was OVER THE PASS:* **the pass** is the shelf between kitchen and floor where finished plates go out — the same pass SPLIT ATTENTION has him watching (`campaign/passives.md`). *"Pinned from the sky"* (Drew) is the Rooted half, and the arc it took getting there.
 
 - **Two statuses on one half is the above-average upside.** MARKED gives Vulnerable alone at d6 Ranged (`cards/blue-mind.md`); this adds Rooted — the knife pins them where they stand. *A pinned target with Vulnerable on it is exactly what GRIND SHOT wants to be aimed at.*
 - **The price is the knife.** It is his only blade (Gear, above), so while it is out **BREAK DOWN is dead in his hand** and so is this card. Getting it back costs **his free action** — the one his reload, his drink and his oranges already fight over — **in Melee range of where it landed** *(Drew, 2026-10-04)*. Thrown at range, that is usually the enemy's side of the field, and Rooted means whoever he hit is still standing next to it.
@@ -511,8 +511,14 @@ Range: Ranged
 
 ## From session 0
 
-- **His ship is the Merry Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest** — up the river that runs south from the Nest toward the Ruins (`world/geography-overview.md`, Past the hubs). At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
+- **His ship is the Holly Mint** *(Kevin, 2026-10-03)* — **a temple ship**, one of the family's boats (`characters/ossian.md`, the wine travels). **It took him to the University, and it is how he and Chris got away to the Nest** — up the river that runs south from the Nest toward the Ruins (`world/geography-overview.md`, Past the hubs). At session one it is **docked in the Nest with nothing aboard** — no wine, no pepper, no cargo at all — and it is the boat the Compact's sweep locks down (`campaign/session-1-convergence.md`, And the lockdown is what traps them).
 - **Leadfoot**, renamed from hush petal at his ask (The Ingredients, above).
+- **His ambition** *(after session two)*: **relationships with pirates, a pirate ship of his own, and the Holly Mint kept as the legitimate trader** (`campaign/session-2-log.md`, Between sessions). *Open — and Drew's pitch is that the honest trade runs itself so Flint can go on the raids.*
+- **Downtime after session three** *(2026-11-10)*: **his pirate crew is hired and out on a run for Harlock — FourthEye to the capital, every other shipment, two weeks each way** (`campaign/session-3-log.md`, Downtime after session three).
+- **After session two, at the Thieves Den** *(2026-11-05)*: **he has a captain, the Mangy Dog, and a first mate, Xander** (`characters/samuel-gullis.md`, `characters/xander.md`) — **and no ship yet.** *He wants to collect the Mangy Dog's legendary loaded dice, piece by piece* (`items/the-mangy-dogs-dice.md`).
+- **His money is one pile** *(Drew)*: gold is not tracked by where it came from. It can grow from trade, quests and favours, selling ingredients, piracy, or whatever comes up. **The grace he has been handing out will run low** (The process, above) — *and Marta is now a buyer for it.*
+- **Session two:** *bought **10 luminova leaves** at 2 gold each, **1 bellows dust** and **2 leadfoot** from a market stall; took **SMOKESCREEN** at the first advancement* (`campaign/session-2-log.md`). *Luminova: hints only.*
+- **Session one:** *traded grace to Marta and is working toward a steady trade for the family; she gave him **5 measures of cinder flake**, her whole supply. 16 gold earned, 26 now* (`campaign/session-1-log.md`).
 - **He knew where to find Lusk's shop** *(Drew, 2026-10-08)* — the black-market counter where Code bought his papers (`places/vultures-nest.md`, The Strays, and Lusk; `campaign/chris.md`, Two months in the Nest). *The shady end of the route taught him where a port keeps its back rooms* (What he learned at the shady end of the route, above).
 - **His six drafted cards:** RETALIATE, CERTAIN STRIKE and SECOND WIND (Red), FOCUS and STILL POINT (Blue), RELEASE (Green). **With his customs that is 4 Red / 3 Blue / 2 Green — exactly his stats**, the one player at the table who took the matching spread. All six printed as written in `cards/`.
 - **Age 20.** Off his sheet.

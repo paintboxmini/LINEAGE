@@ -10,6 +10,8 @@
 
 ## Who
 
+**The captains are Riverdogs** — Harlock, Drake and Barracuda alike — *because sailing is mostly a Riverdog's trade* (`factions-and-races/races-riverdogs.md`). **Amelia is the exception aboard**, a Rasha first mate (`characters/amelia.md`).
+
 - **Harlock**, captain of the **Arcadia**, **head of the Guild on this stretch of the web** — which is why he holds the third seat on the Tideward Compact (`characters/harlock.md`; `places/vultures-nest.md`, The Tideward Compact)
 - **Amelia**, his first mate, a Rasha — runs the Arcadia, keeps its charter, signs on crew (`characters/amelia.md`)
 - **Captain Drake** — the Guild captain who is *not* its head, and the one a party works with if they want a pirate other than Harlock (`characters/drake.md`)

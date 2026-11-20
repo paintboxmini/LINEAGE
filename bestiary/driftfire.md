@@ -160,7 +160,7 @@ Small, translucent, roughly the size of a thumbnail, and never once seen alone �
 
 *Set 2026-09-25.* **A bloom does not only close the surface. It closes the whole column, and everything that works this water is out of it for the duration.**
 
-**The Riverdogs come out.** They swim, and deep water is not a barrier to them (`factions-and-races/races-riverdogs.md`) — which makes them the people in the web with the most to lose to a stretch that burns on contact. **A bloom puts them on the bank or on a deck**, doing whatever they do up there, for as long as it sits. *What that costs them and what they do about it is theirs and is not written here.*
+**The Riverdogs come out.** They swim, and deep water is not a barrier to them (`factions-and-races/races-riverdogs.md`) — which makes them the people in the web with the most to lose to a stretch that burns on contact. **A bloom puts them on the bank or on a deck** — boats still run, and they are on them, never in the water. **They use the time** *(Drew, 2026-10-16)*: nets readied and mended, meat and fish smoked, and more stories told around the fire (`factions-and-races/races-riverdogs.md`).
 
 **And it kills Deepmanes.** Not a hazard to them, not something they endure — **deadly**. Twenty feet of animal that stands vertical in the current has no version of a bloom it survives, so it goes deep, stays there, and does not come up.
 
@@ -214,6 +214,5 @@ A Deepmane surfacing over bad water is the clearest danger mark on the river (`b
 
 - **Whether a bloom ever catches a boat**, rather than the people in it — a hull passes through, but a fouled pullway line attached to a moving bloom is a different problem
 - **How often it comes round**, which is the dial the whole thing turns on and should probably stay a rumour rather than a number
-- **What the Riverdogs do while they are out of the water.** That they come out is set; what it costs them and how they handle it is theirs (`factions-and-races/races-riverdogs.md`)
 - **Whether a Deepmane ever gets caught by one**, and what a dead one on the bank does to the people who fed it
 - **Whether anything eats them**, and whether a bloom is a feast for something else that follows it round

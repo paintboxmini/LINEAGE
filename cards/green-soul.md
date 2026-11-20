@@ -188,7 +188,7 @@ Range: Both
 GREEN — SOUL
 Attack: Soul + d4
 Effect: Gain Protect and Evade
-Defense Effect: Choose an amount. Target ally gains that much HP and you lose that much HP.
+Defense Effect: Target ally heals up to 5. You lose that much HP.
 Range: Both
 *"What I cannot bear alone, we endure together."*
 
@@ -386,7 +386,7 @@ Range: Melee
 
 **QUICKEN**
 GREEN — SOUL
-Attack: Soul + d4
+Attack: Soul + d6
 Effect: Apply Initiative Shift +2 to yourself.
 Defense Effect: Apply Initiative Shift +2 to target ally.
 Range: Both

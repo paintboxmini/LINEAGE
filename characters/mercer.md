@@ -26,13 +26,23 @@
 
 **Every Red Scarf who ran from a binding is, by the paper, still his.** He keeps **a standing reward for returned runaways**, and every dockhand knows it. *A party that catches Bean and hands him over can collect* (`places/vultures-nest.md`, What they ran from).
 
-**And Jonah is a problem** (`characters/jonah.md`). A house with no lock is a house that empties his floors, and a priest finding kids real apprenticeships at fourteen is a priest telling every family on the river what Mercer's paper actually says.
+**And Hojan is a problem** (`characters/hojan.md`). A house with no lock is a house that empties his floors, and a priest finding kids real apprenticeships at fourteen is a priest telling every family on the river what Mercer's paper actually says.
 
 ## At the Table
 
 **Not a fighter.** He has men for that — unnamed, and they stay unnamed until a player makes one matter. **He fights with paper, the Compact's ear, and the reward.** *He is never doing anything illegal, and that is what makes him hard.*
 
 **Ruthless, not cruel.** He does not enjoy any of it. **A crushed child is a line in his ledger and a cost against the month**, and he will tell you, reasonably, what it would cost the Nest if he stopped. *The party should come away wanting to hit him and unable to point to the law he broke.*
+
+## On his guard *(Drew, 2026-11-14)*
+
+**Session four caught him complacent.** *He relied on his position for safety — a Bellows man on his own dock, in a town where everybody knows who he is* (`campaign/session-4-log.md`, Mercer's warehouses). **That is over.** *A shapeshifter walked into his office in a dead guard's face, drove a blade through his book, and took it.*
+
+**His men chased Code to the ship and were too slow** *(Drew, 2026-11-17)* — **but they saw the Strays send Muirn hunters after it.** **Mercer went to Lusk to find out why, and the Bellows and the Strays are allied against the party now** (`campaign/back-in-the-nest.md`).
+
+**He and Lusk have compared notes** — *Code's name, papers, scarf and church; Caine and the fire; Flint's father* — **and agreed Code goes to Mercer when the hunters bring him back. The Red Scarves pay too, and anyone the party has spoken to** (`campaign/back-in-the-nest.md`, Mercer and Lusk compare notes).
+
+**When the party next returns to the Nest, he is ready for them.** *What that looks like is open — more men, a locked office, the Compact's ear, the Bellows told what Code is — but the easy version of his warehouse does not exist any more.*
 
 ## Not Yet Set
 
@@ -42,4 +52,4 @@
 ## Related Documents
 
 - `places/vultures-nest.md` — the warehouses, the sweeps, the Red Scarves
-- `characters/jonah.md` — the priest who wants to empty his floors
+- `characters/hojan.md` — the priest who wants to empty his floors

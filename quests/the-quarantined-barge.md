@@ -54,7 +54,7 @@ The horror is administrative, and the thing that makes it unsolvable is not mali
 
 ## The Party's Position
 
-**They were on the dock when it closed, and they are impounded with everyone else** *(Drew, 2026-10-10)*. It is worth being explicit about at the table: **they can walk the town and they cannot leave the Nest**, and their boat — the Merry Mint, empty, no freight aboard — is inside the cordon (`campaign/session-1-convergence.md`). Their names are one shrug away from Jonas's ledger.
+**They were on the dock when it closed, and they are impounded with everyone else** *(Drew, 2026-10-10)*. It is worth being explicit about at the table: **they can walk the town and they cannot leave the Nest**, and their boat — the Holly Mint, empty, no freight aboard — is inside the cordon (`campaign/session-1-convergence.md`). Their names are one shrug away from Jonas's ledger.
 
 **This gives them two live approaches from the first hour, and both are real:**
 
@@ -180,6 +180,10 @@ These are people who have not been allowed to leave, work or sell for two days, 
 **Losable in the useful direction.** Talk them down, block the gangway, wake Bartho, buy them off, or stand in front of it. **If the party wins by hurting six locals they have solved tonight and made every later conversation in this town harder** — and Bartho will not say a word about it. He will simply be different afterwards.
 
 ---
+
+## How it ended at Drew's table *(2026-11-12)*
+
+**Bartho signed the barge over to the party** — *to "the Red Button Society", named as led by "Alden Coise", signed by Code in his own face, with Caine's papers on file* — **on condition they get it out of the city.** **Code sold him a story**: the congregation was leaving to die quietly somewhere of their own and was safe if handled carefully. **A second crew Bartho hired to check Pneum is due back a day later** (`campaign/session-3-log.md`, Back in the Nest). **Corvel goes with his people**, for now — *he is from Pneum.* **The lockdown is over.** *What the party means to do with the barge and its people is not set.*
 
 ## Ways It Ends
 

@@ -10,6 +10,10 @@
 
 An island in the **northernmost reaches of the river web**, slightly west of true north and south of Glasslight Reach (`world/geography-overview.md`, Bearing Table). A river-web island rather than a sea island — which is why they were ever neighbours to the Lizardkin, who hold a smaller island off their own lower east coast and are a river people in a way the Shunka are not.
 
+## Older Than the War
+
+**The Shunka and the Riverdogs were one people, long ago** *(Drew, 2026-10-16)* — **before anything written below**, the war and the curse included (`factions-and-races/races-riverdogs.md`, Shared Ancestry). *Today the Shunka know them as the nomadic Riverdogs who come to barter, and that is all.*
+
 ## The War, and the Curse
 
 They were at war, at some point in their past, with **the Tithebound** — the Lizardkin (`factions-and-races/races-lizardkin.md`). The Tithebound invaded Shunka land and were repelled: routed cleanly, no contest in the field. The Shunka couldn't be beaten with a blade, so the Tithebound didn't try to win that way twice.
@@ -41,6 +45,8 @@ Both ancestry-tied: a jaw built for a dogkin's bite (RED — BODY, Melee, d6, ta
 - **When the war happened.** Not pinned to a number, and not wide open either: enough generations separate the original wild-magic attempts from Pat's mother that "recent, living memory" is hard to square with the rest of the timeline — she descends from people who were *already* trying and failing to break it. One wrinkle worth flagging before this settles all the way toward "ancient and mythic": if the cursed line ages the way an actual dog does, several generations of descent could fit inside a much shorter absolute span than the same count would take for the kinfolk-shaped Shunka. It doesn't decide anything. It just means "several generations" and "a long time ago" aren't automatically the same claim here.
 
 ## Related Documents
+
+- `factions-and-races/races-riverdogs.md` — the Riverdogs, who were once the same people
 
 - `factions-and-races/races-lizardkin.md` — the Tithebound: who they are, and the family that holds the curse
 - `campaign/pat.md` — the character, his Call, and Wild Magic Summoning

@@ -1,0 +1,35 @@
+# The Mangy Dog's Dice
+
+*A set of loaded dice for liar's dice, and a collection thread for Flint. Kevin's ask, 2026-11-05 (`campaign/session-2-log.md`, Between sessions).*
+
+**The legend.** **The Mangy Dog** (`characters/samuel-gullis.md`) **owned a full set of extremely high-quality loaded dice** — good enough to pass the Thieves Den's inspection, which is the whole of their value. **A month ago somebody swapped them without his noticing — and on the final hand, his rival Captain Barracuda was the one holding them** (`characters/barracuda.md`): five sixes, a *spot on* call, and the Dog's ship.
+
+**The house rule that makes them matter.** **At the Thieves Den everyone brings their own dice, and every set is inspected before use** (`places/vultures-nest.md`, The Thieves Den). *A crude loaded die gets a man thrown out or worse. A die nobody can catch is worth more than the stake.*
+
+## Kevin's thread
+
+**Flint wants to find the pieces of the set on his travels, collect them, and bring them back to the Den** *(Kevin, via Drew)*.
+
+**Which needs squaring with the last hand: Barracuda had at least five of them a month ago.** *For the collection to be a voyage-by-voyage thread, the set has to have left him since — sold on, lost, wagered away, or split up on purpose so nobody could use it against him.* **Or the thread starts at Barracuda**, and scatters from there. **Drew's plan** *(2026-11-05)*: **Barracuda loses them through a Red Scarf thread.** *One of his men swapped them in during the Dog's game.*
+
+**Proposal, not set:** **a set is five dice and a cup** — the hand liar's dice is played with. **Each piece turns up somewhere different**, one adventure at a time, and **each one found is a clue to where the next went.**
+
+## What they do — Drew's call
+
+**Nothing is written for what the dice do at the table**, on purpose. *Some shapes it could take, for when it comes up:*
+
+- **Each die is a reroll** — at the Den's table, a loaded die lets the holder re-roll one die of their own per game
+- **Each die is a step** — a gambling check gets **+1 for every piece Flint holds**, and the full set wins against anybody playing honest
+- **Only the full set does anything** — the pieces are worth nothing apart, and the point is the collecting, and winning the Dog's ship back with them
+
+## Not Yet Set
+
+- **How many pieces**, and what makes them recognisable as *the* set
+- **Which of Barracuda's men swapped them**, and how the Red Scarves take them off him
+- **What they do** (above)
+- **What else is "a very big deal" about dice at the Den** — who inspects them, and what happens to a cheat who is caught
+
+## Related Documents
+
+- `characters/samuel-gullis.md`
+- `places/vultures-nest.md` — the Thieves Den

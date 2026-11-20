@@ -2,14 +2,16 @@
 
 **Cards:** `cards/wrackclaw.md`
 
+**Art:** `bestiary/images/wrackclaw-art-01.png` *(2026-10-16)*
+
 *A riverbank creature first* *(Drew, 2026-10-10)* — *wherever a river deposits enough wrack to eat, including the dock at Vulture's Nest, where the session-one spill brings them up the stones (`places/vultures-nest.md`, Beat three and a half). **They turn up on the beaches of the Unheld only where a river comes down nearby**, which is why the shoreline south of the Roadhouse has them, working its riverbank and just past it (`places/unheld-shoreline.md`, `quests/washed-ashore.md`). Not tied to a single bank.*
 
 **Mind 1 / Body 1 / Soul 1 — HP 6**
 **Creature Threat Rating:** 3
 
-**Deck (3 — 1 Blue / 1 Red / 1 Green):** SIDELONG SCUTTLE *(blue)* · PINCH *(red)* · CARRION PULL *(green)*
+**Deck (3 — 1 Blue / 1 Red / 1 Green):** CARRION PULL *(blue)* · PINCH *(red)* · SIDELONG SCUTTLE *(green)*
 
-**Blank deck:** Blue — SIDELONG SCUTTLE *(Ranged)* · Red — PINCH *(Melee)* · Green — CARRION PULL *(Melee)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
+**Blank deck:** Blue — CARRION PULL *(Ranged)* · Red — PINCH *(Melee)* · Green — SIDELONG SCUTTLE *(Both)* (`rules/gm-guide.md`, Running simple creatures from a blank deck)
 
 **Its three signature cards and nothing else** (`cards/wrackclaw.md`).
 
@@ -23,6 +25,8 @@
 
 **Fist-sized, black-shelled, and numerous wherever a river bank collects enough to eat.** *Black is the hide, not a warning* — they live in the wrack itself, in the band of dark rotting weed and drift the water leaves along the bank, and a black shell in black weed is nothing at all until it moves. **You do not see a Wrackclaw. You see the weed shift.**
 
+**Edible, but not good** *(session one)*. There is meat in the claws and not much else, and it tastes of the wrack it lives in.
+
 **Spines stand out of the shell at every joint** — short, hard, angled back. They are not a weapon and the creature never uses them for anything. **They are why you cannot simply take hold of one and pull it off**, which is the only thing anybody ever wants to do to a Wrackclaw and the thing it is built to make expensive.
 
 **Two arms, like any crab. Three fingers on each claw.** *That is the part nobody notices from a distance and nobody forgets afterwards.* A normal claw is a hinge — two opposing fingers, one line of force, and a grip that can be levered apart by anything that finds the angle. **A three-fingered claw closes on itself from three sides. There is no angle.** *It does not have to be strong. It only has to not let go.*
@@ -34,6 +38,10 @@ They don't distinguish between driftwood, dead fish, and anything else that's we
 *And the grip is the whole animal.* Everything on it serves holding on and nothing serves killing: three fingers so it cannot be levered, spines so it cannot be gripped back, a shell the colour of the thing it is lying in so the first you know of it is the weight. **A creature this weak is only a threat because it will not come off** — and because there are a great many of them, all pulling the same way.
 
 ---
+
+## The web
+
+*Drew, 2026-10-18.* **CARRION PULL is a sticky web the Wrackclaw spits** — a gob of tacky strand that lands on whatever it hits and holds, and the crab hauls on it. **That is how a crab makes a ranged attack**, and why the pull is Blue and Ranged: aimed from back in the wrack at somebody who has not closed yet. **SIDELONG SCUTTLE** is the moving card now — Green, Both range, *you may change position* — so a Wrackclaw drops back to spit and comes forward to pinch.
 
 ## Going into the water
 
@@ -63,7 +71,7 @@ They don't distinguish between driftwood, dead fish, and anything else that's we
 
 ## Encounter Setup
 
-Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't reposition tactically, they just close and grab. *Three is the measured first-fight number. **Four is about five times as lethal and five is not a first fight at all** (Open — the 2026-09-21 review, below).* On the dock at the Nest they are the session-one fight; on the Unheld shoreline they are the first real threat the party meets after washing ashore, before the trail is even found.
+Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't reposition tactically, they just close and grab. *Against the party as drafted (re-measured 2026-10-18): **three is a safe first fight — the party wins every time and almost never takes a Down; five is where a Down shows up about one fight in four; six is a real fight**, with a death in about one in three. The figures in the 2026-09-21 review below were measured against pre-session-0 decks.* On the dock at the Nest they are the session-one fight; on the Unheld shoreline they are the first real threat the party meets after washing ashore, before the trail is even found.
 
 *Teaching moment: Rooted shows up here, on a card a brand-new party has never seen work against them before — this is where "cannot voluntarily change position" starts meaning something at the table rather than on a card nobody had reason to read closely.*
 
@@ -76,7 +84,7 @@ Start with **3** Wrackclaws, all Frontline — they don't hang back, they don't 
 | Rooted | PINCH clamps a target in place — the first time most new characters feel a Move Position option actually taken away from them |
 | A clock you can see coming | CARRION PULL counts. One pull is a warning; two puts you in the water, beside the fight rather than in it (Going into the water, above) |
 | Three defences, not one | Resist, Evade and Thorns, one per card. **The first creature the party can read**: fail against it twice and you start knowing which card is which before it is revealed |
-| Melee has a price here | CARRION PULL's Thorns chips anyone who closes. *The ranged characters do not pay it, in the fight that teaches Range* |
+| Range cuts both ways | CARRION PULL spits from range, so standing back is not safe; its block builds Thorns, which chips anyone who later closes in melee |
 | Numbers over individual threat | Each hit is small; four of them landing in the same round is not |
 
 ---

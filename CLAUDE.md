@@ -49,6 +49,18 @@ and the first one is the one that actually breaks things:
 **If he says something went over his head, change register rather than add
 detail.** More explanation in the same vocabulary is the wrong repair.
 
+**Names come in by ear.** He types what he heard at the table — *Kane* for
+Caine, *Martha* for Marta, *Asher* for Ashen. Use the spelling the files
+already have, and only raise it when it is genuinely ambiguous which person
+he means.
+
+**When he asks for something to pass to a player, give him two things**:
+text he can paste as it stands, and — separately — what was held back and
+why. Players never see the repo, so deciding what a player may know is the
+job, not a detail. *A player's message lands on a GM page full of hooks
+belonging to somebody else's character* (the four Muirn and Pat's thread,
+2026-11-16, is the worked case).
+
 ---
 
 ## Where things are
@@ -93,7 +105,7 @@ Don't draft into a reserved slot, don't resolve a naming question that belongs t
 
 These are consequences, not settings. Change a stat and all of them move with it.
 
-- **Max HP = (4 × Body) + Mind + Soul** (`rules/character-creation.md`)
+- **Max HP = (4 × Body) + Mind + Soul** (`rules/character-creation.md`). **A boss may carry a custom pool instead**, stated on its sheet — Barracuda is the first (`characters/barracuda.md`)
 - **Deck size = Body + Mind + Soul**, for players and creatures alike. **Matching each colour's count to its stat is a heuristic, not a law** — it is how almost everything here is built, which makes it a fast way to write content, and it is not a constraint the game enforces (`rules/cards.md`, Paying for an off-ratio deck)
 - **Hand size = Mind**, with no minimum — a hand of zero is allowed *(2026-09-28)*
 - **The Oracle sets are 12/6/3 per colour** in that colour's range identity, and the expansion is 4/2/1. `oracle-1/2/3` are derived thirds, so changing the ratio breaks the even deal. New cards get written whenever they are wanted — what is fixed is the number of **seats**. Taking a seat in a printed set is a swap; writing a card is not. Cleared cards sit on the bench with no seat, and being unseated is not a verdict
@@ -107,15 +119,22 @@ When you change a card or a stat block, check what else consumes it: the seated 
 
 - **A gap in the files means a typical medieval fantasy world, never a lacking one** *(2026-09-28)*. Unless a file says otherwise, stone is stone, bread is bread, the weather is weather, and most people are having an ordinary day. **The strange, the modern and the terrible are the things that get marked** — the vibro knife is written as technology this world does not otherwise have (`campaign/kevin.md`), and that is what an exception looks like. The dark material has the most pages because it is what needs rules, not because it is the whole world. So don't fill a gap by subtracting — *no moon, no shadows and rotten stone were all invented that way and all had to come out* — and don't fill it with real-world modern references either. **Search for a marked exception before falling back on the default** — the setting already had light cartography, which answered what the picture on identity papers is, and it was missed for that reason
 - **`cards/*.md` is globbed non-recursively** by `combat-simulations/cards.py` (`os.listdir`) and by `printing/generate-cards.py`. Both parsers read every `.md` at the top of `cards/` as a deck, which is why `cards/tiers/` is a subdirectory — the files there are documentation
-- **`printing/generate-all.sh` builds print artifacts and nothing else, deliberately.** Don't wire checks, linting, or anything else into it. **Its load-bearing half is the staleness diff, not the PDFs** — reasoning about which sheets should have moved after a rules edit has failed three times out of three, and rebuilding everything and diffing has caught it three out of three. That half needs no Chrome
+- **`printing/generate-all.sh` builds print artifacts and nothing else, deliberately.** Don't wire checks, linting, or anything else into it. **Its load-bearing half is the staleness diff, not the PDFs** — reasoning about which sheets should have moved after a rules edit has failed three times out of three, and rebuilding everything and diffing has caught it three out of three. That half needs no Chrome. **Never run `printing/manifest.py` on its own on a fresh checkout**: it records only the sheets that have been built, so it silently deletes every line it can't see. Run the whole script
 - **Every printed artifact is build output, is not in git, and is generated in chat.** Drew has no terminal, so he asks and an agent builds the file from the markdown and hands it over. **There is no CI release path and no tagging — that existed until 2026-09-22 and was retired unused.** What the repo keeps is the *recipe*: the generators, the format conventions in `printing/README.md`, and **`printing/manifest.txt`** — one line per artifact with a hash, which is what the staleness diff runs against now that the HTML is untracked too (2026-09-25). *A one-off document built for somebody to read is output and goes to the person, never into the tree*
 - **Players never see this repo** *(2026-10-08)*. Tales Untold is a new world and Drew wants it discovered at the table, so bestiary, places, cosmology and the GM side of a character file are all spoilers. **Everything a player holds is printed**: the rules packets, their own sheet and cards, and **binder pages** — a creature's Field notes after the party meets it, its Measured page when a card reveals its stats (`binder/README.md`). **Never hand a player a repo file**, their own `campaign/` file included — it carries GM hooks. New cards and items are worked out out loud at the table and printed once settled
+- **Card text is written for the table, never for the simulator** *(Drew, 2026-11-19)*. **Say the thing a player needs and let the fiction carry the rest.** PINNED's whole rule is *You throw your knife* — that it has to be fetched back follows on its own, and the detail lives on the sheet, not the card (`campaign/kevin.md`, PINNED). *AI has a known pull toward padding card text until a parser can read it; that trades a table's clarity for a tool's.* **If the engine can't read a card, teach the engine the wording or let it narrate — never rewrite the card to suit it**
+- **Hold the simulator lightly** *(Drew, 2026-11-19)*. It gives broad strokes — which of two fights is harder, what a dial does — and is not accurate about any one fight. **Drew's table plays well above it** (`rules/gm-guide.md`, How many of them — calibration at a real table). *Lead with what a number means and say plainly that it is a floor*
+- **A card fixed for everyone and renamed for this table is two things in two places** *(2026-11-15)*. The fixed text goes into the core card in `cards/`, so every table and every creature running it gets the fix; the table's name and printing go into `campaign/session-1-cards.md`. An NPC's signature cards move into `cards/<name>.md` once the NPC has a stat block
 - **Kevin's ingredients get hints, not effects** *(2026-10-10)*. A new plant or creature part he could cook with is written as a description with vague gestures at possible uses — **never a load or drink effect.** What he makes of it is decided between Kevin and Drew at the table (`campaign/kevin.md`, The Ingredients)
 - **Every plant has a gate, and no gate is a stat check** (`flora/README.md`). A roll says whether a character is good at something; a gate says what kind of person or situation gets the thing at all
 - **Tiers are about when, not about quality** (`cards/tiers/README.md`). A card that's too strong to start moves to the middle tier; it does not get rewritten until it's weak enough. That is how TURN lost its redirect for a year
 - **A claim derived from another file carries a citation to it.** The value isn't for the reader — it's that writing the citation means opening the file, which is where the contradiction gets noticed (`agent-tools/README.md`)
 
 ---
+
+## Raising harness issues *(2026-11-19)*
+
+**Bring them to Drew unprompted once three have piled up.** An issue is something a new session would trip on: an instruction here that has gone out of date, a tool that keeps misbehaving, a convention learned at the table that nothing here records yet, or a correction Drew has had to make twice. **Write each one to `agent-tools/harness-issues.md` when you notice it** — sessions don't carry memory between them, so the file is the count. At three, raise them in plain words with a proposed fix for each; once dealt with, clear them from the file.
 
 ## Checking work
 

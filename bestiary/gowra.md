@@ -77,6 +77,8 @@ Under a bank, in its own dug chamber, in a collapsed hollow — the sound has no
 
 ## Running It — and an honest note on the numbers
 
+**Re-measured 2026-10-18 against the drafted party** (600 fights a row): **one gowra on flat ground ~97%, two ~67%** — *still without the roar, the collapse or the drag, which is where the danger lives. The table below is the older measurement.*
+
 *Three starting characters, 800 fights per row (`combat-simulations/encounter_budget.py`).*
 
 | | Party wins | Avg deaths |
