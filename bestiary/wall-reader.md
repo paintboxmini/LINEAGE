@@ -1,6 +1,6 @@
 # Wall-Reader
 
-*A many-armed figure in the Coil's lower passages, following the same wall-following rule the party is. It was a person, once. Not anymore.*
+*A blind, many-armed figure in the Coil's lower passages, following the same wall-following rule the party is. It was a person, once. Not anymore.*
 
 **Cards:** `cards/wall-reader.md`
 
@@ -23,7 +23,9 @@
 
 **Every hand acts as if it has a mind of its own, and every one of them wants the same thing: to keep touching the wall.** As it walks, they **frantically reposition** — peeling off the stone behind, scrabbling forward over one another, slapping flat again ahead — *a constant crawling ripple down its wall side, never fewer than a dozen palms on the stone at once.* **The hands are desperate. The body is not**: it moves without hurry, carried along by them.
 
-**Its face never leaves the wall.** *It walks with its head turned toward the stone, fixed on it, afraid of drifting out of reach.* **It never looks at the party** — *which is worse, the first time it does.*
+**It is blind** — *where eyes should sit there is only smooth, unbroken skin, never reopened.* **Its face never leaves the wall anyway.** *It walks with that blank face turned toward the stone, fixed on it, afraid of drifting out of reach.* **It never looks at the party** — *which is worse, the first time it does.*
+
+**Across its chest, an empty bandolier: worn leather, seven loops, nothing in any of them.** *GM only: they held a Mason's chisels* (`places/the-coil.md`, The Masons' Room; GM Secret). **Nobody at the table should read it as anything until Code finds that room.**
 
 **Nothing about it suggests violence. Nothing about it suggests peace either.** It is simply, completely, still doing the one thing it has been doing since before it was this.
 
