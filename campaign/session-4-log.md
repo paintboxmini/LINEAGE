@@ -83,6 +83,21 @@
 
 **It happens at the same time as the warehouse rescue** *(Drew, 2026-11-14)* — Flint at the Den while Code and Caine are at Mercer's. **At some point, Barracuda's men try to grab Flint and take him to Barracuda** (`characters/barracuda.md`). **Made challenging and thorough on purpose** — *it is how Flint earns the stat point and the card the others got tonight.*
 
+**Now a solo session at Kevin's** *(Drew, 2026-11-23; played 2026-11-24)* — *the text week never happened, so this is where it lands.* **Flint is at the re-established Den hiring his crew while Code and Caine are at Mercer's. Barracuda's men walk in, draw on sight, and yell "We finally found him, boys!"**
+
+**Measured, as a floor** *(2026-11-23; Barracuda's deckhands — five stat points, one JAGGED RAPIER each, `bestiary/barracudas-crew.md`)* — **the simulated Flint has no loads, oranges or drinks, which were measured to be most of his damage** (`campaign/kevin.md`):
+
+| Barracuda's men | Flint alone | Flint + Xander |
+|---|---|---|
+| **2** | 42% | **96%** |
+| **3** | 8% | **66%** |
+| **4** | 1% | 22% |
+| **5** | 0% | 4% |
+
+**Xander is the dial** — *alone, Flint is in trouble against more than two; with his first mate, three is a real fight he probably wins.* **The Den is full of crews waiting to be hired** (`places/vultures-nest.md`, The Thieves Den), *and Xander's first night there turned into a whole-bar brawl* (`characters/xander.md`). **Anybody Flint has just hired is a body that can join.**
+
+**This is where the party meets Wounds first** — *JAGGED RAPIER shuffles one into Flint's deck when it lands* (`rules/card-glossary.md`, WOUND).
+
 **Where he ends up is Kevin's call:** **most likely aboard Fortune's Fancy with the party when she sails** — **or he stays behind, readies the Holly Mint, and sails her out to catch up.**
 
 ## Open

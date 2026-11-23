@@ -12,13 +12,13 @@
 
 **Halfway to the capital.**
 
-**They built a ram: the Bowsprit Lance** — *a long wooden pole on the Fancy's bow, made to splinter off inside an enemy hull.* *(Drew's spelling was "bowsprint"; a bowsprit is the spar on a ship's bow.)* **They stopped at a small island to attach it.**
+**They built a ram** — *a long wooden pole on the Fancy's bow, made to splinter off inside an enemy hull.* **It has no name at the table; the files call it the Bowsprit Lance** *(Drew, 2026-11-23)*. **They stopped at a small island to attach it.**
 
 **They saw the Coil, and noped right out of it.** *They want to reach the capital fast.* **The Coil is unexplored** (`places/the-coil.md`) — *it surfaces and sinks, and it will be somewhere else the next time.*
 
 ## The Gowra
 
-**While Code helped work on the ship, Caine searched the island**, harvesting **Burnrind** (`flora/burnrind.md`) with **Borager** — *the forager of the four Muirn, named by Chris* (`characters/the-four-muirn.md`) — **and Bean.**
+**While Code helped work on the ship, Caine searched the island**, harvesting **Burnrind** (`flora/burnrind.md`) with **Borager** — *the youngest of the four Muirn, their forager* (`characters/the-four-muirn.md`) — **and Bean.**
 
 **A Gowra ambushed them** (`bestiary/gowra.md`).
 
@@ -39,7 +39,7 @@
 
 **Sailing roleplay and crew bonding for the rest of the night.**
 
-- **The diver — the Muirn with the swimming skill — secretly resents that his old crew were killed.** **Code caught on, and is working on building trust** (`characters/the-four-muirn.md`).
+- **Tristan, the steersman, secretly resents that their old crew were killed.** **Code caught on, and is working on building trust** (`characters/the-four-muirn.md`). *The four are named: Tristan, Bwimmer, Belder, Borager.*
 - **Borager held the line for Caine.**
 
 ## Drew's calls
