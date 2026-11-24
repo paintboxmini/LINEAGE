@@ -2,13 +2,15 @@
 
 *Drew's plan, 2026-11-14. **Plans, not events.** Fortune's Fancy, carrying Harlock's FourthEye, bound for Eclipseria — **a couple of sessions at least, exploring along the way.***
 
+**Where they are** *(session 5)*: **halfway to the capital**, *the Fancy painted in Gowra blood with meat drying in the rigging, a ram on her bow — the Bowsprit Lance — and full crews on both ships* (`campaign/session-5-log.md`).
+
 **Aboard:** Code, Caine, Kino and Bean, the retired master sailor, Samuel and Xander *(if they sailed)*, the hired pirates, and **four pressed Muirn** (`campaign/session-4-log.md`). *Flint is aboard or following in the Holly Mint — Kevin's call.* **Barb is not aboard** — *she's in the Nest, stood up* (`characters/barb.md`).
 
 ---
 
 ## The order, roughly
 
-1. **The Coil** — next (`campaign/session-4-plan.md`, Getting out in the bush; `places/the-coil.md`).
+1. ~~**The Coil**~~ — **skipped** *(session 5: they saw it and noped out; it surfaces elsewhere next time)* (`campaign/session-4-plan.md`, Getting out in the bush; `places/the-coil.md`).
 2. **Barracuda, the first time — a chase they escape.**
 3. **The water between** — weather, hazards and a beast, thinning the hired hands.
 4. **Barracuda, again**, later in the voyage, *where they thought they'd lost him.*
@@ -34,6 +36,8 @@
 **When they reach 6, he loses them** — *in a fog bank, behind an island, into water too rough for his keel.* **He doesn't give up. He knows where they're going.**
 
 *The cargo choice is the scene: dumping Harlock's FourthEye buys the escape and costs them with Harlock.* **And Barracuda doesn't know about the cargo** — *his fight is Samuel* (`characters/barracuda.md`). **Crates over the side float, and he's right behind them.** *If he fishes one out, he learns what his rival is carrying, and whose it is, without anyone whispering to him.*
+
+**Not without Kevin** *(Drew, 2026-11-22)*: **he pushed for the pirate story and has missed too many of its beats already, so no big Barracuda confrontation while he's out** (`campaign/session-5-log.md`).
 
 ## Barracuda, again
 

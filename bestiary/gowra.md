@@ -16,6 +16,8 @@ Long — four times the length of a man and most of that tail — low to the gro
 
 **The word is worn out and there is still a gowra.** That is the entire design of this animal and it should be protected: **everyone who has actually seen one has been laughed at**, so nobody has ever assembled the accounts, so nobody is warned, so it keeps working the same stretch of river for forty years.
 
+**Drew's table killed one** *(session 5, `campaign/session-5-log.md`)* — **and kept the skin, the tusks, a hundred pounds of meat and two venom sacks.** *The first proof anyone has carried off a bank.*
+
 **A party that comes back from a bank with a real account will not be believed either.** Bartho will be polite about it. Erubeth will not. Somebody will ask, cheerfully, whether they brought a tooth back.
 
 *And at least one of the teeth in that sack at the market is genuine. The man selling it does not know. Nobody can tell, because nobody is looking, because they are all obviously fake.*

@@ -6,6 +6,8 @@
 
 **He does not announce things.** When Flint offered to help, he said nothing — he charged the man at the dartboard, **caught the dart thrown at him, put it into the man's cheek, and knocked him out cold.** *Then the whole bar fought, and Flint fought beside him.*
 
+**Backstory** *(Drew, 2026-11-23)*: **an upright sailor who ran trade routes his whole life — until a few years ago, when he fell on hard times. He has been a pirate ever since.** *Which is why he is clean, well dressed, and owed money by men who don't pay: he still runs himself like a trader.*
+
 **He is Flint's first mate**, and the plan is that **he hires the rest of the crew.**
 
 **The Mangy Dog has sailed with him before** and calls him *"an uptight ass"* (`characters/samuel-gullis.md`). *Flint talked the Dog into sailing with him again. An uptight first mate under a drunk captain is a ship that might actually work.*

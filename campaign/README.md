@@ -34,6 +34,7 @@ The split against `experimental/`: experimental holds world lore that isn't sett
 | `campaign/voyage-to-the-capital.md` | **Plans for the voyage** — the Coil, Barracuda's chase, hazards and beasts |
 | `campaign/back-in-the-nest.md` | **Plans for the return** — who is after them, Harlock looking away, a new family, the shops they never found |
 | `campaign/session-4-log.md` | **What actually happened in session four** — the warehouse rescue, Mercer, the Muirn ship |
+| `campaign/session-5-log.md` | **What actually happened in session five** — the Coil skipped, the Bowsprit Lance, the Gowra, Borager |
 | `campaign/session-4-plan.md` | **Plans for session four** — Muirn raiders on the water |
 | `campaign/session-3-log.md` | **What actually happened in session three** — the Water Wing stolen, Pneum, the Thieves Den fire |
 | `campaign/session-2-log.md` | **What actually happened in session two** |
