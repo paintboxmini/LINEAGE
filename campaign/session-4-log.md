@@ -85,6 +85,15 @@
 
 **Now a solo session at Kevin's** *(Drew, 2026-11-23; played 2026-11-24)* — *the text week never happened, so this is where it lands.* **Flint is at the re-established Den hiring his crew while Code and Caine are at Mercer's. Barracuda's men walk in, draw on sight, and yell "We finally found him, boys!"**
 
+**Played by text, then at the table before session 6** *(Drew, 2026-11-27)*:
+
+- **Flint went to Dess's shop** (`places/vultures-nest.md`, Harwick Sundries — Counter Items) **and learned the best place to find robot people is Turnroot** (`quests/turnroot-weald-adventure.md`). *What that means is Drew's to set.*
+- **Leaving, he was ambushed by four of Barracuda's men.** **One slid up beside him, hand on his arm, blade against his back: Barracuda has been looking for you for a long time. You need to come with us.**
+- **Flint pulled an incendiary orange with his free hand, lit it, and tossed it to the man — who caught it, confused, before it went off.** **Flint was too close and took damage too, but he expected it, so he kept the drop.**
+- **He drew his gun and put it in the face of the man on his other side. Paused there** — *the fight is played with cards before the full session, and Flint levels up after it.*
+
+**They want him alive** — *to take to Barracuda.* **And continuity binds the result: Flint is aboard the Fancy in session 5** (`campaign/session-5-log.md`), **so whatever happens, he gets away and makes the sailing.**
+
 **Measured, as a floor** *(2026-11-23; Barracuda's deckhands — five stat points, one JAGGED RAPIER each, `bestiary/barracudas-crew.md`)* — **the simulated Flint has no loads, oranges or drinks, which were measured to be most of his damage** (`campaign/kevin.md`):
 
 | Barracuda's men | Flint alone | Flint + Xander |
