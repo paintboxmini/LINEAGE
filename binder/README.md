@@ -30,6 +30,7 @@
 | Ocellus | `binder/ocellus.md` | The pup. *No cards of its own — the page shows the three it plays* |
 | Glassgut | `binder/glassgut.md` | The spooklight that is an animal. *Most spooklights are nothing and get no page* |
 | Gene-Thief Tardigrade | `binder/gene-thief-tardigrade.md` | The baseline; **a line to write in what this one started with** |
+| Captain Barracuda | `binder/barracuda.md` | **A person.** *His HP is a custom pool — the Measured page leaves it blank to write in* |
 | Muirn Hunter, Vaun, Neshi, Draksa | `binder/muirn-hunter.md`, `binder/vaun.md`, `binder/neshi.md`, `binder/draksa.md` | **People.** Hand the page over once the party knows the name |
 
 **Field notes only — nothing to measure:**
